@@ -1,0 +1,68 @@
+/************ MENSAJES DE ALERTA ************/
+
+.mensaje_alerta{
+	display: none;
+	position: absolute;
+	color: #e30101;
+	font-weight: bolder;
+	width: 130px;
+	top: -15px;
+	left: 460px;
+	_margin-left: -15px;
+}
+* html .mensaje_alerta{
+	background: transparent url(../../img/validaciones_mcafee/bg_mensaje.gif) no-repeat scroll left top;
+	left: 470px;
+}
+
+.medio_alerta{
+	left: 295px;	
+}
+
+table.tabla_alerta{
+	position: absolute;
+	color: #e30101;
+	font-weight: bolder;
+	padding: 0 15px 0 0;
+	width: 250px;
+	height: 55px;
+	margin: 0 auto;
+	display:table;
+	background: transparent url(../../img/validaciones_mcafee/bg_mensaje.png) no-repeat scroll left top;
+}
+td.tabla_alerta{
+	padding: 0 0 0 45px;
+	height: 46px;
+}
+* html table.tabla_alerta{
+	background: transparent url(../../img/validaciones_mcafee/bg_mensaje.gif) no-repeat scroll left top;
+}
+
+/* Para los mensajes de error de validacion de formularios */ 
+.globoError {
+    display: block;
+    left: 290px;
+    top: 72px;
+    z-index: 5001;
+    background: url(../../img/validaciones_mcafee/bg_mensaje.png) top left no-repeat;
+    width: 246px;
+    height: 55px;
+    font-weight: bolder;
+    position: absolute;
+	display:none;
+} 
+* html .globoError{
+    background: url(../../img/validaciones_mcafee/bg_mensaje.gif) top left no-repeat;
+} 
+*:first-child+html .globoError {
+    background: url(../../img/validaciones_mcafee/bg_mensaje.gif) top left no-repeat;
+} 
+.mensaje table {
+    height: 100%;
+    margin-left: -215px;
+    width: 250px;
+} 
+.mensaje table td {
+    color: #E30101;
+    font-size: 12px;
+}

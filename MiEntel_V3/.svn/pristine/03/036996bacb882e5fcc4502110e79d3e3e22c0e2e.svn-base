@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="EPCSEncriptedAuthenticationProvider" default="package" basedir=".">
+
+	<property name="base" value="." />
+
+	<!-- build.properties -->
+	<property file="${base}/build.properties" />
+
+	<!-- estructura de directorios -->
+	<property name="dist" value="${base}/dist" />
+	<property name="src" value="${base}/src" />
+	<property name="srcgen" value="${base}/srcgen" />
+	<property name="build" value="${base}/bin" />
+	<property name="tmpDir" value="${base}/tmpDir" />
+	<property name="lib" value="${base}/lib" />
+
+	<property name="wls.lib" value="weblogic.jar" />
+	<property name="tools.jar.lib" value="${bea.home}/jrockit_160_14_R27.6.5-32/lib/tools.jar" />
+	<property name="rt.jar.lib" value="${bea.home}/jrockit_160_14_R27.6.5-32/jre/lib/rt.jar" />
+	<property name="logger.lib" value="log4j-1.2.16.jar" />
+
+	<!-- adicionales, derivadas de build.properties -->
+	<property name="dmdf" value="${mbean.description.file.name}" />
+	<property name="dmjf" value="${mbean.jar.file.name}" />
+	<property name="spi-package" value="${spi.package.name}" />
+	<property name="weblogic-home" value="${bea.home}/wlserver_10.3" />
+
+	<target name="all" depends="clean,prepare,generate,package,install" />
+
+	<target name="clean" description="borra directorios temporales usados en la generacion">
+		<delete failonerror="false" dir="${srcgen}" />
+		<delete failonerror="false" dir="${dist}" />
+		<delete failonerror="false" dir="${build}" />
+		<delete failonerror="false" dir="${tmpDir}" />
+	</target>
+
+	<target name="prepare" description="crea directorios temporales usados en la generacion">
+		<mkdir dir="${srcgen}" />
+		<mkdir dir="${build}" />
+		<mkdir dir="${dist}" />
+		<mkdir dir="${build}" />
+		<mkdir dir="${tmpDir}" />
+	</target>
+
+	<target name="generate" description="Use the WebLogic MBeanMaker to Create the MBean JAR File (MJF)">
+
+		<java classname="weblogic.management.commo.WebLogicMBeanMaker" fork="true" failonerror="true">
+			<jvmarg line="-Dfiles=${srcgen}
+              -DMDF=${base}/${dmdf}
+              -DcreateStubs=true -Dverbose=true " />
+			<classpath>
+				<pathelement path="${weblogic-home}/server/lib/${wls.lib}" />
+				<pathelement path="${tools.jar.lib}" />
+				<pathelement path="${rt.jar.lib}" />
+			</classpath>
+		</java>
+
+	</target>
+
+	<target name="package" depends="clean,prepare,generate" description="Use the WebLogic MBeanMaker to Create the MBean JAR File (MJF)">
+		<copy todir="${srcgen}/${spi-package}">
+			<fileset dir="${src}/${spi-package}" excludes="EPCSEncriptedAuthenticationProviderMBean.java" />			
+		</copy>
+
+		<java classname="weblogic.management.commo.WebLogicMBeanMaker" fork="true" failonerror="true">
+			<jvmarg line="-Dfiles=${srcgen}
+              -DMJF=${tmpDir}/${dmjf}
+              -Dverbose=true " />
+			<classpath>
+				<pathelement path="${weblogic-home}/server/lib/${wls.lib}" />
+				<pathelement path="${tools.jar.lib}" />
+				<pathelement path="${lib}/${ws-client.lib}" />
+				<pathelement path="${lib}/${logger.lib}" />
+				<pathelement path="${rt.jar.lib}" />
+			</classpath>
+		</java>
+		<unzip src="${tmpDir}/${dmjf}" dest="${srcgen}">
+		  <patternset>
+		    <include name="META-INF/MANIFEST.MF"/>
+		  </patternset>
+		</unzip>
+		
+		<jar update="true" duplicate="add" destfile="${dist}/${dmjf}" manifest="${srcgen}/META-INF/MANIFEST.MF">
+			<zipfileset includes="**/**" src="${tmpDir}/${dmjf}" />	
+			<fileset dir="${base}">	
+               <include name="**/*.properties" />	
+			   <exclude name="build.properties" />
+			</fileset>			   
+			<manifest>
+				<attribute name="Class-Path" value="./${ws-client.lib} ${logger.lib}"/>
+			</manifest>
+		</jar>
+		
+		<delete failonerror="false" dir="${tmpDir}" />
+		<delete failonerror="false" dir="${srcgen}" />
+		<delete failonerror="false" dir="${build}" />
+
+	</target>
+
+	<target name="install" description="Install the MBean Type Into the WebLogic Server Environment ">
+
+		<copy todir="${weblogic-home}/server/lib/mbeantypes">
+			<fileset dir="${dist}" />
+			<fileset dir="${lib}/" >
+				<include name="${ws-client.lib}"/>
+				<include name="${logger.lib}"/>
+			</fileset>
+		</copy>
+
+	</target>
+
+</project>

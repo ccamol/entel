@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="EntelUIResources">
+
+	<!-- build.properties -->
+	<property file="${basedir}/build.properties" />
+
+	<!-- Estructura de directorios -->
+	<property name="dist" value="${basedir}/${dir.dist}" />
+	<property name="src" value="${basedir}/${dir.src}" />
+	<property name="lib" value="${basedir}/${dir.lib}" />
+	<property name="build" value="${basedir}/${dir.build}" />
+
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	
+	<!--Classpath -->
+	<path id="WebLogic System Libraries.libraryclasspath">
+		<pathelement location="${weblogic.server.home.path}/server/lib/api.jar" />
+		<pathelement location="${bea.home}/modules/**.jar" />
+		
+		<!-- Weblogic Server -->
+		<pathelement location="${weblogic.server.home.path}/server/lib/weblogic.jar" />
+		<pathelement location="${weblogic.server.home.path}/server/lib/wls-api.jar" />
+
+		<!-- Weblogic Portal Shared Library Light Web -->
+		<pathelement location="${dir.lib}/netuix_servlet.jar" />
+		<pathelement location="${dir.lib}/portlet-container.jar" />
+		
+		<!-- Weblogic Portal -->
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/wsrp-common.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/wsrp-client.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/netuix_common.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/netuix_schemas.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/netuix_system.jar"/>
+		
+		<!-- JS & CSS Compressor -->
+		<pathelement location="lib/yuicompressor-2.4.2.jar"/>
+		
+	</path>
+
+	<path id="EntelUIResources.classpath">
+		<pathelement location="${dir.build}" />
+		<path refid="WebLogic System Libraries.libraryclasspath" />
+	</path>
+
+	<!-- Setting TaskDefinition -->
+	<taskdef name="wldeploy" classname="weblogic.ant.taskdefs.management.WLDeploy">
+	  <classpath refid="EntelUIResources.classpath"/>
+	</taskdef>
+	
+	<!-- Targets -->
+
+	<target name="clean">
+		<echo message="*** CLEAN ***" />
+		<delete failonerror="false" dir="${dir.dist}" />
+		<delete failonerror="false" dir="${dir.temp}" />
+		<delete failonerror="false" dir="${dir.build}" />
+		
+		<delete failonerror="false" dir="${dir.webtemp}" />
+	</target>
+
+	<target depends="clean" name="prepare">
+
+		<echo message="*** PREPARE ***" />
+
+		<!-- Directorios -->
+		<mkdir dir="${dir.dist}" />
+		<mkdir dir="${dir.build}" />
+		<mkdir dir="${dir.temp}" />
+		<mkdir dir="${dir.webtemp}" />
+
+		<!-- Classes  -->
+		<copy includeemptydirs="false" todir="${dir.build}">
+			<fileset dir="${dir.src}">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target depends="prepare" name="compile">
+
+		<echo message="*** COMPILE ***" />
+
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="${dir.build}" source="${source}" target="${target}">
+			<src path="${dir.src}" />
+			<classpath refid="EntelUIResources.classpath" />
+		</javac>
+
+	</target>
+
+	<!-- Empaqueta war comprimiento js y css -->
+	<target depends="compress-js" name="package">
+
+		<echo message="*** PACKAGE COMPRESSED ***" />
+		
+		<war destfile="${dir.dist}/${dist.filename.war}" webxml="${dir.web-inf}/web.xml" 
+					manifest="${dir.meta-inf}/MANIFEST.MF" basedir="${dir.temp}">
+
+			<manifest>
+				<attribute name="Created-By" value="${manifest.vendor}"/>
+				<attribute name="Built-By" value="${user.name}"/>
+				<attribute name="Extension-name" value="${manifest.extension.name}"/>
+				<attribute name="Specification-Title" value="${manifest.spec.title}"/>
+				<attribute name="Specification-Version" value="${manifest.spec.version}"/>
+				<attribute name="Specification-Vendor" value="${manifest.vendor}"/>
+				<attribute name="Implementation-Title" value="${manifest.impl.title}"/>
+				<attribute name="Implementation-Version" value="${manifest.impl.version}"/> 
+				<attribute name="Implementation-Vendor" value="${manifest.impl.vendor}"/>			
+
+				<section name="Java">
+					<attribute name="Java-Version" value="${java.version}"/>
+					<attribute name="Java-VM-Name" value="${java.vm.name}"/>
+					<attribute name="Java-VM-Version" value="${java.vm.version}"/>
+					<attribute name="Java-VM-Vendor" value="${java.vm.vendor}"/>
+				</section>
+
+			</manifest>
+			
+			<classes dir="${dir.build}" />
+
+			<lib dir="${dir.lib}" />
+
+			<fileset dir="${dir.web}">
+				<!-- web -->
+				<include name="**/*.ico" />
+				<include name="**/*.jsp" />
+				<include name="**/*.js" />
+				<include name="**/*.css" />
+
+				<!-- Portal -->
+				<include name="**/*.txt" />
+				<include name="**/*.layout" />
+				<include name="**/*.laf" />
+				<include name="**/*.shell" />
+				<include name="**/*.portlet" />
+				<include name="**/*.portal" />
+
+				<!-- Configuracion -->
+				<include name="**/*.xml" />
+				<exclude name="web.xml" />
+				<exclude name="**/skin.xml" />
+				<exclude name="**/skeleton.xml" />
+
+				<!-- Grafica -->
+				<include name="**/*.gif" />
+				<include name="**/*.png" />
+				<include name="**/*.jpg" />
+				
+				<!-- Font -->
+				<include name="**/*.eot" />
+				<include name="**/*.svg" />
+				<include name="**/*.ttf" />
+				<include name="**/*.woff" />
+
+			</fileset>
+			<fileset dir="${dir.webtemp}">
+				<!-- web -->
+				<include name="**/*.css" />
+				<include name="**/*.js" />
+				<!-- Configuracion -->
+				<include name="**/*.xml" />
+			</fileset>
+		</war>
+
+		<delete dir="${dir.temp}" />
+		<delete dir="${dir.webtemp}" />
+
+	</target>
+
+	<!-- Empaqueta war sin comprimir js y css -->
+	<target depends="compile" name="package-decompressed">
+
+		<echo message="*** PACKAGE DECOMPRESSED ***" />
+		
+		<war destfile="${dir.dist}/${dist.filename.war}" webxml="${dir.web-inf}/web.xml" 
+					manifest="${dir.meta-inf}/MANIFEST.MF" basedir="${dir.temp}">
+
+			<manifest>
+				<attribute name="Created-By" value="${manifest.vendor}"/>
+				<attribute name="Built-By" value="${user.name}"/>
+				<attribute name="Extension-name" value="${manifest.extension.name}"/>
+				<attribute name="Specification-Title" value="${manifest.spec.title}"/>
+				<attribute name="Specification-Version" value="${manifest.spec.version}"/>
+				<attribute name="Specification-Vendor" value="${manifest.vendor}"/>
+				<attribute name="Implementation-Title" value="${manifest.impl.title}"/>
+				<attribute name="Implementation-Version" value="${manifest.impl.version}"/> 
+				<attribute name="Implementation-Vendor" value="${manifest.impl.vendor}"/>			
+
+				<section name="Java">
+					<attribute name="Java-Version" value="${java.version}"/>
+					<attribute name="Java-VM-Name" value="${java.vm.name}"/>
+					<attribute name="Java-VM-Version" value="${java.vm.version}"/>
+					<attribute name="Java-VM-Vendor" value="${java.vm.vendor}"/>
+				</section>
+
+			</manifest>
+			
+			<classes dir="${dir.build}" />
+
+			<lib dir="${dir.lib}" />
+
+			<fileset dir="${dir.web}">
+				<!-- web -->
+				<include name="**/*.ico" />
+				<include name="**/*.jsp" />
+				<include name="**/*.js" />
+				<include name="**/*.css" />
+
+				<!-- Portal -->
+				<include name="**/*.txt" />
+				<include name="**/*.layout" />
+				<include name="**/*.laf" />
+				<include name="**/*.shell" />
+				<include name="**/*.portlet" />
+				<include name="**/*.portal" />
+
+				<!-- Configuracion -->
+				<include name="**/*.xml" />
+				<exclude name="web.xml" />
+
+				<!-- Grafica -->
+				<include name="**/*.gif" />
+				<include name="**/*.png" />
+				<include name="**/*.jpg" />
+				
+				<!-- Font -->
+				<include name="**/*.eot" />
+				<include name="**/*.svg" />
+				<include name="**/*.ttf" />
+				<include name="**/*.woff" />
+
+			</fileset>
+			<fileset dir="${dir.webtemp}">
+				<!-- web -->
+				<include name="**/*.css" />
+				<include name="**/*.js" />
+				<!-- Configuracion -->
+				<include name="**/*.xml" />
+			</fileset>
+		</war>
+
+
+		<delete dir="${dir.temp}" />
+		<delete dir="${dir.webtemp}" />
+
+	</target>
+
+	<target name="compress-css" depends="compile">
+		
+		<echo message="*** COMPRIMIENDO CSS's ***" />
+		
+		<xmlproperty file="${dir.web}/${dir.skin}/skin.xml"/>
+		<echo message="Concatenando CSS hacia ${file.css}" level="verbose"/>
+		<concat destfile="${dir.webtemp}/${dir.skin}/css/${file.css}" fixlastline="yes" eol="lf">
+			<filelist dir="${dir.web}/${dir.skin}/css/" files="${skin.render-dependencies.html.links.link(href)}"/>
+		</concat>
+		
+		<copy overwrite="true" file="${dir.web}/${dir.skin}/skin.xml" tofile="${dir.webtemp}/${dir.skin}/skin.xml"/>
+		
+		<!-- Comentamos todos los links CSS -->
+		<echo message="Comentando links CSS en skin.xml" level="verbose" />
+		<replaceregexp file="${dir.webtemp}/${dir.skin}/skin.xml"
+           match="(&lt;link [^&gt;]+&gt;)"
+           replace="&lt;!-- \1"
+		/>
+		
+		<!-- Agregamos el nuevo CSS que los contiene a todos -->
+		<replaceregexp file="${dir.webtemp}/${dir.skin}/skin.xml"
+           match="((\t|\s)*)&lt;/links+&gt;"
+           replace="\1    --&gt; &lt;link href=&quot;${file.css}&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;\1&lt;/links&gt;"
+		/>
+		
+		<echo message="Agregando min.js a skin.xml" level="verbose" />
+		<replaceregexp file="${dir.webtemp}/${dir.skin}/skin.xml" flags="g"
+           match="(.+)\.css"
+           replace="\1.min.css"
+		/>
+		
+		<echo message="Compresion CSS" level="verbose" />
+		<apply executable="java" parallel="false">
+			<fileset dir="${dir.webtemp}/${dir.skin}/css/" includes="${file.css}" />
+			<arg line="-jar"/>
+			<arg path="lib/yuicompressor-2.4.2.jar"/>
+			<arg line="--charset UTF-8"/>
+			<srcfile/>
+			<arg line="-o"/>
+			<mapper type="glob" from="*.css" to="${dir.webtemp}/${dir.skin}/css/*.min.css"/>
+			<targetfile/>
+		</apply>
+		
+		<echo message="All done!" />
+		
+	</target>
+	
+	<target name="compress-js" depends="compress-css">
+		
+		<echo message="*** COMPRIMIENDO JS's ***" />
+		
+		<xmlproperty file="${dir.web}/${dir.skeleton}/skeleton.xml"/>
+		<echo message="Concatenando JS hacia ${file.js}" level="verbose"/>
+		<concat destfile="${dir.webtemp}/${dir.skeleton}/js/${file.js}" fixlastline="yes" eol="lf">
+			<filelist dir="${dir.web}/${dir.skeleton}/js/" files="${skeleton.render-dependencies.html.scripts.script(src)}" />
+		</concat>
+		
+		<copy overwrite="true" file="${dir.web}/${dir.skeleton}/skeleton.xml" tofile="${dir.webtemp}/${dir.skeleton}/skeleton.xml"/>
+		
+		<!-- Comentamos todos los links JS -->
+		<echo message="Comentando links JS en skeleton.xml" level="verbose"/>
+		<replaceregexp file="${dir.webtemp}/${dir.skeleton}/skeleton.xml"
+           match="(&lt;script [^&gt;]+&gt;)"
+           replace="&lt;!-- \1"
+		/>
+		
+		<!-- Agregamos el nuevo JS que los contiene a todos -->
+		<replaceregexp file="${dir.webtemp}/${dir.skeleton}/skeleton.xml"
+           match="((\t|\s)*)&lt;/scripts+&gt;"
+           replace="\1    --&gt; &lt;script src=&quot;${file.js}&quot; type=&quot;text/javascript&quot;/&gt;\1&lt;/scripts&gt;"
+		/>
+		
+		<echo message="Agregando min.js a skeleton.xml" level="verbose"/>
+		<replaceregexp file="${dir.webtemp}/${dir.skeleton}/skeleton.xml" flags="g"
+           match="(.+)\.js"
+           replace="\1.min.js"
+		/>
+		
+		<echo message="Compresion JS" level="verbose" />
+		<apply executable="java" parallel="false">
+			<fileset dir="${dir.webtemp}/${dir.skeleton}/js/" includes="${file.js}" />
+			<arg line="-jar"/>
+			<arg path="lib/yuicompressor-2.4.2.jar"/>
+			<arg line="--charset UTF-8"/>
+			<srcfile/>
+			<arg line="-o"/>
+			<mapper type="glob" from="*.js" to="${dir.webtemp}/${dir.skeleton}/js/*.min.js"/>
+			<targetfile/>
+		</apply>
+		<echo message="All done!" />
+
+		
+	</target>
+	
+	<!-- deploying Shared library  -->
+	<target name="deploy" depends="undeploy">
+	<wldeploy action="deploy"
+	          source="${dir.dist}/${dist.filename.war}"
+			  name="EntelUIResources"
+	          user="${admin.username}"
+	          password="${admin.password}"
+	          verbose="true"
+			  library="true"
+			  appversion="${app.spec.version}"
+			  libImplVer="${app.impl.version}"
+	          adminurl="${admin.url}" targets="${admin.target}" />
+	</target>
+	
+	<target name="undeploy">
+	<wldeploy action="undeploy"
+	          name="EntelUIResources"
+	          failonerror="false"
+	          user="${admin.username}"
+	          password="${admin.password}"
+	          verbose="true"
+	          adminurl="${admin.url}" targets="${admin.target}" />
+	</target>
+
+
+	<!-- Genera WAR comprimiendo js y css -->
+	<target depends="package" name="build" />
+
+	<!-- Genera WAR sin comprimir js y css -->
+	<target depends="package-decompressed" name="build-decompressed" />
+
+	
+	
+</project>

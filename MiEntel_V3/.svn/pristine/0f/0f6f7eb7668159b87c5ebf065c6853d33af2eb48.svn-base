@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/clientes/gestionproblemas/consultahistoricoreclamops?wsdl
+#wsdl=http://esbpre.entel.cl/clientes/gestionproblemas/consultahistoricoreclamops?wsdl
+targetnamespace=http://www.esa.com/Clientes/Problemas/HistoricoReclamo/
+servicename=HistoricoReclamoService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

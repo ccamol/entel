@@ -1,0 +1,332 @@
+.tabla-trafico {
+    position: relative;
+    width: 554px;
+}
+.tabla-trafico a.icono-descarga {
+    background: url("../../img/iconos/ico-excel.gif") no-repeat scroll 1px 0 transparent;
+    color: #3A3A3A;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    padding-left: 25px;
+    position: absolute;
+    right: 0;
+    top: -35px;
+    text-decoration: underline;
+}
+
+.tabla-trafico a.icono-descarga:hover {
+    color:#577DA5;
+}
+
+.item-trafico div {
+    font-size: 0.9em;
+    height: 30px;
+    padding-top: 20px;
+}
+.item-trafico.impar div {
+    background: none repeat scroll 0 0 #EEF4FA;
+    border-bottom: 1px solid #E3E3E3;
+    border-top: 1px solid #E3E3E3;
+}
+.item-trafico.final div {
+	border-bottom: 1px solid #E3E3E3;
+}
+.item-trafico div {
+    float: left;
+}
+.item-trafico .tipo {
+    padding-left: 5px;
+    width: 90px;
+}
+.item-trafico .destino {
+    text-align: center;
+    width: 72px;
+}
+.item-trafico .fecha {
+    width: 125px;
+    text-align: center;
+}
+.item-trafico .duracion {
+    width: 74px;
+    text-align: center;
+}
+.item-trafico .unidad {
+    width: 70px;
+    text-align: center;
+}
+.item-trafico .costo {
+    text-align: center;
+    width: 55px;
+}
+.item-trafico .saldo {
+    text-align: center;
+    width: 63px;
+}
+.tabla-trafico .simplePagerNav {
+    font-size: 1.1em;
+    margin: 0 auto;
+    width: 100%;
+}
+.tabla-trafico .simplePagerContainer {
+    position: relative;
+}
+.tabla-trafico .simplePagerContainer .backPage {
+    bottom: -22px;
+    color: #3A3A3A;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    left: 20px;
+    position: absolute;
+    width: 50px;
+}
+* + html .tabla-trafico .simplePagerContainer .backPage {
+    bottom: 10px;
+}
+.tabla-trafico .simplePagerContainer .nextPage {
+    bottom: -22px;
+    color: #3A3A3A;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    position: absolute;
+    right: 20px;
+    width: 50px;
+}
+* + html .tabla-trafico .simplePagerContainer .nextPage {
+    bottom: 10px;
+}
+.tabla-trafico .simplePagerNav a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
+.tabla-trafico .simplePagerNav li {
+    float: left;
+    height: 21px;
+    margin: 2px;
+    padding-top: 3px;
+    text-align: center;
+    width: 24px;
+}
+.tabla-trafico .simplePagerNav li .desactivado {
+    display: none;
+}
+.tabla-trafico .simplePagerNav li.currentPage {
+    background: none repeat scroll 0 0 #E3EDF8;
+    border: 1px solid #CDDAE7;
+}
+DIV.header_tabla.trafico DIV.top
+{
+	background: url(../../img/tablas/tablasGrandeTop.gif) no-repeat right;
+	height: 4px;
+	margin-bottom: -3px;
+	position: relative;
+	font-size: 1px;
+	padding-right: 4px;
+	display: block;
+}.titulos{
+	font-size: 0.8em;
+}
+.tabla-trafico DIV.header_tabla DIV.main TABLE TH
+{
+	padding: 10px 0 10px 10px;
+	border-right: 1px solid #CDDAE7;
+	color: #3A3A3A;
+}
+
+
+/* pagimador *********************************/
+.ulwrapdiv{
+	display:block;
+	float:left;
+	}
+.jPaginate li .jPag-current{
+ 	border:1px solid #cddae7;
+	background:#e3edf8;
+}
+.jPaginate{
+    height:34px;
+    position:relative;
+    color:#3a3a3a;
+    font-size:12px;   
+	width:100%;
+}
+.jPaginate a{
+    line-height:15px;
+    height:18px;
+    cursor:pointer;
+    padding:2px 5px;
+    margin:2px;
+    float:left;
+    text-decoration: underline;
+}
+
+.jPaginate a:hover{
+    color:#597CA4;
+}
+
+.jPag-control-back{
+	/*position:absolute;
+	left:0px;*/
+}
+.jPag-control-front{
+	/*position:absolute;
+	top:0px;*/
+	display:block;
+}
+.jPaginate span{
+    cursor:pointer;
+}
+ul.jPag-pages{
+    float:left;
+    list-style-type:none;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+}
+ul.jPag-pages li{
+    display:inline;
+    float:left;
+    padding:0px;
+    margin:0px;
+    width:30px;
+}
+ul.jPag-pages li a{
+    float:left;
+    padding:2px 5px;
+}
+span.jPag-current{
+    cursor:default;
+    font-weight:normal;
+    line-height:15px;
+    height:14px;
+    padding:2px 5px;
+    margin:2px;
+    float:left;
+}
+ul.jPag-pages li span.jPag-previous,
+ul.jPag-pages li span.jPag-next,
+span.jPag-sprevious,
+span.jPag-snext,
+ul.jPag-pages li span.jPag-previous-img,
+ul.jPag-pages li span.jPag-next-img,
+span.jPag-sprevious-img,
+span.jPag-snext-img{
+    height:22px;
+    margin:2px;
+    float:left;
+    line-height:18px;
+}
+
+ul.jPag-pages li span.jPag-previous,
+ul.jPag-pages li span.jPag-previous-img{
+    margin:2px 0px 2px 2px;
+    font-size:12px;
+    font-weight:bold;
+        width:10px;
+
+}
+ul.jPag-pages li span.jPag-next,
+ul.jPag-pages li span.jPag-next-img{
+    margin:2px 2px 2px 0px;
+    font-size:12px;
+    font-weight:bold;
+    width:10px;
+}
+span.jPag-sprevious,
+span.jPag-sprevious-img{
+    margin:2px 0px 2px 2px;
+    font-size:18px;
+    width:15px;
+    text-align:right;
+}
+span.jPag-snext,
+span.jPag-snext-img{
+    margin:2px 2px 2px 0px;
+    font-size:18px;
+    width:15px;
+     text-align:right;
+}
+.jPag-control-front{
+	width:90px;
+	display:block;
+	float:left;
+}
+.jPag-control-back{
+	width:90px;
+	display:block;
+	float:left;
+	/*left: 24px !important;*/
+	
+}
+ul.jPag-pages li span.jPag-previous-img{
+    background:transparent url(../images/previous.png) no-repeat center right;
+            }
+ul.jPag-pages li span.jPag-next-img{
+    background:transparent url(../images/next.png) no-repeat center left;
+            }
+span.jPag-sprevious-img{
+    background:transparent url(../images/sprevious.png) no-repeat center right;
+            }
+span.jPag-snext-img{
+    background:transparent url(../images/snext.png) no-repeat center left;
+            }
+ 
+ 
+/*Estilos para alerta cuota trafico */ 
+.item-alerta-cuota {
+ font:95.5% Arial, Helvetica, sans-serif; 
+}
+.item-alerta-cuota .detalle {
+ text-align: center !important;
+}
+.item-alerta-cuota .fecha {
+ text-align: center !important;
+}
+.tabla-trafico a.icono-descarga_act {
+	background: url("../../img/iconos/ico-excel.gif") no-repeat scroll 1px 0 transparent;
+	color: #3A3A3A;
+	display: block;
+	font-size: 12px;
+	height: 20px;
+	padding-left: 25px;
+	position: absolute;
+	right: 0;
+	top: -15px;
+	text-decoration: underline;
+}
+.contenido_alerta_cuota_trafico{
+  font:95.5% Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.cuadrogris-info-excedidos {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #EDEDED;
+    display: block;
+    margin-bottom: 0;
+    margin-left: -10px;
+    margin-right: 1px !important;
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 5px;
+    text-align: center;
+    width: 216px;
+    margin-bottom:-5px !important;
+}
+.cuadrogris-info-excedidos #texto_datos_valor_adicional {
+  font-size:12px !important;
+  color: #f68e1f; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cuadrogris-info-excedidos #datos_excedidos_valor{ 
+ font-weight:bold; 
+ font-size:12px !important;
+}
+.cuadrogris-info-excedidos #texto_datos_valor_adicional_sin_datos {
+  color: #f68e1f; 
+  font-family: Arial, Helvetica, sans-serif;  
+  font-size:12px !important;
+}
+         

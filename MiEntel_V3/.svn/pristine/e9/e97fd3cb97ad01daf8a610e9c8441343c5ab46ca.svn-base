@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/vtasymktg/fidelizacion" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/vtasymktg/fidelizacion" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/vtasymktg/fidelizacion" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/vtasymktg/fidelizacion" xmlns:types="http://www.epcs.com/vtasymktg/fidelizacion/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/vtasymktg/fidelizacion/types" schemaLocation="http://10.10.20.83:7001/VENTASYMKTG/Fidelizacion/Proxies/VtasYMktgFidelizacionService?SCHEMA%2FVENTASYMKTG%2FFidelizacion%2FServicios%2FVtasYMktgFidelizacionServiceXSD"/>
+      <!-- CONSULTAR PUNTOS -->
+      <xsd:element name="ConsultarPuntosSSCCPPDocument" type="types:ConsultarPuntosSSCCPPType"/>
+      <xsd:element name="ResultadoConsultarPuntosSSCCPPDocument" type="types:ResultadoConsultarPuntosSSCCPPType"/>
+      <!-- FIN CONSULTAR PUNTOS -->
+      <!-- OBTENER CATALOGO -->
+
+      <xsd:element name="ObtenerCatalogoSSCCPPDocument" type="types:ObtenerCatalogoSSCCPPType"/>
+      <xsd:element name="ResultadoObtenerCatalogoSSCCPPDocument" type="types:ResultadoObtenerCatalogoSSCCPPType"/>
+      <!-- FIN OBTENER CATALOGO -->
+      <!-- CANJEAR PUNTOS -->
+      <xsd:element name="CanjearPuntosSSCCPPDocument" type="types:CanjearPuntosSSCCPPType"/>
+      <xsd:element name="ResultadoCanjearPuntosSSCCPPDocument" type="types:ResultadoCanjeDePuntosSSCCPPType"/>
+      <!-- FIN CANJEAR PUNTOS -->
+      <!-- REGALAR PUNTOS -->
+      <xsd:element name="RegalarPuntosSSCCDocument" type="types:RegalarPuntosSSCCType"/>
+
+      <xsd:element name="ResultadoRegalarPuntosSSCCDocument" type="types:ResultadoRegalarPuntosSSCCType"/>
+      <!-- FIN REGALAR PUNTOS -->
+      <!-- HISTORIAL -->
+      <xsd:element name="ObtenerHistorialSSCCPPDocument" type="types:ObtenerHistorialSSCCPPType"/>
+      <xsd:element name="ResultadoObtenerHistorialSSCCPPDocument" type="types:ResultadoObtenerHistorialSSCCPPType"/>
+      <!-- FIN HISTORIAL -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+
+  <WL5G3N0:message name="ConsultarPuntosSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPuntosSSCCPPDocument" name="ConsultarPuntosSSCCPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPuntosSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPuntosSSCCPPDocument" name="ResultadoConsultarPuntosSSCCPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerCatalogoSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerCatalogoSSCCPPDocument" name="ObtenerCatalogoSSCCPP"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ResultadoObtenerCatalogoSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerCatalogoSSCCPPDocument" name="ResultadoObtenerCatalogoSSCCPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CanjearPuntosSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:CanjearPuntosSSCCPPDocument" name="CanjearPuntosSSCCPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCanjearPuntosSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCanjearPuntosSSCCPPDocument" name="ResultadoCanjearPuntosSSCCPP"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="RegalarPuntosSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:RegalarPuntosSSCCDocument" name="RegalarPuntosSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoRegalarPuntosSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoRegalarPuntosSSCCDocument" name="ResultadoRegalarPuntosSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerHistorialSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerHistorialSSCCPPDocument" name="ObtenerHistorialSSCCPP"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ResultadoObtenerHistorialSSCCPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerHistorialSSCCPPDocument" name="ResultadoObtenerHistorialSSCCPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="VtasYMktgFidelizacionServicePortType">
+    <WL5G3N0:operation name="ConsultarPuntosSSCCPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPuntosSSCCPPMessage"/>
+
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPuntosSSCCPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerCatalogoSSCCPP">
+      <WL5G3N0:input message="WL5G3N1:ObtenerCatalogoSSCCPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerCatalogoSSCCPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CanjearPuntosSSCCPP">
+      <WL5G3N0:input message="WL5G3N1:CanjearPuntosSSCCPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCanjearPuntosSSCCPPMessage"/>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegalarPuntosSSCC">
+      <WL5G3N0:input message="WL5G3N1:RegalarPuntosSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoRegalarPuntosSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerHistorialSSCCPP">
+      <WL5G3N0:input message="WL5G3N1:ObtenerHistorialSSCCPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerHistorialSSCCPPMessage"/>
+    </WL5G3N0:operation>
+
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="VtasYMktgFidelizacionServiceBinding" type="WL5G3N1:VtasYMktgFidelizacionServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarPuntosSSCCPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/vtasymktg/fidelizacion/ConsultarPuntosSSCCPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerCatalogoSSCCPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/vtasymktg/fidelizacion/ObtenerCatalogoSSCCPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CanjearPuntosSSCCPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/vtasymktg/fidelizacion/CanjearPuntosSSCCPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegalarPuntosSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/vtasymktg/fidelizacion/RegalarPuntosSSCC"/>
+      <WL5G3N0:input>
+
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerHistorialSSCCPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/vtasymktg/fidelizacion/ObtenerHistorialSSCCPP"/>
+
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+
+  <WL5G3N0:service name="VtasYMktgFidelizacionService">
+    <WL5G3N0:port binding="WL5G3N1:VtasYMktgFidelizacionServiceBinding" name="VtasYMktgFidelizacionServicePortType">
+      <WL5G3N2:address location="http://OSB11G:7001/VENTASYMKTG/Fidelizacion/Proxies/VtasYMktgFidelizacionService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/cliente/problema" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/cliente/problema" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/cliente/problema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/cliente/problema" xmlns:types="http://www.epcs.com/cliente/problema/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/cliente/problema/types" schemaLocation="http://10.10.20.83:7001/CLIENTES/Problema/Proxies/ClienteProblemaService?SCHEMA%2FCLIENTES%2FProblema%2FServicios%2FClienteProblemaServiceXSD"/>
+      <!-- OBTENER ORDENES DE TRABAJO -->
+      <xsd:element name="ObtenerOrdenesDeTrabajoDocument" type="types:ObtenerOrdenesDeTrabajoType"/>
+      <xsd:element name="ResultadoObtenerOrdenesDeTrabajoDocument" type="types:ResultadoObtenerOrdenesDeTrabajoType"/>
+      <!-- FIN OBTENER ORDENES DE TRABAJO -->
+      <!-- ACEPTAR RECHAZAR PRESUPUESTO -->
+
+      <xsd:element name="AceptarRechazarPresupuestoDocument" type="types:AceptarRechazarPresupuestoType"/>
+      <xsd:element name="ResultadoAceptarRechazarPresupuestoDocument" type="types:ResultadoAceptarRechazarPresupuestoType"/>
+      <!-- FIN ACEPTAR RECHAZAR PRESUPUESTO -->
+      <!-- OBTENER PRESUPUESTO -->
+      <xsd:element name="ObtenerPresupuestoDocument" type="types:ObtenerPresupuestoType"/>
+      <xsd:element name="ResultadoObtenerPresupuestoDocument" type="types:ResultadoObtenerPresupuestoType"/>
+      <!-- FIN OBTENER PRESUPUESTO -->
+      <!-- OBTENER OT INDIVIDUAL -->
+      <xsd:element name="ObtenerOrdenTrabajoIndividualDocument" type="types:ObtenerOrdenTrabajoIndividualType"/>
+
+      <xsd:element name="ResultadoObtenerOrdenTrabajoIndividualDocument" type="types:ResultadoObtenerOrdenTrabajoIndividualType"/>
+      <!-- FIN OBTENER OT INDIVIDUAL -->
+      <!-- HISTORIAL OT -->
+      <xsd:element name="ConsultarHistorialOTDocument" type="types:ConsultarHistorialOTType"/>
+      <xsd:element name="ResultadoConsultarHistorialOTDocument" type="types:ResultadoConsultarHistorialOTType"/>
+      <!-- FIN HISTORIAL OT -->
+      <!-- CONSULTAR OT VIGENTES -->
+      <xsd:element name="ConsultarOTVigentesDocument" type="types:ConsultarOTVigentesType"/>
+      <xsd:element name="ResultadoConsultarOTVigentesDocument" type="types:ResultadoConsultarOTVigentesType"/>
+
+      <!-- FIN CONSULTAR OT VIGENTES -->
+      <!-- OBTENER INFORME TECNICO -->
+      <xsd:element name="ObtenerInformeTecnicoDocument" type="types:ObtenerInformeTecnicoType"/>
+      <xsd:element name="ResultadoObtenerInformeTecnicoDocument" type="types:ResultadoObtenerInformeTecnicoType"/>
+      <!-- FIN OBTENER INFORME TECNICO -->
+      <!-- OBTENER DOCUMENTO APERTURA -->
+      <xsd:element name="ObtenerDocumentoAperturaDocument" type="types:ObtenerDocumentoAperturaType"/>
+      <xsd:element name="ResultadoObtenerDocumentoAperturaDocument" type="types:ResultadoObtenerDocumentoAperturaType"/>
+      <!-- FIN OBTENER DOCUMENTO APERTURA -->
+
+      <!-- CONSULTAR SERVICIO TECNICO -->
+      <xsd:element name="ConsultarServicioTecnicoMPTDocument" type="types:ConsultarServicioTecnicoMPTType"/>
+      <xsd:element name="ResultadoConsultarServicioTecnicoMPTDocument" type="types:ResultadoConsultarServicioTecnicoMPTType"/>
+      <!-- FIN CONSULTAR SERVICIO TECNICO -->
+      <!-- DOCUMENT AUTH HEADER -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ObtenerOrdenesDeTrabajoMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ObtenerOrdenesDeTrabajoDocument" name="ObtenerOrdenesDeTrabajo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerOrdenesDeTrabajoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerOrdenesDeTrabajoDocument" name="ResultadoObtenerOrdenesDeTrabajo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AceptarRechazarPresupuestoMessage">
+    <WL5G3N0:part element="WL5G3N1:AceptarRechazarPresupuestoDocument" name="AceptarRechazarPresupuesto"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAceptarRechazarPresupuestoMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoAceptarRechazarPresupuestoDocument" name="ResultadoAceptarRechazarPresupuesto"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerPresupuestoMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerPresupuestoDocument" name="ObtenerPresupuesto"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerPresupuestoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerPresupuestoDocument" name="ResultadoObtenerPresupuesto"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerOrdenTrabajoIndividualMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ObtenerOrdenTrabajoIndividualDocument" name="ObtenerOrdenTrabajoIndividual"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerOrdenTrabajoIndividualMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerOrdenTrabajoIndividualDocument" name="ResultadoObtenerOrdenTrabajoIndividual"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarHistorialOTMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarHistorialOTDocument" name="ConsultarHistorialOT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarHistorialOTMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarHistorialOTDocument" name="ResultadoConsultarHistorialOT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarOTVigentesMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarOTVigentesDocument" name="ConsultarOTVigentes"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarOTVigentesMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarOTVigentesDocument" name="ConsultarOTVigentes"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerInformeTecnicoMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ObtenerInformeTecnicoDocument" name="ObtenerInformeTecnico"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerInformeTecnicoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerInformeTecnicoDocument" name="ResultadoObtenerInformeTecnico"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerDocumentoAperturaMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerDocumentoAperturaDocument" name="ObtenerDocumentoApertura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerDocumentoAperturaMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerDocumentoAperturaDocument" name="ResultadoObtenerDocumentoApertura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarServicioTecnicoMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarServicioTecnicoMPTDocument" name="ConsultarServicioTecnicoMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarServicioTecnicoMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarServicioTecnicoMPTDocument" name="ResultadoConsultarServicioTecnicoMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ClienteProblemaServicePortType">
+    <WL5G3N0:operation name="ObtenerOrdenesDeTrabajo">
+      <WL5G3N0:input message="WL5G3N1:ObtenerOrdenesDeTrabajoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerOrdenesDeTrabajoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AceptarRechazarPresupuesto">
+      <WL5G3N0:input message="WL5G3N1:AceptarRechazarPresupuestoMessage"/>
+
+      <WL5G3N0:output message="WL5G3N1:ResultadoAceptarRechazarPresupuestoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerPresupuesto">
+      <WL5G3N0:input message="WL5G3N1:ObtenerPresupuestoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerPresupuestoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerOrdenTrabajoIndividual">
+      <WL5G3N0:input message="WL5G3N1:ObtenerOrdenTrabajoIndividualMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerOrdenTrabajoIndividualMessage"/>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarHistorialOT">
+      <WL5G3N0:input message="WL5G3N1:ConsultarHistorialOTMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarHistorialOTMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarOTVigentes">
+      <WL5G3N0:input message="WL5G3N1:ConsultarOTVigentesMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarOTVigentesMessage"/>
+    </WL5G3N0:operation>
+
+    <WL5G3N0:operation name="ObtenerInformeTecnico">
+      <WL5G3N0:input message="WL5G3N1:ObtenerInformeTecnicoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerInformeTecnicoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerDocumentoApertura">
+      <WL5G3N0:input message="WL5G3N1:ObtenerDocumentoAperturaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerDocumentoAperturaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarServicioTecnicoMPT">
+
+      <WL5G3N0:input message="WL5G3N1:ConsultarServicioTecnicoMPTMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarServicioTecnicoMPTMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ClienteProblemaServiceBinding" type="WL5G3N1:ClienteProblemaServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ObtenerOrdenesDeTrabajo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ObtenerOrdenesDeTrabajo"/>
+      <WL5G3N0:input>
+
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AceptarRechazarPresupuesto">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/AceptarRechazarPresupuesto"/>
+
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerPresupuesto">
+
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ObtenerPresupuesto"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+
+    <WL5G3N0:operation name="ObtenerOrdenTrabajoIndividual">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ObtenerOrdenTrabajoIndividual"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarHistorialOT">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ConsultarHistorialOT"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarOTVigentes">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ConsultarOTVigentes"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerInformeTecnico">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ObtenerInformeTecnico"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerDocumentoApertura">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ObtenerDocumentoApertura"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarServicioTecnicoMPT">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/problema/ConsultarServicioTecnicoMPT"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ClienteProblemaService">
+    <WL5G3N0:port binding="WL5G3N1:ClienteProblemaServiceBinding" name="ClienteProblemaServicePort">
+
+      <WL5G3N2:address location="http://OSB11G:7001/CLIENTES/Problema/Proxies/ClienteProblemaService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

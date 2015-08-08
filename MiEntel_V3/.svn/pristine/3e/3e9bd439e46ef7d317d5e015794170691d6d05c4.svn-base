@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/ventasymarketing/fidelizacion/zona/scr3ps?WSDL
+#wsdl=http://esbpre.entel.cl/ventasymarketing/fidelizacion/zona/scr3ps?WSDL
+targetnamespace=http://www.epcs.com/ventas/fidelizacion
+servicename=zonaBamService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

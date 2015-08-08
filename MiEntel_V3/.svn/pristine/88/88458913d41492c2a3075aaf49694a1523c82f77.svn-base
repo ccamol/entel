@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/clientes/gestiondeperfiles/preot/fallasps?wsdl
+targetnamespace=http://www.epcs.com/cliente/problema
+servicename=preIngresoOtService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

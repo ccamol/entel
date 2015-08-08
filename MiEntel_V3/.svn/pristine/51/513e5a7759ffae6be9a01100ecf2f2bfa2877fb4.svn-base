@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/integracionit/monitoreomediacion/consultaseguimientops?wsdl
+targetnamespace=http://www.epcs.com/integracion/seguimientotrafservice
+servicename=SeguimientoTrafServiceService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

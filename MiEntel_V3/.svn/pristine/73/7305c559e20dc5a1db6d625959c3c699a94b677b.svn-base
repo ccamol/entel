@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/provisionyentrega/administracionsuscripcion/bolsasppmientel/scobbolsasppps?wsdl
+targetnamespace=http://www.epcs.com/Provision/Suscripcion/bolsaspp
+servicename=SCOBPortTypeSOAPBindingQSService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

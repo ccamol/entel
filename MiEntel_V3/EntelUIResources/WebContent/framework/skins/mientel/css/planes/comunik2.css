@@ -1,0 +1,296 @@
+.td_especial {
+    background: none repeat scroll 0 0 #EEF4FA;
+    border-right: 1px solid #CDDAE7;
+    font-size: 11px;
+    padding: 5px 0;
+    text-align: center;
+}
+.tabla-azul .correccion_padding {
+    padding: 6px 0 6px 10px !important;
+}
+.fuente_normal {
+    background: none repeat scroll 0 0 #EEF4FA;
+    border-right: 1px solid #CDDAE7;
+    padding: 5px 0;
+    text-align: center;
+}
+.tabla_precios {
+    clear: both;
+    display: block;
+    position: relative;
+}
+.tabla_precios .contenido_tabla .correccion_texto {
+    font-size: 11px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.tabla_precios .alinear_izquierda {
+    text-align: left !important;
+}
+.tabla_precios .alinear_centro {
+    text-align: center !important;
+}
+.tabla_precios .tabla_precios_cambio {
+    margin: 10px 0 0;
+}
+* html .tabla_precios .tabla_precios_cambio {
+    position: relative;
+}
+.prepago_exito_edicion {
+    background: none repeat scroll 0 0 #DDF0D9;
+    border-bottom: 1px solid #BED7BC;
+    border-top: 1px solid #BED7BC;
+    display: block;
+    padding: 8px;
+    position: relative;
+}
+.prepago_confirmar_edicion {
+    background: none repeat scroll 0 0 #FFF1A8;
+    border-bottom: 1px solid #CFC489;
+    border-top: 1px solid #CFC489;
+    display: block;
+    font-size: 11px !important;
+    padding: 5px;
+    position: relative;
+}
+.prepago_confirmar_edicion span {
+    display: block;
+    font-size: 11px;
+    font-weight: bolder;
+}
+.prepago_exito_edicion span {
+    display: block;
+    font-weight: bolder;
+    margin: 0 0 8px;
+}
+.prepago_confirmar_edicion .enlace_comunik2, .prepago_confirmar_edicion .enlace_comunik2:visited {
+    color: #3A3A3A;
+}
+.prepago_exito_edicion .enlace_comunik2, .prepago_exito_edicion .enlace_comunik2:visited {
+    color: #3A3A3A;
+}
+.prepago_confirmar_edicion .formulario_ingresar {
+    display: block;
+    padding: 5px 0;
+}
+.prepago_confirmar_edicion .campo1 {
+    display: block;
+    float: left;
+    padding: 4px 0;
+    width: 70px !important;
+}
+.prepago_confirmar_edicion .campo2 {
+    display: block;
+    float: left;
+    padding: 4px 0;
+    width: 130px !important;
+}
+.prepago_confirmar_edicion .ubicador_boton {
+    display: block;
+    float: left;
+    width: 140px !important;
+}
+.prepago_confirmar_edicion .ubicador_boton .cancelar {
+    color: #444444;
+    font-weight: bolder;
+    margin: 8px 0 0 7px;
+}
+.prepago_confirmar_edicion .ubicador_boton .cancelar:hover {
+    color: #597CA4;
+}
+.prepago_confirmar_edicion .ubicador_boton span {
+    width: auto !important;
+}
+.botonera_comunik2 {
+    width: 150px;
+}
+.titulo_opciones {
+    display: block;
+    font-weight: bolder;
+    margin: 8px 0 15px;
+}
+.caso_ingresar .formulario_ingresar {
+    padding: 5px 0;
+}
+.caso_ingresar .formulario_ingresar .ubicador_boton {
+    display: block;
+    float: left;
+    margin: -4px 0 0;
+}
+.dato_tabla {
+    display: block;
+    float: left;
+    padding: 6px 0 0;
+}
+.dato_tabla strong {
+    display: block;
+    float: left;
+    padding: 6px 0 0;
+}
+.botones_tabla {
+    display: block;
+    float: right;
+    margin: 0 10px 0 0;
+}
+.botonera_caso_nuevo {
+    display: block;
+    float: right;
+    margin: 0 10px 0 0;
+}
+.botonera .botonEliminar {
+    color: #3A3A3A;
+    font-weight: normal;
+    margin: 6px 0 0 5px;
+}
+.colorEnlace {
+    color: #3A3A3A;
+    font-weight: normal;
+    padding: 5px 0 0 5px;
+}
+.mensaje_numero {
+    display: block;
+    float: left;
+    width: 218px;
+}
+* html .mensaje_numero {
+    width: 190px;
+}
+.mensaje_numero_eliminar {
+    display: block;
+    float: left;
+    font-weight: bolder;
+    padding: 0 0 10px;
+    width: 300px;
+}
+.mensaje_numero_tabla {
+    display: block;
+    float: left;
+    font-weight: bolder;
+    width: 380px;
+}
+.mensaje_tabla {
+    display: block;
+    float: right;
+    margin: 7px 33px 0 0;
+}
+* html .mensaje_tabla {
+    margin: 7px 0 0 45px;
+}
+.div_exito {
+    background-color: #DDF0D9;
+    border-bottom: 1px solid #BED7BC;
+    border-top: 1px solid #BED7BC;
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 2px 10px 10px;
+}
+.div_no_fondos {
+    background-color: #FFF1A8;
+    border-bottom: 1px solid #CFC489;
+    border-top: 1px solid #CFC489;
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 6px 10px 0;
+}
+.div_no_fondos a, .div_no_fondos a:visited {
+    color: #3A3A3A;
+}
+.div_numero_eliminar {
+    background-color: #FFF1A8;
+    border-bottom: 1px solid #CFC489;
+    border-top: 1px solid #CFC489;
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 6px 10px 0;
+}
+.numero_eliminar {
+    display: block;
+    float: left;
+    margin: 0 20px 0 0;
+}
+.edicion {
+    background: none repeat scroll 0 0 #FFF1A8;
+    padding: 10px !important;
+}
+.edicion_aceptada {
+    background: none repeat scroll 0 0 #FFF1A8;
+    padding: 10px !important;
+}
+.mensaje_invitado_comunik2 {
+    background: none repeat scroll 0 0 #BDE5F8;
+    border-bottom: 1px solid #3399CC;
+    border-top: 1px solid #3399CC;
+    margin: 0 0 25px;
+    padding: 10px 0;
+}
+* html .mensaje_invitado_comunik2 {
+    margin: 0 0 25px;
+}
+:first-child + html .mensaje_invitado_comunik2 {
+    margin: 0 0 25px;
+}
+.mensaje_invitado_comunik2 .titulo_resaltado {
+    background: url("../../img/icons/ico_informacion.png") no-repeat scroll 90px top transparent;
+    color: #004A8C;
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 3px 10px 0 130px;
+}
+* html .mensaje_invitado_comunik2 .titulo_resaltado {
+    background: url("../../img/icons/ico_informacion.gif") no-repeat scroll 90px top transparent;
+}
+.mensaje_invitado_comunik2 .titulo_resaltado span {
+    display: block;
+    font-weight: normal;
+    margin: 5px 0 0;
+}
+.mensaje_invitado_comunik2 .titulo_resaltado a, .mensaje_invitado_comunik2 .titulo_resaltado a:visited {
+    background: url("../../img/icons/ico_azul.gif") no-repeat scroll right top transparent;
+    color: #004A8C;
+    padding: 0 25px 0 0;
+    text-decoration: underline;
+}
+.margen_comunik2 {
+    display: block;
+    margin: 10px 0 0;
+}
+.correccion_margen {
+    margin-top: 10px !important;
+}
+
+h3.title_historial_comunik2 {
+   background: url("../../img/iconos/iconosHistorico.gif")no-repeat scroll 6px 1px transparent; 
+   font-weight:normal;
+}
+
+h2.icon_comunik2_solicitud {
+    background: url("../../img/iconos/iconosComunicado.gif") no-repeat scroll left center transparent;   
+    color: #064687;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    padding: 0 0 5px 2px;
+    font-weight:normal;
+}
+
+h3.title_historial_comunik2 a {	
+    color: #3a3a3a;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 0 0 5px 2px;
+    font-weight:normal;
+}
+
+h3.title_historial_comunik2 a:hover {	
+    color:#597CA4;
+}
+
+div.debes_saber_comunik2 {
+    background: url("../../img/debessaber.gif") no-repeat scroll 3px 3px transparent;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0 0 5px 100px;
+}

@@ -1,0 +1,37 @@
+.btnCancelar {
+    color: #3A3A3A;
+    font-size: 12px;
+    font-weight: bolder;
+	padding:0 0 0 10px;
+}.sin_icono_aut{
+	padding:0 0 2px 0 !important;
+    font-weight: bolder;
+}.texto_aut{
+	padding:10px 0 20px 0;
+}.texto_aut a{
+	color:#0073ae;
+	text-decoration:none;
+}.texto_aut a:hover{
+	color:#0073ae;
+	text-decoration:underline;
+}.box_mensaje_aut{
+	padding:0 0 20px 0;
+}.box_mensaje_body{	
+	border-top:1px solid #CDDAE7;
+	border-left:1px solid #CDDAE7;
+	border-right:1px solid #CDDAE7;	
+	background:#e3edf8;
+	padding:10px 10px 10px 10px;
+}.box_mensaje_aut_txt{
+	background: url(../../img/icons/ico_informacion.png) no-repeat ;
+	padding:5px 0 6px 27px;
+    font-weight: bolder;
+	color:#064687;
+    font-size: 12px;
+	float:left;	
+}.box_mensaje_aut_numero{
+	float:right;	
+}.box_mensaje_aut_btm{
+	background: url(../../img/bottom_aviso_flecha.png) no-repeat center top ;
+	height:9px;
+}

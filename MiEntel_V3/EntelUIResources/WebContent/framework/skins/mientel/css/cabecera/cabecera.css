@@ -1,0 +1,372 @@
+/*---------------------
+  		CABECERA
+  ---------------------*/
+
+  .cabeceraAlternaSinMensaje{
+	display:block;
+	width:966px;
+	padding-top:8px;
+	margin: 0 0 14px 0 !important;
+	min-height:inherit;
+	background: none repeat scroll 0 0 #E7EDF0;
+	height:auto !important;
+}
+
+#cabecera.versionPrueba{    
+	padding-top:0;
+}
+   .cabeceraAlterna{
+    display:block;
+    background:url(../../img/cabecera/cabeceraAlternabg.gif) top center no-repeat;
+    width:966px;
+    font-size:1.2em;
+    height:52px;
+    color: #FFFFFF;
+    display: block;
+    margin: 5px 0px !important;
+    padding:15px 0 0 !important;
+   }
+   .cabeceraAlterna p{
+    margin:0px 60px !important;
+   }
+   .cabeceraAlterna a{
+    color:#FFFFFF;
+    font-weight:bold;
+   }
+   .mensajeServicio {    
+      background: none repeat scroll 0 0 #DDF0D9;
+      border-bottom: 1px solid #BED7BC;
+      border-top: 1px solid #BED7BC;
+      color: #000000;
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+   }
+   .mensajeServicio p{
+      margin:5px 0;
+   }
+   .mensajeServicio a{
+      color: #3a3a3a;
+      font-weight:normal;
+   } 
+   .mensajeServicio a:hover{
+      color:#577DA5;
+   }
+
+.cabeceraAlterna a:hover{
+	color:#3A3A3A;
+}
+ 
+#cabecera {
+	display:block;
+	width:966px;
+	padding-top:8px;
+	margin:0;
+	min-height:inherit;
+	background:#e7edf0 !important;
+	height:auto !important;
+}
+
+#cabecera .cabecera-top {
+	background:url(../../img/cabecera/cabeceraBg.gif) bottom left no-repeat;
+	display:block;	
+	padding-bottom:10px;
+	position:relative;
+}
+
+#cabecera-top ul {
+	float: left;
+}
+
+/*---------------------
+  	 	  LOGO
+  ---------------------*/
+  
+#cabecera .cabecera-bottom {
+	background:url(../../img/cabecera/cabeceraContenedorBg.gif) top left repeat-y;
+	padding:25px 13px 25px 13px;
+}
+
+#cabecera .cabecera-logo .logo {
+	float:left;
+	display:block;
+}
+
+#cabecera #logo-Entel {
+	background:url(../../img/cabecera/cabeceraLogoEntel.gif) top left no-repeat;
+	width:220px;
+	height:55px;
+	display:block;
+}
+
+#cabecera #logo-Entel:hover {
+	background-position:left bottom;
+}
+
+#cabecera .cabecera-logo .enlace-sesion {
+	float: right;
+	display: block;
+}
+
+#cabecera .cabecera-logo .enlace-sesion span {
+	display: block;
+	text-align: right;
+	color: #0073ae;
+	font-size: 1.6em;
+	font-weight: bolder;
+}
+
+#cabecera .cabecera-logo .enlace-sesion a.cerrar-sesion,
+#cabecera .cabecera-logo .enlace-sesion a.cerrar-sesion:visited {
+	float: right;
+	color: #3A3A3A;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#cabecera .cabecera-logo .enlace-sesion a.enlace-contacto-header:hover {
+	color: #597CA4;
+}
+
+#cabecera .cabecera-logo .enlace-sesion a.enlace-contacto-header,
+#cabecera .cabecera-logo .enlace-sesion a.enlace-contacto-header:visited {
+	float: right;
+	color: #3A3A3A;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#cabecera .cabecera-logo .enlace-sesion a.cerrar-sesion:hover {
+	color: #597CA4;
+}
+
+
+
+/*---------------------
+ * 	 MENU PRINCIPAL
+ *-------------------*/
+ 
+#cabecera-menu {
+	background:url(../../img/cabecera/cabeceraContenedorBg.gif) top left repeat-y;
+	padding:0 13px 20px 13px;
+	display:block;
+	width:940px;
+}
+
+#cabecera-menu.fake {
+	padding:5px 13px 22px;
+}
+
+/*---------------------
+  		TABS
+ --------------------*/
+ 
+#cabecera .cabecera-tabs {
+	display:block;
+	float:left;	
+	position:absolute;
+	bottom:0;	
+	padding-left:10px;
+}
+
+* html #cabecera .cabecera-tabs {
+	bottom:-1px;
+}
+
+#cabecera .cabecera-tabs ul li {
+	display:block;
+	float:left;
+	padding-right:3px;
+}
+
+#cabecera .cabecera-tabs ul li.primerTab {
+	padding-left:3px;
+}
+
+#cabecera .cabecera-tabs ul li.primerTab.seleccionado {
+	padding-left:0px;
+}
+
+#cabecera .cabecera-tabs ul li a {
+	display:block;
+	background:url(../../img/cabecera/cabeceraTab.gif) right -34px no-repeat;
+	padding-right:6px;
+	height:34px;	
+	color:#499bc5;
+	font-family:Tahoma;
+	font-size:11px;
+	text-align:center;
+	text-decoration:none;
+	
+}* html #cabecera .cabecera-tabs ul li a {
+	float:left;
+}
+
+#cabecera .cabecera-tabs ul li a span {
+	display:block;
+	background:url(../../img/cabecera/cabeceraTab.gif) top left no-repeat;
+	padding:10px 7px 11px 13px;
+}
+
+#cabecera .cabecera-tabs ul li a:hover {
+	background:url(../../img/cabecera/cabeceraTab.gif) right bottom no-repeat;
+	color:#0073ae;
+}
+
+#cabecera .cabecera-tabs ul li a:hover span {
+	background:url(../../img/cabecera/cabeceraTab.gif) left -68px no-repeat;
+}
+
+/*---------------------
+     SELECTED TABS
+ --------------------*/
+
+#cabecera .cabecera-tabs ul li.seleccionado a,
+#cabecera .cabecera-tabs ul li.seleccionado a:hover {
+	display:block;
+	background:url(../../img/cabecera/cabeceraTabSeleccionado.gif) bottom right no-repeat;
+	padding-right:6px;
+	height:34px;	
+	color:#0073ae;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bolder;
+	text-align:center;
+	text-decoration:none;
+}
+
+#cabecera .cabecera-tabs ul li.seleccionado a span {
+	display:block;
+	background:url(../../img/cabecera/cabeceraTabSeleccionado.gif) top left no-repeat;
+	padding:10px 7px 11px 13px;
+}
+
+* html #cabecera .cabecera-tabs ul li.seleccionado a:hover span {
+	background:url(../../img/cabecera/cabeceraTabSeleccionado.gif) top left no-repeat !important;
+}
+
+#cabecera .cabecera-tabs ul li.seleccionado {
+	margin:0 -2px;
+}
+
+#cabecera .cabecera-tabs ul li.primerTab.seleccionado {
+	margin:0 -2px 0 0;
+}
+
+#cabecera .cabecera-tabs ul li.primerTab.seleccionado a span {
+	background:url(../../img/cabecera/cabeceraTabPrimeroSeleccionado.gif);
+}
+
+* html #cabecera .cabecera-tabs ul li.primerTab.seleccionado a span {
+	background:url(../../img/cabecera/cabeceraTabPrimeroSeleccionado.gif);
+}
+
+
+/*---------------------
+   ENLACES SUPERIORES
+  ---------------------*/
+ 
+#cabecera .cabecera-enlaces {
+	float:right;
+	display:block;
+	color:#0073ae;
+	padding:2px 13px 0 0;
+}
+
+#cabecera .cabecera-enlaces ul li {
+	background:none;
+	float:left;
+	display:block;
+}
+
+#cabecera .cabecera-enlaces a {
+	font-family:Tahoma;
+	font-size:11px;
+	color:#0073ae;
+	text-decoration:none;
+}
+
+#cabecera .cabecera-enlaces a:hover {
+	text-decoration:underline;
+}
+
+#cabecera .cabecera-enlaces img {
+	position:relative;
+	top:-2px;
+	padding:7px 5px 0 5px;
+}
+
+/*---------------------
+         MENU FAKE
+  ---------------------*/
+ 
+#cabecera-menu .menu-principal {
+	background:#0073ae;
+	width:940px;
+	display:block;
+}
+
+#cabecera-menu .menu-principal-top,
+#cabecera-menu .menu_principal_tabs_top,
+#cabecera-menu .menu-principal-bottom {
+	height:2px;
+	display:block;
+	font-size:1px;
+}
+
+* html #cabecera-menu .menu_principal_tabs_top {
+	background:url(../../img/cabecera/cabeceraMenuTop.gif) top left no-repeat;
+}
+
+* html #cabecera-menu .menu-principal-top {
+	background:url(../../img/cabecera/cabeceraMenuTop.gif) top left no-repeat;
+}
+
+#cabecera-menu .menu-principal-bottom {
+	background:url(../../img/cabecera/cabeceraMenuBottom.png) top left no-repeat;
+}
+
+* html #cabecera-menu .menu-principal-bottom {
+	background:url(../../img/cabecera/cabeceraMenuBottom.gif) top left no-repeat;
+}
+
+#cabecera-menu .menu-principal-main {
+	padding:1px 0;
+	margin:-4px;
+}
+
+.mensajeServicio {
+    background: none repeat scroll 0 0 #DDF0D9;
+    border-bottom: 1px solid #BED7BC;
+    border-top: 1px solid #BED7BC;
+    color: #000000;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#cabecera .cabecera-logo .enlace-sesion a.enlace-reclamo-header:hover {
+	color: #597CA4;
+}
+
+#cabecera .cabecera-logo .enlace-sesion a.enlace-reclamo-header,
+#cabecera .cabecera-logo .enlace-sesion a.enlace-reclamo-header:visited {
+	float: right;
+	color: #3A3A3A;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.dbn_row_comp_datos_excedidos {
+    background: none repeat scroll 0 0 transparent !important;
+    display: block;
+    list-style: none outside none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom:10px !important;
+    padding:15px 0 0;
+    font-size: 11px;
+    padding-top: 10px !important;    
+}

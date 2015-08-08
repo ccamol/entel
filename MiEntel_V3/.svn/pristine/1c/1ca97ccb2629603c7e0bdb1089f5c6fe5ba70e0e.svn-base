@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netuix:markupDefinition
+  xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0 markup-netuix-1_0_0.xsd">
+  <netuix:locale language="es" />
+  <netuix:markup>
+    <netuix:layout markupType="Layout" markupName="3col_layout" title="3col"
+    skeletonUri="/framework/customSkeletons/3col.jsp" 
+    htmlLayoutUri="/framework/markup/layout/3col.html.txt" 
+    iconUri="" 
+    description=""
+    >
+      <netuix:placeholder markupType="Placeholder" markupName="3col_layout_left" title="Placeholder izquierdo"
+        usingFlow="false" width="20%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_layout_center" title="Placeholder Central"
+        usingFlow="false" width="60%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_layout_right" title="Placeholder Derecho"
+        usingFlow="false" width="20%">
+      </netuix:placeholder>
+    </netuix:layout>
+  </netuix:markup>
+</netuix:markupDefinition>

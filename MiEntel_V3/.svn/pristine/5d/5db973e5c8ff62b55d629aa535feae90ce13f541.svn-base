@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/gestionderecursos/gestionconfiguracion/compatibilidadsimlte/consultarcompatibilidadsimlteservice?WSDL
+targetnamespace=http://services.wsconsultasim.allware.cl/
+servicename=ConsultasWS
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

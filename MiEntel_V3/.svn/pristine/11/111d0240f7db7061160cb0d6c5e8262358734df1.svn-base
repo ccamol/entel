@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/Loyalty/zonaTerceros/proxies/PSConsultaEstado?wsdl
+targetnamespace=http://www.epcs.com/Loyalty/zonaTerceros/WSLoyalty
+servicename=consultaEstadoTCService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

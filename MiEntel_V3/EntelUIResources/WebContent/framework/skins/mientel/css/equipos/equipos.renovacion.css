@@ -1,0 +1,478 @@
+div.cuadro_remarcado {
+	display: block;
+	padding: 8px;
+	margin: 15px 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #c1c1c1;
+}
+div.cuadro_remarcado span {
+	font-size: 1.2em;
+}
+div.cuadro_remarcado span.orange {
+	color: #f78e1e;
+}
+div.cuadro_remarcado div.texto_cuadro {
+	display: block;
+	padding: 5px 0 0 0;
+	font-size:1.1em;
+}
+div.cuadro_remarcado span {
+	font-size: 1.2em;
+}
+div.cuadro_remarcado span.orange {
+	color: #f78e1e;
+}
+
+div.listado,
+span.listado {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	background: url(../../img/icons/ico_bullet_azul.gif) left center no-repeat;
+	padding: 3px 0 5px 8px;
+	margin: 10px 0;
+}
+
+span.ico_interrogacion {
+	display: block;
+	float: left;
+	margin: 0 3px 0 0;
+}
+
+span.texto {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+.caja_mensaje_verde {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	padding: 10px;
+	border-bottom: 1px solid #bed7bc;
+	border-top: 1px solid #bed7bc;
+	margin: 10px 0 25px;
+	background: #ddf0d9;
+}
+
+.contenido_oferta {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	margin: 0 0 25px 0;
+}
+.contenido_oferta a,
+.contenido_oferta a:visited {
+	color: #3a3a3a;
+	padding: 0 0 0 5px;
+	font-weight: bolder;
+}
+.contenido_oferta a:hover {
+	text-decoration: none;
+}
+
+.contenido_oferta a.enlaceExterno {
+	padding: 0 15px 0 0;
+	background: url(../../img/icons/ico_enlace_externo.gif) right center no-repeat;
+	color:#3a3a3a;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.contenido_oferta a.enlaceExterno:hover {
+	color: #597CA4;
+}
+
+.contenido_oferta span.enlaceExterno a,
+.contenido_oferta span.enlaceExterno a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3a3a3a;
+}
+
+.contenido_oferta span.enlaceExterno a:hover {
+	text-decoration: none;
+}
+
+.boton_formulario {
+	display: block;
+	margin: 20px 0;
+}
+
+.boton_formulario span.texto {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	padding: 12px 0 0;
+}
+
+.contenido #exitoEnvio {
+	display: none;
+	padding: 10px 0 5px;
+	font-size: 1.8em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton_formulario .exitoEnvio span.texto_grande {
+	display: block;
+	font-size: 1.8em;
+}
+
+.boton_formulario .exitoEnvio span.texto_chico {
+	display: block;
+	font-size: 1.2em;
+}
+
+/*
+ * Estilso de los desplegables
+ */
+.desplegable {
+	display: block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #e3e3e3;
+	border-top: 1px solid #e3e3e3;
+	margin: 10px 0 0;
+}
+.impar_despelgable {
+	background: #f5f5f5;
+}
+.par {
+	border-bottom: none;
+	border-top: none;
+}
+.desplegable_ultimo {
+	border-bottom: 1px solid #e3e3e3;
+}
+.desplegable .desplegable_colapsado {
+	/*cursor: pointer;*/
+}
+.desplegable .titulo_cabecera {
+	display: block;
+	float: left;
+	font-weight: bolder;
+}
+.desplegable .titulo_cabecera_formulario {
+	display: block;
+	float: left;
+	padding: 6px 0 0;
+	font-size: 1.2em;
+}
+.desplegable .desplegable_colapsado .icon {
+	display: block;
+	float: left;
+	margin: 2px 0 0 0; 
+	width: 11px;
+	height: 11px;
+	background: url(../../img/icons/icon_open.gif) top left no-repeat;
+}
+
+.desplegable .desplegable_colapsado .contenido {
+	display: block;
+	float: left;
+	margin: 0 0 0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+.desplegable .desplegable_abierto {
+	display: block;
+}
+
+.desplegable .desplegable_abierto .icon {
+	display: block;
+	float: left;
+	margin: 2px 0 0 0; 
+	width: 11px;
+	height: 11px;
+	background: url(../../img/icons/icon_close.gif) top left no-repeat;
+}
+
+.desplegable_cerrardo_click,
+.desplegable_abierto_click {
+	display: block;
+	float: right;
+}
+
+.desplegable .desplegable_abierto .contenido {
+	display: block;
+	float: left;
+	margin: 0 0 0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.desplegable .desplegable_abierto a.enlace_desplegable,
+.desplegable .desplegable_abierto a.enlace_desplegable:visited,
+.desplegable .desplegable_colapsado a.enlace_desplegable_cerrado,
+.desplegable .desplegable_colapsado a.enlace_desplegable_cerrado:visited {
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3a3a3a;
+	margin: 0 0 0 5px;
+	font-size: 12px;
+	text-decoration: underline;
+}
+a.enlace_desplegable:hover{
+    text-decoration: underline  !important;
+	color:#597CA4 !important;
+}
+
+
+.desplegable .desplegable_abierto .contenido a.enlace_desplegable:hover,
+.desplegable .desplegable_colapsado .contenido a.enlace_desplegable_cerrado:hover {
+	text-decoration: underline  !important;
+	color:#597CA4 !important;
+}
+
+.desplegable .desplegable_abierto .contenido span.texto_desplg {
+	display: block;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 15px 0 0 5px;
+}
+
+.desplegable .desplegable_abierto .contenido span.texto_desplg label {
+	display: block;
+	float: left;
+	width: 100px;
+}
+.desplegable .desplegable_abierto .contenido span.texto_desplg label.derecha {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 120px;
+}
+
+
+.desplegable .desplegable_abierto .contenido table.tabla-azul-renovacion {
+	width: 480px;
+}
+
+.desplegable .desplegable_abierto .contenido table.tabla-azul-renovacion tr.cabecera th {
+	border-right: 1px solid #CDDAE7;
+	color: #3A3A3A;
+	padding: 13px 0 14px 10px;
+}
+
+.desplegable .desplegable_abierto .contenido .final_tabla {
+	display: block;
+	margin: 5px 0 0 0;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 20px 0 10px;
+}
+
+.desplegable .desplegable_abierto .contenido .final_tabla .label {
+	display: block;
+	float: left;
+	width: 375px;
+}
+
+.desplegable .desplegable_abierto .contenido .final_tabla .valor {
+	display: block;
+	float: left;
+}
+
+.desplegable .desplegable_abierto .contenido span.mensaje {
+	display: block;
+	color: #979797;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	padding: 15px 10px 0 10px;
+}
+
+/*
+ * Estilos Formulario
+ */
+.formulario_datos {
+	display: block;
+	width: 522px;
+	margin: 5px 0 20px;
+}
+
+.formulario_datos .titulo_formulario {
+	display: block;
+	padding: 0 0 5px 0;
+}
+
+.formulario_datos .titulo_formulario .titulo {
+	display: block;
+	float: left;
+	color: #064687;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+}
+
+.formulario_datos .titulo_formulario .enlace_modificar {
+	display: block;
+	float: right;
+	padding: 0 0 1px 18px;
+	background: url(../../img/icons/ico_lapiz.gif) top left no-repeat;
+}
+
+.formulario_datos .titulo_formulario .enlace_cancelar {
+	display: block;
+	float: right;
+	padding: 0 0 0 18px;
+	background: url(../img/icons/ico_equis.gif) top left no-repeat;
+}
+
+.formulario_datos .titulo_formulario .enlace_modificar a,
+.formulario_datos .titulo_formulario .enlace_modificar a:visited,
+.formulario_datos .titulo_formulario .enlace_cancelar a,
+.formulario_datos .titulo_formulario .enlace_cancelar a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #3a3a3a;
+	text-decoration: underline;
+}
+
+.formulario_datos .titulo_formulario .enlace_modificar a:hover,
+.formulario_datos .titulo_formulario .enlace_cancelar a:hover {
+	color: #577DA5 !important;
+	text-decoration: underline !important;
+}
+
+.formulario_datos .contenido_datos {
+	display: block;
+	padding: 10px 0;
+}
+.formulario_datos .contenido_datos .contenedor_datos_fijos {
+	display: block;
+	padding: 0 0 15px 0;
+}
+.formulario_datos .contenido_datos .contenedor_datos_fijos .dato {
+	display: block;
+	float: left;
+	width: 210px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+.formulario_datos .contenido_datos .contenedor_datos_fijos .dato label.titulo {
+	font-weight: bolder;
+}
+
+.formulario_datos .contenido_datos div.dato_formulario {
+	display: block;
+	padding: 5px 0;
+}
+
+.formulario_datos .contenido_datos div.dato_formulario_grande {
+	display: block;
+	padding: 8px 0;
+}
+
+.formulario_datos .contenido_datos div span.dato {
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	width: 210px;
+}
+
+.formulario_datos .contenido_datos div .valor {
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bolder;
+	position: relative;
+}
+
+.formulario_datos .contenido_datos div .valor .valor_left {
+	display: block;
+	float: left;
+	width: 140px;
+	padding: 0 5px 0 0;
+}
+
+.formulario_datos .contenedor_botones_formulario {
+	display: block;
+	padding: 10px 0 0 205px;
+}
+
+.formulario_datos .contenedor_botones_formulario span.texto {
+	display: block;
+	float: left;
+	padding: 12px 0 0 10px;
+}
+
+.formulario_datos .contenedor_botones_formulario a.btnAzulGrande {
+	float: left;
+}
+
+.formulario_datos .contenedor_botones_formulario span.texto a,
+.formulario_datos .contenedor_botones_formulario span.texto a:visited {
+	color: #3a3a3a !important;
+	text-decoration: underline !important;
+}
+
+.formulario_datos .contenedor_botones_formulario span.texto a:hover {
+	color: #577DA5 !important;
+	text-decoration: underline !important;
+}
+
+/*
+ * Mensaje de error
+ */
+.globoError .mensaje_error {
+	display: block;
+	padding: 17px 0 0 45px;
+	color: #E30101;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em; 
+	font-weight: bolder;
+}
+
+/*
+ * Formatos
+ */
+.ico_interrogacionNuevo {
+	background:transparent url(../../img/icons/ico_interrogacion.gif) no-repeat scroll left center;
+	display:block;
+	float:left;
+	height:16px;
+	margin:0 0 0 5px;
+	width:16px;
+}
+
+/*
+ * Venta BAM
+ */
+.contenido_ventas {
+	display: block;
+	margin: 0 0 10px 0;
+}
+.contenido_ventas .caja_venta {
+	display: block; 
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	width: 250px;
+	margin: 0 25px 10px 0;
+}
+.contenido_ventas .caja_venta.ultima {
+	margin: 0 0 25px 0;
+}
+
+.contenido_ventas .caja_venta  span {
+	display: block;
+	min-height: 65px;
+	padding: 8px 0 8px 80px;
+}
+.contenido_ventas .caja_venta  span.velocidad {
+	background: url(../../img/bam/velocidad.jpg) top left no-repeat;
+} 
+.contenido_ventas .caja_venta  span.movilidad {
+	background: url(../../img/bam/movilidad.jpg) top left no-repeat;
+} 
+.contenido_ventas .caja_venta  span.informacion {
+	background: url(../../img/bam/informacion.jpg) top left no-repeat;
+} 
+.contenido_ventas .caja_venta  span.conectado {
+	background: url(../../img/bam/conectado100.jpg) top left no-repeat;
+} 

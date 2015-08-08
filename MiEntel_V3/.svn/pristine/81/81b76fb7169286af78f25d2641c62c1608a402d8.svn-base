@@ -1,0 +1,22 @@
+# build.properties v1.0
+# Propiedades para adaptacion de la generacion/compilacion de WebServices
+# basados en JAX-WS para WebLogic Server 10.x/11g.
+
+
+# Nombre del Servicio (tal como aparece en el elemento wsdl:service). Debe
+# coincidir con el nombre del WSDL sin la extension .wsdl
+# Por ejemplo: 
+# wsdl.file=CatalogoFacturacionService.wsdl  
+wsdl.file=ERPSeguridadService.wsdl
+
+# Nombre del Servicio (tal como aparece en el elemento wsdl:service). Debe
+# coincidir con el nombre del WSDL sin la extension .wsdl
+# Por ejemplo: 
+# wsdl.service.name=CatalogoFacturacionService  
+wsdl.service.name=ERPGestionDeSeguridadService
+
+
+# Nombre del archivo .ear (sin extension)
+# Por ejemplo:
+# ear.name=CatalogoFacturacionService
+ear.name=ERPGestionDeSeguridadService

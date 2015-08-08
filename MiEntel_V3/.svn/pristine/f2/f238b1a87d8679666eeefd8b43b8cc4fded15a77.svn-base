@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mientel">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="mientel-uup-ejb.jar" deploy-path="/" handle="module:/classpath/lib/mientel-web-app/WebContent/WEB-INF/lib/mientel-uup-ejb.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ClientePerfilService-client.jar" deploy-path="/" handle="module:/classpath/lib/mientel-web-app/WebContent/WEB-INF/lib/ClientePerfilService-client.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mientel-web-app.war" deploy-path="/" handle="module:/resource/mientel-web-app/mientel-web-app">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

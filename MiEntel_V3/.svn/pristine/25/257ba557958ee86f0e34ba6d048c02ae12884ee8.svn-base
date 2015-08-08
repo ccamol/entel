@@ -1,0 +1,34 @@
+<table class="portalLayout" id="thePortalLayout" width="100%" height="100%">
+	<tr>
+		<td class="placeholderTD" valign="top" width="20%">
+			<placeholder number="0"/>
+		</td>
+		<td valign="top" colspan="2" width="60%" >
+			<table width="100%" height="100%">
+				<tr>
+					<td class="placeholderTD" valign="top" width="100%">
+						<placeholder number="1"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="placeholderTD" valign="top" width="100%" >
+						<placeholder number="2"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="placeholderTD" valign="top" width="100%">
+						<placeholder number="3"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="placeholderTD" valign="top" width="100%">
+						<placeholder number="4"/>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class="placeholderTD" valign="top" width="20%">
+			<placeholder number="5"/>
+		</td>
+	</tr>
+</table>

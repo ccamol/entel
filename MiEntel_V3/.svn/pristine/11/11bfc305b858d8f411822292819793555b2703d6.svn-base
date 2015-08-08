@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/provisionyentrega/gestionsuscripcion/serviciossegmentate/clientservicestatusps?wsdl
+#wsdl=http://esbpre.entel.cl/provisionyentrega/gestionsuscripcion/serviciossegmentate/clientservicestatusps?wsdl
+targetnamespace=http://www.esa.com/Provision/Suscripcion/ServiciosSegmentate
+servicename=ClientServiceStatusService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

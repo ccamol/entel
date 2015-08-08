@@ -1,0 +1,190 @@
+#centro h2.ico_grafico,
+#centroCompleto h2.ico_grafico {
+	background:url(../../img/icons/ico_graf.gif) 6px 4px no-repeat;
+}
+/*----------------------------------------
+ 		   Tooltips para Tablas
+ ----------------------------------------*/
+a.autoTextoTooltip {
+	background:none !important;
+	color:#444;
+	border-bottom:1px dotted #444;
+	text-decoration:none;
+	font-size:12px !important;
+	font-weight:normal !important;
+	padding:0px !important;
+}
+
+div.tooltip1 a.tooltipCerrar {
+	position:absolute;
+	top:8px;
+	right:8px;
+	background:url(../../img/tooltips/ico_x.gif) center right no-repeat;
+	height:14px;
+	display:block;
+	padding-right: 18px;
+	text-decoration:none;
+	color:#444;
+	font-size:1em;
+}
+/*----------------------------------------
+ 			Estructura Tarifaria
+ ----------------------------------------*/
+div.estructuraTarifaria h2 {
+	background:url(../../img/icons/ico_superchip.gif) no-repeat scroll 0 3px;
+}
+div.estructuraTarifaria .info {
+	display:block;
+	padding:5px 0 15px 0;
+}
+div.estructuraTarifaria .info div {
+	float:left;
+	display:block;
+	margin-left:30px;
+	padding-left:20px;
+	font-size:1.2em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.estructuraTarifaria .info .ico_saldo {
+	background:url(../../img/icons/ico_saldo.gif) center left no-repeat;
+}
+* html div.estructuraTarifaria .info .ico_saldo {
+	margin-left:15px;
+}
+div.estructuraTarifaria .info .ico_cal {
+	background:url(../../img/icons/ico_cal.gif) center left no-repeat;
+}
+
+div.estructuraTarifaria .header_tabla,
+div.estructuraTarifaria .contenido_tabla,
+div.estructuraTrafico .header_tabla,
+div.estructuraTrafico .contenido_tabla {
+	font-size:1.2em;
+}
+div.estructuraTarifaria .header_tabla th.bordeInferior,
+div.estructuraTrafico .header_tabla th.bordeInferior {
+	border-bottom:1px solid #CBD9E6;
+	padding-right:0 !important;
+	margin:0 !important;
+}
+div.estructuraTarifaria .header_tabla th,
+div.estructuraTrafico .header_tabla th {
+	padding:7px 4px !important;
+	text-align:center;
+}
+.header_tabla th span.hasta {
+	font-size:0.9em;
+}
+div.estructuraTarifaria .header_tabla th span {
+	float:right;
+	display:block;
+}
+div.estructuraTarifaria .contenido_tabla td,
+div.estructuraTrafico .contenido_tabla td {
+	text-align:center;
+	padding:10px 0;
+	font-size:0.8em;
+}
+
+/*----------------------------------------
+ 			Estructura Trafico
+ ----------------------------------------*/
+.estructuraTrafico {
+	display:block;
+	padding-top:20px;
+}
+.estructuraTrafico .tabla {
+	padding-bottom:20px;
+}
+.estructuraTrafico h4 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	color:#3a3a3a;
+	padding-bottom:5px;
+}
+
+div.header_tabla div.main.trafico {
+    font-size: 1.0em !important;
+}
+
+/*----------------------------------------
+ 				Varios
+ ----------------------------------------*/
+div.estructuraTarifaria .disclaimer {
+	color:#9C9C9C;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:1.1em;
+	padding:10px 0;
+}
+div.estructuraTrafico .contenido_tabla td.subtitulo {
+	text-align:right;
+	font-weight:bolder;
+	padding-right:15px;
+	font-size:1em;
+}
+div.estructuraTrafico .contenido_tabla tr.impar td {
+	background:#eef4fa;
+	border-bottom:1px solid #e3e3e3;
+	border-top:1px solid #e3e3e3;
+}
+div.estructuraTarifaria .separador {
+	display:block;
+	height:25px;
+}
+
+div.estructuraTrafico .contenido_tabla.align_left td {
+	text-align:left;
+	padding-left:10px;
+}
+
+/**------------------------**/
+div.cont_dual {
+	display:block;
+	color:#3a3a3a;
+	width:548px;
+	/*margin-top:20px;*/
+}
+div.cont_dual div.dual_top {
+	display:block;
+	background:url(../../img/table/bg_tablaDual_top.gif) no-repeat;
+	height:4px;
+	font-size:1px;
+}
+div.cont_dual div.dual_uno {
+	background:#e3edf8;
+	border-left:1px solid #cddae7;
+	border-right:1px solid #cddae7;
+	text-align:center;
+	padding:10px;
+	font-size:1.2em;
+}
+div.cont_dual div.dual_dos {
+	background:url(../../img/table/bg_tablaDual_bottom.gif) no-repeat bottom;
+	display:block;
+	font-size:1.1em;
+}
+div.cont_dual div.dual_dos div {
+	float:left; 
+	display:block;
+	width:180px;
+	padding:8px 0 8px 0px;
+	text-align:center;
+	border-right:1px solid #cddae7;
+}
+div.cont_dual div.dual_dos div.dual_ultimo {
+	border:none;
+}
+div.dual_tres {
+	width:548px;
+	display:block;
+}
+div.dual_tres div {
+	float:left;
+	display:block;
+	width:180px;
+	padding:8px 0 8px 0;
+	text-align:center;
+	border-bottom:1px solid #e3e3e3;
+	font-size:1.2em;
+	color:#3a3a3a;
+}

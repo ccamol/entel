@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/provisionyentrega/gestionsuscripcion/sagen/eliminarsuscripcionps?wsdl
+targetnamespace=http://www.epcs.com/provision/suscripcion/WSSagenService
+servicename=eliminarSuscripcionService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false
+

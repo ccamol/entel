@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12974366559690" configfile="/mientel-web-app/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="370" id="pf12979592036800" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/cuenta/formMisDatos" x="338" y="178" id="pf12979592036952" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" path="/portlet/cuenta/formMisDatos.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/cuenta/tablaMisUsuarios" id="pf12985577946722" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" path="/portlet/cuenta/tablaMisUsuarios.faces"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/errores/error" id="pf12985578433285" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" path="/portlet/errores/error.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/errores/error0005" id="pf12985579112667" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" path="/portlet/errores/error0005.jsp"/>
+</pageflow:Pageflow>

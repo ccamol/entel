@@ -1,0 +1,449 @@
+	
+	/*///////////////////////////////////*/
+	/*
+	Hoja de estilos Entel proyecto marca(estrella) V1.0
+	Desarrollado por Webforms
+	
+	*/
+	/*///////////////////////////////////*/	
+
+	#container_entel_visa{
+	display: block;
+	width:660px;
+	height: auto;
+	background-image: url(../../img/ofertaVisa/fondo_principal.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color:#fff;
+	position: relative;
+	top:16px;
+	right: 5px;
+	*padding:0 0 10px 0 !important;
+	_padding:0 0 10px 0 !important;
+
+	}	
+
+	#header_entel_visa{
+	display: block;
+	width:608px;
+	height: 106px;
+	margin:0 auto;
+	text-align: left;
+	}
+	
+	#header_entel_visa .nombre_entel_visa{
+	display:inline-block;
+	float: left;
+	width: 300px;
+	height: 30px;
+	margin:15px 0 0 0;
+	}
+	
+	#header_entel_visa .nombre_entel_visa p{
+	font-family: 'MyriadProBlackcondensed' !important;
+	letter-spacing: 1px;
+	font-size: 21pt !important;
+	color: #66FFFF;
+	margin: 0;
+	}
+	
+	#header_entel_visa .numero_entel_visa{
+	display:inline-block;
+	float: right;
+	width: 150px;
+	height: 30px;
+	margin:20px 0 0 0;
+	text-align: right;
+	}
+	
+	#header_entel_visa .numero_entel_visa p{
+	font-family: Arial !important;
+	font-size: 15px !important;
+	font-weight: bold !important;
+	color: #FFFFFF;
+	margin: 0;
+	}
+	
+	#header_entel_visa .sl_entel_visa{
+	display:inline-block;
+	float: left;
+	width: 520px;
+	height: 60px;
+	margin:35px 0 0 0;
+	}
+	
+	
+	
+	.sl_entel_visa p{
+	display: block;
+	font-family:Arial, Helvetica, sans-serif !important ;
+	color: #FFFFFF !important;
+	}
+	
+	.arriba_entel_visa{
+	font-size: 28px !important;
+	font-weight: bold !important;
+	margin:0;
+	}
+	
+	.zona_entel_visa{
+	display:inline-block;
+	float: right;
+	width: 83px;
+	height: 59px;
+	margin:25px 0 0 0;
+	}
+	
+	.subtitulo_entel_visa{
+	display: block;
+	width:608px;
+	height:auto;
+	margin:15px auto 15px auto;	
+	}
+	
+	.subtitulo_entel_visa p{
+	text-align:left  !important;
+	font-size:20px !important;
+	font-family:'MyriadProSemibold' !important;
+	color: #006699;
+	margin: 0;
+	}
+	
+	.vinetas_entel_visa{
+	clear:both !important;
+	display:inline-block !important;
+	float: left !important;
+	width:auto !important;
+	height: auto !important;
+	margin:0 0 0 30px !important;
+	_margin:0 0 0 12px !important;
+	text-align:left !important;
+	}
+	
+	.vinetas_entel_visa ul{
+	margin:0 !important;
+	padding:0 !important;
+	}
+	
+	
+	.vinetas_entel_visa li{
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	color: #006699 !important;
+	list-style:none !important;
+	padding-top:7px !important;
+	*padding-top:3px !important;
+	_padding-top:3px !important;
+	}
+	
+	.vinetas_entel_visa li img{
+	vertical-align:-3px !important;
+	padding-right:5px !important;
+	}
+	
+	.vinetas_entel_visa li a,.vinetas_entel_visa li a:link,.vinetas_entel_visa li a:hover,.vinetas_entel_visa li a:active{
+    color:#006699 !important;
+	font-weight:bold !important;
+	}
+	
+	.vinetas_entel_visa .no-imagen_entel_visa{
+	padding-left:22px;
+	padding-top:0px;
+	*padding-top:-2px;
+	_padding-top:-2px;
+	}
+	
+	
+	.tarjeta_entel_visa{
+	display:inline-block;
+	float: left;
+	width:auto;
+	height:auto;
+	margin:20px 0 0 0;
+	}
+	
+	
+	.check_entel_visa {
+	clear:both;
+	*clear:none !important;
+	_clear:none !important;
+	display:inline-block;
+	float: left;
+	height: 20px;
+	margin: 10px 0 10px 0;
+	*margin:0;
+	_margin:0;
+	text-align: right;
+	width: auto;
+	}
+	
+	.check_entel_visa p {
+	font-family: Arial,Helvetica,sans-serif !important;
+	font-size: 11px !important;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+	.check_entel_visa input{
+	vertical-align: -2px;
+	margin-left: 0;
+	}
+	
+	
+	.logos_entel_visa{
+	display:inline-block;
+	float:right;
+	width:auto;
+	margin: 70px 20px 10px 0;
+	*margin: 70px 20px -5px 0;
+	_margin: 70px 10px -5px 0 ;
+	}
+	
+	
+	.disc_entel_visa{
+	clear:both;
+	display: block;
+	width:608px;
+	height:auto;
+	margin:15px auto 0 auto;
+	text-align:left;
+	border-top:solid 1px #999;
+	*padding:10px 0 10px 0 !important;
+	_padding:10px 0 10px 0 !important;
+	
+	}
+	
+	
+	
+	
+	 /*////////////// Ver términos//////////////////*/
+ 
+.ver-terminos_entel_visa {
+    display: block;
+    float: right;
+    height: 20px;
+    margin: 13px 0 0;
+    *margin:0;
+	_margin:0;
+    text-align: right;
+    width: 190px;
+}
+ 
+  .ver-terminos_entel_visa a{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 0;
+    cursor: pointer;
+ }
+  
+   .ver-terminos_entel_visa img{
+	vertical-align: bottom;
+	margin: 0 0 0 2px;
+ }
+ 
+  .terminos_entel_visa{
+ 	display: block;
+   width:660px;
+   height: 0;
+   position: absolute;
+   z-index: 10000;
+   background-color: #fff;
+   top: 118px;
+   left: 0px;
+   text-align: left;
+ }
+ 
+.terminos_uno_entel_visa{
+	height: 390px;
+	
+}
+ 
+.terminos_dos_entel_visa{
+	height:370px;
+	*height:365px;
+	_height:365px;
+
+}
+
+.terminos_tres_entel_visa{
+	height:370px;
+	*height:365px;
+	_height:365px;
+
+}
+
+
+ .into_entel_visa{
+ 	margin:0 22px 0 0;
+ 	_margin:0 12px 0 0;
+ }
+ 
+ .terminos_entel_visa h1{
+ 	display:block;
+ 	float: left;
+   width: 300px;
+ 	font-family: Arial;
+   font-size: 14px;
+   color: #000000;
+   font-weight:bold;
+   margin:0 0 0 10px;
+   _margin:0 0 0 6px;
+ }
+ 
+.terminos_entel_visa ul {
+    display: block;
+    left: 5px;
+    margin: 0 20px 0 0;
+    padding:0;
+    position: absolute;
+    top: 25px;
+}
+ 
+.terminos_entel_visa li {
+    color: #000000;
+    font-family: Arial;
+    font-size:11px;
+    line-height: 1.8;
+    *line-height: 1.6;
+    _line-height: 1.9;
+    list-style: none outside none;
+    margin: 5px 0 0 10px;
+    padding:0;
+ }
+ 
+ .terminos_entel_visa li a{
+    color: #000000;
+    text-decoration: underline;
+ }
+ 
+  
+.terminos_entel_visa li img{
+  vertical-align: -3px;
+  margin-right: 3px;
+ }
+  
+ 
+  .terminos_entel_visa .no-image_entel_visa{
+   margin:0 0 0 28px;
+   list-style: none;
+ }
+  
+/*//////////////////////////////*/ 
+
+.sucursales_entel_visa{
+	display:inline-block;
+	float: left;
+	width:auto;
+	height: auto;
+	margin:10px 0 0 10px;
+	_margin:20px 0 0 10px; !important;
+	text-align:left;
+	}
+	
+	.sucursales_entel_visa h1{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FF6600; 
+	font-size:12px;
+	margin:0;
+	padding:0;
+	}
+	.sucursales_entel_visa ul{
+	margin:0;
+	padding:0;
+	}
+	
+	
+	.sucursales_entel_visa li{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #006699;
+	list-style:none;
+	padding-top:7px;
+	*padding-top:3px;
+	_padding-top:3px;
+	}
+	
+	.sucursales_entel_visa li img{
+	vertical-align:-5px;
+	padding-right:0;
+	}
+	
+	.sucursales_entel_visa .no-imagen_entel_visa{
+	padding-left:22px;
+	padding-top:0px;
+	*padding-top:-2px;
+	_padding-top:-2px;
+	}
+		
+	.volver_entel_visa{
+		clear:both;
+		display:inline-block;
+		float:left;
+		text-align:left;
+		width:100px;
+		padding:0 0 10px 20px; 
+		
+		*padding:10px 0 10px 16px !important;
+		_padding:10px 0 10px 22px !important;
+
+		}
+	
+	.volver_entel_visa a,.volver_entel_visa a:link,.volver a:hover,.volver_entel_visa a:active{
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+    color:#006699;
+	font-weight:bold;
+	}
+	
+	
+   .subtitulo_entel_visa_dashboard{
+	display: block;
+	width:165px;
+	height:auto;
+	padding:1px 5px 15px 5px;	
+	}
+	
+	.subtitulo_entel_visa_dashboard p{
+	text-align:left  !important;
+	font-size:15px !important;
+	font-family:'MyriadProSemibold' !important;
+	color: #006699;
+	margin: 0;
+	}
+	
+	.tarjeta_entel_visa_dashboard {
+	    display: inline-block;	    
+	    height: auto;
+	    margin: 10px 5px -20px 100px;
+	    width: auto;
+	}
+	
+
+.cajalinks .cabecera_nueva_azul {
+	background: url(../../img/ofertaVisa/bgHeaderAzul.gif) no-repeat;
+}	
+
+@font-face
+{
+font-family: 'MyriadProBlackCondensed';
+src: url('../../css/font_face/myriadpro-black-webfont.eot');
+src: url('../../css/font_face/myriadpro-black-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../css/font_face/myriadpro-black-webfont.woff') format('woff'),
+url('../../css/font_face/myriadpro-black-webfont.ttf') format('truetype'),
+url('../../css/font_face/myriadpro-black-webfont.svg#MyriadProBlackCondensed') format('svg');
+}
+
+@font-face
+{
+font-family: 'MyriadProSemibold';
+src: url('../../css/font_face/myriadpro-semibold-webfont.eot');
+src: url('../../css/font_face/myriadpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../css/font_face/myriadpro-semibold-webfont.woff') format('woff'),
+url('../../css/font_face/myriadpro-semibold-webfont.ttf') format('truetype'),
+url('../../css/font_face/myriadpro-semibold-webfont.svg#MyriadProSemibold') format('svg');
+}

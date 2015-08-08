@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MiEntel</display-name>
+  <filter>
+    <filter-name>Authentication Filter</filter-name>
+    <filter-class>com.epcs.recursoti.configuracion.filter.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Authentication Filter</filter-name>
+    <url-pattern>/sesionContexto.do</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>Session Check Filter</filter-name>
+    <filter-class>com.epcs.recursoti.configuracion.filter.SessionCheckFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Session Check Filter</filter-name>
+    <url-pattern>/app/*</url-pattern>
+    <url-pattern>/appmanager/*</url-pattern>
+    <url-pattern>/image</url-pattern>
+  </filter-mapping>
+  <context-param>
+    <description>Valores true|false.Si la propiedad es true, al entrar directamente a mientel v3, debe redirigir a el login de mientel v2</description>
+    <param-name>REDIRECTTOENTEL</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <context-param>
+    <description>Log4j properties file</description>
+    <param-name>log4j.propertiesFile</param-name>
+    <param-value>mientel_log4j</param-value>
+  </context-param>
+  <context-param>
+    <description>MiEntel properties file</description>
+    <param-name>miEntel.resources.baseName</param-name>
+    <param-value>miEntel</param-value>
+  </context-param>
+  <context-param>
+    <param-name>com.sun.faces.enableRestoreView11Compatibility</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+    <param-value>server</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.faces.CONFIG_FILES</param-name>
+    <param-value>/WEB-INF/faces-config.xml,/WEB-INF/faces-beans.xml,/WEB-INF/faces-navigation.xml</param-value>
+  </context-param>
+  <jsp-config>
+    <taglib>
+      <taglib-uri>http://i2b.cl/jsf/iterator/</taglib-uri>
+      <taglib-location>/WEB-INF/tld/IteratorTag.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MyAppManagerServlet</servlet-name>
+    <servlet-class>com.bea.netuix.servlets.manager.PortalServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyAppManagerServlet</servlet-name>
+    <url-pattern>/app/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/faces/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>*.faces</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.epcs.recursoti.configuracion.listener.MiEntelServletContextListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>image</servlet-name>
+    <servlet-class>com.epcs.recursoti.configuracion.servlet.Image</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletAreas</servlet-name>
+    <servlet-class>com.epcs.recursoti.configuracion.servlet.ServletAreas</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAreas</servlet-name>
+    <url-pattern>/ServletAreas</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/errorPage.faces</location>
+  </error-page>
+  <servlet>
+    <description>Servlet para cierre de WebPay</description>
+    <display-name>PagoWebPayServlet</display-name>
+    <servlet-name>PagoWebPayServlet</servlet-name>
+    <servlet-class>com.epcs.recursoti.configuracion.servlet.PagoWebPayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PagoWebPayServlet</servlet-name>
+    <url-pattern>/webpay/pagoWebPay</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DetalleLlamadosPDFServlet</display-name>
+    <servlet-name>DetalleLlamadosPDFServlet</servlet-name>
+    <servlet-class>com.epcs.dashboard.mensajes.controller.DetalleLlamadosPDFServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetalleLlamadosPDFServlet</servlet-name>
+    <url-pattern>/detalleLlamadosPDF</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Entrega informacion de app Mi Entel</description>
+    <display-name>MiEntelInfoServlet</display-name>
+    <servlet-name>MiEntelInfoServlet</servlet-name>
+    <servlet-class>com.epcs.recursoti.configuracion.servlet.MiEntelInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MiEntelInfoServlet</servlet-name>
+    <url-pattern>/MiEntelInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChartFacturacionImageServlet</display-name>
+    <servlet-name>ChartFacturacionImageServlet</servlet-name>
+    <servlet-class>com.epcs.recursoti.configuracion.servlet.ChartFacturacionImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChartFacturacionImageServlet</servlet-name>
+    <url-pattern>/ChartFacturacionImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChartFacturacionFullImageServlet</display-name>
+    <servlet-name>ChartFacturacionFullImageServlet</servlet-name>
+    <servlet-class>com.epcs.recursoti.configuracion.servlet.ChartFacturacionFullImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChartFacturacionFullImageServlet</servlet-name>
+    <url-pattern>/ChartFacturacionFullImageServlet</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>7</session-timeout>
+  </session-config>
+  
+  <servlet>
+    <description></description>
+    <display-name>HistoriasAlertaCuotaTraficoXLSServlet</display-name>
+    <servlet-name>HistoriasAlertaCuotaTraficoXLSServlet</servlet-name>
+    <servlet-class>com.epcs.billing.registrouso.controller.HistoriasAlertaCuotaTraficoXLSServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HistoriasAlertaCuotaTraficoXLSServlet</servlet-name>
+    <url-pattern>/historialACTXLS</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HistorialBolsasXLSServlet</display-name>
+    <servlet-name>HistorialBolsasXLSServlet</servlet-name>
+    <servlet-class>com.epcs.historial.bolsas.HistorialBolsasXLSServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HistorialBolsasXLSServlet</servlet-name>
+    <url-pattern>/historialBolsasXLS</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>TraficoEnLineaXLSServlet</display-name>
+    <servlet-name>TraficoEnLineaXLSServlet</servlet-name>
+    <servlet-class>com.epcs.billing.registrouso.controller.TraficoEnLineaXLSServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TraficoEnLineaXLSServlet</servlet-name>
+    <url-pattern>/traficoEnLineaXLS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MinimizarBanner</servlet-name>
+  	<servlet-class>com.epcs.nba.NBAController2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MinimizarBanner</servlet-name>
+  	<url-pattern>/MinimizarBanner/*</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>NotificacionesSesion</display-name>
+    <filter-name>NotificacionesSesion</filter-name>
+    <filter-class>com.epcs.recursoti.configuracion.filter.NotificacionesSesion</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>NotificacionesSesion</filter-name>
+    <url-pattern>/notificacionesSesion.do</url-pattern>
+  </filter-mapping>
+</web-app>

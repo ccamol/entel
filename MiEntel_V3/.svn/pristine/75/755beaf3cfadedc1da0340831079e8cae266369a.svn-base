@@ -1,0 +1,66 @@
+div#lightbox-centro {
+    display: inline;
+    float: left;
+    margin: 0 20px;
+    width: 450px;
+}
+
+div#lightbox-centro.mcafee {
+    display: inline;
+    float: left;
+    margin: 0 20px;
+    width: 600px;
+    height: 500px;
+    overflow: auto;
+}
+
+#lightbox-centro h1 {
+    background: url("../../img/sitio/sitioBulletH2.gif") no-repeat scroll 0 4px transparent;
+    color: #064687;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 0 0 20px 15px;
+}
+
+#lightbox-centro .contenido_parrafos {
+    display: block;
+    margin: 0 0 20px;
+}
+
+#lightbox-centro p {
+    margin: 0 0 10px;
+}
+
+
+div#lightbox-centro P {
+	color: #444444;
+    font-size: 1.2em;
+}
+
+div.debes-saber-pin {
+    background: url("../../img/dashboard/dashboardDebesSaber.gif") no-repeat scroll 3px 3px transparent;
+    margin-bottom: 70px;
+    padding-left: 100px;
+}
+
+#lightbox-centro div.debes-saber-pin {
+    margin: 0 0 12px;
+    padding: 5px 0 0 78px;
+}
+
+#lightbox-centro .debes-saber-pin div.img {
+    float: left;
+    height: 70px;
+}
+
+#lightbox-centro .debes-saber-pin div.contenido {
+    color: #3A3A3A;
+    float: left;
+    padding: 0 0 0 15px;
+    width: 350px;
+}
+
+#lightbox-centro .debes-saber-pin div.contenido p{
+    padding: 0 0 10px;
+}

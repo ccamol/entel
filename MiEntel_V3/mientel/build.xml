@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="MiEntelEAR">
+
+	<!-- build.properties -->
+	<property file="${basedir}/build.properties" />
+
+	<!-- Estructura de directorios -->
+	<property name="dist" value="${base}/${dir.dist}" />
+	<property name="temp" value="${base}/${dir.temp}" />
+	
+	<!-- Proyectos -->
+	<property name="web-app" value="${dir.project.web-app}" />
+	<property name="uup-ejb-project" value="${dir.project.uup-ejb}" />
+	<property name="datasync" value="${dir.project.datasync}" />
+	<property name="entelUIResources" value="${dir.project.ui.resources}" />
+
+	<!-- Jars -->
+	<property name="uup-ejb" value="${jar.project.uup-ejb}" />
+	<property name="cliente" value="${jar.project.client}" />
+
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+
+	<!-- timestamp -->
+	<tstamp>
+	  <format property="TODAY"
+	          pattern="dd MMMM yyyy - HH:mm:ss"
+	          locale="es,CL"/>
+	</tstamp>
+	
+	<!-- Targets -->
+	
+	<!-- Setting TaskDefinition -->
+	<taskdef name="wldeploy" classname="weblogic.ant.taskdefs.management.WLDeploy">
+	  <classpath>
+		<pathelement location="${bea.home}/wlserver_10.3/server/lib/weblogic.jar"/>
+		<pathelement location="${entelUIResources}/WebContent/WEB-INF/lib/netuix_servlet-full.jar" />
+	  </classpath>
+	</taskdef>
+
+	<target name="clean">
+		<echo message="*** CLEAN ***" />
+		<delete failonerror="false" dir="${dir.dist}" />
+		<delete failonerror="false" dir="${dir.temp}" />
+	</target>
+
+	<target depends="clean" name="prepare">
+
+		<echo message="*** PREPARE ***" />
+
+		<!-- Directorios -->
+		<mkdir dir="${dir.dist}" />
+		<mkdir dir="${dir.temp}" />
+
+		<!-- Config  -->
+		<copy todir="${dir.temp}" includeemptydirs="true" >
+			<fileset dir="${dir.ear-content}" includes="**">
+				<exclude name="**/application.xml" />
+				<exclude name="**/*.txt" />
+				<exclude name="**/MANIFEST.MF" />
+			</fileset>
+		</copy>
+		<copy todir="${dir.temp}/APP-INF/lib" file="${cliente}" />
+		
+		<copy includeemptydirs="false" todir="${dir.temp}/META-INF/data">
+			<fileset dir="${datasync}" includes="**" />
+		</copy>
+
+		<echo message="subproject: WEB-APP ${web-app}" />
+		<ant antfile="${web-app}/build.xml" 
+			target="build" 
+			dir="${web-app}" 
+			inheritall="false"></ant>
+		<copy todir="${dir.temp}" 
+			file="${web-app}/dist/${war.filename}" />
+			
+		<echo message="subproject: UUP-EJB ${uup-ejb-project}" />
+		<ant antfile="${uup-ejb-project}/build.xml" 
+			dir="${uup-ejb-project}" 
+			inheritall="false"></ant>
+		<copy todir="${dir.project.web-app}/WebContent/WEB-INF/lib" 
+			file="${uup-ejb-project}/dist/${uup-ejb}" />
+		<copy todir="${dir.temp}" file="${dir.project.web-app}/WebContent/WEB-INF/lib/${uup-ejb}" />
+
+	</target>
+
+	<target depends="prepare" name="package">
+
+		<echo message="*** PACKAGE ***" />
+
+		<ear destfile="${dist}/${ear.filename}-${version}.ear"
+			appxml="${dir.meta-inf}/application.xml"
+			basedir="${temp}"
+			manifest="${dir.meta-inf}/MANIFEST.MF">
+		
+			<manifest>
+				<attribute name="Created-By" value="${manifest.vendor}"/>
+				<attribute name="Built-By" value="${user.name}"/>
+				<attribute name="Built-Date" value="${TODAY}"/>
+
+				<section name="Java">
+					<attribute name="Java-Version" value="${java.version}"/>
+					<attribute name="Java-VM-Name" value="${java.vm.name}"/>
+					<attribute name="Java-VM-Version" value="${java.vm.version}"/>
+					<attribute name="Java-VM-Vendor" value="${java.vm.vendor}"/>
+				</section>
+
+				<section name="common">
+					<attribute name="Extension-name" value="${manifest.extension.name}"/>
+					<attribute name="Specification-Title" value="${manifest.spec.title}"/>
+					<attribute name="Specification-Version" value="${manifest.spec.version}"/>
+					<attribute name="Specification-Vendor" value="${manifest.vendor}"/>
+					<attribute name="Implementation-Title" value="${manifest.impl.title}"/>
+					<attribute name="Implementation-Version" value="${manifest.impl.version}"/> 
+					<attribute name="Implementation-Vendor" value="${manifest.impl.vendor}"/>			
+				</section>
+			</manifest>
+			
+		</ear>
+		
+		<delete dir="${dir.temp}" />
+
+	</target>
+	
+	
+	<!-- deploying App  -->
+	
+	<target name="deploy" depends="undeploy">
+	
+	<ant antfile="../EntelUIResources/build.xml" 
+		dir="../EntelUIResources/" 
+		target="deploy"
+	inheritall="false"></ant>
+	
+	<wldeploy action="deploy"
+	          source="${dist}/${ear.filename}-${version}.ear"
+			  name="${ear.filename}"
+	          user="${admin.username}"
+	          password="${admin.password}"
+	          verbose="true"
+	          adminurl="${admin.url}" targets="${admin.target}" />
+	</target>
+	
+	<target name="undeploy">
+	
+	<wldeploy action="undeploy"
+	          name="${ear.filename}"
+	          failonerror="false"
+	          user="${admin.username}"
+	          password="${admin.password}"
+	          verbose="true"
+	          adminurl="${admin.url}" targets="${admin.target}" />
+	</target>
+
+	<target depends="package" name="build" />
+
+</project>

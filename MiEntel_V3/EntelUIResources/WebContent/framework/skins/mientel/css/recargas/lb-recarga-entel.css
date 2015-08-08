@@ -1,0 +1,110 @@
+/* CLEARFIX ***********************/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix{
+	display: inline-block;
+}
+/*\*/* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}/**/
+.lb-recarga{
+	display:block;
+	width:650px;
+}.lb-recarga .lb-contenido{
+	display:block;
+	background:#f8f8f8;
+}.lb-recarga .lb-contenido .lb-centro{
+	display:block;
+	width:600px;
+	margin:0 auto;
+}
+.lb-recarga .lb-contenido .lb-centro .logo{
+	display:block;
+	background:url(../../img/img-logo.png) top left no-repeat;
+	width:600px;
+	height:125px;
+}
+.lb-recarga .lb-botones .btnNoMostrar{
+	display:block;
+	float:left;
+	background:url(../../img/btn-nomostrar.png) no-repeat;
+	width:214px;
+	height:36px;
+	margin:0 4px 0 345px;
+}
+.lb-recarga .lb-botones .btnCerrar{
+	display:block;
+	float:left;
+	background:url(../../img/btn-cerrar.png) no-repeat;
+	width:86px;
+	height:36px;
+}
+.lb-recarga .lb-contenido .lb-centro h1{
+	display:block;
+	margin:0;
+	color:#0072b0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:23px;
+	font-weight:bold;
+}.lb-recarga .lb-contenido .lb-centro h1 span{
+	color:#fa8e00;
+}
+.lb-recarga .lb-contenido .lb-centro p{
+	display:block;
+	margin:0;
+	color:#0072b0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	line-height:23px;
+}.lb-recarga .lb-contenido .lb-centro p span{
+	color:#fa8e00;
+}
+.lb-recarga .lb-contenido .lb-centro .caja-abajo{
+	display:block;
+	position:relative;
+	margin-top:10px;
+	background:url(../../img/lightbox_recarga_iphone_11.png) bottom right no-repeat;
+	width:600px;
+	height:330px;
+}
+.lb-recarga .lb-contenido .lb-centro .caja-abajo .textos{
+	display:block;
+	padding-top:40px;
+}
+.lb-recarga .lb-contenido .lb-centro .tarjetas{
+	display:block;
+	margin:10px 0;
+	background:url(../../img/img-pagos.png) no-repeat;
+	width:181px;
+	height:50px;
+}
+.lb-recarga .lb-contenido .lb-centro .nota{
+	display:block;
+	position:absolute;
+	bottom:5px;
+	left:-18px;
+	font:11px Arial;
+	color:#868686;
+	text-align:center;
+	width:285px;
+}.lb-recarga .lb-contenido .lb-centro .nota a{
+	color: #ff6702;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.lb-recarga .lb-contenido .lb-centro .btnRecargar{
+	display:block;
+	margin:38px 0 20px 0;
+	background:url(../../img/lightbox_recarga_iphone_17.png) no-repeat;
+	width:249px;
+	height:46px;
+}

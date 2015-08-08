@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/IShop/SuscripcionesCDF/Proxies/SuscripcionesCDFService?WSDL
+targetnamespace=http://www.epcs.com/ishop/suscripcioncdf
+servicename=SuscripcionesCDFService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

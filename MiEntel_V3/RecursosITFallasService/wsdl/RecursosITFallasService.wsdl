@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/recursosit/fallas" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/recursosit/fallas" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/recursosit/fallas" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/recursosit/fallas" xmlns:types="http://www.epcs.com/recursosit/fallas/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/recursosit/fallas/types" schemaLocation="http://10.10.20.83:7001/GESTIONDERECURSOS/Fallas/Proxies/RecursosITFallasService?SCHEMA%2FGESTIONDERECURSOS%2FFallas%2FServicios%2FRecursosITFallasServiceXSD"/>
+      <!-- INICIO ValidarBlacklist  -->
+      <xsd:element name="ValidarBlacklistDocument" type="types:ValidarBlacklistType"/>
+      <xsd:element name="ResultadoValidarBlacklistDocument" type="types:ResultadoValidarBlacklistType"/>
+      <!-- FIN ValidarBlacklist  -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ValidarBlacklistMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarBlacklistDocument" name="ValidarBlacklist"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarBlacklistMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarBlacklistDocument" name="ResultadoValidarBlacklist"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="RecursosITFallasService">
+    <WL5G3N0:operation name="ValidarBlacklist">
+      <WL5G3N0:input message="WL5G3N1:ValidarBlacklistMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarBlacklistMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="RecursosITFallasServicePortBinding" type="WL5G3N1:RecursosITFallasService">
+
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ValidarBlacklist">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/recursosit/fallas/ValidarBlacklist"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="RecursosITFallasService">
+    <WL5G3N0:port binding="WL5G3N1:RecursosITFallasServicePortBinding" name="RecursosITFallasServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/GESTIONDERECURSOS/Fallas/Proxies/RecursosITFallasService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

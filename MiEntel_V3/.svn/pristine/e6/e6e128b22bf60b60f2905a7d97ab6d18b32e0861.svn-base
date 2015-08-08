@@ -1,0 +1,80 @@
+.lineaAdicional .banner {
+    background: url("../../img/lineaAdicional/bannerLineaAdicional.jpg") no-repeat scroll 0 0 transparent;
+    height: 132px;
+    margin-bottom: 15px;
+    width: 550px;
+}
+.lineaAdicional h3 {
+    border-bottom: 1px solid #E3E3E3;
+    color: #3A3A3A;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.lineaAdicional .datosLineaModificar {
+    display: none;
+}
+.lineaAdicional .campo {
+    font-weight: bold;
+}
+.lineaAdicional .usoLinea {
+    display: block;
+    margin-bottom: 25px;
+    padding-top: 12px;
+}
+.lineaAdicional .radioUso {
+    display: block;
+    margin: 6px 0;
+}
+.lineaAdicional .labeRadioUso {
+    color: #3A3A3A;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    width: 170px;
+}
+.lineaAdicional .labeRadioUso span {
+    padding-left: 8px;
+}
+.lineaAdicional .enlaceExterno {
+    background: url("../../img/icons/ico_enlace_externo.gif") no-repeat scroll right center transparent;
+    color: #3A3A3A;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    margin-right: 18px;
+    padding-right: 13px;
+    text-decoration:underline;
+}
+.lineaAdicional .enlaceExterno:hover{
+	color:#577DA5;
+}
+
+.lineaAdicional .cancelar {
+    padding-top: 10px;
+}
+.lineaAdicional .cancelarSolicitud {
+    color: #010101;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-right: 13px;
+}
+.lineaAdicional h3 a.modificar {
+    background: url("../../img/iconos/iconosLapiz.gif") no-repeat scroll 0 0 transparent;
+    color: #3A3A3A;
+    display: block;
+    float: right;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 14px;
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+.lineaAdicional h3 a.modificar:hover{
+	color:#577DA5;
+}
+
+.lineaAdicional h3 a.modificar.cancelarModificarLineaAdicional {
+    background: none repeat scroll 0 0 transparent;
+    display: none;
+}

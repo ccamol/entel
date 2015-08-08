@@ -1,0 +1,8 @@
+wsdl=http://esbdesa.entel.cl/ventasymarketing/gestionprogramasfidelizacion/consultabono/consultabonopromocionserviceps?wsdl
+targetnamespace=http://www.esa.com/Ventas/ProgramasFidelizacion/ConsultaBonos
+servicename=consultarBonoPromocionService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

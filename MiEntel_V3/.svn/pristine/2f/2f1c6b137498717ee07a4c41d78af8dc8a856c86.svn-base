@@ -1,0 +1,302 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="h"  uri="http://java.sun.com/jsf/html"%>
+<%@ taglib prefix="f"  uri="http://java.sun.com/jsf/core"%>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="it" uri="http://i2b.cl/jsf/iterator/" %>
+<%@ taglib prefix="r"
+	uri="http://www.bea.com/servers/portal/tags/netuix/render"%>
+<%@ taglib prefix="cm"
+	uri="http://www.bea.com/servers/portal/tags/content"%>
+<%@ taglib prefix="pref"
+	uri="http://www.bea.com/servers/portal/tags/netuix/preferences"%>
+<%@ taglib prefix="entel" uri="/WEB-INF/tld/entel-tags.tld" %>
+
+
+<cm:search id="infoRegistro" query="idContenido = 'infoRegistro'"
+	useCache="true" />
+<cm:search id="infoMovilNoBuic" query="idContenido = 'infoMovilNoBuic'"
+	useCache="true" />
+<cm:search id="infoMovilRutNoAsociado"
+	query="idContenido = 'infoMovilRutNoAsociado'" useCache="true" />
+<cm:search id="infoFacturaElectronica"
+	query="idContenido = 'infoFacturaElectronica'" useCache="true" />
+
+
+<f:view beforePhase="#{inscripcionController.init}">
+
+<script type="text/javascript">
+	
+	var respBoolean = <h:outputText value="#{inscripcionController.redireccionarHomeEntel}"/>;	
+	if(respBoolean){
+		location.href='<h:outputText value="#{inscripcionController.urlHomeEntel}"/>';
+	}
+	
+</script>
+<style type="text/css">
+			#bloque-izq, #bloque-der { 
+		display: none !important; 
+		}
+</style>
+		 <script type="text/javascript">
+			$(document).ready(function(){
+				$('input.inputBox').inputBox();
+				//$('select.selectBox').selectBox(); 
+				widthDivCentro();
+				loadOpcionesRelacionTitular();
+
+				$('.mensaje-alerta').css({
+					"color":"black",
+					"font-weight":"normal"
+				});
+
+				$("a.enlaceTermCondcs").fancybox({	
+					'title': 'texto', 	
+				    'overlayOpacity' : 0.5,
+				    'overlayColor' : '#000000',
+				    'hideOnContentClick' : false,
+				    'hideOnOverlayClick' : false,
+				    'showCloseButton'	:true,
+				    'padding' : 'auto',
+				    'scrolling' : 'no',
+				    'frameWidth'  : 620,
+				    'frameHeight' : 600		     
+				    
+				   });
+				   $("#fancy_overlay").css( {	
+						width: "1400px"
+				   });
+
+			   $('input[id*=boletaElectronica]').click(function() {
+				   if (!$(this).is(':checked')) {
+					   $('.terminosBoletaElectronica').attr("checked", false);
+					   $('.terminosBoletaElectronica').attr("disabled", true);
+				   } else {
+					   $('.terminosBoletaElectronica').removeAttr("disabled");
+				   }
+			   });
+
+				dataLayer = dataLayer||[];
+				dataLayer.push({
+					'mx_content': 'Personas/Mi Entel/Registro/Datos',
+					'event': 'pageview'
+				});   
+			});
+		 </script>
+	
+	<!-- MENSAJES -->
+	<jsp:include page="../common/messages_alert.jsp"></jsp:include>
+		 
+	<div class="mis-datos-registro-info"><h:form
+		id="validarRegistroTitular" styleClass="validarRegistroTitular" title="formRegistro">
+	
+					<div class="registro_top">
+						<h1>Formulario de Registro</h1>
+		<p><cm:getProperty node="${infoRegistro[0]}" name="html" /></p>
+					</div>
+					
+					<!-- DATOS PERSONALES -->
+		<h2 class="icono-personas-blanco clearfix"><span>Datos
+		personales</span> <span class="info">(Todos los campos son
+		obligatorios)</span></h2>
+					
+					<div class="fieldset">
+
+		<div class="mis-datos-fila clearfix"><label>Mi RUT es:</label>
+		<div class="campo"><strong><h:outputText
+			value="#{inscripcionController.rutUsuario}" converter="rutConverter" /></strong>
+						</div>
+		<h:inputHidden value="#{inscripcionController.rutUsuario}" /></div>
+						
+						
+		<div class="mis-datos-fila clearfix"><label>Mi
+		n&uacute;mero PCS es:</label>
+		<div class="campo"><strong><h:outputText
+			value="#{inscripcionController.numeroPcs}" /></strong></div>
+		<h:inputHidden value="#{inscripcionController.numeroPcs}" /></div>
+						</div>
+		<!-- /DATOS PERSONALES -->
+						
+		<!-- EMAIL -->
+		<h2 class="icono-email clearfix"><span>E-Mail</span> <span
+			class="info">(Todos los campos son obligatorios)</span> <!-- <a class="icono-interrogacion autoTooltip" href="#TTEmail"></a>  -->
+		</h2>
+		<div class="fieldset">
+		<div class="mis-datos-fila clearfix"><label>E-Mail:</label>
+		<div class="campo" style="position: relative; z-index: 1"><h:inputText
+			id="email" styleClass="inputBox emailRegistroUsuario"
+			value="#{inscripcionController.usuarioBean.email}" maxlength="30"
+			style="width:200px;" title="email"></h:inputText></div>
+							</div>
+		<div class="mis-datos-fila clearfix"><label>Confirmar
+		E-Mail:</label>
+		<div class="campo" style="position: relative; z-index: 1"><h:inputText
+			id="email2" styleClass="inputBox emailRegistroUsuario2"
+			value="#{inscripcionController.usuarioBean.email}" maxlength="30"
+			style="width:200px;"></h:inputText></div>
+							</div>
+	                            </div>
+		<!-- /EMAIL -->
+						
+		<h:panelGroup
+			rendered="#{!inscripcionController.mercadoPrepago && inscripcionController.rutTitular && inscripcionController.cuentaClienteBean != null && !inscripcionController.inscritoFacturacionElectronica}">
+						
+			<!-- FACTURA ELECTRONICA -->
+			<h2 class="icono-email clearfix"><span>Suscripci&oacute;n
+			a Boleta Electr&oacute;nica</span> <!-- <a class="icono-interrogacion autoTooltip" href="#TTEmail"></a>  -->
+					</h2>
+					<div class="fieldset">
+			<div class="mis-datos-fila clearfix"><label style="padding-right: 10px">Suscribirme
+			a Boleta Electr&oacute;nica: <br />
+			</label>
+			<div class="campo"
+				style="position: relative; z-index: 1; padding-top: 5px"><h:selectBooleanCheckbox
+				id="boletaElectronica"
+				value="#{inscripcionController.suscripcionFactElectronica}" /></div>
+							</div>
+			<div class="mis-datos-fila clearfix"><%--<label>He le&iacute;do los <a href="#">t&eacute;rminos y condiciones:</a> </label>--%>
+			<label style="padding-right: 10px">He le&iacute;do los <h:outputLink value="msjTerminosCondiciones.faces" styleClass="thickbox">t&eacute;rminos y condiciones: </h:outputLink>
+			<br />
+			</label>
+
+			<div class="campo"
+				style="position: relative; z-index: 1; padding-top: 5px"><h:selectBooleanCheckbox
+				id="terminosCondiciones" styleClass="terminosBoletaElectronica"></h:selectBooleanCheckbox>
+						</div>
+							</div>
+						</div>
+
+			<div class="caja verde clearfix"
+				style="text-align: center; padding: 10px 0 0px 10px"><!-- <p><strong><cm:getProperty node="${infoFacturaElectronica[0]}" name="html" /></strong></p> -->
+			<p><strong><cm:getProperty
+				node="${infoFacturaElectronica[0]}" name="html" /></strong></p>
+					</div>
+			<!-- /FACTURA ELECTRONICA -->
+		</h:panelGroup>
+                    
+                    <!-- TELEFONO ADICIONAL -->
+		<h2 class="icono-telefono clearfix"><span>Tel&eacute;fono
+		adicional</span> <span class="info"></span> <!-- <a class="icono-interrogacion autoTooltip" href="#TTDireccion"></a> -->
+					</h2>	
+					<div class="fieldset">
+		<div class="mis-datos-fila clearfix"><label>Tel&eacute;fono
+		adicional:</label>
+		<div class="campo" style="position: relative; z-index: 6"><h:selectOneMenu
+			onchange="" id="regionareas"
+							 		value="#{inscripcionController.usuarioBean.prefijoTelefonoAdicional}" 
+			styleClass="selectBox prefijoTelAdicionalRegistroUsuario"
+			style="width:80px;" 
+			title="indTelefonoAdicional">
+	                                     <f:selectItems value="#{inscripcionController.areasList}"/>
+		</h:selectOneMenu></div>
+		<div class="campo" style="position: relative; z-index: 1"><h:inputText
+			id="tel_adi"
+			value="#{inscripcionController.usuarioBean.telefonoAdicional}"
+								styleClass="inputBox telAdicionalRegistroUsuario"
+			onkeypress="return soloNumeros(event);" style="width:130px;"
+			title="telefonoAdicional" /></div>
+						</div>
+					</div>
+                    
+					<!-- BTN CONTINUAR -->
+							<div class="fieldset">
+		<div class="mis-datos-fila clearfix"><label>&nbsp;</label>
+		<div class="guardar_clave_registro"><h:commandLink value=""
+									 action="#{inscripcionController.confirmarRegistro}"
+			styleClass="btnAzulGrande btnAzulLargo enviarFormulario">
+			<span>Continuar</span>
+		</h:commandLink></div>
+								</div>
+							</div>
+					<!-- /BTN CONTINUAR -->
+                    
+	</h:form></div>
+		
+		 <script type="text/javascript">
+
+		  function widthDivCentro(){
+		 	 $('#centro').width("889px");
+		  }
+		
+		   function fillSelectsRegistroUsuario(selectid){ 
+
+			// Vector para saber cuál es el siguiente combo a llenar
+			var combos = new Array();
+			combos['regionpromociones'] = "ciudadpromociones"; 
+			combos['ciudadpromociones'] = "comunapromociones"; 
+			// Tomo el nombre del combo al que se le a dado el clic por ejemplo: país 
+			
+			posicion = selectid.indexOf('regionpromociones') != -1 ? 'regionpromociones' : 'ciudadpromociones';
+			 
+			// Tomo el valor de la opción seleccionada 
+			valor = $("select[id*="+posicion+"]").val(); 
+		
+			  
+			// Evaluó que si es país y el valor es 0, vacié los combos de estado y ciudad
+			if(posicion == 'regionpromociones' && valor == "0"){ 
+				  $("select[id*=ciudadpromociones]").html('<option value="">Selecciona ciudad</option>');
+			      $("select[id*=comunapromociones]").html('<option value="">Selecciona comuna</option>');
+			      $("select[id*=ciudadpromociones]")[0].setValue('');
+			      $("select[id*=comunapromociones]")[0].setValue('');
+			} else { 
+				/* En caso contrario agregado el letreo de cargando a el combo siguiente 
+				 Ejemplo: Si seleccione país voy a tener que el siguiente según mi vector combos es: estado por qué combos [país] = estado
+				*/ 
+				$("select[id*="+combos[posicion]+"]").html('<option value="">Cargando...</option>');
+				$("select[id*="+combos[posicion]+"]")[0].setValue('');
+				$("select[id*=comunapromociones]").html('<option value=""></option>');
+				$("select[id*=comunapromociones]")[0].setValue('');
+
+				/* Verificamos si el valor seleccionado es diferente de 0 y si el combo es diferente de ciudad, esto porque no tendría caso hacer la consulta a ciudad porque no existe un combo dependiente de este */
+				if(valor != "0") { 
+					// Llamamos a pagina de donde ejecuto las consultas para llenar los combos
+					var combo = $("select[id*="+posicion+"]").attr("name"); // Nombre del combo 
+					var id =  $("select[id*="+posicion+"]").val();
+					  
+					var reg = $("select[id*=regionpromociones]").val();
+					  
+					var url = '<%= request.getContextPath()%>/ServletAreas';
+					$.ajax({
+				    	type: 'POST',
+				        url: url,
+				        dataType: 'json',
+				        data : 'combo='+combo+'&id='+id+'&reg='+reg+'&r='+Math.random(),
+				        success: function (opt){
+							var optionsselect ='<option value="">Selecciona</option>';
+							for(var i = 0; i< opt.length;i++){
+			                	optionsselect += '<option value="'+opt[i].codigo+'">'+opt[i].descripcion+'</option>';
+							} 
+							$("select[id*="+combos[posicion]+"]").html(optionsselect); //Tomo el resultado de pagina e inserto los datos en el combo indicado
+							$("select[id*="+combos[posicion]+"]")[0].setValue('');
+						}
+					});
+				}
+			}
+		}
+		
+		
+		function setAreasRegistroUsuario(){
+			$("input[id*=hideCiudad]").val($("select[id*=ciudadpromociones]").val());
+			$("input[id*=hideComuna]").val($("select[id*=comunapromociones]").val());
+		}
+
+		function upper(txt) {
+			var txtUpper = $(txt).val().toUpperCase();
+			$(txt).val(txtUpper);	
+		}
+		
+
+		function loadOpcionesRelacionTitular(){
+			var respBoolean = <h:outputText value="#{inscripcionController.existeIgualdadEntreRuts}"/>;
+			if(respBoolean){
+				if ($("select[id*=relacionTitular]")[0]!=null){
+				$("select[id*=relacionTitular]")[0].setValue('0');
+				$(".relacionTitular").find("option[value!='0']").remove();
+				}				
+			}else{
+				$(".relacionTitular").find("option[value='0']").remove();
+			}
+		}
+
+	</script>				
+</f:view>				

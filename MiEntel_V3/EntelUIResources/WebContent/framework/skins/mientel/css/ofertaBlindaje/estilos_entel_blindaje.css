@@ -1,0 +1,21 @@
+
+/* FIX PARA NUEVAS FUENTES BANNER MULTIOFERTA*/
+
+@font-face{
+    font-family: 'DinNextLtPro';
+    src: url('../../css/font_face/dinnextltpro-regular.eot');
+    src: url('../../css/font_face/dinnextltpro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../../css/font_face/dinnextltpro-regular.woff2') format('woff2'),
+         url('../../css/font_face/dinnextltpro-regular.woff') format('woff'),
+         url('../../css/font_face/dinnextltpro-regular.ttf') format('truetype'),
+         url('../../css/font_face/dinnextltpro-regular.svg#DINNextLTProRegular') format('svg');
+}
+@font-face {
+    font-family: 'DINNextLTProLight';
+    src: url('../../css/font_face/dinnextltpro-light.eot');
+    src: url('../../css/font_face/dinnextltpro-light.eot?#iefix') format('embedded-opentype'),
+         url('../../css/font_face/dinnextltpro-light.woff2') format('woff2'),
+         url('../../css/font_face/dinnextltpro-light.woff') format('woff'),
+         url('../../css/font_face/dinnextltpro-light.ttf') format('truetype'),
+         url('../../css/font_face/dinnextltpro-light.svg#DINNextLTProLight') format('svg');
+}

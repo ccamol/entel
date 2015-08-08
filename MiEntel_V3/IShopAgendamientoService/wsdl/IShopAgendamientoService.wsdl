@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/provisionamientoyentrega/agendamiento" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/provisionamientoyentrega/agendamiento" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/provisionamientoyentrega/agendamiento" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/provisionamientoyentrega/agendamiento" xmlns:types="http://www.epcs.com/provisionamientoyentrega/agendamiento/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/provisionamientoyentrega/agendamiento/types" schemaLocation="http://10.10.20.83:7001/PROVISIONAMIENTOYENTREGA/Agendamiento/Proxies/IShopAgendamientoService?SCHEMA%2FPROVISIONAMIENTOYENTREGA%2FAgendamiento%2FServicios%2FIShopAgendamientoServiceXSD"/>
+      <!-- INICIO CONSULTAR CONTENIDO -->
+      <xsd:element name="ConsultarContenidoDocument" type="types:ConsultarContenidoType"/>
+      <xsd:element name="ResultadoConsultarContenidoDocument" type="types:ResultadoConsultarContenidoType"/>
+      <!-- FIN CONSULTAR CONTENIDO -->
+      <!-- INICIO CONSULTAR AGENDAMIENTO -->
+      <xsd:element name="ConsultarAgendamientoDocument" type="types:ConsultarAgendamientoType"/>
+      <xsd:element name="ResultadoConsultarAgendamientoDocument" type="types:ResultadoConsultarAgendamientoType"/>
+      <!-- FIN CONSULTAR AGENDAMIENTO -->
+      <!-- INICIO CAMBIAR ESTADO AGENDAMIENTO -->
+      <xsd:element name="CambiarEstadoAgendamientoDocument" type="types:CambiarEstadoAgendamientoType"/>
+      <xsd:element name="ResultadoCambiarEstadoAgendamientoDocument" type="types:ResultadoCambiarEstadoAgendamientoType"/>
+      <!-- FIN CAMBIAR ESTADO AGENDAMIENTO -->
+      <!-- INICIO PAUSAR AGENDAMIENTO -->
+      <xsd:element name="PausarAgendamientoDocument" type="types:PausarAgendamientoType"/>
+      <xsd:element name="ResultadoPausarAgendamientoDocument" type="types:ResultadoPausarAgendamientoType"/>
+      <!-- FIN PAUSAR AGENDAMIENTO -->
+      <!-- INICIO DESPAUSAR AGENDAMIENTO -->
+      <xsd:element name="DespausarAgendamientoDocument" type="types:DespausarAgendamientoType"/>
+      <xsd:element name="ResultadoDespausarAgendamientoDocument" type="types:ResultadoDespausarAgendamientoType"/>
+      <!-- FIN DESPAUSAR AGENDAMIENTO -->
+      <!-- INICIO ELIMINAR AGENDAMIENTO -->
+      <xsd:element name="EliminarAgendamientoDocument" type="types:EliminarAgendamientoType"/>
+      <xsd:element name="ResultadoEliminarAgendamientoDocument" type="types:ResultadoEliminarAgendamientoType"/>
+      <!-- FIN ELIMINAR AGENDAMIENTO -->
+      <!-- INICIO PAUSAR TODOS AGENDAMIENTO -->
+      <xsd:element name="PausarTodosAgendamientoDocument" type="types:PausarTodosAgendamientoType"/>
+      <xsd:element name="ResultadoPausarTodosAgendamientoDocument" type="types:ResultadoPausarTodosAgendamientoType"/>
+      <!-- FIN PAUSAR TODOS AGENDAMIENTO -->
+      <!-- INICIO DESPAUSAR TODOS AGENDAMIENTO -->
+      <xsd:element name="DespausarTodosAgendamientoDocument" type="types:DespausarTodosAgendamientoType"/>
+      <xsd:element name="ResultadoDespausarTodosAgendamientoDocument" type="types:ResultadoDespausarTodosAgendamientoType"/>
+      <!-- FIN DESPAUSAR TODOS AGENDAMIENTO -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarContenidoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarContenidoDocument" name="ConsultarContenido"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarContenidoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarContenidoDocument" name="ResultadoConsultarContenido"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarAgendamientoDocument" name="ConsultarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarAgendamientoDocument" name="ResultadoConsultarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CambiarEstadoAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:CambiarEstadoAgendamientoDocument" name="CambiarEstadoAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCambiarEstadoAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCambiarEstadoAgendamientoDocument" name="ResultadoCambiarEstadoAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="PausarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:PausarAgendamientoDocument" name="PausarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPausarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoPausarAgendamientoDocument" name="ResultadoPausarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="DespausarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:DespausarAgendamientoDocument" name="DespausarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoDespausarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoDespausarAgendamientoDocument" name="ResultadoDespausarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EliminarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:EliminarAgendamientoDocument" name="EliminarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoEliminarAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoEliminarAgendamientoDocument" name="ResultadoEliminarAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="PausarTodosAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:PausarTodosAgendamientoDocument" name="PausarTodosAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPausarTodosAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoPausarTodosAgendamientoDocument" name="ResultadoPausarTodosAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="DespausarTodosAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:DespausarTodosAgendamientoDocument" name="DespausarTodosAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoDespausarTodosAgendamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoDespausarTodosAgendamientoDocument" name="ResultadoDespausarTodosAgendamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="IShopAgendamientoServicePortType">
+    <WL5G3N0:operation name="ConsultarContenido">
+      <WL5G3N0:input message="WL5G3N1:ConsultarContenidoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarContenidoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:ConsultarAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarAgendamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambiarEstadoAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:CambiarEstadoAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCambiarEstadoAgendamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="PausarAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:PausarAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPausarAgendamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="DespausarAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:DespausarAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoDespausarAgendamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EliminarAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:EliminarAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoEliminarAgendamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="PausarTodosAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:PausarTodosAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPausarTodosAgendamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="DespausarTodosAgendamiento">
+      <WL5G3N0:input message="WL5G3N1:DespausarTodosAgendamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoDespausarTodosAgendamientoMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="IShopAgendamientoServiceBinding" type="WL5G3N1:IShopAgendamientoServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarContenido">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/ConsultarContenido"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/ConsultarAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambiarEstadoAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/CambiarEstadoAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="PausarAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/PausarAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="DespausarAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/DespausarAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EliminarAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/EliminarAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="PausarTodosAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/PausarTodosAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="DespausarTodosAgendamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/provisionamientoyentrega/agendamiento/DespausarTodosAgendamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="IShopAgendamientoService">
+    <WL5G3N0:port binding="WL5G3N1:IShopAgendamientoServiceBinding" name="IShopAgendamientoServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/PROVISIONAMIENTOYENTREGA/Agendamiento/Proxies/IShopAgendamientoService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

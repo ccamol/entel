@@ -1,0 +1,9 @@
+#wsdl=http://esbpre.entel.cl/PROVISIONAMIENTOYENTREGA/AdminSuscripciones/Proxies/AdminSuscripcionService?WSDL
+wsdl=http://esb.entel.cl/PROVISIONAMIENTOYENTREGA/AdminSuscripciones/Proxies/AdminSuscripcionService?WSDL
+targetnamespace=http://www.epcs.com/administracion/suscripciones
+servicename=AdminSuscripcionService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

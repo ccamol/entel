@@ -1,0 +1,8 @@
+wsdl=http://10.10.20.83:7001/CLIENTES/Problema/Proxies/ClienteProblemaService?WSDL
+targetnamespace=http://www.epcs.com/cliente/problema
+servicename=ClienteProblemaService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

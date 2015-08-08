@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/CLIENTES/Orden/Proxies/ClienteOrdenService?WSDL
+#wsdl=http://esbpre.entel.cl/CLIENTES/Orden/Proxies/ClienteOrdenService?WSDL
+targetnamespace=http://www.epcs.com/cliente/orden
+servicename=ClienteOrdenService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

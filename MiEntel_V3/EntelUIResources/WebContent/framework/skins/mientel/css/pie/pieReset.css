@@ -1,0 +1,40 @@
+/*  
+Description: Archivo de normalización de estilos.
+Author: I2B Technologies
+Author URI: http://www.i2b.cl
+Version: 1.0
+*/
+/*#pie-Entel {
+	font: 62.5% Arial, Helvetica, sans-serif !important;
+}*/
+#pie-Entel div, #pie-Entel ul, #pie-Entel ol, #pie-Entel li, #pie-Entel h1, #pie-Entel h2, #pie-Entel h3, #pie-Entel h4, #pie-Entel h5, #pie-Entel h6, #pie-Entel form, #pie-Entel input, #pie-Entel p, #pie-Entel span {
+	margin:0;
+	padding:0;
+}
+#pie-Entel img {
+	border:0;
+}
+#pie-Entel ol, #pie-Entel ul, #pie-Entel dl {
+	list-style:none;
+}
+#pie-Entel a {
+	outline:none;
+}
+/* CLEARFIX ***********************/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix{
+	display: inline-block;
+}
+/*\*/* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}/**/

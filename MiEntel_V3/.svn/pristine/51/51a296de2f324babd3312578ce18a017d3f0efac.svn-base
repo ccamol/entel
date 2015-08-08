@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<propertyset is-complete="false" 
+    xmlns="http://www.bea.com/servers/p13n/xsd/property-set/1.0.1"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ps="http://www.bea.com/servers/p13n/xsd/property-set/1.0.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/p13n/xsd/property-set/1.0.1 property-set-1_0_1.xsd">
+    <name>mientel</name>
+    <description></description>
+    <type>USER</type>
+    <property>
+        <name>numeroPcs</name>
+        <description>Numero del movil</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>nombreUsuario</name>
+        <description>Nombre del usuario visitante</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>mercado</name>
+        <description>Tipo de mercado (SS - Suscripcion | CC - Cuenta controlada | PP - Prepago</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>flagBam</name>
+        <description>Si el producto es BAM (Banda Ancha Movil)</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>int</datatype>
+    </property>
+    <property>
+        <name>aaa</name>
+        <description>Atributo de Auto Atención</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>int</datatype>
+    </property>
+    <property>
+        <name>rutTitular</name>
+        <description>Identificación RUT del titular de la cuenta</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>nombreTitular</name>
+        <description>Nombre completo del titular de la cuenta</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>numeroCuenta</name>
+        <description>Numero de la cuenta</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>numeroPcsSeleccionado</name>
+        <description>Numero del movil seleccionado</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+        <property>
+        <name>rutUsuarioSeleccionado</name>
+        <description>RUT del usuario seleccionado</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+        <property>
+        <name>nombreUsuarioSeleccionado</name>
+        <description>Nombre del usuario seleccionado</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>subMercado</name>
+        <description>Si hace parte de algun submercado (EJ: FDT)</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>grupoCliente</name>
+        <description>Grupo del cliente</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>
+    <property>
+        <name>categoriaCliente</name>
+        <description>Categoria del cliente</description>
+        <is-multivalued>false</is-multivalued>
+        <is-restricted>false</is-restricted>
+        <datatype>Text</datatype>
+    </property>            
+</propertyset>

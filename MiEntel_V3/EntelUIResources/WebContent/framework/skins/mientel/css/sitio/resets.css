@@ -1,0 +1,114 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,span{
+	margin:0;
+	padding:0;
+	outline:none;
+}
+body{
+	font: 62.5% Arial, Helvetica, sans-serif;
+}
+table{
+	/*border-collapse:collapse;
+	border-spacing:0;*/
+	width:100%;
+}
+fieldset,img, abbr, acronym{
+	border:0;
+}
+address,caption,cite,code,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul,dl{
+	list-style:none;
+}
+caption,th{
+	text-align:left;
+}
+img{
+	border:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:1em;
+	font-size:100%;
+	font-weight:normal;
+}
+a{
+	outline:none;
+}
+/*PROPIEDADES*******************************/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix{
+	display: inline-block;
+}
+/*\*/* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}/**/
+.margen_bloque{
+	margin-right:10px;
+}
+.flotar_izq{
+	float:left;
+	display:inline;
+}
+.flotar_der{
+	float:right;
+	display:inline;
+}
+
+
+/*  
+Description: Archivo de normalización de estilos.
+Author: I2B Technologies
+Author URI: http://www.i2b.cl
+Version: 1.0
+*/
+/*#pie-Entel {
+	font: 62.5% Arial, Helvetica, sans-serif !important;
+}*/
+#pie-Entel div, #pie-Entel ul, #pie-Entel ol, #pie-Entel li, #pie-Entel h1, #pie-Entel h2, #pie-Entel h3, #pie-Entel h4, #pie-Entel h5, #pie-Entel h6, #pie-Entel form, #pie-Entel input, #pie-Entel p, #pie-Entel span {
+	margin:0;
+	padding:0;
+}
+#pie-Entel img {
+	border:0;
+}
+#pie-Entel ol, #pie-Entel ul, #pie-Entel dl {
+	list-style:none;
+}
+#pie-Entel a {
+	outline:none;
+}
+
+/*  
+Description: Archivo de normalización de estilos.
+Author: I2B Technologies
+Author URI: http://www.i2b.cl
+Version: 1.0
+*/
+#cabecera div, #cabecera ul, #cabecera ol, #cabecera li, #cabecera h1, #cabecera h2, #cabecera h3, #cabecera h4, #cabecera h5, #cabecera h6, #cabecera form, #cabecera input, #cabecera p, #cabecera span,
+#cabecera-menu div, #cabecera-menu ul, #cabecera-menu ol, #cabecera-menu li, #cabecera-menu h1, #cabecera-menu h2, #cabecera-menu h3, #cabecera-menu h4, #cabecera-menu h5, #cabecera-menu h6, #cabecera-menu form, #cabecera-menu input, #cabecera-menu p, #cabecera-menu span {
+	margin:0;
+	padding:0;
+}
+#cabecera img,
+#cabecera-menu img{
+	border:0;
+}
+#cabecera ol, #cabecera ul, #cabecera dl,
+#cabecera-menu ol, #cabecera-menu ul, #cabecera-menu dl{
+	list-style:none;
+}
+#cabecera a,
+#cabecera-menu a{
+	outline:none;
+}

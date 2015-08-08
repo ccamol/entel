@@ -1,0 +1,192 @@
+/*
+ * Estilos i-shop
+ */
+ 
+ .bannerFullMsn {
+    background: url("../../img/ishop/bannerFullMessengger.jpg") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 268px;
+    margin-top: 20px;
+    width: 550px;
+}
+
+.enlace_ishop {
+	color: #3A3A3A;
+	text-decoration: underline;
+}
+
+.enlace_ishop:hover {
+	color:#577DA5;
+}
+
+.enlace_ishop.enlaceExterno {
+	background: url("../../img/icons/ico_enlace_externo.gif") no-repeat scroll right center transparent;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin-right: 18px;
+    padding-right: 13px;
+}
+
+
+.enlace_ishop.enlaceExterno strong{
+	 font-size: 12px;
+	 font-weight: normal;
+}
+
+.enlace_ishop.enlaceExterno strong:hover{
+	color:#577DA5;
+}
+
+
+.ishop .bloque-gris {
+	background:#f5f5f5;
+	border-top:#ebebeb solid 1px;
+	border-bottom:#ebebeb solid 1px;
+	padding:14px 20px;
+	position:relative;
+	margin:10px 0;
+}
+
+.ishop p a {	
+	color:#3a3a3a;
+	text-decoration: underline;
+}
+
+.ishop p a:hover {	
+	color:#577DA5;
+}
+
+.ishop .bloque-gris a {
+	display:block;
+	position:absolute;
+	top:14px;
+	right:20px;	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#0073ae;
+	text-decoration:underline;
+}
+
+.ishop .listado ul {
+	float:left;width:270px;
+}
+
+.ishop .listado li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	color:#383838;
+	background:url(../../img/icons/ico_bullet_azul.gif) 0 5px no-repeat;
+	padding-left:13px;
+	margin-bottom:2px;
+}
+
+.ishop .listado li a {
+	color:#383838;
+}
+
+.ishop .contenido_tabla {
+	text-align:center;
+	margin:3px 0;
+}
+
+.ishop .enlaceExterno {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;	
+	padding-right:13px;
+	background:url(../../img/icons/ico_enlace_externo.gif) right no-repeat;
+	color:#3a3a3a;
+	margin-right:18px;
+}
+
+.ishop .enlaceExterno strong {
+	color:#3a3a3a;
+	font-weight: normal;	
+	text-decoration:underline;
+}
+
+.ishop .enlaceExterno strong:hover {
+	color:#597CA4;	
+}
+
+.ishop .bannerFullMsn {
+	display:block;
+	background:url(../../img/ishop/bannerFullMessengger.jpg) no-repeat;
+	width:550px;
+	height:268px;
+	margin-top:20px;
+}
+
+.ishop .tabla {
+	font-size:1em;
+}
+
+.ishop table.impar {
+	background:#eef4fa
+}
+
+.ishop div.planes_header_tabla div.main table th.sinBorde {
+	border-right:none;
+}
+
+.ishop .contenido_tabla {
+	text-align:left;
+}
+
+.ishop DIV.contenido_tabla TABLE TBODY TR TD {
+	padding:5px 0 5px 10px;
+	border-bottom: 1px solid #E3E3E3;	
+	vertical-align: middle;
+}
+
+.ishop div.header_tabla div.top span {	
+	background:url("../../img/tablas/tablasGrandeTop.gif") no-repeat scroll left center transparent;
+	height:4px;
+	display:block;
+}
+
+.ishop div.header_tabla div.bottom span {
+	background:url("../../img/tablas/tablasGrandeBottom.gif") no-repeat scroll left center transparent;	
+	height:4px;
+	margin-top:-3px;
+	font-size:1px;
+	display:block;
+	padding-right:4px;
+}
+
+.ishop .listado_sms_mms li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	color:#383838;
+	background:url(../../img/icons/ico_bullet_azul.gif) 0 5px no-repeat;
+	padding-left:13px;
+	margin-bottom:2px;
+}
+
+.cajaCanal{
+	display:block;
+}.cajaCanal h4{
+	display:block;
+	color:#2A719D;
+	margin:10px 0;
+	font-size:1.2em;
+}.cajaCanal .cajaAzul{
+	padding:10px;
+	background:#EEF4FA;
+	border:1px solid #B9D9EC;
+}.cajaCanal .cajaAzul .campo{
+	display: block;
+	float:left;
+	padding:3px 8px 0 0;
+}.cajaCanal .cajaAzul label{
+	display:block;
+	float:left;
+	padding:8px 8px 0 0;
+}.cajaCanal .cajaAzul input{
+	display:block;
+	float:left;
+}.cajaCanal .cajaAzul a{
+	display:block;
+	float:left;
+}.alertaAgen {
+	background:#FFF1A8;
+}

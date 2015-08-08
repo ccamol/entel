@@ -1,0 +1,8 @@
+wsdl=http://sbepcs.entel.cl:80/CatalogoPublicoEquipos/BodegasVigentes/px/pxBodegasVigentesSOAP?WSDL
+targetnamespace=http://services.i2b.com/
+servicename=BodegasVigentesService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

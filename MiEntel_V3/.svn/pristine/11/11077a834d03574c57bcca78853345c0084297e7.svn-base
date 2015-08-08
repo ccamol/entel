@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mientel-uup-ejb">
+        <wb-resource deploy-path="/" source-path="/ejbModule"/>
+        <wb-resource deploy-path="/" source-path="/.apt_src"/>
+        <dependent-module deploy-path="/" handle="module:/resource/mientel-uup-ejb-client/mientel-uup-ejb-client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/mientel-uup-ejb/build/classes"/>
+        <property name="ClientProject" value="mientel-uup-ejb-client"/>
+        <property name="ClientJARURI" value="mientel-uup-ejb-client.jar"/>
+    </wb-module>
+</project-modules>

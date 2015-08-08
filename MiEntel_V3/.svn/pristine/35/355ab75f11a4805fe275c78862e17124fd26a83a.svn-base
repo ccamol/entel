@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/provisionyentrega/gestionsuscripcion/sagen/buscarcuscripcionps?WSDL
+targetnamespace=http://www.epcs.com/provision/suscripcion/WSSagenService
+servicename=buscarSuscripcionService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false
+

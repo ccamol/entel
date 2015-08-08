@@ -1,0 +1,6 @@
+<factorypath>
+    <factorypathentry kind="PLUGIN" id="oracle.eclipse.tools.weblogic" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="PLUGIN" id="com.bea.wlp.eclipse.controls" enabled="false" runInBatchMode="false"/>
+    <factorypathentry kind="PLUGIN" id="com.bea.workshop.netui.core" enabled="false" runInBatchMode="false"/>
+    <factorypathentry kind="PLUGIN" id="oracle.eclipse.tools.sapphire.modeling" enabled="true" runInBatchMode="false"/>
+</factorypath>

@@ -1,0 +1,129 @@
+.beSubTitulo{
+	font-weight:bold;
+}
+
+.beVinetas{
+	display:block;
+}
+
+.beVinetas li{
+	background:url(../../img/iconos/icoBEChulo.png) no-repeat left top;
+	padding-left:20px;
+	font-size: 11px;
+	margin-bottom:2px;
+}
+
+DIV#centro{
+	width: 565px;
+}
+
+.beCaja1{
+	float:left;
+	width:275px;
+	margin-left:30px;
+}.beCaja2{
+	float:left;
+	width:245px;
+}
+
+.beLineaDiv{
+	border-top: 2px solid #CDDAE7;
+	height:2px;
+	font-size:0;
+}
+
+DIV#centro P.beNotaText{
+	font-size:11px;
+}
+
+#centro .formulario{
+	padding-left:0;
+}
+
+#centro .formulario .beForm1{
+	padding-left:70px;
+}
+
+.beEstado{
+	background:#EFF4FC;
+	padding:10px 30px;
+	border-top:1px solid #C6CBCF;
+	border-bottom:1px solid #C6CBCF;
+		
+}.beEstado .nombreEmail{
+	padding-top:9px;
+	float:left;
+	width:320px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.beDesincribir{
+	margin:20px 0 0 20px;
+	font-size:12px;
+}
+
+.beCajaBtDes{
+	float:right;
+	width:300px;
+	text-align:right;
+	height:50px;
+}.beCajaBtDes a{
+	float:right;
+}
+
+a.btnDesactivado:hover, a.btnAzul:hover, a.btnAzulLargo:hover, a.btnAzulLargo:hover span, a.btnAzul:hover span{
+	text-decoration:none !important;
+}
+
+.beInforma{
+	background:url(../../img/iconos/icoInformaNaranja.png) no-repeat 10px 17px #FEFFCB;
+	padding:15px 15px 5px 40px;			
+}
+
+.flotaDer{
+	float:right;
+}
+
+.beEstado.beCajaDirect{
+	padding: 20px 15px;
+}
+
+.beEstado .beDirecText {
+	float: left;
+	width: 350px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.margenTopMin{
+	margin-top:5px !important;
+}.margenTop{
+	margin-top:10px !important;
+}.margenTopMedio{
+	margin-top:15px !important;
+}.margenTopDoble{
+	margin-top:20px !important;
+}.margenTopTriple{
+	margin-top:30px !important;
+}.margenTopCuatro{
+	margin-top:40px !important;
+}.margenTopCinco{
+	margin-top:50px !important;
+}
+
+.paddingTopMin{
+	padding-top:5px !important;
+}.paddingTop{
+	padding-top:10px !important;
+}.paddingTopMedio{
+	padding-top:15px !important;
+}.paddingTopDoble{
+	padding-top:20px !important;
+}.paddingTopTriple{
+	padding-top:30px !important;
+}.paddingTopCuatro{
+	padding-top:40px !important;
+}.paddingTopCinco{
+	padding-top:50px !important;
+}

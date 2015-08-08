@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="WSConsultaEjecutivoPorANI" targetNamespace="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP" xmlns:types="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP/types" schemaLocation="http://10.10.20.83:7001/crm/crmcatalogcustomers/consultaejecutivosga/crm_t_px_consultaejecutivosgaps?SCHEMA%2FCRM%2FCRMCatalogCustomers%2FConsultaEjecutivoSGA%2FServicios%2FWSSGAConsultaEjecutivoServiceXSD"/>
+      <xsd:element name="ConsultaEjecutivoRequestDocument" type="types:entradaConsultaEjecutivo">
+	</xsd:element>
+      <xsd:element name="ConsultaEjecutivoResponseDocument" type="types:salidaConsultaEjecutivoType">
+	</xsd:element>
+      <xsd:element name="ConsultaEjecutivoFaultDocument" type="types:FaultConsultaEjecutivoType">
+	</xsd:element>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultaEjecutivoRequest">
+    <WL5G3N0:part element="WL5G3N1:ConsultaEjecutivoRequestDocument" name="ConsultaEjecutivoRequest"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaEjecutivoResponse">
+    <WL5G3N0:part element="WL5G3N1:ConsultaEjecutivoResponseDocument" name="ConsultaEjecutivoResponse"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaEjecutivoFault">
+    <WL5G3N0:part element="WL5G3N1:ConsultaEjecutivoFaultDocument" name="ConsultaEjecutivoFault"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="WSConsultaEjecutivoPorANIPortType">
+    <WL5G3N0:operation name="ConsultaEjecutivo">
+      <WL5G3N0:input message="WL5G3N1:ConsultaEjecutivoRequest"/>
+      <WL5G3N0:output message="WL5G3N1:ConsultaEjecutivoResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ConsultaEjecutivoFault" name="fault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="WSConsultaEjecutivoPorANIBinding" type="WL5G3N1:WSConsultaEjecutivoPorANIPortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultaEjecutivo">
+      <WL5G3N2:operation soapAction="http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP/ConsultaEjecutivo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="WSSGAConsultaEjecutivoService">
+    <WL5G3N0:port binding="WL5G3N1:WSConsultaEjecutivoPorANIBinding" name="WSConsultaEjecutivoPorANIPort">
+      <WL5G3N2:address location="http://OSB11G:7001/crm/crmcatalogcustomers/consultaejecutivosga/crm_t_px_consultaejecutivosgaps"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,48 @@
+# Propiedad de Entel PCS. Todos los derechos reservados
+
+#
+# Archivo de configuracion de log4j para el autenticador de usuarios
+#
+# Author mmartinez (I2B) en nombre de Absalon Opazo (Atencion al Cliente, EntelPcs)
+
+# Log Files variables
+
+# Weblogic server Name
+weblogicName=mienteldev_EPCSAuthenticationProvider
+# Application Name
+appName=MiEntel
+
+# [Entel] Log path
+# Production
+# logPath=./aplsEPCS/${appName}/
+# Development
+logPath=
+# Pattern
+pattern=%d{ISO8601} %6p [%15.15t] %35.35c{1}.%-35M - %m%n
+
+# Appenders
+
+# Appender for for all Levels MiEntel 
+log4j.appender.main=org.apache.log4j.RollingFileAppender
+# Threshold
+log4j.appender.main.Threshold=INFO
+# Layout
+log4j.appender.main.layout=org.apache.log4j.PatternLayout
+log4j.appender.main.layout.ConversionPattern=${pattern}
+# Appender properties
+log4j.appender.main.File=${logPath}${weblogicName}_main.log
+#log4j.appender.main.DatePattern=.yyyy-MM-dd
+log4j.appender.main.MaxFileSize=10MB
+log4j.appender.main.MaxBackupIndex=5 
+
+# Loggers
+
+# [Entel] No root Logger
+log4j.rootLogger=OFF
+
+# Main logger "com.epcs" package. Levels: ERROR, WARN, INFO
+log4j.logger.com.epcs=DEBUG, main
+log4j.additivity.com.epcs=true
+
+
+

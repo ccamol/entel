@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/CLIENTES/GestionContactos/TicketSGA/Proxies/PS_WS_TicketSga?wsdl
+targetnamespace=http://www.esa.com/cliente/contacto/sga/
+servicename=TicketSGAService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

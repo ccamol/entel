@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<profile-config xmlns="http://www.bea.com/ns/p13n/90/p13n-profile-config">
+    
+    <description>
+        Configurations of adapters for Unified User Profile (UUP). Each property adapter (if deployed) will be mapped to a property set or property within user profile. Adapter properties and values can be used to store adapter specific configurations like user store connection info and other environment values. Properties and values are scoped to configured property adapter.
+    </description>
+
+    <property-adapter>
+        <name>EPcsEntityPropertyManager</name>
+        <description>EntityPropertyManager para el proyecto MiEntel v3.0</description>
+        <property-mapping>mientel</property-mapping>
+        <ejb-jndi>mientel-uup-ejb.jar#EPcsEntityPropertyManager</ejb-jndi>
+		<is-creator>false</is-creator>
+		<is-remover>false</is-remover>        
+    </property-adapter>
+</profile-config>

@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/ser/ConsultaEquipoRobadoServices?wsdl
+#wsdl=http://esbpre.entel.cl/ser/ConsultaEquipoRobadoServices?wsdl
+targetnamespace=http://www.epcs.com/erp/legal/consultaEquiposRobados
+servicename=ConsultaEquipoRobadoServices
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

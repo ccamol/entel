@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netuix:markupDefinition
+  xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0 markup-netuix-1_0_0.xsd">
+  <netuix:locale language="es" />
+  <netuix:markup>
+    <netuix:layout markupType="Layout" markupName="3col_layout_dashboard" title="3 Columnas Dashboard"
+    skeletonUri="/framework/customSkeletons/3col_dashboard.jsp" 
+    htmlLayoutUri="/framework/markup/layout/3col_dashboard.html.txt" 
+    iconUri="" 
+    description=""
+    >
+      <netuix:placeholder markupType="Placeholder" markupName="3col_dashboard_layout_left" title="Placeholder izquierdo"
+        usingFlow="false" width="20%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_dashboard_layout_center_1" title="Placeholder Central 1"
+        usingFlow="false" width="60%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_dashboard_layout_center_2" title="Placeholder Central 2"
+        usingFlow="false" width="60%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_dashboard_layout_center_3" title="Placeholder Central 3"
+        usingFlow="false" width="60%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_dashboard_layout_center_4" title="Placeholder Central 4"
+        usingFlow="false" width="60%">
+      </netuix:placeholder>
+      <netuix:placeholder markupType="Placeholder" markupName="3col_dashboard_layout_right" title="Placeholder Derecho"
+        usingFlow="false" width="20%">
+      </netuix:placeholder>
+    </netuix:layout>
+  </netuix:markup>
+</netuix:markupDefinition>

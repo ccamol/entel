@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/PROVISIONYENTREGA/AdministracionSuscripcion/ValidaMovilPPBAM/PMVALIDACIONMOVILPS?wsdl
+targetnamespace=http://www.epcs.com/cliente/perfil/ConsultaBolsa
+servicename=ConsultaBolsaServiceBindingQSService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

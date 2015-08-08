@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+	
+	<!-- Validators -->
+	<validator>
+		<description>Validador de Emails</description>
+		<display-name>validateEmail</display-name>
+		<validator-id>validateEmail</validator-id>
+		<validator-class>com.epcs.recursoti.configuracion.jsf.validator.EmailValidator</validator-class>
+	</validator>
+	
+	<!-- Converters -->
+	<converter>
+		<converter-id>traficoDatosConverter</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.TraficoDatosConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>traficoVozConverter</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.TraficoVozConverter</converter-class>
+	</converter>
+
+	<converter>
+		<converter-id>traficoVozMinSecConverter</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.TraficoVozMinSecConverter</converter-class>
+	</converter>
+
+
+	<converter>
+		<converter-id>rutConverter</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.RutConverter</converter-class>
+	</converter>
+	
+   <converter>
+		<converter-id>traficoDatosConverterDouble</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.TraficoDatosConverterDouble</converter-class>
+	</converter>
+	
+	
+	<converter>
+		<converter-id>planConverter</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.PlanConverter</converter-class>
+	</converter>
+	
+		<converter>
+		<converter-id>traficoDatosConverterBAMDouble</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.TraficoDatosConverterBAMDouble</converter-class>
+	</converter>
+	
+	<converter>
+		<converter-id>saldoMinutosBolsaConverter</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.SaldoMinutosBolsaConverter</converter-class>
+	</converter>
+	
+	<converter>
+		<converter-id>traficoDatosConverterBTMB</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.traficoDatosConverterBTMB</converter-class>
+	</converter>
+	
+	<converter>
+		<converter-id>traficoDatosConverterKBMB</converter-id>
+		<converter-class>com.epcs.recursoti.configuracion.jsf.converter.traficoDatosConverterKBMB</converter-class>
+	</converter>
+	
+	
+	<!-- components -->
+	<component>
+		<display-name>Iterator</display-name>
+		<component-type>com.epcs.recursoti.configuracion.jsf.tags.iterator</component-type>
+		<component-class>com.epcs.recursoti.configuracion.jsf.tags.IteratorComponent</component-class>
+	</component>
+
+
+	<!-- Phase Listener -->
+	<lifecycle>
+		<phase-listener>com.epcs.recursoti.configuracion.jsf.listener.AAASecurityPhaseListener</phase-listener>
+	</lifecycle>
+
+</faces-config>

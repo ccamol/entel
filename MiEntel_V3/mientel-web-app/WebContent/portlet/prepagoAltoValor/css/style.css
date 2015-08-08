@@ -1,0 +1,130 @@
+.marginBmedio{		margin-bottom: 	5px !important;}
+.marginBcuatro{		margin-bottom: 	40px !important;}
+.marginRcuatro{		margin-right: 	40px !important;}
+
+.contentSeccionPPPlus{
+	margin: auto;
+	width: 535px;
+}
+.contentSeccionPPPlus .box-titulo{
+	margin: 15px 0px;
+	padding: 8px 10px;
+	background-color: #0073ae
+}
+.contentSeccionPPPlus .box-titulo h1#beneficiosPPPlus{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 18px;
+	color: #FFF;
+	background: none;
+	padding: 0;
+}
+.contentSeccionPPPlus .box-titulo h1#beneficiosPPPlus span{
+	color: #ff6702;
+}
+.contentSeccionPPPlus .box-img{
+	margin-bottom: 15px;
+}
+.contentSeccionPPPlus .box-promo{
+	float: left;
+	width: 245px;
+}
+.contentSeccionPPPlus .box-promo .box-promo-img{
+	text-align:left;
+	margin-bottom: 10px;
+}
+.contentSeccionPPPlus .box-promo .box-promo-txt{
+	
+}
+.contentSeccionPPPlus .box-promo .box-promo-txt h2{
+	font-family: 'Trebuchet MS', Arial !important;
+	font-size: 13px !important;
+	line-height: 13px;
+	font-weight: bold;
+	color: #636467 !important;
+	border: 0 !important;
+	padding: 0 !important;
+}
+.contentSeccionPPPlus .box-promo .box-promo-txt p{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 12px;
+	color: #636467;
+}
+
+
+.ico-ast{
+	background:url(../img/ico-ast-naranja.png) center left no-repeat;
+	padding-left: 14px;
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 12px;
+	color: #636467;
+}
+p.link-azul{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 12px !important;
+	color: #0154a0 !important;
+}
+p.link-azul a{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 12px !important;
+	color: #0154a0 !important;
+	text-decoration: none;
+}
+p.link-azul a:hover{
+	text-decoration: underline;
+}
+ul.lista-azul li{
+	background: url(../img/img_bullet_azul.png) no-repeat scroll 0 7px transparent;
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 12px;
+	color: #636467;
+	list-style: none outside none;
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+.stretcher{
+    cursor: pointer;
+    height:30px;
+    background:url(../img/stretcher/ico-strech-cerrado.png) 98% 15px no-repeat #eeeeee;
+    font-size: 13px !important;
+    line-height: 13px !important;
+    color: #636467 !important;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom:5px;
+}
+.stretcher.nuevo{
+    height:40px;
+    padding-top: 0px;
+}
+.stretcher span{
+    display: inline-block;
+    height: 25px;
+    padding-top: 12px;
+}
+.stretcher span.DobleLinea{
+    background: url(../img/stretcher/ico-asterisco.png) left center no-repeat;
+    display: inline-block;
+    height: 36px;
+    padding-left: 35px;
+    padding-top: 4px;
+}
+.active{
+    background:url(../img/stretcher/ico-strech-abierto.png) 98% 15px no-repeat #00549f;
+	color: #FFF !important;
+}
+.contenido_stretcher{
+    margin-top:-5px;
+}
+.caja-contenido{
+    padding: 20px 0px;
+}
+.caja-contenido span.tituloBold{
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.caja-contenido .text-gris{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 12px;
+	color: #636467;
+}

@@ -1,0 +1,1576 @@
+@import 'menu.css';
+@import url('../botones/botones.css');
+@import 'bolsas.css';
+#centro .info_saldo {
+	display: block;
+	margin: 10px 0;
+	border: 1px solid #cccccc;
+	padding: 12px;
+}
+#centro .info_saldo .div_saldo {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	margin-right: 110px;
+	font-weight: bolder;
+}
+#centro .info_saldo .div_saldo span.resaltado {
+	color: #F78F20;
+	font-size: 1.2em;
+}
+#centro h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.8em;
+	color:#064687;
+	padding:0 0 20px 15px;
+	font-weight: bolder;
+	background: url(../../img/bullet_h2.gif) no-repeat 0 4px;
+}
+#centro h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.8em;
+	color:#064687;
+	padding:0 0 5px 30px;
+	margin-bottom:10px;
+	border-bottom:2px solid #cddae7;
+}
+#centro h2.no_icon {
+	padding:0 0 5px 0;
+}
+#centro h2.superchip {
+	background: url(../../img/icons/ico_superchip.gif) no-repeat 0 3px;
+}
+#centro h2.superchipOK {
+	background: url(../../img/icons/ico_superchipOK.gif) no-repeat 2px 3px;
+}
+#centro h2.celular {
+	background: url(../../img/icons/ico_cellPhone.gif) no-repeat 2px 3px;
+}
+#centro h2.movil {
+	background:url(../../img/icons/ico_movil.gif) no-repeat 6px 1px;
+}
+#centro h2.lupa {
+	margin-top: 20px;
+	background:url(../../img/icons/ico_lupa.gif) no-repeat 6px 3px;
+}
+#centro h2.maletin {
+	margin-top: 20px;
+	background:url(../../img/icons/ico_maletin.gif) no-repeat 6px 3px;
+}
+#centro h2.papel {
+	margin-top: 20px;
+	background:url(../../img/icons/ico_papel.gif) no-repeat 6px 8px;
+}
+#centro h2.papel span.titulo {
+	display: block;
+	float: left;
+	padding: 8px 0 0 0;
+}
+#centro h2.papel a {
+	display: block;
+	float: right;
+}
+
+div.cargo_fijo {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	color:#064687;
+	padding-left:20px;
+	background:url(../../img/icons/ico_pesos.gif) 3px top no-repeat;
+}
+div.lista-bolsas {
+	font-size:1.1em;
+}
+.disclaimer {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	color:#9c9c9c;
+	padding:10px 0 10px 0;
+}
+
+.formulario_ingresar.comunik2{
+	display:block;
+	margin:5px 0;
+}
+.formulario_ingresar.comunik2 .campo{
+	display:inline-block;
+	margin:5px 5px 0px 0px;
+	float:left;
+}
+.formulario_ingresar.comunik2 .cancelar{
+	padding-top:9px;
+	margin-left:5px;
+}
+.formulario_ingresar.comunik2 .ubicador_boton{
+	display:block;
+	padding-top:1px;
+}
+/***********************************/
+.separacion_planes {
+	display:block;
+	height:20px;
+}
+.alerta_amarilla {
+	background:#fff1a8;
+	border-bottom:1px solid #cfc489;
+	border-top:1px solid #cfc489;
+	padding:15px 10px 15px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#3a3a3a;
+	margin:15px 0 20px 0;
+}
+.alerta_amarilla a,
+.alerta_amarilla a:visited {
+	color:#3a3a3a;
+}
+
+/***********************************/
+/*           TABLA DUAL            */
+/***********************************/
+table.tabla_dual {
+	border-collapse:collapse;
+	background:url(../../img/table/bg_tablaDual.gif) no-repeat;
+	width:548px;
+	margin-top:20px;
+	font-size:1.2em;
+}
+table.tabla_dual thead tr th {
+	text-align:center;
+	padding:10px;
+	color:#3a3a3a;
+}
+table.tabla_dual tbody tr td {
+	border-bottom:1px solid #e3e3e3;
+	padding:6px 0 6px 3px;
+	/*font-size:0.9em;*/
+}
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+
+#menu-desplegable-planes {
+	margin-top:10px;
+	margin-bottom:50px;
+}
+#menu-desplegable-planes div.bolsa {
+	padding:0 0 6px 3px;
+}
+* html #menu-desplegable-planes div.bolsa {
+	width:540px;
+}
+#menu-desplegable-planes div.header {
+	height:auto;
+}
+#menu-desplegable-planes div.header a,
+#menu-desplegable-planes div.header a:visited {
+	position:relative;
+	display:block;
+	text-decoration:underline !important;
+}
+#menu-desplegable-planes div.header a:hover {
+	color:#577DA5;
+	text-decoration:underline !important;
+}
+#menu-desplegable-planes div.header a.ancho_fijo,
+#menu-desplegable-planes div.header a.ancho_fijo:visited {
+	display: block;
+	float: left;
+	width: 235px;
+}
+#menu-desplegable-planes a.enlace_derecha,
+#menu-desplegable-planes a.enlace_derecha:visited {
+	display: block;
+	float: right;
+	font-weight: normal;
+	padding: 0 15px 0 0;
+	background: none !important;
+}
+#menu-desplegable-planes div.header span.precio {
+	display: block;
+	float: left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#3a3a3a;
+}
+#menu-desplegable-planes div.header span {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	color:#3a3a3a;
+	padding-left:20px;
+}
+#menu-desplegable-planes div.lista-bolsas {
+	margin:10px 0 10px 0;
+}
+
+#menu-desplegable-planes a.cambiarPlan {
+	float:right;
+}
+
+#menu-desplegable-planes a.cambiarTarifa {
+	float:right;
+}
+
+#menu-desplegable-planes div.disclaimer {
+	font-size:0.9em; /* Modificado 0.9em Server */
+}
+
+div#menu-desplegable-planes .paso_2, div#menu-desplegable-planes .paso_3 {
+	float:none;
+}
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*         PLAN RED PASO 1         */
+/***********************************/
+#menu-desplegable-planes .nombre_plan {
+	display:block;
+	margin-bottom:1px;
+}
+#menu-desplegable-planes .nombre_plan div.nombre_plan_top {
+	background:url(../../img/table/bg_tablaInterior_top.gif) no-repeat top right;
+	padding-right:4px;
+	height:4px;
+	display:block;
+	width: 516px;
+}
+* html #menu-desplegable-planes .nombre_plan div.nombre_plan_top {
+	font-size:0px !important;
+}
+
+#menu-desplegable-planes .nombre_plan div.nombre_plan_top.anchoFijo {
+	width: 516px;
+}
+#menu-desplegable-planes .nombre_plan div.nombre_plan_top span {
+	background:url(../../img/table/bg_tablaInterior_top.gif) no-repeat top left;
+	display:block;
+	height:4px;
+	
+}
+* html #menu-desplegable-planes .nombre_plan div.nombre_plan_top span {
+	font-size:0px !important;
+	
+}
+#menu-desplegable-planes .nombre_plan div.nombre_plan_main {
+	background:#edf5ff;
+	border-left:1px solid #E3E3E3;
+	border-right:1px solid #E3E3E3;
+	color:#3a3a3a;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:2px 0 2px 10px;
+}
+#menu-desplegable-planes .nombre_plan div.nombre_plan_bottom {
+	background:url(../../img/table/bg_tablaInterior_bottom.gif) no-repeat top right;
+	padding-right:4px;
+	height:4px;
+	display:block;
+}
+#menu-desplegable-planes .nombre_plan div.nombre_plan_bottom.anchoFijo {
+	width: 516px;
+}
+#menu-desplegable-planes .nombre_plan div.nombre_plan_bottom span {
+	background:url(../../img/table/bg_tablaInterior_bottom.gif) no-repeat top left;
+	display:block;
+	height:4px;
+	font-size:1px;
+}
+div.lista-bolsas .tabla_precios .planes_contabla .mensaje{
+	background: url("../../img/icons/ico_candado.gif") no-repeat scroll left top transparent;
+    float: right;
+    padding: 0 0 5px 20px;
+    text-align:left;
+    width: 140px;    
+}
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*         PLAN RED PASO 2         */
+/***********************************/
+#menu-desplegable-planes .paso_2,
+#menu-desplegable-planes .paso_3 {
+	display:none;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar,
+#menu-desplegable-planes .paso_3 .paso_confirmar {
+	background:#fff1a8;
+	border-bottom:1px solid #cfc489;
+	border-top:1px solid #cfc489;
+	padding:10px 10px 2px 10px;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar span {
+	float:left;
+	display:block;
+	width:140px;
+	font-weight:bolder;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar span.plan {
+	width:190px;
+	font-weight:normal;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar a {
+	float:right;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar a span {
+	width:auto;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar .btnVerdeDelgado {
+	margin-top:-8px;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar a.cancelar,
+#menu-desplegable-planes .paso_2 .paso_confirmar a.cancelar:visited {
+	font-weight:bolder;
+	color:#3a3a3a;
+	margin-left:10px;
+	padding:0px;
+	text-decoration: underline;
+}
+#menu-desplegable-planes .paso_2 div.disclaimer {
+	padding:10px 10px 0 10px;
+}
+#menu-desplegable-planes .paso_2 .con_bolsas span{
+	float:none;
+}
+#menu-desplegable-planes .paso_2 .con_bolsas span.negrilla-span{
+	display:inline;
+	float:none;	
+	font-size:12px !important;
+	font-weight:bold;
+	clear:both;
+}
+#menu-desplegable-planes .paso_2 .con_bolsas p{
+	margin-top:0;
+}
+#menu-desplegable-planes .paso_2 .con_bolsas ul{
+	margin:0 0 10px 0;
+	list-style-position:inside;
+	list-style-type:disc;	
+}
+
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*         PLAN RED PASO 3         */
+/***********************************/
+#menu-desplegable-planes .paso_3 .paso_confirmar span {
+	float:left;
+	display:block;
+	width:100px;
+}
+#menu-desplegable-planes .paso_3 .paso_confirmar {
+	padding:10px;
+}
+#menu-desplegable-planes .paso_3 .paso_confirmar div {
+	float:left;
+	display:block;
+	width:390px;
+}
+#menu-desplegable-planes .paso_3 .paso_confirmar div h5 {
+	font-weight:bolder;
+}
+#menu-desplegable-planes .paso_3 .paso_confirmado {
+	background:#ddf0d9;
+	border-bottom:1px solid #bed7bc;
+	border-top:1px solid #bed7bc;
+	padding:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#3a3a3a;
+	font-weight:bolder;
+	margin-top:10px;
+}
+#menu-desplegable-planes .paso_3 .paso_confirmado span {
+	float:left;
+}
+#menu-desplegable-planes .paso_3 .paso_confirmado a,
+#menu-desplegable-planes .paso_3 .paso_confirmado a:visited {
+	float:right;
+	color:#3a3a3a;
+}
+
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*       PLAN FAMILIA PASO 1       */
+/***********************************/
+#menu-desplegable-planes div.tabla_precios .cancelarSeleccion {
+	font-weight:bolder;
+	display:none;
+	float:right;
+	margin-right:10px;
+	color:#3A3A3A;
+}
+#menu-desplegable-planes div.tabla_precios tr.oculto {
+	display:none;
+}
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionada td,
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td div.paso_2_familia,
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td div.paso_3_familia,
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td div.paso_4_familia {
+	background:#fff1a8;
+	border-bottom:1px solid #cfc489;
+}
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td {
+	padding:0;
+}
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*       PLAN FAMILIA PASO 2       */
+/***********************************/
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td div.paso_2_familia {
+	margin-bottom:10px;
+	padding:10px 5px;
+}
+#menu-desplegable-planes .paso_2_familia .cant_moviles strong {
+	float:left;
+	padding:6px 10px 0 0;
+}
+#menu-desplegable-planes .paso_2_familia .asignar_lineas {
+	display:none;
+}
+#menu-desplegable-planes .paso_2_familia table tr td {
+	border:none;
+}
+#menu-desplegable-planes .paso_2_familia .asignar_lineas .lineas {
+	margin-top:3px;
+}
+#menu-desplegable-planes .paso_2_familia .asignar_lineas .lineas span {
+	float:left;
+	display:block;
+	padding-right:10px;
+	padding-top:6px;
+}
+#menu-desplegable-planes .paso_2_familia .btn_aceptar {
+	display:none;
+	padding:15px 0 7px 45px;
+}
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*       PLAN FAMILIA PASO 3       */
+/***********************************/
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td div.paso_3_familia {
+	margin-bottom:0;
+	padding:10px 5px 8px 5px;
+	display:none;
+}
+#menu-desplegable-planes .paso_3_familia div {
+	float:right;
+	display:block;
+	font-weight:bolder;
+	padding-top:8px;
+}
+#menu-desplegable-planes .paso_3_familia div.plan {
+	font-weight:normal;
+	width:80px;
+	float:left;
+	padding-top:0;
+}
+#menu-desplegable-planes .paso_3_familia a {
+	float:right;
+	display:block;
+}	
+#menu-desplegable-planes .paso_3_familia a.cancelar,
+#menu-desplegable-planes .paso_3_familia a.cancelar:visited {
+	color:#3A3A3A;
+	padding-top:8px;
+	font-weight:bolder;
+	margin-left:10px;
+}
+#menu-desplegable-planes .paso_3_familia a.btnAzul {
+	margin-left:10px;
+}
+/***********************************/
+/*     MENU DESPLEGABLE CENTRAL    */
+/***********************************/
+/*       PLAN FAMILIA PASO 4       */
+/***********************************/
+#menu-desplegable-planes div.tabla_precios tr.filaSeleccionadaContenido td div.paso_4_familia {
+	margin-bottom:0;
+	padding:10px 5px 10px 5px;
+	display:none;
+}
+#menu-desplegable-planes .paso_4_familia div {
+	float:left;
+	display:block;
+	width:390px;
+}
+#menu-desplegable-planes .paso_4_familia div.plan {
+	font-weight:normal;
+	width:80px;
+	float:left;
+	padding-top:0;
+}
+#menu-desplegable-planes .paso_4_familia div h5 {
+	font-weight:bolder;
+	padding-bottom:3px;
+}
+#menu-desplegable-planes .paso_4_familia div ul {
+	list-style:square inside;
+	padding-bottom:10px;
+}
+#menu-desplegable-planes .paso_4_familia div p {
+	padding-bottom:5px;
+	font-size:1em;
+}
+#menu-desplegable-planes .paso_4_familia a.deshacer,
+#menu-desplegable-planes .paso_4_familia a.deshacer:visited {
+	background:url(../../img/icons/ico_deshacer.gif) top left no-repeat;
+	padding-left:20px;
+	color:#3A3A3A;
+	text-decoration:underline;
+	font-weight:bolder;
+}
+
+/***********************************/
+/*       CUENTA CONTROLADA         */
+/***********************************/
+div.cont_dual {
+	display:block;
+	color:#3a3a3a;
+	width:548px;
+	/*margin-top:20px;*/
+}
+div.cont_dual div.dual_top {
+	display:block;
+	background:url(../../img/table/bg_tablaDual_top.gif) no-repeat;
+	height:4px;
+	font-size:1px;
+}
+
+div.cont_dual div.dual_top2 {
+	display:block;
+	background:url(../../img/table/bg_tablaDual_top_modi.gif) no-repeat;
+	height:4px;
+	font-size:1px;
+}
+
+div.cont_dual div.dual_uno {
+	background:#e3edf8;
+	border-left:1px solid #cddae7;
+	border-right:1px solid #cddae7;
+	text-align:center;
+	padding:10px;
+	font-size:1.2em;
+}
+div.cont_dual div.dual_dos {
+	background:url(../../img/table/bg_tablaDual_bottom.gif) no-repeat bottom;
+	display:block;
+	font-size:1.1em;
+}
+div.cont_dual div.dual_dos div {
+	float:left; 
+	display:block;
+	width:180px;
+	padding:8px 0 8px 0px;
+	text-align:center;
+	border-right:1px solid #cddae7;
+}
+div.cont_dual div.dual_dos div.derecha {
+	float:left; 
+	display:block;
+	width:360px;
+	padding:8px 0 8px 0px;
+	text-align:center;
+}
+div.cont_dual div.dual_dos2 {
+	background:url(../../img/table/bg_tablaDual_bottom_modi.gif) no-repeat bottom;
+	display:block;
+	font-size:1.2em;
+}
+div.cont_dual div.dual_dos2 div {
+	float:left; 
+	display:block;
+	width:144px;
+	padding:8px 0 8px 0px;
+	text-align:center;
+	border-right:1px solid #cddae7;
+}
+
+div.cont_dual div.dual_dos2 div.dual_ultimo {
+	border:none;
+}
+
+div.cont_dual div.dual_dos2 div.derecha {
+	float:left; 
+	width:368px;
+	padding:8px 0 8px 0px;
+	text-align:center;
+}
+
+div.cont_dual div.dual_dos div.dual_ultimo {
+	border:none;
+}
+div.dual_tres {
+	width:548px;
+	display:block;
+}
+div.dual_tres div {
+	float:left;
+	display:block;
+	width:180px;
+	padding:8px 0 8px 0;
+	text-align:center;
+	border-bottom:1px solid #e3e3e3;
+	font-size:1.1em;
+	color:#3a3a3a;
+}
+
+div.dual_tres2 {
+	width:548px;
+	border-bottom:1px solid #e3e3e3;
+	display:block;
+}
+div.dual_tres2 div {
+	float:left;
+	display:block;
+	width:144px;
+	padding:8px 0 8px 0;
+	text-align:center;
+	font-size:1.1em;
+	color:#3a3a3a;
+}
+
+div.dual_tres2 div.derecha {
+	width:364px;
+	text-align:justify;
+	padding:8px 20px 8px 20px;
+}
+
+/***********************************/
+/*         NUMERO FRECUENTE        */
+/***********************************/
+div.numero_frecuente {
+	background:#f5f5f5;
+	border-bottom:1px solid #ebebeb;
+	border-top:1px solid #ebebeb;
+	padding:5px 10px;
+	font-size:1.2em;
+}
+div.numero_frecuente.activo {
+	background:#fff1a8;
+	border-bottom:1px solid #cfc489;
+	border-top:1px solid #cfc489;
+}
+div.numero_frecuente div.numero {
+	float:left;
+	display:block;
+	padding-top:8px;
+}
+
+div.numero_frecuente div.nombre {
+	float:left;
+	display:block;
+	padding-top:8px;
+	padding-left:15px;
+}
+
+div.numero_frecuente div.botonera,
+div.numero_frecuente div.msg,
+div.numero_frecuente div.alerta_borrar {
+	float:right;
+	width:250px; /*400*/
+	display:block;
+}
+div.numero_frecuente div.msg {
+	display:none;
+	text-align:right;
+	font-weight:bolder;
+	padding:8px 0 8px 0;
+}
+div.numero_frecuente div.alerta_borrar {
+	display:none;
+	text-align:right;
+	font-weight:bolder;
+}
+div.numero_frecuente div.alerta_borrar a.cancelar,
+div.numero_frecuente div.alerta_borrar a.cancelar:visited {
+	color:#3a3a3a;
+}
+div.numero_frecuente div.botonera a {
+	float:right;
+	display:block;
+}
+div.numero_frecuente div.botonera a.eliminar,
+div.numero_frecuente div.botonera a.eliminar:visited {
+	color:#3a3a3a;
+	padding-top:8px;
+	margin-left:10px;
+	font-weight:bolder;
+}
+div.debes_saber {
+	background:url(../../img/debessaber.gif) no-repeat 3px 3px;
+	padding:0 0 5px 100px;
+	font-size:1.2em;
+	margin-top:25px;
+	margin-bottom:70px;
+}
+div.ademas {
+	background:url(../../img/tip_ademas.gif) no-repeat 3px 3px;
+	padding-left:85px;
+	margin-top:10px;
+	font-size:1.1em;
+}
+div.numero_frecuente div.paso_modificar {
+	padding:10px 0 10px 0;
+	display:none;
+}
+
+div.numero_frecuente div.paso_modificar div.contenedor-text{
+	padding-right:10px;
+}
+
+div.numero_frecuente label {
+	font-weight:bolder;
+}
+div.numero_frecuente div.opciones {
+	width:370px; /*360*/
+	float:left;
+	display:block;
+	position:relative;
+}
+div.numero_frecuente div.paso_modificar div.botonera {
+	width:150px;
+	padding-top:10px;
+}
+div.numero_frecuente div.paso_modificar div.botonera_comunik2 {
+	float: right;
+}
+div.numero_frecuente div.paso_modificar div.botonera a.cancelar {
+	padding-top:9px !important;
+	color:#3a3a3a;
+	margin-left:10px;
+}
+div.numero_frecuente div.campo,
+div.numero_frecuente div.campo_radio {
+	float:left;
+	display:block;
+	padding-right:10px;
+	/*border:#F00 solid 1px;*/
+}
+div.numero_frecuente div.campo_radio {
+	padding-right:30px;
+	padding-bottom:10px;
+}
+div.numero_frecuente div.campo_otro {
+	padding-right:72px;
+	padding-bottom:10px;
+	float:right;
+	display:block;
+}
+div.numero_frecuente div.campo .nf_select {
+	width:60px;
+}
+
+div.numero_frecuente div.campo .nf_input {
+	width:110px; /* 150 */
+}
+
+div.numero_frecuente div.campo .nf_nombre {
+	padding-right:10px;
+	width:110px !important; /* 150 */
+}
+
+div.numero_frecuente div.paso_nuevo {
+	display:none;
+}
+div.numero_frecuente div.paso_nuevo strong {
+	float:left;
+	display:block;
+	padding-top:9px;
+}
+
+/***********************************/
+/*         NUMERO FAVORITO    */
+/***********************************/
+div.numero_favorito {
+	background:#f5f5f5;
+	border-bottom:1px solid #ebebeb;
+	border-top:1px solid #ebebeb;
+	padding:5px 10px;
+	font-size:1.2em;
+}
+div.numero_favorito.activo {
+	background:#fff1a8;
+	border-bottom:1px solid #cfc489;
+	border-top:1px solid #cfc489;
+}
+div.numero_favorito div.numero {
+	float:left;
+	display:block;
+	padding-top:8px;
+}
+
+div.numero_favorito div.nombre {
+	float:left;
+	display:block;
+	padding-top:8px;
+	padding-left:15px;
+}
+
+div.numero_favorito div.botonera,
+div.numero_favorito div.msg,
+div.numero_favorito div.alerta_borrar {
+	float:right;
+	width:250px; /*400*/
+	display:block;
+}
+div.numero_favorito div.msg {
+	display:none;
+	text-align:right;
+	font-weight:bolder;
+	padding:8px 0 8px 0;
+}
+div.numero_favorito div.alerta_borrar {
+	display:none;
+	text-align:right;
+	font-weight:bolder;
+}
+div.numero_favorito div.alerta_borrar a.cancelar,
+div.numero_favorito div.alerta_borrar a.cancelar:visited {
+	color:#3a3a3a;
+}
+div.numero_favorito div.botonera a {
+	float:right;
+	display:block;
+}
+div.numero_favorito div.botonera a.eliminar,
+div.numero_favorito div.botonera a.eliminar:visited {
+	color:#3a3a3a;
+	padding-top:8px;
+	margin-left:10px;
+	font-weight:bolder;
+}
+div.debes_saber {
+	background:url(../../img/debessaber.gif) no-repeat 3px 3px;
+	padding:0 0 5px 100px;
+	font-size:1.2em;
+	margin-top:25px;
+	margin-bottom:70px;
+}
+div.ademas {
+	background:url(../../img/tip_ademas.gif) no-repeat 3px 3px;
+	padding-left:85px;
+	margin-top:10px;
+	font-size:1.1em;
+}
+div.numero_favorito div.paso_modificar {
+	padding:10px 0 10px 0;
+	display:none;
+}
+
+div.numero_favorito div.paso_modificar div.contenedor-text{
+	padding-right:10px;
+}
+
+div.numero_favorito label {
+	font-weight:bolder;
+}
+div.numero_favorito div.opciones {
+	width:370px; /*360*/
+	float:left;
+	display:block;
+	position:relative;
+}
+div.numero_favorito div.paso_modificar div.botonera {
+	width:150px;
+	padding-top:10px;
+}
+div.numero_favorito div.paso_modificar div.botonera_comunik2 {
+	float: right;
+}
+div.numero_favorito div.paso_modificar div.botonera a.cancelar {
+	padding-top:9px !important;
+	color:#3a3a3a;
+	margin-left:10px;
+}
+div.numero_favorito div.campo,
+div.numero_favorito div.campo_radio {
+	float:left;
+	display:block;
+	padding-right:10px;
+	/*border:#F00 solid 1px;*/
+}
+div.numero_favorito div.campo_radio {
+	padding-right:30px;
+	padding-bottom:10px;
+}
+div.numero_favorito div.campo_otro {
+	padding-right:72px;
+	padding-bottom:10px;
+	float:right;
+	display:block;
+}
+div.numero_favorito div.campo .nf_input {
+	width:110px; /* 150 */
+}
+div.numero_favorito div.campo .nf_select {
+	width:60px;
+}
+div.numero_favorito div.campo .nf_nombre {
+	padding-right:10px;
+	width:110px !important; /* 150 */
+}
+
+div.numero_favorito div.paso_nuevo {
+	display:none;
+}
+div.numero_favorito div.paso_nuevo strong {
+	float:left;
+	display:block;
+	padding-top:9px;
+}
+/***********************************/
+/*       PREPAGO CAMBIO PLAN       */
+/***********************************/
+#menu-desplegable-planes span.costoCambio {
+	font-weight:normal !important;
+	padding-left:40px;
+}
+#menu-desplegable-planes div.prepago_confirmar {
+	width:100% !important;
+}
+#menu-desplegable-planes div.prepago_confirmar h5 {
+	float:left;
+	display:block;
+}
+#menu-desplegable-planes div.prepago_confirmar strong {
+	float:right;
+	display:block;
+	width:300px;
+	text-align:right;
+}
+div#menu-desplegable-planes .paso_3 h5 {
+	font-size:1em;
+}
+
+/***********************************/
+/*       OTROS: CORRECCIONES       */
+/***********************************/
+a.btnCambiarmePlan {
+	/*background:url(../../img/botones/btn_cambiarmePlan.gif) top left no-repeat !important;*/
+	/*background:url(../../img/botones/btn_contratarPlan.gif) top left no-repeat !important;*/
+	background:url(../../img/botones/btn_contratar.gif) top left no-repeat !important;
+	width:99px;
+	height:30px;
+	display:block;
+	text-indent:-9999px;
+	float:none !important;
+	margin: 0 auto;
+}
+
+a.btnCambiarmePlan:hover {
+	background-position:bottom left !important;
+}
+
+a.btnContratarPlan {
+	background:url(../../img/botones/btn_contratarPlan.gif) top left no-repeat !important;
+	width:99px;
+	height:30px;
+	display:block;
+	text-indent:-9999px;
+	float:none !important;
+	margin: 0 auto;
+}
+
+a.btnContratarPlan:hover {
+	background-position:bottom left !important;
+}
+
+div#menu-desplegable-planes div.bolsa div.header a.btnCambiarmePlan {
+	display:none;
+}
+
+div#menu-desplegable-planes div.bolsa.abierto div.header a.btnCambiarmePlan {
+	display:block;
+}
+
+/**
+* CONTRATAR BOLSA
+*/
+.btnContratarBolsa {
+	background:url(../../img/botones/btn_contratarBolsa.gif) top left no-repeat !important;
+	width:103px;
+	height:30px;
+	display:block;
+	text-indent:-9999px;
+	float:none !important;
+	margin: 0 auto;
+}
+
+a.btnContratarBolsa:hover {
+	background-position:bottom left !important;
+}
+
+
+
+
+
+
+a.btnCambiarmeTarifa {
+	background:url(../../img/botones/btn_cambiarmeTarifa.gif) top left no-repeat !important;
+	width:149px;
+	height:30px;
+	display:block;
+	text-indent:-9999px;
+	float:none !important;
+	margin: 0 auto;
+}
+a.btnCambiarmeTarifa:hover {
+	background-position:bottom left !important;
+}
+
+div#menu-desplegable-planes div.bolsa div.header a.btnCambiarmeTarifa {
+	display:none;
+}
+div#menu-desplegable-planes div.bolsa.abierto div.header a.btnCambiarmeTarifa {
+	display:block;
+}
+
+
+
+
+#menu-desplegable-planes a.cambiarPlan.flotar_der {
+	float:right !important;
+}
+
+#menu-desplegable-planes a.cambiarTarifa.flotar_der {
+	float:right !important;
+}
+/*---------------------------------
+		   Tablas planes
+----------------------------------*/
+div.planes_header_tabla div.top {
+	background:url(../../img/table/bg_bigTablaTop.gif) right top no-repeat;
+	height:4px;
+	margin-bottom:-3px;
+	position:relative;
+	font-size:1px;
+	padding-right:4px;
+	display:block;
+}
+div.planes_header_tabla div.top span {
+	background:url(../../img/table/bg_bigTablaTop.gif) left top no-repeat;
+	height:4px;
+	display:block;
+}
+div.planes_header_tabla div.main {
+	font-size:0.9em;/* Modificado 0.9em Server */
+	border:1px solid #cddae7;
+	border-top:none;
+	border-bottom:none;
+	background-color:#e3edf8;
+}
+
+div.planes_header_tabla div.main.plan {
+	/*border:none !important;*/
+}
+
+div.planes_header_tabla div.main.plan {
+	font-size:1.2em;
+}
+
+div.planes_header_tabla div.bottom {
+	background:url(../../img/table/bg_bigTablaBottom.gif) right bottom no-repeat;
+	height:4px;
+	margin-top:-3px;
+	font-size:1px;
+	display:block;
+	padding-right:4px;
+}
+div.planes_header_tabla div.bottom span {
+	background:url(../../img/table/bg_bigTablaBottom.gif) left bottom no-repeat;
+	height:4px;
+	display:block;
+}
+
+div.planes_header_tabla div.main table {
+	border-collapse:collapse;
+	/*float:left;*/
+	position:relative;
+}
+div.planes_header_tabla div.main table th {
+	padding:10px 5px 10px 5px;
+	border-right:1px solid #cddae7;
+	color:#3a3a3a;
+	text-align:center;
+}
+div.planes_header_tabla div.main table th.primera {
+	text-align:left;
+}
+div.planes_header_tabla div.main table th div.icono {
+	padding-left:20px;
+}
+div.planes_header_tabla div.main table th.ultimo {
+	border-right:none;
+}
+div.planes_header_tabla div.main table th.borde_inferior {
+	border-bottom:1px solid #CBD9E6;
+	text-align:center;
+}
+
+div.planes_header_tabla div.main table tbody.contenido_plan {
+	text-align: center;
+	font-size: 0.9em;
+	background: white;
+	border-bottom:1px solid #E3E3E3;
+}
+
+div.planes_header_tabla div.main table tbody.contenido_plan td {
+	padding: 10px 5px;
+}
+
+* html #red div.planes_header_tabla div.top {
+	font-size:0px !important;
+}
+
+* html #red div.planes_header_tabla div.top span {
+	font-size:0px !important;
+}
+
+* html #red div.planes_header_tabla div.bottom {
+	font-size:0px !important;
+}
+
+* html #red div.planes_header_tabla div.bottom span {
+	font-size:0px !important;
+}
+table.planes_contabla {
+	border-collapse:collapse;
+}
+table.planes_contabla tbody tr td {
+	border-bottom:1px solid #e3e3e3;
+	padding:6px 5px 6px 5px;
+	font-size:0.9em; /* Modificado 0.9em Server */
+	text-align:center;
+}
+table.planes_contabla tbody tr td.primera {
+	text-align:left;
+	padding-left:10px;
+	padding-right:0;
+}
+table.planes_contabla tbody tr.color{
+	background:#eef4fa;
+}
+
+/*---------------------------------
+		   Globo Error
+----------------------------------*/
+div#globoError {
+	background:transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	display:none;
+	font-weight:bolder;
+	height:55px;
+	left:130px;
+	position:absolute;
+	top:11px;
+	width:246px;
+	z-index:5001;
+}
+* html div#globoError {
+	background:transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+}
+*:first-child+html #globoError {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+div#globoError table {
+	height:100%;
+	margin-left:50px;
+	width:187px;
+}
+div#globoError table td {
+	color:#E30101;
+	font-size:12px;
+}
+
+.aviso_no_plan {
+	display: block;
+	padding: 25px 140px 25px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	background: url(../../img/img_internet_movil.gif) right center no-repeat;
+}
+
+
+
+/* menu-desplegable FIX planes **************************************/
+
+#menu-desplegable-planes div.header {
+	padding: 9px 0 6px;
+}
+
+#menu-desplegable-planes div.float-izq {
+	float:left;
+	display:inline;
+}
+
+#menu-desplegable-planes div.header a.abierto,
+#menu-desplegable-planes div.header a.abierto:visited{
+	position:relative;
+	padding:0 0 0 20px;
+	background:url(../../img/icons/icon_close.gif) no-repeat 1px 2px;
+	font-size:1.2em;
+	color:#3a3a3a;
+	font-weight:bolder;
+	width:340px;
+}
+#menu-desplegable-planes div.header a.abierto:hover {
+	background:url(../../img/icons/icon_close.gif) no-repeat 1px 2px;
+	color:#597CA4;
+}
+
+#menu-desplegable-planes div.header a,#menu-desplegable-planes div.header a:hover,#menu-desplegable-planes div.header a:visited {
+	padding:0 0 0 20px;
+	background:url(../../img/icons/icon_open.gif) no-repeat 1px 2px;
+	font-size:1.2em;
+	color:#3a3a3a;
+	font-weight:bolder;
+	text-decoration:none;
+}
+#menu-desplegable-planes div.header a:hover{
+	color:#597CA4;
+	text-decoration:underline;
+}
+div#menu-desplegable-planes div.par {
+	border-top:1px white solid;
+	border-left:1px white solid;
+}
+
+div#menu-desplegable-planes div.impar {
+	background:#f5f5f5;
+	border-top:1px #f5f5f5 solid;
+	border-left:1px #f5f5f5 solid;
+}
+
+div#menu-desplegable-planes div.abierto {
+	border-right:3px #cfcdcd solid;
+	border-bottom:3px #cfcdcd solid;
+	border-top:1px #cfcdcd solid;
+	border-left:1px #cfcdcd solid;
+	background:white;
+	margin-bottom:19px;
+}
+div#menu-desplegable-planes div.fila div.nombre{
+	float:left;
+	width:150px;
+	padding:0 0 0 4px;
+}
+
+div#menu-desplegable-planes div.nombre{
+	float:left;
+	width:150px;
+	
+}
+
+div#menu-desplegable-planes div.precio{
+	float:left;
+	display:inline;
+	width:90px;
+}
+div#menu-desplegable-planes div.cabecera div.comprar{
+	padding-left:20px;
+	float:left;
+}
+
+div#menu-desplegable-planes div.cabecera div.comprar a.comprar{
+	margin-left:120px;
+}
+
+div#menu-desplegable-planes div.confirmar{
+	background:#fff1a8;
+}
+
+
+div#menu-desplegable-planes .contratar a.confirmar{
+	text-decoration:none;
+}
+
+div#menu-desplegable-planes .contratar a.cancelar,div#menu-desplegable-planes .contratar a.cancelar:hover,div#menu-desplegable-planes .contratar a.cancelar:visited{
+	padding:10px 0 0 5px;
+	color:#3a3a3a;
+	font-weight:bolder;	
+}
+div#menu-desplegable-planes .comprar a.cancelar,div#menu-desplegable-planes .comprar a.cancelar:hover,div#menu-desplegable-planes .comprar a.cancelar:visited{
+	padding:10px 0 0 5px;
+	color:#3a3a3a;
+	font-weight:bolder;	
+	font-size:11px;
+}
+
+div#menu-desplegable-planes .paso_2,div#menu-desplegable-planes .paso_3{
+	float:left;
+}
+
+div#menu-desplegable-planes .paso_2 a,div#menu-desplegable-planes .paso_2 div.titulo{
+	float:left;
+}
+div#menu-desplegable-planes .paso_2 div.titulo{
+	width:115px;
+	font-weight:bolder;	
+	font-size:12px;
+	margin-right:5px;
+}
+div#menu-desplegable-planes .paso_2 p{
+	
+}
+div#menu-desplegable-planes .paso_3 h5{
+	font-weight:bolder;
+	font-size:12px;
+}
+/* Caso espeficio para CC comprar y regalar **/
+div#menu-desplegable-planes div.comprar .paso_3{
+	padding:5px 0 0 0px;
+	float:left;
+	width:340px;
+	
+}
+/***************************************/
+/*	Seccion regalar*********************/
+#menu-desplegable-planes div.cabecera a.abierto,#menu-desplegable-planes div.cabecera a.abierto:hover,#menu-desplegable-planes div.cabecera a.abierto:visited{
+	background:url(../../img/icons/icon_close.gif) no-repeat 1px 2px;
+	font-size:1.2em;
+	color:#3a3a3a;
+	font-weight:bolder;
+	padding:0 0 0 10px;
+}
+#menu-desplegable-planes div.cabecera a.cerrado ,#menu-desplegable-planes div.cabecera a.cerrado:hover,#menu-desplegable-planes div.cabecera a.cerrado:visited{
+	background:none;
+	font-size:1.2em;
+	color:#3a3a3a;
+	font-weight:bolder;
+	padding:0 0 0 19px;
+}
+#menu-desplegable-planes div.cabecera a.cerrado:hover{
+	color:#597CA4;	
+}
+
+#menu-desplegable-planes  a.underline ,#menu-desplegable-planes a.underline:hover,#menu-desplegable-planes a.underline:visited{
+	
+	font-weight:normal;
+	color:black;
+}
+#menu-desplegable-planes a.underline:hover{
+	
+	color:#597CA4;	
+}
+#menu-desplegable-planes div.nombre a.no-underline{
+	
+}
+
+#menu-desplegable-planes div.cabecera a.regalar ,#menu-desplegable-planes div.cabecera a.regalar:hover,#menu-desplegable-planes div.cabecera a.regalar:visited{
+	
+}
+#menu-desplegable-planes div.cabecera div.nombre{
+	padding:10px 0 0 0;	
+}
+
+#menu-desplegable-planes div.cabecera div.precio{
+	padding:11px 0 0 0;
+	font-size:1.2em;	
+}
+
+#menu-desplegable-planes div.regalar{
+	float:right;
+	margin:0 5px 0 0;
+	display:inline;
+}div#menu-desplegable-planes .bolsa div.cabecera div.cancelar a.cancelar{
+	font-size:1.2em;
+	color:#3a3a3a;
+	background:none;
+	padding:0;
+}div#menu-desplegable-planes div.bolsa div.header .mensajeSaldo {
+	display:none;
+}
+div#menu-desplegable-planes div.bolsa.abierto div.header .mensajeSaldo {
+	display:block;
+}
+div#menu-desplegable-planes div.header div.mensajeSaldo a,
+div#menu-desplegable-planes div.header div.mensajeSaldo a:visited,
+div.mensajeSaldoComprarBolsaPrepago a,
+div.mensajeSaldoComprarBolsaPrepago a:visited {
+	background:none !important;
+	font-weight:normal !important;
+	font-size:1em !important;
+	text-decoration:underline !important;
+	padding-top:4px;
+	color:#444;
+}
+div.mensajeSaldoComprarBolsaPrepago a:hover {
+	background:none !important;
+	font-weight:normal !important;
+	font-size:1em !important;
+	text-decoration:underline !important;
+	padding-top:4px;
+	color: #597CA4;
+}
+/* Alerta Amarilla Modificacion Planes */
+#centro .alerta_amarilla a{
+	text-decoration:underline;	
+}#centro .alerta_amarilla{
+	padding-left:10px !important;	
+}
+/* Font size menu Table */
+div#menu-desplegable-planes div.header_tabla div.main table th, div#menu-desplegable-planes div.header_tabla div.main table .fuente_normal, div#menu-desplegable-planes .contabla td, div#menu-desplegable-planes .contabla th{
+	font-size:11px !important;	
+}div#menu-desplegable-planes .prepago_confirmar_edicion span{
+	font-size:12px !important;	
+}
+
+/* estilo deshabilitado para usuarios sin permisos para cambiar plan */
+.mensajeDeshabilitado {
+    background: url("../../img/icons/ico_candado.gif") no-repeat scroll left top transparent;
+    padding: 0 0 5px 20px;
+	text-align:left;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar .condicionesCheck{
+    display:block;
+    margin:10px 0;
+}
+#menu-desplegable-planes .paso_2 .paso_confirmar .condicionesCheck input{
+    display:block;
+    float:left;
+}#menu-desplegable-planes .paso_2 .paso_confirmar .condicionesCheck label{
+    display:block;
+    padding-left:20px;
+}#menu-desplegable-planes .paso_2 .paso_confirmar .botonesAlternos{
+    height:30px;
+    margin:10px 0;
+    float: right;
+}#menu-desplegable-planes .paso_2 .paso_confirmar .botonesAlternos a{
+    float:left;
+}#menu-desplegable-planes .paso_2 .paso_confirmar .botonesAlternos a.confirmar{
+    display:none;
+    margin-top:-4px;
+    margin-left:18px;
+}#menu-desplegable-planes .paso_2 .paso_confirmar .botonesAlternos a.cancelar{
+    text-decoration:underline;
+}
+
+#centro .db-info-cambioPlam {
+    background: none repeat scroll 0 0 #FFF1A8;
+    border-bottom: 1px solid #CFC489;
+    border-top: 1px solid #CFC489;
+    color: #3A3A3A;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.9em;
+    padding:8px 0 8px 0;
+    margin-top:15px;
+}
+
+#menu-desplegable-planes .paso_2.normal .paso_confirmar.advertencia {
+    display: none;
+}
+#menu-desplegable-planes .paso_2.advertencia .paso_confirmar.normal {
+    display: none;
+}
+.textAreaContactenos {	
+	padding:5px;
+	width:243px;
+	height:131.5px;
+	border:none;
+	resize: none;
+	font-size:1.2em;
+	font-family:Arial, Helvetica, sans-serif;		
+	background-color: transparent;
+    border: 0px solid #000000;
+    overflow:inherit;	
+}
+.campo_background{
+  background:url(../../img/contactanos/textareaContacto.jpg) no-repeat;
+}
+
+#menu-desplegable-planes a.btnDesactivado {				
+	cursor:default;
+	height:30px;		
+	float:none !important;
+	margin: 0 auto;	
+	text-indent: 0;
+	width:149px;
+}
+
+#menu-desplegable-planes a.btnDesactivado span{				
+	color: #ffffff;
+	padding-left: 16px;
+}
+#menu-desplegable-planes div.header a.btnDesactivado{
+	background:url(../../img/botones/btn_desactivado_normal.png) right -34px no-repeat;
+	*background: none;
+	display:none;
+	float:right !important;
+	padding: 0 8px 0 20px;	
+    text-decoration:none !important;
+}
+
+#menu-desplegable-planes a.btnDesactivado{			
+	display:none;
+	text-decoration:none !important;	
+}
+#menu-desplegable-planes a.btnDesactivado span{					
+	padding-left: 11px;
+	text-decoration:none !important;
+}
+
+#menu-desplegable-planes .bolsa div, #menu-desplegable-planes-bolsas .bolsa div{	
+	*border: none;
+	*background: none;
+}
+
+#menu-desplegable-planes-bolsas .bolsa div.fila{	
+	border-top: 1px solid #EBEBEB;
+}
+div.numero_frecuente div.botonera a.eliminar:hover,
+div.numero_frecuente div.botonera a.eliminar:hover {
+ color:#577DA5;
+}
+div.numero_favorito div.alerta_borrar a.cancelar:hover {
+ color:#577DA5; 
+}
+
+#menu-desplegable-planes .paso_2 .paso_confirmar a.cancelar:hover {
+ color:#577DA5;
+}
+
+div.numero_frecuente div.alerta_borrar a.cancelar,
+div.numero_frecuente div.alerta_borrar a.cancelar:hover {
+	 color:#577DA5;
+}
+
+div.numero_favorito div.paso_modificar div.botonera a.cancelar:hover {
+	 color:#577DA5;
+}
+
+div.numero_frecuente div.paso_modificar div.botonera a.cancelar:hover {
+    color:#577DA5;
+}
+
+.linea_tabs {
+    color: #064687;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+}
+
+.linea_tabs .tab {
+	border-left: 1px solid #CDDAE7;
+    border-right: 1px solid #CDDAE7;
+    border-top: 1px solid #CDDAE7;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 0 2px;
+    padding: 4px 6px 5px;
+}
+
+.linea_tabs .tab.seleccionado {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-weight: bolder;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.linea_tabs .tab span {
+    padding: 2px 0 2px 22px;
+}
+
+.linea_tabs .tab span.informacion {
+    background: url("../../img/icons/ico_informacion_small.png") no-repeat scroll left center transparent;
+}
+
+.linea_tabs .tab span.velocidades {
+    background: url("../../img/icons/ico-reloj.gif") no-repeat scroll left center transparent;
+}

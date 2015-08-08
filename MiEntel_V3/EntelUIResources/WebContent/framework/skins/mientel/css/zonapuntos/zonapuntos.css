@@ -1,0 +1,597 @@
+/*
+ * Estilos ZONAPUNTOS HOME
+ */
+
+#centro h2.bullet_zonapuntos {
+	border-bottom: none;
+	color: #064687;
+	font-size: 1.8em;
+	font-family: Arial,Helvetica,sans-serif;
+	margin-bottom: 10px;
+	padding: 0 0 5px 25px;
+	background: url(../../img/bullet_h2.gif) left center no-repeat;
+}
+
+h2.ico_mas_recarga {
+	background: url(../../img/icons/ico_mas.gif) 6px 4px no-repeat;
+}
+
+h2.ico_bolsas_zonapuntos {
+	background: url(../../img/icons/ico_bolsas.gif) 6px 4px no-repeat;
+}
+
+.cajalinks .cabecera_nueva_azul.caja_puntos_zona {
+    background: url("../../img/zonapuntos/bgHeaderAzul.jpg") no-repeat;
+}
+
+*html .cajalinks .cabecera_nueva_azul.caja_puntos_zona {
+    background: url("../../img/zonapuntos/bgHeaderAzul.jpg") no-repeat;
+}
+
+.caja_circulo_mas {
+	display: block;
+	float: left;
+	width: 243px;
+	margin: 0 50px 0 0;
+}* html .caja_circulo_mas {
+	margin: 0 30px 0 0;
+}
+
+.caja_circulo_mas .caja_circulo_mas_top {
+	display: block;
+	float: left;
+	background: url(../../img/zonapuntos/caja_circulo_mas_top.gif) top left no-repeat;
+	height: 18px;
+	width: 243px;
+}
+
+.caja_circulo_mas .caja_circulo_mas_bottom {
+	display: block;
+	float: left;
+	background: url(../../img/zonapuntos/caja_circulo_mas_bottom.gif) top left no-repeat;
+	height: 18px;
+	width: 243px;
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro {
+	display: block;
+	float: left;
+	background: url(../../img/zonapuntos/caja_circulo_mas_centro.gif) top left repeat-y;
+	padding: 0 15px;
+	width: 213px;
+	min-height: 300px;
+}* html .caja_circulo_mas .caja_circulo_mas_centro {
+	height: 300px;
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro img.logo {
+	display: block;
+	margin: -8px 0 0 0;
+}* html .caja_circulo_mas .caja_circulo_mas_centro img.logo {
+	margin: 0;
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro span.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bolder;
+	padding: 0 0 23px 0;
+}* html .caja_circulo_mas .caja_circulo_mas_centro span.texto {
+	padding: 0 0 20px 0;
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro span.nombre_circulo_mas {
+	display: block;
+	width: 180px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	font-weight: bolder;
+	padding: 5px 0 15px;	
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro span.logomas {
+	display: block;
+	float: left;
+	padding: 0 23px 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 1.2em;
+	background: url(../../img/zonapuntos/logo_mas.gif) right center no-repeat;
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro span.enlace_circulo_mas {
+	display: block;
+	float: right;
+	padding: 3px 30px 3px 0;
+	background: url(../../img/zonapuntos/logo_mas_grande.gif) right center no-repeat;
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro span.enlace_circulo_mas a,
+.caja_circulo_mas .caja_circulo_mas_centro span.enlace_circulo_mas a:visited {
+	color: #c1c1c1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bolder;	
+}
+
+.caja_circulo_mas .caja_circulo_mas_centro span.enlace_circulo_mas a:hover {
+	text-decoration: none;
+}
+
+/*
+ * Caja Entel mas
+ */
+
+.caja_entel_mas {
+	display: block;
+	float: left;
+	width: 239px;
+}
+
+.caja_entel_mas .caja_entel_mas_top {
+	display: block;
+	float: left;
+	background: url(../../img/zonapuntos/caja_entel_mas_arriba.gif) top left no-repeat;
+	width: 239px;
+	height: 76px;
+}
+
+.caja_entel_mas .caja_entel_mas_bottom {
+	display: block;
+	float: left;
+	background: url(../../img/zonapuntos/caja_entel_mas_bottom.gif) top left no-repeat;
+	width: 239px;
+	height: 22px;
+}
+
+.caja_entel_mas .caja_entel_mas_centro {
+	display: block;
+	float: left;
+	background: url(../../img/zonapuntos/caja_entel_mas_centro.gif) top left repeat-y;
+	padding: 10px 15px;
+	width: 209px;
+	min-height: 215px;
+}* html .caja_entel_mas .caja_entel_mas_centro {
+	height: 240px;
+}
+
+.caja_entel_mas .caja_entel_mas_centro span.texto {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bolder;
+	padding: 0 0 30px 0;
+	color: #0073ae;
+}* html .caja_circulo_mas .caja_circulo_mas_centro span.texto {
+	padding: 0 0 30px 0;
+}
+
+.caja_entel_mas .caja_entel_mas_centro span.logomas {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: #0073ae;
+}
+
+.caja_entel_mas .caja_entel_mas_centro span.logomas .numero {
+	color: #f78e1e
+}
+
+.caja_entel_mas .caja_entel_mas_centro span.padding_arriba {
+	padding: 20px 0 15px;
+}
+
+a.btn_mas_info {
+	display: block;
+	background: url(../../img/zonapuntos/btn_mas_info.gif) top left no-repeat;
+	width: 98px;
+	height: 20px;
+	text-indent: -9999px;
+}
+
+/*
+ * Estilos ZONAPUNTOS HISTORIAL
+ */
+.caja_historial {
+	display: block;
+	width: 548px;
+	padding: 10px 0 20px;
+}
+
+.caja_historial .caja_historial_top {
+	display: block;
+	float: left;
+	width: 548px;
+	height: 7px;
+	background: url(../../img/zonapuntos/historial/caja_historial_top.gif) top left no-repeat;
+}* html .caja_historial .caja_historial_top {
+	margin: 0 0 -6px 0;
+}
+
+.caja_historial .caja_historial_bottom {
+	display: block;
+	float: left;
+	width: 548px;
+	height: 7px;
+	background: url(../../img/zonapuntos/historial/caja_historial_bottom.gif) top left no-repeat;
+}
+
+.caja_historial .caja_historial_centro {
+	display: block;
+	float: left;
+	width: 548px;
+	background: url(../../img/zonapuntos/historial/caja_historial_centro.gif) top left repeat-y;
+}
+
+.caja_historial .caja_historial_centro .historial_fila {
+	display: block;
+	padding: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.caja_historial .caja_historial_centro .ultima {
+	border-bottom: none;
+}
+
+.caja_historial .caja_historial_centro .historial_fila span.texto_izq {
+	display: block;
+	float: left;
+}
+
+.caja_historial .caja_historial_centro .historial_fila span.texto_der {
+	display: block;
+	float: right;
+}
+
+.caja_historial .caja_historial_centro .historial_fila span.texto_izq span {
+	color: #c1c1c1;
+}
+
+.caja_enlaces {
+	display: block;
+	padding: 7px;
+	border-bottom: 1px solid #e3e3e3;
+	border-top: 1px solid #e3e3e3;
+}
+
+.caja_enlaces a, 
+.caja_enlaces a:visited {
+	display: block;
+	float: left;
+	padding: 0 20px 0 0;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #444444;
+	text-decoration: underline;
+}
+
+.caja_enlaces a:hover {
+	text-decoration: none;
+}
+
+/*
+ * Estilos ZONAPUNTOS - CANJE DE PUNTOS 
+ * Utilizar identficador #div_canje_recargas_bolsas_bolsas para evitar cambiar tabs en otras partes del portal
+ */
+.caja_tabs {
+	display: block;
+	padding: 15px 0 30px;
+}
+
+#div_canje_recargas_bolsas .btnCancelar{
+	display:inline-block !important;
+	float: none;
+}
+
+#div_recargas_canje .btnCancelar{ 
+	*display:inline-block; 
+	*padding-bottom:12px;
+}
+
+#div_canje_recargas_bolsas .btnDesactivado:hover{
+	text-decoration:underline;
+}
+
+#div_canje_recargas_bolsas .cont-paso{
+	display: inline-block;
+	float: right; 
+	*margin-top:-22px;
+}
+
+#div_canje_recargas_bolsas .contenido_tab {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CFCDCD;
+    border-style: solid;
+    border-width: 1px 3px 1px 1px;
+    display: block;
+    float: right;
+    margin: 0 0 5px;
+    padding: 8px;
+    width: 400px;
+}
+#div_canje_recargas_bolsas .contenido_tab .alerta_numero, .contenido_tab .alerta_numero2 {
+    left: 125px;
+    position:relative;
+    z-index: 10;
+}
+#div_canje_recargas_bolsas .contenido_tab span.texto {
+    color: #3A3A3A;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 0 0 5px;
+}
+#div_canje_recargas_bolsas .contenido_tab .formulario_fila {
+    display: block;
+    padding: 5px 0;
+}
+#div_canje_recargas_bolsas .contenido_tab .formulario_fila .tabla_formulario_label {
+    color: #3A3A3A;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    width: 160px;
+}
+#div_canje_recargas_bolsas .contenido_tab .formulario_fila .inputBox{
+	width: 112px;
+}
+#div_canje_recargas_bolsas .contenido_tab span.texto_nobold {
+    color: #3A3A3A;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+#div_canje_recargas_bolsas .tabla_formulario_dato {
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+
+#div_canje_recargas_bolsas .tabla_bolsas {
+	display: block;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .fila_bolsas { /*Estado Normal*/
+	display: block;
+	padding: 3px 10px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .fila_impar {
+	background: #f5f5f5;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .fila_canje_alerta { /*Estado Alerta*/
+	display: block;
+	padding: 3px 10px;
+	background: #fff1a8;
+	border-top: 1px solid #cfc489;
+	border-bottom: 1px solid #cfc489;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .nombre_bolsa, #div_canje_recargas_bolsas .tabla_bolsas .monto_recarga, #div_canje_recargas_bolsas .tabla_bolsas .info_bolsa_recarga{
+	display: block;
+	float: left;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	font-weight: bolder;
+	height: 32px;
+	padding: 9px 0 0;
+	width: 305px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .monto_recarga{
+	width: 60px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .info_bolsa_recarga{
+	width: 30px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .precio_bolsa, #div_canje_recargas_bolsas .tabla_bolsas .puntos_recarga{
+	display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    padding: 9px 0 0 5px;
+    width: 80px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .puntos_recarga{
+	width: 130px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .mensaje_bolsa {
+	display: block;
+	float: left;
+	width: 360px;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+}
+
+.puntos_insuficientes, .puntos_insuficientes_recarga{
+	display: block;
+	float: left;
+	padding: 10px 0;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .puntos_insuficientes{
+	width: 110px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .puntos_insuficientes_recarga{
+	font-weight: bold;
+	text-align:right;
+	padding: 10px 0;
+	width: 290px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .exito_canje_bolsa {
+	display: block;
+	float: left;
+	width: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas  .corto {
+	width: 100px;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .exito_canje_bolsa span.titulo {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .exito_canje_bolsa span.texto {
+	font-size: 1.1em;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .botones {
+	display: block;
+	float: right;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .botones a.btnCancelar:hover {
+	text-decoration: underline;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .botones a.btnCancelarTab, #div_canje_recargas_bolsas .tabla_bolsas .botones a.btnCancelarTab:visited {		
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CFCDCD #CFCDCD #FFFFFF;
+    border-style: solid;
+    border-width: 1px 3px 0 1px;
+    color: #3A3A3A;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;    
+    padding: 5px 8px 22px;
+    position: relative;
+    top: 1px;
+    text-decoration: underline;
+}
+
+#div_canje_recargas_bolsas .tabla_bolsas .botones a.btnCancelarTab:hover {
+	color:#577DA5;
+}
+
+#div_canje_recargas_bolsas .tab_contenido {
+	display: block;
+	float: right;
+	background: #fff;
+	border-top: 1px solid #cfcdcd;
+	border-left: 1px solid #cfcdcd;
+	border-right: 3px solid #cfcdcd;
+	border-bottom: 1px solid #cfcdcd;
+	margin: 2px 0 5px;
+	padding: 8px;
+	width: 400px;
+}
+
+
+
+#div_canje_recargas_bolsas .tab_contenido.altEquipo {
+	display: none;
+	width:auto;
+	float: none;
+	background: #fff;
+	border: none !important;
+	padding: 8px;
+}
+
+#div_canje_recargas_bolsas .tab_contenido span.texto {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	font-weight: bolder;
+	padding: 0 0 5px 0; 
+}
+
+#div_canje_recargas_bolsas .tab_contenido .tab_contenido2 {
+	display: none;
+	padding: 20px 10px;
+}
+
+#div_canje_recargas_bolsas .tab_contenido span.texto_nobold {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	padding: 10px 0;
+}
+
+#div_canje_recargas_bolsas .tab_contenido .formulario_fila {
+	display: block;
+	padding: 5px 0;
+}
+
+#div_canje_recargas_bolsas .tab_contenido .formulario_fila .tabla_formulario_label {
+ 	display: block;
+	float: left;
+	width: 160px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3a3a3a;
+ }
+ 
+#div_canje_recargas_bolsas .tab_contenido .alerta_numero,
+#div_canje_recargas_bolsas .tab_contenido .alerta_numero2 {
+	left: 125px;
+	z-index: 10;
+}
+ 
+#div_canje_recargas_bolsas .tab_contenido .formulario_fila .tabla_formulario_dato {
+	position: relative;
+	font-size: 1.1em;
+}
+
+#div_canje_recargas_bolsas .pvolver_estado1{
+	text-align:right;
+}
+
+#div_canje_recargas_bolsas .pvolver_estado1 a{
+	color:#3A3A3A;
+	text-align:right;
+	text-decoration:underline; 
+}
+
+#div_canje_recargas_bolsas .pvolver_estado1 a:hover{
+	color:#577DA5;	
+}
+
+.mensaje_exito_canje {
+	display: block;
+	margin: 10px 0 5px;
+	padding: 10px;
+	border-top: 1px solid #bbd4b9;
+	border-bottom: 1px solid #bbd4b9;
+	background: #d6e9d2;
+}
+
+.mensaje_exito_bolsas_regalo span.texto {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	padding: 3px 0;
+}
+
+.loading{
+	display:block;
+	background:url(../../img/loading.gif) no-repeat;
+	width:16px;
+	height:11px;
+	margin:20px auto;
+}

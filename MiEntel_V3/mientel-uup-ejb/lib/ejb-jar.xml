@@ -1,0 +1,727 @@
+<ejb-jar xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.1">
+	<enterprise-beans>
+		<!-- TrackedAnonymous EJB -->
+		<entity>
+			<ejb-name>TrackedAnonymous</ejb-name>
+			<home>com.bea.p13n.usermgmt.profile.TrackedAnonymousHome</home>
+			<remote>com.bea.p13n.usermgmt.profile.TrackedAnonymous</remote>
+			<ejb-class>com.bea.p13n.usermgmt.profile.internal.TrackedAnonymousBean
+			</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.String</prim-key-class>
+			<reentrant>false</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>TrackedAnonymousBean</abstract-schema-name>
+			<cmp-field>
+				<field-name>anonymousUserId</field-name>
+			</cmp-field>
+			<cmp-field>
+				<field-name>lastVisited</field-name>
+			</cmp-field>
+			<primkey-field>anonymousUserId</primkey-field>
+			<resource-ref>
+				<res-ref-name>jdbc/commercePool</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+		</entity>
+
+		<!--  PropertySetManager EJB -->
+		<session>
+			<ejb-name>PropertySetManager</ejb-name>
+			<home>com.bea.p13n.property.PropertySetManagerHome</home>
+			<remote>com.bea.p13n.property.PropertySetManager</remote>
+			<ejb-class>com.bea.p13n.property.internal.PropertySetManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<env-entry>
+				<env-entry-name>repository/CONTENT</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>com.bea.content.internal.client.common.PropertySetRepositoryImpl
+				</env-entry-value>
+			</env-entry>
+			<!-- following are mappings from file extension to property set type -->
+			<env-entry>
+				<env-entry-name>extension/clg</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>CATALOG</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<env-entry-name>extension/evt</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>EVENT</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<env-entry-name>extension/req</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>REQUEST</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<env-entry-name>extension/ses</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>SESSION</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<env-entry-name>extension/usr</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>USER</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<env-entry-name>extension/propset</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>APPL</env-entry-value>
+			</env-entry>
+			<resource-ref>
+				<res-ref-name>timer/PortalTimer</res-ref-name>
+				<res-type>commonj.timers.TimerManager</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Unshareable</res-sharing-scope>
+			</resource-ref>
+			<resource-ref>
+				<res-ref-name>wm/DataSyncWorkManager</res-ref-name>
+				<res-type>commonj.work.WorkManager</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+			<resource-ref>
+				<res-ref-name>p13n.leasemanager</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+
+		</session>
+
+		<!--    EntityPropertyManager EJB -->
+		<session>
+			<ejb-name>EntityPropertyManager</ejb-name>
+			<home>com.bea.p13n.property.EntityPropertyManagerHome</home>
+			<remote>com.bea.p13n.property.EntityPropertyManager</remote>
+			<ejb-class>com.bea.p13n.property.internal.EntityPropertyManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref>
+				<ejb-ref-name>ejb/PropertySetManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.PropertySetManagerHome</home>
+				<remote>com.bea.p13n.property.PropertySetManager</remote>
+				<ejb-link>PropertySetManager</ejb-link>
+			</ejb-ref>
+			<env-entry>
+				<env-entry-name>PropertyMapping/mientel</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>EPcsEntityPropertyManager</env-entry-value>
+			</env-entry>
+			<resource-ref>
+				<res-ref-name>p13n.sequencerDataSource</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+
+
+			<resource-ref>
+				<res-ref-name>jdbc/commercePool</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+
+
+		</session>
+
+		<!--    Property Set Web Service EJB -->
+		<session>
+			<ejb-name>PropertySetWebService</ejb-name>
+			<home>com.bea.p13n.property.webservice.PropertySetWebServiceHome
+			</home>
+			<remote>com.bea.p13n.property.webservice.PropertySetWebService
+			</remote>
+			<ejb-class>com.bea.p13n.property.webservice.internal.PropertySetWebServiceImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref>
+				<ejb-ref-name>ejb/PropertySetManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.PropertySetManagerHome</home>
+				<remote>com.bea.p13n.property.PropertySetManager</remote>
+				<ejb-link>PropertySetManager</ejb-link>
+			</ejb-ref>
+		</session>
+
+		<!--    RulesManager EJB -->
+		<session>
+			<ejb-name>RulesManager</ejb-name>
+			<home>com.bea.p13n.rules.manager.RulesManagerHome</home>
+			<remote>com.bea.p13n.rules.manager.RulesManager</remote>
+			<ejb-class>com.bea.p13n.rules.manager.internal.RulesManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<env-entry>
+				<description>
+					This property will be used by RulesManagerImpl to create an instance of
+					the RuleSetRepository.
+                </description>
+				<env-entry-name>RuleSetRepositoryClassName</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>com.bea.p13n.rules.manager.internal.RuleSetPersistenceManager
+				</env-entry-value>
+			</env-entry>
+		</session>
+
+		<!--   Realm Configuration  EJB -->
+		<session>
+			<ejb-name>RealmConfiguration</ejb-name>
+			<home>com.bea.p13n.usermgmt.config.RealmConfigurationHome</home>
+			<remote>com.bea.p13n.usermgmt.config.RealmConfiguration</remote>
+			<ejb-class>com.bea.p13n.usermgmt.config.internal.RealmConfigurationImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-ref>
+				<ejb-ref-name>ejb/GroupProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>GroupProfileManager</ejb-link>
+			</ejb-ref>
+			<ejb-ref>
+				<ejb-ref-name>ejb/UserProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>UserProfileManager</ejb-link>
+			</ejb-ref>
+		</session>
+
+		<!-- User Profile Manager-->
+		<session>
+			<ejb-name>UserProfileManager</ejb-name>
+			<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+			<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+			<ejb-class>com.bea.p13n.usermgmt.profile.internal.UserProfileManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<!--
+				The UserProfileManager used programatic security to allow users to
+				modify their own data (where username == profileName) or anyone in
+				one of these (administrative) roles. Used in the methods:
+				deleteProfile, removeProperty, removeSuccessor, setProperty, and
+				setSuccessor. Other methods can be protected using declarative
+				security. Should at least include the WebLogic Admin role, if left
+				empty or mapped to "empty" roles, then noone will be able to admin
+				user profiles. Each role listed here should also have a
+				security-role-ref entry below
+			-->
+			<env-entry>
+				<env-entry-name>AuthorizedRoles</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>Admin,PortalSystemAdministrator</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<env-entry-name>PropertyMapping/mientel</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>EPcsEntityPropertyManager</env-entry-value>
+			</env-entry>
+			<!-- the default property manager -->
+			<ejb-ref>
+			<ejb-ref-name>ejb/EntityPropertyManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.EntityPropertyManagerHome</home>
+				<remote>com.bea.p13n.property.EntityPropertyManager</remote>
+				<ejb-link>EntityPropertyManager</ejb-link> </ejb-ref>
+			<ejb-ref>
+				<ejb-ref-name>ejb/EPcsEntityPropertyManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.epcs.p13n.property.EPcsEntityPropertyManagerRemoteHome
+				</home>
+				<remote>com.epcs.p13n.property.EPcsEntityPropertyManagerRemote
+				</remote>
+				<ejb-link>EPcsEntityPropertyManager</ejb-link> 
+			</ejb-ref>
+			<!-- property set manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/PropertySetManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.PropertySetManagerHome</home>
+				<remote>com.bea.p13n.property.PropertySetManager</remote>
+				<ejb-link>PropertySetManager</ejb-link>
+			</ejb-ref>
+			<!-- group profile manager, which is the user's successor -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/GroupProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>GroupProfileManager</ejb-link>
+			</ejb-ref>
+
+			<resource-ref>
+				<res-ref-name>p13n.sequencerDataSource</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+
+			<!-- Security role refs for roles listed in AuthorizedRoles -->
+			<security-role-ref>
+				<description>Portal system administrators</description>
+				<role-name>PortalSystemAdministrator</role-name>
+				<role-link>PortalSystemAdministrator</role-link>
+			</security-role-ref>
+			<security-role-ref>
+				<description>WLS System administrators</description>
+				<role-name>Admin</role-name>
+				<role-link>Admin</role-link>
+			</security-role-ref>
+		</session>
+
+		<!-- Group profile manager -->
+		<session>
+			<ejb-name>GroupProfileManager</ejb-name>
+			<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+			<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+			<ejb-class>com.bea.p13n.usermgmt.profile.internal.GroupProfileManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<!-- the default property manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/EntityPropertyManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.EntityPropertyManagerHome</home>
+				<remote>com.bea.p13n.property.EntityPropertyManager</remote>
+				<ejb-link>EntityPropertyManager</ejb-link>
+			</ejb-ref>
+			<!-- property set manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/PropertySetManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.PropertySetManagerHome</home>
+				<remote>com.bea.p13n.property.PropertySetManager</remote>
+				<ejb-link>PropertySetManager</ejb-link>
+			</ejb-ref>
+			<!-- group profile manager, which is the group's successor -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/GroupProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>GroupProfileManager</ejb-link>
+			</ejb-ref>
+		</session>
+
+		<!-- Mixed profile manager -->
+		<session>
+			<ejb-name>MixedProfileManager</ejb-name>
+			<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+			<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+			<ejb-class>com.bea.p13n.usermgmt.profile.internal.MixedProfileManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<!--
+				Analagous to UserProfileManager, these protect a principal user
+				within this profile mgr
+			-->
+			<env-entry>
+				<env-entry-name>AuthorizedRoles</env-entry-name>
+				<env-entry-type>java.lang.String</env-entry-type>
+				<env-entry-value>Admin,PortalSystemAdministrator</env-entry-value>
+			</env-entry>
+			<!-- the default property manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/EntityPropertyManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.EntityPropertyManagerHome</home>
+				<remote>com.bea.p13n.property.EntityPropertyManager</remote>
+				<ejb-link>EntityPropertyManager</ejb-link>
+			</ejb-ref>
+			<!-- property set manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/PropertySetManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.PropertySetManagerHome</home>
+				<remote>com.bea.p13n.property.PropertySetManager</remote>
+				<ejb-link>PropertySetManager</ejb-link>
+			</ejb-ref>
+			<!-- custom profile manager, which is the entity's successor -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/CustomProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>CustomProfileManager</ejb-link>
+			</ejb-ref>
+			<!-- Mixed profile manager  -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/MixedProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>MixedProfileManager</ejb-link>
+			</ejb-ref>
+			<!-- Security role refs for roles listed in AuthorizedRoles -->
+			<security-role-ref>
+				<description>Portal system administrators</description>
+				<role-name>PortalSystemAdministrator</role-name>
+				<role-link>PortalSystemAdministrator</role-link>
+			</security-role-ref>
+			<security-role-ref>
+				<description>WLS System administrators</description>
+				<role-name>Admin</role-name>
+				<role-link>Admin</role-link>
+			</security-role-ref>
+		</session>
+
+		<!-- Custom profile manager -->
+		<session>
+			<ejb-name>CustomProfileManager</ejb-name>
+			<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+			<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+			<ejb-class>com.bea.p13n.usermgmt.profile.internal.CustomProfileManagerImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<!-- the default property manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/EntityPropertyManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.EntityPropertyManagerHome</home>
+				<remote>com.bea.p13n.property.EntityPropertyManager</remote>
+				<ejb-link>EntityPropertyManager</ejb-link>
+			</ejb-ref>
+			<!-- property set manager -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/PropertySetManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.property.PropertySetManagerHome</home>
+				<remote>com.bea.p13n.property.PropertySetManager</remote>
+				<ejb-link>PropertySetManager</ejb-link>
+			</ejb-ref>
+			<!-- custom profile manager, which is the entity's successor -->
+			<ejb-ref>
+				<ejb-ref-name>ejb/CustomProfileManager</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<home>com.bea.p13n.usermgmt.profile.ProfileManagerHome</home>
+				<remote>com.bea.p13n.usermgmt.profile.ProfileManager</remote>
+				<ejb-link>CustomProfileManager</ejb-link>
+			</ejb-ref>
+		</session>
+
+		<!--    Event Service  EJB -->
+		<session>
+			<ejb-name>EventService</ejb-name>
+			<home>com.bea.p13n.events.EventServiceHome</home>
+			<remote>com.bea.p13n.events.EventService</remote>
+			<ejb-class>com.bea.p13n.events.internal.EventServiceBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+
+			<resource-ref>
+				<res-ref-name>wm/PortalWorkManager</res-ref-name>
+				<res-type>commonj.work.WorkManager</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+			<resource-ref>
+				<res-ref-name>timer/PortalTimer</res-ref-name>
+				<res-type>commonj.timers.TimerManager</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Unshareable</res-sharing-scope>
+			</resource-ref>
+
+			<resource-ref>
+				<res-ref-name>p13n.sequencerDataSource</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+			<resource-ref>
+				<res-ref-name>p13n.trackingDataSource</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+			</resource-ref>
+
+
+		</session>
+
+		<!--    Data Sync refresh proxy EJB -->
+		<session>
+			<ejb-name>internalDataRefreshProxy</ejb-name>
+			<home>com.bea.p13n.management.data.repository.internal.ejbproxy.RefreshProxyHome
+			</home>
+			<remote>com.bea.p13n.management.data.repository.internal.ejbproxy.RefreshProxy
+			</remote>
+			<ejb-class>com.bea.p13n.management.data.repository.internal.ejbproxy.RefreshProxyImpl
+			</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+		</session>
+
+	</enterprise-beans>
+
+	<assembly-descriptor>
+
+		<security-role>
+			<description>Portal System Administrators - Can do portal
+				administrative tasks.</description>
+			<role-name>PortalSystemAdministrator</role-name>
+		</security-role>
+
+		<security-role>
+			<description>Web Logic Administrators - This is the default global
+				WLS Administrators role.</description>
+			<role-name>Admin</role-name>
+		</security-role>
+
+		<!--
+			These methods for these EJBs don't require any specific role to
+			execute. Note that the way we're doing access priviledges is to first
+			tighten everything down (the following section specifying methods
+			requiring the user to be in priviledged roles) then open up a
+			selected few via these entries with ' <unchecked /> '
+		-->
+		<method-permission>
+			<unchecked />
+
+			<method>
+				<ejb-name>TrackedAnonymous</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<!-- programatic security - see AuthorizedRoles env-entry -->
+			<method>
+				<ejb-name>UserProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<!-- programatic security - see AuthorizedRoles env-entry -->
+			<method>
+				<ejb-name>MixedProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<!--
+				Not clear how the custom, app-defined entity profiles should be
+				protected? Leave open, for now
+			-->
+			<method>
+				<ejb-name>CustomProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-intf>Home</method-intf>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>createProfile</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getAllProfileNames</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getJNDIName</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getProfileName</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getProperties</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getProperty</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getPropertyAsString</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getPropertyNoDefault</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getSuccessor</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>getUniqueId</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>profileExists</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>remove</method-name>
+			</method>
+
+
+			<method>
+				<ejb-name>PropertySetManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>EntityPropertyManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>PropertySetWebService</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<!--
+				unchecked (anonymous) users can only evalute rules and rule sets
+			-->
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-intf>Home</method-intf>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>evaluateRuleSet</method-name>
+			</method>
+
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>evaluateRule</method-name>
+			</method>
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>remove</method-name>
+			</method>
+
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>getHandle</method-name>
+			</method>
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>isIdentical</method-name>
+			</method>
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>getEJBHome</method-name>
+			</method>
+
+			<!-- programmatic security - see AuthorizedRoles env-entry -->
+			<method>
+				<ejb-name>EventService</ejb-name>
+				<method-name>*</method-name>
+			</method>
+		</method-permission>
+
+		<!--
+			These methods on these EJBs require the user to be in either the
+			Admin or PortalSystemAdministrator role. Note that the way we're
+			doing access priviledges is to first tighten everything down (these
+			entries) then open up a selected few (via the <unchecked> entries
+			above).
+		-->
+		<method-permission>
+			<role-name>PortalSystemAdministrator</role-name>
+			<role-name>Admin</role-name>
+
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>RealmConfiguration</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+			<method>
+				<ejb-name>internalDataRefreshProxy</ejb-name>
+				<method-name>*</method-name>
+			</method>
+
+		</method-permission>
+
+
+		<container-transaction>
+			<!-- Required -->
+			<method>
+				<ejb-name>PropertySetManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>EntityPropertyManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>RulesManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>RealmConfiguration</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>UserProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>GroupProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>MixedProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CustomProfileManager</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>TrackedAnonymous</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+
+		<container-transaction>
+			<!-- Supports -->
+			<method>
+				<ejb-name>RealmConfiguration</ejb-name>
+				<method-name>cleanupMisconfiguredUsers</method-name>
+			</method>
+			<method>
+				<ejb-name>PropertySetWebService</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>EventService</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Supports</trans-attribute>
+		</container-transaction>
+
+		<container-transaction>
+			<method>
+				<ejb-name>internalDataRefreshProxy</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>NotSupported</trans-attribute>
+		</container-transaction>
+
+	</assembly-descriptor>
+</ejb-jar>

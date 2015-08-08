@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/BILLING/GestionDeBalances/Proxies/BillingBalanceService?WSDL
+#wsdl=http://esbpre.entel.cl/BILLING/GestionDeBalances/Proxies/BillingBalanceService?WSDL
+targetnamespace=http://www.epcs.com/billing/balance
+servicename=BillingBalanceService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="SeguimientoTrafServiceService" targetNamespace="http://www.epcs.com/integracion/seguimientotrafservice" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/integracion/seguimientotrafservice/types" xmlns:WL5G3N2="http://www.epcs.com/integracion/seguimientotrafservice" xmlns:WL5G3N3="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xs:schema targetNamespace="http://www.epcs.com/integracion/seguimientotrafservice/types" version="1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/integracion/seguimientotrafservice" xmlns:types="http://www.epcs.com/integracion/seguimientotrafservice/types" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <!-- metodo consulta actual -->
+      <xs:element name="consultaActual" type="types:consultaActual"/>
+      <xs:element name="consultaActualResponse" type="types:consultaActualResponse"/>
+      <xs:complexType name="consultaActual">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+          <xs:element minOccurs="0" name="imei" type="xs:string"/>
+          <xs:element minOccurs="0" name="imsi" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="consultaActualResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="consultaActual" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <!-- metodo consulta historica -->
+      <xs:element name="consultaHistorica" type="types:consultaHistorica"/>
+      <xs:element name="consultaHistoricaResponse" type="types:consultaHistoricaResponse"/>
+      <xs:complexType name="consultaHistorica">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="msisdn" type="xs:string"/>
+          <xs:element minOccurs="0" name="imei" type="xs:string"/>
+          <xs:element minOccurs="0" name="imsi" type="xs:string"/>
+          <xs:element minOccurs="0" name="cantidadDias" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="consultaHistoricaResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="consultaHistorica" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="consultaActual">
+    <WL5G3N0:part element="WL5G3N1:consultaActual" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaActualResponse">
+    <WL5G3N0:part element="WL5G3N1:consultaActualResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaHistorica">
+    <WL5G3N0:part element="WL5G3N1:consultaHistorica" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaHistoricaResponse">
+    <WL5G3N0:part element="WL5G3N1:consultaHistoricaResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="SeguimientoTrafService">
+    <WL5G3N0:operation name="consultaActual">
+      <WL5G3N0:input message="WL5G3N2:consultaActual"/>
+      <WL5G3N0:output message="WL5G3N2:consultaActualResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaHistorica">
+      <WL5G3N0:input message="WL5G3N2:consultaHistorica"/>
+      <WL5G3N0:output message="WL5G3N2:consultaHistoricaResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="SeguimientoTrafServicePortBinding" type="WL5G3N2:SeguimientoTrafService">
+    <WL5G3N3:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="consultaActual">
+      <WL5G3N3:operation soapAction="consultaActual"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaHistorica">
+      <WL5G3N3:operation soapAction="consultaHistorica"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="SeguimientoTrafServiceService">
+    <WL5G3N0:port binding="WL5G3N2:SeguimientoTrafServicePortBinding" name="SeguimientoTrafServicePort">
+      <WL5G3N3:address location="http://esb.entel.cl:80/integracionit/monitoreomediacion/consultaseguimientops"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

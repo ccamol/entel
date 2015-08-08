@@ -1,0 +1,3035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="2.0"
+   xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<portlet>
+    <portlet-name>menu_stretcher</portlet-name>
+    <display-name>menu_stretcher</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/menu/menu_stretcher.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Menu Stretcher</title>
+        <short-title>Menu Stretcher</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>formMisDatos</portlet-name>
+    <display-name>formMisDatos</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/cuenta/formMisDatos.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Cuenta Form Mis Datos</title>
+        <short-title>Cuenta Form Mis Datos</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>ss_facturaelectronica_page</value>
+</preference>
+<preference>
+    <name>CC</name>
+		<value>cc_facturaelectronica_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>tablaMisUsuarios</portlet-name>
+    <display-name>tablaMisUsuarios</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/cuenta/tablaMisUsuarios.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+        
+    </supports>
+    <portlet-info>
+        <title>Cuenta Tabla Mis Usuarios</title>
+        <short-title>Cuenta Tabla Mis Usuarios</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>facturacion</portlet-name>
+    <display-name>facturacion</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/facturacion.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Facturacion Resumen Facturacion</title>
+        <short-title>Facturacion Resumen Facturacion</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>ss_pagoenlinea_page</value>
+</preference>
+<preference>
+    <name>CC</name>
+		<value>cc_pagoenlinea_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>formCambioClave</portlet-name>
+    <display-name>formCambioClave</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/seguridad/formCambioClave.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Seguridad Form Cambio clave</title>
+        <short-title>Seguridad Form Cambio clave</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>productosContratados</portlet-name>
+    <display-name>productosContratados</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/producto/productosContratados.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Producto Productos Contratados</title>
+        <short-title>Producto Productos Contratados</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>pageBolsas</name>
+		</preference>
+<preference>
+    <name>pagePlanes</name>
+		</preference>
+<preference>
+    <name>pageInternet</name>
+		</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>trafico</portlet-name>
+    <display-name>trafico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/trafico.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Trafico Resumen Trafico</title>
+        <short-title>Trafico Resumen Trafico</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>ss_trafico_page</value>
+</preference>
+<preference>
+    <name>CC</name>
+		<value>cc_trafico_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>traficoEnLinea</portlet-name>
+    <display-name>traficoEnLinea</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/traficoEnLinea.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Trafico Trafico En Linea</title>
+        <short-title>Trafico Trafico En Linea</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>resumenFacturacionJson</portlet-name>
+    <display-name>resumenFacturacionJson</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/resumenFacturacionJson.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Resumenfacturacionjson</title>
+        <short-title>Resumenfacturacionjson</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>pinPuk</portlet-name>
+    <display-name>pinPuk</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/pinPuk.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo Pin Puk</title>
+        <short-title>Equipo Pin Puk</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>resumenPlanPP</portlet-name>
+    <display-name>resumenPlanPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/resumenPlanPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Resumen Plan PP</title>
+        <short-title>Resumen PlanPP</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>pp_recargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+
+<portlet>
+    <portlet-name>resumenPlanPPNuevo</portlet-name>
+    <display-name>resumenPlanPPNUevo</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/resumenPlanPPNuevo.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Resumen Plan PP Nuevo</title>
+        <short-title>Resumen PlanPP Nuevo</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>pp_recargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>resumenPlanPPCategoria</portlet-name>
+    <display-name>resumenPlanPPCategoria</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/resumenPlanPPCategoria.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Resumen Plan PP Categoria</title>
+        <short-title>Resumen PlanPP Categoria</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>pp_recargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>selectorCuenta</portlet-name>
+    <display-name>selectorCuenta</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/cuenta/selectorCuenta.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>selectorCuenta</title>
+        <short-title>selectorCuenta</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>headerAutenticado</portlet-name>
+    <display-name>headerAutenticado</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/layout/header/headerAutenticado.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Layout - Header Autenticado</title>
+        <short-title>Layout - Header Autenticado</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS0</name>
+		<value>ss_formSatisfaccion_page</value>
+</preference>
+<preference>
+    <name>SS1</name>
+		<value>ssbam_formSatisfaccion_page</value>
+</preference>
+<preference>
+    <name>CC0</name>
+		<value>cc_formSatisfaccion_page</value>
+</preference>
+<preference>
+    <name>CC1</name>
+		<value>ccbam_formSatisfaccion_page</value>
+</preference>
+<preference>
+    <name>PP0</name>
+		<value>pp_formSatisfaccion_page</value>
+</preference>
+<preference>
+    <name>PP1</name>
+		<value>ppbam_formSatisfaccion_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>FooterJSF</portlet-name>
+    <display-name>FooterJSF</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/layout/footer/footerPortlet.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Layout - Footer Mi Entel</title>
+        <short-title>Layout - Footer Mi Entel</short-title>
+    </portlet-info>
+</portlet>
+
+
+<portlet>
+    <portlet-name>tuEquipo</portlet-name>
+    <display-name>tuEquipo</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/tuEquipo.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - Tu Equipo</title>
+        <short-title>Equipo - Tu Equipo</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>resumenPlanCC</portlet-name>
+    <display-name>resumenPlanCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/resumenPlanCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Resumen Plan CC</title>
+        <short-title>Plan - Resumen Plan CC</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>CC</name>
+		<value>cc_recargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>misProductos</portlet-name>
+    <display-name>misProductos</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/producto/misProductos.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>PP Mis Productos</title>
+        <short-title>PP Mis Productos</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>pageBolsas</name>
+		<value>pp_bolsas_page</value>
+</preference>
+<preference>
+    <name>pagePlanes</name>
+		<value>pp_planesVoz_page</value>
+</preference>
+<preference>
+    <name>pageInternet</name>
+		<value>pp_internetmovil_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>facturacionFull</portlet-name>
+    <display-name>facturacionFull</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/facturacionFull.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Facturacion Full</title>
+        <short-title>Facturacion Full</short-title>
+    </portlet-info>
+    <portlet-preferences>
+		<preference>
+		    <name>SS</name>
+			<value>ss_pagoenlinea_page</value>
+		</preference>
+		<preference>
+		    <name>mientel.views.security.0</name>
+			<value>detalleLlamados</value>
+		</preference>
+		<preference>
+		    <name>mientel.views.security.1</name>
+			<value>detalleLlamados</value>
+		</preference>
+		<preference>
+		    <name>mientel.views.security.2</name>
+			<value>detalleLlamados</value>
+		</preference>
+		<preference>
+		    <name>mientel.views.security.3</name>
+			<value>facturacionFull</value>
+		</preference>
+		<preference>
+			<name>mostrarBannerEcuenta</name>
+			<value>0</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>facturacionElectronica</portlet-name>
+    <display-name>facturacionElectronica</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/facturacionElectronica.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Facturacion Electronica</title>
+        <short-title>Facturacion Electronica</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>detalleTraficoEnLinea</portlet-name>
+    <display-name>detalleTraficoEnLinea</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/detalleTraficoEnLinea.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Trafico - Tabla Detalle Trafico en Linea</title>
+        <short-title>Trafico - Tabla Detalle Trafico en Linea</short-title>
+    </portlet-info>
+</portlet>
+
+
+<portlet>
+    <portlet-name>reposicionServicio</portlet-name>
+    <display-name>reposicionServicio</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/reposicionServicio.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Facturacion - Form Reposicion Servicio</title>
+        <short-title>Facturacion - Form Reposicion Servicio</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>ss_pagoenlinea_page</value>
+</preference>
+<preference>
+    <name>CC</name>
+		<value>cc_pagoenlinea_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>CierreRecargaWebpay</portlet-name>
+    <display-name>CierreRecargaWebpay</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/cierreRecargaWebpay.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga - Cierre Webpay</title>
+        <short-title>Recarga - Cierre Webpay</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>recargaEntelTicket</portlet-name>
+    <display-name>recargaEntelTicket</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/recargaEntelticket.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga - Recarga EntelTicket</title>
+        <short-title>Recarga - Recarga EntelTicket</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>recargaMultitienda</portlet-name>
+    <display-name>recargaMultitienda</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/recargaMultitienda.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga - Recarga Multitienda</title>
+        <short-title>Recarga - Recarga Multitienda</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>recargaTarjetaCredito</portlet-name>
+    <display-name>recargaTarjetaCredito</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/recargaTarjetaCredito.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga - Recarga Tarjeta Credito</title>
+        <short-title>Recarga - Recarga TC</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>pagoAutomatico</portlet-name>
+    <display-name>pagoAutomatico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/pago/pagoAutomatico.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Form Pago Automatico</title>
+        <short-title>Form Pago Automatico</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>miTrafico</portlet-name>
+    <display-name>miTrafico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/miTrafico.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Tabla Mi Trafico</title>
+        <short-title>Tabla Mi Trafico</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>aplicacionExterna</portlet-name>
+    <display-name>aplicacionExterna</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/aplicacion/aplicacionExterna.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Aplicacion Externa</title>
+        <short-title>Aplicacion Externa</short-title>
+    </portlet-info>
+<portlet-preferences>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>recargasHistorico</portlet-name>
+    <display-name>recargasHistorico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/recargasHistorico.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga - Historico de Recargas</title>
+        <short-title>Recarga - Historico de Recargas</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>facturacionFullCC</portlet-name>
+    <display-name>facturacionFullCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/facturacionFullCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Facturacion Full CC</title>
+        <short-title>Facturacion Full CC</short-title>
+    </portlet-info>
+    <portlet-preferences>
+	<preference>
+	    <name>CC</name>
+			<value>cc_pagoenlinea_page</value>
+	</preference>
+		<preference>
+			<name>mostrarBannerEcuenta</name>
+			<value>0</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>menuBolsaSSCC</portlet-name>
+    <display-name>menuBolsaSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsa/misBolsasSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bolsa - Menu Bolsa SSCC</title>
+        <short-title>Bolsa - Menu Bolsa SSCC</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>mientel.views.security.0</name>
+		<value>bolsasContratadas</value>
+</preference>
+<preference>
+    <name>mientel.views.security.1</name>
+		<value>bolsasContratadas</value>
+</preference>
+<preference>
+    <name>mientel.views.security.2</name>
+		<value>contratarBolsas,bolsasContratadas</value>
+</preference>
+<preference>
+    <name>mientel.views.security.3</name>
+		<value>contratarBolsas,bolsasContratadas,regalarBolsas,bolsasRegaladas</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>menuBolsasPP</portlet-name>
+    <display-name>menuBolsasPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsa/misBolsasPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bolsas - Mis Bolsas PP</title>
+        <short-title>Bolsas - Mis Bolsas PP</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>pp_recargas_page</value>
+<read-only>true</read-only>
+</preference>
+<preference>
+    <name>destacadas</name>
+		</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>mensajesParaTi</portlet-name>
+    <display-name>mensajesParaTi</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/dashboard/mensajes/mensajesParaTi.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Mensajes Para Ti</title>
+        <short-title>Mensajes Para Ti</short-title>
+    </portlet-info>
+	<portlet-preferences>
+		<preference>	
+    		<name>aaa0</name>
+		<value>BRE</value>
+</preference>
+		<preference>
+    		<name>aaa1</name>
+		</preference>
+		<preference>
+    		<name>aaa2</name>
+		</preference>
+		<preference>
+    		<name>aaa3</name>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>consultaPinPuk</portlet-name>
+    <display-name>consultaPinPuk</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/consultaPinPuk.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - Consulta Pin Puk</title>
+        <short-title>Equipo - Consulta Pin Puk</short-title>
+    </portlet-info>
+    <portlet-preferences>
+		<preference>
+		    <name>SS</name>
+				<value>ss_page_pinpuk_iter3</value>
+		</preference>
+		<preference>
+		    <name>CC</name>
+				<value>ss_page_pinpuk_iter3</value>
+		</preference>
+		<preference>
+		    <name>PP</name>
+				<value>pp_page_pinpuk_iter3</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>EquipoSS</portlet-name>
+    <display-name>EquipoSS</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/equipoSS.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equiposs</title>
+        <short-title>Equiposs</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>equipoSSCC</portlet-name>
+    <display-name>equipoSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/equipoSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - SSCC</title>
+        <short-title>Equipo - SSCC</short-title>
+    </portlet-info>
+    <portlet-preferences>
+		<preference>
+		    <name>mientel.views.security.3</name>
+				<value>verPresupuesto</value>
+		<value>renovar</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>equipoPP</portlet-name>
+    <display-name>equipoPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/equipoPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - PP</title>
+        <short-title>Equipo - PP</short-title>
+    </portlet-info>
+    <portlet-preferences>
+		<preference>
+		    <name>mientel.views.security.3</name>
+				<value>verPresupuesto</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>miPlanInternetMovilPP</portlet-name>
+    <display-name>miPlanInternetMovilPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/internetmovil/miPlanInternetMovilPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Internet Movil</title>
+        <short-title>Plan - Internet Movil</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>miPlanInternetMovilSSCC</portlet-name>
+    <display-name>miPlanInternetMovilSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/internetmovil/miPlanInternetMovilSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Internet Movil SS CC</title>
+        <short-title>Plan - Internet Movil SS CC</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>mientel.views.security.2</name>
+		<value>contratarPlanIM</value>
+</preference>
+<preference>
+    <name>mientel.views.security.3</name>
+		<value>contratarPlanIM</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>encuestasPerfiladas</portlet-name>
+    <display-name>encuestasPerfiladas</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/dashboard/encuestas/encuestasPerfiladas.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Encuestas Perfiladas</title>
+        <short-title>Encuestas Perfiladas</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>cambioPlanSSCC</portlet-name>
+    <display-name>cambioPlanSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/cambioPlanSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Cambio de Plan SSCC</title>
+        <short-title>Plan - Cambio de Plan SSCC</short-title>
+    </portlet-info>
+    <portlet-preferences>
+	<preference>
+	    <name>mientel.views.security.2</name>
+			<value>cambiarPlan</value>
+	</preference>
+	<preference>
+	    <name>mientel.views.security.3</name>
+			<value>cambiarPlan</value>
+	</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>planActualSSCC</portlet-name>
+    <display-name>planActualSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/planActualSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Plan Actual SSCC</title>
+        <short-title>Plan - Plan Actual SSCC</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>cambioPlanPP</portlet-name>
+    <display-name>cambioPlanPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/cambioPlanPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Cambio de Plan PP</title>
+        <short-title>Plan - Cambio de Plan PP</short-title>
+    </portlet-info>
+    <portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>pp_recargas_page</value>
+</preference>
+<preference>
+    <name>mientel.views.security.2</name>
+		<value>cambiarPlan</value>
+</preference>
+<preference>
+    <name>mientel.views.security.3</name>
+		<value>cambiarPlan</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>numeroFrecuentePP</portlet-name>
+    <display-name>numeroFrecuentePP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/numeroFrecuentePP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Numero Frecuente PP</title>
+        <short-title>Plan - Numero Frecuente PP</short-title>
+    </portlet-info>
+    <portlet-preferences>
+		<preference>
+		    <name>mientel.views.security.2</name>
+				<value>numeroFrecuente</value>
+		</preference>
+		<preference>
+		    <name>mientel.views.security.3</name>
+				<value>numeroFrecuente</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>numeroFavoritoPP</portlet-name>
+    <display-name>numeroFavoritoPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/numeroFavoritoPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Numero Favorito PP</title>
+        <short-title>Plan - Numero Favorito PP</short-title>
+    </portlet-info>
+    <portlet-preferences>
+		<preference>
+		    <name>mientel.views.security.2</name>
+				<value>numeroFavorito</value>
+		</preference>
+		<preference>
+		    <name>mientel.views.security.3</name>
+				<value>numeroFavorito</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>planActualPP</portlet-name>
+    <display-name>planActualPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/planActualPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Plan Actual PP</title>
+        <short-title>Plan - Plan Actual PP</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>administracionServicios</portlet-name>
+    <display-name>administracionServicios</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/administracion_servicios/adminServicios.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Administración - Administrar Servicios</title>
+        <short-title>Administración - Administrar Servicios</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>mientel.views.security.0</name>
+		<value>buzonVoz</value>
+<value>notificacionSMS</value>
+<value>avisale</value>
+<value>mms</value>
+</preference>
+<preference>
+    <name>mientel.views.security.1</name>
+		<value>buzonVoz</value>
+<value>notificacionSMS</value>
+<value>avisale</value>
+<value>mms</value>
+<value>internetMovil</value>
+<value>bam</value>
+<value>num606</value>
+<value>num609</value>
+</preference>
+<preference>
+    <name>mientel.views.security.2</name>
+		<value>buzonVoz</value>
+<value>buzonVozPremium</value>
+<value>notificacionSMS</value>
+<value>cobroRevertido</value>
+<value>avisale</value>
+<value>cobroRevertidoAutomatico</value>
+<value>ldi</value>
+<value>num300</value>
+<value>num700</value>
+<value>mms</value>
+<value>avisoVencFactura</value>
+<value>internetMovil</value>
+<value>bam</value>
+<value>num606</value>
+<value>num609</value>
+</preference>
+<preference>
+    <name>mientel.views.security.3</name>
+		<value>buzonVoz</value>
+<value>buzonVozPremium</value>
+<value>notificacionSMS</value>
+<value>cobroRevertido</value>
+<value>avisale</value>
+<value>cobroRevertidoAutomatico</value>
+<value>ldi</value>
+<value>num300</value>
+<value>num700</value>
+<value>mms</value>
+<value>avisoVencFactura</value>
+<value>internetMovil</value>
+<value>bam</value>
+<value>num606</value>
+<value>num609</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>facturacionbam</portlet-name>
+    <display-name>facturacionbam</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/facturacionbam.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Facturacionbam</title>
+        <short-title>Facturacionbam</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>equipoSSCCBAM</portlet-name>
+    <display-name>equipoSSCCBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/equipoSSCCBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - SSCCBAM</title>
+        <short-title>Equipo - SSCCBAM</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>equipoPPBAM</portlet-name>
+    <display-name>equipoPPBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/equipoPPBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - PP BAM</title>
+        <short-title>Equipo - PP BAM</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>verPuntos</portlet-name>
+    <display-name>verPuntos</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/vtasYMktgFidelizacion/verPuntos.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Ventas y Mktg Fidelizacion - Cuadro Ver Puntos</title>
+        <short-title>Ventas y Mktg Fidelizacion - Cuadro Ver Puntos</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>urlCategoriasClientes</name>
+		<value>http://www.entel.cl/zona_puntos/</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>canjePuntosBolsasRecargas</portlet-name>
+    <display-name>canjePuntosBolsasRecargas</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/vtasYMktgFidelizacion/canjePuntosBolsasRecargas.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Ventas y Mktg Fidelizacion - Canje Puntos Bolsas Recargas</title>
+        <short-title>Ventas y Mktg Fidelizacion - Canje Puntos Bolsas Recargas</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>historialCanjePuntos</portlet-name>
+    <display-name>historialCanjePuntos</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/vtasYMktgFidelizacion/historialCanjePuntos.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Ventas y Mktg Fidelizacion - Tabla Historial Canje</title>
+        <short-title>Ventas y Mktg Fidelizacion - Tabla Historial Canje</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>full_messenger</portlet-name>
+    <display-name>full_messenger</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ishop/full_messenger.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>ishop - Full Messenger</title>
+        <short-title>ishop - Full Messenger</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>urlTarifasFullMessenger</name>
+		<value>http://www.entelpcs.cl/ishop/fullmessenger/tarifas.iws</value>
+</preference>
+<preference>
+    <name>urlMasInfoFullMessenger</name>
+		<value>http://www.entelpcs.cl/ishop/fullmessenger/index.iws</value>
+</preference>
+<preference>
+    <name>urlAccederFullMessenger</name>
+		<value>http://entelreg.imserver.net/registroentel/extlogin.aspx</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>formIngresoRut</portlet-name>
+    <display-name>formIngresoRut</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/inscripcion/formIngresoRut.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Inscripcion - Ingreso Rut</title>
+        <short-title>Inscripcion - Ingreso Rut</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>inscripcion</name>
+		<value>inscripcionUsuario_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>exitoInscripcion</portlet-name>
+    <display-name>exitoInscripcion</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/inscripcion/exitoInscripcion.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Inscripcion - Info Exito Inscripcion</title>
+        <short-title>Inscripcion - Info Exito Inscripcion</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>formRegistro</portlet-name>
+    <display-name>formRegistro</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/inscripcion/formRegistro.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Inscripcion - Form Registro</title>
+        <short-title>Inscripcion - Form Registro</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>iShopAgendamiento</portlet-name>
+    <display-name>iShopAgendamiento</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ishop/agendamiento/iShopAgendamiento.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>iShop Agendamiento</title>
+        <short-title>iShop Agendamiento</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>iShopSMSMMSInfo</portlet-name>
+    <display-name>iShopSMSMMSInfo</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ishop/agendamiento/iShopSMS-MMSInfo.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>iShop SMS-MMS Info</title>
+        <short-title>iShop SMS-MMS Info</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>formLoginv2</portlet-name>
+    <display-name>formLoginv2</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/seguridad/formLogin2.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Seguridad - Form Login v2</title>
+        <short-title>Seguridad - Form Login v2</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>inscripcion</name>
+		<value>inscripcionUsuario_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>iShopSuscripciones</portlet-name>
+    <display-name>iShopSuscripciones</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ishop/suscripciones/iShopSuscripciones.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>iShop Suscripciones</title>
+        <short-title>iShop Suscripciones</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>SuscripcionCDF</portlet-name>
+    <display-name>SuscripcionCDF</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ishop/suscripcion_cdf/suscripcionCDF.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Ishop - Suscripcion CDF</title>
+        <short-title>Ishop - Suscripcion CDF</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>urlMasInfoCDF</name>
+		<value>http://www.entel.cl/cdf</value>
+</preference>
+<preference>
+    <name>urlEquiposCompatiblesCDF</name>
+		<value>http://ishop.entelpcs.cl/ishop/ishop.portal</value>
+</preference>
+<preference>
+    <name>mientel.views.security.0</name>
+		<value>alertaAAACDF</value>
+</preference>
+<preference>
+    <name>mientel.views.security.1</name>
+		<value>bamcc_facturaelectronica_page</value>
+</preference>
+<preference>
+    <name>mientel.views.security.2</name>
+		<value>listadoSuscripcionesCFD</value>
+</preference>
+<preference>
+    <name>mientel.views.security.3</name>
+		<value>listadoSuscripcionesCFD</value>
+</preference>
+<preference>
+    <name>imgDebesSaber</name>
+		<value>../framework/skins/mientel/img/debessaber.gif</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>formLineaAdicional</portlet-name>
+    <display-name>formLineaAdicional</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/cuenta/formLineaAdicional.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>formLineaAdicional</title>
+        <short-title>formLineaAdicional</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>CommonRedirect</portlet-name>
+    <display-name>CommonRedirect</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/common/redirect/redirect.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Common - Redirect</title>
+        <short-title>Common - Redirect</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>mientel.redirect.url</name>
+		<value>http://zona.entel.cl</value>
+</preference>
+<preference>
+    <name>mientel.redirect.title</name>
+		<value>Zona Entel</value>
+</preference>
+<preference>
+    <name>mientel.redirect.url.target</name>
+		<value>_self</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>planActualBAMSSCC</portlet-name>
+    <display-name>planActualBAMSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/planbam/planActualBAMSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan Actual BAM SS CC</title>
+        <short-title>Plan Actual BAM SS CC</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>cambioPlanBAMSSCC</portlet-name>
+    <display-name>cambioPlanBAMSSCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/planbam/cambioPlanBAMSSCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Cambio Plan BAM SS CC</title>
+        <short-title>Cambio Plan BAM SS CC</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>mientel.views.security.2</name>
+		<value>cambiarPlan</value>
+</preference>
+<preference>
+    <name>mientel.views.security.3</name>
+		<value>cambiarPlan</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>aplicacionExternaBam</portlet-name>
+    <display-name>aplicacionExternaBam</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/aplicacion/aplicacionExternaBam.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>aplicacionExternaBam</title>
+        <short-title>aplicacionExternaBam</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>esqST1</name>
+		<value>http://gw.vas.entelpcs.cl:17025/lqt/client/ingreso_speedtest_new.php</value>
+</preference>
+<preference>
+    <name>esqST2</name>
+		<value>http://gw.vas.entelpcs.cl:17025/lqt/client/ingreso_speedtest_new.php</value>
+</preference>
+<preference>
+    <name>esqST3</name>
+		<value>http://gw.vas.entelpcs.cl:17025/lqt/client/ingreso_speedtest_new.php</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>SpeedTest</portlet-name>
+    <display-name>SpeedTest</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/speedtest/speedtest.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>SpeedTest</title>
+        <short-title>SpeedTest</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>bamss_speedtest_page</value>
+</preference>
+<preference>
+    <name>CC</name>
+		<value>bamcc_speedtest_page</value>
+</preference>
+<preference>
+    <name>PP</name>
+		<value>bampp_speedtest_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>TraficoBam</portlet-name>
+    <display-name>TraficoBam</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/traficoBam.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>TraficoBam</title>
+        <short-title>TraficoBam</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>bamss_traficobam_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>miTraficoBam</portlet-name>
+    <display-name>miTraficoBam</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/miTraficoBam.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Mi Trafico BAM</title>
+        <short-title>Mi Trafico BAM</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>saldoRecargaBam</portlet-name>
+    <display-name>saldoRecargaBam</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/saldoRecargaBam.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Saldo Recarga Bam</title>
+        <short-title>Saldo Recarga Bam</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>bampp_regargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>tuEquipoBAM</portlet-name>
+    <display-name>tuEquipoBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/tuEquipoBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Equipo - Tu Equipo BAM</title>
+        <short-title>Equipo - Tu Equipo BAM</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>consultaPinPukBAM</portlet-name>
+    <display-name>consultaPinPukBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/consultaPinPukBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Consulta Pin Puk BAM</title>
+        <short-title>Consulta Pin Puk BAM</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>saldoBolsaPPBAM</portlet-name>
+    <display-name>saldoBolsaPPBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/saldoBolsaPPBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bolsa - Saldo Bolsa PP BAM</title>
+        <short-title>Bolsa - Saldo Bolsa PP BAM</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>bampp_saldobolsas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>cuotaVelocidadNavegacionPPBAM</portlet-name>
+    <display-name>cuotaVelocidadNavegacionPPBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/cuotaVelocidadNavegacionPPBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Cuota Velocidad Nav PP-BAM</title>
+        <short-title>Cuota Velocidad Nav PP-BAM</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>comprarBolsasPPBAM</portlet-name>
+    <display-name>comprarBolsasPPBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/comprarBolsasPPBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bolsas - Comprar Bolsa PP-BAM</title>
+        <short-title>Bolsas - Comprar Bolsa PP-BAM</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>PP</name>
+		<value>bampp_regargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>traficoBAMCC</portlet-name>
+    <display-name>traficoBAMCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/traficoBAMCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Trafico BAM CC</title>
+        <short-title>Trafico BAM CC</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>miTraficoBamCC</portlet-name>
+    <display-name>miTraficoBamCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/miTraficoBamCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Mi Trafico BAM CC</title>
+        <short-title>Mi Trafico BAM CC</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>MensajesParaTiBam</portlet-name>
+    <display-name>MensajesParaTiBam</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/dashboard/mensajesbam/mensajesParaTiBam.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Mensajes Para Ti Bam</title>
+        <short-title>Mensajes Para Ti Bam</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>formSatisfaccion</portlet-name>
+    <display-name>formSatisfaccion</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/formulariosatisfaccion/formSatisfaccion.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Formulario Satisfaccion</title>
+        <short-title>Formulario Satisfaccion</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>contacto</portlet-name>
+    <display-name>contacto</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/contacto/contacto.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Contacto</title>
+        <short-title>Contacto</short-title>
+    </portlet-info>
+	<portlet-preferences>
+		<preference>
+		    <name>verLinkPortabilidad</name>
+			<value>1</value>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>invitacionPlanComunik2</portlet-name>
+    <display-name>invitacionPlanComunik2</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/invitacionPlanComunik2.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan - Invitacion Plan Comunik2 PP</title>
+        <short-title>Plan - Invitacion Plan Comunik2 PP</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>historialPlanComunik2</portlet-name>
+    <display-name>historialPlanComunik2</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/historialPlanComunik2.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan Historial Plan Comunik2 PP</title>
+        <short-title>Plan Historial Plan Comunik2 PP</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>DetalleTraficoEnLineaPPCC</portlet-name>
+    <display-name>DetalleTraficoEnLineaPPCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/detalleTraficoEnLineaPPCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>DetalleTraficoEnLineaPPCC</title>
+        <short-title>DetalleTraficoEnLineaPPCC</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>blindajeOferta</portlet-name>
+    <display-name>blindajeOferta</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/blindaje_oferta/blindajeOferta.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Blindaje oferta</title>
+        <short-title>Blindaje oferta</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>respaldoAgenda</portlet-name>
+    <display-name>respaldoAgenda</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/respaldo_agenda/respaldoAgenda.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Respaldo Agenda</title>
+        <short-title>Respaldo Agenda</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>resumenPlanSGO</portlet-name>
+    <display-name>resumenPlanSGO</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/resumenPlanSGO.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Plan ResumenPlan SGO</title>
+        <short-title>Plan ResumenPlan SGO</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>SS</name>
+		<value>ss_recargas_page</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>comprarBolsasFDT</portlet-name>
+    <display-name>comprarBolsasFDT</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/comprarBolsasFDT.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Comprarbolsasfdt</title>
+        <short-title>Comprarbolsasfdt</short-title>
+    </portlet-info>
+    <portlet-preferences>
+        <preference>
+            <name>CC</name>
+            <value>bamcc_recargas_page</value>
+        </preference>
+    </portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>saldoBolsaFDT</portlet-name>
+    <display-name>saldoBolsaFDT</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/saldoBolsaFDT.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Saldobolsafdt</title>
+        <short-title>Saldobolsafdt</short-title>
+    </portlet-info>
+    <portlet-preferences>
+        <preference>
+            <name>CC</name>
+            <value>bamcc_fdt_saldoBolsas_page</value>
+        </preference>
+    </portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>saldoBAMFDT</portlet-name>
+    <display-name>saldoBAMFDT</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/saldoBAMFDT.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Saldo Disponible - BAM FDT</title>
+        <short-title>Saldo Disponible - BAM FDT</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>saldoFDT</portlet-name>
+    <display-name>saldoFDT</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/saldoFDT.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Saldo BAM FDT</title>
+        <short-title>Saldo BAM FDT</short-title>
+    </portlet-info>
+    <portlet-preferences>
+        <preference>
+            <name>pageRecarga</name>
+            <value>bamcc_recargas_page</value>
+        </preference>
+    </portlet-preferences>
+</portlet>
+
+<portlet>
+    <portlet-name>bolsasBAMCCPP</portlet-name>
+    <display-name>bolsasBAMCCPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsabam/bolsasBAMCCPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bolsas BAM CC Tipo PP</title>
+        <short-title>Bolsas BAM CC Tipo PP</short-title>
+    </portlet-info>
+    <portlet-preferences>
+        <preference>
+            <name>pageRecarga</name>
+            <value>bamcc_recargas_page</value>
+        </preference>
+    </portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>mcAfeeAntivirusPP</portlet-name>
+    <display-name>mcAfeeAntivirusPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/mcafee/mcAfeeAntivirusPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>McAfee Antivirus PP</title>
+        <short-title>McAfee Antivirus PP</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>mcAfeeAntivirusCCSS</portlet-name>
+    <display-name>mcAfeeAntivirusCCSS</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/mcafee/mcAfeeAntivirusCCSS.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>McAfee Antivirus CCSS</title>
+        <short-title>McAfee Antivirus CCSS</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>bannerSeguridadMcAfee</portlet-name>
+    <display-name>bannerSeguridadMcAfee</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/mcafee/bannerSeguridad.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>McAfee Banner Promo de Seguridad</title>
+        <short-title>McAfee Banner Promo de Seguridad</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>portabilidadConsultaEstado</portlet-name>
+    <display-name>portabilidadConsultaEstado</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value/>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Portabilidad Consulta de Estado</title>
+        <short-title>Portabilidad Consulta de Estado</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>portabilidadConultaEstado</portlet-name>
+    <display-name>portabilidadConultaEstado</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portabilidadConsultaEstado.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Portabilidad Consulta Estado</title>
+        <short-title>Portabilidad Consulta Estado</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>aplicacionExternaVoz</portlet-name>
+    <display-name>aplicacionExternaVoz</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/aplicacion/aplicacionExternaPortabilidad.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Aplicacion Externa Voz</title>
+        <short-title>Aplicacion Externa Voz</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>ofertas</portlet-name>
+    <display-name>ofertas</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ofertas/webpay/ofertaWebPay.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Ofertas</title>
+        <short-title>Ofertas</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>ofertaMigracion</portlet-name>
+    <display-name>ofertaMigracion</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ofertas/migraciones/ofertaMigraciones.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Oferta Migraciones</title>
+        <short-title>Oferta Migraciones</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>entelVisa</portlet-name>
+    <display-name>entelVisa</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ofertas/entelvisa/entelVisa.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Entel Visa</title>
+        <short-title>Entel Visa</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>caja_oferta</portlet-name>
+    <display-name>caja_oferta</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/ofertas/entelvisa/caja_oferta.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Caja Oferta</title>
+        <short-title>Caja Oferta</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>ListaContratosPorlet</portlet-name>
+    <display-name>ListaContratosPorlet</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/contratos/ListaContratos.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>ListaContratosPortlet</title>
+        <short-title>ListaContratosPortlet</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>bannerFacturaElectronica</portlet-name>
+    <display-name>bannerFacturaElectronica</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/facturacion/bannerFacturaElectronica.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Banner Factura Electronica</title>
+        <short-title>Banner Factura Electronica</short-title>
+    </portlet-info>
+	<portlet-preferences>
+	<preference>
+	    <name>mientel.views.security.3</name>
+			<value>mostrarBanner</value>
+	</preference>
+	<preference>
+	    <name>pageFacturaElectronica</name>
+			</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>CajaPuntosZona</portlet-name>
+    <display-name>CajaPuntosZona</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/vtasYMktgFidelizacion/caja_puntos_zona.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Caja Puntos Zona</title>
+        <short-title>Caja Puntos Zona</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>cajaEstadoEquipo</portlet-name>
+    <display-name>cajaEstadoEquipo</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/cajaEstadoEquipo.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Caja Estado Equipo</title>
+        <short-title>Caja Estado Equipo</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>PreIngresoserviciotecnico</portlet-name>
+    <display-name>PreIngresoserviciotecnico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/equipo/preIngresoOT.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Preingresootservicio</title>
+        <short-title>Preingresootservicio</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>tarifaDiaria</portlet-name>
+    <display-name>tarifaDiaria</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/tarifaDiaria.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Tarifa Diaria</title>
+        <short-title>Tarifa Diaria</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>tarifaDiariaCC</portlet-name>
+    <display-name>tarifaDiariaCC</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/tarifaDiariaCC.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Tarifa Diaria CC</title>
+        <short-title>Tarifa Diaria CC</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>tarifaDiariaSS</portlet-name>
+    <display-name>tarifaDiariaSS</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/tarifaDiariaSS.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Tarifa Diaria SS</title>
+        <short-title>Tarifa Diaria SS</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>Marcaqualtrics</portlet-name>
+    <display-name>Marcaqualtrics</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/dashboard/marcas/qualtrics.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Marca qualtrics</title>
+        <short-title>Marca qualtrics</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>canjePuntosZonaVerano</portlet-name>
+    <display-name>canjePuntosZonaVerano</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/vtasYMktgFidelizacion/canjePuntosZonaVerano.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Canje Puntos Zona Verano</title>
+        <short-title>Canje Puntos Zona Verano</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>SmartPixel</portlet-name>
+    <display-name>SmartPixel</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/dashboard/marcas/smartpixel.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Smart Pixel</title>
+        <short-title>Smart Pixel</short-title>
+    </portlet-info>
+</portlet>
+
+<portlet>
+    <portlet-name>recargaPuntosZona</portlet-name>
+    <display-name>recargaPuntosZona</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga Puntos Zona</title>
+        <short-title>Recarga Puntos Zona</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>HistorialBolsas</portlet-name>
+    <display-name>HistorialBolsas</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/historico/historialBolsasPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Historialbolsas</title>
+        <short-title>Historialbolsas</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>recargaZonaPuntos</portlet-name>
+    <display-name>recargaZonaPuntos</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/recargaZonaPuntos.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga Zona Puntos</title>
+        <short-title>Recarga Zona Puntos</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>marcaTarifaDiaria</portlet-name>
+    <display-name>marcaTarifaDiaria</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/plan/marcaTarifaDiaria.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Marca Tarifa Diaria</title>
+        <short-title>Marca Tarifa Diaria</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>NBA</portlet-name>
+    <display-name>NBA</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/nba/nba.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Nba</title>
+        <short-title>Nba</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>Activacion</name>
+		<value>1</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>formReclamo</portlet-name>
+    <display-name>formReclamo</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/formularioreclamo/formReclamo.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Formulario Reclamo</title>
+        <short-title>Formulario Reclamo</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>bannerOfertaBolsa</portlet-name>
+    <display-name>bannerOfertaBolsa</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bannerOferta/bannerOfertaBolsa.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bannerofertabolsa</title>
+        <short-title>Bannerofertabolsa</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>grupoOferta</name>
+    <value>G6</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>bannerOfertaPlan</portlet-name>
+    <display-name>bannerOfertaPlan</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bannerOferta/bannerOfertaPlan.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Bannerofertaplan</title>
+        <short-title>Bannerofertaplan</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>grupoOferta</name>
+		<value>G4</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>detalleAlertaCuotaTrafico</portlet-name>
+    <display-name>detalleAlertaCuotaTrafico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/trafico/detalleAlertaCuotaTrafico.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Detalle Alerta Cuota Trafico</title>
+        <short-title>Detalle Alerta Cuota Trafico</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>bannerMISBAM</portlet-name>
+    <display-name>bannerMISBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/misbam/bannerMISBAM.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Banner MIS BAM</title>
+        <short-title>Banner MIS BAM</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>bannerBolsasTrafico</portlet-name>
+    <display-name>bannerBolsasTrafico</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/bolsa/bannerBolsasTrafico.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Banner Bolsas Trafico</title>
+        <short-title>Banner Bolsas Trafico</short-title>
+    </portlet-info>
+	<portlet-preferences>
+		<preference>
+			<name>mientel.views.security.3</name>
+			<value>mostrarBanner</value>
+		</preference>
+		<preference>
+			<name>mientel.views.security.2</name>
+			<value>mostrarBanner</value>
+		</preference>
+		<preference>
+			<name>marcaPageBolsas</name>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>recargaPromoPP</portlet-name>
+    <display-name>recargaPromoPP</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/recarga/recargaPromoPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Recarga Promo PP</title>
+        <short-title>Recarga Promo PP</short-title>
+    </portlet-info>
+	<portlet-preferences>
+		<preference>
+		    <name>saldoMinimo</name>
+		</preference>
+		<preference>
+		    <name>fechaInicioPromo</name>
+		</preference>
+		<preference>
+		    <name>fechaFinPromo</name>
+		</preference>
+	</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>HistorialBolsasBAM</portlet-name>
+    <display-name>HistorialBolsasBAM</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/historico/historialBolsasBAMPP.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Historialbolsasbam</title>
+        <short-title>Historialbolsasbam</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>Googletagmanager</portlet-name>
+    <display-name>Googletagmanager</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/analytics/GoogleTagManager.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Google Tag Manager</title>
+        <short-title>Google Tag Manager</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>nombreLogico</name>
+		</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>diferenciacionPPAltoValor</portlet-name>
+    <display-name>diferenciacionPPAltoValor</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/dashboard/diferenciacionCanalesPP/diferenciacionPPAltoValor.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>diferenciacionPPAltoValor</title>
+        <short-title>diferenciacionPPAltoValor</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>serviciosSuscripcion</portlet-name>
+    <display-name>serviciosSuscripcion</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/servicios_suscripcion/servicios_suscripcion.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Servicios Suscripcion</title>
+        <short-title>Servicios Suscripcion</short-title>
+    </portlet-info>
+</portlet>
+<portlet>
+    <portlet-name>lightboxBienvenidaPPAV</portlet-name>
+    <display-name>lightboxBienvenidaPPAV</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/prepagoAltoValor/LB_BienvenidaPPAV.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Lightbox Bienvenida PPAV</title>
+        <short-title>Lightbox Bienvenida PPAV</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>idContenidoLightbox</name>
+		<value>htmlLightboxPPAV</value>
+</preference>
+<preference>
+    <name>fechaLimpiezaHistorial</name>
+		<value>01/01/2100</value>
+</preference>
+<preference>
+    <name>simultaneidadBlindaje</name>
+		<value>1</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+    <portlet-name>seccionBeneficiosPPAV</portlet-name>
+    <display-name>seccionBeneficiosPPAV</display-name>
+    <portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+    <init-param>
+        <name>javax.portlet.faces.defaultViewId.view</name>
+        <value>/portlet/prepagoAltoValor/seccionBeneficiosPPAV.jsp</value>
+    </init-param>
+    <supports>
+        <mime-type>text/html</mime-type>
+        <portlet-mode>view</portlet-mode>
+    </supports>
+    <portlet-info>
+        <title>Seccion Beneficios PPAV</title>
+        <short-title>Seccion Beneficios PPAV</short-title>
+    </portlet-info>
+<portlet-preferences>
+<preference>
+    <name>idContenidoSeccion</name>
+		<value>htmlSeccionPPAV</value>
+</preference>
+</portlet-preferences>
+</portlet>
+<portlet>
+	<portlet-name>cajaEjecutivoVIP</portlet-name>
+	<display-name>cajaEjecutivoVIP</display-name>
+	<portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
+
+	<init-param>
+		<name>javax.portlet.faces.defaultViewId.view</name>
+		<value>/portlet/ejecutivo/cajaEjecutivoVIP.jsp</value>
+	</init-param>
+	<supports>
+		<mime-type>text/html</mime-type>
+		<portlet-mode>view</portlet-mode>
+	</supports>
+	<portlet-info>
+		<title>Caja Ejecutivo VIP</title>
+		<short-title>Caja Ejecutivo VIP</short-title>
+	</portlet-info>
+	<portlet-preferences>
+		<preference>
+			<name>gruposPermitidos</name>
+		</preference>
+	</portlet-preferences>
+</portlet>
+</portlet-app>

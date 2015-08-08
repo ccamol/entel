@@ -1,0 +1,19 @@
+******* contenido miEntelService_v3_pre_20120106.jar *******
+Recursos contenidos en este JAR:
+
+VENTASYMKTG\Fidelizacion\Servicios\VtasYMktgFidelizacionServiceXSD
+VENTASYMKTG\Fidelizacion\Herramientas\ValidacionRutMovil\ResultadoValidacionRutMovilTrans
+VENTASYMKTG\Fidelizacion\Servicios\VtasYMktgFidelizacionServiceWS
+VENTASYMKTG\Fidelizacion\Proxies\Enrutador\VtasYMktgFidelizacionServiceRouter
+VENTASYMKTG\Fidelizacion\Herramientas\ValidacionRutMovil\ValidacionRutMovilTrans
+VENTASYMKTG\Fidelizacion\Proxies\ValidacionRutMovil\ValidacionRutMovilPS
+
+
+******* contenido miEntelService_v3_pre_20130923.jar *******
+Recursos contenidos en este JAR:
+CLIENTES\GestionDePerfiles\Proxies\ConsultarXmlPlanFull\ConsultarXmlPlanFullPS
+CLIENTES\GestionDePerfiles\Herramientas\ConsultarXmlPlanFull\ConsultarInfoPlanXmlFullTrans
+CLIENTES\GestionDePerfiles\Servicios\ClientePerfilServiceWS
+CLIENTES\GestionDePerfiles\Servicios\ClientePerfilServiceXSD
+CLIENTES\GestionDePerfiles\Proxies\Enrutador\ClientePerfilServiceRouter
+CLIENTES\GestionDePerfiles\Herramientas\ConsultarPlanFullActualSSCC\getXMLPlanesFullSSCC\getXMLPlanesFullSSCC

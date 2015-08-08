@@ -1,0 +1,591 @@
+#menu-desplegable-planes-bolsas div.bolsa {
+    margin-bottom: 1px;
+    padding: 5px 0 5px 3px;
+}
+div.lista-bolsas {
+    color: #3A3A3A;
+    margin: 0 0 10px;
+    width: 519px;
+}
+div.lista-bolsas {
+    font-size: 12px;
+    padding: 0 10px;
+}
+div.lista-bolsas.note-plan {
+    font-size: 1.1em;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+#menu-desplegable-planes-bolsas div.header {
+    height: 24px;
+    padding: 9px 0 6px;
+}
+#menu-desplegable-planes-bolsas div.float-izq {
+    display: inline;
+    float: left;
+}
+#menu-desplegable-planes-bolsas div.header a.abierto, #menu-desplegable-planes-bolsas-bolsas div.header a.abierto:visited {
+    background: url("../../img/icons/icon_close.gif") no-repeat scroll 1px 2px transparent;
+    color: #3A3A3A;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0 0 0 20px;
+    position: relative;
+    width: 340px;
+}
+#menu-desplegable-planes-bolsas div.header a.abierto:hover {
+    background: url("../../img/icons/icon_close.gif") no-repeat scroll 1px 2px transparent;
+    color: #597CA4;
+    font-weight: normal;
+}
+#menu-desplegable-planes-bolsas div.header a, #menu-desplegable-planes-bolsas div.header a:hover, #menu-desplegable-planes-bolsas div.header a:visited {
+    background: url("../../img/icons/icon_open.gif") no-repeat scroll 1px 2px transparent;
+    color: #3A3A3A;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0 0 0 20px;
+    text-decoration: underline;
+}
+#menu-desplegable-planes-bolsas div.header a:hover {
+    color: #597CA4;
+    text-decoration: underline;
+}
+div#menu-desplegable-planes-bolsas div.par {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+div#menu-desplegable-planes-bolsas div.impar {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+    border-top: 1px solid #F5F5F5;
+}
+div#menu-desplegable-planes-bolsas div.abierto {
+    background: none repeat scroll 0 0 white;
+    border-color: #CFCDCD;
+    border-right: 3px solid #CFCDCD;
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    margin-bottom: 19px;
+}
+div.lista-bolsas .fila {
+    border-top: 1px solid #EBEBEB;
+    height: auto !important;
+    min-height: 37px;
+    padding: 7px 0 0;
+}
+div#menu-desplegable-planes-bolsas div.fila div.nombre {
+    float: left;
+    padding: 0 0 0 4px;
+    width: 150px;
+}
+div#menu-desplegable-planes-bolsas div.nombre {
+    float: left;
+    width: 65%;
+}
+div#menu-desplegable-planes-bolsas div.precio {
+    display: inline;
+    float: left;
+    width: 90px;
+}
+div#menu-desplegable-planes-bolsas div.cabecera div.comprar {
+    float: left;
+    padding-left: 20px;
+}
+div#menu-desplegable-planes-bolsas div.cabecera div.comprar a.comprar {
+    margin-left: 120px;
+}
+div.lista-bolsas .fila .contratar {
+    float: left;
+}
+div.lista-bolsas .fila .contratar .mensaje {
+    background: url("../../img/icons/ico_candado.gif") no-repeat scroll left top transparent;
+    float: right;
+    padding: 0 0 5px 20px;
+    width: 250px;
+}
+div.lista-bolsas .fila .contratar .enlace {
+    color: #3A3A3A;
+    display: block;
+    float: left;
+}
+a {
+	text-decoration:underline;
+	color: #3a3a3a;
+	font-size:12px;
+    outline: medium none;
+}
+
+.descripcion a:hover{
+	color:#597CA4;
+}
+div#centro div.lista-bolsas .fila .contratar p {
+    font-size: 11px;
+}
+div#centro div.contenido_tabs div.mi_saldo a {
+    text-decoration: underline;
+    font-size: 12px;
+	color: #3a3a3a;
+}
+div#centro div.contenido_tabs div.mi_saldo a:hover {
+	color:#577DA5;
+}
+div#centro div.contenido_tabs div.mi_saldo .msjRecarga {
+	text-align: center;
+	width: 240px;
+	font-size: 14px;
+	margin-left: 20px;
+	float: left;
+	padding-right: 30px;
+}
+div#menu-desplegable-planes-bolsas div.confirmar {
+    background: none repeat scroll 0 0 #FFF1A8;
+}
+div.lista-bolsas .fila .contratar a.contratar {
+    display: inline;
+    margin-left: 185px;
+    text-decoration: none;
+}
+div#menu-desplegable-planes-bolsas .contratar a.confirmar {
+    text-decoration: none;
+}
+div#menu-desplegable-planes-bolsas .contratar a.cancelar, div#menu-desplegable-planes-bolsas .contratar a.cancelar:visited {
+    color: #3A3A3A;
+    font-weight: bolder;
+    padding: 10px 0 0 5px;
+}
+div#menu-desplegable-planes-bolsas .contratar a.cancelar:hover {
+    color: #597CA4;
+    font-weight: bolder;
+    padding: 10px 0 0 5px;
+}
+div#menu-desplegable-planes-bolsas .comprar a.cancelar, div#menu-desplegable-planes-bolsas .comprar a.cancelar:hover, div#menu-desplegable-planes-bolsas .comprar a.cancelar:visited {
+    color: #3A3A3A;
+    font-size: 11px;
+    font-weight: bolder;
+    padding: 10px 0 0 5px;
+}
+div#menu-desplegable-planes-bolsas .paso_2, div#menu-desplegable-planes-bolsas .paso_3 {
+    float: left;
+}
+div#menu-desplegable-planes-bolsas .paso_2 a, div#menu-desplegable-planes-bolsas .paso_2 div.titulo {
+    float: left;
+}
+div#menu-desplegable-planes-bolsas .paso_2 div.titulo {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-right: 5px;
+    width: 115px;
+}
+div#menu-desplegable-planes-bolsas .paso_2 p {
+}
+div#menu-desplegable-planes-bolsas .paso_3 h5 {
+    font-size: 12px;
+    font-weight: bolder;
+}
+div#menu-desplegable-planes-bolsas div.comprar .paso_3 {
+    float: left;
+    padding: 5px 0 0 0;
+    width: 340px;
+}
+div#debes-saber {
+    padding: 30px 0 0;
+}
+div#debes-saber h5 {
+}
+div#debes-saber h5 {
+    font-weight: bolder;
+}
+div#debes-saber div.img {
+    float: left;
+    height: 100px;
+}
+div#debes-saber div.contenido {
+    color: #3A3A3A;
+    float: left;
+    font-size: 1.2em;
+    padding: 0 0 0 20px;
+    width: 400px;
+}
+div#debes-saber div.contenido p {
+    padding: 0 0 10px;
+}
+div.nota {
+    border-top: 1px solid #CFCDCD;
+    font-size: 11px;
+    margin: 10px 10px 0;
+    padding: 0 10px 5px;
+}
+div.fila div.nota {
+    border-top: 0 none;
+    float: left;
+    margin: 0;
+    padding: 0 0 10px 5px;
+    width: 90%;
+}
+div.nota ul {
+    padding: 10px 0 0;
+}
+div.fila div.nota ul {
+    padding: 0;
+}
+div.nota ul li {
+    background: url("../../img/bullet-li.gif") no-repeat scroll left 6px transparent;
+    padding: 0 0 0 8px;
+}
+div#centro p.descripcion {
+    margin-bottom: 20px;
+}
+#menu-desplegable-planes-bolsas div.cabecera a.abierto, #menu-desplegable-planes-bolsas div.cabecera a.abierto:hover, #menu-desplegable-planes-bolsas div.cabecera a.abierto:visited {
+    background: url("../../img/icons/icon_close.gif") no-repeat scroll 1px 2px transparent;
+    color: #3A3A3A;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 0 0 0 10px;
+}
+#menu-desplegable-planes-bolsas div.cabecera a.cerrado, #menu-desplegable-planes-bolsas div.cabecera a.cerrado:hover, #menu-desplegable-planes-bolsas div.cabecera a.cerrado:visited {
+    background: none repeat scroll 0 0 transparent;
+    color: #3A3A3A;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0 0 0 19px;
+}
+#menu-desplegable-planes-bolsas div.cabecera a.cerrado:hover {
+    color: #597CA4;
+}
+#menu-desplegable-planes-bolsas a.underline, #menu-desplegable-planes-bolsas a.underline:hover, #menu-desplegable-planes-bolsas a.underline:visited {
+    color: #3a3a3a;
+    font-weight: normal;
+}
+#menu-desplegable-planes-bolsas a.underline:hover {
+    color: #597CA4;
+}
+#menu-desplegable-planes-bolsas div.nombre a.no-underline {
+}
+#menu-desplegable-planes-bolsas div.cabecera a.regalar, #menu-desplegable-planes-bolsas div.cabecera a.regalar:hover, #menu-desplegable-planes-bolsas div.cabecera a.regalar:visited {
+}
+#menu-desplegable-planes-bolsas div.cabecera div.nombre {
+    padding: 10px 0 0;
+}
+#menu-desplegable-planes-bolsas div.cabecera div.precio {
+    font-size: 1.2em;
+    padding: 11px 0 0;
+}
+#menu-desplegable-planes-bolsas div.regalar {
+    display: inline;
+    float: right;
+    margin: 0 5px 0 0;
+}
+div.regalar a.regalar, div.regalar a.regalar:hover, div.regalar a.regalar:visited {
+    font-size: 11px;
+    color:#FFFFFF;
+}
+div.bolsa div.cancelar {
+    background: none repeat scroll 0 0 white;
+    border-color: #CFCDCD #CFCDCD -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 3px 0 1px;
+    float: right;
+    margin: 2px 0 0;
+    padding: 7px 0 12px 13px;
+    position: relative;
+    top: 1px;
+    width: 62px;
+}
+div#menu-desplegable-planes-bolsas .bolsa div.cabecera div.cancelar a.cancelar {
+    background: none repeat scroll 0 0 transparent;
+    color: #3A3A3A;
+    font-size: 1.2em;
+    padding: 0;
+}
+div#menu-desplegable-planes-bolsas .bolsa div.cabecera div.cancelar a.cancelar:hover {
+   	color:#577DA5;
+}
+
+div.bolsa div.box-numero {
+    background: none repeat scroll 0 0 white;
+    border-color: #CFCDCD;
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    float: right;
+    margin: 0 0 20px;
+    padding: 26px 0 17px 20px;
+    width: 395px;
+}
+div.bolsa div.box-numero form fieldset {
+    position: relative;
+}
+div.bolsa div.box-numero form fieldset h5 {
+    color: #3A3A3A;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: 0 0 10px;
+    padding: 0;
+}
+div.bolsa div.box-numero form fieldset label {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    padding: 5px 0 0;
+    position: relative;
+    width: 157px;
+}
+div#centro div.bolsa div.box-numero form fieldset p {
+    font-size: 1.2em;
+    padding: 0 0 10px;
+    width: 338px;
+}
+div#centro div.bolsa .caja {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 20px 0 10px 5px;
+    width: 510px;
+}
+:first-child + html div#centro div.bolsa .caja {
+    float: none;
+}
+* html div#centro div.bolsa .caja {
+    width: 498px;
+}
+div.bolsa div.box-numero div.fila {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+div.bolsa div.box-numero div.fila_label {
+    display: block;
+    float: left;
+    position: relative;
+}
+div.bolsa div.box-numero div.fila_input {
+    display: block;
+    float: left;
+    position: relative;
+}
+div#pasos {
+    color: #064687;
+    font-size: 16px;
+}
+
+div#pasos span.categoriaCli {
+	color: #444444;
+	font-size: 12px;
+}
+
+div#pasos a.verEnlace {
+	color: #3a3a3a;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+div#pasos a.verEnlace:hover {
+	color:#577DA5;
+}
+
+table.historico tbody tr.impar td, table.historico tbody tr.par td {
+    padding: 16px 0 16px 10px;
+}
+.mensaje_comprar_regalar {
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.4em;
+    padding: 10px 0 20px;
+    text-align: center;
+}
+.mensaje_comprar_regalar .contenedor_botones .alargar span {
+    width: 110px;
+}
+.contenido_enlace {
+    display: block;
+    margin: 10px 0;
+    min-height: 25px;
+}
+.contenido_enlace span.enlace_regreso_bolsas {
+    background: url("../../img/icons/ico_dobleflecha.gif") no-repeat scroll right center transparent;
+    padding: 0 8px 0 0;
+}
+.contenido_enlace span.enlace_regreso_bolsas a, .contenido_enlace span.enlace_regreso_bolsas a:visited {
+    border-bottom: 1px dotted #0073AE;
+    color: #0073AE;
+    display: block;
+    float: left;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.contenido_enlace span.enlace_regreso_bolsas a:hover {
+    border-bottom: medium none;
+}
+.linea_tabs {
+    border-bottom: 1px solid #C1D6E6;
+    color: #064687;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+}
+.linea_tabs .tab {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-left: 1px solid #C1D6E6;
+    border-right: 1px solid #C1D6E6;
+    border-top: 1px solid #C1D6E6;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 0 2px;
+    padding: 4px 6px 5px;
+}
+.linea_tabs .tab.seleccionado {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    font-weight: bolder;
+    margin: 0 0 -1px;
+}
+.linea_tabs .tab span {
+    padding: 2px 0 2px 20px;
+}
+.linea_tabs .tab span.historico {
+    background: url("../../img/icons/ico_historico.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.bolsas_contratadas {
+    background: url("../../img/icons/ico_bolsas_contratadas.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.bolsas_compradas {
+    background: url("../../img/icons/icon_sandwatch.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.contratar_bolsas {
+    background: url("../../img/icons/ico_contratar_bolsas.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.regalar_bolsas {
+    background: url("../../img/icons/ico_regalar_bolsas.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.renovar {
+    background: url("../../img/icons/ico_renovar_equipo.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.bloquear {
+    background: url("../../img/icons/ico_bloquear_equipo.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.servicio_tecnico {
+    background: url("../../img/icons/ico_serviciotecnico_equipo.gif") no-repeat scroll left center transparent;
+}
+.linea_tabs .tab span.configuracion {
+    background: url("../../img/icons/ico_configuracion_equipo.gif") no-repeat scroll left center transparent;
+}
+
+.linea_tabs .tab span.liberacion {
+    background: url("../../img/icons/liberacion_equipo.gif") no-repeat scroll left center transparent;
+}
+
+.linea_tabs .tab span.iphone {
+    background: url("../../img/icons/ico_solicita_iphone.gif") no-repeat scroll left center transparent;
+}
+.recomienda-nombre {
+	margin-top: 6px;
+}
+.titulo-recomendamos {
+	padding: 0px !important;
+	font-weight: bold;
+}
+.contenido_tabs .contenido_tab {
+    display: none;
+}
+/* AGREGADO */
+div.bolsa.destacar{
+	padding:0;
+}#menu-desplegable-planes-bolsas  div.bolsa.destacar .header{
+	padding: 14px 0 5px 5px;
+	background:#0074B2;
+}#menu-desplegable-planes-bolsas div.destacar div.header a{
+	color:#FFF;
+	text-decoration: none ! important;
+}#menu-desplegable-planes-bolsas div.destacar div.header a:hover{
+	text-decoration:underline ! important;
+	color:#FFF;
+}#menu-desplegable-planes-bolsas div.bolsa.destacar .header a.abierto{
+	padding: 0 0 0 19px;
+}div#menu-desplegable-planes-bolsas div.destacar.abierto{
+	border:none;
+	margin-bottom: 0;
+}div.destacar div.lista-bolsas{
+	background:#EEF5FB;
+	margin: 0;
+	width: 551px;
+	padding: 0;
+}div.destacar div.lista-bolsas .fila{
+	padding: 7px 10px 7px 10px;
+}div#menu-desplegable-planes-bolsas div.destacar div.nombre{
+	padding-top:6px;
+	width: 180px;
+}div#menu-desplegable-planes-bolsas div.destacar div.precio{
+	padding-top:6px;
+	width: 65px;
+}div#menu-desplegable-planes-bolsas div.destacar div.comprar{
+	float:right;
+	width:268px;
+}div.destacar div.lista-bolsas .fila .contratar a.contratar{
+	padding: 0 8px;
+}div.destacar div.lista-bolsas .fila .contratar a.contratar span{
+	padding-left: 16px;
+}
+.tpHeader{
+	background:#0074B2;
+	padding:15px 10px;
+	font-size:1.2em;
+}.tpHeader span{
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	font-weight:normal;
+	background:url(../../img/icons/icoAsterisco.png) no-repeat left 2px;
+	padding-left:12px;
+}
+#menu-desplegable-planes-bolsas div.bolsa.marcar{
+	background:#EEF5FB;
+	border-bottom:1px solid #DEE5EB;
+	margin-bottom:0;
+	position:relative;
+}
+div#menu-desplegable-planes-bolsas div.bolsa.marcar.abierto{
+	border-top:none;
+	border-left:none;
+	border-right:none;	
+}#menu-desplegable-planes-bolsas div.bolsa.marcar div.header a{
+	display:inline-block;
+}#menu-desplegable-planes-bolsas div.bolsa.marcar div.header span{
+	display:block;
+}#menu-desplegable-planes-bolsas div.bolsa.marcar div.lista-bolsas{
+	padding: 0 10px 0 21px;
+}
+#centro div.marcar .debes-saber{
+	padding: 0 0 0;
+	margin-bottom:10px;
+}#centro div.marcar .debes-saber .img {
+	float: left;
+	height: auto;
+}#centro div.marcar .debes-saber .contenido {
+	float: left;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	width: 400px;
+	padding: 0 0 0 20px;
+}#centro div.marcar .debes-saber .contenido p {
+	padding: 0 0 10px 0;
+}
+div#centro  div.bolsa.marcar .bmNota{
+	font-size:11px;
+	line-height:13px;
+}

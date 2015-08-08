@@ -1,0 +1,418 @@
+/*-----------------------------------------------------------
+		       		   Tablas formularios
+-----------------------------------------------------------*/
+.tabla_formulario{
+	display: block;
+	margin: 5px 0;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.tabla_formulario_fila{
+	display: block;
+	margin: 10px 0;
+	position: relative;
+}
+.tabla_formulario_label{
+	display: block;
+	float: left;
+	width: 245px;
+	padding: 4px 0 0 0;
+}
+.recortador{
+	width: 215px;
+}
+.tabla_formulario_numero{
+	display: block;
+	float: left;
+	width: 160px;
+	padding: 4px 0 0 0;
+}
+.tabla_formulario_dato{
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+}
+.tabla_formulario_input {
+	float:left;
+	display:block;
+}
+/*-----------------------------------------------------------
+		       	   			Botones
+-----------------------------------------------------------*/
+.btnCancelar{
+	padding: 0 0 0 10px;
+	color: #3a3a3a;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+/*-----------------------------------------------------------
+		       	   			Alertas
+-----------------------------------------------------------*/
+.alerta_numero{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	/*padding: 19px 170px 19px 50px;*/
+	color: #e30101;
+	font-weight: bolder;
+	width: 145px;
+	top: -15px;
+	left: 390px;	
+}
+* html .alerta_numero{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+	left: 390px;
+}
+*:first-child+html .alerta_numero {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+.alerta_numero2{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	padding: 13px 170px 19px 50px;
+	color: #e30101;
+	font-weight: bolder;
+	width: 145px;
+	top: -15px;
+	left: 390px;	
+}
+* html .alerta_numero2{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+	left: 390px;
+}
+*:first-child+html .alerta_numero2 {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+.mensaje_alerta0{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	/*padding: 19px 170px 19px 50px;*/
+	color: #e30101;
+	font-weight: bolder;
+	width: 150px;
+	top: -15px;
+	left: 355px;	
+}
+.mensaje_alerta1{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	/*padding: 19px 170px 19px 50px;*/
+	color: #e30101;
+	font-weight: bolder;
+	width: 150px;
+	top: -15px;
+	left: 355px;	
+}
+* html .mensaje_alerta1{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+	/*left: 360px;*/
+}
+*:first-child+html .mensaje_alerta1 {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+.mensaje_alerta2{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	padding: 13px 170px 19px 50px;
+	color: #e30101;
+	font-weight: bolder;
+	width: 150px;
+	top: -15px;
+	left: 355px;	
+}
+* html .mensaje_alerta2{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+	left: 360px;
+}
+*:first-child+html .mensaje_alerta2 {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+.mensaje_alerta3{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	padding: 13px 170px 19px 50px;
+	color: #e30101;
+	font-weight: bolder;
+	width: 150px;
+	top: -15px;
+	left: 355px;	
+}
+* html .mensaje_alerta3{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+	left: 360px;
+}
+*:first-child+html .mensaje_alerta3 {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+.mensaje_alerta4{
+	display: none;
+	position: absolute;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+	padding: 13px 170px 19px 50px;
+	color: #e30101;
+	font-weight: bolder;
+	width: 150px;
+	top: -15px;
+	left: 355px;	
+}
+* html .mensaje_alerta4{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+	left: 360px;
+}
+*:first-child+html .mensaje_alerta4 {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+table.tabla_alerta{
+	position: absolute;
+	display: block;
+	color: #e30101;
+	font-weight: bolder;
+	padding: 0 0 0 40px;
+	width: 250px;
+	height: 55px;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+}
+* html table.tabla_alerta{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+}
+*:first-child+html table.tabla_alerta{
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+}
+td.tabla_alerta{
+	height: 49px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+*:first-child+html td.tabla_alerta {
+	padding:0 0 0 45px;
+}
+* html td.tabla_alerta{
+	padding: 0 0 0 45px;
+}
+table.tabla_alerta2{
+	position: absolute;
+	display: block;
+	color: #e30101;
+	font-weight: bolder;
+	padding: 0 0 0 40px;
+	width: 250px;
+	height: 55px;
+	background: transparent url(../../img/validaciones/bg_mensaje.png) no-repeat scroll left top;
+}
+* html table.tabla_alerta2{
+	background: transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+}
+td.tabla_alerta2{
+	height: 49px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+* html td.tabla_alerta2{
+	padding: 0 0 0 45px;
+}
+/*-----------------------------------------------------------
+		       	    Ajustadores de Formato
+-----------------------------------------------------------*/
+.mensaje_verde{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	margin: 5px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	background: #ddf0d9;
+	border-top: 1px solid #bed7bc;
+	border-bottom: 1px solid #bed7bc;
+}
+.caja_datos{
+	display: block;
+	padding: 10px;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.formato_texto{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+.texto_ejemplo{
+	color: #999999;
+	padding: 4px 0 0 0;
+}
+.campo_boton{
+	margin: -8px 0 0 0;
+}
+.formulario_input{
+	width: 170px;
+}
+.centrar_boton{
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.centrar_paso1{
+	width: 70px;
+}
+.contenedor_debes_saber{
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	margin: 20px 0 0 0;
+	background: url(../../img/debessaber.gif) top left no-repeat;
+	padding: 0 0 0 90px;
+}
+.contenedor_debes_saber p{
+	padding:0 0 10px 0; 
+}
+div.header_tabla div.main table th {
+	border-right:1px solid #CDDAE7;
+	color:#3A3A3A;
+	padding:10px 0 10px 10px;
+}
+.margen_azul_superior{
+	background: url(../../img/tabla_interna/img_margen_azul_superior.gif) top left no-repeat;
+	width: 548px;
+	height: 5px;
+}
+* html .margen_azul_superior{
+	margin-bottom: -9px;
+}
+.margen_azul_contenido{
+	display: block;
+	padding: 10px;
+	width: 526px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	border-left: 1px solid #cddae7;
+	border-right: 1px solid #cddae7;
+}
+.margen_azul_inferior{
+	background: url(../../img/tabla_interna/img_margen_azul_inferior.gif) center left no-repeat;
+	width: 548px;
+	height: 5px;
+	margin: 0 0 10px 0;
+}
+* html .margen_azul_inferior{
+	margin-top: -9px;
+}
+.marginador{
+	padding: 0 0 5px 0;
+}
+.enlace{
+	display: block;
+	float: left;
+	color: #3a3a3a;
+}
+.enlace:hover{
+	color: #597ca4;
+}
+.ocultar{
+	display: none;
+}
+.aceptar{
+	position: relative;
+}
+.iframe_transbank{
+	display: block;
+	font-size: 1.2em;
+	font-weight: bolder;
+	background: #dddddd;
+	text-align:center;
+}
+.iframe_transbank a, .iframe_transbank a:visited {
+	color:#3a3a3a;
+}
+.ico_interrogacionNuevo{
+	background:transparent url(../../img/icons/ico_interrogacion.gif) no-repeat scroll left center;
+	display:block;
+	float:left;
+	height:16px;
+	margin:0 0 0 5px;
+	width:16px;
+}
+/*-----------------------------------------------------------
+		       	   			 Fixes
+-----------------------------------------------------------*/
+.botonera_paso1 {
+	padding-left:222px;
+}
+.botonera_paso1_ss {
+	padding-left:252px;
+}
+.cancelar_telefono {
+	color:#000;
+	font-weight:bolder;
+}
+.cancelar_telefono:hover {
+	color:#597CA4;
+}
+
+.ancho_input_cargar{
+	width:220px !important;
+}
+
+/*---------------------------------
+		   Tabla Historico Recargas
+----------------------------------*/
+div.header_tabla_historico div.top {
+	background:url(../../img/table/bg_bigTablaTop.gif) right top no-repeat;
+	height:4px;
+	margin-bottom:-3px;
+	position:relative;
+	font-size:1px;
+	padding-right:4px;
+	display:block;
+}
+div.header_tabla_historico div.top span {
+	background:url(../../img/table/bg_bigTablaTop.gif) left top no-repeat;
+	height:4px;
+	display:block;
+}
+div.header_tabla_historico div.main {
+	font-size:1.2em;
+	border:1px solid #cddae7;
+	border-top:none;
+	border-bottom:none;
+	background-color:#e3edf8;
+    padding: 10px 0 10px 10px;
+
+}
+
+div.header_tabla_historico div.bottom {
+	background:url(../../img/table/bg_bigTablaBottom.gif) right bottom no-repeat;
+	height:4px;
+	margin-top:-3px;
+	font-size:1px;
+	display:block;
+	padding-right:4px;
+}
+div.header_tabla_historico div.bottom span {
+	background:url(../../img/table/bg_bigTablaBottom.gif) left bottom no-repeat;
+	height:4px;
+	display:block;
+}
+
+.imagen_landing_oferta_recarga {
+    background: url(../../img/img_landing.jpg) no-repeat scroll right top transparent;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    padding: 70px 195px 20px 0;
+    text-align : justify; 
+}
+
+#centro .mensaje_punto_naranja {
+    background: url("../../img/bullet_link_naranja.gif") no-repeat scroll left 18px transparent;
+    border-bottom: 1px dotted #CCCCCC;
+    list-style-type: none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    padding: 12px 0 12px 10px;
+}

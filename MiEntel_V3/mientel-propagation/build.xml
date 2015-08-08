@@ -1,0 +1,261 @@
+<?xml version="1.0" ?>
+<!-- ==================================================================== -->
+<!-- Sample Propagation Ant Script -->
+<!-- ==================================================================== -->
+<project name="Portal Propagation Ant Tasks" basedir="." default="commit">
+
+    <property environment="env"/>
+
+
+	<!-- ==================================================================== -->
+	<!-- Environment Settings -->
+	<!-- ==================================================================== -->
+
+	
+	<!-- build.properties -->
+	<property file="${basedir}/build.properties" />
+
+	<!-- Ptest1032 -->
+    <property name="source.allow.http" value="true"/>
+    <property name="dest.allow.http" value="true"/>
+    
+    <path id="onlineTask.classpath">
+    	<pathelement location="${deploy.dir}/p13n/lib/system/p13n_common.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/propagation.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/propagation_ant.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/content_prop.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/netuix_prop.jar"/>
+    </path>
+    
+    <path id="offlineTask.classpath">
+    	<pathelement location="${deploy.dir}/p13n/lib/system/p13n_common.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/propagation.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/propagation_ant.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/content_prop.jar"/>
+    	<pathelement location="${deploy.dir}/propagation/lib/netuix_prop.jar"/>
+		<pathelement location="${deploy.dir}/light-portal/lib/wsrp-common.jar"/>
+		<pathelement location="${wls.home}/server/lib/api.jar"/>
+		<pathelement location="${bea.home}/modules/com.bea.core.xml.beaxmlbeans_1.1.0.0_2-4-1.jar"/>
+		<pathelement location="${bea.home}/modules/com.bea.core.weblogic.stax_1.6.0.0.jar"/>
+		<pathelement location="${bea.home}/modules/com.bea.core.utils_1.7.0.0.jar"/>    
+    </path>    
+
+
+
+	<!-- ==================================================================== -->
+	<!-- Targets -->
+	<!-- ==================================================================== -->
+
+    <target name="check_admin_password_is_set">
+        <fail message="Please set [source.admin.password] value.">
+         <condition>
+          <not>
+           <isset property="source.admin.password"/>
+          </not>
+         </condition>
+        </fail>
+
+        <fail message="Please set [dest.admin.password] value.">
+         <condition>
+          <not>
+           <isset property="dest.admin.password"/>
+          </not>
+         </condition>
+        </fail>
+    </target>
+
+	<!-- onlineMaintenanceMode TASK -->
+
+	<taskdef name="onlineMaintenanceMode" classname="com.bea.propagation.ant.taskdefs.OnlineMaintenanceModeTask">
+		<classpath refid="onlineTask.classpath"/>
+	</taskdef>
+
+    <target name="lockSrc" description="put the server into maintenance mode" depends="check_admin_password_is_set">
+	    <echo message="****** Start: lockSrc ******" />
+	    <onlineMaintenanceMode
+	    	servletURL="${source.servlet.url}" 
+	    	username="${source.admin.username}"
+	    	password="${source.admin.password}"
+	    	allowHttp="${source.allow.http}"
+	    	enable="true"
+	    />
+	    <echo message="****** Finish: lockSrc ******" />
+    </target>
+
+    <target name="lockDest" description="put the server into maintenance mode" depends="check_admin_password_is_set">
+	    <echo message="****** Start: lockDest ******" />
+	    <onlineMaintenanceMode
+	    	servletURL="${dest.servlet.url}" 
+	    	username="${dest.admin.username}"
+	    	password="${dest.admin.password}"
+	    	allowHttp="${dest.allow.http}"
+	    	enable="true"
+	    />
+	    <echo message="****** Finish: lockDest ******" />
+    </target>
+
+
+
+	<!-- ONLINEDOWNLOAD TASK -->
+
+	<taskdef name="onlineDownload" classname="com.bea.propagation.ant.taskdefs.OnlineDownloadTask">
+		<classpath refid="onlineTask.classpath"/>
+	</taskdef>
+	
+	<target name="check-srcinv">
+		<available file="${working.dir}/src.zip" property="invsrc.present"/>
+		<echo message="****** Comprobando si exsiste invetario fuente: ${invsrc.present} ******" />
+	</target>
+	
+	<target name="downloadSrc" depends="check-srcinv,check_admin_password_is_set" unless="invsrc.present">
+	    <echo message="****** Start: downloadSrc ******" />
+	    <delete file="${working.dir}/src.zip" quiet="true" />
+	    <delete file="${working.dir}/downloadSrc.log" quiet="true" />
+	    <onlineDownload
+	    	servletURL="${source.servlet.url}" 
+	    	username="${source.admin.username}"
+	    	password="${source.admin.password}"
+	    	allowHttp="${source.allow.http}"
+	    	failOnError="true"
+	    	outputInventoryFile="${working.dir}/src.zip"
+	    	logFile="${working.dir}/downloadSrc.log"
+	    >
+	    	<modifier name="cm_exportPolicy" value="lastPublished" />
+	    	<modifier name="allowMaintenanceModeDisabled" value="true"/>
+	    </onlineDownload>
+	    <echo message="****** Finish: downloadSrc ******" />
+	</target>
+
+	<target name="downloadDest" depends="downloadSrc,check_admin_password_is_set">
+	    <echo message="****** Start: downloadDest ******" />
+	    <delete file="${working.dir}/dest.zip" quiet="true" />
+	    <delete file="${working.dir}/downloadDest.log" quiet="true" />
+	    <onlineDownload
+	    	servletURL="${dest.servlet.url}" 
+	    	username="${dest.admin.username}"
+	    	password="${dest.admin.password}"
+	    	allowHttp="${dest.allow.http}"
+	    	outputInventoryFile="${working.dir}/dest.zip"
+	    	logFile="${working.dir}/downloadDest.log"
+	    >
+            <modifier name="allowMaintenanceModeDisabled" value="true"/>
+	    </onlineDownload>
+	    <echo message="****** Finish: downloadDest ******" />
+	</target>
+
+
+	<!-- OFFLINECOMBINE TASK -->
+
+	<taskdef name="offlineCombine" classname="com.bea.propagation.ant.taskdefs.OfflineCombineTask">
+		<classpath refid="offlineTask.classpath"/>
+	</taskdef>
+
+    <target name="combine" description="Combine two inventories with logging" depends="downloadDest">
+	    <echo message="****** Start: combine ******" />
+	    <delete file="${working.dir}/combined.zip" quiet="true" />
+	    <delete file="${working.dir}/combine_cm.xml" quiet="true" />
+	    <delete file="${working.dir}/combine_log.txt" quiet="true" />
+	    <delete file="${working.dir}/combine_verboselog.txt" quiet="true" />
+
+	    <offlineCombine 
+	    	sourceFile="${working.dir}/src.zip" 
+	    	destFile="${working.dir}/dest.zip"
+	    	combinedInventoryFile="${working.dir}/combined.zip"
+	    	changeManifestFile="${working.dir}/combine_cm.xml"
+	    	logFile="${working.dir}/combine_log.txt"
+	    	verboseLogFile="${working.dir}/combine_verboselog.txt"
+	    />
+	    <echo message="****** Finish: combine ******" />
+    </target>
+ 
+
+	
+
+
+    <!-- OFFLINE Check for manual elections -->
+    
+	<taskdef name="offlineCheckForManualElections" classname="com.bea.propagation.ant.taskdefs.OfflineCheckManualElectionsTask">
+		<classpath refid="offlineTask.classpath"/>
+	</taskdef>
+	
+    <target name="checkManualElections" description="check if there is manual elections in combined inventory or change manifest XML">
+	    <echo message="****** Start: checkManualElections ******" />
+		<offlineCheckForManualElections 
+	    		changeManifestFile="${working.dir}/combine_cm.xml"/>
+	    <echo message="****** Finish: checkManualElections ******" />
+    </target>
+	
+
+
+	<!-- ONLINEUPLOAD TASK -->
+
+	<taskdef name="onlineUpload" classname="com.bea.propagation.ant.taskdefs.OnlineUploadTask">
+		<classpath refid="onlineTask.classpath"/>
+	</taskdef>
+
+	<target name="uploadCombined" depends="combine,check_admin_password_is_set">
+	    <echo message="****** Start: upload ******" />
+	    <onlineUpload
+	    	servletURL="${dest.servlet.url}" 
+	    	username="${dest.admin.username}"
+	    	password="${dest.admin.password}"
+	    	allowHttp="${dest.allow.http}"
+	    	sourceFile="${working.dir}/combined.zip"
+	    />
+	    <echo message="****** Finish: upload ******" />
+	</target>
+
+
+	
+	<!-- ONLINECOMMIT TASK -->
+
+	<taskdef name="onlineCommit" classname="com.bea.propagation.ant.taskdefs.OnlineCommitTask">
+		<classpath refid="onlineTask.classpath"/>
+	</taskdef>
+
+	<target name="commit" depends="uploadCombined,check_admin_password_is_set">
+	    <echo message="****** Start: commit ******" />
+	    <delete file="${working.dir}/commit.log" quiet="true" />
+	    <onlineCommit
+	    	servletURL="${dest.servlet.url}" 
+	    	username="${dest.admin.username}"
+	    	password="${dest.admin.password}"
+	    	allowHttp="${dest.allow.http}"
+	    	logFile="${working.dir}/commit.log"
+	    >
+	    	<modifier name="differenceStrategy" value="pessimistic" />
+	    	<modifier name="cm_checkinComment" value="My sample checkin comment." />
+	    	<modifier name="allowMaintenanceModeDisabled" value="true"/>
+	    </onlineCommit>
+	    <echo message="****** Finish: commit ******" />
+	</target>
+
+
+	
+	<!-- ONLINEMAINTENANCEMODE TASK -->
+
+    <target name="unlockSrc" description="disable maintenance mode on the src server" depends="check_admin_password_is_set">
+	    <echo message="****** Start: unlockSrc ******" />
+	    <onlineMaintenanceMode
+	    	servletURL="${source.servlet.url}" 
+	    	username="${source.admin.username}"
+	    	password="${source.admin.password}"
+	    	allowHttp="${source.allow.http}"
+	    	enable="false"
+	    />
+	    <echo message="****** Finish: unlockSrc ******" />
+    </target>
+
+    <target name="unlockDest" description="disable maintenance mode on the dest server" depends="check_admin_password_is_set">
+	    <echo message="****** Start: unlockDest ******" />
+	    <onlineMaintenanceMode
+	    	servletURL="${dest.servlet.url}" 
+	    	username="${dest.admin.username}"
+	    	password="${dest.admin.password}"
+	    	allowHttp="${dest.allow.http}"
+	    	enable="false"
+	    />
+	    <echo message="****** Finish: unlockDest ******" />
+    </target>
+
+</project>

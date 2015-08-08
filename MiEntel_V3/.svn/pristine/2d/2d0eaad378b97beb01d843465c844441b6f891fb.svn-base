@@ -1,0 +1,289 @@
+/*[fmt]1A90-1A0A-3*/
+/*---------------------*/
+#portlet-login {
+	width: 899px;
+}
+div.login-mensajes {
+	background: #FEFBAD url(../../img/icons/ico_alerta.gif) no-repeat 13px 8px;
+	border: 1px solid #F3D2B3;
+	padding: 8px 0 8px 39px;
+	border-width: 1px 0;
+	margin: 0 0 17px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #E24D0D;
+}
+#portlet-login h1 {
+	background: none;
+	/*[empty]line-height:;*/
+	padding-left: 0;
+}
+#portlet-login h1 img {
+	float: left;
+	margin-right: 12px;
+}
+/**        BREADCRUMB
+*-------------------*/
+.breadcrumb {
+	color: #F78E1E;
+	font-family: Tahoma;
+	font-size: 1.1em;
+	padding: 0 0 20px 2px;
+}
+.breadcrumb a {
+	color: #0073AE;
+	text-decoration: underline;
+	font-size: 12px;
+}
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+.breadcrumb a.seleccionado {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+a {
+	color: #3a3a3a;
+	text-decoration: underline;
+	font-size: 12px;
+}
+a:hover {
+	text-decoration: underline;
+	color: #597CA4;
+}
+p.bajada {
+	font-size: 1.2em;
+	font-family: Tahoma;
+	padding: 10px 0 40px;
+}
+.relleno {
+	display: block;
+	height: 50px;
+}
+/*
+* Columna de contenidos
+ */
+.columna_fullpage {
+	display: block;
+	float: left;
+	width: 857px;
+	margin: 0 20px 0 0;
+}
+.columna_fullpage_ultima {
+	margin: 0;
+}
+.columna_fullpage_tercio {
+	display: block;
+	float: left;
+	width: 300px;
+	margin: 0 20px 0 0;
+}
+.columna_fullpage span.bajada_titulo {
+	color: #7F7F7F;
+	display: block;
+	font-size: 1.1em;
+}
+.columna_fullpage_tercio_ultima {
+	margin: 0;
+}
+/*
+* Cajas con informacion dentro de las columnas
+ */
+.columna_fullpage .caja_contacto, .columna_fullpage_tercio .caja_contacto {
+	display: block;
+	border-bottom: 1px dotted #D0D0D0;
+	padding: 10px 0;
+	margin: 0 0 10px;
+}
+.columna_fullpage .caja_contacto_ultima, .columna_fullpage_tercio .caja_contacto_ultima {
+	border-bottom: none;
+}
+.columna_fullpage .caja_contacto p, .columna_fullpage_tercio .caja_contacto p {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	margin: 8px 0;
+}
+.columna_fullpage .caja_contacto span.texto_gris, .columna_fullpage_tercio .caja_contacto span.texto_gris {
+	display: block;
+	margin: 3px 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	color: #999;
+}
+.columna_fullpage .caja_contacto span.parrafo_gris, .columna_fullpage_tercio .caja_contacto span.parrafo_gris {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #999;
+}
+.columna_fullpage .caja_contacto a.enlace_azul, .columna_fullpage .caja_contacto a.enlace_azul:visited {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #0073AE;
+	font-size: 1.1em;
+	text-decoration: none;
+	border-bottom: 1px dotted #0073AE;
+}
+.columna_fullpage_tercio .caja_contacto a.enlace_azul, .columna_fullpage_tercio .caja_contacto a.enlace_azul:visited {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #0073AE;
+	font-size: 1.1em;
+	text-decoration: none;
+	border-bottom: 1px dotted #0073AE;
+}
+.columna_fullpage .caja_contacto a.enlace_azul:hover, .columna_fullpage_tercio .caja_contacto a.enlace_azul:hover {
+	border: none;
+}
+/*
+* Lista de contacto
+ */
+.columna_fullpage .caja_contacto ul.lista_contactos li, .columna_fullpage_tercio .caja_contacto ul.lista_contactos li {
+	display: block;
+	margin: 6px 0 0;
+}
+.columna_fullpage .caja_contacto ul.lista_contactos li, .columna_fullpage_tercio .caja_contacto ul.lista_contactos li {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	background: url(../../img/generico/ico_bullet.gif) no-repeat left 4px;
+	padding: 0 0 0 13px;
+}
+.columna_fullpage .caja_contacto ul.lista_contactos li span.texto_gris, .columna_fullpage_tercio .caja_contacto ul.lista_contactos li span.texto_gris {
+	font-size: 0.9em;
+}
+/*
+* Caja "DEBES SABER"
+ */
+.caja_debes_saber {
+	display: block;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	padding: 20px 0;
+	margin: 15px 0 0;
+	border-top: 1px solid #D0D0D0;
+	color: #7F7F7F;
+}
+.caja_debes_saber ul {
+	display: block;
+	margin: 12px 0 0;
+}
+.caja_debes_saber ul li {
+	margin: 4px 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	background: url(../../img/generico/ico_bullet_cruz.gif) no-repeat left 6px;
+	padding: 0 0 0 8px;
+}
+/*
+* Estilos para los diferentes Light Boxes
+ */
+.LB {
+	display: block;
+	background: #FFFFFF;
+}
+.LB input {
+	outline: none;
+}
+.LB .titulo_lb {
+	display: block;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 1.4em;
+	font-weight: bolder;
+	padding: 6px 0 6px 50px;
+	margin: 0 0 15px;
+}
+.LB .pc_seguro {
+	background: url(../../img/LB/ico_pc_seguro.gif) no-repeat top left;
+}
+.LB p {
+	display: block;
+	margin: 5px 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+.LB .contenedor_columnas {
+	margin: 20px 0 0;
+}
+.LB .contenedor_columnas .columna_lb {
+	display: block;
+	float: left;
+	width: 200px;
+	padding: 0 20px 0 0;
+	border-right: 1px dotted #B2B2B2;
+	position: relative;
+	z-index: 10;
+}
+.LB .contenedor_columnas .ultima_columna {
+	padding: 0 0 0 20px;
+	border-right: none;
+	position: relative;
+	z-index: 8;
+}
+.LB .contenedor_columnas .item_formulario {
+	display: block;
+	margin: 0 0 15px;
+}
+.LB .contenedor_columnas .item_formulario .label {
+	display: block;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 1.2em;
+	margin: 0 0 3px;
+}
+.LB .contenedor_columnas .contenedor_botones {
+	display: block;
+	margin: 25px 0 5px;
+}
+.LB .contenedor_columnas .contenedor_botones .solicitar_clave {
+	display: block;
+	float: left;
+}
+.LB .contenedor_columnas .contenedor_botones .solicitar_clave a, .LB .contenedor_columnas .contenedor_botones .solicitar_clave a:visited {
+	display: block;
+	float: left;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #0073AE;
+	font-size: 1.2em;
+	margin: 5px 10px 0 0;
+	text-decoration: none;
+	border-bottom: 1px dotted #0073AE;
+}
+.LB .contenedor_columnas .contenedor_botones .solicitar_clave a:hover {
+	border: none;
+}
+/****************************************
+BOTON AZUL DELGADO Redondeado
+****************************************/
+.btn_azul {
+	display: block;
+	background: url(../../img/botones/img_btn_azul.gif) no-repeat right -24px;
+	height: 24px;
+	text-decoration: none;
+	font-family: Tahome, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bolder;
+	color: #FFF;
+	padding-right: 9px;
+}
+* html .btn_azul {
+	display: inline-block;
+}
+*:first-child+html .btn_azul {
+	display: inline-block;
+}
+.btn_azul span {
+	background: url(../../img/botones/img_btn_azul.gif) no-repeat top left;
+	padding: 5px 4px 0 15px;
+	height: 19px;
+	display: block;
+	cursor: pointer;
+}
+* html .btn_azul span {
+	float: left;
+}
+.btn_azul:hover {
+	background-position: right -72px;
+}
+.btn_azul:hover span {
+	background-position: left -48px;
+}
+.contenedor_boton_azul {
+	display: block;
+	float: left;
+}

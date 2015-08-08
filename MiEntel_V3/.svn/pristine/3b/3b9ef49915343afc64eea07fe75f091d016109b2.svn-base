@@ -1,0 +1,38 @@
+# build.properties v1.0
+# Propiedades para adaptación de la generación/compilación de WebServices
+# basados en JAX-WS para WebLogic Server 10.x/11g.
+
+
+# Nombre del Servicio (tal como aparece en el elemento wsdl:service). Debe
+# coincidir con el nombre del WSDL sin la extensión .wsdl
+# Por ejemplo: 
+# wsdl.file=CatalogoFacturacionService.wsdl  
+wsdl.file=SatisfaccionClienteService.wsdl
+
+# Nombre del Servicio (tal como aparece en el elemento wsdl:service). Debe
+# coincidir con el nombre del WSDL sin la extensión .wsdl
+# Por ejemplo: 
+# wsdl.service.name=CatalogoFacturacionService
+wsdl.service.name=SatisfaccionClienteService
+
+# Path del package + nombre del archivo + extension .java +  de la clase de 
+# implementación JAX-WS del servicio
+# Por ejemplo: 
+# jwsc.jws.file=com/epcs/productos/catalogo/facturacion/CatalogoFacturacionServiceImpl.java
+jwsc.jws.file=com/epcs/inteligencianegocios/satisfaccioncliente/SatisfaccionClienteServiceImpl.java
+
+# Contexto (url) de publicacion del servicio 
+# Por ejemplo:
+# jwsc.jws.contextPath=/productos/catalogo/facturacion/service
+jwsc.jws.contextPath=com/epcs/inteligencianegocios/satisfaccioncliente/service
+
+# path relativo de ubicación del WAR dentro del EAR. Debe corresponder con el package
+# de la implementación (jwsc.jws.file)y el namespace declarado. 
+# Por ejemplo:
+# servicio.webapp.uri=com/epcs/productos/catalogo/facturacion
+servicio.webapp.uri=com/epcs/inteligencianegocios/satisfaccioncliente
+
+# Nombre del archivo .ear (sin extensión)
+# Por ejemplo:
+# ear.name=CatalogoFacturacionService
+ear.name=SatisfaccionClienteService

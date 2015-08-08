@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.epcs.com/billing/recarga/types" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.epcs.com/billing/recarga/types">
+	
+	<!-- TYPE PARA REQUEST DEL SERVICIO DE FACTIBILIDAD DE RECARGA MULTITIENDA -->
+	<complexType name="FactibilidadRecargaMultitiendaType">
+		<sequence>
+			<element name="metodo" type="string"/>
+			<element name="plataforma" type="string"/>
+			<element name="tipoOperacion" type="string"/>
+			<element name="codEmpresa" type="string"/>
+			<element name="codLocal" type="string"/>
+
+			<element name="codUnicoTransaccion" type="string"/>
+			<element name="msisdnRecarga" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="codTransMultitienda" type="string"/>
+			<element name="rut" type="string"/>
+			<element name="numeroCuotas" type="string"/>
+			<element name="claveTarjeta" type="string"/>
+			<element name="diaPago" type="string"/>
+			<element name="fechaSolicitud" type="string"/>
+
+			<element name="codigoUnicoAutorizacion" type="string"/>
+			<element name="idSistema" type="string"/>
+		</sequence>
+	</complexType>
+	
+	<!-- TYPE PARA REQUEST DEL SERVICIO DE RECARGA ENTEL TICKET -->
+	
+	<complexType name="FactibilidadRecargaTicketType">
+		<sequence>
+			<element name="metodo" type="string"/>
+			<element name="plataforma" type="string"/>
+
+			<element name="tipoOperacion" type="string"/>						
+			<element name="codUnicoTransaccion" type="string"/>
+			<element name="codLocal" type="string"/>
+			<element name="msisdnRecarga" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="numeroEntelTicket" type="string"/>
+			<element name="montoTicket" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="codigoBono" type="string"/>
+
+			<element name="validezRecarga" type="string"/>
+			<element name="origenPeticion" type="string"/>
+			<element name="canalServicio" type="string"/>
+			<element name="agenciaTicket" type="string"/>
+			<element name="folioTicket" type="string"/>
+		</sequence>
+	</complexType>
+	
+	<!-- TYPE PARA REQUEST DEL SERVICIO DE FACTIBILIDAD RECARGA WEBPAY -->	
+	<complexType name="FactibilidadWebPayType">
+
+		<sequence>
+			<element name="metodo" type="string"/>
+			<element name="plataforma" type="string"/>
+			<element name="codIntegrador" type="string"/>
+			<!-- <element name="tipoOperacion" type="string" />  -->						
+			<element name="codDistribuidor" type="string"/>
+			<element name="codComercio" type="string"/>
+			<element name="codLocal" type="string"/>
+			<element name="codTerminal" type="string"/>
+
+			<element name="codRegion" type="string"/>
+			<element name="codComuna" type="string"/>
+			<element name="correlativoTrans" type="string"/>
+			<element name="codigoUnicoTransaccion" type="string"/>
+			<element name="msisdnRecarga" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="fechaSolicitud" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+	<complexType name="RecargaWebPayType">
+		<sequence>
+			<element name="metodo" type="string"/>
+			<element name="plataforma" type="string"/>
+			<element name="codIntegrador" type="string"/>
+			<!-- <element name="tipoOperacion" type="string" />  -->						
+			<element name="codDistribuidor" type="string"/>
+			<element name="codComercio" type="string"/>
+			<element name="codLocal" type="string"/>
+
+			<element name="codTerminal" type="string"/>
+			<element name="codRegion" type="string"/>
+			<element name="codComuna" type="string"/>
+			<element name="correlativoTrans" type="string"/>
+			<element name="codigoUnicoTransaccion" type="string"/>
+			<element name="msisdnRecarga" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="fechaSolicitud" type="string"/>
+			<element name="formaPago" type="string"/>
+
+			<element name="codUnicoAutorizacion" type="string"/>
+			<element name="envioSMS" type="string"/>
+		</sequence>
+	</complexType>
+				
+	<!-- TYPE PARA REQUEST DEL SERVICIO DE INSERTAR REGISTRO REC. WEBPAY -->	
+	<complexType name="InsertarRegistroRecWebPayType">
+		<sequence>
+			<element name="ordCompra" type="string"/>
+			<element name="IDP" type="string"/>
+
+			<element name="parametro4" type="string"/>
+			<element name="tipoPago" type="string"/>						
+			<element name="fechaTransaccion" type="string"/>
+			<element name="detalleMonto" type="tns:DetalleMontoType" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="DetalleMontoType">
+		<sequence>
+			<element name="ordenCompra" type="string"/>
+
+			<element name="parametroPersonalizable" type="string"/>
+			<element name="monto" type="string"/>
+		</sequence>
+	</complexType>
+				
+	<complexType name="ResultadoInsertarRegistroRecWebPayType">
+		<sequence>
+			<element name="respuesta" type="tns:RespuestaType"/>
+			<element name="ordenCompra" type="string"/>
+		</sequence>
+
+	</complexType>
+		
+	<!-- TYPE PARA REQUEST Y RESPONSE DEL SERVICIO DE ACTUALIZAR REGISTRO REC. WEBPAY -->
+		
+	<complexType name="ActualizarRegistroRecWebPayType">
+	<sequence>
+		<element name="ordenCompra" type="string"/>
+		<element name="parametrosTransBank" type="string"/>
+	</sequence>
+	</complexType>
+	
+	<complexType name="ResultadoActualizarRegistroRecWebPayType">
+
+	<sequence>
+		<element name="respuesta" type="tns:RespuestaType"/>
+		<element name="ordenCompra" type="string" minOccurs="0"/>
+	</sequence>
+	</complexType>
+		
+	<!-- TYPE PARA REQUEST Y RESPONSE DEL SERVICIO DE CONSULTAR REGISTRO REC. WEBPAY -->
+		
+	<complexType name="ConsultarRegistroRecWebPayType">
+	<sequence>
+		<element name="ordenCompra" type="string"/>
+
+	</sequence>
+	</complexType>
+	
+	<complexType name="ResultadoConsultarRegistroRecWebPayType">
+	<sequence>
+		<element name="respuesta" type="tns:RespuestaType"/>
+		<element name="resultadoConsultarRegRecWebPay" type="tns:ResConsultarRegistroRecWebPayType" minOccurs="0"/>
+	</sequence>
+	</complexType>
+	
+	<complexType name="ResConsultarRegistroRecWebPayType">
+
+	<sequence>
+		<element name="ordenCompra" type="string"/>
+		<element name="IDP" type="string"/>
+		<element name="parametro4" type="string"/>
+		<element name="parametro5" type="string"/>
+		<element name="parametro6" type="string"/>
+		<element name="tipoRecarga" type="string"/>
+		<element name="fechaTransaccion" type="string"/>
+		<element name="respuestaTransbank" type="string"/>
+
+		<element name="detalleMonto" type="tns:DetalleMontoType" minOccurs="0" maxOccurs="unbounded"/>
+	</sequence>
+	</complexType>
+		
+	<!-- TYPE PARA RESPONSE DEL SERVICIO DE FACT. RECARGA WEBPAY -->
+	
+	<complexType name="ResultadoFactibilidadWebPayType">
+		<sequence>
+			<element name="respuesta" type="tns:RespuestaType"/>
+			<element name="resultadoFactibilidadWebPay" type="tns:ResultadoFactWebPayType" minOccurs="0"/>
+		</sequence>
+
+	</complexType>
+		
+	<complexType name="ResultadoRecargaWebPayType">
+		<sequence>
+			<element name="respuesta" type="tns:RespuestaType"/>
+			<element name="resultadoRecargaWebPay" type="tns:ResultadoRecWebPayType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+		
+	<complexType name="ResultadoFactWebPayType">
+		<sequence>
+
+			<element name="plataforma" type="string"/>
+			<element name="codIntegrador" type="string"/>
+			<element name="codDistribuidor" type="string"/>
+			<element name="codComercio" type="string"/>
+			<element name="codigoUnicoTransaccion" type="string"/>
+			<element name="msisdnRecarga" type="string"/>
+			<element name="codigoRespuesta" type="string"/>
+		</sequence>
+	</complexType>
+
+	
+	<complexType name="ResultadoRecWebPayType">
+		<sequence>
+			<element name="plataforma" type="string"/>
+			<element name="codIntegrador" type="string"/>
+			<element name="codDistribuidor" type="string"/>
+			<element name="codComercio" type="string"/>
+			<element name="codLocal" type="string"/>
+			<element name="codTerminal" type="string"/>
+			<element name="codRegion" type="string"/>
+
+			<element name="codComuna" type="string"/>
+			<element name="correlativoTrans" type="string"/>
+			<element name="codUnicoTransaccion" type="string"/>
+			<element name="fechaSolicitud" type="string"/>
+			<element name="codigoRespuesta" type="string"/>
+			<element name="codUnicoAutorizacion" type="string"/>			
+			<element name="msisdnRecarga" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="montoBono" type="string"/>
+
+			<element name="descuentoAcumulado" type="string"/>
+			<element name="nuevoSaldo" type="string"/>
+			<element name="validezRecarga" type="string"/>
+			<element name="mensajePublicidad" type="string"/>
+		</sequence>
+	</complexType>
+	
+	<!-- TYPE PARA RESPONSE DEL SERVICIO DE FACTIBILIDAD DE RECARGA MULTITIENDA -->
+	<complexType name="ResultadoFactibilidadRecargaMultitiendaType">
+		<sequence>
+
+			<element name="respuesta" type="tns:RespuestaType"/>
+			<element name="resultadoFactibilidadRecargaMultitienda" type="tns:ResultadoRecargaMultitiendaType" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="ResultadoFactibilidadRecargaTicketType">
+		<sequence>
+			<element name="respuesta" type="tns:RespuestaType"/>
+			<element name="resultadoFactibilidadRecargaTicket" type="tns:ResultadoRecargaTicketType" minOccurs="0"/>
+		</sequence>
+
+	</complexType>
+
+	<complexType name="ResultadoRecargaMultitiendaType">
+		<sequence>
+			<element name="plataforma" type="string"/>
+			<element name="tipoOperacion" type="string"/>
+			<element name="codEmpresa" type="string"/>
+			<element name="codLocal" type="string"/>
+			<element name="codUnicoTransaccion" type="string"/>
+
+			<element name="msisdnRecarga" type="string"/>
+			<element name="codRespuestaTransA" type="string"/>
+			<element name="codRespuestaTransB" type="string"/>
+			<element name="codTransMultitienda" type="string"/>
+			<element name="montoRecarga" type="string"/>
+			<element name="montoBono" type="string"/>
+			<element name="nuevoSaldo" type="string"/>
+			<element name="validezRecarga" type="string"/>
+			<element name="codigoUnicoAutorizacion" type="string"/>
+
+		</sequence>
+	</complexType>
+	
+	<complexType name="ResultadoRecargaTicketType">
+		<sequence>
+			<element name="plataforma" type="string"/>
+			<element name="tipoOperacion" type="string"/>
+			<element name="codUnicoTransaccion" type="string"/>
+			<element name="msisdnRecarga" type="string"/>
+			<element name="numeroEntelTicket" type="string"/>			
+			<element name="montoDispTicket" type="string"/>
+
+			<element name="folioTicket" type="string"/>
+			<element name="agenciaTicket" type="string"/>
+			<element name="montoInicialTicket" type="string"/>
+			<element name="codEstadoRespuesta" type="string"/>
+			<element name="codRespuestaExitoAdicional" type="string"/>
+		</sequence>
+	</complexType>
+
+	<!-- TYPE RESPUESTA OBLIGATORIO -->
+
+	<complexType name="RespuestaType">
+		<sequence>
+			<element name="codigo" type="string" minOccurs="1"/>
+			<element name="descripcion" type="string" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	
+	<!-- TYPE AUTH OBLIGATORIO -->
+	<complexType name="AuthType">
+		<sequence>
+
+			<element name="username" type="string"/>
+			<element name="password" type="string"/>
+		</sequence>
+	</complexType>	
+	
+</schema>

@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/cliente/perfil" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/cliente/perfil" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/cliente/perfil" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/cliente/perfil" xmlns:types="http://www.epcs.com/cliente/perfil/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/cliente/perfil/types" schemaLocation="http://osb11g:7001/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService?SCHEMA%2FCLIENTES%2FGestionDePerfiles%2FServicios%2FClientePerfilServiceXSD"/>
+      <!-- INICIO CONSULTAR XML PLANES FULL-->
+      <xsd:element name="ConsultaXmlPlanesFullDocument" type="types:ConsultarXmlPlanesFullType"/>
+      <xsd:element name="ResultadoConsultaXmlPlanesFullDocument" type="types:ResultadoConsultaXmlplanesfullType"/>
+      <!-- FIN CONSULTAR XML PLANES FULL-->
+      <!-- INICIO OBTENER EQUIPO SOPORTE-->
+      <xsd:element name="ObtenerEquiposSoporteDocument" type="types:ObtenerEquiposSoporteType"/>
+      <xsd:element name="ResultadoObtenerEquiposSoporteDocument" type="types:ResultadoObtenerEquiposSoporteType"/>
+      <!-- FIN OBTENER EQUIPO SOPORTE-->
+      <!-- INICIO CONSULTAR BLOQUEO DETALLE LLAMADOS-->
+      <xsd:element name="ConsultarBloqueoDetalleLlamadosDocument" type="types:ConsultarBloqueoDetalleLlamadosType"/>
+      <xsd:element name="ResultadoConsultarBloqueoDetalleLlamadosDocument" type="types:ResultadoConsultarBloqueoDetalleLlamadosType"/>
+      <!-- FIN CONSULTAR BLOQUEO DETALLE LLAMADOS-->
+      <!-- INICIO CONSULTAR SALDO RESERVADO (PP)-->
+      <xsd:element name="ConsultarSaldoReservadoPPDocument" type="types:ConsultarSaldoReservadoPPType"/>
+      <xsd:element name="ResultadoConsultarSaldoReservadoPPDocument" type="types:ResultadoConsultarSaldoReservadoPPType"/>
+      <!-- FIN CONSULTAR SALDO RESERVADO (PP)-->
+      <!--INICIO RECUPERAR CLAVE SMS -->
+      <xsd:element name="RecuperarClaveSMSDocument" type="types:RecuperarClaveSMSType"/>
+      <xsd:element name="ResultadoRecuperarClaveSMSDocument" type="types:ResultadoRecuperarClaveSMSType"/>
+      <!--FIN RECUPERAR CLAVE SMS -->
+      <!--INICIO ENVIAR CLAVE SMS -->
+      <xsd:element name="EnviaClaveSMSDocument" type="types:EnviaClaveSMSType"/>
+      <xsd:element name="ResultadoEnviaClaveSMSDocument" type="types:ResultadoEnviaClaveSMSType"/>
+      <!--FIN ENVIAR CLAVE SMS -->
+      <!--INICIO VERIFICAR MERCADO -->
+      <xsd:element name="ConsultaMercadoDocument" type="types:ConsultaMercadoType"/>
+      <xsd:element name="ResultadoConsultaMercadoDocument" type="types:ResultadoConsultaMercadoType"/>
+      <!--FIN VERIFICAR MERCADO -->
+      <!--INICIO VERIFICAR MOVIL ENTEL -->
+      <xsd:element name="ValidaCompaniaMsisdnDocument" type="types:ValidaCompaniaMsisdnType"/>
+      <xsd:element name="ResultadoValidaCompaniaMsisdnDocument" type="types:ResultadoValidaCompaniaMsisdnType"/>
+      <!--FIN VERIFICAR MOVIL ENTEL -->
+      <!--INICIO ACTUALIZAR MOVIL BD -->
+      <xsd:element name="RegistrarMovilDocument" type="types:RegistrarMovilType"/>
+      <xsd:element name="ResultadoRegistrarMovilDocument" type="types:ResultadoRegistrarMovilType"/>
+      <!--FIN ACTUALIZAR MOVIL BD -->
+      <!--INICIO OBTENER RUT TITULAR -->
+      <xsd:element name="ObtenerRutTitularDocument" type="types:ObtenerRutTitularType"/>
+      <xsd:element name="ResultadoObtenerRutTitularDocument" type="types:ResultadoObtenerRutTitularType"/>
+      <!--FIN OBTENER RUT TITULAR -->
+      <!--INICIO OBTENER MERCADO MOVIL -->
+      <xsd:element name="ObtenerMercadoMovilDocument" type="types:ObtenerMercadoMovilType"/>
+      <xsd:element name="ResultadoObtenerMercadoMovilDocument" type="types:ResultadoObtenerMercadoMovilType"/>
+      <!--FIN OBTENER MERCADO MOVIL -->
+      <!--INICIO Perfilamiento-->
+      <xsd:element name="ConsultarPerfilamientoDocument" type="types:ConsultarPerfilamientoType"/>
+      <xsd:element name="ResultadoConsultarPerfilamientoDocument" type="types:ResultadoConsultarPerfilamientoType"/>
+      <!--FIN Perfilamiento-->
+      <!--INICIO PlanContratadoPrepago-->
+      <xsd:element name="ConsultarPlanContratadoPPDocument" type="types:ConsultarPlanContratadoPPType"/>
+      <xsd:element name="ResultadoConsultarPlanContratadoPPDocument" type="types:ResultadoConsultarPlanContratadoPPType"/>
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+      <!--FIN PlanContratadoPrepago-->
+      <!--INICIO PlanResumenCC-->
+      <xsd:element name="ConsultarPlanResumenCCDocument" type="types:ConsultarPlanResumenCCType"/>
+      <xsd:element name="ResultadoConsultarPlanResumenCCDocument" type="types:ResultadoConsultarPlanResumenCCType"/>
+      <!--FIN PlanResumenCC-->
+      <!--INICIO PlanResumenPP-->
+      <xsd:element name="ConsultarPlanResumenPPDocument" type="types:ConsultarPlanResumenPPType"/>
+      <xsd:element name="ResultadoConsultarPlanResumenPPDocument" type="types:ResultadoConsultarPlanResumenPPType"/>
+      <!--FIN PlanResumenPP-->
+      <!--INICIO ConsultarPlan-->
+      <xsd:element name="ConsultarPlanDocument" type="types:ConsultarPlanType"/>
+      <xsd:element name="ResultadoConsultarPlanDocument" type="types:ResultadoConsultarPlanType"/>
+      <!--FIN ConsultarPlan-->
+      <!--INICIO ConsultarBolsa-->
+      <xsd:element name="ConsultarBolsaActualDocument" type="types:ConsultarBolsaActualType"/>
+      <xsd:element name="ResultadoConsultarBolsaActualDocument" type="types:ResultadoConsultarBolsaActualType"/>
+      <!--FIN ConsultarBolsa-->
+      <!--INICIO ConsultarEquipo-->
+      <xsd:element name="ConsultarEquipoDocument" type="types:ConsultarEquipoType"/>
+      <xsd:element name="ResultadoConsultarEquipoDocument" type="types:ResultadoConsultarEquipoType"/>
+      <!--FIN ConsultarEquipo-->
+      <!--INICIO ConsultarEquipoFull-->
+      <xsd:element name="ConsultarEquipoFullDocument" type="types:ConsultarEquipoFullType"/>
+      <xsd:element name="ResultadoConsultarEquipoFullDocument" type="types:ResultadoConsultarEquipoFullType"/>
+      <!--FIN ConsultarEquipoFull-->
+      <!--INICIO ConsultarProductos-->
+      <xsd:element name="ConsultarProductosDocument" type="types:ConsultarProductosType"/>
+      <xsd:element name="ResultadoConsultarProductosDocument" type="types:ResultadoConsultarProductosType"/>
+      <!--FIN ConsultarProductos-->
+      <!--INICIO DatosUsuario-->
+      <xsd:element name="ConsultarMisDatosDocument" type="types:ConsultarMisDatosType"/>
+      <xsd:element name="ResultadoConsultarMisDatosDocument" type="types:ResultadoConsultarMisDatosType"/>
+      <xsd:element name="ActualizarMisDatosDocument" type="types:ActualizarMisDatosType"/>
+      <xsd:element name="ResultadoActualizarMisDatosDocument" type="types:ResultadoActualizarMisDatosType"/>
+      <!--FIN DatosUsuario-->
+      <!-- INICIO MisUsuarios-->
+      <xsd:element name="ConsultarMisUsuariosDocument" type="types:ConsultarMisUsuariosType"/>
+      <xsd:element name="ResultadoConsultarMisUsuariosDocument" type="types:ResultadoConsultarMisUsuariosType"/>
+      <!-- FIN MisUsuarios-->
+      <!-- Selector Cuenta -->
+      <xsd:element name="ConsultarSelectorCuentaDocument" type="types:ConsultarSelectorCuentaType"/>
+      <xsd:element name="ResultadoConsultarSelectorCuentaDocument" type="types:ResultadoConsultarSelectorCuentaType"/>
+      <!-- AUTOATENCION -->
+      <xsd:element name="ConsultarAutoatencionDocument" type="types:ConsultarAutoatencionType"/>
+      <xsd:element name="ResultadoConsultarAutoatencionDocument" type="types:ResultadoConsultarAutoatencionType"/>
+      <!--INICIO ConsultarBolsasCompradas-->
+      <xsd:element name="ConsultarBolsasCompradasDocument" type="types:ConsultarBolsasCompradasType"/>
+      <xsd:element name="ResultadoConsultarBolsasCompradasDocument" type="types:ResultadoConsultarBolsasCompradasType"/>
+      <!--FIN ConsultarBolsasCompradas-->
+      <!--INICIO ConsultarCiudadesPorRegion -->
+      <xsd:element name="ConsultarCiudadesPorRegionDocument" type="types:ConsultarCiudadesPorRegionType"/>
+      <xsd:element name="ResultadoConsultarCiudadesPorRegionDocument" type="types:ResultadoConsultarCiudadesPorRegionType"/>
+      <!--FIN-->
+      <!--INICIO ConsultarComunasPorCiudad -->
+      <xsd:element name="ConsultarComunasPorCiudadDocument" type="types:ConsultarComunasPorCiudadType"/>
+      <xsd:element name="ResultadoConsultarComunasPorCiudadDocument" type="types:ResultadoConsultarComunasPorCiudadType"/>
+      <!--FIN-->
+      <!--INICIO ConsultarRegiones -->
+      <xsd:element name="ConsultarRegionesDocument" type="types:ConsultarRegionesType"/>
+      <xsd:element name="ResultadoConsultarRegionesDocument" type="types:ResultadoConsultarRegionesType"/>
+      <!--FIN-->
+      <!-- INICIO ConsultaDireccionPostal -->
+      <xsd:element name="ConsultarDireccionPostalDocument" type="types:ConsultarDireccionPostalType"/>
+      <xsd:element name="ResultadoConsultarDireccionPostalDocument" type="types:ResultadoConsultarDireccionPostalType"/>
+      <!-- FIN -->
+      <!-- INICIO IdentificadorCliente -->
+      <xsd:element name="ConsultaIdentificadorClienteDocument" type="types:ConsultaIdentificadorClienteType"/>
+      <xsd:element name="ResultadoConsultaIdentificadorClienteDocument" type="types:ResultadoConsultaIdentificadorClienteType"/>
+      <!-- FIN -->
+      <!-- Inicio ActualizarDireccionMQPostal -->
+      <xsd:element name="ActualizarDireccionPostalMQDocument" type="types:ActualizarDireccionPostalMQType"/>
+      <xsd:element name="ActualizarDireccionPostalMQResponseDocument" type="types:ActualizarDireccionPostalMQResponseType"/>
+      <!-- FIN -->
+      <!-- Inicio ActualizarDireccionPostal -->
+      <xsd:element name="ActualizarDireccionPostalDocument" type="types:ActualizarDireccionPostalType"/>
+      <xsd:element name="ActualizarDireccionPostalResponseDocument" type="types:ActualizarDireccionPostalResponseType"/>
+      <!-- FIN -->
+      <!-- Inicio ConsultarUsuarioBuic -->
+      <xsd:element name="ConsultarUsuarioBuicDocument" type="types:ConsultarUsuarioBuicType"/>
+      <xsd:element name="ResultadoConsultarUsuarioBuicDocument" type="types:ResultadoConsultarUsuarioBuicType"/>
+      <!-- FIN -->
+      <!-- Inicio Consultar Submercado -->
+      <xsd:element name="ConsultarSubmercadoDocument" type="types:ConsultarSubmercadoType"/>
+      <xsd:element name="ResultadoConsultarSubmercadoDocument" type="types:ResultadoConsultarSubmercadoType"/>
+      <!-- FIN -->
+      <!-- INICIO ActualizarCorreoBuzon  -->
+      <xsd:element name="ActualizarCorreoBuzonDocument" type="types:ActualizarCorreoBuzonType"/>
+      <xsd:element name="ResultadoActualizarCorreoBuzonDocument" type="types:ResultadoActualizarCorreoBuzonType"/>
+      <!-- FIN ActualizarCorreoBuzon  -->
+      <!-- INICIO ConsultarCorreoBuzon  -->
+      <xsd:element name="ConsultarCorreoBuzonDocument" type="types:ConsultarCorreoBuzonType"/>
+      <xsd:element name="ResultadoConsultarCorreoBuzonDocument" type="types:ResultadoConsultarCorreoBuzonType"/>
+      <!-- FIN ConsultarCorreoBuzon  -->
+      <!-- INICIO ConsultarListaComunik2  -->
+      <xsd:element name="ConsultarListaComunik2Document" type="types:ConsultarListaComunik2Type"/>
+      <xsd:element name="ResultadoConsultarListaComunik2Document" type="types:ResultadoConsultarListaComunik2Type"/>
+      <!-- FIN ConsultarListaComunik2  -->
+      <!-- PLAN PLAN PLAN PLAN PLAN PLAN -->
+      <!-- PLAN ACTUAL SS -->
+      <xsd:element name="ConsultarPlanActualSSDocument" type="types:ConsultarPlanActualSSType"/>
+      <xsd:element name="ResultadoConsultarPlanActualSSDocument" type="types:ResultadoConsultarPlanActualSSType"/>
+      <!-- FIN PLAN ACTUAL SS -->
+      <!-- PLAN ACTUAL CC -->
+      <xsd:element name="ConsultarPlanActualCCDocument" type="types:ConsultarPlanActualCCType"/>
+      <xsd:element name="ResultadoConsultarPlanActualCCDocument" type="types:ResultadoConsultarPlanActualCCType"/>
+      <!-- FIN PLAN ACTUAL CC -->
+      <!-- PLAN ACTUAL PP -->
+      <xsd:element name="ConsultarPlanActualPPDocument" type="types:ConsultarPlanActualPPType"/>
+      <xsd:element name="ResultadoConsultarPlanActualPPDocument" type="types:ResultadoConsultarPlanActualPPType"/>
+      <!-- FIN PLAN ACTUAL PP -->
+      <!-- PLANES DISPONIBLES SSCC -->
+      <xsd:element name="ConsultarPlanesDisponiblesSSCCDocument" type="types:ConsultarPlanesDisponiblesSSCCType"/>
+      <xsd:element name="ResultadoConsultarPlanesDisponiblesSSCCDocument" type="types:ResultadoConsultarPlanesDisponiblesSSCCType"/>
+      <!-- FIN PLANES DISPONIBLES SSCC -->
+      <!-- PLANES DISPONIBLES PP -->
+      <xsd:element name="ConsultarPlanesDisponiblesPPDocument" type="types:ConsultarPlanesDisponiblesPPType"/>
+      <xsd:element name="ResultadoConsultarPlanesDisponiblesPPDocument" type="types:ResultadoConsultarPlanesDisponiblesPPType"/>
+      <!-- FIN PLANES DISPONIBLES PP -->
+      <!-- CONSULTAR SOLICITUDES ACTIVAS PP -->
+      <xsd:element name="ConsultarSolicitudesActivasPPDocument" type="types:ConsultarSolicitudesActivasPPType"/>
+      <xsd:element name="ResultadoConsultarSolicitudesActivasPPDocument" type="types:ResultadoConsultarSolicitudesActivasPPType"/>
+      <!-- FIN CONSULTAR SOLICITUDES ACTIVAS PP -->
+      <!-- CAMBIO PLAN PP -->
+      <xsd:element name="CambioPlanPPDocument" type="types:CambioPlanPPType"/>
+      <xsd:element name="ResultadoCambioPlanPPDocument" type="types:ResultadoCambioPlanPPType"/>
+      <!-- FIN CAMBIO PLAN PP -->
+      <!-- CAMBIO PLAN COMUNIK2 PP -->
+      <xsd:element name="CambioPlanComunik2PPDocument" type="types:CambioPlanComunik2PPType"/>
+      <xsd:element name="ResultadoCambioPlanComunik2PPDocument" type="types:ResultadoCambioPlanComunik2PPType"/>
+      <!-- FIN CAMBIO PLAN COMUNIK2 PP -->
+      <!-- AGREGAR MODIFICAR NUM FRECUENTE PP -->
+      <xsd:element name="AgregarModificarNumeroFrecuentePPDocument" type="types:AgregarModificarNumeroFrecuentePPType"/>
+      <xsd:element name="ResultadoAgregarModificarNumeroFrecuentePPDocument" type="types:ResultadoAgregarModificarNumeroFrecuentePPType"/>
+      <!-- FIN AGREGAR MODIFICAR NUM FRECUENTE PP -->
+      <!-- ELIMINAR NUM FRECUENTE PP -->
+      <xsd:element name="EliminarNumeroFrecuentePPDocument" type="types:EliminarNumeroFrecuentePPType"/>
+      <xsd:element name="ResultadoEliminarNumeroFrecuentePPDocument" type="types:ResultadoEliminarNumeroFrecuentePPType"/>
+      <!-- FIN ELIMINAR NUM FRECUENTE PP -->
+      <!-- VALIDACION BLOQUEO TEMPORAL -->
+      <xsd:element name="ValidacionBloqueoTemporalDocument" type="types:ValidacionBloqueoTemporalType"/>
+      <xsd:element name="ResultadoValidacionBloqueoTemporalDocument" type="types:ResultadoValidacionBloqueoTemporalType"/>
+      <!-- FIN VALIDACION BLOQUEO TEMPORAL -->
+      <!-- VALIDACION BLOQUEO COMERCIAL -->
+      <xsd:element name="ValidacionComercialDocument" type="types:ValidacionComercialType"/>
+      <xsd:element name="ResultadoValidacionComercialDocument" type="types:ResultadoValidacionComercialType"/>
+      <!-- FIN VALIDACION BLOQUEO COMERCIAL -->
+      <!-- CAMBIO PLAN SSCC -->
+      <xsd:element name="CambioPlanSSCCDocument" type="types:CambioPlanSSCCType"/>
+      <xsd:element name="ResultadoCambioPlanSSCCDocument" type="types:ResultadoCambioPlanSSCCType"/>
+      <!-- FIN CAMBIO PLAN SSCC -->
+      <!-- CONSULTAR NUMERO FRECUENTE SS -->
+      <xsd:element name="ConsultarNumeroFrecuenteSSDocument" type="types:ConsultarNumeroFrecuenteSSType"/>
+      <xsd:element name="ResultadoConsultarNumeroFrecuenteSSDocument" type="types:ResultadoConsultarNumeroFrecuenteSSType"/>
+      <!-- FIN CONSULTAR NUMERO FRECUENTE SS -->
+      <!-- CONSULTAR NUMERO FRECUENTE CC -->
+      <xsd:element name="ConsultarNumeroFrecuenteCCDocument" type="types:ConsultarNumeroFrecuenteCCType"/>
+      <xsd:element name="ResultadoConsultarNumeroFrecuenteCCDocument" type="types:ResultadoConsultarNumeroFrecuenteCCType"/>
+      <!-- FIN CONSULTAR NUMERO FRECUENTE CC -->
+      <!-- ADMINISTRAR NUMERO FRECUENTE SS -->
+      <xsd:element name="AdministrarNumeroFrecuenteSSDocument" type="types:AdministrarNumeroFrecuenteSSType"/>
+      <xsd:element name="ResultadoAdministrarNumeroFrecuenteSSDocument" type="types:ResultadoAdministrarNumeroFrecuenteSSType"/>
+      <!-- FIN ADMINISTRAR NUMERO FRECUENTE SS -->
+      <!-- CONSULTAR PLAN FULL ACTUAL SS CC -->
+      <xsd:element name="ConsultarPlanFullActualSSCCDocument" type="types:ConsultarPlanFullActualSSCCType"/>
+      <xsd:element name="ResultadoConsultarPlanFullActualSSCCDocument" type="types:ResultadoConsultarPlanFullActualSSCCType"/>
+      <!-- FIN CONSULTAR PLAN FULL ACTUAL SS CC -->
+      <!-- FIN PLAN PLAN PLAN PLAN PLAN -->
+      <!-- INICIO ConsultarEstadoServicioDisponiblesSSCC  -->
+      <xsd:element name="ConsultarEstadoServicioDisponiblesSSCCDocument" type="types:ConsultarEstadoServicioDisponiblesSSCCType"/>
+      <xsd:element name="ResultadoConsultarEstadoServicioDisponiblesSSCCDocument" type="types:ResultadoConsultarEstadoServicioDisponiblesSSCCType"/>
+      <!-- INICIO ConsultarPlanesDisponiblesBAM  -->
+      <xsd:element name="ConsultarPlanesDisponiblesBAMDocument" type="types:ConsultarPlanesDisponiblesBAMType"/>
+      <xsd:element name="ResultadoConsultarPlanesDisponiblesBAMDocument" type="types:ResultadoConsultarPlanesDisponiblesBAMType"/>
+      <!-- INICIO ConsultarPlanesDisponiblesBAM  -->
+      <xsd:element name="ConsultarPlanFullActualBAMSSCCDocument" type="types:ConsultarPlanFullActualBAMSSCCType"/>
+      <xsd:element name="ResultadoConsultarPlanFullActualBAMSSCCDocument" type="types:ResultadoConsultarPlanFullActualBAMSSCCType"/>
+      <!-- INICIO ConsultarDetallePlanesBAM -->
+      <xsd:element name="ConsultarDetallePlanesBAMDocument" type="types:ConsultarDetallePlanesBAMType"/>
+      <xsd:element name="ResultadoConsultarDetallePlanesBAMDocument" type="types:ResultadoConsultarDetallePlanesBAMType"/>
+      <!-- FIN ConsultarDetallePlanesBAM -->
+      <!-- INICIO AdministrarSolicitudPlanComunik2PP  -->
+      <xsd:element name="AdministrarSolicitudPlanComunik2PPDocument" type="types:AdministrarSolicitudPlanComunik2PPType"/>
+      <xsd:element name="ResultadoAdministrarSolicitudPlanComunik2PPDocument" type="types:ResultadoAdministrarSolicitudPlanComunik2PPType"/>
+      <!-- fin AdministrarSolicitudPlanComunik2PP  -->
+      <!-- INICIO ConsultarHistorialPlanComunik2PP -->
+      <xsd:element name="ConsultarHistorialPlanComunik2PPDocument" type="types:ConsultarHistorialPlanComunik2PPType"/>
+      <xsd:element name="ResultadoConsultarHistorialPlanComunik2PPDocument" type="types:ResultadoConsultarHistorialPlanComunik2PPType"/>
+      <!-- FIN ConsultarHistorialPlanComunik2PP -->
+      <!-- VALIDACIONES  -->
+      <!-- INICIO VALIDAR MOVIL BUIC  -->
+      <xsd:element name="ValidarMovilBuicDocument" type="types:ValidarMovilBuicType"/>
+      <xsd:element name="ResultadoValidarMovilBuicDocument" type="types:ResultadoValidarMovilBuicType"/>
+      <!-- FIN VALIDAR MOVIL BUIC  -->
+      <!-- INICIO VALIDAR ASOCIACION MOVIL RUT BUIC -->
+      <xsd:element name="ValidarAsociacionMovilRutBuicDocument" type="types:ValidarAsociacionMovilRutBuicType"/>
+      <xsd:element name="ResultadoValidarAsociacionMovilRutBuicDocument" type="types:ResultadoValidarAsociacionMovilRutBuicType"/>
+      <!-- FIN VALIDAR ASOCIACION MOVIL RUT BUIC -->
+      <!-- INICIO VALIDAR FORMULARIO USUARIO  -->
+      <xsd:element name="ValidarFormularioUsuarioDocument" type="types:ValidarFormularioUsuarioType"/>
+      <xsd:element name="ResultadoValidarFormularioUsuarioDocument" type="types:ResultadoValidarFormularioUsuarioType"/>
+      <!-- FIN VALIDAR FORMULARIO USUARIO  -->
+      <!-- VALIDACIONES  -->
+      <!-- INICIO CONSULTAR CLAVE -->
+      <xsd:element name="ConsultarClaveDocument" type="types:ConsultarClaveType"/>
+      <xsd:element name="ResultadoConsultarClaveDocument" type="types:ResultadoConsultarClaveType"/>
+      <!-- FIN CONSULTAR CLAVE -->
+      <!-- CONSULTAR CATALOGO -->
+      <xsd:element name="ConsultarCatalogoDocument" type="types:ConsultarCatalogoType"/>
+      <xsd:element name="ResultadoConsultarCatalogoDocument" type="types:ResultadoConsultarCatalogoType"/>
+      <!-- INICIO GENERAR TICKET -->
+      <xsd:element name="GenerarTicketDocument" type="types:GenerarTicketType"/>
+      <xsd:element name="ResultadoGenerarTicketDocument" type="types:ResultadoGenerarTicketType"/>
+      <!-- FIN GENERAR TICKET -->
+      <!-- INICIO ENVIAR MAIL -->
+      <xsd:element name="EnviarMailDocument" type="types:EnviarMailType"/>
+      <xsd:element name="ResultadoEnviarMailDocument" type="types:ResultadoEnviarMailType"/>
+      <!-- FIN ENVIAR MAIL -->
+      <!-- INICIO ObtenerMercado  -->
+      <xsd:element name="ObtenerMercadoDocument" type="types:ObtenerMercadoType"/>
+      <xsd:element name="ResultadoObtenerMercadoDocument" type="types:ResultadoObtenerMercadoType"/>
+      <!-- FIN ObtenerMercado  -->
+      <!--  INICIO ListaContratos -->
+      <xsd:element name="ListaContratosDocument" type="types:ListaContratosType"/>
+      <xsd:element name="ResultadoListaContratosDocument" type="types:ResultadoListaContratosType"/>
+      <!--  FIN ListaContratos -->
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultaXmlPlanesFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaXmlPlanesFullDocument" name="ConsultaXmlPlanesFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultaXmlPlanesFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultaXmlPlanesFullDocument" name="ResultadoConsultaXmlPlanesFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerEquiposSoporteMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerEquiposSoporteDocument" name="ObtenerEquiposSoporte"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerEquiposSoporteMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerEquiposSoporteDocument" name="ResultadoObtenerEquiposSoporte"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarBloqueoDetalleLlamadosMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarBloqueoDetalleLlamadosDocument" name="ConsultarBloqueoDetalleLlamados"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarBloqueoDetalleLlamadosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarBloqueoDetalleLlamadosDocument" name="ResultadoConsultarBloqueoDetalleLlamados"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarSaldoReservadoPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarSaldoReservadoPPDocument" name="ConsultarSaldoReservadoPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarSaldoReservadoPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarSaldoReservadoPPDocument" name="ConsultarSaldoReservadoPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="RecuperarClaveSMSMessage">
+    <WL5G3N0:part element="WL5G3N1:RecuperarClaveSMSDocument" name="RecuperarClaveSMS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoRecuperarClaveSMSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoRecuperarClaveSMSDocument" name="ResultadoRecuperarClaveSMS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EnviaClaveSMSMessage">
+    <WL5G3N0:part element="WL5G3N1:EnviaClaveSMSDocument" name="EnviaClaveSMS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoEnviaClaveSMSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoEnviaClaveSMSDocument" name="ResultadoEnviaClaveSMS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaMercadoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaMercadoDocument" name="ConsultaMercado"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultaMercadoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultaMercadoDocument" name="ResultadoConsultaMercado"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidaCompaniaMsisdnMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidaCompaniaMsisdnDocument" name="ValidaCompaniaMsisdn"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidaCompaniaMsisdnMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidaCompaniaMsisdnDocument" name="ResultadoValidaCompaniaMsisdn"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="RegistrarMovilMessage">
+    <WL5G3N0:part element="WL5G3N1:RegistrarMovilDocument" name="RegistrarMovil"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoRegistrarMovilMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoRegistrarMovilDocument" name="ResultadoRegistrarMovil"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerRutTitularMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerRutTitularDocument" name="ObtenerRutTitular"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerRutTitularMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerRutTitularDocument" name="ResultadoObtenerRutTitular"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarSubmercadoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarSubmercadoDocument" name="ConsultarSubmercado"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarSubmercadoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarSubmercadoDocument" name="ResultadoConsultarSubmercado"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerMercadoMovilMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerMercadoMovilDocument" name="ObtenerMercadoMovil"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerMercadoMovilMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerMercadoMovilDocument" name="ResultadoObtenerMercadoMovil"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarProductosMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarProductosDocument" name="ConsultarProductos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoProductosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarProductosDocument" name="ResultadoConsultarProductos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarEquipoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEquipoDocument" name="ConsultarEquipo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarEquipoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEquipoDocument" name="ResultadoConsultarEquipo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarEquipoFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEquipoFullDocument" name="ConsultarEquipoFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarEquipoFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEquipoFullDocument" name="ResultadoConsultarEquipoFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarBolsaActualMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarBolsaActualDocument" name="ConsultarBolsaActual"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarBolsaActualMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarBolsaActualDocument" name="ResultadoConsultarBolsaActual"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanDocument" name="ConsultarPlan"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPlanMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanDocument" name="ResultadoConsultarPlan"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPerfilamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPerfilamientoDocument" name="ConsultarPerfilamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPerfilamientoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPerfilamientoDocument" name="ResultadoConsultarPerfilamiento"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanContratadoPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanContratadoPPDocument" name="ConsultarPlanContratadoPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPlanContratadoPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanContratadoPPDocument" name="ResultadoConsultarPlanContratadoPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanResumenCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanResumenCCDocument" name="ResultadoConsultarPlanResumenCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPlanResumenCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanResumenCCDocument" name="ResultadoConsultarPlanResumenCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanResumenPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanResumenPPDocument" name="ConsultarPlanResumenPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPlanResumenPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanResumenPPDocument" name="ResultadoConsultarPlanResumenPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarMisDatosMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarMisDatosDocument" name="ConsultarMisDatos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoMisDatosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarMisDatosDocument" name="ResultadoConsultarMisDatos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarMisDatosMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarMisDatosDocument" name="ActualizarMisDatos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoActualizarMisDatosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoActualizarMisDatosDocument" name="ResultadoActualizarMisDatos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarMisUsuariosMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarMisUsuariosDocument" name="ConsultarMisUsuarios"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoMisUsuariosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarMisUsuariosDocument" name="ResultadoConsultarMisUsuarios"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarSelectorCuentaMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarSelectorCuentaDocument" name="ConsultarSelectorCuenta"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarSelectorCuentaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarSelectorCuentaDocument" name="ResultadoConsultarSelectorCuenta"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarAutoatencionMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarAutoatencionDocument" name="ConsultarAutoatencion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAutoatencionMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarAutoatencionDocument" name="ResultadoAutoatencion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarBolsasCompradasMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarBolsasCompradasDocument" name="ConsultarBolsasCompradas"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoBolsasCompradasMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarBolsasCompradasDocument" name="ResultadoBolsasCompradas"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarCiudadesPorRegionMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarCiudadesPorRegionDocument" name="ConsultarCiudadesPorRegion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarCiudadesPorRegionMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarCiudadesPorRegionDocument" name="ResultadoConsultarCiudadesPorRegion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarComunasPorCiudadMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarComunasPorCiudadDocument" name="ConsultarComunasPorCiudad"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarComunasPorCiudadMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarComunasPorCiudadDocument" name="ResultadoConsultarComunasPorCiudad"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarRegionesMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarRegionesDocument" name="ConsultarRegiones"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarRegionesMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarRegionesDocument" name="ResultadoConsultarRegiones"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDireccionPostalMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDireccionPostalDocument" name="ConsultarDireccionPostal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDireccionPostalMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDireccionPostalDocument" name="ResultadoConsultarDireccionPostal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaIdentificadorClienteMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaIdentificadorClienteDocument" name="ConsultaIdentificadorCliente"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultaIdentificadorClienteMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultaIdentificadorClienteDocument" name="ResultadoConsultaIdentificadorCliente"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarDireccionPostalMQMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarDireccionPostalMQDocument" name="ActualizarDireccionPostalMQ"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarDireccionPostalMQResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarDireccionPostalMQResponseDocument" name="ActualizarDireccionPostalMQResponse"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarDireccionPostalMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarDireccionPostalDocument" name="ActualizarDireccionPostal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarDireccionPostalResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarDireccionPostalResponseDocument" name="ActualizarDireccionPostalResponse"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarUsuarioBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarUsuarioBuicDocument" name="ConsultarUsuarioBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarUsuarioBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarUsuarioBuicDocument" name="ResultadoConsultarUsuarioBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarCorreoBuzonMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarCorreoBuzonDocument" name="ActualizarCorreoBuzon"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoActualizarCorreoBuzonMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoActualizarCorreoBuzonDocument" name="ResultadoActualizarCorreoBuzon"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarCorreoBuzonMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarCorreoBuzonDocument" name="ConsultarCorreoBuzon"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarCorreoBuzonMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarCorreoBuzonDocument" name="ResultadoConsultarCorreoBuzon"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarListaComunik2Message">
+    <WL5G3N0:part element="WL5G3N1:ConsultarListaComunik2Document" name="ConsultarListaComunik2"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarListaComunik2Message">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarListaComunik2Document" name="ResultadoConsultarListaComunik2"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanActualSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanActualSSDocument" name="ConsultarPlanActualSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanActualSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanActualSSDocument" name="ResultadoConsultarPlanActualSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanActualCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanActualCCDocument" name="ConsultarPlanActualCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanActualCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanActualCCDocument" name="ResultadoConsultarPlanActualCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanActualPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanActualPPDocument" name="ConsultarPlanActualPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanActualPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanActualPPDocument" name="ResultadoConsultarPlanActualPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanesDisponiblesSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanesDisponiblesSSCCDocument" name="ConsultarPlanesDisponiblesSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanesDisponiblesSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanesDisponiblesSSCCDocument" name="ResultadoConsultarPlanesDisponiblesSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanesDisponiblesPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanesDisponiblesPPDocument" name="ConsultarPlanesDisponiblesPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanesDisponiblesPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanesDisponiblesPPDocument" name="ResultadoConsultarPlanesDisponiblesPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarSolicitudesActivasPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarSolicitudesActivasPPDocument" name="ConsultarSolicitudesActivasPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarSolicitudesActivasPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarSolicitudesActivasPPDocument" name="ResultadoConsultarSolicitudesActivasPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CambioPlanPPMessage">
+    <WL5G3N0:part element="WL5G3N1:CambioPlanPPDocument" name="CambioPlanPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCambioPlanPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCambioPlanPPDocument" name="ResultadoCambioPlanPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CambioPlanComunik2PPMessage">
+    <WL5G3N0:part element="WL5G3N1:CambioPlanComunik2PPDocument" name="CambioPlanComunik2PP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCambioPlanComunik2PPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCambioPlanComunik2PPDocument" name="ResultadoCambioPlanComunik2PP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AgregarModificarNumeroFrecuentePPMessage">
+    <WL5G3N0:part element="WL5G3N1:AgregarModificarNumeroFrecuentePPDocument" name="AgregarModificarNumeroFrecuentePP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAgregarModificarNumeroFrecuentePPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAgregarModificarNumeroFrecuentePPDocument" name="ResultadoAgregarModificarNumeroFrecuentePP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EliminarNumeroFrecuentePPMessage">
+    <WL5G3N0:part element="WL5G3N1:EliminarNumeroFrecuentePPDocument" name="EliminarNumeroFrecuentePP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoEliminarNumeroFrecuentePPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoEliminarNumeroFrecuentePPDocument" name="ResultadoEliminarNumeroFrecuentePP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidacionBloqueoTemporalMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidacionBloqueoTemporalDocument" name="ValidacionBloqueoTemporal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidacionBloqueoTemporalMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidacionBloqueoTemporalDocument" name="ResultadoValidacionBloqueoTemporal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidacionComercialMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidacionComercialDocument" name="ValidacionComercial"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidacionComercialMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidacionComercialDocument" name="ResultadoValidacionComercial"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CambioPlanSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:CambioPlanSSCCDocument" name="CambioPlanSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCambioPlanSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCambioPlanSSCCDocument" name="ResultadoCambioPlanSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarNumeroFrecuenteSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarNumeroFrecuenteSSDocument" name="ConsultarNumeroFrecuenteSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarNumeroFrecuenteSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarNumeroFrecuenteSSDocument" name="ResultadoConsultarNumeroFrecuenteSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarNumeroFrecuenteCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarNumeroFrecuenteCCDocument" name="ConsultarNumeroFrecuenteCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarNumeroFrecuenteCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarNumeroFrecuenteCCDocument" name="ResultadoConsultarNumeroFrecuenteCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarNumeroFrecuenteSSMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarNumeroFrecuenteSSDocument" name="AdministrarNumeroFrecuenteSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarNumeroFrecuenteSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarNumeroFrecuenteSSDocument" name="ResultadoAdministrarNumeroFrecuenteSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanFullActualSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanFullActualSSCCDocument" name="ConsultarPlanFullActualSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanFullActualSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanFullActualSSCCDocument" name="ResultadoConsultarPlanFullActualSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarEstadoServicioDisponiblesSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEstadoServicioDisponiblesSSCCDocument" name="ConsultarEstadoServicioDisponiblesSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarEstadoServicioDisponiblesSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEstadoServicioDisponiblesSSCCDocument" name="ResultadoConsultarEstadoServicioDisponiblesSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanesDisponiblesBAMMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanesDisponiblesBAMDocument" name="ConsultarPlanesDisponiblesBAM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanesDisponiblesBAMMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanesDisponiblesBAMDocument" name="ResultadoConsultarPlanesDisponiblesBAM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanFullActualBAMSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanFullActualBAMSSCCDocument" name="ConsultarPlanFullActualBAMSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanFullActualBAMSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanFullActualBAMSSCCDocument" name="ResultadoConsultarPlanFullActualBAMSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDetallePlanesBAMMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDetallePlanesBAMDocument" name="ConsultarDetallePlanesBAM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDetallePlanesBAMMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDetallePlanesBAMDocument" name="ResultadoConsultarDetallePlanesBAM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarSolicitudPlanComunik2PPMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarSolicitudPlanComunik2PPDocument" name="AdministrarSolicitudPlanComunik2PP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarSolicitudPlanComunik2PPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarSolicitudPlanComunik2PPDocument" name="ResultadoAdministrarSolicitudPlanComunik2PP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarHistorialPlanComunik2PPMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarHistorialPlanComunik2PPDocument" name="ConsultarHistorialPlanComunik2PP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarHistorialPlanComunik2PPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarHistorialPlanComunik2PPDocument" name="ResultadoConsultarHistorialPlanComunik2PP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarMovilBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarMovilBuicDocument" name="ValidarMovilBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarMovilBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarMovilBuicDocument" name="ResultadoValidarMovilBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarAsociacionMovilRutBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarAsociacionMovilRutBuicDocument" name="ValidarAsociacionMovilRutBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarAsociacionMovilRutBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarAsociacionMovilRutBuicDocument" name="ResultadoValidarAsociacionMovilRutBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarFormularioUsuarioMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarFormularioUsuarioDocument" name="ValidarFormularioUsuario"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarFormularioUsuarioMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarFormularioUsuarioDocument" name="ResultadoValidarFormularioUsuario"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarClaveMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarClaveDocument" name="ConsultarClave"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarClaveMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarClaveDocument" name="ResultadoConsultarClave"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarCatalogoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarCatalogoDocument" name="ConsultarCatalogo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarCatalogoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarCatalogoDocument" name="ResultadoConsultarCatalogo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="GenerarTicketMessage">
+    <WL5G3N0:part element="WL5G3N1:GenerarTicketDocument" name="GenerarTicket"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoGenerarTicketMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoGenerarTicketDocument" name="ResultadoGenerarTicket"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EnviarMailMessage">
+    <WL5G3N0:part element="WL5G3N1:EnviarMailDocument" name="EnviarMail"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoEnviarMailMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoEnviarMailDocument" name="ResultadoEnviarMail"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerMercadoMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerMercadoDocument" name="ObtenerMercado"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerMercadoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerMercadoDocument" name="ResultadoObtenerMercado"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ListaContratosMessage">
+    <WL5G3N0:part element="WL5G3N1:ListaContratosDocument" name="ListaContratos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoListaContratosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoListaContratosDocument" name="ResultadoListaContratos"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ClientePerfilServicePortType">
+    <WL5G3N0:operation name="ConsultaXmlPlanesFull">
+      <WL5G3N0:input message="WL5G3N1:ConsultaXmlPlanesFullMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultaXmlPlanesFullMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerEquiposSoporte">
+      <WL5G3N0:input message="WL5G3N1:ObtenerEquiposSoporteMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerEquiposSoporteMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBloqueoDetalleLlamados">
+      <WL5G3N0:input message="WL5G3N1:ConsultarBloqueoDetalleLlamadosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarBloqueoDetalleLlamadosMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSaldoReservadoPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarSaldoReservadoPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarSaldoReservadoPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RecuperarClaveSMS">
+      <WL5G3N0:input message="WL5G3N1:RecuperarClaveSMSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoRecuperarClaveSMSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EnviaClaveSMS">
+      <WL5G3N0:input message="WL5G3N1:EnviaClaveSMSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoEnviaClaveSMSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultaMercado">
+      <WL5G3N0:input message="WL5G3N1:ConsultaMercadoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultaMercadoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidaCompaniaMsisdn">
+      <WL5G3N0:input message="WL5G3N1:ValidaCompaniaMsisdnMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidaCompaniaMsisdnMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegistrarMovil">
+      <WL5G3N0:input message="WL5G3N1:RegistrarMovilMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoRegistrarMovilMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerRutTitular">
+      <WL5G3N0:input message="WL5G3N1:ObtenerRutTitularMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerRutTitularMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSubmercado">
+      <WL5G3N0:input message="WL5G3N1:ConsultarSubmercadoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarSubmercadoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerMercadoMovil">
+      <WL5G3N0:input message="WL5G3N1:ObtenerMercadoMovilMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerMercadoMovilMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPerfilamiento">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPerfilamientoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPerfilamientoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanContratadoPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanContratadoPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPlanContratadoPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanResumenCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanResumenCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPlanResumenCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanResumenPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanResumenPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPlanResumenPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlan">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPlanMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBolsaActual">
+      <WL5G3N0:input message="WL5G3N1:ConsultarBolsaActualMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarBolsaActualMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEquipo">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEquipoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEquipoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEquipoFull">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEquipoFullMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEquipoFullMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarProductos">
+      <WL5G3N0:input message="WL5G3N1:ConsultarProductosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoProductosMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarMisDatos">
+      <WL5G3N0:input message="WL5G3N1:ConsultarMisDatosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoMisDatosMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarMisDatos">
+      <WL5G3N0:input message="WL5G3N1:ActualizarMisDatosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoActualizarMisDatosMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarMisUsuarios">
+      <WL5G3N0:input message="WL5G3N1:ConsultarMisUsuariosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoMisUsuariosMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSelectorCuenta">
+      <WL5G3N0:input message="WL5G3N1:ConsultarSelectorCuentaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarSelectorCuentaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarAutoatencion">
+      <WL5G3N0:input message="WL5G3N1:ConsultarAutoatencionMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAutoatencionMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBolsasCompradas">
+      <WL5G3N0:input message="WL5G3N1:ConsultarBolsasCompradasMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoBolsasCompradasMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarCiudadesPorRegion">
+      <WL5G3N0:input message="WL5G3N1:ConsultarCiudadesPorRegionMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarCiudadesPorRegionMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarComunasPorCiudad">
+      <WL5G3N0:input message="WL5G3N1:ConsultarComunasPorCiudadMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarComunasPorCiudadMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarRegiones">
+      <WL5G3N0:input message="WL5G3N1:ConsultarRegionesMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarRegionesMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDireccionPostal">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDireccionPostalMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDireccionPostalMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultaIdentificadorCliente">
+      <WL5G3N0:input message="WL5G3N1:ConsultaIdentificadorClienteMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultaIdentificadorClienteMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDireccionPostalMQ">
+      <WL5G3N0:input message="WL5G3N1:ActualizarDireccionPostalMQMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ActualizarDireccionPostalMQResponseMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDireccionPostal">
+      <WL5G3N0:input message="WL5G3N1:ActualizarDireccionPostalMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ActualizarDireccionPostalResponseMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarUsuarioBuic">
+      <WL5G3N0:input message="WL5G3N1:ConsultarUsuarioBuicMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarUsuarioBuicMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarCorreoBuzon">
+      <WL5G3N0:input message="WL5G3N1:ActualizarCorreoBuzonMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoActualizarCorreoBuzonMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarCorreoBuzon">
+      <WL5G3N0:input message="WL5G3N1:ConsultarCorreoBuzonMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarCorreoBuzonMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarListaComunik2">
+      <WL5G3N0:input message="WL5G3N1:ConsultarListaComunik2Message"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarListaComunik2Message"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanActualSS">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanActualSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanActualSSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanActualCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanActualCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanActualCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanActualPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanActualPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanActualPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanesDisponiblesSSCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanesDisponiblesSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanesDisponiblesSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanesDisponiblesPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanesDisponiblesPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanesDisponiblesPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSolicitudesActivasPP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarSolicitudesActivasPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarSolicitudesActivasPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambioPlanPP">
+      <WL5G3N0:input message="WL5G3N1:CambioPlanPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCambioPlanPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambioPlanComunik2PP">
+      <WL5G3N0:input message="WL5G3N1:CambioPlanComunik2PPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCambioPlanComunik2PPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AgregarModificarNumeroFrecuentePP">
+      <WL5G3N0:input message="WL5G3N1:AgregarModificarNumeroFrecuentePPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAgregarModificarNumeroFrecuentePPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EliminarNumeroFrecuentePP">
+      <WL5G3N0:input message="WL5G3N1:EliminarNumeroFrecuentePPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoEliminarNumeroFrecuentePPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidacionBloqueoTemporal">
+      <WL5G3N0:input message="WL5G3N1:ValidacionBloqueoTemporalMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidacionBloqueoTemporalMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidacionComercial">
+      <WL5G3N0:input message="WL5G3N1:ValidacionComercialMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidacionComercialMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambioPlanSSCC">
+      <WL5G3N0:input message="WL5G3N1:CambioPlanSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCambioPlanSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarNumeroFrecuenteSS">
+      <WL5G3N0:input message="WL5G3N1:ConsultarNumeroFrecuenteSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarNumeroFrecuenteSSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarNumeroFrecuenteCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarNumeroFrecuenteCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarNumeroFrecuenteCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarNumeroFrecuenteSS">
+      <WL5G3N0:input message="WL5G3N1:AdministrarNumeroFrecuenteSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarNumeroFrecuenteSSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanFullActualSSCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanFullActualSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanFullActualSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEstadoServicioDisponiblesSSCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEstadoServicioDisponiblesSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEstadoServicioDisponiblesSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanesDisponiblesBAM">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanesDisponiblesBAMMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanesDisponiblesBAMMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanFullActualBAMSSCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanFullActualBAMSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanFullActualBAMSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetallePlanesBAM">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDetallePlanesBAMMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDetallePlanesBAMMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarSolicitudPlanComunik2PP">
+      <WL5G3N0:input message="WL5G3N1:AdministrarSolicitudPlanComunik2PPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarSolicitudPlanComunik2PPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarHistorialPlanComunik2PP">
+      <WL5G3N0:input message="WL5G3N1:ConsultarHistorialPlanComunik2PPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarHistorialPlanComunik2PPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarMovilBuic">
+      <WL5G3N0:input message="WL5G3N1:ValidarMovilBuicMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarMovilBuicMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarAsociacionMovilRutBuic">
+      <WL5G3N0:input message="WL5G3N1:ValidarAsociacionMovilRutBuicMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarAsociacionMovilRutBuicMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarFormularioUsuario">
+      <WL5G3N0:input message="WL5G3N1:ValidarFormularioUsuarioMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarFormularioUsuarioMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarClave">
+      <WL5G3N0:input message="WL5G3N1:ConsultarClaveMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarClaveMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarCatalogo">
+      <WL5G3N0:input message="WL5G3N1:ConsultarCatalogoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarCatalogoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="GenerarTicket">
+      <WL5G3N0:input message="WL5G3N1:GenerarTicketMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoGenerarTicketMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EnviarMail">
+      <WL5G3N0:input message="WL5G3N1:EnviarMailMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoEnviarMailMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerMercado">
+      <WL5G3N0:input message="WL5G3N1:ObtenerMercadoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerMercadoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ListaContratos">
+      <WL5G3N0:input message="WL5G3N1:ListaContratosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoListaContratosMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ClientePerfilServiceBinding" type="WL5G3N1:ClientePerfilServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultaXmlPlanesFull">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultaXmlPlanesFull"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerEquiposSoporte">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ObtenerEquiposSoporte"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBloqueoDetalleLlamados">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarBloqueoDetalleLlamados"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSaldoReservadoPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarSaldoReservadoPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RecuperarClaveSMS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/RecuperarClaveSMS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EnviaClaveSMS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/EnviaClaveSMS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultaMercado">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultaMercado"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidaCompaniaMsisdn">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ValidaCompaniaMsisdn"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegistrarMovil">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/RegistrarMovil"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerRutTitular">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ObtenerRutTitular"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSubmercado">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarSubmercado"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerMercadoMovil">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ObtenerMercadoMovil"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarProductos">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarProductos"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlan">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlan"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBolsaActual">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarBolsaActual"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEquipo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarEquipo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEquipoFull">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarEquipoFull"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPerfilamiento">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPerfilamiento"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanContratadoPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanContratadoPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanResumenCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanResumenCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanResumenPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanResumenPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarMisDatos">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarMisDatos"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarMisDatos">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ActualizarMisDatoso"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarMisUsuarios">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarMisUsuarios"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSelectorCuenta">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarSelectorCuenta"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarAutoatencion">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarAutoatencion"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBolsasCompradas">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarBolsasCompradas"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarCiudadesPorRegion">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarCiudadesPorRegion"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarComunasPorCiudad">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarComunasPorCiudad"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarRegiones">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarRegiones"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDireccionPostal">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarDireccionPostal"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultaIdentificadorCliente">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultaIdentificadorCliente"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDireccionPostalMQ">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ActualizarDireccionPostalMQ"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDireccionPostal">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ActualizarDireccionPostal"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarUsuarioBuic">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarUsuarioBuic"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarCorreoBuzon">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ActualizarCorreoBuzon"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarCorreoBuzon">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarCorreoBuzon"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarListaComunik2">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarListaComunik2"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanActualSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanActualSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanActualCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanActualCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanActualPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanActualPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSolicitudesActivasPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarSolicitudesActivasPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambioPlanPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/CambioPlanPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambioPlanComunik2PP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/CambioPlanComunik2PP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AgregarModificarNumeroFrecuentePP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/AgregarModificarNumeroFrecuentePP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EliminarNumeroFrecuentePP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/EliminarNumeroFrecuentePP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanesDisponiblesSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanesDisponiblesSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanesDisponiblesPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanesDisponiblesPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidacionBloqueoTemporal">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ValidacionBloqueoTemporal"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidacionComercial">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ValidacionComercial"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambioPlanSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/CambioPlanSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarNumeroFrecuenteSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarNumeroFrecuenteSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarNumeroFrecuenteCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarNumeroFrecuenteCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarNumeroFrecuenteSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/AdministrarNumeroFrecuenteSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanFullActualSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanFullActualSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEstadoServicioDisponiblesSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarEstadoServicioDisponiblesSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanesDisponiblesBAM">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanesDisponiblesBAM"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanFullActualBAMSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarPlanFullActualBAMSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetallePlanesBAM">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarDetallePlanesBAM"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarSolicitudPlanComunik2PP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/AdministrarSolicitudPlanComunik2PP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarHistorialPlanComunik2PP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarHistorialPlanComunik2PP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarMovilBuic">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ValidarMovilBuic"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarAsociacionMovilRutBuic">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ValidarAsociacionMovilRutBuic"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarFormularioUsuario">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ValidarFormularioUsuario"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarClave">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarClave"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarCatalogo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ConsultarCatalogo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="GenerarTicket">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/GenerarTicket"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EnviarMail">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/EnviarMail"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerMercado">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ObtenerMercado"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ListaContratos">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/perfil/ListaContratos"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ClientePerfilService">
+    <WL5G3N0:port binding="WL5G3N1:ClientePerfilServiceBinding" name="ClientePerfilServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

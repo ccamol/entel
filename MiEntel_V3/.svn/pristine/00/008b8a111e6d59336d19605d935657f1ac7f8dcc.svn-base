@@ -1,0 +1,54 @@
+.caja_tabs {
+	display: block;
+	padding: 15px 0 30px;
+}
+
+.caja_tabs ul {
+	padding-left:4px;
+}
+
+.caja_tabs ul li {
+	float:left;
+}
+
+.tabsZona {
+	padding-left:2px;
+}
+
+.tabZonaPunto {
+	background:url(../../img/zonapuntos/tab.png) right -77px no-repeat;
+	height:23px;
+	float:left;
+	display:block;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	line-height:1.2;
+	color: #919191;
+	padding-right:6px;
+}
+
+.tabZonaPunto:hover {
+	text-decoration:none !important;
+}
+
+.tabZonaPunto span {
+	background:url(../../img/zonapuntos/tab.png) left -25px no-repeat;
+	padding:4px 3px 5px 10px;
+	display:block;
+	cursor:pointer;
+}
+
+.tabZonaPunto.seleccionado {
+	background-position:right -52px;
+	color: #3A3A3A;
+}
+.tabZonaPunto.seleccionado span {
+	background-position:left 0px;
+}
+
+.tabs-container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid #E3E3E3;
+    padding: 1em 0;
+}

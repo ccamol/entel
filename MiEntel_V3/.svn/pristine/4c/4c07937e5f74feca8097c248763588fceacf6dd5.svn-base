@@ -1,0 +1,905 @@
+/***********************************/
+/*	       BOTON DESACTIVADO       */
+/***********************************/
+.btnDesactivado {
+	background:url(../../img/botones/btn_desactivado_normal.png) right -34px no-repeat;
+	float:left;
+	display:block;
+	height:38px;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:8px;
+	cursor:default;
+}
+.btnDesactivado span {
+	background:url(../../img/botones/btn_desactivado_normal.png) top left no-repeat;
+	padding:10px 2px 12px 10px;
+	display:block;
+	cursor:default;
+}
+
+* html .btnDesactivado,
+* html .btnDesactivado span{
+	background-image:url(../../img/botones/btn_desactivado_normal.gif);
+}
+
+/***********************************/
+/*		BOTON VERDE GRANDE         */
+/***********************************/
+.btnVerdeGrande {
+	background:url(../../img/botones/btn_naranjoGrande.png) right -38px no-repeat;
+	height:38px;
+	display:inline-block;
+	text-decoration:none  !important;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:9px;
+}
+.btnVerdeGrande span {
+	background:url(../../img/botones/btn_naranjoGrande.png) top left no-repeat;
+	padding:12px 1px 12px 7px;
+	display:block;
+	cursor:pointer;
+}
+.btnVerdeGrande:hover {
+	text-decoration:underline !important;
+	background-position:right -114px;
+}
+.btnVerdeGrande:hover span {
+	text-decoration:underline !important;
+	background-position:left -76px;
+}
+* html .btnVerdeGrande,
+* html .btnVerdeGrande span,
+* html .btnVerdeGrande:hover,
+* html .btnVerdeGrande:hover span {
+	background-image:url(../../img/botones/btn_naranjoGrande.gif);
+}
+/***********************************/
+/*		BOTON VERDE GRANDE LARGO	*/
+/***********************************/
+.btnVerdeGrandeLargo span{
+	padding:12px 19px 12px 30px;
+}
+/***********************************/
+/*           BOTON VERDE            */
+/***********************************/
+.btnVerde {
+	background:url(../../img/botones/btn_verde2.png) right -66px no-repeat;
+	display:block;
+	float:left;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:7px;
+}
+.btnVerde span {
+	background:url(../../img/botones/btn_verde2.png) top left no-repeat;
+	padding:0 7px 0 15px;
+	line-height:33px;
+	display:block;
+	cursor:pointer;
+}
+.btnVerde:hover {
+	background-position:right -99px;
+}
+.btnVerde:hover span {
+	background-position:left -33px;
+	color: #ffffff;
+	text-decoration:none !important;	
+}
+* html .btnVerde,
+* html .btnVerde span,
+* html .btnVerde:hover,
+* html .btnVerde:hover span {
+	background-image:url(../../img/botones/btn_verde2.gif);
+}
+
+.boton-verde{
+	background: url(../../img/botones/boton-verde.png) top no-repeat;
+	width:84px;
+	height:28px;
+	border: none;
+	cursor:pointer;
+}
+
+.boton-verde:hover{
+	background: url(../../img/botones/boton-verde.png) bottom no-repeat;
+	width:84px;
+	height:28px;
+	border: none;
+	cursor:pointer;
+}
+
+* html .boton-verde{
+	background: url(../../img/botones/boton-verde.gif) top no-repeat;
+	width:84px;
+	height:28px;
+	border: none;
+	cursor:pointer;
+}
+
+* html .boton-verde:hover{
+	background: url(../../img/botones/boton-verde.gif) bottom no-repeat;
+	width:84px;
+	height:28px;
+	border: none;
+	cursor:pointer;
+}
+
+/***********************************/
+/*       BOTON VERDE LARGO		   */
+/***********************************/
+.largo span{
+	padding:0 22px 0 35px;
+}
+/***********************************/
+/*       BOTON VERDE DELGADO       */
+/***********************************/
+.btnVerdeDelgado {
+	background:url(../../img/botones/btn_naranjoDelgado.png) right -30px no-repeat;
+	height:30px;
+	display:inline-block;
+	text-decoration:none !important;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:8px;
+}
+.btnVerdeDelgado span {
+	background:url(../../img/botones/btn_naranjoDelgado.png) top left no-repeat;
+	padding:8px 0px 10px 8px;
+	display:block;
+	cursor:pointer;
+}
+.btnVerdeDelgado:hover {
+	background-position:right -90px;
+}
+.btnVerdeDelgado:hover span {
+	background-position:left -60px;
+	text-decoration:underline;
+}
+* html .btnVerdeDelgado,
+* html .btnVerdeDelgado span,
+* html .btnVerdeDelgado:hover,
+* html .btnVerdeDelgado:hover span {
+	background-image:url(../../img/botones/btn_naranjoDelgado.gif);
+}
+/*****************************************/
+/*       BOTON VERDE DELGADO Alargado    */
+/*****************************************/
+.alargar span{
+	padding-left:14px;
+	padding-right:8px;
+}
+/***********************************/
+/*	BOTON AZUL GRANDE DESACTIVADO  */
+/***********************************/
+.btnAzulGrandeDesactivado {
+	background:url(../../img/botones/btn_desactivado.png) right -40px no-repeat;
+	height:38px;
+	display:inline-block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:6px;
+}
+.btnAzulGrandeDesactivado span {
+	background:url(../../img/botones/btn_desactivado.png) top left no-repeat;
+	padding:12px 2px 12px 7px;
+	display:block;
+	cursor:default;
+}
+
+* html .btnAzulGrandeDesactivado,
+* html .btnAzulGrandeDesactivado span{
+	background-image:url(../../img/botones/btn_desactivado.gif);
+}
+/***********************************/
+/*		BOTON AZUL GRANDE LARGO	*/
+/***********************************/
+.btnAzulGrandeDesactivadoLargo span{
+	padding:12px 24px 12px 31px;
+}
+/***********************************/
+/*		BOTON AZUL GRANDE         */
+/***********************************/
+.btnAzulGrande {
+	background:url(../../img/botones/btn_azulGrande.png) right -40px no-repeat;
+	height:38px;
+	display:inline-block;
+	text-decoration:none !important;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:11px;
+}
+.btnAzulGrande span {
+	background:url(../../img/botones/btn_azulGrande.png) top left no-repeat;
+	padding:12px 1px 12px 11px;
+	display:block;
+	cursor:pointer;
+}
+.btnAzulGrande:hover {
+	text-decoration:underline !important;
+	background-position:right -120px;
+}
+.btnAzulGrande:hover span {
+	text-decoration:none !important;
+	background-position:left -80px;
+}
+* html .btnAzulGrande,
+* html .btnAzulGrande span,
+* html .btnAzulGrande:hover,
+* html .btnAzulGrande:hover span {
+	background-image:url(../../img/botones/btn_azulGrande.gif);
+}
+/***********************************/
+/*		BOTON AZUL GRANDE LARGO	*/
+/***********************************/
+.btnAzulGrandeLargo span{
+	padding:12px 19px 12px 31px;
+}
+/***********************************/
+/*           BOTON AZUL            */
+/***********************************/
+.btnAzul {
+	background:url(../../img/botones/btn_azul.png) right -34px no-repeat;
+	height:34px;
+	display:inline-block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:8px;
+}
+.btnAzul span {
+	background:url(../../img/botones/btn_azul.png) top left no-repeat;
+	padding:10px 2px 10px 10px;
+	display:block;
+	cursor:pointer;
+}
+.btnAzul:hover {
+	background-position:right -102px;
+}
+.btnAzul:hover span {
+	background-position:left -68px;
+}
+* html .btnAzul,
+* html .btnAzul span,
+* html .btnAzul:hover,
+* html .btnAzul:hover span {
+	background-image:url(../../img/botones/btn_azul.gif);
+}
+.boton-azul-factelect{
+	display:block;
+	background: url(../../img/botones/boton_azul_modificar.gif) top no-repeat;
+	width:108px;
+	height:31px;
+	cursor:pointer;
+	border:none;
+}
+
+* html .boton-azul-factelect{
+	display:block;
+	overflow:hidden;
+	background: url(../../img/botones/boton_azul_modificar.gif) top no-repeat;
+	width:108px;
+	height:31px;
+	cursor:pointer;
+	border:none;
+}
+
+.boton-azul-factelect:hover{
+	background: url(../../img/botones/boton_azul_modificar.gif) bottom no-repeat;
+	width:108px;
+	height:31px;
+}
+
+* html .boton-azul-factelect:hover{
+	background: url(../../img/botones/boton_azul_modificar.gif) bottom no-repeat;
+	width:108px;
+	height:31px;
+}
+
+.boton-azul-aceptar-factelect{
+	background: url(../../img/botones/boton_azul_aceptar.gif) top no-repeat;
+	width:100px;
+	height:36px;
+	cursor:pointer;
+	border:none;
+}
+
+.boton-azul-aceptar-factelect:hover{
+	background: url(../../img/botones/boton_azul_aceptar.gif) bottom no-repeat;
+	width:100px;
+	height:36px;
+}
+
+.boton-azul-enviar-form-contacto{
+	background: url(../../img/botones/btn-azul-enviar.gif) top no-repeat;
+	width:116px;
+	height:38px;
+	cursor:pointer;
+	border:none;	
+}
+
+.boton-azul-enviar-form-contacto:hover{
+	background-position:bottom;
+}
+
+.boton-azul{
+	background: url(../../img/botones/boton-azul.png) top no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+.boton-azul:hover{
+	background: url(../../img/botones/boton-azul.png) bottom no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+* html .boton-azul{
+	background: url(../../img/botones/boton-azul.gif) top no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+* html .boton-azul:hover{
+	background: url(../../img/botones/boton-azul.gif) bottom no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+/***********************************/
+/*			BOTON AZUL LARGO		*/
+/***********************************/
+.btnAzulLargo span{
+	padding:10px 8px 10px 20px;
+}
+/***********************************/
+/*        BOTON AZUL DELGADO       */
+/***********************************/
+.btnAzulDelgado {
+	background:url(../../img/botones/bg_btn_delgado.png) right -30px no-repeat;
+	height:30px;
+	display:inline-block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:8px;
+	text-align:center;
+}
+.btnAzulDelgado span {
+	background:url(../../img/botones/bg_btn_delgado.png) top left no-repeat;
+	padding:8px 0 6px 8px;
+	display:block;
+	cursor:pointer;
+}
+.btnAzulDelgado:hover {
+	background-position:right -90px;
+}
+.btnAzulDelgado:hover span {
+	background-position:left -60px;
+}
+* html .btnAzulDelgado,
+* html .btnAzulDelgado span,
+* html .btnAzulDelgado:hover,
+* html .btnAzulDelgado:hover span {
+	background-image:url(../../img/botones/bg_btn_delgado.gif);
+}
+/***********************************/
+/*		BOTON AZUL DELGADO LARGO	*/
+/***********************************/
+.btnAzulDelgadoLargo span{
+	padding:8px 8px 6px 16px;
+}
+/***********************************************/
+/*  Extraido de Template.css********************/
+
+/***********************************************/
+/*	Botones Rollover Azul***********************/
+a.btnPng {
+	height: 40px;
+	background: url(../../img/botones/bg_btn.png) left top no-repeat;
+	float: left;
+	text-decoration: none !important;
+	cursor: pointer;
+	width: auto;
+}
+a.btnPng span {
+	background: url(../../img/botones/bg_btn.png) no-repeat;
+}
+a.btnPng span {
+	background: url(../../img/botones/bg_btn.png) no-repeat;
+	background-position: right -40px;
+	padding: 10px 20px 0 12px;
+	display:block !important;
+	height: 29px;
+	position: relative;
+	right: -8px;
+	text-align: center;
+	color: #fff !important;
+	font-weight: bolder;
+	font-size:11px;
+	text-decoration: none !important;
+	cursor: pointer;
+	
+}
+a:hover.btnPng {
+	background: url(../../img/botones/bg_btn.png);
+	background-position: left -80px;
+}
+a:hover.btnPng span {
+	background: url(../../img/botones/bg_btn.png);
+	background-position: right -120px;
+}
+
+/* FIX ie6 */
+* html a.btnPng { width: 1%;}
+* html a.btnPng { background-image: url(../../img/botones/bg_btn.gif) }
+* html a.btnPng span { background-image: url(../../img/botones/bg_btn.gif) }
+* html a:hover.btnPng { background-image: url(../../img/botones/bg_btn.gif) }
+* html a:hover.btnPng span { background-image: url(../../img/botones/bg_btn.gif) }
+
+/* Boton Rollover azul Delgado (se usa con el base)*/
+
+a.btnPngDelgado {
+	height: 30px;
+	background: url(../../img/botones/bg_btn_delgado.png) left top no-repeat;
+	text-decoration: none !important;
+}
+a.btnPngDelgado span {
+	background: url(../../img/botones/bg_btn_delgado.png) right -30px no-repeat;
+	padding: 7px 12px 0 9px;
+	height: 22px;
+	font-size: 11px;
+	font-weight:bolder;
+}
+a:hover.btnPngDelgado {
+	background-image: url(../../img/botones/bg_btn_delgado.png);
+	background-position: left -60px;
+}
+a:hover.btnPngDelgado span {
+	background-image: url(../../img/botones/bg_btn_delgado.png);
+	background-position: right -90px;
+}
+
+/***********************************/
+/*			BOTON AZUL LARGO		*/
+/***********************************/
+.btnAzulLargo {
+	background:url(../../img/botones/btn_azul.png) right -34px no-repeat;
+	height:34px;
+	float:left;
+	display:block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF !important;
+	padding-right:8px;
+}
+.btnAzulLargo span {
+	background:url(../../img/botones/btn_azul.png) top left no-repeat;
+	padding:10px 22px 10px 30px;
+	display:block;
+	cursor:pointer;
+}
+.btnAzulLargo:hover {
+	background-position:right -102px;
+}
+.btnAzulLargo:hover span {
+	background-position:left -68px;
+}
+* html .btnAzulLargo,
+* html .btnAzulLargo span,
+* html .btnAzulLargo:hover,
+* html .btnAzulLargo:hover span {
+	background-image:url(../../img/botones/btn_azul.gif);
+}
+
+
+
+/* FIXes ie6 */
+* html a.btnPngDelgado { width: 1px;}
+* html a.btnPngDelgado { background-image: url(../../img/botones/bg_btn_delgado.gif) }
+* html a.btnPngDelgado span { background-image: url(../../img/botones/bg_btn_delgado.gif) }
+* html a:hover.btnPngDelgado { background-image: url(../../img/botones/bg_btn_delgado.gif) }
+* html a:hover.btnPngDelgado span { background-image: url(../../img/botones/bg_btn_delgado.gif) }
+
+
+.boton-azul-confirmar{
+	background: url(../../img/botones/boton_azul_pat.gif) top no-repeat;
+	width:116px;
+	height:38px;
+	cursor:pointer;
+	border: none;
+}
+
+.boton-azul-confirmar:hover{
+	background: url(../../img/botones/boton_azul_pat.gif) bottom no-repeat;
+	width:116px;
+	height:38px;
+}
+
+.btn-registrarme{
+	background: url(../../img/botones/btn_registrarme.png) top no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+.btn-registrarme:hover{
+	background: url(../../img/botones/btn_registrarme.png) bottom no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+* html .btn-registrarme{
+	background: url(../../img/botones/btn_registrarme.gif) top no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+* html .btn-registrarme:hover{
+	background: url(../../img/botones/btn_registrarme.gif) bottom no-repeat;
+	width:116px;
+	height:38px;
+	border: none;
+	cursor:pointer;
+}
+
+.btnNaranjaGrande {
+    background: url("../../img/botones/bt_naranjo.png") no-repeat scroll right -40px transparent;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 32px;
+    padding-right: 7px;
+    text-decoration: none;
+}
+.btnNaranjaGrande span {
+    background: url("../../img/botones/bt_naranjo.png") no-repeat scroll left top transparent;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    display: block;
+    padding: 9px 1px 12px 11px;
+    text-align: center;
+}
+.btnNaranjaGrande:hover {
+    background-position: right -120px;
+}
+.btnNaranjaGrande:hover span {
+    background-position: left -80px;
+    text-decoration: none;
+}
+* html .btnNaranjaGrande, * html .btnNaranjaGrande span, * html .btnNaranjaGrande:hover, * html .btnNaranjaGrande:hover span {
+    background-image: url("../../img/botones/bt_naranjo.gif");
+}
+
+/**************************
+ Botones naranja recarga
+**************************/
+
+/* Ver Bolsa */
+.botonVerBolsaNaranja {
+	background: url(../../img/botones/btn_verbolsa_naranja.png) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-top: 8px;	
+}
+
+.botonVerBolsaNaranja:hover {
+	background: url(../../img/botones/btn_verbolsa_naranja_hover.png) bottom no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-top: 8px;	
+}
+
+* html .botonVerBolsaNaranja {
+	background: url(../../img/botones/btn_verbolsa_naranja.gif) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+    	
+}
+
+* html .botonVerBolsaNaranja:hover {
+	background: url(../../img/botones/btn_verbolsa_naranja_hover.gif) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+}
+
+/* Recargar */
+.botonRecargarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_recargar_naranja.png) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+}
+
+.botonRecargarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_recargar_naranja_hover.png) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonRecargarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_recargar_naranja.gif) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonRecargarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_recargar_naranja_hover.gif) top no-repeat;
+	width: 89px;
+	height: 34px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Continuar */
+.botonContinuarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja.png) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+.botonContinuarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja_hover.png) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonContinuarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja.gif) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonContinuarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja_hover.gif) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+.botonContinuarNaranjaDesactivado {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja_des.png) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+.botonContinuarNaranjaDesactivado:hover {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja_hover_des.png) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonContinuarNaranjaDesactivado {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja_des.gif) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonContinuarNaranjaDesactivado:hover {
+	display: block;
+	background: url(../../img/botones/btn_continuar_naranja_hover_des.gif) top no-repeat;
+	width: 78px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Confirmar */
+.botonConfirmarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_confirmar_naranja.png) top no-repeat;
+	width: 109px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+.botonConfirmarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_confirmar_naranja_hover.png) top no-repeat;
+	width: 109px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonConfirmarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_confirmar_naranja.gif) top no-repeat;
+	width: 109px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonConfirmarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_confirmar_naranja_hover.gif) top no-repeat;
+	width: 109px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Aceptar */
+.botonAceptarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_aceptar_naranja.png) top no-repeat;
+	width: 96px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+.botonAceptarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_aceptar_naranja_hover.png) top no-repeat;
+	width: 96px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonAceptarNaranja {
+	display: block;
+	background: url(../../img/botones/btn_aceptar_naranja.gif) top no-repeat;
+	width: 96px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+* html .botonAceptarNaranja:hover {
+	display: block;
+	background: url(../../img/botones/btn_aceptar_naranja_hover.gif) top no-repeat;
+	width: 96px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+/**************************
+**************************/
+/***********************************/
+/*		BOTON NARANJA              */
+/***********************************/
+.btnNaranjaDelgado1 {
+	background:url(../../img/botones/btn_naranjaDelgado.png) right -30px no-repeat;
+	height:30px;
+	display:inline-block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF;
+	padding-right:8px;
+}.btnNaranjaDelgado1 span {
+	background:url(../../img/botones/btn_naranjaDelgado.png) top left no-repeat;
+	padding:8px 0px 10px 8px;
+	display:block;
+	cursor:pointer;
+}.btnNaranjaDelgado1:hover {
+	background-position:right -90px;
+}.btnNaranjaDelgado1:hover span {
+	background-position:left -60px;
+	color:white;
+}.btnNaranjaDelgado1.alargar span{
+	padding-left:14px;
+	padding-right:8px;
+}
+/* /BOTÓN NARANJA */
+
+
+/***********************************/
+/*		BOTON NARANJA GRANDE       */
+/***********************************/
+.btnNaranjaGrande1 {
+	background:url(../../img/botones/btn_naranjaGrande.png) right -38px no-repeat;
+	height:38px;
+	display:inline-block;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bolder;
+	color:#FFF;
+	padding-right:9px;
+}
+.btnNaranjaGrande1 span {
+	background:url(../../img/botones/btn_naranjaGrande.png) top left no-repeat;
+	padding:12px 1px 12px 10px;
+	display:block;
+	cursor:pointer;
+}
+.btnNaranjaGrande1:hover {
+	background-position:right -114px;
+	color:white;
+}
+.btnNaranjaGrande1:hover span {
+	background-position:left -76px;
+}
+
+/* FIN */

@@ -1,0 +1,158 @@
+.activeInfo{
+	display: block !important;
+}.cellRowInfoLinks{
+	background-color: rgb(238, 238, 238);
+	display: block;
+	padding: 30px 15px;
+}.cellRowInfoLinks a{
+	display: block;
+	color: rgb(68, 68, 68);
+	font-size: 12px;
+	padding: 7px 0;
+	text-decoration: underline;
+}.cellRowInfoLinks div{
+	background-repeat: no-repeat;
+	display: block;
+	padding-left: 40px;
+}.cellRowInfoLinks .cellBlock{
+	background-image: url('../../img/4GLte/icoInfoBlock.png');
+	background-position: 0px center;
+}.cellRowInfoLinks .cellTecService{
+	background-image: url('../../img/4GLte/icoInfoService.png');
+	background-position: 0px center;
+}.cellRowInfoLinks .cellStepDialog{
+	background-image: url('../../img/4GLte/icoInfoDialog.png');
+	background-position: 0px center;
+}.cellRowInfoVerify{
+	color: rgb(68, 68, 68);
+	background: rgb(234, 234, 234);
+	font-family: Arial;
+	font-size: 12px;
+	padding: 15px;
+}.cellRowInfoVerify h5{
+	font-size: 12px;
+	font-weight: bold;
+}.cellRowInfoVerify .rowVerifyItem p{
+	display: block;
+	float: left;
+	font-weight: normal;
+}.cellRowInfoVerify .rowVerifyItem .checkWarning, .cellRowInfoVerify .rowVerifyItem .checkGood{
+	background-repeat: no-repeat;
+	cursor: default;
+	display: none;
+	float: right;
+	height: 13px;
+	position: relative;
+	text-decoration: none;
+	text-align: left;
+	width: 13px;
+}.cellRowInfoVerify .rowVerifyItem .checkGood{
+	background-image: url('../../img/4GLte/icoCheckGood.png');
+}.cellRowInfoVerify .rowVerifyItem .checkWarning{
+	background-image: url('../../img/4GLte/icoTool.png');
+}.cellRowInfoVerify .rowVerifyItem .checkWarning:hover .wrapComponentTT, .cellRowInfoVerify .rowVerifyItem .checkGood:hover .wrapComponentTT{
+	display: block;
+}
+.cellRowInfoVerify .rowVerifyItem {
+	display: block;
+	height: 10px;
+	padding: 10px 0;
+}.wrapRowInfo{
+	width: 170px;
+}.wrapRowInfo .cellRowInfoHeader{
+	background-color: rgb(0, 115, 174);
+	background-image: url('../../img/4GLte/icon-help.png');
+	background-position: 10px 15px;
+	background-repeat: no-repeat;
+	display: block;
+	font-family: Arial;
+	height: 50px;
+	overflow: hidden;
+}.wrapRowInfo .cellRowInfoHeader h3{
+	color: rgb(245, 245, 245);
+	font-family: 'Tahoma', Arial;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 38px;
+}.wrapRowInfo .cellRowInfoCellphone{
+	background: rgb(238, 238, 238);
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	text-align: center;
+}.wrapRowInfo .cellRowInfoCellphone .cellTitle{
+	color: rgb(68, 68, 68);
+	font-family: Arial;
+}.wrapRowInfo .cellRowInfoCellphone .cellTitle h4{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.wrapComponentTT{
+	background-repeat: no-repeat;
+	color: rgb(68, 68, 68);
+	display: none;	
+	position: absolute;
+	text-align: center;	
+	z-index: 99;
+}.wrapComponentTT span{
+	display: block;
+	padding: 15px 4px 0px 4px;
+}.wrapComponentSmallToolTip{
+	background-image: url('../../img/4GLte/smallToolTip.png');	
+	height: 55px;
+	left: -70px;		
+	top: -52px;	
+	width: 150px;
+}.wrapComponentStandardToolTip{
+	background-image: url('../../img/4GLte/standardToolTip.png');
+	height: 82px;	
+	left: -90px;	
+	top: -82px;
+	width: 190px;
+}.wrapComponentStandardToolTip a{
+	display: inline;
+	color: rgb(68, 68, 68);
+}
+
+
+/** Cellphone **/
+.description_equ{
+	padding: 20px 0 !important;
+}.description_equ h4{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}.description_equ h5{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}.description_equ .imagen_equipo{
+	border-right: 0 !important;
+}.description_equ .metaInfo{
+	clear: both;
+	font-size: 12px;
+	font-weight: bold;	
+}.description_equ .metaInfo p{
+	padding-left: 85px;
+	margin-top: 10px;
+}.description_equ .metaInfo a{
+	color: rgb(68, 68, 68);
+	font-size: 13px;
+	text-decoration: underline;
+}.description_equ .cellRowInfoVerify{
+	background: rgb(245, 245, 245) !important;
+	padding: 0 3px !important;
+}.equipImage{
+	padding-left: 15px;
+}.fLeft{
+	float: left;
+}.fRight{
+	float: right;
+}.activeCursor{
+	cursor: pointer !important;
+}.blank_ico{
+    background: url('../../img/4GLte/blank_ico.gif') no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    padding-right: 15px;
+}

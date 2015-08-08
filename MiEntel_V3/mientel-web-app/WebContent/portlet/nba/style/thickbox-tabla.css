@@ -1,0 +1,76 @@
+/**************** Inicio Ventana Modal ****************/
+.TB_contenedor{
+	display:block;
+	margin:0 10px 20px 10px;
+}
+.lb_lightbox{
+	display:block;
+	position:relative;
+}
+.lightbox .lb_tl{
+	width:8px;
+	height:8px;
+	background:url(../../img/thickbox/thickbox_tabla/lb_tl.png) bottom right no-repeat;
+}
+* html .lightbox .lb_tl{
+	background:url(../../img/thickbox/thickbox_tabla/lb_tl.gif) bottom right no-repeat;
+}
+.lightbox .lb_tt{
+	height:8px;
+	background:url(../../img/thickbox/thickbox_tabla/lb_tt.png) repeat-x;
+}
+* html .lightbox .lb_tt{
+	background:url(../../img/thickbox/thickbox_tabla/lb_tt.gif) repeat-x;
+}
+.lightbox .lb_tr{
+	width:8px;
+	height:8px;
+	background:url(../../img/thickbox/thickbox_tabla/lb_tr.png) bottom left no-repeat;
+}
+* html .lightbox .lb_tr{
+	background:url(../../img/thickbox/thickbox_tabla/lb_tr.gif) bottom left no-repeat;
+}
+.lightbox .lb_ll{
+	width:8px;
+	/*background:url(../../img/thickbox/thickbox_tabla/lb_ll.png) right repeat-y;*/
+}
+* html .lightbox .lb_ll{
+	/*background:url(../../img/thickbox/thickbox_tabla/lb_ll.gif) right repeat-y;*/
+}
+
+.lightbox .lb_main{
+	background: #eeecec;
+}
+.lightbox .lb_rr{
+	width:8px;
+	/*background:url(../../img/thickbox/thickbox_tabla/lb_rr.gif) repeat-y;*/
+
+}
+* html .lightbox .lb_rr{
+	/*background:url(../../img/thickbox/thickbox_tabla/lb_rr.gif) repeat-y;*/
+
+}
+.lightbox .lb_bl{
+	width:8px;
+	height:8px;
+	background:url(../../img/thickbox/thickbox_tabla/lb_bl.png) top right no-repeat;
+}
+* html .lightbox .lb_bl{
+	background:url(../../img/thickbox/thickbox_tabla/lb_bl.gif) top right no-repeat;
+}
+.lightbox .lb_bb{
+	height:8px;
+	background:url(../../img/thickbox/thickbox_tabla/lb_bb.png) repeat-x;
+}
+* html .lightbox .lb_bb{
+	background:url(../../img/thickbox/thickbox_tabla/lb_bb.gif) repeat-x;
+}
+.lightbox .lb_br{
+	width:8px;
+	height:8px;
+	background:url(../../img/thickbox/thickbox_tabla/lb_br.png) no-repeat;
+}
+* html .lightbox .lb_br{
+	background:url(../../img/thickbox/thickbox_tabla/lb_br.gif) no-repeat;
+}
+/**************** Fin Ventana Modal ****************/

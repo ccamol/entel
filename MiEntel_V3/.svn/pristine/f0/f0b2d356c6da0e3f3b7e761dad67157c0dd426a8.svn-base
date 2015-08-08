@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/Billing/GestionRecargas/RegistroBolsas/Proxies/registrocomprabolsasmsps?WSDL
+#wsdl=http://esbpre.entel.cl/Billing/GestionRecargas/RegistroBolsas/Proxies/registrocomprabolsasmsps?WSDL
+targetnamespace=http://www.esa.com/Billing/Recargas/RegistroBolsas
+servicename=CompraBolsaServices
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

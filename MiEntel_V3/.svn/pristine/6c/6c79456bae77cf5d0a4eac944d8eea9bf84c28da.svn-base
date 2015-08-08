@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/CLIENTES/GestionCanalesContacto/EstadoContrato/MisContratosps?wsdl
+targetnamespace=http://www.esa.com/Clientes/CanalesContacto/MisContratos/
+servicename=MisContratosService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

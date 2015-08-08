@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/crm/crmcatalogcustomers/consultaejecutivosga/crm_t_px_consultaejecutivosgaps?wsdl
+#wsdl=http://esbpre.entel.cl/crm/crmcatalogcustomers/consultaejecutivosga/crm_t_px_consultaejecutivosgaps?wsdl
+targetnamespace=http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP
+servicename=WSSGAConsultaEjecutivoService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

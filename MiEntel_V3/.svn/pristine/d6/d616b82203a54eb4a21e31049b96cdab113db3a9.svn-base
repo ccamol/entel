@@ -1,0 +1,294 @@
+/*
+ * Estilos Menu nuevo ENTEL
+ */
+#link_dashboard {
+	color: #fff;
+	text-decoration: none;
+}
+
+.despliegues_categoria {
+	width:174px;
+	font-size:1em;
+	position:relative;
+	z-index:10;
+}
+.stretch,
+.stretch_no_amin {
+	display:block;
+	cursor:pointer;
+	margin-bottom:1px;
+	outline:none;
+}
+.contenido_stretcher {
+	display:none;
+}
+.contenido_stretcher.abierto {
+	display:block !important;
+}
+.contenido_stretcher_no_amin {
+	display: block;
+}
+
+/*
+ * Estilos comunes para el encabezado (estado cerrado)
+ */
+.stretch div.stretch_top,
+.stretch_no_amin div.stretch_top {
+	width:174px;
+	height:4px;
+	display:block;
+	font-size:1px;
+	background:url(../img/menu/azul/bg_menuTop.gif) top left no-repeat;
+}
+.azul .stretch div.stretch_top,
+.azul .stretch_no_amin div.stretch_top {
+	background:url(../img/menu/azul/bg_menuTop.gif) top left no-repeat;
+}
+.stretch div.stretch_bottom,
+.stretch_no_amin div.stretch_bottom {
+	width:174px;
+	height:4px;
+	display:block;
+	font-size:1px;
+	background:url(../img/menu/azul/bg_menuBottom.png) top left no-repeat;
+}* html .stretch div.stretch_bottom,
+* html .stretch_no_amin div.stretch_bottom {
+	background:url(../img/menu/azul/bg_menuBottom.gif) top left no-repeat;
+}
+
+.ultimo div.stretch_bottom {
+	background: none;
+}
+.azul .ultimo div.stretch_bottom {
+	background: none;
+}
+
+.stretch div.stretch_main,
+.stretch_no_amin div.stretch_main {
+	width:174px;
+	background:url(../img/menu/azul/bg_menuMain.gif) top left repeat-y #0073ae;
+}
+
+.azul .stretch div.stretch_main,
+.azul .stretch_no_amin div.stretch_main {
+	background:url(../img/menu/azul/bg_menuMain.gif) top left repeat-y #0073ae;
+}
+
+/*
+ * Estilos comunes para el encabezado (estado hover)
+ */
+.azul .stretch.ui-state-hover div.stretch_top,
+.azul .stretch_no_amin.ui-state-hover div.stretch_top {
+	background:url(../img/menu/azul/bg_menuTop_hover.gif) top left no-repeat;
+}
+.azul .stretch.ui-state-hover div.stretch_bottom,
+.azul .stretch_no_amin.ui-state-hover div.stretch_bottom {
+	background:url(../img/menu/azul/bg_menuBottom_hover.gif) top left no-repeat;
+}
+.azul .stretch.ui-state-hover div.stretch_main,
+.azul .stretch_no_amin.ui-state-hover div.stretch_main {
+	background:url(../img/menu/azul/bg_menuMain_hover.gif) top left repeat-y #0073ae;
+}
+
+.azul .stretch_no_amin:hover div.stretch_top {
+	background:url(../img/menu/azul/bg_menuTop_hover.gif) top left no-repeat;
+}
+.azul .stretch_no_amin:hover div.stretch_bottom {
+	background:url(../img/menu/azul/bg_menuBottom_hover.gif) top left no-repeat;
+}
+.azul .stretch_no_amin:hover div.stretch_main {
+	background:url(../img/menu/azul/bg_menuMain_hover.gif) top left repeat-y #0073ae;
+}
+.azul .ultimo:hover div.stretch_bottom {
+	background: none;
+}
+.ultimo:hover div.stretch_main {
+	display:block;
+	padding-bottom: 3px;
+	margin-bottom:-3px;
+	position:relative;
+	z-index:10;
+}
+
+.cierre_menu {
+	display:block;
+	width:174px;
+	height:17px;
+	margin: -5px 0 0 0;
+	background:url(../img/menu/azul/bg_menuLastBottom.gif) top left no-repeat;
+}
+
+/*
+ * Estilos comunes para el encabezado (estado abierto con su hover)
+ */
+.azul .stretch.ui-state-active div.stretch_top,
+.azul .stretch.menu_abierto div.stretch_top,
+.azul .stretch_no_amin.abierto div.stretch_top {
+	background:url(../img/menu/azul/bg_menuTop_seleccionado.gif) top left no-repeat;
+}
+.azul .stretch.ui-state-active div.stretch_bottom,
+.azul .stretch.menu_abierto div.stretch_bottom,
+.azul .stretch_no_amin.abierto div.stretch_bottom  {
+	background:url(../img/menu/azul/bg_menuBottom_seleccionado.gif) top left no-repeat;
+}
+.azul .stretch.ui-state-active div.stretch_main,
+.azul .stretch.menu_abierto div.stretch_main,
+.azul .stretch_no_amin.abierto div.stretch_main {
+	background:url(../img/menu/azul/bg_menuMain_seleccionado.gif) top left repeat-y #0073ae;
+}
+
+
+.stretch h3,
+.stretch_no_amin h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	font-weight:bolder;
+	color:#FFF;
+	padding:5px 18px 5px 10px;
+	width:142px;
+}
+
+/*
+ * Encabezado stretcher cerrado
+ */
+.stretch h3 {
+	background:url(../img/menu/azul/ico_flechaDerecha.gif) right center no-repeat;
+}
+
+/*
+ * Encabezado stretcher cerrado (hover)
+ */
+.azul .stretch.cerrado:hover h3,
+.azul .stretch.ui-state-hover h3{
+	background:url(../img/menu/azul/ico_flechaDerecha_hover.gif) right center no-repeat !important;
+}
+
+/*
+ * Encabezado stretcher abierto
+ */
+.azul .stretch.ui-state-active h3,
+.azul .stretch.menu_abierto h3{
+	background:url(../img/menu/azul/ico_flechaAbajo.gif) right center no-repeat !important;
+}
+
+
+/*
+ * Menu desplegable, 2do nivel
+ */
+
+ul.segundo {
+	border:1px solid #d8e9f0;
+	border-top:none;
+	border-bottom:none;
+	margin-bottom:2px;
+	outline:none;
+}
+ul.segundo li {
+	border-bottom:1px solid #d7e5ee;
+	margin-bottom:1px;
+}
+ul.segundo li a,
+ul.segundo li a:visited {
+	background: #e5f1f7;
+	display:block;
+	font-size:1.2em;
+	color:#555;
+	padding:7px 10px 7px 10px;
+	text-decoration:none;
+}
+ul.segundo li a:hover {
+	background:#c1d6e6;
+}
+
+ul.segundo li.seleccionado,
+ul.segundo li.ui-state-active {
+	margin-bottom:0;
+}
+ul.segundo li.seleccionado a,
+ul.segundo li.ui-state-active a {
+	color:#000;
+	font-weight:bolder;
+	background:#c1d6e6 !important;
+	margin:0;
+}
+
+ul.segundo li.submenu_contenido {
+	display:none;
+}
+
+/*
+ * Menu desplegable, 3er nivel
+ */
+ul.segundo li ul.tercero {
+	/*width:173px;*/
+	width:171px;
+}
+ul.segundo li ul.tercero li {
+	border:none;
+	margin:0 !important;
+	display:block;
+}
+ul.segundo li ul.tercero li a,
+ul.segundo li ul.tercero li a:visited {
+	padding: 3px 4px 3px 20px;
+	font-size:1.1em;
+	width:148px;
+	background:url(../img/menu/azul/ico_bullet.gif) 8px 6px no-repeat #eff9fd;
+}
+.azul ul.segundo li ul.tercero li a,
+.azul ul.segundo li ul.tercero li a:visited  {
+	background:url(../img/menu/azul/ico_bullet.gif) 8px 6px no-repeat #eff9fd;
+}
+
+ul.segundo li ul.tercero li a:hover {
+	background:url(../img/menu/azul/ico_bulletActivo.gif) 8px 6px no-repeat #d9e4ed;
+}
+.azul ul.segundo li ul.tercero li a:hover {
+	background:url(../img/menu/azul/ico_bulletActivo.gif) 8px 6px no-repeat #d9e4ed;
+}
+
+ul.segundo li ul.tercero li.seleccionado a,
+ul.segundo li ul.tercero li.seleccionado a:visited {
+	font-weight:normal;
+	color: #0073ae;
+	background:url(../img/menu/azul/ico_bulletActivo.gif) 8px center no-repeat #d9e4ed !important;
+}
+.azul ul.segundo li ul.tercero li.seleccionado a,
+.azul ul.segundo li ul.tercero li.seleccionado a:visited {
+	background:url(../img/menu/azul/ico_bulletSeleccionado.gif) 8px center no-repeat #f78f20 !important;
+	color:#ffffff;
+}
+
+/*
+ * Select TOP
+ */
+#top-select .consultando {
+	background: url(../img/icons/fondo_select_top.gif) center center no-repeat;
+	padding: 10px 15px 19px 50px;
+	margin: 0 0 15px 0;
+}
+#top-select .consultando label {
+	display: block;
+	float: left;
+	width: 190px;
+	padding: 4px 0 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+}
+#top-select .select_contenedor {
+	display: block;
+	float: right;
+	width: 270px;
+}
+
+/*
+ *	Cabecera MI ENTEL
+ */
+#cabecera_mientel {	
+	color:#0073AE;
+	display:block;
+	font-family:Tahoma,Arial,Helvetica,sans-serif;
+	font-size:2.2em;
+	margin:0 0 21px;
+	padding:0 0 0 3px;
+}

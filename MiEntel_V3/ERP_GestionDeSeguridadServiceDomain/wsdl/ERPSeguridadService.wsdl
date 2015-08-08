@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/erp/seguridad" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/erp/seguridad" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/erp/seguridad" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/erp/seguridad" xmlns:types="http://www.epcs.com/erp/seguridad/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/erp/seguridad/types" schemaLocation="http://10.10.20.83:7001/ERP_GestionDeSeguridad/Proxies/ERPSeguridadService?SCHEMA%2FERP_GestionDeSeguridad%2FServicios%2FERP_GestionDeSeguridadXSD"/>
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+      <xsd:element name="AutenticarUsuarioDocument" type="types:AutenticarUsuarioType"/>
+      <xsd:element name="ResultadoAutenticarUsuarioDocument" type="types:ResultadoAutenticarUsuarioType"/>
+      <xsd:element name="AutenticarAplicacionDocument" type="types:AutenticarAplicacionType"/>
+      <xsd:element name="ResultadoAutenticarAplicacionDocument" type="types:ResultadoAutenticarAplicacionType"/>
+
+      <xsd:element name="CambiarClaveDocument" type="types:CambiarClaveType"/>
+      <xsd:element name="ResultadoCambiarClaveDocument" type="types:ResultadoCambiarClaveType"/>
+      <xsd:element name="AutenticarUsuarioOrqDocument" type="types:AutenticarUsuarioOrqType"/>
+      <xsd:element name="ResultadoAutenticarUsuarioOrqDocument" type="types:ResultadoAutenticarUsuarioType"/>
+      <xsd:element name="ConsultarIdpDocument" type="types:ConsultarIdpType"/>
+      <xsd:element name="ResultadoConsultarIdpDocument" type="types:ResultadoConsultarIdpType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="AutenticarUsuarioMessage">
+
+    <WL5G3N0:part element="WL5G3N1:AutenticarUsuarioDocument" name="AutenticarUsuario"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAutenticarUsuarioMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAutenticarUsuarioDocument" name="ResultadoAutenticarUsuario"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AutenticarAplicacionMessage">
+    <WL5G3N0:part element="WL5G3N1:AutenticarAplicacionDocument" name="AutenticarAplicacion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAutenticarAplicacionMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoAutenticarAplicacionDocument" name="ResultadoAutenticarAplicacion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CambiarClaveMessage">
+    <WL5G3N0:part element="WL5G3N1:CambiarClaveDocument" name="CambiarClave"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCambiarClaveMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCambiarClaveDocument" name="ResultadoCambiarClave"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AutenticarUsuarioOrqMessage">
+
+    <WL5G3N0:part element="WL5G3N1:AutenticarUsuarioOrqDocument" name="AutenticarUsuarioOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAutenticarUsuarioOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAutenticarUsuarioOrqDocument" name="ResultadoAutenticarUsuarioOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarIdpMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarIdpDocument" name="ConsultarIdp"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarIdpMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarIdpDocument" name="ResultadoConsultarIdp"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ERP_GestionDeSeguridadServicePortType">
+    <WL5G3N0:operation name="AutenticarUsuario">
+      <WL5G3N0:input message="WL5G3N1:AutenticarUsuarioMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAutenticarUsuarioMessage"/>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AutenticarAplicacion">
+      <WL5G3N0:input message="WL5G3N1:AutenticarAplicacionMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAutenticarAplicacionMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambiarClave">
+      <WL5G3N0:input message="WL5G3N1:CambiarClaveMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCambiarClaveMessage"/>
+    </WL5G3N0:operation>
+
+    <WL5G3N0:operation name="AutenticarUsuarioOrq">
+      <WL5G3N0:input message="WL5G3N1:AutenticarUsuarioOrqMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAutenticarUsuarioOrqMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarIdp">
+      <WL5G3N0:input message="WL5G3N1:ConsultarIdpMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarIdpMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+
+  <WL5G3N0:binding name="ERP_GestionDeSeguridadServiceBinding" type="WL5G3N1:ERP_GestionDeSeguridadServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="AutenticarUsuario">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/erp/seguridad/AutenticarUsuario"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AutenticarAplicacion">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/erp/seguridad/AutenticarAplicacion"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CambiarClave">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/erp/seguridad/CambiarClave"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AutenticarUsuarioOrq">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/erp/seguridad/AutenticarUsuarioOrq"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarIdp">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/erp/seguridad/ConsultarIdp"/>
+      <WL5G3N0:input>
+
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ERPGestionDeSeguridadService">
+
+    <WL5G3N0:port binding="WL5G3N1:ERP_GestionDeSeguridadServiceBinding" name="ERP_GestionDeSeguridadServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/ERP_GestionDeSeguridad/Proxies/ERPSeguridadService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,17 @@
+******* contenido miEntelService_v3_20110722.jar *******
+Proyectos contenidos en este JAR:
+
+
+1.        Billing_GestionDeBalances
+2.        Billing_GestionDeRegistrosDeUso
+3.        Cliente_GestionDePerfiles
+4.        ERP_GestionDeSeguridad
+5.        IntegracionIT/FlujoTrabajo (proyecto raíz existente)
+6.        Cliente/Orden
+7.        Cliente/Contacto (nuevo)
+8.        Billing/Pago
+9.        Billing/ProdFactura
+10.       Billing/Recarga
+11.       InteligenciaNegocios/SatisfaccionCliente (nuevo)
+12.       Provisionamientoyentrega/AdminSuscripciones (nuevo)
+13.       Auto-Validador (utilitario) 

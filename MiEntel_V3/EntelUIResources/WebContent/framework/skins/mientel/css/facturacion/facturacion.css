@@ -1,0 +1,1195 @@
+#centro h2.facturacion {
+	background: url(../../img/icons/icon_facturacion.gif) no-repeat;
+}
+
+#centro h2.historico {
+	background: url(../../img/icons/icon_historico.gif) no-repeat;
+}
+
+#centro h2.pago_linea {
+	background: url(../../img/icons/icon_pago_linea.gif) no-repeat;
+}
+
+#centro h2.pago_caja {
+	background: url(../../img/icons/icon_pago_caja.gif) no-repeat;
+}
+
+#centro h2.lupa {
+	background: url(../../img/icons/icon_lupa.gif) no-repeat;
+}
+
+#centro h2.sin_icono {
+	padding: 0 0 8px 0;
+}
+
+#centro p.parrafo {
+	display: block;
+	float: left;
+}
+
+#centro a.boton_parrafo {
+	display: block;
+	float: right;
+}
+
+#centro a.boton_parrafo_left {
+	display: block;
+	float: left;
+	margin-left: -3px;
+}
+
+#centro .detalles {
+	display: block;
+	border-bottom: 1px solid #e3e3e3;
+	border-top: 1px solid #e3e3e3;
+	padding: 10px 0;
+	margin: 20px 0 40px 0;
+}
+
+#centro .tabla {
+	padding: 10px 0 20px 0;
+}
+
+#centro .tabla_oculta {
+	display: none;
+	padding: 10px 0 20px 0;
+}
+
+/*-----------------------------------------------------------
+					Reposición servicio
+-----------------------------------------------------------*/
+#centro #reposicion_paso_2 {
+	padding: 20px 0 0 0;
+}
+
+#centro a.reposicion_cancelar {
+	display: block;
+	float: left;
+	padding: 10px 0 0 10px;
+	font-size: 1.2em;
+	color: #000000;
+}
+
+/*-----------------------------------------------------------
+					Radio y checkbox
+-----------------------------------------------------------*/
+#centro span.checkbox {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../../img/checkbox.gif) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+	margin-top: -2px;
+	cursor: pointer;
+}
+
+* html #centro span.checkbox {
+	margin-top: -4px;
+}
+
+#centro span.radio {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../../img/radio.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+	margin-top: -5px;
+	cursor: pointer;
+	position: relative;;
+}
+
+* html #centro span.radio {
+	background: url(../../img/radio.gif) no-repeat;
+}
+
+/*-----------------------------------------------------------
+					Link con iconos
+-----------------------------------------------------------*/
+#centro a.link_pago:link,
+#centro a.link_pago:visited {
+	color: #000000;
+	cursor: pointer;
+}
+
+#centro a.link_pago:hover {
+	color: #597ca4;
+}
+
+#centro a.link_1 {
+	background: url(../../img/bullet_flecha.png) no-repeat right;
+}
+
+* html #centro a.link_1 {
+	background: url(../../img/bullet_flecha.gif) no-repeat right;
+}
+
+#centro a.link_2 {
+	background: url(../../img/bullet_flecha_1.gif) no-repeat right;
+}
+
+#centro a.ver_detalle:link,
+#centro a.ver_detalle:visited {
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000000;
+	padding: 0 15px 0 15px;
+	cursor: pointer;
+}
+#centro a.ver_detalle.link-fact:link,
+#centro a.ver_detalle.link-fact:visited{
+	display:block;
+	float:left;
+	font-size:1.2em;
+	font-weight:normal;
+	color:#3a3a3a;
+	padding: 0 15px 0 15px;
+	cursor:pointer;
+}
+#centro a.ver_detalle.link-fact:hover{
+	color: #577DA5;
+	text-decoration:underline;
+}
+
+#centro a.ver_tooltip:link,
+#centro a.ver_tooltip:visited{
+	display: block;
+	float: left;
+	color: #000000;
+	padding: 0 15px 0 0;
+	cursor: pointer;
+}
+#centro a.ver_detalle:hover,
+#centro a.ver_tooltip:hover {
+	color: #597ca4;
+	cursor: pointer;
+}
+#centro a.icon-llamados {
+	padding: 2px 0 0 20px;
+	background: url(../../img/icons/icon_llamados.gif) no-repeat;
+	display: block;
+	font-size: 12px;
+}
+
+#centro a.icon-factura {
+	padding: 2px 0 0 20px;
+	background: url(../../img/icons/icon_factura.gif) no-repeat;
+	display: block;
+	font-size: 12px;
+}
+
+/*-----------------------------------------------------------
+					Tabla liquida blanca
+-----------------------------------------------------------*/
+div.header_tabla_blanco {
+	font-size: 1.2em;
+}
+
+div.header_tabla_blanco div.top {
+	background: url(../../img/table/bg_bigTablaTop_blanco.gif) right no-repeat;
+	height: 4px;
+	margin-bottom: -3px;
+	position: relative;
+	font-size: 1px;
+	padding-right: 4px;
+	display: block;
+}
+
+div.header_tabla_blanco div.top_blanco {
+	border-top: 1px solid #e3e3e3;
+	display: block;
+}
+
+div.header_tabla_blanco div.top span {
+	background: url(../../img/table/bg_bigTablaTop_blanco.gif) left no-repeat;
+	height: 4px;
+	display: block;
+}
+
+div.header_tabla_blanco div.main {
+	border: 1px solid #cddae7;
+	border-top: none;
+	border-bottom: none;
+	background-color: #e3edf8;
+}
+
+div.header_tabla_blanco div.main_blanco {
+	border: 1px solid #cddae7;
+	border-top: none;
+	border-bottom: none;
+	background-color: #ffffff;
+}
+
+div.header_tabla_blanco div.bottom_blanco {
+	border-bottom: 1px solid #e3e3e3;
+	display: block;
+}
+
+div.header_tabla_blanco div.bottom_blanco_1 {
+	background: url(../../img/table/bg_bigTablaBottom_blanco.gif) right no-repeat;
+	height: 4px;
+	margin-top: -3px;
+	font-size: 1px;
+	display: block;
+	padding-right: 4px;
+}
+
+div.header_tabla_blanco div.bottom_blanco_1 span {
+	background: url(../../img/table/bg_bigTablaBottom_blanco.gif) left no-repeat;
+	height: 4px;
+	display: block;
+}
+
+div.header_tabla_blanco div.bottom {
+	background: url(../../img/table/bg_bigTablaBottom.gif) right no-repeat;
+	height: 4px;
+	margin-top: -3px;
+	font-size: 1px;
+	display: block;
+	padding-right: 4px;
+}
+
+div.header_tabla_blanco div.bottom span {
+	background: url(../../img/table/bg_bigTablaBottom.gif) left no-repeat;
+	height: 4px;
+	display: block;
+}
+
+div.header_tabla_blanco div.main table {
+	border-collapse: collapse;
+	/*float:left;*/
+	position: relative;
+}
+
+div.header_tabla_blanco div.main table th {
+	padding: 10px 0 10px 10px;
+	border-right: 1px solid #cddae7;
+	color: #3a3a3a;
+}
+
+div.header_tabla_blanco div.main table th div.icono {
+	padding-left: 20px;
+}
+
+div.header_tabla_blanco div.main table th.ultimo {
+	border-right: none;
+}
+
+div.header_tabla_blanco div.main_blanco table {
+	border-collapse: collapse;
+	/*float:left;*/
+	position: relative;
+}
+
+div.header_tabla_blanco div.main_blanco table th {
+	padding: 10px 0 10px 10px;
+	border-right: 1px solid #cddae7;
+	color: #3a3a3a;
+}
+
+div.header_tabla_blanco div table th.derecha {
+	padding: 0 10px 0 0;
+	text-align: right;
+	color: #3a3a3a;
+}
+
+div.header_tabla_blanco div.main_blanco table th div.icono {
+	padding-left: 20px;
+}
+
+div.header_tabla_blanco div.main_blanco table th.ultimo {
+	border-right: none;
+}
+
+div.contenido_tabla table {
+	border-collapse: collapse;
+	font-size: 1.2em;
+}
+
+div.contenido_tabla.borde {
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+}
+
+div.contenido_tabla table tbody tr td {
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+div.contenido_tabla table tbody tr td.derecha {
+	padding: 0 10px 0 0;
+	text-align: right;
+	color: #3a3a3a;
+}
+
+div.contenido_tabla table tbody tr td .texto_gris {
+	display: inline;
+	color: #999999;
+	padding: 0 0 0 5px;
+	font-size: 0.8em;
+}
+div.contenido_tabla table tbody tr.odd td,
+div.contenido_tabla table tbody tr.impar td {
+	background:#eef4fa;
+}
+
+div.contenido_tabla table tbody tr.odd td,div.contenido_tabla table tbody tr.impar td {
+	background: #eef4fa;
+}
+
+/*-----------------------------------------------------------
+					Tabla liquida
+-----------------------------------------------------------*/
+div.header_tabla div.top {
+	background: url(../../img/table/bg_bigTablaTop.gif) right no-repeat;
+	height: 4px;
+	margin-bottom: -3px;
+	position: relative;
+	font-size: 1px;
+	padding-right: 4px;
+	display: block;
+}
+
+div.header_tabla div.top span {
+	background: url(../../img/table/bg_bigTablaTop.gif) left no-repeat;
+	height: 4px;
+	display: block;
+}
+
+div.header_tabla div.main {
+	border: 1px solid #cddae7;
+	border-top: none;
+	border-bottom: none;
+	background-color: #e3edf8;
+	font-size: 1.2em;
+}
+
+div.header_tabla div.bottom {
+	background: url(../../img/table/bg_bigTablaBottom.gif) right no-repeat;
+	height: 4px;
+	margin-top: -3px;
+	font-size: 1px;
+	display: block;
+	padding-right: 4px;
+}
+
+div.header_tabla div.bottom span {
+	background: url(../../img/table/bg_bigTablaBottom.gif) left no-repeat;
+	height: 4px;
+	display: block;
+}
+
+div.header_tabla div.main table {
+	border-collapse: collapse;
+	/*float:left;*/
+	position: relative;
+}
+
+div.header_tabla div.main table th {
+	padding: 10px 0 10px 10px;
+	border-right: 1px solid #cddae7;
+	color: #3a3a3a;
+}
+
+div.header_tabla div table th.derecha {
+	padding: 10px 20px 10px 0;
+	text-align: right;
+	color: #3a3a3a;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+div.header_tabla div.main table th div.icono {
+	padding-left: 20px;
+}
+
+div.header_tabla div.main table th.ultimo {
+	border-right: none;
+}
+
+div.contenido_tabla table {
+	border-collapse: collapse;
+}
+
+div.contenido_tabla table tbody tr td {
+	padding: 12px 0 12px 10px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+div.contenido_tabla table tbody tr td a:link,
+div.contenido_tabla table tbody tr td a:visited {
+	color: #000000;
+}
+
+div.contenido_tabla table tbody tr td a:hover {
+	color: #597ca4;
+}
+
+div.contenido_tabla table tbody tr.odd td,
+div.contenido_tabla table tbody tr.impar td {
+	background: #eef4fa;
+}
+
+/*-----------------------------------------------------------
+						Grafico
+-----------------------------------------------------------*/
+#centro .grafico {
+	padding: 30px 0 20px 0;
+}
+
+#centro .grafico_imagen {
+	display: block;
+	float: left;
+}
+
+#centro .grafico_leyenda {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	font-size: 1.1em;
+}
+
+#centro .leyenda_item {
+	display: block;
+	padding-bottom: 20px;
+}
+
+#centro .leyenda_color {
+	float: left;
+	padding-right: 15px;
+}
+
+#centro .leyenda_color_1 {
+	width: 15px;
+	height: 15px;
+	background: #d5fffe;
+}
+
+#centro .leyenda_color_2 {
+	width: 15px;
+	height: 15px;
+	background: #99d2ff;
+}
+
+#centro .leyenda_color_3 {
+	width: 15px;
+	height: 15px;
+	background: #295dff;
+}
+
+#centro .leyenda_descripcion {
+	float: left;
+	width: 250px;
+}
+
+#centro .leyenda_descripcion ul li {
+	padding: 0 0 0 10px;
+	background: url(../../img/bullet_lista.gif) no-repeat left 7px;
+}
+
+/*-----------------------------------------------------------
+					Pago en linea
+-----------------------------------------------------------*/
+#centro #pago-linea {
+	padding: 10px 0 20px 0;
+}
+
+#centro #pago-linea .pago_linea_bloque {
+	float: left;
+}
+
+#centro #pago-linea .pago_linea_top {
+	background: url(../../img/pago_linea/pago_linea_top.gif) no-repeat top;
+	padding-top: 2px;
+}
+
+#centro #pago-linea .pago_linea_main {
+	background: #ffffff;
+	border-left: 1px #e3e3e3 solid;
+	border-right: 1px #e3e3e3 solid;
+	width: 171px;
+}
+
+#centro #pago-linea .pago_linea_main .servipag {
+	display: block;
+	background: url(../../img/pago_linea/servipag.gif) no-repeat;
+	width: 171px;
+	min-height: 140px;
+}
+
+* html #centro #pago-linea .pago_linea_main .servipag {
+	height: 140px;
+}
+
+#centro #pago-linea .pago_linea_main .santander {
+	display: block;
+	background: url(../../img/pago_linea/santander.gif) no-repeat;
+	width: 171px;
+	min-height: 140px;
+}
+
+* html #centro #pago-linea .pago_linea_main .santander {
+	height: 140px;
+}
+
+#centro #pago-linea .pago_linea_main .webpay {
+	display: block;
+	background: url(../../img/pago_linea/webpay.gif) no-repeat;
+	width: 171px;
+	min-height: 140px;
+}
+
+* html #centro #pago-linea .pago_linea_main .webpay {
+	height: 140px;
+}
+
+#centro #pago-linea .pago_linea_main p {
+	display: block;
+	padding: 110px 10px 10px 10px;
+	font-size: 1.1em;
+}
+
+#centro #pago-linea .pago_linea_bottom {
+	background: url(../../img/pago_linea/pago_linea_bottom.gif) no-repeat
+		bottom;
+	padding-bottom: 2px;
+}
+
+#centro #pago-linea .pago_linea_enlace {
+	padding: 0 10px 10px 10px;
+}
+
+#centro #pago-linea .pago_linea_enlace a {
+	padding: 0 20px 0 0;
+}
+
+#centro #pago-linea .pago_espacio {
+	margin-left: 14px;
+}
+
+/*-----------------------------------------------------------
+					Pago en caja
+-----------------------------------------------------------*/
+#centro #pago-caja {
+	padding: 10px 0 10px 0;
+}
+
+#centro #pago-caja .pago_caja_bloque {
+	display: block;
+	float: left;
+	padding: 0 0 20px 0;
+}
+
+#centro #pago-caja .pago_caja_enlace {
+	padding: 5px 10px 10px 0;
+}
+
+#centro #pago-caja .pago_caja_enlace a {
+	padding: 0 20px 0 0;
+}
+
+#centro #pago-caja.reposicion_pago {
+	padding: 30px 0 10px 0;
+}
+
+/*-----------------------------------------------------------
+					Pago automatico
+-----------------------------------------------------------*/
+#centro #pago-automatico {
+	padding: 10px 0 10px 0;
+}
+
+#centro #pago-automatico .pago_automatico_bloque {
+	display: block;
+	float: left;
+	width: 260px;
+}
+
+#centro #pago-automatico .pago_automatico_espacio {
+	padding: 0 20px 0 0;
+}
+
+#centro #pago-automatico-paso1 span.obligatorio {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+/* COLOR BUG FIX IE6*/
+* html #centro #menu-desplegable #bloque_estado .cuerpo .paso1.desincribirFE
+	{
+	background-color: #FFF1A8;
+	overflow: hidden;
+	border: none;
+}
+
+* html #centro #menu-desplegable #bloque_estado .cuerpo .paso1.desincribirFE div
+	{
+	background-color: #FFF1A8;
+	border: none;
+}
+
+* html #centro #menu-desplegable #bloque_estado .cuerpo .paso1.desincribirFE div.fila,* html #centro #menu-desplegable #bloque_estado .cuerpo.generalFE,* html #centro #menu-desplegable #bloque_estado .cabecera.generalFE,#menu-desplegable .bloque .nombreEmail.generalFE,#menu-desplegable div.modificar.generalFE,div#menu-desplegable div.generalFE,
+	, div#menu-desplegable div.generalFE div {
+	border: none;
+}
+
+#centro #pago-automatico-paso3 .pago_automatico_correcto {
+	background: url(../../img/pat_correcto.gif) no-repeat top left;
+	display: block;
+	float: left;
+	width: 93px;
+	min-height: 200px;
+}
+
+* html #centro #pago-automatico-paso3 .pago_automatico_correcto {
+	height: 200px;
+}
+
+#centro a.cancelar_pat {
+	display: block;
+	float: left;
+	padding: 10px 0 0 10px;
+	font-size: 1.2em;
+	color: #000000;
+}
+
+/*-----------------------------------------------------------
+					Debes saber
+-----------------------------------------------------------*/
+div#debes-saber {
+	padding: 30px 0 0 0;
+}
+
+div#debes-saber h5 {
+	
+}
+
+div#debes-saber h5 {
+	font-weight: bolder;
+}
+
+div#debes-saber div.img {
+	float: left;
+	height: 70px;
+}
+
+div#debes-saber div.contenido {
+	float: left;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	width: 440px;
+	padding: 0 0 0 20px;
+}
+
+div#debes-saber div.contenido p {
+	margin: 0 0 10px 0;
+}
+
+div#debes-saber div.contenido_bloque {
+	float: left;
+	font-size: 1.1em;
+	color: #3a3a3a;
+	width: 320px;
+	padding: 0 0 0 20px;
+}
+
+/*-----------------------------------------------------------
+					Caja amarilla
+-----------------------------------------------------------*/
+#centro div.caja_amarilla {
+	display: none;
+}
+
+#centro .alerta_amarilla {
+	background: #fff1a8;
+	border-bottom: 1px solid #cfc489;
+	border-top: 1px solid #cfc489;
+	padding: 10px 10px 10px 75px;
+	font-size: 1.2em;
+	color: #3a3a3a;
+	margin: 4px 0 20px 0;
+}
+
+#centro .alerta_amarilla_validacion {
+	padding: 10px 10px 10px 140px;
+}
+
+#centro .caja_imagen_alerta_amarilla {
+	display: block;
+	float: left;
+	background: url(../../img/ico_alerta.gif) no-repeat;
+	width: 33px;
+	height: 28px;
+}
+
+#centro .caja_texto_amarilla {
+	display: block;
+	float: left;
+	width: 250px;
+	padding: 7px 10px 0 10px;
+	font-weight: bold;
+}
+
+/*-----------------------------------------------------------
+					Caja verde
+-----------------------------------------------------------*/
+#centro div.caja {
+	padding: 10px 0 15px 10px;
+}
+
+#centro .caja_imagen_alerta {
+	display: block;
+	float: left;
+	background: url(../../img/alerta.gif) no-repeat;
+	width: 57px;
+	height: 58px;
+}
+
+#centro .caja_imagen_correcto {
+	display: block;
+	float: left;
+	background: url(../../img/correcto.gif) no-repeat;
+	width: 74px;
+	height: 39px;
+}
+
+#centro .caja_imagen_correcto_1 {
+	display: block;
+	float: left;
+	background: url(../../img/correcto_1.gif) no-repeat;
+	width: 60px;
+	height: 58px;
+}
+
+#centro .caja_imagen_en_proceso {
+	display: block;
+	float: left;
+	background: url(../../img/en_proceso.gif) no-repeat;
+	width: 58px;
+	height: 59px;
+}
+
+#centro .caja_texto {
+	display: block;
+	float: left;
+	padding-left: 10px;
+	width: 440px;
+}
+
+#centro .caja_texto_pat {
+	display: block;
+	float: left;
+	padding-left: 10px;
+	width: 180px;
+}
+
+#centro .caja_texto_pac {
+	display: block;
+	float: left;
+	padding-left: 10px;
+	width: 240px;
+}
+
+#centro .caja_verde_titulo {
+	font-size: 1.3em;
+}
+
+#centro .caja_verde_titulo_pat {
+	font-size: 1.2em;
+}
+
+#centro .caja_texto p.tipoVerde {
+	padding: 0px;
+}
+
+#centro p.tipoAlerta {
+	display: block;
+	padding: 0 0 10px 0;
+	text-align: center;
+	width: 400px;
+}
+
+#centro p.tipoAlerta_3 {
+	display: block;
+	padding: 0 0 10px 50px;
+	text-align: center;
+	width: 400px;
+}
+
+#centro span.caja_linea {
+	display: block;
+	border-bottom: 1px #bed7bc solid;
+	width: 450px;
+}
+
+#centro a.caja_verde_enlace:link,
+#centro a.caja_verde_enlace:visited {
+	color: #000000;
+}
+
+#centro a.caja_verde_enlace:hover {
+	color: #597ca4;
+}
+
+/*-----------------------------------------------------------
+					Instrucciones
+-----------------------------------------------------------*/
+#centro .instrucciones {
+	display: block;
+	padding: 10px 0 0 0;
+}
+
+#centro .instruccion_paso {
+	display: block;
+}
+
+#centro .instruccion_imagen_1 {
+	display: block;
+	float: left;
+	background: url(../../img/bullet_instruccion_1.gif) no-repeat;
+	height: 29px;
+	width: 28px;
+}
+
+#centro .instruccion_imagen_2 {
+	display: block;
+	float: left;
+	background: url(../../img/bullet_instruccion_2.gif) no-repeat;
+	height: 29px;
+	width: 28px;
+}
+
+#centro .instruccion_texto {
+	display: block;
+	float: left;
+	padding: 6px 0 0 8px;
+	font-size: 1.2em;
+}
+
+/*-----------------------------------------------------------
+					Formularios
+-----------------------------------------------------------*/
+#centro .formulario {
+	display: block;
+	padding: 20px 0 0 0;
+}
+
+#centro .formulario_pat {
+	float: left;
+	padding: 0 0 0 15px;
+}
+
+#centro .formulario_item {
+	display: block;
+	padding-bottom: 10px;
+}
+
+#centro .formulario_label {
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px;
+	padding-top: 5px;
+}
+
+#centro .formulario_label_pat {
+	width: 200px;
+	padding-top: 0px;
+}
+
+#centro .formulario_label_pat_2 {
+	font-weight: normal;
+}
+
+#centro .formulario_label_botones {
+	width: 300px;
+}
+
+#centro .formulario_label_pat_descripcion {
+	float: left;
+	font-size: 0.9em;
+	font-weight: normal;
+	padding: 0 5px 0 0;
+}
+
+#centro .formulario_input {
+	display: block;
+	float: left;
+}
+
+#centro .formulario_input_pat {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#centro .input_pat_area {
+	padding: 0 5px 0 0;
+}
+
+#centro .input_pat_telefono {
+	display: block;
+	float: left;
+}
+
+/*-----------------------------------------------------------
+						Tooltip
+-----------------------------------------------------------*/
+#centro div.contenedor_tooltip {
+	position: relative;
+}
+
+#tooltip {
+	position: absolute;
+	width: 323px;
+	top: -165px;
+	left: -24px;
+}
+
+#tooltip .tooltip_top {
+	background: url(../../img/tooltips/tooltip_top.png) no-repeat bottom;
+	height: 9px;
+}
+
+* html #tooltip .tooltip_top {
+	background: url(../../img/tooltips/tooltip_top.gif) no-repeat bottom;
+	height: 9px;
+}
+
+#tooltip .tooltip_main {
+	display: block;
+	background: url(../../img/tooltips/tooltip_main.png) repeat-y;
+	font-size: 1.1em;
+	padding: 5px 15px;
+}
+
+* html #tooltip .tooltip_main {
+	display: block;
+	background: #ebeaea;
+	font-size: 1.1em;
+	padding: 5px 15px;
+	position: relative;
+	border-left: 1px #c4c4c4 solid;
+	border-right: 1px #c4c4c4 solid;
+	width: 281px;
+	left: 5px;
+}
+
+#tooltip .tooltip_main p.tooltip_parrafo {
+	font-size: 1.0em;
+}
+
+#tooltip .tooltip_main a.tooltip_cerrar:link,
+#tooltip .tooltip_main a.tooltip_cerrar:visited {
+	background: url(../../img/tooltips/ico_x.gif) no-repeat right bottom;
+	padding: 10px 20px 0 0;
+	color: #000000;
+	display: block;
+	width: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tooltip .tooltip_bottom {
+	background: url(../../img/tooltips/tooltip_bottom.png) no-repeat top;
+	height: 17px;
+}
+
+* html #tooltip .tooltip_bottom {
+	background: url(../../img/tooltips/tooltip_bottom.gif) no-repeat bottom;
+	height: 17px;
+}
+
+/*-----------------------------------------------------------
+						Iframe
+-----------------------------------------------------------*/
+#centro #pago_iframe {
+	padding: 10px 0 20px 0;
+}
+
+#centro #pago_iframe iframe {
+	width: 540px;
+	height: 344px;
+	border: 1px #757575 solid;
+	background: #dddddd;
+}
+
+/*-----------------------------------------------------------
+					Contenido Thickbox
+-----------------------------------------------------------*/
+#TB_contenido div.TB_imagen {
+	margin: 0 0 10px 0;
+}
+
+#TB_contenido #TB_botones_cupon {
+	margin: 0 0 0 35%;
+}
+
+#TB_contenido #TB_botones_factura {
+	margin: 0 0 0 30%;
+}
+
+#TB_contenido #TB_botones {
+	margin: 0 0 0 40%;
+}
+
+#TB_contenido div.TB_botones a.TB_boton {
+	display: block;
+	float: left;
+	color: #FFFFFF;
+}
+
+#TB_contenido a.TB_cancelar {
+	display: block;
+	float: left;
+	padding: 10px 0 0 10px;
+	font-size: 1.0em;
+	color: #000000;
+}
+
+.enlace_terminos {
+	color: #3a3a3a;
+	text-decoration: none;
+}
+
+.enlace_terminos:hover {
+	text-decoration: underline;
+}
+
+.tamano-form-pat {
+	width: 400px !important;
+}
+
+.mensaje-menu-desplegable {
+	padding: 10px 0 15px 10px;
+}
+
+/*-----------------------------------------------------------
+					Autorizacion Voluntaria
+-----------------------------------------------------------*/
+#condiciones_autorizacion_fe {
+	font-size: 12px;
+}
+
+#condiciones_autorizacion_fe ol {
+	list-style: decimal outside none;
+	padding-left: 30px;
+}
+
+#texto a {
+	color: #3a3a3a;
+	text-decoration: underline;
+}
+
+#texto a:hover {
+	color:#597CA4;
+}
+
+/*-----------------------------------------------------------
+		Facturacion Electronica - Estado Inscrito
+-----------------------------------------------------------*/
+#menu-desplegable .bloque .nombreEmail {
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px 0 0 5px;
+}
+
+#menu-desplegable .bloque .botonesModificarEmail {
+	display: block;
+	float: right;
+	width: 220px;
+}
+
+#ecuentaBanner {
+	background: url('../../img/banner_ecuenta.gif') no-repeat scroll center top transparent; 
+	color: #FFFFFF; 
+	display: block; 
+	font-size: 1.2em; 
+	height: 52px; 
+	margin: 15px 0; 
+	padding: 15px 0 0;
+}
+
+#ecuentaBanner .texto {
+	margin: 0 45px;
+}
+
+#ecuentaBanner .texto p {
+	margin: -10px 0px 10px;
+}
+
+#ecuentaBanner .texto a {
+	color: #FFFFFF;
+}
+
+.facturacionFullBotonRevisa {
+	float: right;
+	position: relative;
+	left: -10px;
+	top: -20px;
+}
+
+.botonRevisa {
+	background: url("../../img/boton_naranjo_banner.png") no-repeat scroll right -33px transparent;
+	color: #FFFFFF;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	height: 33px;
+	padding-right: 15px;
+}
+
+.botonRevisa span {
+	background: url("../../img/boton_naranjo_banner.png") no-repeat scroll left top transparent;
+	cursor: pointer;
+	display: block;
+	padding: 10px 7px 8px 10px;
+}
+
+.botonRevisa:hover {
+	background-position: right -99px;
+	text-decoration: none;
+}
+
+.botonRevisa:hover span {
+	background-position: left -66px;
+	text-decoration: none;
+}
+
+* html .botonRevisa,* html .botonRevisa span,* html .botonRevisa:hover,* html .botonRevisa:hover span {
+	background-image: url("../../img/boton_naranjo_banner.gif");
+}
+
+/* fix IE7 */
+:first-child+html .facturacionFullBotonRevisa {
+	margin-top: -15px;
+}
+
+:first-child+html .botonRevisa span {
+	padding: 10px 4px 8px 10px;
+}
+
+/* fix IE6 */
+* html .facturacionFullBotonRevisa {
+	margin-top: -15px;
+}
+
+* html .botonRevisa span {
+	padding: 10px 1px 8px 10px; 
+}
+
+a.linkFacturaDetalle span{
+	font-size: 12px;
+    left: 110px;
+    position: absolute;
+    width: 120px;
+    text-decoration:underline;
+}

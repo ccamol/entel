@@ -1,0 +1,8 @@
+wsdl=http://appswls.entel.cl/ServiciosBAMEntelWSMigracionPP/WSBaseCliente?WSDL
+targetnamespace=http://com/epcs/bam/migracionpp/ws
+servicename=WSBaseClienteService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=
+password=

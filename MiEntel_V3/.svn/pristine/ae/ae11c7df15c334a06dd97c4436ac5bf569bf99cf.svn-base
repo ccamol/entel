@@ -1,0 +1,343 @@
+/*@import "../carrusel/jquery.jcarousel.css";
+@import "../home/jCarrusel.css";
+*/
+.jcarousel-control {
+ /*   margin-bottom: 0px;
+    text-align: left;
+	background-color: #0073AE;
+	width: 100px;
+	height: 20%;
+	float: left;
+	padding-left: 22px;*/
+	position: absolute; 
+	z-index: 29; 
+	left:157px; 
+	line-height:2.22em;
+	align:center;
+	
+}
+.siguiente {
+ line-height:2.22em;
+	font-size: 4;
+	margin-top: 5px;
+	background-color: #0073AE;  
+}
+.siguiente font{
+    position: absolute; 
+    z-index: 5; 
+    left: 405px;
+    line-height:2.22em;
+	font-size: 4;
+	margin-top: 5px;
+}
+.anterior {
+ 	position: absolute; 
+ 	z-index: 4; 
+ 	left: 115px;  
+ 	line-height:2.22em;
+	margin-top: 7px;
+	background-color: #0073AE;  
+}
+.mis_ofertas {
+	position: absolute; 
+	z-index: 3; 
+	left: 5px;
+    line-height:2.22em;
+	align:center;
+	margin-top: 7px;
+	background-color: #0073AE;  
+}
+.minimizar {
+ 	position: absolute; 
+ 	z-index: 6; 
+ 	left: 500px;
+ 	line-height:2.22em;
+	align:center;
+	background-color: #0073AE;  
+	padding-top: 10px;
+	
+}
+.puntos-inicio {
+	position: absolute;
+	z-index: 30; 
+	left: 350px; 
+	line-height:2.22em;
+	align:center;
+	background-color: #0073AE;  
+	padding-top: 7px;
+}
+.puntos-fin {
+	position: absolute;
+	z-index: 30; 
+	left: 190px; 
+	line-height:2.22em;
+	align:center;
+	background-color: #0073AE;
+	padding-top: 7px; 
+}
+
+.G1.linea1{
+	top: 20px;
+}
+.G1.linea2{
+	top: 45px;
+}
+.G1.linea3{
+	top: 92px;
+}
+.G1.linea4{
+	top: 105px;
+}
+.G1.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G1 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G2 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G2.linea1{
+	top: 20px;
+}
+.G2.linea2{
+	top: 45px;
+}
+.G2.linea3{
+	top: 92px;
+}
+.G2.linea4{
+	top: 105px;
+}
+.G2.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G3 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G3.linea1{
+	top: 20px;
+}
+.G3.linea2{
+	top: 45px;
+}
+.G3.linea4{
+	top: 92px;
+}
+
+.G3.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G4 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G4.linea1{
+	top: 20px;
+}
+.G4.linea2{
+	top: 45px;
+}
+.G4.linea3{
+	top: 92px;
+}
+.G4.linea4{
+	top: 105px;
+}
+.G4.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G5 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G5.linea1{
+	top: 20px;
+}
+.G5.linea2{
+	top: 45px;
+}
+.G5.linea4{
+	top: 92px;
+}
+
+.G5.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G6 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G6.linea1{
+	top: 20px;
+}
+.G6.linea2{
+	top: 45px;
+}
+.G6.linea3{
+	top: 92px;
+}
+.G6.linea4{
+	top: 105px;
+}
+.G6.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G7 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G7.linea1{
+	top: 20px;
+}
+.G7.linea2{
+	top: 45px;
+}
+.G7.linea3{
+	top: 92px;
+}
+.G7.linea4{
+	top: 105px;
+}
+.G7.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G10 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G10.linea1{
+	top: 20px;
+}
+.G10.linea2{
+	top: 45px;
+}
+.G10.linea3{
+	top: 92px;
+}
+.G10.linea4{
+	top: 105px;
+}
+.G10.linea5{
+	top: 130px;
+	left: 223px;
+}
+
+a:link   
+{   
+ text-decoration:none;   
+}   
+/*
+ * Estilos para los controles del carrusel
+ */
+.jcarousel-clip.jcarousel-clip-horizontal {
+	overflow:hidden;
+}
+.jcarousel-control {
+/*	float: left;
+
+    padding-left: 5px;
+    padding-top: 5px;
+    z-index: 29;
+	background-color: #0073AE;*/
+	    margin-top: 7px;
+}
+bannerPrincipal_home{
+margin: 0 0 10px 15px;
+}
+#bannerPrincipal_home .destacado_home{
+	display: block;
+	margin: 0 0 0 -12px;
+}* html #bannerPrincipal_home .destacado_home{
+	background: url(../img/circulo_azul.png) no-repeat 8px 13px;
+}
+
+/*
+ * Estilos para los botones controladores del destacado
+ */
+#bannerPrincipal_home a.enlace_destacado {
+	height:25px;
+	width:20px;
+	/*margin: 5px 5px 0 0;*/
+	padding:3 0 3px 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 29;
+	text-decoration: none;
+	color: white;
+	margin-left:8px;
+	background: url(../img/circulo_azul.png) no-repeat;
+	
+}* html #bannerPrincipal_home a.enlace_destacado {
+	width: 175px !important;
+	margin-left:0px !important;
+	background: url(../img/circulo_azul.png) no-repeat;
+}
+
+#bannerPrincipal_home a.enlace_seleccionado {
+	background: url(../img/circulo_blanco.png) no-repeat;
+	color: blue;
+	padding:0 0 5px 0;
+	
+}* html #bannerPrincipal_home a.enlace_seleccionado {
+	margin: 0px 3px 0px 0px;
+	background: url(../img/circulo_blanco.png) no-repeat;
+}*:first-child+html #bannerPrincipal_home a.enlace_seleccionado{
+	background: url(../img/circulo_blanco.png) no-repeat;
+}
+
+.btnNaranjaCuadrado{
+	background: #ff6702;
+	color: #FFF;
+	display: block;
+	font:bold 12px "Trebuchet ms", arial;
+	height: 23px;
+	padding-top: 7px;
+	width:125px;
+	margin-top: 8px;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	cursor:pointer;
+}
+
+.btnNaranjaCuadrado:hover{
+	background: #F37F42;
+}
+
+

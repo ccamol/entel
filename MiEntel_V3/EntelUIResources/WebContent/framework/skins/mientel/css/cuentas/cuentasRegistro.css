@@ -1,0 +1,203 @@
+/*---------------------------------
+ Template Formulario Registro
+ ----------------------------------*/
+div#centro.completo {
+    display: block;
+    float: none;
+    margin: 0;
+    width: 940px;
+    background: #FFF;
+}
+
+div#centro.completo h2 {
+    margin-top: 30px;
+}
+
+div#centro.completo h2 span, div#centro.completo h2 a {
+    float: left;
+    display: block;
+}
+
+div#centro.completo h2 a {
+    margin-top: 2px;
+}
+
+div#centro.completo h2 span.info {
+    font-size: 0.8em;
+    padding: 2px 0 0 10px;
+}
+
+div#centro h2.icono-papeles {
+    background:url(../../img/iconos/iconoPapeles.gif) 2px 2px no-repeat;
+}
+
+div#centro h2.icono-casa {
+    background: url(../../img/iconos/iconosCasa.gif) 2px 2px no-repeat;
+}
+
+div#centro h2.icono-email {
+    background: url(../../img/iconos/iconosEmail.gif) 2px 2px no-repeat;
+}
+
+div#centro h2.icono-telefono {
+    background: url(../../img/iconos/iconosTelefono.png) 2px 2px no-repeat;
+}
+
+/*---------------------------------
+ Formulario
+ ----------------------------------*/
+.registro_top {
+    position: relative;
+}
+
+div.fieldset {
+    padding: 10px 0;
+}
+
+div.fieldset div.fila-campo {
+    font-size: 1.2em;
+    display: block;
+    padding-bottom: 8px;
+}
+
+div.fieldset div.fila-campo-alt {
+    font-size: 1.2em;
+    display: block;
+    padding-bottom: 8px;
+}
+
+div.fieldset div.fila-campo label {
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+}
+
+div.fieldset div.fila-campo-alt label {
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+}
+
+div.fieldset div.fila-campo .campo {
+    float: left;
+    display: block;
+    padding-right: 11px;
+}
+
+div.fieldset div.fila-campo-alt .campo {
+    float: left;
+    display: block;
+    padding-right: 11px;
+}
+
+div.fieldset div.fila-campo .campo strong {
+    padding-top: 5px;
+    display: block;
+}
+
+div.fieldset div.fila-campo-alt .campo strong {
+    padding-top: 5px;
+    display: block;
+}
+
+div.fieldset div.fila-campo .campo.radio {
+    padding-top: 5px;
+}
+
+div.fieldset div.fila-campo-alt .campo.radio {
+    padding-top: 5px;
+}
+
+div.fieldset div.fila-campo .campo.radio input {
+    float: left;
+    display: block;
+}
+
+div.fieldset div.fila-campo-alt .campo.radio input {
+    float: left;
+    display: block;
+}
+
+div.fieldset div.fila-campo .campo.radio label {
+    width: auto;
+    display: block;
+    padding: 0 10px 0 10px;
+}* html div.fieldset div.fila-campo .campo.radio label {
+    padding-top: 3px;
+}
+
+div.fieldset div.fila-campo-alt .campo.radio label {
+    width: auto;
+    display: block;
+    padding: 0 10px 0 10px;
+}* html div.fieldset div.fila-campo-alt .campo.radio label {
+    padding-top: 3px;
+}
+
+div.fieldset div.fila-campo .subcampo label {
+    width: 180px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+div.fieldset div.fila-campo-alt .subcampo label {
+    width: 180px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+div.fieldset div.fila-campo .campo label {
+    float: left;
+    display: block;
+}
+
+div.fieldset div.fila-campo-alt .campo label {
+    float: left;
+    display: block;
+}
+
+div.fieldset div.fila-campo .campo span.ejemplo {
+    display: block;
+    padding-top: 5px;
+    color: #999;
+}
+
+div.fieldset div.fila-campo-alt .campo span.ejemplo {
+    display: block;
+    padding-top: 5px;
+    color: #999;
+}
+
+/*---------------------------------
+ Alerta Amarilla
+ ----------------------------------*/
+.alertaAmarilla {
+    background:url(../../img/iconos/iconosAlertaGrande.gif) 251px 12px no-repeat #fff1a8;
+    border-bottom: 1px solid #cfc489;
+    border-top: 1px solid #cfc489;
+    padding: 20px 20px 20px 295px;
+    font-size: 1.2em;
+}
+
+.btn_alertaAmarilla {
+    padding: 15px 0 0 365px;
+}
+
+/*---------------------------------
+ Formulario Confirmacion
+ ----------------------------------*/
+#contenedorForm.confirmacion .fila-campo label {
+    width: 220px !important;
+}
+
+#contenedorForm.confirmacion .campo strong {
+    color: #000;
+}
+
+#contenedorForm.confirmacion .btnConfirmarVolver, #contenedor.confirmacion .btnConfirmarVolver:visited {
+    color: #000;
+    font-weight: bolder;
+    margin: 12px 38px 0 0;
+    display: block;
+    text-decoration: underline;
+}

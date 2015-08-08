@@ -1,0 +1,101 @@
+.nuevaFormaMovil ul{
+	list-style:outside;
+	list-style-type:square;
+	padding-left:15px;
+}
+div#centro.completo {
+    display: block;
+    float: none;
+    margin: 0;
+    width: 940px;
+    background: #FFF;
+}
+#centro p{
+	margin:0 0 10px 0;
+}
+.tablaNuevaFormaMovil{
+	display:block;
+	margin:15px 0;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.tablaNuevaFormaMovil td{
+	padding:7px 0;
+}
+.tablaNuevaFormaMovil td.tituloAzul{
+	color:#FFFFFF;
+	font-weight:bold;
+	padding:13px 0;
+	background:#4f81bd;
+}
+.tablaNuevaFormaMovil td.tituloNaranja{
+	color:#FFFFFF;
+	font-weight:bold;
+	padding:13px 0;
+	background:#e46d0a;
+}
+.tablaNuevaFormaMovil td.fondoGris{
+	background:#f2f2f2;
+	border:1px #FFFFFF solid;
+}
+.tablaNuevaFormaMovil td.fondoNaranja{
+	background:#fde9d9;
+	border:1px #FFFFFF solid;
+}
+.tablaNuevaFormaMovil td.fondoAzul{
+	background:#dbe5f1;
+	border:1px #FFFFFF solid;
+}
+
+.btnGrisGrande{
+	background:url(../../img/botones/btn_grisGrande.png) right -38px no-repeat;
+	height:32px;
+	display:inline-block;
+	text-decoration:none!important;
+	font:bold 12px Arial;
+	color:#FFF;
+	padding-right:6px;
+}
+.btnGrisGrande span{
+	background:url(../../img/botones/btn_grisGrande.png) top left no-repeat;
+	padding:9px 1px 12px 11px;
+	display:block;
+	cursor:pointer;
+}
+.btnGrisGrande:hover{
+	text-decoration:none!important;
+	background-position:
+	right -114px;
+}
+.btnGrisGrande:hover span{
+	text-decoration:none!important;
+	background-position:left -76px;
+}
+* html .btnGrisGrande,
+* html .btnGrisGrande span,
+* html .btnGrisGrande:hover,
+* html .btnGrisGrande:hover span{
+	background-image:url(../../img/botones/btn_grisGrande.gif);
+}
+
+#caja-alternativas{
+	height: 40px;
+    margin: 30px auto auto;
+    width: 270px;
+}
+#caja-alternativas .alternativas{
+	float: left;
+    height: 40px;
+    margin-right: 30px;
+    text-align: center;
+    width: 120px;
+}
+#caja-alternativas .alternativas.ultima{margin-right:0px;}
+
+#caja-alternativas .alternativas a#cancelar-info{
+	font-size: 12px;
+    margin-top: 8px;
+    position: absolute;
+    text-decoration: underline;
+}

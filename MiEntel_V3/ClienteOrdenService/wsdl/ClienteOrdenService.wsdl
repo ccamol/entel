@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/cliente/orden" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/cliente/orden" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/cliente/orden" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/cliente/orden" xmlns:types="http://www.epcs.com/cliente/orden/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/cliente/orden/types" schemaLocation="http://10.10.20.83:7001/CLIENTES/Orden/Proxies/ClienteOrdenService?SCHEMA%2FCLIENTES%2FOrden%2FServicios%2FClienteOrdenServicesXSD"/>
+      <!-- INICIO ConsultarSaldoSGO -->
+      <xsd:element name="ConsultarSaldoSGODocument" type="types:ConsultarSaldoSGOType"/>
+      <xsd:element name="ResultadoConsultarSaldoSGODocument" type="types:ResultadoConsultarSaldoSGOType"/>
+      <!-- FIN ConsultarSaldoSGO -->
+      <!-- INICIO ConsultarEstadoReposicion -->
+      <xsd:element name="ConsultarEstadoReposicionDocument" type="types:ConsultarEstadoReposicionType"/>
+      <xsd:element name="ResultadoConsultarEstadoReposicionDocument" type="types:ResultadoConsultarEstadoReposicionType"/>
+      <!-- FIN ConsultarEstadoReposicion -->
+      <!-- INICIO ValidarReposicionServicio -->
+      <xsd:element name="ConsultarValidarReposicionDocument" type="types:ConsultarValidarReposicionType"/>
+      <xsd:element name="ResultadoValidarReposicionDocument" type="types:ResultadoValidarReposicionType"/>
+      <!-- FIN ValidarReposicionServicio -->
+      <!-- INICIO ReposicionServicioOrq -->
+      <xsd:element name="ReposicionServicioOrqDocument" type="types:ReposicionServicioOrqType"/>
+      <xsd:element name="ResultadoReposicionServicioOrqDocument" type="types:ResultadoReposicionServicioOrqType"/>
+      <!-- FIN ReposicionServicioOrq -->
+      <!-- INICIO ObtenerBolsasRegaladasSS  -->
+      <xsd:element name="ObtenerBolsasRegaladasSSDocument" type="types:ObtenerBolsasRegaladasSSType"/>
+      <xsd:element name="ResultadoObtenerBolsasRegaladasSSDocument" type="types:ResultadoObtenerBolsasRegaladasSSType"/>
+      <!-- INICIO ObtenerBolsasOneShoot  -->
+      <xsd:element name="ObtenerBolsasOneShootDocument" type="types:ObtenerBolsasOneShootType"/>
+      <xsd:element name="ResultadoObtenerBolsasOneShootDocument" type="types:ResultadoObtenerBolsasOneShootType"/>
+      <!-- INICIO  ContrataBolsaSSCC -->
+      <xsd:element name="ContrataBolsaSSCCDocument" type="types:ContrataBolsaSSCCType"/>
+      <xsd:element name="ResultadoContrataBolsaSSCCDocument" type="types:ResultadoContrataBolsaSSCCType"/>
+      <!-- INICIO 	ContrataBolsaBBerrySSCC  -->
+      <xsd:element name="ContrataBolsaBBerrySSCCDocument" type="types:ContrataBolsaBBerrySSCCType"/>
+      <xsd:element name="ResultadoContrataBolsaBBerrySSCCDocument" type="types:ResultadoContrataBolsaBBerrySSCCType"/>
+      <!-- INICIO ValidaCompraBolsaOneShootSSCC  -->
+      <xsd:element name="ValidaCompraBolsaOneShootSSCCDocument" type="types:ValidaCompraBolsaOneShootSSCCType"/>
+      <xsd:element name="ResultadoValidaCompraBolsaOneShootSSCCDocument" type="types:ResultadoValidaCompraBolsaOneShootSSCCType"/>
+      <!-- INICIO ValidarSimultaneidadBolsasCC  -->
+      <xsd:element name="ValidarSimultaneidadBolsasCCDocument" type="types:ValidarSimultaneidadBolsasCCType"/>
+      <xsd:element name="ResultadoValidarSimultaneidadBolsasCCDocument" type="types:ResultadoValidarSimultaneidadBolsasCCType"/>
+      <!-- INICIO ComprarBolsasOneShootSSCC  -->
+      <xsd:element name="ComprarBolsasOneShootSSCCDocument" type="types:ComprarBolsasOneShootSSCCType"/>
+      <xsd:element name="ResultadoComprarBolsasOneShootSSCCDocument" type="types:ResultadoComprarBolsasOneShootSSCCType"/>
+      <!-- INICIO ComprarBolsasOnShootPP  -->
+      <xsd:element name="ComprarBolsasOnShootPPDocument" type="types:ComprarBolsasOnShootPPType"/>
+      <xsd:element name="ResultadoComprarBolsasOnShootPPDocument" type="types:ResultadoComprarBolsasOnShootPPType"/>
+      <!-- INICIO AdministrarServicioSSCC  -->
+      <xsd:element name="AdministrarServicioSSCCDocument" type="types:AdministrarServicioSSCCType"/>
+      <xsd:element name="ResultadoAdministrarServicioSSCCDocument" type="types:ResultadoAdministrarServicioSSCCType"/>
+      <!-- FIN AdministrarServicioSSCC  -->
+      <!-- INICIO AdministrarServiciosTransferenciaSSCC  -->
+      <xsd:element name="AdministrarServiciosTransferenciaSSCCDocument" type="types:AdministrarServiciosTransferenciaSSCCType"/>
+      <xsd:element name="ResultadoAdministrarServiciosTransferenciaSSCCDocument" type="types:ResultadoAdministrarServiciosTransferenciaSSCCType"/>
+      <!-- FIN AdministrarServiciosTransferenciaSSCC  -->
+      <!-- INICIO AdministrarServiciosOrqSSCC  -->
+      <xsd:element name="AdministrarServiciosOrqSSCCDocument" type="types:AdministrarServiciosOrqSSCCType"/>
+      <xsd:element name="ResultadoAdministrarServiciosOrqSSCCDocument" type="types:ResultadoAdministrarServiciosOrqSSCCType"/>
+      <!-- FIN AdministrarServiciosOrqSSCC  -->
+      <!-- INICIO AdministrarServiciosIVR  -->
+      <xsd:element name="AdministrarServiciosIVRDocument" type="types:AdministrarServiciosIVRType"/>
+      <xsd:element name="ResultadoAdministrarServiciosIVRDocument" type="types:ResultadoAdministrarServiciosIVRType"/>
+      <!-- FIN AdministrarServiciosIVR  -->
+      <!-- INICIO ObtenerMWI  -->
+      <xsd:element name="ObtenerMWIDocument" type="types:ObtenerMWIType"/>
+      <xsd:element name="ResultadoObtenerMWIDocument" type="types:ResultadoObtenerMWIType"/>
+      <!-- FIN ObtenerMWI  -->
+      <!-- INICIO AdministrarServiciosBuzon  -->
+      <xsd:element name="AdministrarServiciosBuzonDocument" type="types:AdministrarServiciosBuzonType"/>
+      <xsd:element name="ResultadoAdministrarServiciosBuzonDocument" type="types:ResultadoAdministrarServiciosBuzonType"/>
+      <!-- FIN AdministrarServiciosBuzon  -->
+      <!-- INICIO AdministrarServiciosBuzonOrq  -->
+      <xsd:element name="AdministrarServiciosBuzonOrqDocument" type="types:AdministrarServiciosBuzonOrqType"/>
+      <xsd:element name="ResultadoAdministrarServiciosBuzonOrqDocument" type="types:ResultadoAdministrarServiciosBuzonOrqType"/>
+      <!-- FIN AdministrarServiciosBuzonOrq  -->
+      <!-- INICIO AdministrarServicioAvisale  -->
+      <xsd:element name="AdministrarServicioAvisaleDocument" type="types:AdministrarServicioAvisaleType"/>
+      <xsd:element name="ResultadoAdministrarServicioAvisaleDocument" type="types:ResultadoAdministrarServicioAvisaleType"/>
+      <!-- FIN AdministrarServicioAvisale  -->
+      <!-- INICIO ModificarListaMsisdnAvisale  -->
+      <xsd:element name="ModificarListaMsisdnAvisaleDocument" type="types:ModificarListaMsisdnAvisaleType"/>
+      <xsd:element name="ResultadoModificarListaMsisdnAvisaleDocument" type="types:ResultadoModificarListaMsisdnAvisaleType"/>
+      <!-- FIN ModificarListaMsisdnAvisale  -->
+      <!-- INICIO AdministrarServicioAvisaleOrq  -->
+      <xsd:element name="AdministrarServicioAvisaleOrqDocument" type="types:AdministrarServicioAvisaleOrqType"/>
+      <xsd:element name="ResultadoAdministrarServicioAvisaleOrqDocument" type="types:ResultadoAdministrarServicioAvisaleOrqType"/>
+      <!-- FIN AdministrarServicioAvisaleOrq  -->
+      <!-- INICIO AdministrarServiciosIVRPP  -->
+      <xsd:element name="AdministrarServiciosIVRPPDocument" type="types:AdministrarServiciosIVRPPType"/>
+      <xsd:element name="ResultadoAdministrarServiciosIVRPPDocument" type="types:ResultadoAdministrarServiciosIVRPPType"/>
+      <!-- FIN AdministrarServiciosIVRPP  -->
+      <!-- INICIO AdministrarServiciosWAP  -->
+      <xsd:element name="AdministrarServiciosWAPDocument" type="types:AdministrarServiciosWAPType"/>
+      <xsd:element name="ResultadoAdministrarServiciosWAPDocument" type="types:ResultadoAdministrarServiciosWAPType"/>
+      <!-- FIN AdministrarServiciosWAP  -->
+      <!-- INICIO AdministrarServiciosMMSGPRS  -->
+      <xsd:element name="AdministrarServiciosMMSGPRSDocument" type="types:AdministrarServiciosMMSGPRSType"/>
+      <xsd:element name="ResultadoAdministrarServiciosMMSGPRSDocument" type="types:ResultadoAdministrarServiciosMMSGPRSType"/>
+      <!-- FIN AdministrarServiciosMMSGPRS  -->
+      <!-- INICIO AdministracionServiciosDatosPP  -->
+      <xsd:element name="AdministracionServiciosDatosPPDocument" type="types:AdministracionServiciosDatosPPType"/>
+      <xsd:element name="ResultadoAdministracionServiciosDatosPPDocument" type="types:ResultadoAdministracionServiciosDatosPPType"/>
+      <!-- FIN AdministracionServiciosDatosPP  -->
+      <!-- INICIO AdministrarAvisoVencFactura  -->
+      <xsd:element name="AdministrarAvisoVencFacturaDocument" type="types:AdministrarAvisoVencFacturaType"/>
+      <xsd:element name="ResultadoAdministrarAvisoVencFacturaDocument" type="types:ResultadoAdministrarAvisoVencFacturaType"/>
+      <!-- FIN AdministrarAvisoVencFactura  -->
+      <!-- INICIO AdministracionAvisoVencFacturaTransferencia  -->
+      <xsd:element name="AdministracionAvisoVencFacturaTransferenciaDocument" type="types:AdministracionAvisoVencFacturaTransferenciaType"/>
+      <xsd:element name="ResultadoAdministracionAvisoVencFacturaTransferenciaDocument" type="types:ResultadoAdministracionAvisoVencFacturaTransferenciaType"/>
+      <!-- FIN AdministracionAvisoVencFacturaTransferencia  -->
+      <!-- INICIO AdministrarAvisoVencFacturaOrq  -->
+      <xsd:element name="AdministrarAvisoVencFacturaOrqDocument" type="types:AdministrarAvisoVencFacturaOrqType"/>
+      <xsd:element name="ResultadoAdministrarAvisoVencFacturaOrqDocument" type="types:ResultadoAdministrarAvisoVencFacturaOrqType"/>
+      <!-- FIN AdministrarAvisoVencFacturaOrq  -->
+      <!-- INICIO AdministrarCobroRevertido  -->
+      <xsd:element name="AdministrarCobroRevertidoDocument" type="types:AdministrarCobroRevertidoType"/>
+      <xsd:element name="ResultadoAdministrarCobroRevertidoDocument" type="types:ResultadoAdministrarCobroRevertidoType"/>
+      <!-- FIN AdministrarCobroRevertido  -->
+      <!-- INICIO AdministrarRecepcionCobroRevertido  -->
+      <xsd:element name="AdministrarRecepcionCobroRevertidoDocument" type="types:AdministrarRecepcionCobroRevertidoType"/>
+      <xsd:element name="ResultadoAdministrarRecepcionCobroRevertidoDocument" type="types:ResultadoAdministrarRecepcionCobroRevertidoType"/>
+      <!-- FIN AdministrarRecepcionCobroRevertido  -->
+      <!-- INICIO ComprarBolsaBAMPP  -->
+      <xsd:element name="ComprarBolsaBAMPPDocument" type="types:ComprarBolsaBAMPPType"/>
+      <xsd:element name="ResultadoComprarBolsaBAMPPDocument" type="types:ResultadoComprarBolsaBAMPPType"/>
+      <!-- FIN ComprarBolsaBAMPP  -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultarEstadoReposicionMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEstadoReposicionDocument" name="ConsultarEstadoReposicion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarEstadoReposicionMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEstadoReposicionDocument" name="ResultadoConsultarEstadoReposicion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarValidarReposicionMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarValidarReposicionDocument" name="ConsultarValidarReposicion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarReposicionMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarReposicionDocument" name="ResultadoValidarReposicion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ReposicionServicioOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:ReposicionServicioOrqDocument" name="ReposicionServicioOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoReposicionServicioOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoReposicionServicioOrqDocument" name="ResultadoReposicionServicioOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarSaldoSGOMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarSaldoSGODocument" name="ConsultarSaldoSGO"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarSaldoSGOMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarSaldoSGODocument" name="ResultadoConsultarSaldoSGO"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerBolsasRegaladasSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerBolsasRegaladasSSDocument" name="ObtenerBolsasRegaladasSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerBolsasRegaladasSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerBolsasRegaladasSSDocument" name="ResultadoObtenerBolsasRegaladasSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerBolsasOneShootMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerBolsasOneShootDocument" name="ObtenerBolsasOneShoot"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerBolsasOneShootMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerBolsasOneShootDocument" name="ResultadoObtenerBolsasOneShoot"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ContrataBolsaSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ContrataBolsaSSCCDocument" name="ContrataBolsaSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoContrataBolsaSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoContrataBolsaSSCCDocument" name="ResultadoContrataBolsaSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ContrataBolsaBBerrySSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ContrataBolsaBBerrySSCCDocument" name="ContrataBolsaBBerrySSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoContrataBolsaBBerrySSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoContrataBolsaBBerrySSCCDocument" name="ResultadoContrataBolsaBBerrySSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidaCompraBolsaOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidaCompraBolsaOneShootSSCCDocument" name="ValidaCompraBolsaOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidaCompraBolsaOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidaCompraBolsaOneShootSSCCDocument" name="ResultadoValidaCompraBolsaOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarSimultaneidadBolsasCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarSimultaneidadBolsasCCDocument" name="ValidarSimultaneidadBolsasCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarSimultaneidadBolsasCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarSimultaneidadBolsasCCDocument" name="ResultadoValidarSimultaneidadBolsasCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ComprarBolsasOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ComprarBolsasOneShootSSCCDocument" name="ComprarBolsasOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoComprarBolsasOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoComprarBolsasOneShootSSCCDocument" name="ResultadoComprarBolsasOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ComprarBolsasOnShootPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ComprarBolsasOnShootPPDocument" name="ComprarBolsasOnShootPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoComprarBolsasOnShootPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoComprarBolsasOnShootPPDocument" name="ResultadoComprarBolsasOnShootPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServicioSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServicioSSCCDocument" name="AdministrarServicioSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServicioSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServicioSSCCDocument" name="ResultadoAdministrarServicioSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosTransferenciaSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosTransferenciaSSCCDocument" name="AdministrarServiciosTransferenciaSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosTransferenciaSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosTransferenciaSSCCDocument" name="ResultadoAdministrarServiciosTransferenciaSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarCobroRevertidoMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarCobroRevertidoDocument" name="AdministrarCobroRevertido"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarCobroRevertidoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarCobroRevertidoDocument" name="ResultadoAdministrarCobroRevertido"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosOrqSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosOrqSSCCDocument" name="AdministrarServiciosOrqSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosOrqSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosOrqSSCCDocument" name="ResultadoAdministrarServiciosOrqSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosIVRMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosIVRDocument" name="AdministrarServiciosIVR"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosIVRMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosIVRDocument" name="ResultadoAdministrarServiciosIVR"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerMWIMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerMWIDocument" name="ObtenerMWI"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerMWIMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerMWIDocument" name="ResultadoObtenerMWI"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosBuzonMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosBuzonDocument" name="AdministrarServiciosBuzon"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosBuzonMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosBuzonDocument" name="ResultadoAdministrarServiciosBuzon"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosBuzonOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosBuzonOrqDocument" name="AdministrarServiciosBuzonOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosBuzonOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosBuzonOrqDocument" name="ResultadoAdministrarServiciosBuzonOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServicioAvisaleMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServicioAvisaleDocument" name="AdministrarServicioAvisale"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServicioAvisaleMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServicioAvisaleDocument" name="ResultadoAdministrarServicioAvisale"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ModificarListaMsisdnAvisaleMessage">
+    <WL5G3N0:part element="WL5G3N1:ModificarListaMsisdnAvisaleDocument" name="ModificarListaMsisdnAvisale"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoModificarListaMsisdnAvisaleMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoModificarListaMsisdnAvisaleDocument" name="ResultadoModificarListaMsisdnAvisale"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServicioAvisaleOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServicioAvisaleOrqDocument" name="AdministrarServicioAvisaleOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServicioAvisaleOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServicioAvisaleOrqDocument" name="ResultadoAdministrarServicioAvisaleOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosIVRPPMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosIVRPPDocument" name="AdministrarServiciosIVRPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosIVRPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosIVRPPDocument" name="ResultadoAdministrarServiciosIVRPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosWAPMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosWAPDocument" name="AdministrarServiciosWAP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosWAPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosWAPDocument" name="ResultadoAdministrarServiciosWAP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarServiciosMMSGPRSMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarServiciosMMSGPRSDocument" name="AdministrarServiciosMMSGPRS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarServiciosMMSGPRSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarServiciosMMSGPRSDocument" name="ResultadoAdministrarServiciosMMSGPRS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministracionServiciosDatosPPMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministracionServiciosDatosPPDocument" name="AdministracionServiciosDatosPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministracionServiciosDatosPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministracionServiciosDatosPPDocument" name="ResultadoAdministracionServiciosDatosPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarAvisoVencFacturaMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarAvisoVencFacturaDocument" name="AdministrarAvisoVencFactura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarAvisoVencFacturaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarAvisoVencFacturaDocument" name="ResultadoAdministrarAvisoVencFactura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministracionAvisoVencFacturaTransferenciaMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministracionAvisoVencFacturaTransferenciaDocument" name="AdministracionAvisoVencFacturaTransferencia"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministracionAvisoVencFacturaTransferenciaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministracionAvisoVencFacturaTransferenciaDocument" name="ResultadoAdministracionAvisoVencFacturaTransferencia"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarAvisoVencFacturaOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarAvisoVencFacturaOrqDocument" name="AdministrarAvisoVencFacturaOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarAvisoVencFacturaOrqMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarAvisoVencFacturaOrqDocument" name="ResultadoAdministrarAvisoVencFacturaOrq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministrarRecepcionCobroRevertidoMessage">
+    <WL5G3N0:part element="WL5G3N1:AdministrarRecepcionCobroRevertidoDocument" name="AdministrarRecepcionCobroRevertido"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoAdministrarRecepcionCobroRevertidoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoAdministrarRecepcionCobroRevertidoDocument" name="ResultadoAdministrarRecepcionCobroRevertido"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ComprarBolsaBAMPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ComprarBolsaBAMPPDocument" name="ComprarBolsaBAMPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoComprarBolsaBAMPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoComprarBolsaBAMPPDocument" name="ResultadoComprarBolsaBAMPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ClienteOrdenService">
+    <WL5G3N0:operation name="ConsultarEstadoReposicion">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEstadoReposicionMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEstadoReposicionMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarReposicion">
+      <WL5G3N0:input message="WL5G3N1:ConsultarValidarReposicionMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarReposicionMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ReposicionServicioOrq">
+      <WL5G3N0:input message="WL5G3N1:ReposicionServicioOrqMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoReposicionServicioOrqMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasRegaladasSS">
+      <WL5G3N0:input message="WL5G3N1:ObtenerBolsasRegaladasSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerBolsasRegaladasSSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasOneShoot">
+      <WL5G3N0:input message="WL5G3N1:ObtenerBolsasOneShootMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerBolsasOneShootMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaSSCC">
+      <WL5G3N0:input message="WL5G3N1:ContrataBolsaSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoContrataBolsaSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaBBerrySSCC">
+      <WL5G3N0:input message="WL5G3N1:ContrataBolsaBBerrySSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoContrataBolsaBBerrySSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidaCompraBolsaOneShootSSCC">
+      <WL5G3N0:input message="WL5G3N1:ValidaCompraBolsaOneShootSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidaCompraBolsaOneShootSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarSimultaneidadBolsasCC">
+      <WL5G3N0:input message="WL5G3N1:ValidarSimultaneidadBolsasCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarSimultaneidadBolsasCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOneShootSSCC">
+      <WL5G3N0:input message="WL5G3N1:ComprarBolsasOneShootSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoComprarBolsasOneShootSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOnShootPP">
+      <WL5G3N0:input message="WL5G3N1:ComprarBolsasOnShootPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoComprarBolsasOnShootPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServicioSSCC">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServicioSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServicioSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosTransferenciaSSCC">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosTransferenciaSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosTransferenciaSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosOrqSSCC">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosOrqSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosOrqSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosIVR">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosIVRMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosIVRMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerMWI">
+      <WL5G3N0:input message="WL5G3N1:ObtenerMWIMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerMWIMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosBuzon">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosBuzonMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosBuzonMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosBuzonOrq">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosBuzonOrqMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosBuzonOrqMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServicioAvisale">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServicioAvisaleMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServicioAvisaleMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ModificarListaMsisdnAvisale">
+      <WL5G3N0:input message="WL5G3N1:ModificarListaMsisdnAvisaleMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoModificarListaMsisdnAvisaleMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServicioAvisaleOrq">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServicioAvisaleOrqMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServicioAvisaleOrqMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosIVRPP">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosIVRPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosIVRPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosWAP">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosWAPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosWAPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosMMSGPRS">
+      <WL5G3N0:input message="WL5G3N1:AdministrarServiciosMMSGPRSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarServiciosMMSGPRSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministracionServiciosDatosPP">
+      <WL5G3N0:input message="WL5G3N1:AdministracionServiciosDatosPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministracionServiciosDatosPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarAvisoVencFactura">
+      <WL5G3N0:input message="WL5G3N1:AdministrarAvisoVencFacturaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarAvisoVencFacturaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministracionAvisoVencFacturaTransferencia">
+      <WL5G3N0:input message="WL5G3N1:AdministracionAvisoVencFacturaTransferenciaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministracionAvisoVencFacturaTransferenciaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarAvisoVencFacturaOrq">
+      <WL5G3N0:input message="WL5G3N1:AdministrarAvisoVencFacturaOrqMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarAvisoVencFacturaOrqMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarCobroRevertido">
+      <WL5G3N0:input message="WL5G3N1:AdministrarCobroRevertidoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarCobroRevertidoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarRecepcionCobroRevertido">
+      <WL5G3N0:input message="WL5G3N1:AdministrarRecepcionCobroRevertidoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoAdministrarRecepcionCobroRevertidoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsaBAMPP">
+      <WL5G3N0:input message="WL5G3N1:ComprarBolsaBAMPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoComprarBolsaBAMPPMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSaldoSGO">
+      <WL5G3N0:input message="WL5G3N1:ConsultarSaldoSGOMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarSaldoSGOMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ClienteOrdenServicePortBinding" type="WL5G3N1:ClienteOrdenService">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarEstadoReposicion">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ConsultarEstadoReposicion"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarReposicion">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ValidarReposicion"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarSaldoSGO">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ConsultarSaldoSGO"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ReposicionServicioOrq">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ReposicionServicioOrq"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasRegaladasSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ObtenerBolsasRegaladasSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasOneShoot">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ObtenerBolsasOneShoot"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ContrataBolsaSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaBBerrySSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ContrataBolsaBBerrySSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidaCompraBolsaOneShootSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ValidaCompraBolsaOneShootSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarSimultaneidadBolsasCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ValidarSimultaneidadBolsasCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOneShootSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ComprarBolsasOneShootSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOnShootPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ComprarBolsasOnShootPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServicioSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServicioSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosTransferenciaSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosTransferenciaSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosOrqSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosOrqSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosIVR">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosIVR"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerMWI">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ObtenerMWI"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosBuzon">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosBuzon"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosBuzonOrq">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosBuzonOrq"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServicioAvisale">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServicioAvisale"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ModificarListaMsisdnAvisale">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ModificarListaMsisdnAvisale"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServicioAvisaleOrq">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServicioAvisaleOrq"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosIVRPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosIVRPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosWAP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosWAP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarServiciosMMSGPRS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarServiciosMMSGPRS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministracionServiciosDatosPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministracionServiciosDatosPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarAvisoVencFactura">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarAvisoVencFactura"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministracionAvisoVencFacturaTransferencia">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministracionAvisoVencFacturaTransferencia"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarAvisoVencFacturaOrq">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarAvisoVencFacturaOrq"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarCobroRevertido">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarCobroRevertido"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="AdministrarRecepcionCobroRevertido">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/AdministrarRecepcionCobroRevertido"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsaBAMPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/orden/ComprarBolsaBAMPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ClienteOrdenService">
+    <WL5G3N0:port binding="WL5G3N1:ClienteOrdenServicePortBinding" name="ClienteOrdenServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/CLIENTES/Orden/Proxies/ClienteOrdenService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

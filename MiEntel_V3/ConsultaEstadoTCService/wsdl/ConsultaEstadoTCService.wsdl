@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="consultaEstadoTCService" targetNamespace="http://www.epcs.com/Loyalty/zonaTerceros/WSLoyalty" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/Loyalty/zonaTerceros/WSLoyalty" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/Loyalty/zonaTerceros/WSLoyalty" version="1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/Loyalty/zonaTerceros/WSLoyalty" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="consultaDatosNoCliente" type="tns:consultaDatosNoCliente"/>
+      <xsd:element name="consultaDatosNoClienteResponse" type="tns:consultaDatosNoClienteResponse"/>
+      <xsd:element name="consultaEstadoTCMovil" type="tns:consultaEstadoTCMovil"/>
+      <xsd:element name="consultaEstadoTCMovilResponse" type="tns:consultaEstadoTCMovilResponse"/>
+      <xsd:element name="consultaEstadoTCRut" type="tns:consultaEstadoTCRut"/>
+      <xsd:element name="consultaEstadoTCRutMovil" type="tns:consultaEstadoTCRutMovil"/>
+      <xsd:element name="consultaEstadoTCRutMovilResponse" type="tns:consultaEstadoTCRutMovilResponse"/>
+      <xsd:element name="consultaEstadoTCRutResponse" type="tns:consultaEstadoTCRutResponse"/>
+      <xsd:complexType name="consultaEstadoTCRut">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Rut" type="xs:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaEstadoTCRutResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="tns:estadotarjetadto"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="estadotarjetadto">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="estado" type="xs:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaEstadoTCMovil">
+        <xsd:sequence>
+          <xsd:element name="Movil" type="xs:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaEstadoTCMovilResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="tns:estadotarjetadto"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaDatosNoCliente">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Rut" type="xs:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaDatosNoClienteResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="tns:datosnocliente"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="datosnocliente">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="apellidos" type="xs:string"/>
+          <xsd:element minOccurs="0" name="email" type="xs:string"/>
+          <xsd:element minOccurs="0" name="estadoTarjeta" type="xs:string"/>
+          <xsd:element minOccurs="0" name="fechaActivacion" type="xs:string"/>
+          <xsd:element minOccurs="0" name="fechaNacimiento" type="xs:string"/>
+          <xsd:element minOccurs="0" name="nombres" type="xs:string"/>
+          <xsd:element minOccurs="0" name="puntosAcumulados" type="xs:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaEstadoTCRutMovil">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Rut" type="xs:string"/>
+          <xsd:element name="Movil" type="xs:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="consultaEstadoTCRutMovilResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="tns:estadotarjetadto"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="consultaEstadoTCRut">
+    <WL5G3N0:part element="WL5G3N1:consultaEstadoTCRut" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaEstadoTCRutResponse">
+    <WL5G3N0:part element="WL5G3N1:consultaEstadoTCRutResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaEstadoTCMovil">
+    <WL5G3N0:part element="WL5G3N1:consultaEstadoTCMovil" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaEstadoTCMovilResponse">
+    <WL5G3N0:part element="WL5G3N1:consultaEstadoTCMovilResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaEstadoTCRutMovil">
+    <WL5G3N0:part element="WL5G3N1:consultaEstadoTCRutMovil" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaEstadoTCRutMovilResponse">
+    <WL5G3N0:part element="WL5G3N1:consultaEstadoTCRutMovilResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaDatosNoCliente">
+    <WL5G3N0:part element="WL5G3N1:consultaDatosNoCliente" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultaDatosNoClienteResponse">
+    <WL5G3N0:part element="WL5G3N1:consultaDatosNoClienteResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="servicio">
+    <WL5G3N0:operation name="consultaEstadoTCRut">
+      <WL5G3N0:input message="WL5G3N1:consultaEstadoTCRut"/>
+      <WL5G3N0:output message="WL5G3N1:consultaEstadoTCRutResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaEstadoTCMovil">
+      <WL5G3N0:input message="WL5G3N1:consultaEstadoTCMovil"/>
+      <WL5G3N0:output message="WL5G3N1:consultaEstadoTCMovilResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaEstadoTCRutMovil">
+      <WL5G3N0:input message="WL5G3N1:consultaEstadoTCRutMovil"/>
+      <WL5G3N0:output message="WL5G3N1:consultaEstadoTCRutMovilResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaDatosNoCliente">
+      <WL5G3N0:input message="WL5G3N1:consultaDatosNoCliente"/>
+      <WL5G3N0:output message="WL5G3N1:consultaDatosNoClienteResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="servicioPortBinding" type="WL5G3N1:servicio">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="consultaEstadoTCRut">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaEstadoTCMovil">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaEstadoTCRutMovil">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="consultaDatosNoCliente">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="consultaEstadoTCService">
+    <WL5G3N0:port binding="WL5G3N1:servicioPortBinding" name="servicioPort">
+      <WL5G3N2:address location="http://esb.entel.cl:80/Loyalty/zonaTerceros/proxies/PSConsultaEstado"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,9 @@
+#wsdl=http://appswlstest.entel.cl/BillingRegUsoConsultaTraf/serviciotraficoppccService?wsdl
+wsdl=http://appswls.entel.cl:80/BillingRegUsoConsultaTraf/serviciotraficoppccService?wsdl
+targetnamespace=http://www.epcs.com/Billing/GestRegistroUso/ConsultaTraficoPPyCC
+servicename=serviciotraficoppccService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

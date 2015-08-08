@@ -1,0 +1,10 @@
+wsdl=http://esb.entel.cl:80/clientes/perfiles/saldocongeladops?WSDL
+#wsdl=http://esbpre.entel.cl:80/clientes/perfiles/saldocongeladops?WSDL
+#wsdl=http://localhost:8080/clientes/perfiles/saldocongeladops?WSDL
+targetnamespace=http://www.epcs.com/cliente/perfilSaldoCongelado/SaldoCongeladoService
+servicename=SaldoCongeladoService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

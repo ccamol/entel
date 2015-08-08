@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/BILLING/ProdFactura/Proxies/BillingProdFacturaService?WSDL
+targetnamespace=http://www.epcs.com/billing/prodfactura
+servicename=BillingProdFacturaService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

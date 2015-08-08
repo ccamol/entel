@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+
+WebLogic 10 MP2: Iterative Development of WebLogic Web Services Starting From a WSDL File: Main Steps 
+http://download.oracle.com/docs/cd/E13222_01/wls/docs100/webserv/setenv.html#IterativeDevelopment_wsdl
+
+-->
+
+
+<project name="webservices" basedir=".">
+	
+
+	
+  <!-- set global properties for this build -->
+
+  <property name="wls.username" value="weblogic" />
+  <property name="wls.password" value="weblogic" />
+  <property name="wls.hostname" value="localhost" />
+  <property name="wls.port" value="7001" />
+  <property name="wls.server.name" value="AdminServer" />
+
+	
+  
+  <property name="base"   value="." />
+  
+  <!-- build.properties -->
+  <property file="${base}/build.properties"/>
+	
+  <!-- estructura de directorios -->
+  <property name="servicio.dist"   value="${base}/dist" />
+  <property name="servicio.src"    value="${base}/src" />
+  <property name="servicio.srcgen" value="${base}/srcgen" />
+  <property name="servicio.wsdl"   value="${base}/wsdl" />
+  <property name="servicio.build"  value="${base}/build/${ear.name}" />
+ 
+  <property name="cliente.build"   value="${base}/build/client" />
+  <property name="cliente.dist"    value="${base}/dist" />
+  
+
+	
+  <!-- adicionales, derivadas de build.properties -->
+	
+  <property name="servicio.webapp.name" value="${wsdl.service.name}Impl" />
+  <property name="jwsc.jws.compiledWsdl" value="${wsdl.service.name}_wsdl.jar" />
+  <property name="servicio.webapp.src"  value="${servicio.src}/${ear.name}/${servicio.webapp.name}/WEB-INF/src" />
+  <!-- <property name="servicio.webapp.lib"  value="${servicio.src}/${ear.name}/${servicio.webapp.name}/WEB-INF/lib" /> -->
+  <property name="wsdl.src" value="${servicio.wsdl}/${wsdl.file}" />
+
+  <!-- 
+  
+  WebLogic 10 MP2: Ant Task Reference 
+  
+  http://download.oracle.com/docs/cd/E13222_01/wls/docs100/webserv_ref/anttasks.html#wp1075710
+  
+  Agregar weblogic.jar al classpath
+  
+  -->
+  <property name="wls.lib"
+		location="C:\bea_10.3\wlserver_10.3\server\lib\weblogic.jar" />
+  <taskdef name="wsdlc" classpath="${wls.lib}" classname="weblogic.wsee.tools.anttasks.WsdlcTask"/>
+  <taskdef name="jwsc" classpath="${wls.lib}" classname="weblogic.wsee.tools.anttasks.JwscTask" />
+  <taskdef name="clientgen" classpath="${wls.lib}" classname="weblogic.wsee.tools.anttasks.ClientGenTask" />
+  <taskdef name="wldeploy" classpath="${wls.lib}" classname="weblogic.ant.taskdefs.management.WLDeploy"/>
+  <taskdef name="wlpackage" classpath="${wls.lib}" classname="weblogic.ant.taskdefs.build.WLPackageTask"/>
+  
+
+ <!-- 
+  <target name="all" depends="clean,generate-from-wsdl,build-service,deploy,client" />
+ -->
+
+  <target name="prepare" description="crea directorios temporales usados en la generacion">
+    <mkdir dir="${servicio.srcgen}"/>
+    <mkdir dir="${servicio.build}"/>
+    <mkdir dir="${servicio.dist}"/>
+    <mkdir dir="${cliente.build}"/>
+  </target>
+
+  <target name="clean" description="borra directorios temporales usados en la generacion">
+    <delete dir="${servicio.srcgen}"/>
+    <delete dir="${servicio.build}"/>
+    <delete dir="${servicio.dist}"/>
+    <delete dir="${cliente.build}"/>
+  </target>
+
+  <target name="wsdlc" description="crea la implementacion java a partir del wsdl">
+  	
+    <!-- wsdlc mover a build.properties-->	
+    <property name="wsdlc.type" value="JAXWS" />
+    <property name="wsdlc.explode" value="false" />
+    <property name="wsdlc.verbose" value="true" />
+  	
+  	
+    <wsdlc
+        srcWsdl="${wsdl.src}"
+        destJwsDir="${servicio.srcgen}"
+        destImplDir="${servicio.webapp.src}"
+        type="${wsdlc.type}"
+    	explode="${wsdlc.explode}"
+        verbose="${wsdlc.verbose}" />
+
+  </target>
+
+  <target name="jwsc" description="compila la implementacion del servicio">
+  
+  	<property name="jwsc.keepGenerated" value="no" />
+  	<property name="jwsc.jws.type" value="JAXWS" />
+  	<property name="jwsc.jws.explode" value="false" />
+  	
+  	<!-- <property name="servicio.build.webapp" value="${servicio.build}/${servicio.webapp.name}" /> -->
+  
+    <jwsc
+        srcdir="${servicio.webapp.src}"
+        destdir="${servicio.build}"
+    	keepGenerated="${jwsc.keepGenerated}" >
+
+      <jws file="${jwsc.jws.file}"
+           compiledWsdl="${servicio.srcgen}/${jwsc.jws.compiledWsdl}"
+           contextPath="${jwsc.jws.contextPath}" 
+           type="${jwsc.jws.type}" explode="${jwsc.jws.explode}" />
+    </jwsc>
+  
+  	<!--
+    <copy todir="${servicio.build.webapp}/${servicio.webapp.uri}/${servicio.webapp.name}/WEB-INF/lib">
+      <fileset dir="${servicio.webapp.lib}" includes="*.jar"/>
+    </copy>
+  	
+	<war destfile="${servicio.build.webapp}.war" 
+		webxml="${servicio.build.webapp}/${servicio.webapp.uri}/${servicio.webapp.name}/WEB-INF/web.xml">
+	  <zipfileset dir="${servicio.build.webapp}/${servicio.webapp.uri}/${servicio.webapp.name}/WEB-INF"
+	  	prefix="WEB-INF"/>	
+	  <zipfileset dir="${servicio.build.webapp}/${servicio.webapp.uri}/${servicio.webapp.name}/wsdls"
+	    prefix="wsdls"/>
+	</war>
+  	
+  	<mkdir dir="${servicio.build}/${ear.name}" />
+  	<mkdir dir="${servicio.build}/${ear.name}/META-INF" />
+  	
+    <copy todir="${servicio.build}/${ear.name}/META-INF">
+      <fileset dir="${servicio.build.webapp}/META-INF" includes="*.xml"/>
+    </copy>
+  	
+  	<mkdir dir="${servicio.build}/${ear.name}/${servicio.webapp.uri}" />
+    <copy todir="${servicio.build}/${ear.name}/${servicio.webapp.uri}">
+      <fileset dir="${servicio.build}" includes="*.war"/>
+    </copy>
+  	-->
+  	
+  </target>
+
+
+<target name="dist" description="empaqueta el servicio en un ear">
+
+    <wlpackage 
+      toFile="${servicio.dist}/${ear.name}.ear" 
+      srcdir="${servicio.build}"
+      destdir="${servicio.dist}" />
+
+</target>
+
+ <target name="deploy">
+    <wldeploy 
+       action="deploy" 
+       source="${servicio.dist}/${ear.name}.ear" 
+       name="${ear.name}"
+       user="${wls.username}"
+       password="${wls.password}" 
+       verbose="true"
+       adminurl="t3://${wls.hostname}:${wls.port}"
+       targets="${wls.server.name}" />
+ </target>
+
+  <target name="undeploy">
+    <wldeploy action="undeploy" name="${ear.name}"
+      failonerror="false"
+      user="${wls.username}" password="${wls.password}" verbose="true"
+      adminurl="t3://${wls.hostname}:${wls.port}"
+      targets="${wls.server.name}" />
+  </target>
+
+  <target name="client" description="genera la libreria de la impl. cliente del servicio">
+	
+	<property name="clientgen.type" value="JAXWS" />
+	
+    <clientgen
+      wsdl="${wsdl.src}"
+      destDir="${cliente.build}"
+      type="${clientgen.type}" />
+  	
+  	<delete dir="${cliente.build}/" >
+  		<include name="**/*.java"/>
+  	</delete>
+
+  	<jar destfile="${servicio.dist}/${ear.name}-client.jar" 
+  		basedir="${cliente.build}"/>
+
+<!-- 
+    <javac
+      srcdir="${clientclass-dir}" destdir="${clientclass-dir}"
+      includes="**/*.java"/>
+
+    <javac
+      srcdir="src" destdir="${clientclass-dir}"
+      includes="examples/webservices/wsdlc/client/**/*.java"/>
+-->
+
+  </target>
+  
+  
+<!-- 
+  <target name="run">
+    <java classname="examples.webservices.wsdlc.client.TemperatureClient" 
+         fork="true" failonerror="true" >
+      <classpath refid="client.class.path"/>
+      <arg
+          line="http://${wls.hostname}:${wls.port}/temp/TemperatureService" />
+    </java>
+
+  </target>
+-->
+
+</project>

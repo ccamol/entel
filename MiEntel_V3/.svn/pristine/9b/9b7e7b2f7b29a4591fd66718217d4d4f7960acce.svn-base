@@ -1,0 +1,2247 @@
+## Archivo de propiedades de aplicacion para el sistema MiEntel V3
+
+##
+## Propiedades de Contexto, login y logout
+##
+
+miEntel.desktop.url=app
+mientel.default.streaming.url=/portal/mientel
+miEntel.logout.url=http://mipcs.entelpcs.com/mipcs2/comunes/sesionInvalida.do
+miEntel.home.url=http://www.entel.cl
+
+##
+##Properties para la diferenciacion de canales PP de alto valor.
+##
+
+parametros.categoriausuario.diferenciacioncanalespp.altovalor=MP1
+parametros.banner.diferenciacioncanalespp.altovalor=true
+
+##
+## Autenticacion y seguridad
+##
+
+#Nombre de las credenciales de autenticacion (login)
+miEntel.movil.tag=username
+miEntel.rut.tag=rut
+miEntel.clave.tag=password
+
+#caracter separador por defecto de movil y rut
+miEntel.separador.movil_rut=|
+
+#Codigos de respuesta ante los casos de autenticacion
+miEntel.autenticacion.normal=0000
+miEntel.autenticacion.movilNoBuic=1000
+miEntel.autenticacion.movilRutNoAsociado=1001
+miEntel.autenticacion.bloqueoIngresoPatasNegras=1002
+miEntel.autenticacion.movilBloqIntentosFallidos=0012
+
+#login de aplicaciones externas
+miEntel.login.idp.attr=IDP
+miEntel.login.servlet.attr=sesionContexto.do
+miEntel.login.contexto.attr=contexto
+miEntel.login.fdt.attr=FDT
+
+# User Profile de MiEntel
+mientel.estado.registrado=S
+mientel.estado.atributo.sindato=NA
+miEntel.userProfile=mientel
+miEntel.userProfile.rutTitular.property=rutTitular
+miEntel.userProfile.nombreTitular.property=nombreTitular
+miEntel.userProfile.nombreUsuario.property=nombreUsuario
+miEntel.userProfile.numeroPcs.property=numeroPcs
+miEntel.userProfile.aaa.property=aaa
+miEntel.userProfile.mercado.property=mercado
+miEntel.userProfile.flagBam.property=flagBam
+miEntel.userProfile.numeroCuenta.property=numeroCuenta
+miEntel.userProfile.nombreUsuarioSeleccionado.property=nombreUsuarioSeleccionado
+miEntel.userProfile.numeroPcsSeleccionado.property=numeroPcsSeleccionado
+miEntel.userProfile.rutUsuarioSeleccionado.property=rutUsuarioSeleccionado
+miEntel.userProfile.subMercado.property=subMercado
+miEntel.userProfile.subMercadoSeleccionado.property=subMercadoSeleccionado
+miEntel.userProfile.grupoCliente.property=grupoCliente
+miEntel.userProfile.categoriaCliente.property=categoriaCliente
+miEntel.userProfile.numeroPcsEncriptado.property=numeroPcsEncriptado
+miEntel.userProfile.llaveEncriptacion=TbbN9gDERUfUudHiIIPUCylF8Vfcjpux
+
+# nombre de cache de weblogic portal empleada para perfiles de usuario
+miEntel.userProfile.cacheName=EPCSUUPCache
+
+# valores indican si es usuario BAM o no.
+flagBam.usuarioBAM=1
+flagBam.usuarioNoBAM=0
+
+##
+## Configuracion y Locale
+##
+
+## Paths a archivos de configuracion de la aplicacion
+
+# Path a archivo .properties de clientes de servicios (incluir caracter separador de directorios al final)
+miEntel.webservices.properties.path=
+
+# Path a archivo de mensajes de errores específicos de servicios
+miEntel.errorMessages.path=
+
+# Path a archivo para acceso de aplicaciones externa hacia MiEntel
+miEntel.externalApps.path=
+
+##APLICACION EXTERNA
+appExterna.gestionCuenta.indice=GC
+appExterna.pagoLinea.indice=PL
+parametro.aplicacionexterna.permiso=No tienes permiso para ingresar a esta funcionalidad.
+
+## FIRMADOR
+#Ruta Keystore
+parametro.keystore=
+
+## Locale
+locale.language=es
+locale.country=CL
+
+## Atributo Auto Atencion
+## Properties con la informacion de los valores de AAA
+
+aaa=consulta,controlParcial,controlTotal,titular
+aaa.consulta.code=0
+aaa.consulta.desc=Usuario solo consulta
+
+aaa.controlParcial.code=1
+aaa.controlParcial.desc=Usuario control parcial
+
+aaa.controlTotal.code=2
+aaa.controlTotal.desc=Usuario control total
+
+aaa.titular.code=3
+aaa.titular.desc=Titular
+
+
+## Portlet preferences
+## Properties que entregan los nombres de portlet preferences que son regularmente usados
+## en la aplicación.
+
+#
+# Seguridad de AAA: Nombres de properties empleadas para la seguridad de AAA
+#
+# nombre preference con flag que indica se debe validarse la seguridad AAA
+miEntel.aaa.security=mientel.aaa.security
+# nombe preference que indica los valores de AAA que son validos
+miEntel.aaa.security.rules=mientel.aaa.security.rules
+# caracter separador de valores de AAA en prefencia de reglas
+miEntel.aaa.security.rules.separator=\,
+# nombre preferencia con id de contenido que contiene mensaje especializado de acceso denegado
+miEntel.aaa.security.errorId=mientel.aaa.security.error
+# Mensaje de 'Acceso denegado' por default si el portlet no define la propiedad anterior
+miEntel.aaa.security.defaultMessage=No tienes los permisos para ver esta informaci\u00F3n.
+##
+## Derechos de Vistas sobre portlets: Properties con los nombres default de preferencias para emplear 'vistas' de portlets según atributos del perfil de usuario
+##
+# nombre preference con propiedad del perfil de usuario por default para evaluar vistas
+miEntel.views.security.value.default=aaa
+# nombre preference con vistas permitidas para un usuario. NOTA: Este valor es usuado como prefijo, al que se le concatena el valor de la propiedad
+# usada para la evaluacion de derechos de vista
+miEntel.views.security.preference.default=mientel.views.security.
+# Caracter separador para las diferentes vistas definidas en una Portlet preference
+miEntel.views.security.preference.separator=\,
+
+##
+## URL Menu
+## Estas propiedades sobrescriben la url de una page del menu
+## Para conseguir esto se debe agregar una propiedad con el nombre:
+## mientel.menu.url.<page_label>
+## Donde <page_label> corresponde a la propiedad'page label' ('etiqueta')
+## de la opción de menú a modificar
+##
+#Zona entel
+mientel.menu.url.ss_zona_page=http://zona.entel.cl
+mientel.menu.url.cc_zona_page=http://zona.entel.cl
+mientel.menu.url.pp_zona_page=http://zona.entel.cl
+mientel.menu.url.bamss_zona_page=http://zona.entel.cl
+mientel.menu.url.bamcc_zona_page=http://zona.entel.cl
+mientel.menu.url.bampp_zona_page=http://zona.entel.cl
+#Home ishop
+mientel.menu.url.ss_ishop_page=http://ishop.entelpcs.cl/ishop/ishop.portal
+mientel.menu.url.cc_ishop_page=http://ishop.entelpcs.cl/ishop/ishop.portal
+mientel.menu.url.pp_ishop_page=http://ishop.entelpcs.cl/ishop/ishop.portal
+
+
+##
+## Funcionalidades
+## Properties para apoyo a diferentes funcionalidades de la aplicacion
+##
+
+## Codigo bolsa Plan Internet
+bolsas.planInternet.codigo=714
+
+## FACTURACION
+
+# Numero de intervalos a presentar en el grafico de resumen facturacion
+facturacion.resumen.grafico.numIntervalos=6
+
+#Facturacion
+facturacion.usuario.consulta=No tienes permiso para visualizar esta informaci\u00F3n.
+
+# Facturacion Full
+facturacionfull.estado.pagado=1
+facturacionfull.estado.nopagado=0
+facturacionfull.idsistema=USRWEB
+
+# Facturacion Electronica
+facturacionElectronica.tipoOperacion.inscripcion=INS
+facturacionElectronica.tipoOperacion.actualizacion=MOD
+facturacionElectronica.idsistema=MIENTELV3
+facturacionElectronica.existe=0013
+facturacionElectronica.estadoFE.inscrito=Inscrito
+facturacionElectronica.estadoFE.inscritomodificado=Inscrito Modificado
+facturacionElectronica.estadoFE.preinscrito=PRE-INSCRITO
+facturacionElectronica.direccionpostal.idsistema=USRWEB
+facturacionElectronica.direccionpostal.password=USRWEB
+parametros.facturacionElectronica.autorizacionVoluntaria.idContenido=autorizacionVoluntaria
+parametros.facturacionElectronica.confirmarDesinscribir.idContenido=confirmarDesinscribir
+
+# Mensajes Para Ti
+# Servicios
+mensajesParaTi.itemsPorPag=3
+mensajesParaTi.servicios.estadoCuenta.id=EC
+mensajesParaTi.servicios.facturacionElectronica.id=FE
+mensajesParaTi.servicios.bolsasPlanesComplementarios.id=BPC
+mensajesParaTi.servicios.servicioTecnico.id=ST
+mensajesParaTi.servicios.equiposArriendo.id=EA
+mensajesParaTi.servicios.internetMovilIlimitado.id=IMI
+mensajesParaTi.servicios.detalleLlamados.id=DL
+mensajesParaTi.servicios.bloqueoRoboExtravio.id=BRE
+mensajesParaTi.servicios.bienvenida.id=BVN
+mensajesParaTi.servicios.facturacionEmpresas.id=FEMP
+mensajesParaTi.servicios.recargaWebPay.id=RWP
+mensajesParaTi.servicios.migracionPrepagoPlan.id=MPP
+mensajesParaTi.servicios.tarifaDiaria.id=CTD
+mensajesParaTi.servicios.pagoAutomatico.id=PAT
+mensajesParaTi.servicios.traficoDatosExcedidos.id=TDE
+mensajesParaTi.servicios.altoValor.id=ATV
+# idContenido servicios
+mensajesParaTi.servicios.EC.idContenido=estadoCuenta
+mensajesParaTi.servicios.FE.idContenido=facturaElectronica
+mensajesParaTi.servicios.BPC.idContenido=bolsasPlanesComplementarios
+mensajesParaTi.servicios.ST.idContenido=servicioTecnico
+mensajesParaTi.servicios.EA.idContenido=equiposArriendo
+mensajesParaTi.servicios.IMI.idContenido=internetMovilIlimitado
+mensajesParaTi.servicios.DL.idContenido=detalleLlamados
+mensajesParaTi.servicios.BRE.idContenido=bloqueoRoboExtravio
+mensajesParaTi.servicios.BVN.idContenido=bienvenida
+mensajesParaTi.servicios.FEMP.idContenido=facturacionEmpresas
+mensajesParaTi.servicios.RWP.idContenido=recargaWebPay
+mensajesParaTi.servicios.MPP.idContenido=migracionPrepagoPlan
+mensajesParaTi.servicios.CTD.idContenido=tarifaDiaria
+mensajesParaTi.servicios.PAT.idContenido=pagoAutomatico
+mensajesParaTi.servicios.TDE.idContenido=bienvenidaTraficoDatosExcedidos
+mensajesParaTi.servicios.ATV.idContenido=altoValor
+
+# URL para llamado de servicios
+mensajesParaTi.urlRespuesta=/portlet/dashboard/mensajes/mensajesParaTiJsonServicio.faces
+# idContenido mensajes de servicios VOZ
+mensajesParaTi.mensajes.estadoCuenta.pagada=cuentaPagada
+mensajesParaTi.mensajes.estadoCuenta.vencida=cuentaVencida
+mensajesParaTi.mensajes.estadoCuenta.emitida=cuentaEmitida
+mensajesParaTi.mensajes.facturacionElectronica.noInscrita=facturaNoInscrita
+mensajesParaTi.mensajes.bolsasPlanesComplementarios.optimizar=optimizarBolsa
+mensajesParaTi.mensajes.bloqueoRoboExtravio.bloqueado=movilBloqueado
+mensajesParaTi.mensajes.internetMovilIlimitado.activo=internetMovilActivo
+mensajesParaTi.mensajes.internetMovilIlimitado.noActivo=internetMovilNoActivo
+mensajesParaTi.mensajes.equiposArriendo.conArriendo=conEquiposEnArriendo
+mensajesParaTi.mensajes.equiposArriendo.sinArriendo=sinEquiposEnArriendo
+mensajesParaTi.mensajes.servicioTecnico.reparado=equipoReparado
+mensajesParaTi.mensajes.servicioTecnico.noReparado=equipoNoReparado
+mensajesParaTi.mensajes.servicioTecnico.presupuestoNoPublicado=presupuestoNoPublicado
+mensajesParaTi.mensajes.detalleLlamados.detalleDisponible=detalleDisponible
+mensajesParaTi.mensajes.bienvenida.msjInfo=bienvenidaMiEntel
+mensajesParaTi.mensajes.facturacionEmpresas.msjInfo=usuarioCambiosFactEmpresa
+mensajesParaTi.mensajes.recargaWebPay.msjInfo=promoRecargaWebPay
+mensajesParaTi.mensajes.migracionPrepagoPlan.msjInfo=ofertaMigracionPrepagoPlan
+mensajesParaTi.mensajes.bloqueoRoboExtravio.hurto=movilBloqueadohurto
+mensajesParaTi.mensajes.bloqueoRoboExtravio.extravio=movilBloqueadoextravio
+mensajesParaTi.mensajes.bloqueoRoboExtravio.robo=movilBloqueadorobo
+mensajesParaTi.mensajes.tarifaDiaria.msjInfo=infoTarifaDiaria
+mensajesParaTi.mensajes.pagoAutomatico.noActivo=pagoAutomaticoNoActivo
+mensajesParaTi.servicios.traficoDatosExcedidos.noActivo=datosExcedidosNoActivo
+mensajesParaTi.servicios.altoValor.msjInfo=infoAltoValor
+
+
+
+# Codigos de estado Servicio Tecnico
+mensajesParaTi.servicios.servicioTecnico.estados.equipoRecepcionado=60
+mensajesParaTi.servicios.servicioTecnico.estados.presupuestoPendiente=34
+# Mensaje por defecto
+mensajesParaTi.mensajes.noHayMensajes=No hay mensajes para ti en este momento.
+
+
+# URL para llamado de servicios BAM
+mensajesParaTiBam.urlRespuesta=/portlet/dashboard/mensajesbam/mensajesParaTiBamJsonServicio.faces
+
+# Encuestas perfiladas
+encuestasPerfiladas.codVisualizacion=1
+encuestasPerfiladas.session.urlEncuestas=com.epcs.inteligencianegocio.satisfaccioncliente.urlEncuestas
+encuestasPerfiladas.session.mostrarEncuestas=com.epcs.inteligencianegocio.satisfaccioncliente.mostrarEncuestas
+encuestasPerfiladas.codZona.pp=PPPE
+encuestasPerfiladas.codZona.cc=CCPE
+encuestasPerfiladas.codZona.ss=SSPE
+
+## Cuentas de Usuarios
+# Constante de id sistema para la obtencion de datos de usuario
+usuarios.consultarDatos.idSistema=3006
+
+## SERVICIOS
+
+## Codigos respuesta Servicios
+servicios.codigoRespuesta.exito=0000
+servicios.codigoRespuesta.noInfo=0002
+servicios.codigoRespuesta.errorBloqueo=0019
+servicios.codigoRespuesta.errorDesBloqueo=0020
+servicios.codigoRespuesta.infoIncosistentes=4999
+servicios.codigoRespuesta.equipoBloqueadoOP1=5000
+servicios.codigoRespuesta.equipoBloqueadoOP2=5001
+servicios.codigoRespuesta.equipoBloqueadoOP3=5002
+servicios.codigoRespuesta.equipoBloqueadoOP4=5003
+servicios.codigoRespuesta.equipoBloqueadoOP5=5005
+servicios.codigoRespuesta.equipoBloqueadoOP5=0006
+servicios.codigoRespuesta.equipoBloqueadoOP6=5006
+servicios.codigoRespuesta.equipoBloqueadoOP7=5007
+servicios.codigoRespuesta.equipoBloqueadoOP8=5008
+servicios.codigoRespuesta.equipoBloqueadoOP9=5009
+servicios.codigoRespuesta.equipoBloqueadoOP10=5010
+servicios.codigoRespuesta.equipopPendienteBloqueo=6000
+servicios.codigoRespuesta.equipopPendienteDesBloqueo=6001
+servicios.codigoRespuesta.equipoBloqueadoFacturaImpaga=SUSPENDIDO
+
+
+## PRODUCTOS
+## Formato: producto.<tipoProducto>
+
+## Id de productos para tipos de trafico
+producto.voz=bajo,net,adi,traf,red,infam
+# formato: producto.voz.<tipoVoz>.id
+producto.voz.bajo.id=BAJO
+producto.voz.net.id=NET
+producto.voz.adi.id=ADI
+producto.voz.traf.id=TRAF
+producto.voz.red.id=RED
+producto.voz.infam.id=INFAM
+
+producto.mensajeria.id=ENTRE MOVILES
+#producto.internetMovil.id=TRAFICO GPRS
+producto.internetMovil.id=TRAFICO ISHOP
+producto.blackberry.id=TRAFICO BBRY
+producto.tv.id=TRAFICO TV
+producto.bam.id=TRAFICO BAM
+
+
+## Producto Voz: Tipos de plan
+producto.voz.tipoPlan=normal,red,global,joven,full,unica,redFija,familia
+producto.voz.tipoPlan.normal.id=1
+producto.voz.tipoPlan.normal.keys=1,3
+producto.voz.tipoPlan.red.id=2
+producto.voz.tipoPlan.red.keys=1,3
+producto.voz.tipoPlan.global.id=3
+producto.voz.tipoPlan.global.keys=1,3,5
+producto.voz.tipoPlan.joven.id=4
+producto.voz.tipoPlan.joven.keys=1,3,5
+producto.voz.tipoPlan.full.id=5
+producto.voz.tipoPlan.full.keys=1,3,5
+producto.voz.tipoPlan.unica.id=6
+producto.voz.tipoPlan.unica.keys=1
+producto.voz.tipoPlan.redFija.id=7
+producto.voz.tipoPlan.redFija.keys=1,3,5
+producto.voz.tipoPlan.familia.id=8
+producto.voz.tipoPlan.familia.keys=1,3,5
+
+## PARAMETROS
+
+# Formato:
+# parametros.<paramType>.<paramName>.[id | desc]
+parametros.attributes=id,desc
+
+# Sexo
+parametros.sexo=hombre,mujer
+parametros.sexo.mujer.id=0
+parametros.sexo.mujer.desc=Mujer
+parametros.sexo.hombre.id=1
+parametros.sexo.hombre.desc=Hombre
+
+# Area telefonica
+parametros.areaTelefonica=2,9,32,33,34,35,39,41,42,43,44,45,51,52,53,55,57,58,61,63,64,65,67,71,72,73,75
+parametros.areaTelefonica.2.id=2
+parametros.areaTelefonica.2.desc=2
+parametros.areaTelefonica.9.id=9
+parametros.areaTelefonica.9.desc=9
+parametros.areaTelefonica.32.id=32
+parametros.areaTelefonica.32.desc=32
+parametros.areaTelefonica.33.id=33
+parametros.areaTelefonica.33.desc=33
+parametros.areaTelefonica.34.id=34
+parametros.areaTelefonica.34.desc=34
+parametros.areaTelefonica.35.id=35
+parametros.areaTelefonica.35.desc=35
+parametros.areaTelefonica.39.id=39
+parametros.areaTelefonica.39.desc=39
+parametros.areaTelefonica.41.id=41
+parametros.areaTelefonica.41.desc=41
+parametros.areaTelefonica.42.id=42
+parametros.areaTelefonica.42.desc=42
+parametros.areaTelefonica.43.id=43
+parametros.areaTelefonica.43.desc=43
+parametros.areaTelefonica.44.id=44
+parametros.areaTelefonica.44.desc=44
+parametros.areaTelefonica.45.id=45
+parametros.areaTelefonica.45.desc=45
+parametros.areaTelefonica.51.id=51
+parametros.areaTelefonica.51.desc=51
+parametros.areaTelefonica.52.id=52
+parametros.areaTelefonica.52.desc=52
+parametros.areaTelefonica.53.id=53
+parametros.areaTelefonica.53.desc=53
+parametros.areaTelefonica.55.id=55
+parametros.areaTelefonica.55.desc=55
+parametros.areaTelefonica.57.id=57
+parametros.areaTelefonica.57.desc=57
+parametros.areaTelefonica.58.id=58
+parametros.areaTelefonica.58.desc=58
+parametros.areaTelefonica.61.id=61
+parametros.areaTelefonica.61.desc=61
+parametros.areaTelefonica.63.id=63
+parametros.areaTelefonica.63.desc=63
+parametros.areaTelefonica.64.id=64
+parametros.areaTelefonica.64.desc=64
+parametros.areaTelefonica.65.id=65
+parametros.areaTelefonica.65.desc=65
+parametros.areaTelefonica.67.id=67
+parametros.areaTelefonica.67.desc=67
+parametros.areaTelefonica.71.id=71
+parametros.areaTelefonica.71.desc=71
+parametros.areaTelefonica.72.id=72
+parametros.areaTelefonica.72.desc=72
+parametros.areaTelefonica.73.id=73
+parametros.areaTelefonica.73.desc=73
+parametros.areaTelefonica.75.id=75
+parametros.areaTelefonica.75.desc=75
+
+
+# Hijos
+parametros.hijo=si,no
+parametros.hijo.si.id=1
+parametros.hijo.si.desc=Si
+parametros.hijo.no.id=0
+parametros.hijo.no.desc=No
+
+
+# Estado Civil
+parametros.estadoCivil=sinSeleccionar,soltero,casado,viudo,separado,conviviente
+parametros.estadoCivil.sinSeleccionar.id=
+parametros.estadoCivil.sinSeleccionar.desc=Sin Seleccionar
+parametros.estadoCivil.soltero.id=0
+parametros.estadoCivil.soltero.desc=Soltero(a)
+parametros.estadoCivil.casado.id=1
+parametros.estadoCivil.casado.desc=Casado(a)
+parametros.estadoCivil.viudo.id=2
+parametros.estadoCivil.viudo.desc=Viudo(a)
+parametros.estadoCivil.separado.id=3
+parametros.estadoCivil.separado.desc=Separado(a)
+parametros.estadoCivil.conviviente.id=4
+parametros.estadoCivil.conviviente.desc=Conviviente(a)
+
+# Nivel de estudios
+parametros.nivelEstudios=sinSeleccionar,basico,medio,tecnico,universitario,postgrado,otros
+parametros.nivelEstudios.sinSeleccionar.id=
+parametros.nivelEstudios.sinSeleccionar.desc=Sin Seleccionar
+parametros.nivelEstudios.basico.id=0
+parametros.nivelEstudios.basico.desc=B\u00E1sicos
+parametros.nivelEstudios.medio.id=1
+parametros.nivelEstudios.medio.desc=Medios
+parametros.nivelEstudios.tecnico.id=2
+parametros.nivelEstudios.tecnico.desc=T\u00E9cnicos
+parametros.nivelEstudios.universitario.id=3
+parametros.nivelEstudios.universitario.desc=Universitario
+parametros.nivelEstudios.postgrado.id=4
+parametros.nivelEstudios.postgrado.desc=Postgrado
+parametros.nivelEstudios.otros.id=5
+parametros.nivelEstudios.otros.desc=Otros
+
+# Actividad
+parametros.actividad=sinSeleccionar,estudiante,duennaCasa,empleado,empresario,independiente,jubilado,otros
+parametros.actividad.sinSeleccionar.id=
+parametros.actividad.sinSeleccionar.desc=Sin Seleccionar
+parametros.actividad.estudiante.id=0
+parametros.actividad.estudiante.desc=Estudiante
+parametros.actividad.duennaCasa.id=1
+parametros.actividad.duennaCasa.desc=Due\u00F1a de Casa
+parametros.actividad.empleado.id=2
+parametros.actividad.empleado.desc=Empleado(a)
+parametros.actividad.empresario.id=3
+parametros.actividad.empresario.desc=Empresario(a)
+parametros.actividad.independiente.id=4
+parametros.actividad.independiente.desc=Indepeniente
+parametros.actividad.jubilado.id=5
+parametros.actividad.jubilado.desc=Jubilado(a)
+parametros.actividad.otros.id=6
+parametros.actividad.otros.desc=Otros
+
+# Area Laboral
+parametros.areaLaboral=sinSeleccionar,administrativo,agro,arquitectura,artes,artesania,automotriz,banco,comercio,construccion,consumoMasivo,contabilidad,docencia,entretenimiento,ffaa,gobierno,hogar,hoteleria,ingenieria,leyes,maestro,mineria,publicidad,salud,serviciosVarios,telecomunicaciones,textil,otro,noTrabaja
+parametros.areaLaboral.sinSeleccionar.id=
+parametros.areaLaboral.sinSeleccionar.desc=Sin Seleccionar
+parametros.areaLaboral.administrativo.id=0
+parametros.areaLaboral.administrativo.desc=Administrativo
+parametros.areaLaboral.agro.id=1
+parametros.areaLaboral.agro.desc=Agricultura/Ganader\u00EDa
+parametros.areaLaboral.arquitectura.id=2
+parametros.areaLaboral.arquitectura.desc=Arquitectura/Dise\u00F1o/Decoraci\u00F3n
+parametros.areaLaboral.artes.id=3
+parametros.areaLaboral.artes.desc=Artes
+parametros.areaLaboral.artesania.id=4
+parametros.areaLaboral.artesania.desc=Artesan\u00EDa
+parametros.areaLaboral.automotriz.id=5
+parametros.areaLaboral.automotriz.desc=Automotriz/Transporte
+parametros.areaLaboral.banco.id=6
+parametros.areaLaboral.banco.desc=Bancos/Servicios Financieros
+parametros.areaLaboral.comercio.id=7
+parametros.areaLaboral.comercio.desc=Comercio
+parametros.areaLaboral.construccion.id=8
+parametros.areaLaboral.construccion.desc=Construcci\u00F3n
+parametros.areaLaboral.consultor.id=9
+parametros.areaLaboral.consultor.desc=Consultor\u00EDa
+parametros.areaLaboral.consumoMasivo.id=10
+parametros.areaLaboral.consumoMasivo.desc=Consumo Masivo
+parametros.areaLaboral.contabilidad.id=11
+parametros.areaLaboral.contabilidad.desc=Contabilidad
+parametros.areaLaboral.docencia.id=12
+parametros.areaLaboral.docencia.desc=Docencia
+parametros.areaLaboral.entretenimiento.id=13
+parametros.areaLaboral.entretenimiento.desc=Entretenimiento
+parametros.areaLaboral.ffaa.id=14
+parametros.areaLaboral.ffaa.desc=Fuerza Armadas
+parametros.areaLaboral.gobierno.id=15
+parametros.areaLaboral.gobierno.desc=Gobierno/Empleo P\u00FAblico
+parametros.areaLaboral.hogar.id=16
+parametros.areaLaboral.hogar.desc=Hogar
+parametros.areaLaboral.hoteleria.id=17
+parametros.areaLaboral.hoteleria.desc=Hoteler\u00EDa/Turismo
+parametros.areaLaboral.ingenieria.id=18
+parametros.areaLaboral.ingenieria.desc=Ingenier\u00EDa
+parametros.areaLaboral.leyes.id=19
+parametros.areaLaboral.leyes.desc=Leyes/Justicia
+parametros.areaLaboral.maestro.id=20
+parametros.areaLaboral.maestro.desc=Maestro/Gasfiter/Carpintero/Otro
+parametros.areaLaboral.mineria.id=21
+parametros.areaLaboral.mineria.desc=Miner\u00EDa
+parametros.areaLaboral.publicidad.id=22
+parametros.areaLaboral.publicidad.desc=Publicidad/Marketing/RRPP
+parametros.areaLaboral.salud.id=23
+parametros.areaLaboral.salud.desc=Salud
+parametros.areaLaboral.serviciosVarios.id=24
+parametros.areaLaboral.serviciosVarios.desc=Servicios Varios
+parametros.areaLaboral.telecomunicaciones.id=25
+parametros.areaLaboral.telecomunicaciones.desc=Telecomunicaciones
+parametros.areaLaboral.textil.id=26
+parametros.areaLaboral.textil.desc=Textil
+parametros.areaLaboral.otro.id=27
+parametros.areaLaboral.otro.desc=Otro
+parametros.areaLaboral.noTrabaja.id=28
+parametros.areaLaboral.noTrabaja.desc=No Trabaja
+
+# Relacion Titular
+parametros.relacionTitular=sinSeleccionar,mismo,hijo,hermano,conyuge,madre,padre,empleado,otros
+parametros.relacionTitular.sinSeleccionar.id=
+parametros.relacionTitular.sinSeleccionar.desc=Sin Seleccionar
+parametros.relacionTitular.mismo.id=0
+parametros.relacionTitular.mismo.desc=El Mismo
+parametros.relacionTitular.hijo.id=1
+parametros.relacionTitular.hijo.desc=Hijo(a)
+parametros.relacionTitular.hermano.id=2
+parametros.relacionTitular.hermano.desc=Hermano(a)
+parametros.relacionTitular.conyuge.id=3
+parametros.relacionTitular.conyuge.desc=Conyuge
+parametros.relacionTitular.madre.id=4
+parametros.relacionTitular.madre.desc=Madre
+parametros.relacionTitular.padre.id=5
+parametros.relacionTitular.padre.desc=Padre
+parametros.relacionTitular.empleado.id=6
+parametros.relacionTitular.empleado.desc=Empleado(a)
+parametros.relacionTitular.otros.id=7
+parametros.relacionTitular.otros.desc=Otros
+
+# Prefijos Telefono
+parametros.prefijoTelefono=telefonoAdicional
+parametros.prefijoTelefono.telefonoAdicional.prefijos=02,07,08,09,32,33,34,35,41,42,43,45,51,52,53,55,57,58,61,63,64,65,67,71,72,73,75
+
+# Recarga Multitienda
+parametros.multitienda=falabella
+parametros.multitienda.falabella.nombre=CMR Falabella
+parametros.multitienda.falabella.id=1
+parametros.multitienda.falabella.tipo=0
+parametros.multitienda.falabella.digitos=16
+parametros.multitienda.falabella.montos=2000,3500,5000,10000,15000
+parametros.multitienda.falabella.cuotas=1,2,3,4,5,6
+
+# Productos para Recarga
+parametros.productosRecarga=telMovil,bam,bamHogar,telHogar
+parametros.productosRecarga.telMovil.id=TM
+parametros.productosRecarga.telMovil.desc=Telefon\u00EDa M\u00F3vil
+parametros.productosRecarga.bam.id=BAM
+parametros.productosRecarga.bam.desc=BAM
+parametros.productosRecarga.bamHogar.id=BAMH
+parametros.productosRecarga.bamHogar.desc=BAM Hogar
+parametros.productosRecarga.telHogar.id=TH
+parametros.productosRecarga.telHogar.desc=Telefon\u00EDa Hogar
+
+# SelectorCuenta
+parametros.plan.telefonia.desc=Telefonia
+parametros.plan.bam.desc=BAM
+parametros.plan.suscripcion.sigla=SS
+parametros.plan.suscripcion.desc=Suscripcion
+parametros.plan.cuentacontrolada.sigla=CC
+parametros.plan.cuentacontrolada.desc=Cuenta Controlada
+parametros.plan.prepago.sigla=PP
+parametros.plan.prepago.desc=Prepago
+parametros.plan.noregistrado.sigla=NE
+parametros.plan.noregistrado.desc=No Registrado
+parametros.separador.numero.descripcion=-
+
+solo.usuario.titular=No tienes permiso suficiente para contratar un nuevo servicio para tu m\u00F3vil o realizar alg\u00FAn otro cambio. Solic\u00EDtalo a trav\u00E9s del administrador de tu cuenta empresa o del titular de tu cuenta personas.
+
+
+## FacturasImpagas
+facturasImpagas.nopagado=IMPAGO
+facturasImpagas.pagado=PAGADO
+facturasImpagas.idSistema=Ivan
+
+## Reposicion Servicio
+reposicionServicio.idSistema=MIENTELV3
+reposicionServicio.passwordSistema=MIENTELV3
+reposicionServicio.tipoReposicion.concobro=CONCOBRO
+reposicionServicio.tipoReposicion.sincobro=SINCOBRO
+
+
+## RECARGAS
+
+# Tipos de recarga
+parametros.tipoRecarga=tarjetacredito,puntoszona,multitienda,entelticket
+parametros.tipoRecarga.entelticket.id=entelticket
+parametros.tipoRecarga.entelticket.desc=Entelticket
+parametros.tipoRecarga.multitienda.id=multitienda
+parametros.tipoRecarga.multitienda.desc=CMR Falabella
+parametros.tipoRecarga.puntoszona.id=puntoszona
+parametros.tipoRecarga.puntoszona.desc=Puntos Zona
+parametros.tipoRecarga.tarjetacredito.id=tarjetacredito
+parametros.tipoRecarga.tarjetacredito.desc=WebPay (Redcompra,Cuenta Rut y Tarjetas de Cr\u00E9dito)
+
+# Multitienda
+recarga.multitienda.factibilidad.metodo=GT_CMR.factibilidad_recarga
+recarga.multitienda.factibilidad.plataforma=WEB
+recarga.multitienda.factibilidad.tipoOperacion=FACTIBILIDAD_RECARGA
+recarga.multitienda.factibilidad.codEmpresa=0
+recarga.multitienda.factibilidad.codLocal=0
+recarga.multitienda.factibilidad.codTransMultimedia=004
+recarga.multitienda.factibilidad.diaPago=05
+recarga.multitienda.factibilidad.codUnicoAutorizacion=0
+recarga.multitienda.factibilidad.idSistema=MiEntelPCSWeb
+
+recarga.multitienda.efectuar.metodo=GT_CMR.recarga_full
+recarga.multitienda.efectuar.plaforma=WEB
+recarga.multitienda.efectuar.tipoOperacion=RECARGA_FULL
+recarga.multitienda.efectuar.codEmpresa=0
+recarga.multitienda.efectuar.codLocal=0
+recarga.multitienda.efectuar.codTransMultimedia=001
+recarga.multitienda.efectuar.diaPago=05
+recarga.multitienda.efectuar.codUnicoAutorizacion=0000
+recarga.multitienda.efectuar.idSistema=MiEntelPCSWeb
+
+# Entel ticket
+recarga.entelticket.factibilidad.metodo=EPCS_ETK.consultar
+recarga.entelticket.factibilidad.plataforma=I
+recarga.entelticket.factibilidad.tipoOperacion=CONSULTAR
+recarga.entelticket.factibilidad.montoTicket=0
+recarga.entelticket.factibilidad.montoRecarga=0
+recarga.entelticket.factibilidad.codigoBono=0
+recarga.entelticket.factibilidad.montoBono=0
+recarga.entelticket.factibilidad.validezRecarga=0
+recarga.entelticket.factibilidad.origenPeticion=WEB
+recarga.entelticket.factibilidad.canalServicio=WXYZW
+recarga.entelticket.factibilidad.agenciaTicket=NONE
+recarga.entelticket.factibilidad.folioTicket=NONE
+
+recarga.entelticket.efectuar.metodo=EPCS_ETK.recargar
+recarga.entelticket.efectuar.plataforma=I
+recarga.entelticket.efectuar.tipoOperacion=RECARGA
+recarga.entelticket.efectuar.codigoBono=0
+recarga.entelticket.efectuar.montoBono=0
+recarga.entelticket.efectuar.origenPeticion=WEB
+recarga.entelticket.efectuar.canalServicio=WXYZW
+
+# Webpay
+recarga.webpay.ingresar.tipoPago=REC_WPY
+recarga.webpay.ingresar.parametroPersonalizable=REC
+
+recarga.webpay.factibilidad.metodo=TRBK_pos.factibilidad
+recarga.webpay.factibilidad.plataforma=WEB
+recarga.webpay.factibilidad.codIntegrador=51
+recarga.webpay.factibilidad.codDistribuidor=45
+recarga.webpay.factibilidad.codComercio=100
+recarga.webpay.factibilidad.codLocal=1
+recarga.webpay.factibilidad.codTerminal=1
+recarga.webpay.factibilidad.codRegion=99
+# PROD
+recarga.webpay.factibilidad.codComuna=0
+recarga.webpay.factibilidad.correlativoTrans=23
+
+recarga.webpay.efectuar.metodo=TRBK_pos.recargar
+recarga.webpay.efectuar.plataforma=WEB
+recarga.webpay.efectuar.codIntegrador=51
+recarga.webpay.efectuar.codDistribuidor=45
+recarga.webpay.efectuar.codComercio=100
+recarga.webpay.efectuar.codLocal=0
+recarga.webpay.efectuar.codTerminal=0
+recarga.webpay.efectuar.codRegion=99
+# PROD
+recarga.webpay.efectuar.codComuna=01
+recarga.webpay.efectuar.codComunaETP=999
+recarga.webpay.efectuar.correlativoTrans=1
+recarga.webpay.efectuar.formaPago=77
+recarga.webpay.efectuar.envioSMS=1
+
+# Parametros del request a Transbank, para efectuar el pago de una recarga webpay
+recarga.webpay.pago.action=https://recaudacion.entelpcs.com/cgi-bin/kcc5/tbk_bp_pago.cgi
+recarga.webpay.pago.TBK_TIPO_TRANSACCION=TR_MALL
+recarga.webpay.pago.TBK_NUM_TRX=1
+recarga.webpay.pago.TBK_CODIGO_TIENDA_M001=597029340471
+recarga.webpay.pago.TBK_URL_RESULTADO=/portlet/recarga/cierreRecargaWebpay.faces?RESULTADO=EXITO
+recarga.webpay.pago.TBK_URL_FRACASO=/portlet/recarga/cierreRecargaWebpay.faces?RESULTADO=FRACASO
+
+recarga.webpay.pago.TBK_ID_SESION.prefix=MIENTELV3
+
+# Valores de retorno de Transbank ante el resultado de una recarga
+recarga.webpay.resultado.exito=EXITO
+recarga.webpay.resultado.fracaso=FRACASO
+
+# Parametros de montos de recarga para tarjetas de credito
+parametros.montoRecargaTarjetaCredito=500,1000,2000,3500,5000,10000,15000,20000
+parametros.montoRecargaTarjetaCredito.500.monto=500
+parametros.montoRecargaTarjetaCredito.500.vigencia=30
+parametros.montoRecargaTarjetaCredito.1000.monto=1000
+parametros.montoRecargaTarjetaCredito.1000.vigencia=30
+parametros.montoRecargaTarjetaCredito.2000.monto=2000
+parametros.montoRecargaTarjetaCredito.2000.vigencia=30
+parametros.montoRecargaTarjetaCredito.3500.monto=3500
+parametros.montoRecargaTarjetaCredito.3500.vigencia=30
+parametros.montoRecargaTarjetaCredito.5000.monto=5000
+parametros.montoRecargaTarjetaCredito.5000.vigencia=60
+parametros.montoRecargaTarjetaCredito.10000.monto=10000
+parametros.montoRecargaTarjetaCredito.10000.vigencia=90
+parametros.montoRecargaTarjetaCredito.15000.monto=15000
+parametros.montoRecargaTarjetaCredito.15000.vigencia=90
+parametros.montoRecargaTarjetaCredito.20000.monto=20000
+parametros.montoRecargaTarjetaCredito.20000.vigencia=90
+
+# Parametros de montos de recarga para EntelTicket
+parametros.montoRecargaEntelTicket=2000,3500,5000,10000,15000
+parametros.montoRecargaEntelTicket.2000.monto=2000
+parametros.montoRecargaEntelTicket.2000.vigencia=30
+parametros.montoRecargaEntelTicket.3500.monto=3500
+parametros.montoRecargaEntelTicket.3500.vigencia=30
+parametros.montoRecargaEntelTicket.5000.monto=5000
+parametros.montoRecargaEntelTicket.5000.vigencia=60
+parametros.montoRecargaEntelTicket.10000.monto=10000
+parametros.montoRecargaEntelTicket.10000.vigencia=90
+parametros.montoRecargaEntelTicket.15000.monto=15000
+parametros.montoRecargaEntelTicket.15000.vigencia=90
+
+
+## Historico
+recarga.historico.plataforma.POS=Comercio
+recarga.historico.plataforma.WEB=WEB
+recarga.historico.plataforma.I=WEB
+recarga.historico.plataforma.IVR=103
+recarga.historico.plataforma.USSD=Entel Ticket
+
+recarga.historico.tipo.TRBK=WEBPAY
+recarga.historico.tipo.EPCS_ETK=EntelTicket
+
+recarga.historico.sindatos=Sin datos
+
+## Direccion Postal
+parametros.direccionpostal.idsistema=USRWEB
+parametros.direccionpostal.passwordsistema=USRWEB
+
+## Pago Automatico
+pagoAutomatico.fechaEstadoPromo=Anterior a Octubre 2007
+pagoAutomatico.stdpatproceso=EN PROCESO
+parametros.tipotarjeta=seleccione,visa,mastercard,americanexpress,dinersclub,magna
+parametros.tipotarjeta.seleccione.id=Seleccione
+parametros.tipotarjeta.seleccione.desc=Selecciona
+parametros.tipotarjeta.visa.id=VISA
+parametros.tipotarjeta.visa.desc=Visa
+parametros.tipotarjeta.mastercard.id=MASTERCARD
+parametros.tipotarjeta.mastercard.desc=Mastercard
+parametros.tipotarjeta.americanexpress.id=AMERICAN
+parametros.tipotarjeta.americanexpress.desc=American Express
+parametros.tipotarjeta.dinersclub.id=DINERS
+parametros.tipotarjeta.dinersclub.desc=Diners Club
+parametros.tipotarjeta.magna.id=MAGNA
+parametros.tipotarjeta.magna.desc=Magna
+
+## Mi trafico
+parametros.traficovozhorario.onnet=On-Net
+parametros.traficovozhorario.offnet=Off-Net
+parametros.traficovozhorario.horariobajo=Horario Bajo
+parametros.traficovozhorario.horarionormal=Horario Normal
+parametros.traficovozhorario.adicional=Adicional
+parametros.traficovozhorario.nrofrecuente=Nro Frecuente
+parametros.traficovozhorario.tododestino=Todo Destino
+parametros.traficovozhorario.minutosutilizados=Minutos Utilizados
+parametros.traficovozhorario.redfija=Red Fija
+parametros.traficovozhorario.moviles=Moviles
+parametros.traficovozhorario.familia=Familia
+
+parametros.idproducto.mensaje=SMS
+parametros.descproducto.mensaje=SMS Y MMS
+parametros.descproducto.mensajeotros=OTROS
+parametros.idproducto.blackberry=BBRY
+parametros.descproducto.blackberry=BlackBerry
+parametros.idproducto.internetmovil=ISHOP
+parametros.descproducto.internetmovil=Internet M\u00F3vil
+parametros.idproducto.bandaanchamovil=BAM
+parametros.descproducto.bandaanchamovil=Banda Ancha
+parametros.idproducto.wap=WAP
+parametros.idproducto.gprs=GPRS
+parametros.idproducto.tv=TV
+parametros.idproducto.radio=RADIO
+
+# Tipo de Bolsas Para Contratar.
+parametros.tipobolsa=voz,sms,exm,im,pck,blackberry,roa,otr
+parametros.tipobolsa.voz.id=MIN
+parametros.tipobolsa.voz.desc=Bolsa de Voz
+parametros.tipobolsa.sms.id=SMS,MMS
+parametros.tipobolsa.sms.desc=Bolsa de Mensaje
+parametros.tipobolsa.exm.id=EXM
+parametros.tipobolsa.exm.desc=Extras
+parametros.tipobolsa.pck.id=PCK
+parametros.tipobolsa.pck.desc=Bolsas Combinadas
+parametros.tipobolsa.blackberry.id=BBY
+parametros.tipobolsa.blackberry.desc=BlackBerry
+parametros.tipobolsa.im.id=IM
+parametros.tipobolsa.im.desc=Bolsa Internet M\u00F3vil
+parametros.tipobolsa.roa.id=ROA
+parametros.tipobolsa.roa.desc=Bolsas de Roaming
+parametros.tipobolsa.otr.id=OTR
+parametros.tipobolsa.otr.desc=Otras Bolsas
+
+# Codigos de Otras Bolsas SS y CC.
+parametros.bolsas.otr.cod=1365,1364,1417
+
+#tipo de bolsa internet movil
+parametros.bolsas.im.id=IM,WAP,IMPRO
+parametros.bolsas.im.desc=Internet M\u00F3vil
+
+#tipo de bolsa internet movil PP
+parametros.bolsas.impp.id=IMPP
+parametros.bolsas.impp.desc=Internet M\u00F3vil
+
+
+#flagMercado para Bolsas.
+parametros.flagmercado.SS=1
+parametros.flagmercado.CC=0
+parametros.flagmercado.PP=0
+#parametros para contratar bolsa ss o cc
+parametros.bolsa.tipoactivacion=A
+#Cantidad $ adicional para comprar la bolsa.
+parametros.comprarbolsa.descuento=7
+
+## Cantidad MB Intenet Movil Ilimitado
+parametros.internetmovil.ilimitado=95000
+
+
+##undades para tipo de bolsa
+parametros.tipobolsa.unidad.SMS=SMS
+parametros.tipobolsa.unidad.MMS=MMS
+parametros.tipobolsa.unidad.VOZ=MIN
+parametros.tipobolsa.unidad.IM=MB
+
+
+#Equipo
+equipo.bloqueo.tieneBloqueo=0007
+equipo.noValido=0003
+equipo.noReconocido=0009
+equipo.noReconocido.mensaje=Equipo no reconocido
+equipo.bloqueo.motivo.extravio=EXT
+equipo.bloqueo.motivo.robo=ROB
+equipo.presupuesto.accion.rechazar=R
+equipo.presupuesto.accion.aceptar=A
+equipo.iva=1.19
+equipo.formulario.renovacion.nombre=Mi Entel 25
+equipo.formulario.solicitaiphone.3g.nombre=Mi Entel 26
+equipo.formulario.solicitaiphone.4g.nombre=Mi Entel 27
+
+equipo.bloqueo.razonBloqueoRoboHurtoWS=1
+equipo.bloqueo.razonBloqueoPerdidaExtravioWS=3
+equipo.bloqueo.razonBloqueoRoboHurtoMQ=1
+equipo.bloqueo.razonBloqueoPerdidaExtravioMQ=2
+
+#En esta propiedad se debe especificar la ubicacion en disco del archivo xml
+#que contiene la plantilla para documento de apertura de OT - WEB-INF/xml/documentoServicioTecnicoAperturaOT.xml
+equipo.documentoApertura.plantilla.xml=
+
+#Formulario Contacto
+parametros.formularioContacto.mensajeExito.idContenido=mensajeExitoFormularioContacto
+parametros.formularioContacto.motivo=Sugerencia,Consulta
+parametros.formularioContacto.tipo=Comercial,T\u00E9cnica
+parametros.formularioContacto.telAdicional.indicativo=02,09,32,33,34,35,39,41,42,43,44,45,51,51,52,53,55,57,58,61,63,64,65,67,68,71,72,73,75
+
+#Esta propiedad se usa como parametro para hacer busqueda en el CM
+#del link a la pagina de soporte del equipo
+parametros.equipo.soporte=SOPORTE_
+parametros.equipo.mensajeEquipoBeta.idContenido=mensajeEquipoBeta
+
+# Grupos usados para validar el msj de renovación de equipo
+parametros.equipo.grupoCliente.preferencial=4,17
+parametros.equipo.grupoCliente.controlado=21,22,23
+parametros.equipo.grupoCliente.empresa=5,13,14,15,16,18,19,20
+
+#PLAN ACTUAL Y CAMBIO DE PLAN
+
+# Plan Comunik2 ID
+plan.comunikd2.id=214
+
+# Planes Minutos-Segundos Ilimitados
+plan.totalMinutos.ilimitado=Ilimitado
+plan.limiteSegundos.ilimitado=900000000
+plan.nombreTasacion.minFrecuente=MINFRE
+plan.valorTasacion.minFrecuente=900000000
+plan.infoPlanActual.idContenido=infoPlanActual
+plan.infoPlanActualBAMSS.idContenido=infoPlanActualBAMSS
+plan.infoPlanActualBAMCC.idContenido=infoPlanActualBAMCC
+plan.nombreTasacion.dbol=DBOL
+plan.nombreTasacion.mbol=MBOL
+plan.nombreTasacion.vbol=VBOL
+plan.infoPlanActualMMExcedido.idContenido=infoPlanMMExcedio_
+
+# Tipos de Planes
+parametros.tipoplan=tarifaplana,red,tarifaunicafrec,joven,full,tarifaunica,redfija,familia,redempresa,muliphone,mulred,ccplana,ccred,ccmul,mulredexc,mulexctd,mulexctdemp,grpdexemp
+
+## Planes SS
+# TipoPlanNormal
+parametros.tipoplan.tarifaplana.id=1
+parametros.tipoplan.tarifaplana.mercado=SS
+parametros.tipoplan.tarifaplana.nombre=Planes Tarifa Plana
+parametros.tipoplan.tarifaplana.desc=Controla tu gasto mensual pagando siempre lo mismo.
+
+# TipoPlanRed
+parametros.tipoplan.red.id=2
+parametros.tipoplan.red.mercado=SS
+parametros.tipoplan.red.nombre=Planes Red
+parametros.tipoplan.red.desc=Para hablar a m\u00F3viles Entel y a tel\u00E9fonos de red fija.
+
+# TipoPlanTarifaUnicaFrecuente
+parametros.tipoplan.tarifaunicafrec.id=3
+parametros.tipoplan.tarifaunicafrec.mercado=SS
+parametros.tipoplan.tarifaunicafrec.nombre=Planes tarifa \u00FAnica Frecuente
+parametros.tipoplan.tarifaunicafrec.desc=Planes libres con tarifa plana y n\u00FAmero frecuente. Habla ilimitadamente con el n\u00FAmero frecuente que elijas.
+
+# TipoPlanJoven
+parametros.tipoplan.joven.id=4
+parametros.tipoplan.joven.mercado=SS
+parametros.tipoplan.joven.nombre=Planes Joven
+parametros.tipoplan.joven.desc=Planes libres con tarifa plana y n\u00FAmero frecuente.
+
+# TipoPlanFull
+parametros.tipoplan.full.id=5
+parametros.tipoplan.full.mercado=SS
+parametros.tipoplan.full.nombre=Planes Full
+parametros.tipoplan.full.desc=Planes libres con tarifa plana y n\u00FAmero frecuente.
+
+# TipoPlanTarifaUnica
+parametros.tipoplan.tarifaunica.id=6
+parametros.tipoplan.tarifaunica.mercado=SS
+parametros.tipoplan.tarifaunica.nombre=Planes tarifa \u00FAnica
+parametros.tipoplan.tarifaunica.desc=Llama a m\u00F3viles de Entel,a tel\u00E9fonos de red fija y a otras compa\u00F1\u00EDas con una misma tarifa y a cualquier horario.
+
+# TipoPlanRedFija
+# TipoPlanRedFija CC
+parametros.tipoplan.redfija.id=7
+parametros.tipoplan.redfija.id=7
+parametros.tipoplan.redfija.mercado=SS
+parametros.tipoplan.redfija.mercado=CC
+parametros.tipoplan.redfija.nombre=Planes Red Fija
+parametros.tipoplan.redfija.nombre=Planes Red Fija
+parametros.tipoplan.redfija.desc=Para hablar a m\u00F3viles Entel y a tel\u00E9fonos de red fija.
+parametros.tipoplan.redfija.desc=Para hablar a m\u00F3viles Entel y a tel\u00E9fonos de red fija.
+
+# TipoPlanFamilia
+parametros.tipoplan.familia.id=8
+parametros.tipoplan.familia.mercado=SS
+parametros.tipoplan.familia.nombre=Planes Familia
+parametros.tipoplan.familia.desc=Hablar en familia conviene m\u00E1s con los planes Familia de Entel.
+
+# TipoPlanRedEmpresa
+parametros.tipoplan.redempresa.id=9
+parametros.tipoplan.redempresa.mercado=SS
+parametros.tipoplan.redempresa.nombre=Planes red Empresa
+parametros.tipoplan.redempresa.desc=Para hablar a m\u00F3viles Entel y a tel\u00E9fonos de red fija.
+
+# TipoPlanMultimediaIphone
+parametros.tipoplan.muliphone.id=11
+parametros.tipoplan.muliphone.mercado=SS
+parametros.tipoplan.muliphone.nombre=Planes MM Iphone
+parametros.tipoplan.muliphone.desc=
+
+# TipoPlanMultimediaRed
+parametros.tipoplan.mulred.id=12
+parametros.tipoplan.mulred.mercado=SS
+parametros.tipoplan.mulred.nombre=Planes Multimedia Red
+parametros.tipoplan.mulred.desc=Llama,env\u00EDa mensajes de texto a m\u00F3viles Entel y red fija,y navega ilimitado.
+
+# TipoPlanMultimediaRedExcedido SS
+parametros.tipoplan.mulredexc.id=13
+parametros.tipoplan.mulredexc.mercado=SS
+parametros.tipoplan.mulredexc.nombre=Planes Multimedia Red
+parametros.tipoplan.mulredexc.desc=
+
+# TipoPlanMultimediaRedExcedidoTodoDestino SS
+parametros.tipoplan.mulexctd.id=14
+parametros.tipoplan.mulexctd.mercado=SS
+parametros.tipoplan.mulexctd.nombre=Planes Multimedia Todo Destino
+parametros.tipoplan.mulexctd.desc=
+
+# TipoPlanMultimediaRedExcedidoTodoDestino SS
+parametros.tipoplan.mulexctdemp.id=15
+parametros.tipoplan.mulexctdemp.mercado=SS
+parametros.tipoplan.mulexctdemp.nombre=Planes Multimedia Todo Destino Empresas
+parametros.tipoplan.mulexctdemp.desc=
+
+# TipoPlanGrupalDatosExcedidoEmpresa SS
+parametros.tipoplan.grpdexemp.id=16
+parametros.tipoplan.grpdexemp.mercado=SS
+parametros.tipoplan.grpdexemp.nombre=Planes Grupales Empresas
+parametros.tipoplan.grpdexemp.desc=
+parametros.tipoplan.grpdexemp.codTasacion.CFL=CFL
+parametros.tipoplan.grpdexemp.codTasacion.MTTD=MTTD
+parametros.tipoplan.grpdexemp.codTasacion.SMSL=SMSL
+parametros.tipoplan.grpdexemp.codTasacion.MTTADI=MTTADI
+parametros.tipoplan.grpdexemp.codTasacion.MBADI=MBADI
+
+
+## Planes CC
+# TipoPlanNormal CC
+parametros.tipoplan.ccplana.id=1
+parametros.tipoplan.ccplana.mercado=CC
+parametros.tipoplan.ccplana.nombre=Planes Cuenta Controlada Tarifa Plana
+parametros.tipoplan.ccplana.desc=Controla tu gasto mensual pagando siempre lo mismo. Con estos planes,y mientras no tengas bolsas de internet m\u00F3vil vigente,puedes navegar todo el d\u00EDa,desde las 00:00 horas a las 23:59 o cada 7MB,por $500. M\u00E1s informaci\u00F3n en www.entel.cl/navegaciondiaria
+parametros.tipoplan.ccplana.descPlanActual=Controla tu gasto mensual pagando siempre lo mismo.
+
+# TipoPlanRed CC
+parametros.tipoplan.ccred.id=2
+parametros.tipoplan.ccred.mercado=CC
+parametros.tipoplan.ccred.nombre=Planes Cuenta Controlada Tarifa Red
+parametros.tipoplan.ccred.desc=Para hablar a m\u00F3viles Entel y a tel\u00E9fonos de red fija. Con estos planes,y mientras no tengas bolsas de internet m\u00F3vil vigente,puedes navegar todo el d\u00EDa,desde las 00:00 horas a las 23:59 o cada 7MB,por $500. M\u00E1s informaci\u00F3n en www.entel.cl/navegaciondiaria
+parametros.tipoplan.ccred.descPlanActual=Para hablar a m\u00F3viles Entel y a tel\u00E9fonos de red fija.
+
+# TipoPlanMultimedia CC
+parametros.tipoplan.ccmul.id=10
+parametros.tipoplan.ccmul.mercado=CC
+parametros.tipoplan.ccmul.nombre=Multimedia
+parametros.tipoplan.ccmul.desc=Planes controlados y con internet m\u00F3vil.
+
+
+# Tipos de Tasacion (Planes SS CC)
+parametros.plan.nombreTasacion=1
+parametros.plan.nombreTasacion=2
+parametros.plan.nombreTasacion=3
+parametros.plan.nombreTasacion=4
+parametros.plan.nombreTasacion=5
+parametros.plan.nombreTasacion=6
+parametros.plan.nombreTasacion=7
+parametros.plan.nombreTasacion=8
+parametros.plan.nombreTasacion=9
+parametros.plan.nombreTasacion=10
+parametros.plan.nombreTasacion=11
+parametros.plan.nombreTasacion=12
+parametros.plan.nombreTasacion=13
+parametros.plan.nombreTasacion=14
+parametros.plan.nombreTasacion=15
+parametros.plan.nombreTasacion=16
+parametros.plan.nombreTasacion.1.BAJO=Horario Bajo
+parametros.plan.nombreTasacion.1.NORMAL=Horario Normal
+parametros.plan.nombreTasacion.2.NET=Entel o red fija
+parametros.plan.nombreTasacion.2.OFFNET=Otras compa\u00F1\u00EDas
+parametros.plan.nombreTasacion.3.ADI=Adicional
+parametros.plan.nombreTasacion.3.FRE=Nro. Frecuente
+parametros.plan.nombreTasacion.3.CAM=Cargo Adicional acceso m\u00F3viles
+parametros.plan.nombreTasacion.3.MINFRE=Nro. Frecuente
+parametros.plan.nombreTasacion.4.ADI=Valor Minuto Adicional
+parametros.plan.nombreTasacion.4.FRE=Valor Minuto Nro. Frecuente
+parametros.plan.nombreTasacion.5.ADI=Valor Minuto Adicional
+parametros.plan.nombreTasacion.5.FRE=Valor Minuto Nro. Frecuente
+parametros.plan.nombreTasacion.6.TARIFA=Valor Minuto Adicional
+parametros.plan.nombreTasacion.7.MOV=A M\u00F3viles
+parametros.plan.nombreTasacion.7.RED=Red fija
+parametros.plan.nombreTasacion.7.FRE=Nros. Frecuentes
+parametros.plan.nombreTasacion.7.REDFIJA=Llamadas Red Fija y N\u00B0 Frecuente
+parametros.plan.nombreTasacion.7.OTROSMOV=Llamadas a otros m\u00F3viles
+parametros.plan.nombreTasacion.7.NET=Llamadas m\u00F3viles Entel
+parametros.plan.nombreTasacion.7.RURAL=Llamadas a telefon\u00EDa fija Rural
+parametros.plan.nombreTasacion.7.SMS=Tarifa SMS
+parametros.plan.nombreTasacion.8.ADI=Minutos adicional
+parametros.plan.nombreTasacion.8.DBOL=Minutos familia
+parametros.plan.nombreTasacion.8.MBOL=Minutos todo destino
+parametros.plan.nombreTasacion.8.VBOL=Cargo fijo por m\u00F3vil
+parametros.plan.nombreTasacion.9.NET=A otros destinos
+parametros.plan.nombreTasacion.9.OFFNET=Valor Minuto adicional a otros destinos
+parametros.plan.nombreTasacion.10.REM=Recarga Mensual
+parametros.plan.nombreTasacion.10.NORMAL=Minuto
+parametros.plan.nombreTasacion.10.SMS=SMS
+parametros.plan.nombreTasacion.10.MMS=MMS
+parametros.plan.nombreTasacion.11.NET=Minutos On-Net
+parametros.plan.nombreTasacion.11.SMS-MMSNET=SMS y MMS On-Net
+parametros.plan.nombreTasacion.11.OFFNET=Minutos Off-Net
+parametros.plan.nombreTasacion.11.SMSADI=SMS
+parametros.plan.nombreTasacion.11.MMSADI=MMS
+parametros.plan.nombreTasacion.12.SMSNET=SMS On-Net
+parametros.plan.nombreTasacion.12.NET=Minutos a todo destino
+parametros.plan.nombreTasacion.12.SMSADI=SMS
+parametros.plan.nombreTasacion.12.MMSADI=MMS
+parametros.plan.nombreTasacion.13.SMS-MMSNET=SMS/MMS a m\u00F3viles Entel
+parametros.plan.nombreTasacion.13.MTTD=Minuto a todo destino
+parametros.plan.nombreTasacion.13.MBADI=MB Internet m\u00F3vil
+parametros.plan.nombreTasacion.13.SMSADI=SMS
+parametros.plan.nombreTasacion.13.MMSADI=MMS
+parametros.plan.nombreTasacion.14.SMS-MMSNET=SMS/MMS a m\u00F3viles Entel
+parametros.plan.nombreTasacion.14.MTTD=Minuto a todo destino
+parametros.plan.nombreTasacion.14.MBADI=MB Internet m\u00F3vil
+parametros.plan.nombreTasacion.14.SMSADI=SMS
+parametros.plan.nombreTasacion.14.MMSADI=MMS
+parametros.plan.nombreTasacion.15.SMS-MMSNET=SMS
+parametros.plan.nombreTasacion.15.MTTD=Minuto a todo destino
+parametros.plan.nombreTasacion.15.MBADI=MB
+parametros.plan.nombreTasacion.16.CFL=Cargo fijo por Linea
+parametros.plan.nombreTasacion.16.MTTD=Minutos a Todo Destino
+parametros.plan.nombreTasacion.16.SMSL=SMS por Linea
+parametros.plan.nombreTasacion.16.MTTDADI=Minuto a Todo Destino
+parametros.plan.nombreTasacion.16.MBADI=MB
+
+
+
+#########################################################
+# Velocidades de descarga ysubida para planes multimedia
+#########################################################
+
+# Planes Multimedia Red
+parametros.plan.MultimediaRed.1057=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.MultimediaRed.1058=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+
+# Planes Multimedia Todo Destino
+parametros.plan.Multimedia.1253=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1050=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1051=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1052=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1053=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1054=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1055=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1056=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.Multimedia.1340=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+
+# Planes Blackberry Multimedia Todo Destino
+parametros.plan.BlackberryMultimedia.1252=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1064=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1065=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1066=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1067=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1068=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1069=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1070=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.BlackberryMultimedia.1334=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+
+# Planes Multimedia Cuenta Controlada
+parametros.plan.MultimediaCtaCda.1049=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.MultimediaCtaCda.1267=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+parametros.plan.MultimediaCtaCda.1205=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+
+# Planes Blackberry Multimedia Cuenta Controlada
+parametros.plan.BlackberryMultimediaCtaCda.1335=Hasta 2 Mbps|Hasta 328 kbps|700 kbps|200 kbps|500 kbps|140 kbps
+
+# Planes TarifaUnica con SMS
+parametros.planes.tarifaunica=137,721
+
+# Planes TarifaUnica con SMS
+parametros.planes.tarifaunica.sms=137,721
+
+# Planes Blackberry Multimedia Todo destino - TarifaUnica
+parametros.planes.bberry.mm.tododestino=1252,1064,1065,1066,1067,1068,1069,1070,1334
+
+# Planes Multimedia Cuenta Controlada
+parametros.planes.mm.cc=1049,1267,1205
+
+# Planes Blackberry Multimedia Cuenta Controlada
+parametros.planes.bberry.mm.cc=1335
+
+# Planes Blackberry  NO Multimedia
+parametros.planes.bberry.no.mm=3437
+
+# Planes Multimedia Red
+parametros.planes.mm.cc.red=1057,1058
+
+# Planes Multimedia Cuenta Controlada Todo Destino
+parametros.planes.mm.cc.td=1253,1050,1051,1052,1053,1054,1055,1056,1340
+
+# Flag Hidden
+plan.flagHidden.attr=flagHidden
+
+# Filtro Planes Red
+parametros.planes.grupoPlanesRedFiltro=1212,1213,1214
+
+# Prefijos Red Fija
+parametros.numeroPrefijo=redfija
+parametros.numeroPrefijo.redfija.prefijos=2,31,32,33,34,35,36,37,38,41,42,43,45,51,52,53,54,55,56,57,58,61,63,64,65,67,71,72,73,74,75,78
+
+# Slots Numero Frecuente - Favorito
+parametros.frecuente.idslot=23
+parametros.favorito.idslot=34
+
+# Planes Multimedia Red Excedido
+parametros.planes.mm.ss.red.exc=1477,1478,1479
+
+# Planes Multimedia Red Excedido Todo Destino
+parametros.planes.mm.ss.red.exc.td=1470,1471,1472,1473,1474,1475,1476
+
+# Planes Multimedia Red Excedido Todo Destino Empresas
+parametros.planes.mm.ss.red.exc.td.emp=1481,1482,1483,1484,1485,1486,1487
+
+
+
+## Administracion Servicios
+
+# Flag de visibilidad del servicio para el usuario
+parametros.adminServicios.mostrar=S
+parametros.adminServicios.noMostrar=N
+
+# Estados de un servicios:
+parametros.adminServicios.estado.habilitado=Habilitado
+parametros.adminServicios.estado.deshabilitado=Deshabilitado
+parametros.adminServicios.estado.bloqueado=Bloqueado
+parametros.adminServicios.estado.error=Error
+
+#DESCRIPCION ESTADO DE SERVICIOS
+parametros.adminServicios.descEstado.inconsistencia=INCONSISTENCIA EN SERVICIO
+parametros.adminServicios.mostrarEstado.error=Error
+parametros.adminServicios.codigoEstado.error=0
+
+#Mobile Marketing
+parametros.adminServicios.MMKT.vasID=MZZO
+parametros.adminServicios.MMKT.providerID=MZZOMMKT
+parametros.adminServicios.MMKT.serviceID=MMKT_MZZO_C1
+parametros.adminServicios.MMKT.suscriptionID=0
+parametros.adminServicios.MMKT.la=0
+parametros.adminServicios.MMKT.canal=WEB
+
+
+#Servicios de Suscripcion
+parametros.adminServicios.estado=Habilitado,Deshabilitado,Bloqueado
+parametros.adminServicios.listanegra.servicein=bl
+parametros.adminServicios.listanegra.serviceout=nn
+parametros.adminServicios.topeRegistrosPagina=10
+parametros.adminServicios.canal=PORTAL
+parametros.adminServicios.messageHabilitados=Este servicio ha sido habilitado exitosamente.Para habilitarlo b\u00FAscalo por categor\u00EDa o dentro de los servicios deshabilitados.
+parametros.familias.codmotivo=2
+parametros.familias=DESC,MENSA
+parametros.familias.DESC.vasid=Providers
+parametros.familias.DESC.description=1414 suscripcion Toing $500,6920 suscripcion Zcontents $1500,6920 suscripcion Zcontents $500,4444 suscripcion Atala $500,8008 suscripcion 3GMotion $990,8008 suscripcion 3GMotion $2490,9090 suscripcion Gameloft $990,9090 suscripcion Gameloft $1500,4466 suscripcion 3GMotion $250
+parametros.familias.DESC.Providers.combinacion=providerID,serviceID,suscriptionID,la
+parametros.familias.DESC.Providers.providerID=3GMotion,Atala,Gameloft,Toing,Zcontents
+parametros.familias.DESC.Providers.serviceID=suscripcion
+parametros.familias.DESC.Providers.suscriptionID=sus_contents,sus_video07,sus_video18,sus_video19,sus_real01,sus_game01,sus_game02,sus_game01,sus_game03,sus_game04,sus_chica
+parametros.familias.DESC.Providers.la=1414,4444,4466,6920,8008,9090
+parametros.familias.MENSA.vasid=PMP
+parametros.familias.MENSA.description=54321 Suscripcion contenta $290,9922 suscripcion 5 movix $250,3050 suscripcion cibersons $150,7050 Suscripcion cibersons $300
+parametros.familias.MENSA.PMP.combinacion=suscriptionID,serviceID,la,providerID
+parametros.familias.MENSA.PMP.suscriptionID=CI3050,9922,7050,54321.C1,54321.C2,54321.C3,54321.C4,54321.C56,54321.C5,54321.C102,54321.C57,54321.C59,54321.C6,54321.C7,54321.C8,54321.C78,54321.C63,54321.C61,54321.C12,54321.C13,54321.C14,54321.C15,54321.C103,54321.C53,54321.C67,54321.C71,54321.C18,54321.C19,54321.C20,54321.C21,54321.C90,54321.C55,54321.C89,54321.C101,54321.C97,54321.C41,54321.C42,54321.C43,54321.C47,54321.C48,54321.C50,54321.C51,54321.C52,54321.C99,54321.C100,54321.C60,54321.C70,54321.C27,54321.C96,54321.C28,54321.C29,54321.C92,54321.C84,54321.C83,54321.C93,54321.C94,54321.C31,54321.C87,54321.C32,54321.C91,54321.C66,54321.C104,54321.C33,54321.C34,54321.C98,54321.C79,54321.C35,54321.C36,54321.C95,54321.C105,54321.C72,54321.C38,54321.C39,54321.C58,54321.C77,54321.C64,54321.C65,54321.C85,54321.C40,54321.C17,54321.C22,54321.C23,54321.C24,54321.C75,54321.C69,54321.C74,54321.C73,54321.C25,54321.C54,54321.C62,54321.C26,54321.C82,54321.C86,54321.C44,54321.C45,54321.C46,54321.C76,54321.C9,54321.C80,54321.C10,54321.C11,54321.C81,54321.C16,54321.C68,54321.C49,54321.C88,54321.C30,54321.C37
+parametros.familias.MENSA.PMP.serviceID=CI3050,MV9922,CI7050,CN54321.C1,CN54321.C2,CN54321.C3,CN54321.C4,CN54321.C56,CN54321.C5,CN54321.C102,CN54321.C57,CN54321.C59,CN54321.C6,CN54321.C7,CN54321.C8,CN54321.C78,CN54321.C63,CN54321.C61,CN54321.C12,CN54321.C13,CN54321.C14,CN54321.C15,CN54321.C103,CN54321.C53,CN54321.C67,CN54321.C71,CN54321.C18,CN54321.C19,CN54321.C20,CN54321.C21,CN54321.C90,CN54321.C55,CN54321.C89,CN54321.C101,CN54321.C97,CN54321.C41,CN54321.C42,CN54321.C43,CN54321.C47,CN54321.C48,CN54321.C50,CN54321.C51,CN54321.C52,CN54321.C99,CN54321.C100,CN54321.C60,CN54321.C70,CN54321.C27,CN54321.C96,CN54321.C28,CN54321.C29,CN54321.C92,CN54321.C84,CN54321.C83,CN54321.C93,CN54321.C94,CN54321.C31,CN54321.C87,CN54321.C32,CN54321.C91,CN54321.C66,CN54321.C104,CN54321.C33,CN54321.C34,CN54321.C98,CN54321.C79,CN54321.C35,CN54321.C36,CN54321.C95,CN54321.C105,CN54321.C72,CN54321.C38,CN54321.C39,CN54321.C58,CN54321.C77,CN54321.C64,CN54321.C65,CN54321.C85,CN54321.C40,CN54321.C17,CN54321.C22,CN54321.C23,CN54321.C24,CN54321.C75,CN54321.C69,CN54321.C74,CN54321.C73,CN54321.C25,CN54321.C54,CN54321.C62,CN54321.C26,CN54321.C82,CN54321.C86,CN54321.C44,CN54321.C45,CN54321.C46,CN54321.C76,CN54321.C9,CN54321.C80,CN54321.C10,CN54321.C11,CN54321.C81,CN54321.C16,CN54321.C68,CN54321.C49,CN54321.C88,CN54321.C30,CN54321.C37
+parametros.familias.MENSA.PMP.providerID=CIBERSONS,CONTENTA,MOVIX
+parametros.familias.MENSA.PMP.la=3050,9922,7050,54321
+parametros.familias.DESC.servicios=sus_contents,sus_game03,sus_game04,sus_game01,sus_game05,sus_video22,sus_video26,sus_video27,sus_video18,sus_video19,sus_video20,sus_video21,sus_alerta01,sus_alerta02
+parametros.familias.MENSA.servicios=7050,9922
+parametros.familias.PLTEX.servicios=CI3050
+parametros.familias.PMP.servicios=7050
+parametros.adminServicios.registrosPorPagina = 10
+
+
+#Tipo buzon
+#Valores tipo buzon obtenidos desde servicios
+parametros.adminServicios.tipo.basico=
+parametros.adminServicios.tipo.premiumMMS=
+parametros.adminServicios.tipo.premiumMail=
+
+## Servicios mercado SS-CC
+
+parametros.adminServicios=iarea,roaming,ldi,num700,num300,num606,num609,wap,imovil,bam,gprs
+
+# Numero interarea
+adminServicios.iarea.idTipoServicio=27
+adminServicios.iarea.idServicio=224
+adminServicios.iarea.descripcionServicio=IAREA
+adminServicios.iarea.activar=a
+adminServicios.iarea.desactivar=d
+adminServicios.iarea.activarTransferencia=A
+adminServicios.iarea.desactivarTransferencia=D
+
+# Numero roaming
+adminServicios.roaming.idTipoServicio=16
+adminServicios.roaming.idServicio=337
+adminServicios.roaming.descripcionServicio=ROAMING
+adminServicios.roaming.activar=a
+adminServicios.roaming.desactivar=d
+adminServicios.roaming.activarTransferencia=A
+adminServicios.roaming.desactivarTransferencia=D
+
+# Larga Distancia internacional
+adminServicios.ldi.idTipoServicio=16
+adminServicios.ldi.idServicio=209
+adminServicios.ldi.descripcionServicio=LDI
+adminServicios.ldi.activar=a
+adminServicios.ldi.desactivar=d
+adminServicios.ldi.activarTransferencia=A
+adminServicios.ldi.desactivarTransferencia=D
+
+# Numero 300
+adminServicios.num300.idTipoServicio=16
+adminServicios.num300.idServicio=333
+adminServicios.num300.descripcionServicio=300
+adminServicios.num300.activar=DESACTIVAR
+adminServicios.num300.desactivar=ACTIVAR
+adminServicios.num300.activarTransferencia=A
+adminServicios.num300.desactivarTransferencia=D
+
+# Numero 700
+adminServicios.num700.idTipoServicio=16
+adminServicios.num700.idServicio=332
+adminServicios.num700.descripcionServicio=700
+adminServicios.num700.activar=DESACTIVAR
+adminServicios.num700.desactivar=ACTIVAR
+adminServicios.num700.activarTransferencia=A
+adminServicios.num700.desactivarTransferencia=D
+
+# Numero 606
+adminServicios.num606.idTipoServicio=16
+adminServicios.num606.idServicio=334
+adminServicios.num606.descripcionServicio=606
+adminServicios.num606.activar=DESACTIVAR
+adminServicios.num606.desactivar=ACTIVAR
+adminServicios.num606.activarTransferencia=A
+adminServicios.num606.desactivarTransferencia=D
+
+# Numero 609
+adminServicios.num609.idTipoServicio=16
+adminServicios.num609.idServicio=335
+adminServicios.num609.descripcionServicio=609
+adminServicios.num609.activar=DESACTIVAR
+adminServicios.num609.desactivar=ACTIVAR
+adminServicios.num609.activarTransferencia=A
+adminServicios.num609.desactivarTransferencia=D
+
+# WAP
+adminServicios.wap.idTipoServicio=11
+adminServicios.wap.idServicio=19
+adminServicios.wap.descripcionServicio=WAP
+adminServicios.wap.activar=ACTIVAR
+adminServicios.wap.desactivar=DESACTIVAR
+adminServicios.wap.activarTransferencia=D
+adminServicios.wap.desactivarTransferencia=D
+
+#IMOVIL (Banda Ancha Móvil)
+adminServicios.imovil.idServicio=IMOVIL
+adminServicios.imovil.descripcionServicio=Banda Ancha M\u00F3vil
+adminServicios.imovil.activar=a
+adminServicios.imovil.desactivar=d
+
+#BAM - ISHOP (Internet Móvil)
+adminServicios.bam.idServicio=BAM
+adminServicios.bam.descripcionServicio=Internet M\u00F3vil
+adminServicios.bam.activar=a
+adminServicios.bam.desactivar=d
+
+#GPRS
+adminServicios.gprs.idServicio=GPRS
+adminServicios.gprs.descripcionServicio=Internet M\u00F3vil / Banda Ancha M\u00F3vil
+adminServicios.gprs.activar=A
+adminServicios.gprs.desactivar=D
+
+#MMS
+adminServicios.mms.idServicio=MMS
+adminServicios.mms.descripcionServicio=MMS / Banda Ancha M\u00F3vil
+adminServicios.mms.activar=a
+adminServicios.mms.desactivar=d
+
+
+##Servicios IVR
+
+parametros.adminServicios.ivr=sms,buzonPP,nip
+
+# SMS
+adminServicios.ivr.sms.idTipoServicio=NIP
+adminServicios.ivr.sms.activar=A
+adminServicios.ivr.sms.desactivar=D
+
+# Buzon PP
+adminServicios.ivr.buzonPP.idTipoServicio=VOICEMAIL
+adminServicios.ivr.buzonPP.activar=A
+adminServicios.ivr.buzonPP.desactivar=D
+
+# NIP PP
+adminServicios.ivr.nip.idTipoServicio=NIP
+adminServicios.ivr.nip.activar=A
+adminServicios.ivr.nip.desactivar=D
+
+
+##Servicios Buzon de Voz
+
+# buzon
+adminServicios.buzon.activar=ACTIVA
+adminServicios.buzon.desactivar=DESACTIVA
+
+# buzon - tipo perfil
+adminServicios.buzon.tipoPerfil.basico=basico
+adminServicios.buzon.tipoPerfil.vm2mms=vm2mms
+adminServicios.buzon.tipoPerfil.vm2email=vm2email
+
+
+## Servicios Avisale
+
+#avisale
+adminServicios.avisale.activar=A
+adminServicios.avisale.desactivar=D
+adminServicios.avisale.tipoListaDesactivar=default
+adminServicios.avisale.modificar=M
+
+adminServicios.avisale.tipoLista.avisarTodos=negra
+adminServicios.avisale.tipoLista.soloAvisarA=blanca
+adminServicios.avisale.tipoLista.default=default
+
+# Avisale - tipo lista
+parametros.adminServicios.avisale.tipoLista=default,blanca,negra
+parametros.adminServicios.avisale.default.id=default
+parametros.adminServicios.avisale.default.desc=default
+parametros.adminServicios.avisale.blanca.id=blanca
+parametros.adminServicios.avisale.blanca.desc=blanca
+parametros.adminServicios.avisale.negra.id=negra
+parametros.adminServicios.avisale.negra.desc=negra
+
+## Aviso Factura electronica
+
+#dias anticipacion
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion=1,2,3,4,5
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.1.id=1
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.1.desc=1 d\u00EDa
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.2.id=2
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.2.desc=2 d\u00EDas
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.3.id=3
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.3.desc=3 d\u00EDas
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.4.id=4
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.4.desc=4 d\u00EDas
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.5.id=5
+parametros.adminServicios.avisoFactElectronica.diasAnticipacion.5.desc=5 d\u00EDas
+
+
+adminServicios.avisoFactElectronica.activar=A
+adminServicios.avisoFactElectronica.desactivar=D
+adminServicios.avisoFactElectronica.modificar=M
+
+
+# Cobro Revertido
+adminServicios.cobroRevertido.agregar=AGREGAR
+adminServicios.cobroRevertido.eliminar=ELIMINAR
+adminServicios.cobroRevertido.validar=VALIDAR
+
+adminServicios.cobroRevertido.recepcionactivar=A
+adminServicios.cobroRevertido.recepciondesactivar=D
+
+## Servicios Mercado PP
+
+parametros.adminServicios.pp=mms-gprs,wap
+
+adminServicios.pp.mms-gprs.activar=gprs
+adminServicios.pp.mms-gprs.desactivar=ent
+adminServicios.pp.wap.activar=ACTIVAR
+adminServicios.pp.wap.desactivar=DESACTIVAR
+
+
+##################################################################
+## Properties para la funcionalidad de Cartola y canje de puntos
+##################################################################
+
+# Properties usadas en la obtencion del catalogo
+
+zonaEntel.canjeDePuntos.bolsaVoz=BOLSA_VOZ
+zonaEntel.canjeDePuntos.bolsaVozRegalar=BOLSA_VOZ_R
+zonaEntel.canjeDePuntos.bolsaSMS=BOLSA_MSJ
+zonaEntel.canjeDePuntos.bolsaSMSRegalar=BOLSA_MSJ_R
+zonaEntel.canjeDePuntos.bolsaBAM=BOLSA_DATOS
+zonaEntel.canjeDePuntos.bolsaBAMRegalar=BOLSA_DATOS_R
+zonaEntel.canjeDePuntos.bolsaMixta=BOLSA_MIXTA
+zonaEntel.canjeDePuntos.bolsaMixtaRegalar=BOLSA_MIXTA_R
+zonaEntel.canjeDePuntos.bolsaIM=BOLSA_IM
+zonaEntel.canjeDePuntos.bolsaIMRegalar=BOLSA_IM_R
+zonaEntel.canjeDePuntos.bolsaIMRegalar=BOLSA_IM_R
+zonaEntel.canjeDePuntos.bolsaBAMCC=BOLSA_BAMCC
+zonaEntel.canjeDePuntos.bolsaBAMCC_R=BOLSA_BAMCC_R
+zonaEntel.canjeDePuntos.bolsaBAMPP=BOLSA_BAMPP
+zonaEntel.canjeDePuntos.bolsaBAMPP_R=BOLSA_BAMPP_R
+
+# Properties usadas en la operacion de regalar bolsas
+zonaEntel.regalarBolsas.plataforma.suscripcion=WEB_SS
+zonaEntel.regalarBolsas.plataforma.cuentacontrolada=WEB_CC
+
+##################################################################
+## Zona entel - Service Matriz Canje
+##################################################################
+zonaEntel.catalogo.canal.web=10
+zonaEntel.catalogo.canal.webbam=10
+zonaEntel.catalogo.mercado.vozpp=1
+zonaEntel.catalogo.mercado.vozcc=2
+zonaEntel.catalogo.mercado.vozss=3
+zonaEntel.catalogo.mercado.bampp=4
+zonaEntel.catalogo.mercado.bamcc=5
+zonaEntel.catalogo.mercado.bamss=6
+zonaEntel.catalogo.mercado.bamccn=7
+
+zonaEntel.catalogo.operacion.bolsaOtros=BOLSAS_OTROS
+zonaEntel.catalogo.operacion.bolsaSiMismo=BOLSAS_SI_MISMO
+zonaEntel.catalogo.operacion.recargaOtros=RECARGA_OTROS
+zonaEntel.catalogo.operacion.recargaSiMismo=RECARGA_SI_MISMO
+
+##################################################################
+## Zona entel - Constantes Servicio PrestaLuka
+##################################################################
+zonaEntel.prestaLukaService.plataforma=WEB
+zonaEntel.prestaLukaService.empresa=53
+zonaEntel.prestaLukaService.local=10
+zonaEntel.prestaLukaService.terminal=0
+zonaEntel.prestaLukaService.codsbad=10,33
+
+
+#  Properties usadas para visualizar el historial de canje dependiendo del periodo
+
+parametros.zonaEntel.historialCanje.listado.verHistorial=1,2,3
+parametros.zonaEntel.historialCanje.listado.verHistorial.1.id=1
+parametros.zonaEntel.historialCanje.listado.verHistorial.1.desc=Historial \u00FAltimo mes
+parametros.zonaEntel.historialCanje.listado.verHistorial.2.id=2
+parametros.zonaEntel.historialCanje.listado.verHistorial.2.desc=Historial \u00FAltimos 3 meses
+parametros.zonaEntel.historialCanje.listado.verHistorial.3.id=3
+parametros.zonaEntel.historialCanje.listado.verHistorial.3.desc=Historial \u00FAltimos 6 meses
+
+#  Properties usadas para visualizar el historial de canje dependiendo del tipo
+parametros.zonaEntel.historialCanje.listado.tipo=1,2,3,4
+parametros.zonaEntel.historialCanje.listado.tipo.1.id=1
+parametros.zonaEntel.historialCanje.listado.tipo.1.desc=Acumulaci\u00F3n
+parametros.zonaEntel.historialCanje.listado.tipo.2.id=2
+parametros.zonaEntel.historialCanje.listado.tipo.2.desc=Canjes
+parametros.zonaEntel.historialCanje.listado.tipo.3.id=3
+parametros.zonaEntel.historialCanje.listado.tipo.3.desc=Vencimiento
+parametros.zonaEntel.historialCanje.listado.tipo.4.id=4
+parametros.zonaEntel.historialCanje.listado.tipo.4.desc=Todos
+
+parametros.zonaEntel.historialCanje.numeroPorPagina=
+
+
+##################################################################
+## Valores constantes para cifrado RSA.
+##################################################################
+
+# Valores usados para las llaves publica y privada
+cifradoRSA.params.bothKeys.n=a060f59007115587
+cifradoRSA.params.llavePublica.e=68a14e4e0f1353f
+cifradoRSA.params.llavePrivada.d=2fe67b79f218dacf
+
+
+# Formulario Inscripcion - Registro de Usuario
+inscripcion.attr.name=inscripcion
+inscripcion.acceso.attr=acceso
+inscripcion.acceso.login=login
+inscripcion.acceso.selectorCuenta=selectorCuenta
+inscripcion.acceso.formMisDatos=formMisDatos
+
+inscripcion.tipo.attr.name=tipo_inscripcion
+inscripcion.tipo.movilNoBuic.attr=movilNoBuic
+inscripcion.tipo.movilRutNoAsociado.attr=movilRutNoAsociado
+
+inscripcion.formPreRegistro.codigo.ingresar=0002
+inscripcion.formRegistro.codigo.ingresar=0001
+inscripcion.formRegistro.codigo.movilRutNoBuic=0008
+inscripcion.formRegistro.autorizacionVoluntaria.idContenido=autorizacionVoluntariaRegistro
+
+inscripcion.msg.restriccion=El N\u00BA Entel ingresado ya tiene un registro asociado a otro rut. Por politicas de seguridad,podr\u00E1s modificar el registro a partir del
+inscripcion.msg.registrado=Ya estas registrado. Para utilizar servicios en l\u00EDnea,ingresa a Mi Entel.
+inscripcion.msg.nroNoRegistrado=Este n\u00FAmero a\u00FAn no tiene usuario registrado.
+inscripcion.msg.formMisDatos=El N\u00BA Entel ingresado ya tiene un registro asociado a otro Rut. Puedes crear un nuevo registro.
+inscripcion.msg.movilNoBuic=Para acceder a Mi Entel adem\u00E1s de tener tu clave debes registrarte.
+inscripcion.msg.movilRutNoAsociado=El N\u00BA Entel ingresado ya tiene un registro asociado a otro Rut. Puedes crear un nuevo registro.
+
+# iShop Agendamiento
+iShop.agendamiento.tipoServicio.SMS=SMS
+iShop.agendamiento.tipoServicio.MMS=MMS
+
+# iShop SMS-MMS Info
+iShop.sms-mms-info.formAction=http://personas.entelpcs.cl/EntelSMSInfo/smsinfo.portal?IDP={0}&_nfpb=true&_pageLabel=smsinfo_inicio&_windowLabel=inicio&inicio_actionOverride=%2Fcl%2Fentelpcs%2Fsminfo%2Fportlets%2Fhomesminfo%2Fmostrar
+iShop.sms-mms-info.linkVerMas=http://personas.entelpcs.cl/EntelSMSInfo/smsinfo.portal?_nfpb=true&_pageLabel=smsinfo_portal_page_5
+
+# iShop Suscripciones
+iShop.suscripciones.via=web
+iShop.suscripciones.iShopLink=http://personas.entel.cl/EntelPCS-SDC/sdc.portal?_nfpb=true&_pageLabel=sdc_portal_page_3
+
+# Linea adicional
+lineaAdicional.linkPlanesVoz=http://personas.entelpcs.cl/PortalPersonas/appmanager/entelpcs/personas?_nfpb=true&_pageLabel=P800933501267454369229
+lineaAdicional.linkBAM=http://personas.entelpcs.cl/PortalPersonas/appmanager/entelpcs/personas?_nfpb=true&_pageLabel=P3000140641265233467993
+lineaAdicional.linkiPhone3=http://personas.entel.cl/PortalPersonas/appmanager/entelpcs/personas?_nfpb=true&_pageLabel=P12800364521294253893661&codProducto=58863
+lineaAdicional.linkiPhone4=http://personas.entel.cl/PortalPersonas/appmanager/entelpcs/personas?_nfpb=true&_pageLabel=P12800364521294253893661&codProducto=136014
+lineaAdicional.formulario.ParaVoz=Mi Entel 28
+lineaAdicional.formulario.ParaBam=Mi Entel 29
+lineaAdicional.formulario.ParaiPhone3=Mi Entel 30
+lineaAdicional.formulario.ParaiPhone4=Mi Entel 31
+
+##################################################################
+## Properties para la funcionalidad de SuscripcionCDF
+##################################################################
+
+# Properties usadas en la obtencion del catalogo
+ishop.suscripcioncdf.consultarCatalogo.appTag=cdf_catalogo
+ishop.suscripcioncdf.obtenerSuscripcionesActivas.appTag=cdf_agenda
+ishop.suscripcioncdf.suscribirCDF.appTag=cdf_agendar
+ishop.suscripcioncdf.suscribirCDF.action=subscribe
+ishop.suscripcioncdf.deSuscribirCDF.action=unsubscribe
+
+# Estados de activacion que puede tener una suscripcion
+ishop.suscripcioncdf.estadoActivacion.1=activo
+ishop.suscripcioncdf.estadoActivacion.2=inactivo
+
+# Fecha de activacion retornada cuando no se ha contratado una suscripcion especifica
+ishop.suscripcioncdf.fechaActivacion.default=00010101010101
+
+
+#Configuracionde zona horaria, para calcular tiempo restante de navegacion
+#Si se deje en blanco, se tomara, la zona horaria America/Santiago -PT3H.
+parametros.bolsasbam.timezone=-PT4H
+
+idProducto.traficoBam=TRAFICO BAM
+
+#planes BAM
+parametros.planesbam.pp=187,234
+
+parametros.planesbam.ilimitado=Sin restriccion
+parametros.planesbam.ilimitadoLabel=Sin restricci\u00F3n
+
+parametros.tipoplanbam=tarifaplanabam,ccplanabam
+
+# TipoPlanNormal BAM SS
+parametros.tipoplanbam.tarifaplanabam.id=1
+parametros.tipoplanbam.tarifaplanabam.mercado=SS
+parametros.tipoplanbam.tarifaplanabam.nombre=Planes Suscripci\u00F3n
+parametros.tipoplanbam.tarifaplanabam.desc=Planes libres con tarifa plana.
+
+# TipoPlanNormal BAM CC
+parametros.tipoplanbam.ccplanabam.id=1
+parametros.tipoplanbam.ccplanabam.mercado=CC
+parametros.tipoplanbam.ccplanabam.nombre=Planes Cuenta Controlada
+parametros.tipoplanbam.ccplanabam.desc=Controla tu gasto mensual pagando siempre lo mismo.
+
+
+## Filtro para el mensaje de aviso cambio de plan Origen Multimedia , destino NO Multimedia.
+# Origen Planes Multimedia
+parametros.cambioplan.multimedia=10,11
+
+# Origen Planes NO Multimedia
+parametros.cambioplan.nomultimedia=1,2,3,4,5,6,7,8,9,10
+
+# Contenidos con nueva informacion de planes para cambio de plan
+parametros.cambioplan.planesFullRed.idContenido=planesFullRed
+parametros.cambioplan.planesTarifaUnicaSinSMS.idContenido=planesTarifaUnicaSinSMS
+parametros.cambioplan.planesTarifaUnicaConSMS.idContenido=planesTarifaUnicaConSMS
+parametros.cambioplan.planesCuentaControladaTarifaRed.idContenido=planesCuentaControladaTarifaRed
+parametros.cambioplan.planesCuentaControladaTarifaPlana.idContenido=planesCuentaControladaTarifaPlana
+parametros.cambioplan.planesMultimediaCuentaControlada.idContenido=planesMultimediaCuentaControlada
+parametros.cambioplan.planesMultimediaRed.idContenido=planesMultimediaRed
+parametros.cambioplan.planesMultimediaTodoDestino.idContenido=planesMultimediaTodoDestino
+parametros.cambioplan.planesBlackberryMultimediaCuentaControlada.idContenido=planesBlackberryMultimediaCuentaControlada
+parametros.cambioplan.planesBlackberryMultimediaRed.idContenido=planesBlackberryMultimediaRed
+parametros.cambioplan.planesBlackberryMultimediaTodoDestino.idContenido=planesBlackberryMultimediaTodoDestino
+parametros.cambioplan.planesMultimediaRedExcedido.idContenido=planesMultimediaRedExcedido
+parametros.cambioplan.planesMultimediaRedExcedidoTodoDestino.idContenido=planesMultimediaRedExcedidoTodoDestino
+
+## Filtro para el historial comunik2
+parametros.comunik2.planescomunik2=214,
+
+## Datos segun la respuesta del servicio.
+parametros.comunik2.respuesta.true=Aceptada
+parametros.comunik2.respuesta.false=Rechazada
+
+## Datos segun la respuesta del servicio, estos son mostrados en a columna
+## Invitación de la tabla Historial Comunik2 Mercado PP/Saldo
+parametros.comunik2.respuesta.InvitarComunicados=Enviada
+parametros.comunik2.respuesta.InvitarComunik2=Enviada
+parametros.comunik2.respuesta.RecibirComunicados=Recibida
+parametros.comunik2.respuesta.RecibirComunik2=Recibida
+parametros.comunik2.respuesta.ConfirmarComunicados=Confirmada
+parametros.comunik2.respuesta.ConfirmarComunik2=Confirmada
+parametros.comunik2.respuesta.AceptarComunicados=Recibida
+parametros.comunik2.respuesta.AceptarComunik2=Recibida
+
+#Prefijos telefonia para word number
+prefijo.entel=569
+prefijo.ampliacion=56
+
+# URL de contexto MiEntelV2
+# Url Produccion : http://mipcs.entelpcs.com/mipcs2/sesionContexto.do?IDP=
+# Url Test : http://testjsp2.entelpcs.com/mipcs2/sesionContexto.do?IDP=
+miEntel.contextoV2=http://mipcs.entelpcs.com/mipcs2/sesionContexto.do?IDP=
+miEntel.lineaHogar.subMercadoVoz=LHVOZ
+miEntel.lineaHogar.subMercadoDatos=LHDATOS
+miEntel.lineaHogar.urlVoz=http://mipcs.entelpcs.com/mipcslh/sesionContexto.do?IDP={IDP}&contexto=
+#miEntel.lineaHogar.urlDatos=http://mipcs.entelpcs.com/mipcs2/sesionContexto.do?IDP={IDP}&contexto=resumen
+miEntel.lineaHogar.urlDatos=http://mipcs.entelpcs.com:8080/mipcsPCHB/sesionContexto.do?IDP={IDP}&contexto=
+
+miEntel.subMercadoFDT=FDT
+miEntel.subMercadoCCPP=CCPP
+miEntel.subMercadoEMP=EMP
+miEntel.subMercadoSGO=EMP SGO
+miEntel.registroBAM.urlIngresoRUT=http://personas.entel.cl/RegistroBAM/IngresoRUT.do?IDP={IDP}&ORIG=FDT&OPER=1&CTXT={numeroContexto}
+miEntel.tipoCobro.SALDO=SALDO
+miEntel.tipoCobro.FACTURA=FACTURA
+
+#Version Beta MiEntelV3
+parametros.header.mensajeVersionBeta.idContenido=mensajeVersionBeta
+parametros.header.oldVersionLink.idContenido=oldVersionLink
+parametros.header.reclamos.prefPageLabel=reclamos
+
+
+##################################################################
+## Properties para portlets de Planes de Seguridad BAM - McAfee
+##################################################################
+planSeguridadBAM.compra.packPromo=Prueba gratis por 30 d\u00EDas
+planSeguridadBAM.compra.packNormal.pp=Comprar
+planSeguridadBAM.compra.packNormal.sscc=Contratar
+planSeguridadBAM.cambioPlan=Cambiar Plan
+planSeguridadBAM.planesVetados.ss=1158
+
+# Planes de Seguridad BAM - McAfee
+parametros.planesSeguridadBAM.pageLabel.cc=pageLabelPlanesSeguridadBAMCC
+parametros.planesSeguridadBAM.pageLabel.ss=pageLabelPlanesSeguridadBAMSS
+parametros.planesSeguridadBAM.pageLabel.pp=pageLabelPlanesSeguridadBAMPP
+parametros.planesSeguridadBAM.urlDescarga.idContenido=urlDescargaPlanSeguridadBAM
+parametros.bannerSeguridad.infoPlan.idContenido=informacionPlanBannerDeSeguridad
+parametros.bannerSeguridad.click.attr.name=clickBanner
+parametros.planesSeguridadBAM.planPromo.attr.name=codigoPlan
+parametros.planesSeguridadBAM.planPromo.infoPlan.idContenido=informacionPlanDeSeguridad
+parametros.mcafee.tipoMovil.cuentacontrolada=CTA. CONTROLADA
+parametros.mcafee.tipoMovil.suscripcion=SUSCRIPCION
+parametros.mcafee.tipoMovil.prepago=PREPAGO
+
+
+##################################################################
+## Properties para la funcionalidad de Respaldo Agenda
+##################################################################
+
+# Nivel de compatibilidad
+parametros.respaldoAgenda.bkpContSW=iPhone,BlackBerry,J2me,Android
+parametros.respaldoAgenda.url=http://ent.latallynis.gemalto.com/entel/entel?token=
+parametros.respaldoAgenda.mensajeError=Tu m\u00F3vil se encuentra suspendido. Revisa el estado de tu cuenta.
+
+respaldoAgenda.idContenido.compartido=sincronizacionCombinado
+respaldoAgenda.idContenido.equipo=sincronizacionEquipo
+respaldoAgenda.idContenido.sim=sincronizacionSim
+respaldoAgenda.idContenido.noCompatible=noCompatible
+
+##################################################################
+## Properties para la funcionalidad de Oferta Blindaje
+##################################################################
+
+parametros.blindaje.urlOfertaDisponible=https://mi.entel.cl/mipcs2/consultarOfertaV3.es
+#parametros.blindaje.urlOfertaDisponible=http://testjsp2.entelpcs.com/mipcs2/consultarOfertaV3.es
+parametros.blindaje.urlCargarOferta=https://mi.entel.cl/mipcs2/prepararOfertaV3.es?IDP=
+#parametros.blindaje.urlCargarOferta=http://testjsp2.entelpcs.com/mipcs2/prepararOfertaV3.es?IDP=
+parametros.blindaje.urlCargarOfertaV2=https://mi.entel.cl/mipcs2/marcasBlindajeController.es
+#parametros.blindaje.urlCargarOfertaV2=http://testjsp2.entelpcs.com/mipcs2/marcasBlindajeController.es
+
+parametros.ofertas.codigo.sinOferta=0000
+parametros.ofertas.codigo.blindaje=0001
+parametros.ofertas.codigo.entelVisa=0002
+parametros.ofertas.estado.0=aprobada
+parametros.ofertas.estado.3=pre aprobada
+parametros.ofertas.estado.4=pre aprobada
+parametros.ofertas.estado.5=pre aprobada
+
+parametros.ofertas.noPermitido=1,2,0
+parametros.ofertas.aprobado=0
+parametros.ofertas.preemitido=3,4
+parametros.ofertas.preaprobado=5
+parametros.ofertas.grupoOfertaNoPermitido=G1
+
+#Grupos de ofertas validos para v3
+parametros.ofertas.grupoOferta.3=G3
+parametros.ofertas.grupoOferta.4=G4
+parametros.ofertas.grupoOferta.5=G5
+parametros.ofertas.grupoOferta.6=G6
+parametros.ofertas.grupoOferta.7=G7
+parametros.ofertas.grupoOferta.8=G8
+parametros.ofertas.grupoOferta.10=G10
+
+# codigos BSCS de planes BAM
+parametros.ofertas.idbscs.planesBAM=idBscsPlanesBam
+
+#Validaciones por grupos
+parametros.bolsas.validar.ofertas.G6.codigosBscs=|621|714|
+parametros.bolsas.validar.actualesCliente.621=|621|714|864|1439|
+parametros.bolsas.validar.actualesCliente.714=|714|864
+parametros.ofertas.numeros=0,1,2,3,4,5,6,7,8,9
+
+parametros.ofertas.grupoUsuarioPreferencial=4,17
+
+parametros.ofertas.pageAprobado=oferta_visa_activa
+parametros.ofertas.pagePreemitido=oferta_visa_preemitido
+parametros.ofertas.pagePreaprobado=oferta_visa_preaporbado
+
+parametros.ofertas.tipoOfertaBlindaje=0
+parametros.ofertas.tipoOfertaVisa=1
+
+#Consulta Plan SGO
+consulta.plan.sgo.submercado=SGO
+
+#Link Solicita Clave
+mienEntel.login.solicitaClave=http://www.entel.cl/recuperar_clave
+
+
+##################################################################
+## Properties url imagen factura Ecuentas
+##################################################################
+#TEST
+#parametros.factura.urlImagenEcuentas=http://appswlstest.entel.cl/VisualizadorFacturas/DesplegarFactura.do?parametros=
+#PROD
+parametros.factura.urlImagenEcuentas=https://mi.entel.cl/VisualizadorFacturas/DesplegarFactura.do?parametros=
+parametros.factura.llaveEncriptacion=encriptado
+
+parametros.factura.charset=0123456789ABCDEF
+
+parametros.factura.origen.ss=VOZSS
+parametros.factura.origen.cc=VOZCC
+parametros.factura.origen.bamss=VOZSS
+parametros.factura.origen.bamcc=VOZCC
+parametros.factura.prefParam=&
+parametros.factura.paginaActual.boleta=1
+parametros.factura.paginaActual.detalle=2
+
+#Nombre del contexto usado para mostrar el detalle automaticamente
+ecuenta.detalle.contexto=eCuentaDetalle
+
+#Nombre del contexto usado para mostrar la boleta electronica automaticamente
+ecuenta.boleta.contexto=detalleLlamados
+
+##################################################################
+## Bolsas BAM CC Tipo PP
+##################################################################
+
+bolsasBAMCCPP.canal=PCBAM
+
+bolsasBAMCCPP.grupoA=22
+bolsasBAMCCPP.grupoB=21
+bolsasBAMCCPP.grupoC=23
+
+bolsasBAMCCPP.monto.21=3000
+bolsasBAMCCPP.monto.22=6000
+bolsasBAMCCPP.monto.23=0
+bolsasBAMCCPP.monto.grupoSinRiesgo=20000
+
+##################################################################
+## Bolsas BAM PP
+##################################################################
+
+parametros.bolsasBAMCCPP.canal=WEBPPBAM
+
+##################################################################
+## Tarifa
+##################################################################
+tarifa.nombreTarifa.noDisponible=Nombre de tarifa no disponible
+
+##################################################################
+## Properties Portabilidad
+##################################################################
+parametros.portabilidad.nombreVariable=enc
+
+##################################################################
+## Contextos V2
+##################################################################
+contexto.v2.bloqueo=bloqueoDesbloqueo
+##################################################################
+## Properties GoogleAnalytics
+##################################################################
+parametros.googleAnalytics.VOZ.SS=ss
+parametros.googleAnalytics.VOZ.CC=cc
+parametros.googleAnalytics.VOZ.PP=pp
+parametros.googleAnalytics.BAM.SS=bam-ss
+parametros.googleAnalytics.BAM.CC=bam-cc
+parametros.googleAnalytics.BAM.PP=bam-pp
+parametros.googleAnalytics.login=login
+
+##################################################################
+## Properties Smart Pixel
+##################################################################
+parametros.smartPixel.fe.estado.activo=Si
+parametros.smartPixel.fe.estado.inactivo=No
+parametros.smartPixel.im.estado.activo=Si
+parametros.smartPixel.im.estado.inactivo=No
+parametros.smartPixel.atributo.titular=Titular
+parametros.smartPixel.atributo.noTitular=No titular
+parametros.smartPixel.segmento.persona=Persona
+parametros.smartPixel.segmento.empresa=Empresa
+parametros.smartPixel.segmento.corporaciones=Corporaciones
+parametros.smartPixel.idContenido=smartPixel
+parametros.smartPixel.grupos.persona=1,24
+parametros.smartPixel.grupos.empresa=5,13,14,15,16,17,18,19,20
+parametros.smartPixel.fe.pp=NO existe informacion
+parametros.smartPixel.fechaRen=NO existe informacion
+parametros.smartPixel.bolsasContratadas=NO existe informacion
+parametros.smartPixel.segmento.noinfo=NO existe informacion
+
+
+#Parametros agregar estadistica
+parametros.estadistica.ok=1
+parametros.estadistica.nook=0
+parametros.estadistica.origenweb=1
+parametros.estadistica.origenwebbam=4
+parametros.estadistica.funcionalidad=INSMOV
+parametros.estadistica.origenhome=7
+parametros.estadistica.origenalerta=8
+#Estadisticas login
+parametros.estadistica.login.grupo=330
+parametros.estadistica.login.grupobam=430
+parametros.estadistica.login.grupoalerta=431
+parametros.estadistica.login.servicio=311
+parametros.estadistica.login.serviciobam=411
+parametros.estadistica.login.servicio.home=413
+parametros.estadistica.login.servicio.alerta=423
+#Estadisticas Compra Bolsas PP
+parametros.estadistica.bolsa.grupo=180
+parametros.estadistica.bolsa.pp.servicio.BOLSAS_PANTALLA_COMPRAR=237
+parametros.estadistica.bolsa.pp.servicio.BOLSAS_CONFIRMAR_COMPRAR=239
+#Estadisticas Compra Bolsas SSCC
+parametros.estadistica.bolsa.ss.servicio.BOLSAS_PANTALLA_CONTRATAR=230
+parametros.estadistica.bolsa.cc.servicio.BOLSAS_PANTALLA_COMPRAR=237
+parametros.estadistica.bolsa.sscc.servicio.BOLSAS_CONFIRMAR_CONTRATAR=232
+
+#Formulario Contacto
+parametros.formularioContactoPortabilidad.mensajeExito.idContenido=mensajeExitoFormularioContactoPortabilidad
+parametros.formularioContactoPortabilidad.marcaEquipo=BlackBerry,Huawei,LG,Motorola,Nokia,Samsung,Sony Ericsson,ZTE,Panasonic,Sagem,Oways,Siemens,Apple
+#Lista Contratos Firmados
+contratos.lista.registrosPorPagina = 20
+contratos.lista.registroFirmados = 31,32
+contratos.mensaje.sinInformacion=Sin Informaci\u00F3n
+
+## PREINGRESOOT
+
+#RUTREGIONES
+preingresoot.regiones.rut=96806980-2
+
+## CODIGO DE RESPUESTA SERVICIOS PREINGRESO_OT
+servicios.codigoRespuesta.equipossoporte.0=0000
+
+## ACCESORIOS PARA LAS FALLAS
+##NO ENCIENDE 4, NO RECONOCE SIMCARD 5, OTROS SINTOMAS NO CLASIFICADOS 6,PANTALLA 11, SIN RED 14,SIN RINGER O RINGER BAJO 15.
+##EQUIPO BLOQUEADO 16, SE CORTAN LAS LLAMADAS 17, TECLADO 19, FUNCIONES DESCONTROLADAS 20, VALIDACION DOA 24, BAJA DURACION BATERIA 25.
+##NO CARGA 26, SE APAGA SOLO 27.
+preingresoot.accesoriosfallas.4=Cargador,Bateria,Memory Card
+preingresoot.accesoriosfallas.5=
+preingresoot.accesoriosfallas.6=
+preingresoot.accesoriosfallas.11=
+preingresoot.accesoriosfallas.14=
+preingresoot.accesoriosfallas.15=
+preingresoot.accesoriosfallas.16=
+preingresoot.accesoriosfallas.17=Memory Card
+preingresoot.accesoriosfallas.19=
+preingresoot.accesoriosfallas.20=
+preingresoot.accesoriosfallas.24=
+preingresoot.accesoriosfallas.25=Cargador,Bateria
+preingresoot.accesoriosfallas.26=Cargador,Bateria
+preingresoot.accesoriosfallas.27=Cargador,Bateria,Memory Card
+preingresoot.accesoriosfallas.28=
+preingresoot.accesoriosfallas.29=
+preingresoot.accesoriosfallas.30=
+preingresoot.accesoriosfallas.31=
+preingresoot.accesoriosfallas.32=
+preingresoot.accesoriosfallas.33=
+preingresoot.accesoriosfallas.34=
+preingresoot.accesoriosfallas.35=
+preingresoot.accesoriosfallas.36=
+preingresoot.accesoriosfallas.37=
+preingresoot.accesoriosfallas.39=
+preingresoot.accesoriosfallas.40=
+preingresoot.accesoriosfallas.41=
+
+#Parametros idContenidos planes exceptos y control flujo
+parametros.tarifaDiaria.planesMultimediaSSExcluir=idPlanesMultimediaSSExcluir
+parametros.tarifaDiaria.planesMultimediaCCExcluir=idPlanesMultimediaCCExcluir
+parametros.tarifaDiaria.planesEmpresaExcluir=idPlanesEmpresaExcluir
+parametros.tarifaDiaria.bolsasIMExcluir=idBolsasIMExcluir
+parametros.tarifaDiaria.bolsaIlimitadasCC=idBolsaIlimitadasCC
+parametros.tarifaDiaria.bolsaLimitadasCC=idBolsaLimitadasCC
+parametros.tarifaDiaria.bolsaIlimitadasSS=idBolsaIlimitadasSS
+parametros.tarifaDiaria.bolsaLimitadasSS=idBolsaLimitadasSS
+parametros.tarifaDiaria.idTextoBolsaLimitadaCC=idTextoBolsaLimitadaCC
+parametros.tarifaDiaria.idTextoBolsaIlimitadaCC=idTextoBolsaIlimitadaCC
+parametros.tarifaDiaria.idTextoBolsaNLICC=idTextoBolsaNLICC
+parametros.tarifaDiaria.idTextoBolsaLimitadaSS=idTextoBolsaLimitadaSS
+parametros.tarifaDiaria.idTextoBolsaIlimitadaSS=idTextoBolsaIlimitadaSS
+parametros.tarifaDiaria.idTextoBolsaNLISS=idTextoBolsaNLISS
+parametros.tarifaDiaria.codBolsaIM=
+parametros.tarifaDiaria.sinIM=No tiene
+parametros.tarifaDiaria.idTextoAR=idTextoAceptadaRechazada
+
+parametros.tarifaDiaria.exitoTarifaDiaria=0
+parametros.tarifaDiaria.aceptada=Aceptacion
+parametros.tarifaDiaria.rechazada=Rechazo
+parametros.tarifaDiaria.canalAceptacion=MiEntel
+parametros.tarifaDiaria.TextoRechazada=aceptadas
+parametros.tarifaDiaria.TextoAceptada=rechazadas
+
+parametros.qualtrics.idContenido=marcaQualtrics
+parametros.qualtrics.segmento.noinfo=No existe informacion
+parametros.qualtrics.mercado.noinfo=No existe informacion
+parametros.qualtrics.servicio.noinfo=No existe informacion
+parametros.qualtrics.grupos.persona=1,24
+parametros.qualtrics.grupos.empresa=5,13,14,15,16,17,18,19,20
+parametros.qualtrics.segmento.persona=Persona
+parametros.qualtrics.segmento.empresa=Empresa
+parametros.qualtrics.preferences.pageLabel=pageLabelQualtrics
+parametros.qualtrics.preferences.tipoActividad=tipoActividad
+parametros.qualtrics.preferences.loadOnConfirmationPage=loadOnConfirmationPage
+parametros.qualtrics.actividad.servicio=SERVICIO
+parametros.qualtrics.actividad.distribucion=DISTRIBUCION
+parametros.qualtrics.servicio.cc.idContenido=marcaQualtricsServicioCC
+parametros.qualtrics.servicio.pp.idContenido=marcaQualtricsServicioPP
+parametros.qualtrics.servicio.ss.idContenido=marcaQualtricsServicioSS
+parametros.qualtrics.distribucion.cc.idContenido=marcaQualtricsDistribucionCC
+parametros.qualtrics.distribucion.pp.idContenido=marcaQualtricsDistribucionPP
+parametros.qualtrics.distribucion.ss.idContenido=marcaQualtricsDistribucionSS
+
+# Tipo de Bolsas Para Contratar PP.
+parametros.tipobolsaPP=mvd,voz,sms,datos,mix
+parametros.tipobolsaPP.voz.id=SEG
+parametros.tipobolsaPP.voz.desc=Bolsa de Voz
+parametros.tipobolsaPP.sms.id=SMS,MMS
+parametros.tipobolsaPP.sms.desc=Bolsa de Mensaje
+parametros.tipobolsaPP.datos.id=KB
+parametros.tipobolsaPP.datos.desc=Bolsa de Datos
+parametros.tipobolsaPP.mix.id=MIXTA
+parametros.tipobolsaPP.mix.desc=Bolsas Combinadas
+parametros.tipobolsaPP.mvd.id=1
+parametros.tipobolsaPP.mvd.desc=Bolsas m\u00E1s vendidas
+
+#parametro para consulta scob
+parametros.bolsasSCOBPP.canal=MIENTEL
+servicios.codigoRespuesta.exitoScob=200
+parametros.bolsasSCOBPP.tipobolsaMasVendidas=1
+
+##################################################################
+## Zona entel - Parametros Zona Verano
+##################################################################
+servicios.codigoRespuesta.zonaVerano.exito=0
+servicios.codigoRespuesta.zonaVerano.observacio=1
+servicios.codigoRespuesta.zonaVerano.claveInvalida=10
+
+parametro.mes.1=Enero
+parametro.mes.2=Febrero
+parametro.mes.3=Marzo
+parametro.mes.4=Abril
+parametro.mes.5=Mayo
+parametro.mes.6=Junio
+parametro.mes.7=Julio
+parametro.mes.8=Agosto
+parametro.mes.9=Septiembre
+parametro.mes.10=Octubre
+parametro.mes.11=Noviembre
+parametro.mes.12=Diciembre
+
+preingresoot.accesoriosfallas.filtro= [4],[27],[26],[25],[28],[14],[17],[11],[19],[30],[31],[6],[20],[16],[44],[36]
+
+
+parametro.pageIshop.ss=ss_ishop_page
+parametro.pageIshop.cc=cc_ishop_page
+parametro.pageIshop.pp=pp_ishop_page
+
+parametros.bolsasSCOBPP.unidadKB=KB
+parametros.bolsasSCOBPP.unidadMB=MB
+parametros.producto.internetMovil.id=IM
+parametros.producto.blackberry.id=BBY
+parametros.producto.bam.id=BAM
+
+##################################################################
+## Parametros Historial Bolsas
+##################################################################
+parametro.registrosPagina=25
+
+##################################################################
+## Parametros Bolsas Activas
+##################################################################
+parametro.tipodebolsa=PPBAM_TIEMPO,PPBAM_CUOTA,PPBAM_FDT,PPBAM_SIMULADA
+
+##################################################################
+## Parametros Reclamos
+##################################################################
+# Parametros tipos de reclamos generales
+parametros.tipoReclamos=comercial,tecnico
+parametros.tipoReclamos.comercial.codigo=1
+parametros.tipoReclamos.comercial.descripcion=Comercial
+parametros.tipoReclamos.tecnico.codigo=2
+parametros.tipoReclamos.tecnico.descripcion=T\u00E9cnico
+
+# Parametros tipos de reclamos Comerciales
+parametros.tipoComercial=1,2,4,5,6,7
+parametros.tipoComercial.1.codigo=1
+parametros.tipoComercial.1.descripcion=Cobros en la Boleta o Factura
+parametros.tipoComercial.2.codigo=2
+parametros.tipoComercial.2.descripcion=Recargas y Saldos
+#parametros.tipoComercial.3.codigo=3
+#parametros.tipoComercial.3.descripcion=Servicio T\u00E9cnico
+parametros.tipoComercial.4.codigo=4
+parametros.tipoComercial.4.descripcion=Renuncia o Migraci\u00F3n No Cursada
+parametros.tipoComercial.5.codigo=5
+parametros.tipoComercial.5.descripcion=Pago No Registrado
+parametros.tipoComercial.6.codigo=6
+parametros.tipoComercial.6.descripcion=Atenci\u00F3n en Puntos de Contacto
+parametros.tipoComercial.7.codigo=7
+parametros.tipoComercial.7.descripcion=Promociones
+
+
+# Parametros tipos de reclamos Tecnico
+parametros.tipoTecnico=1,2,3,4,5,6,7,8,9
+parametros.tipoTecnico.1.codigo=1
+parametros.tipoTecnico.1.descripcion=Voz
+parametros.tipoTecnico.2.codigo=2
+parametros.tipoTecnico.2.descripcion=Internet M\u00F3vil
+parametros.tipoTecnico.3.codigo=3
+parametros.tipoTecnico.3.descripcion=Banda Ancha M\u00F3vil
+parametros.tipoTecnico.4.codigo=4
+parametros.tipoTecnico.4.descripcion=Mensajer\u00EDa
+parametros.tipoTecnico.5.codigo=5
+parametros.tipoTecnico.5.descripcion=Zona Entel,Entretenci\u00F3n y Descargas
+parametros.tipoTecnico.6.codigo=6
+parametros.tipoTecnico.6.descripcion=Servicios para Empresas y Corporaciones
+parametros.tipoTecnico.7.codigo=7
+parametros.tipoTecnico.7.descripcion=N\u00FAmeros de Atenci\u00F3n Entel
+parametros.tipoTecnico.8.codigo=8
+parametros.tipoTecnico.8.descripcion=Roaming y LDI
+parametros.tipoTecnico.9.codigo=9
+parametros.tipoTecnico.9.descripcion=Portales Internet de Entel
+parametros.tipoTecnico.10.codigo=10
+parametros.tipoTecnico.10.descripcion=Portabilidad
+
+
+# Parametros tipos de reclamos Comerciales para PP EMPRESAS
+parametros.tipoComercialPPEMP=recargas
+parametros.tipoComercialPPEMP.recargas.codigo=2
+parametros.tipoComercialPPEMP.recargas.descripcion=Recargas y Saldos
+
+
+parametros.reclamo.servicio.motivo=ReglamentoReclamo
+parametros.reclamo.servicio.solicitud=M
+parametros.reclamo.servicio.plataforma=Portal MiEntel
+parametros.reclamo.servicio.mundo=Servicios Voz VAS y Datos
+parametros.reclamo.servicio.mundoComercial=Cuenta $ y Factura
+parametros.reclamo.servicio.tipo=Reclamo
+parametros.reclamo.servicio.productoReclamado=Movil
+parametros.reclamo.servicio.ciaReclamada=Entel PCS
+parametros.reclamo.servicio.workflow=1
+parametros.reclamo.servicio.workflowBoletaFactura=1
+parametros.reclamo.numeroMonto.idContenido=idContenidoNumeroMonto
+parametros.reclamo.localizacionproblema.idContenido=idContenidoLocalizacionProblema
+parametros.reclamo.separadorRespuesta=\\|
+parametros.reclamo.itemTotal=TOTAL
+parametros.reclamo.plataforma=Portal MiEntel
+parametros.reclamo.boletaFactura=1
+parametros.reclamo.estadoSolucionado=SOLUCIONADO
+parametros.reclamo.dificultadComercial=1
+parametros.reclamo.dificultadTecnica=2
+
+
+##################################################
+# Valores Equivalentes reclamos y tipos reclamos
+#################################################
+# Reclamos
+parametros.reclamo.equivalente.1=Dificultad Comercial
+parametros.reclamo.equivalente.2=Dificultad Tecnica
+
+# Tipos Reclamos comercial
+parametros.tipoReclamo.equivalente.tecnico.1=Voz
+parametros.tipoReclamo.equivalente.tecnico.2=Internet Movil
+parametros.tipoReclamo.equivalente.tecnico.3=Banda Ancha Movil
+parametros.tipoReclamo.equivalente.tecnico.4=Mensajeria
+parametros.tipoReclamo.equivalente.tecnico.5=Zona Entel - Entretencion y Descargas
+parametros.tipoReclamo.equivalente.tecnico.6=Servicios para Empresas y Corporaciones
+parametros.tipoReclamo.equivalente.tecnico.7=Numeros de Atencion Entel
+parametros.tipoReclamo.equivalente.tecnico.8=Roaming y LDI
+parametros.tipoReclamo.equivalente.tecnico.9=Portales Internet de Entel
+parametros.tipoReclamo.equivalente.tecnico.10=Portabilidad
+
+# Tipos Reclamos tecnico
+parametros.tipoReclamo.equivalente.comercial.1=Cobros en la Boleta/Factura
+parametros.tipoReclamo.equivalente.comercial.2=Recargas y Saldos
+#parametros.tipoReclamo.equivalente.comercial.3=Servicio Tecnico
+parametros.tipoReclamo.equivalente.comercial.4=Renuncia o Migracion No Cursada
+parametros.tipoReclamo.equivalente.comercial.5=Pago No Registrado
+parametros.tipoReclamo.equivalente.comercial.6=Atencion en Puntos de Contacto
+parametros.tipoReclamo.equivalente.comercial.7=Promociones
+
+
+
+## Parametros Historico Reclamos
+##################################################################
+parametro.reclamos.topeRegistrosPagina=10
+
+##################################################################
+## Parametros Alerta Cuotra de Trafico
+##################################################################
+parametro.ACT.topeRegistrosPagina=25
+parametro.planesMMExcedidos.MBADI=MBADI
+parametro.servicio.planesMMExcedidos.appName=PORTALES
+parametro.servicio.planesMMExcedidos.userName=PORTALES
+servicios.codigoRespuesta.tipoPlan.excedido=S
+servicios.codigoRespuesta.clasificacionPlan=1
+
+##################################################################
+## Homologacion acentos
+##################################################################
+parametro.acentos=\u00E1\u00E0\u00E4\u00E9\u00E8\u00EB\u00ED\u00EC\u00EF\u00F3\u00F2\u00F6\u00FA\u00F9u\u00F1\u00C1\u00C0\u00C4\u00C9\u00C8\u00CB\u00CD\u00CC\u00CF\u00D3\u00D2\u00D6\u00DA\u00D9\u00DC\u00D1\u00E7\u00C7
+
+## KPI Portales BAM
+kpi.codArea=2
+kpi.nombreUsuario=Portales
+kpi.PP.codIndicador=16
+kpi.CC.codIndicador=15
+kpi.valorOk=OK
+kpi.valorNoOk=NOK
+
+parametros.bolsas.error.sapc = Tu plan no te permite acceder a esta secci\u00f3n
+
+
+##################################################################
+## Parametros Disponibilidad Plan 4G LTE						##
+##################################################################
+##Codigo de respuesta ConsultaSimCardLteServiceDao
+servicios.codigoRespuesta.error=500
+servicios.codigoRespuesta.compatible=200
+equipo.compatibilidad4GLte.ok=1
+parametro.servicio.disponibilidadPlan4GLte.appName=PORTALES
+parametro.servicio.disponibilidadPlan4GLte.userName=PORTALES
+servicios.codigoRespuesta.disponibilidad=0000
+servicios.codigoRespuesta.bean.disponibilidad=SI
+servicio.tipoMercado.cc=CC
+servicio.tipoMercado.ss=SS
+mensaje.4Glte.compatible.equipo=ec4g
+mensaje.4Glte.compatible.plan=pc4g
+mensaje.4Glte.compatible.simCard=sc4g
+mensaje.4Glte.nocompatible.equipo=enc4g
+mensaje.4Glte.nocompatible.plan=pnc4g
+mensaje.4Glte.nocompatible.simCard=snc4g
+servicios.codigoRespuesta.compatibleOTA=201
+mostrar.compatibilidad4GLte=off
+mostrar.compatibilidad4GLte.on=on
+mensaje.4Glte.nocompatible.LinkMinisitios=lm4glte
+mensaje.4Glte.nocompatible.LinkMinisitiosSimcard=lms4glte

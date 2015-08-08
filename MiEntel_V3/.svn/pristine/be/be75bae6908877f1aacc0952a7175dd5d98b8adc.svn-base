@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="MiEntelWar">
+
+	<!-- build.properties -->
+	<property file="${basedir}/build.properties" />
+
+	<!-- Estructura de directorios -->
+	<property name="dist" value="${base}/${dir.dist}" />
+	<property name="src" value="${base}/${dir.src}" />
+	<property name="lib" value="${base}/${dir.lib}" />
+	<property name="build" value="${base}/${dir.build}" />
+	
+	<property name="doc" value="${base}/${dir.doc}" />
+
+	<property environment="env" />
+	<property name="ECLIPSE_HOME" value="C:/bea_10/oepe_11gR1PS1/eclipse" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+
+	<tstamp>
+	  <format property="TODAY"
+	          pattern="dd MMMM yyyy - HH:mm:ss"
+	          locale="es,CL"/>
+	</tstamp>
+	
+	<!--Classpath -->
+	<path id="WebLogic System Libraries.libraryclasspath">
+
+		<!-- Weblogic Server -->
+		<pathelement location="${weblogic.server.home.path}/server/lib/api.jar" />
+		<pathelement location="${weblogic.server.home.path}/server/lib/weblogic.jar" />
+		<pathelement location="${weblogic.server.home.path}/server/lib/wls-api.jar" />
+
+		<!-- Weblogic Portal Shared Library Light Web -->
+		<pathelement location="${dir.lib}/netuix_servlet.jar" />
+		<pathelement location="${dir.lib}/portlet-container.jar" />
+
+		<!-- Weblogic Server modules -->
+        <pathelement location="${bea.home}/modules/**.jar"/>
+
+		<!-- Weblogic Portal -->
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/wsrp-common.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/wsrp-client.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/netuix_common.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/netuix_schemas.jar"/>
+        <pathelement location="${weblogic.portal.home.path}/light-portal/lib/system/netuix_system.jar"/>
+
+		<!-- Weblogic Portal Content Management -->
+		<fileset dir="${weblogic.portal.home.path}/content-mgmt/lib">
+			<include name="**/*.jar"/>
+		</fileset>
+
+	</path>
+
+	<path id="MiEntel Libraries.libraryclasspath">
+		<fileset dir="${lib}" >
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="MiEntel.classpath">
+		<pathelement location="${build}" />
+		<path refid="WebLogic System Libraries.libraryclasspath" />
+		<path refid="MiEntel Libraries.libraryclasspath" />
+	</path>
+
+
+	<!-- Targets -->
+
+	<target name="clean">
+		<echo message="*** CLEAN ***" />
+		<delete failonerror="false" dir="${dir.dist}" />
+		<delete failonerror="false" dir="${dir.temp}" />
+		<delete failonerror="false" dir="${dir.build}" />
+	</target>
+
+	<target depends="clean" name="prepare">
+
+		<echo message="*** PREPARE ***" />
+
+		<!-- Directorios -->
+		<mkdir dir="${dir.dist}" />
+		<mkdir dir="${dir.build}" />
+		<mkdir dir="${dir.temp}" />
+
+		<!-- Classes  -->
+		<copy includeemptydirs="false" todir="${dir.build}">
+			<fileset dir="${dir.src}">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		
+		<!-- properties files -->
+		<copy includeemptydirs="false" todir="${dir.build}">
+			<fileset dir="${dir.web-inf}/classes">
+				<include name="**/*.properties" />
+			</fileset>
+		</copy>		
+
+		<!-- Properties files -->
+		<copy includeemptydirs="false" todir="${dir.build}">
+			<fileset dir="${dir.web-inf}/classes">
+				<include name="**/*.properties" />
+			</fileset>
+		</copy>		
+		
+	</target>
+
+	<target depends="prepare" name="compile">
+
+		<echo message="*** COMPILE ***" />
+
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac fork="true" debug="true" 
+			debuglevel="${debuglevel}" 
+			destdir="${dir.build}" 
+			source="${source}" 
+			target="${target}" verbose="false">
+			<src path="${dir.src}" />
+			<classpath refid="MiEntel.classpath" />
+		</javac>
+
+	</target>
+
+	<target depends="compile" name="package">
+
+		<echo message="*** PACKAGE ***" />
+
+		<war destfile="${dir.dist}/${dist.filename.war}" 
+			webxml="${dir.web-inf}/web.xml" 
+			manifest="${dir.meta-inf}/MANIFEST.MF" 
+			basedir="${dir.temp}">
+
+			<manifest>
+				<attribute name="Created-By" value="${manifest.vendor}"/>
+				<attribute name="Built-By" value="${user.name}"/>
+				<attribute name="Built-Date" value="${TODAY}"/>
+
+				<section name="Java">
+					<attribute name="Java-Version" value="${java.version}"/>
+					<attribute name="Java-VM-Name" value="${java.vm.name}"/>
+					<attribute name="Java-VM-Version" value="${java.vm.version}"/>
+					<attribute name="Java-VM-Vendor" value="${java.vm.vendor}"/>
+				</section>
+
+			</manifest>
+			
+			
+			<classes dir="${dir.build}" />
+
+			<lib dir="${dir.lib}" />
+
+			<fileset dir="${dir.web}">
+				<!-- web -->
+				<include name="**/*.jsp" />
+				<include name="**/*.js" />
+				<include name="**/*.css" />
+
+				<!-- Portal -->
+				<include name="**/*.txt" />
+				<include name="**/*.portlet" />
+				<include name="**/*.portal" />
+				<include name="**/*.shell" />
+
+				<!-- Configuracion -->
+				<include name="**/*.xml" />
+				<exclude name="web.xml" />
+
+				<!-- Grafica -->
+				<include name="**/*.gif" />
+				<include name="**/*.png" />
+				<include name="**/*.jpg" />
+				
+				<!-- dependencies -->
+				<include name="**/*.dependencies" />
+				
+				<!-- tag library -->
+				<include name="**/*.tld" />
+
+			</fileset>
+		</war>
+
+		<delete dir="${dir.temp}" />
+
+	</target>
+
+	<target depends="package" name="build" />
+
+	<target depends="prepare" name="javadoc">
+		
+		<echo message="*** JAVADOC ***" />
+		<delete failonerror="false" dir="${doc}" />
+
+		<javadoc sourcepath="${src}" 
+			access="${javadoc.access}" author="${javadoc.author}" 
+			use="${javadoc.use}" destdir="${doc}" 
+			source="${javadoc.source}" version="${javadoc.version}" >
+			<classpath refid="MiEntel.classpath" />
+		</javadoc>
+	</target>
+</project>

@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/BILLING/Recarga/Proxies/BillingRecargaService?WSDL
+targetnamespace=http://www.epcs.com/billing/recarga
+servicename=BillingRecargaService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    The "bighorn" skin is intended to be used as the new basis for custom skin development, replacing the existing
+    "default", "classic" and "text" skins.  This skin has several improvements over the existing skins, including:
+    
+    1) Cleaner skin files which use more advanced CSS selectors for reduced file sizes
+    2) Built-in custom CSS files for more straightforward customization
+    3) A 100% CSS-based solution for multilevel menus.
+    
+    This skin utilizes more complex CSS selectors in fewer CSS files for an overall reduction in the amount of
+    CSS.  This combined with the lack of Javascript usage in the skin is intended to provide a more malleable
+    and more easily customizable skin.
+-->
+<skin 
+    xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-skin-1_0_0.xsd"
+>
+    <target-skeleton>
+        <skeleton-id>mi_entel</skeleton-id>
+    </target-skeleton>
+    <images>
+        <search-path>
+            <path-element>img</path-element>
+        </search-path>
+    </images>
+    <render-dependencies>
+        <html>
+            <links>
+                <search-path>
+                    <path-element>css</path-element>
+                </search-path>
+                <link href="sitio/resets.css" rel="stylesheet" type="text/css"/> 
+                <link href="sitio/template.css" rel="stylesheet" type="text/css"/> 
+                <link href="cabecera/cabecera.css" rel="stylesheet" type="text/css"/> 
+                <link href="menu/menu.css" rel="stylesheet" type="text/css"/> 
+                <link href="pie/pie.css" rel="stylesheet" type="text/css"/> 
+                <link href="dashboard/dashboard.css" rel="stylesheet" type="text/css"/> 
+            	<link href="cuentas/cuentas.css" rel="stylesheet" type="text/css"/>
+            	<link href="cuentas/cuentasRegistro.css" rel="stylesheet" type="text/css"/>
+            	<link href="botones/botones.css" rel="stylesheet" type="text/css"/> 
+            	<link href="sitio/login.css" rel="stylesheet" type="text/css"/> 
+            	<link href="facturacion/facturacion.css" rel="stylesheet" type="text/css"/> 
+            	<link href="facturacion/desplegable.css" rel="stylesheet" type="text/css"/> 
+            	<link href="facturacion/validaciones.css" rel="stylesheet" type="text/css"/> 
+            	
+            	<link href="planes/bolsas.css" rel="stylesheet" type="text/css"/> 
+            	<link href="planes/planes.css" rel="stylesheet" type="text/css"/> 
+            	<link href="planes/descubre_promo.css" rel="stylesheet" type="text/css"/> 
+            	
+            	<link href="thickbox/thickbox.css" rel="stylesheet" type="text/css"/> 
+            	<link href="thickbox/thickbox-tabla.css" rel="stylesheet" type="text/css"/>
+            	
+            	<link href="autorizacion/autorizacionCargo.css" rel="stylesheet" type="text/css"/>
+            	
+            	<link href="trafico/traficoDescarga.css" rel="stylesheet" type="text/css"/>
+            	<link href="trafico/trafico.css" rel="stylesheet" type="text/css"/> 
+            	<link href="trafico/estructurasTarifarias.css" rel="stylesheet" type="text/css"/> 
+				<link href="recargas/recargas.css" rel="stylesheet" type="text/css"/> 
+				<link href="bolsas/bolsas.css" rel="stylesheet" type="text/css"/>  
+								
+				<link rel="stylesheet" type="text/css" href="equipos/bloqueo.css" />
+				<link rel="stylesheet" type="text/css" href="equipos/equipos.css" />
+        		<link rel="stylesheet" type="text/css" href="equipos/equipos.renovacion.css" />
+        		<link rel="stylesheet" type="text/css" href="equipos/jquery-ui-1.7.2.custom.css" />
+        		
+        		<link rel="stylesheet" type="text/css" href="equipos/fancybox.css" />        		
+        		<link rel="stylesheet" type="text/css" href="equipos/servicioTecnico.css" />
+				<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.2.5.css" />
+				
+				<link rel="stylesheet" type="text/css" href="servicios/servicios.css" />
+				<link rel="stylesheet" type="text/css" href="sitio/alertas.css" />
+				
+				<link rel="stylesheet" type="text/css" href="zonapuntos/zonapuntos.css" />
+				<link rel="stylesheet" type="text/css" href="zonapuntos/tabszonapunto.css" />
+				
+            	<link rel="stylesheet" type="text/css" href="contactanos/contactanos.css" />
+            	
+            	<link rel="stylesheet" type="text/css" href="lineaAdicional/lineaAdicional.css" />
+            	
+            	<link rel="stylesheet" type="text/css" href="ishop/ishop.css" />
+            	
+            	<link rel="stylesheet" type="text/css" href="planes/comunik2.css" />
+                <link rel="stylesheet" type="text/css" href="bolsas/bolsasContratar.css" />
+            	
+            	<link rel="stylesheet" type="text/css" href="mcafee/mcafee.css" />
+            	<link rel="stylesheet" type="text/css" href="mcafee/tabla_azul_divs.css" />
+            	<link rel="stylesheet" type="text/css" href="mcafee/validaciones_mcafee.css" />
+            	<link rel="stylesheet" type="text/css" href="migraciones/estilos.css" />            
+            	<link rel="stylesheet" type="text/css" href="migraciones/estilosIE6.css" />
+            	<link rel="stylesheet" type="text/css" href="migraciones/estilosIE7.css" />
+            	<link rel="stylesheet" type="text/css" href="ofertaVisa/estilos_entel_visa.css" />
+            	<link rel="stylesheet" type="text/css" href="tarifadiaria/tarifadiaria.css" />  
+            	<link rel="stylesheet" type="text/css" href="zonapuntos/zonaVerano.css" />               	        	                 	
+            </links>
+			
+			<metas>
+            	<meta content="no-cache" http-equiv="cache-control"/>
+            	<meta content="no-control" http-equiv="cache-control"/>  
+            	<meta content="no-cache" http-equiv="Pragma"/>          	
+            </metas>
+
+        </html>
+    </render-dependencies>
+</skin>

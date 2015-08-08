@@ -1,0 +1,458 @@
+/*---------------------
+      ESTRUCTURA PIE
+  ---------------------*/
+ 
+body {
+	margin: 0 40px 0 8px;
+}
+	
+#pie-Entel.pie {
+	display: block;
+	width: 946px;
+	padding: 35px 10px 25px;
+	background: url(../../img/pie/pieTop.gif) top left no-repeat #e7edf0;
+	position:relative;
+	z-index:2;
+}
+#pie-Entel.pie .pie-izquierda {
+	display: block;
+	float: left;
+	width: 730px;
+}
+#pie-Entel.pie .pie-izquierda .alinear {
+	display: block;
+	float: left;
+	margin: 0 15px 0 0;
+}
+#pie-Entel.pie .pie-izquierda .alinear a,
+#pie-Entel.pie .pie-izquierda .alinear a:visited {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #0073ae;
+	font-size: 11px;
+}
+#pie-Entel.pie .pie-izquierda .alinear a:hover {
+	text-decoration: underline;
+}
+#pie-Entel.pie .pie-izquierda p {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	margin: 15px 0 0 0;
+	color: #666;
+	font-size: 11px;
+}
+#pie-Entel.pie .pie-derecha {
+	display: block;
+	float: right;
+	position:relative;
+	z-index:10;
+}
+#pie-Entel.pie .pie-derecha .alinear {
+	display: block;
+	float: right;
+	position: relative;
+	margin: 0 0 0 8px;
+}
+#pie-Entel.pie .pie-derecha .alinear a,
+#pie-Entel.pie .pie-derecha .alinear a:visited {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 11px;
+	text-decoration: none;
+}
+#pie-Entel.pie .pie-derecha .alinear a:hover {
+	text-decoration: underline;
+}
+
+/*---------------------
+         TOOLTIPS
+  ---------------------*/
+  
+#pie-Entel.pie .pie-derecha div.rss {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/pie/iconos/pieIconoRss.gif) top left no-repeat;
+	border:0;
+}
+#pie-Entel.pie .pie-derecha div.youtube {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/pie/iconos/pieIconoYouTube.gif) top left no-repeat;
+	border:0;
+}
+#pie-Entel.pie .pie-derecha div.facebook {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/pie/iconos/pieIconoFaceBook.gif) top left no-repeat;
+	border:0;
+}
+#pie-Entel.pie .pie-derecha div.twitter {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/pie/iconos/pieIconoTwiter.gif) top left no-repeat;
+	border:0;
+}
+#pie-Entel.pie .pie-derecha div.url {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/pie/iconos/pieIconoShare.gif) top left no-repeat;
+	border:0;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip {
+    bottom: 24px;
+    display: none;
+    right: -3px;
+    position: absolute;
+    width: 100px;
+	top:inherit;
+	left:inherit;
+}
+
+#pie-Entel.pie .pie-derecha .rss div.tooltip {
+	width: 67px;
+}
+
+#pie-Entel.pie .pie-derecha .youtube div.tooltip {
+	width: 107px;	
+}
+
+#pie-Entel.pie .pie-derecha .facebook div.tooltip {
+	width: 59px;
+}
+
+#pie-Entel.pie .pie-derecha .twitter div.tooltip {
+	width: 102px;
+}
+
+#pie-Entel.pie .pie-derecha .url div.tooltip {
+	width: 100px;
+}
+
+#pie-Entel.pie .pie-derecha .rss:hover div.tooltip,
+#pie-Entel.pie .pie-derecha .youtube:hover div.tooltip,
+#pie-Entel.pie .pie-derecha .facebook:hover div.tooltip,
+#pie-Entel.pie .pie-derecha .twitter:hover div.tooltip,
+#pie-Entel.pie .pie-derecha .url:hover div.tooltip {
+	display: block;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip div.tooltip-top {
+    background: transparent url(../../img/pie/tooltip/pieTooltipTop.gif) no-repeat scroll right top;
+    display: block;
+    padding-right: 3px;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip div.tooltip-top span {
+    background: #e7edf0 url(../../img/pie/tooltip/pieTooltipTop.gif) no-repeat scroll left top;
+    display: block;
+    height: 3px;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip div.tooltip-main {
+    background: #ececec url(../../img/pie/tooltip/pieTooltipBg.gif) repeat-x scroll left bottom;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    color: #666;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip div.tooltip-bottom {
+    background: transparent url(../../img/pie/tooltip/pieTooltipBottom.gif) no-repeat scroll right top;
+    display: block;
+    padding-right: 3px;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip div.tooltip-bottom span {
+    background: #e7edf0 url(../../img/pie/tooltip/pieTooltipBottom.gif) no-repeat scroll left top;
+    display: block;
+    height: 3px;
+}
+
+#pie-Entel.pie .pie-derecha div.tooltip div.tooltip-flecha {
+    background: transparent url(../../img/pie/tooltip/pieTooltipFlecha.gif) no-repeat scroll left top;
+    bottom: -5px;
+    display: block;
+    height: 6px;
+    right: 6px;
+    position: absolute;
+    width: 9px;
+}
+
+/*---------------------
+    CAJA ¿QUE ES ESTO?
+  ---------------------*/
+  
+#pie-Entel.pie #caja_info_compartir.que_es_esto{
+	display: none;
+	width: 604px;
+	background: #eeeeee;
+	border: 1px solid #d7d7d7;
+	padding: 10px;
+	margin: 0 auto;
+	
+	position:absolute;
+	bottom:0;
+	right:8px;
+	margin-bottom:80px;
+}
+
+#pie-Entel.pie #caja_info_compartir.que_es_esto .titulo{
+	display: block;
+	color: #0073ae;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bolder;
+}
+
+#pie-Entel.pie #caja_info_compartir.que_es_esto .centro {
+	margin: 0 6px;
+	padding: 0 6px 20px;
+	border-width: 0 1px;
+	border-style: dotted;
+	border-color: #b2b2b2;
+}
+
+#pie-Entel.pie #caja_info_compartir.que_es_esto .caja_informativa {
+	display: block;
+	float: left;
+	width: 192px;
+	color: #000;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+#pie-Entel.pie #caja_info_compartir.que_es_esto .caja_informativa img {
+	display: block;
+	padding: 0 0 10px 0;
+}
+
+#pie-Entel.pie #caja_info_compartir.que_es_esto .caja_informativa a,
+#pie-Entel.pie #caja_info_compartir.que_es_esto .caja_informativa a:visited {
+	color: #0073ae;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#pie-Entel.pie #caja_info_compartir.que_es_esto .caja_informativa a:hover {
+	text-decoration: underline;
+}
+
+/*---------------------
+      CAJA COMPARTIR
+  ---------------------*/
+  
+#pie-Entel.pie #caja_compartir {
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding-bottom:80px;
+	display:none;
+	width:280px;
+}
+
+/*------------------------
+	CAJA COMPARTIR TABS
+  ------------------------*/
+  
+#pie-Entel.pie #caja_compartir.compartir .tabs .tab {
+	display: block;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	width: 140px;
+}
+
+* html #pie-Entel.pie #caja_compartir.compartir .tabs .tab {
+	width: 132px;
+}
+
+*:first-child+html #pie-Entel.pie #caja_compartir.compartir .tabs .tab {
+	width: 132px;
+}
+
+* html #pie-Entel.pie #caja_compartir.compartir .tabs .margen_explorer{
+	margin: 0 8px 0 0;
+}
+
+*:first-child+html #pie-Entel.pie #caja_compartir.compartir .tabs .margen_explorer{
+	margin: 0 8px 0 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .tabs .tab .tab_centro {
+	display: block;
+	float: left;
+	padding: 2px 5px 4px;
+	border-width: 0 1px;
+	border-style: solid;
+	border-color: #d7d7d7;
+	text-align: center;
+	width: 120px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0073ae;
+	margin: -4px 0 0 0;
+	background:#FFF;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .tabs .seleccionado .tab_centro {
+	font-weight: bolder;
+	background: #eee;
+	padding: 2px 5px 5px;
+	z-index: 10;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .tabs .tab .tab_arriba {
+	display: inline-block;
+	padding-right: 5px;
+    background: url(../../img/pie/caja_compartir/pieCajaCompartirTop.gif) no-repeat right -6px;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .tabs .tab .tab_arriba span {
+	display: block;
+    height: 3px;
+	width: 127px;
+	padding: 1px 0;
+    background: url(../../img/pie/caja_compartir/pieCajaCompartirTop.gif) no-repeat left top;
+}
+
+* html #pie-Entel.pie #caja_compartir.compartir .tabs .tab .tab_arriba span {
+	padding: 0;
+	margin: 0 0 -10px 0;
+}
+
+*:first-child+html #pie-Entel.pie #caja_compartir .compartir .tabs .tab .tab_arriba span {
+	padding: 2px;
+	margin: 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .tabs .seleccionado .tab_arriba {
+    background: url(../../img/pie/caja_compartir/pieCajaCompartirTopSelect.gif) no-repeat right -6px;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .tabs .seleccionado .tab_arriba span {
+    background: url(../../img/pie/caja_compartir/pieCajaCompartirTopSelect.gif) no-repeat left top;
+}
+
+/*-------------------------------
+	CONTENIDO COMPARTIR ESTA URL
+  -------------------------------*/
+  
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir {
+	width: 260px;
+	padding: 5px 5px 10px;
+	background: #eee;
+	border: 1px solid #d7d7d7;
+	margin: -1px 0 0 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .label {
+	display: block;
+	font-size: 11px;
+	margin: 12px 0 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir input {
+	width: 250px;
+	margin: 2px 0 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .botones {
+	margin: 15px 0 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .botones div {
+	display:block;
+	float:left;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .botones .exito a {
+	display: block;
+	float: left;
+	width: 57px;
+	height: 24px;
+	text-indent: -9999px;
+	margin: 0 10px 0 0;
+	background: url(../../img/pie/btn_enviar.gif) top left no-repeat;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .botones .cancelar a,
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .botones .cancelar a:visited {
+	display: block;
+	float: left;
+	padding: 5px 0 0;
+	color: #0073ae;
+	font-size: 11px;
+	text-decoration: none; 
+}
+
+#pie-Entel.pie #caja_compartir.compartir .contenido_compartir .botones .cancelar a:hover {
+	border-bottom: 1px dotted #0073ae;
+}
+
+/*---------------------------------
+	CONTENIDO MARCADORES SOCIALES
+  ---------------------------------*/
+  
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales {
+	width: 260px;
+	padding: 5px 5px 10px;
+	background: #eee;
+	border: 1px solid #d7d7d7;
+	margin: -1px 0 0 0;
+	display:none;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales .columna_marcadores {
+	display: block;
+	float: left;
+	width: 120px;
+	padding: 2px 5px;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales .columna_marcadores .marcador {
+	display: block;
+	margin: 3px 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales .columna_marcadores .marcador img {
+	height: 16px;
+	width: 16px;
+	margin: 0 5px 0 0;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales .columna_marcadores .marcador a,
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales .columna_marcadores .marcador a:visited {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0073ae;
+	text-decoration: none;
+}
+
+#pie-Entel.pie #caja_compartir.compartir .marcadores_sociales .columna_marcadores .marcador a:hover {
+	text-decoration: underline;
+}
+
+/*-------------
+	SEPARADOR
+  -------------*/
+  
+#pie-Entel.pie .separador{
+	display: block;
+	margin: 4px 0 10px;
+	height: 3px;
+	background: #b2b2b2;
+	border-right: 9px solid #f78e1e;
+	font-size:1px;
+	width:auto;
+}
+
+#pie-Entel.pie.versionPruebaFooter .pie-izquierda{
+	display:none;
+}

@@ -1,0 +1,283 @@
+<weblogic-ejb-jar xmlns="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!-- Tracked Anonymous EJB -->
+    <!-- Use optimistic concurrency strategy.  Only one user at a time will be updating
+          any of the fields in the TrackedAnonymous EJB because there will only be a single
+          session per user/ per EJB.  Don't specify verify-columns, so we're not going to check
+          for changes in data before we modify. -->
+    <weblogic-enterprise-bean>
+       <ejb-name>TrackedAnonymous</ejb-name>
+       <entity-descriptor>
+            <!-- Specify the locking mechanism that the EJB container uses.  This avoids excessive ejbLoad() calls.
+                  An optimistic strategy will not hold any locks in the EJB container or the database while the
+                  transaction is in process.  Also instruct the container to cache the EJB data between transacations,
+                  so the container will reuse the cached data values from previous transactions.  The container will ensure
+                  consistency by checking for optimistic conflicts at the end of the transaction as you specified the
+                   'verify-columns'.  Notifications for updates are broadcast to other cluster members to help avoid conflicts.  -->
+           <entity-cache>
+               <!-- Note this needs to be changed to 'Database' if specifying <dbms-column-type>OracleBlob in
+               weblogic-cmp-rdbms.jar .  Also, because of CR106706 and CR106907, we cannot use optimistic concurrency
+               with Oracle XA, unless we specify the database type in the weblogic-cmp-rdbms-jar.xml file (which makes this
+               EJB jar file non-portable)-->
+               <concurrency-strategy>Database</concurrency-strategy>
+               <cache-between-transactions> false </cache-between-transactions>
+           </entity-cache>
+          <persistence>
+             <persistence-use>
+               <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+               <type-version>7.0</type-version>
+               <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+             </persistence-use>
+          </persistence>
+       </entity-descriptor>
+       <resource-description>
+          <res-ref-name>jdbc/commercePool</res-ref-name>
+          <jndi-name>weblogic.jdbc.jts.commercePool</jndi-name>
+       </resource-description>
+       <enable-call-by-reference>true</enable-call-by-reference>
+       <jndi-name>${APPNAME}.BEA_personalization.TrackedAnonymous</jndi-name>
+    </weblogic-enterprise-bean>
+
+<!--   PropertySetManager -->
+    <weblogic-enterprise-bean>
+        <ejb-name>PropertySetManager</ejb-name>
+        <stateless-session-descriptor>
+            <pool>
+                <initial-beans-in-free-pool>1</initial-beans-in-free-pool>
+            </pool>
+        </stateless-session-descriptor>
+    <resource-description>
+			<res-ref-name>p13n.leasemanager</res-ref-name>
+			<jndi-name>p13n.leasemanager</jndi-name>
+		</resource-description>
+        <!-- We need to keep this here, instead of moving into ejb-jar.xml, because we don't always deploy it.
+        Having it in ejb-jar.xml would throw an exception on startup if the DocumentManager is not deployed.  -->
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.PropertySetManager</jndi-name>
+    </weblogic-enterprise-bean>
+
+<!--  EntityPropertyManager -->
+    <weblogic-enterprise-bean>
+        <ejb-name>EntityPropertyManager</ejb-name>
+
+        <resource-description>
+               <res-ref-name> jdbc/commercePool </res-ref-name>
+               <jndi-name> weblogic.jdbc.jts.commercePool </jndi-name>
+         </resource-description>
+        <resource-description>
+               <res-ref-name>p13n.sequencerDataSource</res-ref-name>
+               <jndi-name>p13n.sequencerDataSource</jndi-name>
+         </resource-description>
+
+
+        <enable-call-by-reference>true</enable-call-by-reference>
+          <jndi-name>${APPNAME}.BEA_personalization.EntityPropertyManager</jndi-name>
+    </weblogic-enterprise-bean>
+
+<!--  PropertySetWebService -->
+    <weblogic-enterprise-bean>
+        <ejb-name>PropertySetWebService</ejb-name>
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.PropertySetWebService</jndi-name>
+    </weblogic-enterprise-bean>
+
+<!-- Rules Manager -->
+    <weblogic-enterprise-bean>
+        <ejb-name>RulesManager</ejb-name>
+		<stateless-session-descriptor>
+			<!--
+				Having one RulesManager bean in the pool so that the bean
+				registers with the DataRepository. The registeration is done
+				by calling getContextPoolFactory in the ejbCreate method.
+			-->
+			<pool>
+				<initial-beans-in-free-pool>0</initial-beans-in-free-pool>
+			</pool>
+			<stateless-clustering>
+				<stateless-bean-load-algorithm>round-robin</stateless-bean-load-algorithm>
+			</stateless-clustering>
+		</stateless-session-descriptor>
+
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.RulesManager</jndi-name>
+
+    </weblogic-enterprise-bean>
+
+<!-- Realm Configuration -->
+    <weblogic-enterprise-bean>
+        <ejb-name>RealmConfiguration</ejb-name>
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.RealmConfiguration</jndi-name>
+    </weblogic-enterprise-bean>
+
+	<!-- User Profile Manager -->
+    <weblogic-enterprise-bean>
+        <ejb-name>UserProfileManager</ejb-name>
+        <resource-description>
+               <res-ref-name>p13n.sequencerDataSource</res-ref-name>
+               <jndi-name>p13n.sequencerDataSource</jndi-name>
+         </resource-description>
+		 <ejb-reference-description>
+
+                <ejb-ref-name>ejb/EntityPropertyManager</ejb-ref-name>
+
+                <jndi-name>${APPNAME}.BEA_personalization.EntityPropertyManager</jndi-name>
+
+            </ejb-reference-description>
+
+            <ejb-reference-description>
+
+                <ejb-ref-name>ejb/EPcsEntityPropertyManager</ejb-ref-name>
+
+                <jndi-name>${APPNAME}.BEA_personalization.EPcsEntityPropertyManager</jndi-name>
+
+            </ejb-reference-description>
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.UserProfileManager</jndi-name>
+    </weblogic-enterprise-bean>
+
+
+<!-- Group Profile Manager -->
+    <weblogic-enterprise-bean>
+        <ejb-name>GroupProfileManager</ejb-name>
+
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.GroupProfileManager</jndi-name>
+    </weblogic-enterprise-bean>
+
+<!-- Mixed Profile Manager -->
+        <weblogic-enterprise-bean>
+            <ejb-name>MixedProfileManager</ejb-name>
+
+            <enable-call-by-reference>true</enable-call-by-reference>
+            <jndi-name>${APPNAME}.BEA_personalization.MixedProfileManager</jndi-name>
+        </weblogic-enterprise-bean>
+
+    <!-- Custom Profile Manager -->
+        <weblogic-enterprise-bean>
+            <ejb-name>CustomProfileManager</ejb-name>
+
+            <enable-call-by-reference>true</enable-call-by-reference>
+            <jndi-name>${APPNAME}.BEA_personalization.CustomProfileManager</jndi-name>
+        </weblogic-enterprise-bean>
+
+<!-- Event Service -->
+    <weblogic-enterprise-bean>
+        <ejb-name>EventService</ejb-name>
+
+		<stateless-session-descriptor>
+		  <stateless-clustering>
+				<stateless-bean-load-algorithm>round-robin</stateless-bean-load-algorithm>
+		  </stateless-clustering>
+		</stateless-session-descriptor>
+
+        <!--
+        <resource-description>
+            <res-ref-name>wm/PortalWorkManager</res-ref-name>
+            <jndi-name>wm/default</jndi-name>
+        </resource-description>
+        <resource-description>
+            <res-ref-name>timer/PortalTimer</res-ref-name>
+            <jndi-name>wm/default</jndi-name>
+        </resource-description>
+        -->
+        <resource-description>
+               <res-ref-name>p13n.sequencerDataSource</res-ref-name>
+               <jndi-name>p13n.sequencerDataSource</jndi-name>
+         </resource-description>
+        <resource-description>
+               <res-ref-name>p13n.trackingDataSource</res-ref-name>
+               <jndi-name>p13n.trackingDataSource</jndi-name>
+         </resource-description>
+
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.EventService</jndi-name>
+
+	</weblogic-enterprise-bean>
+
+    <!-- Data sync refresh proxy -->
+    <weblogic-enterprise-bean>
+        <ejb-name>internalDataRefreshProxy</ejb-name>
+		<stateless-session-descriptor>
+		  <stateless-clustering>
+			  <home-is-clusterable>false</home-is-clusterable>
+			  <stateless-bean-is-clusterable>false</stateless-bean-is-clusterable>
+		  </stateless-clustering>
+		</stateless-session-descriptor>
+
+        <enable-call-by-reference>true</enable-call-by-reference>
+        <jndi-name>${APPNAME}.BEA_personalization.internalDataRefreshProxy</jndi-name>
+
+	</weblogic-enterprise-bean>
+
+<!--
+            Security    configuration
+-->
+    <security-role-assignment>
+        <role-name>PortalSystemAdministrator</role-name>
+        <externally-defined/>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>Admin</role-name>
+        <externally-defined/>
+    </security-role-assignment>
+
+    <transaction-isolation>
+        <isolation-level>TransactionReadCommitted</isolation-level>
+        <method>
+            <ejb-name>PropertySetManager</ejb-name>
+            <method-name>*</method-name>
+        </method>
+        <method>
+            <ejb-name>EntityPropertyManager</ejb-name>
+            <method-name>*</method-name>
+        </method>
+        <method>
+            <ejb-name>RealmConfiguration</ejb-name>
+            <method-name>*</method-name>
+        </method>
+        <method>
+            <ejb-name>UserProfileManager</ejb-name>
+            <method-name>*</method-name>
+        </method>
+        <method>
+            <ejb-name>GroupProfileManager</ejb-name>
+            <method-name>*</method-name>
+        </method>
+        <method>
+             <ejb-name>MixedProfileManager</ejb-name>
+             <method-name>*</method-name>
+         </method>
+        <method>
+            <ejb-name>CustomProfileManager</ejb-name>
+            <method-name>*</method-name>
+        </method>
+        <method>
+            <ejb-name>TrackedAnonymous</ejb-name>
+            <method-name>*</method-name>
+        </method>
+    </transaction-isolation>
+
+
+<!-- Methods on EJBs that may be idempotent; repeated calls to the same method with the same arguments has
+    exactly the same effect as a single call. This allows the failover handler
+    to retry a failed call without knowing whether the call actually completed
+    on the failed server. Enabling this for a method makes it possible for the
+    bean stub to automatically recover from any failure as long as another server
+    hosting the bean can be reached. -->
+    <idempotent-methods>
+        <method>
+            <ejb-name>EventService</ejb-name>
+            <method-name>dispatchEvent</method-name>
+        </method>
+        <method>
+            <ejb-name>RulesManager</ejb-name>
+            <method-name>*</method-name>
+        </method>
+    </idempotent-methods>
+	<weblogic-compatibility>
+	  <entity-always-uses-transaction>true</entity-always-uses-transaction>
+	</weblogic-compatibility>
+
+</weblogic-ejb-jar>

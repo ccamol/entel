@@ -1,0 +1,9 @@
+#wsdl=http://esbtest.entel.cl/VENTASYMKTG/Fidelizacion/Proxies/VtasYMktgFidelizacionService?WSDL
+wsdl=http://esb.entel.cl/VENTASYMKTG/Fidelizacion/Proxies/VtasYMktgFidelizacionService?WSDL
+targetnamespace=http://www.epcs.com/vtasymktg/fidelizacion
+servicename=VtasYMktgFidelizacionService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

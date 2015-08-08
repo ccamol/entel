@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="wlapp" name="mientel-uup-ejb">
+
+	<!-- build.properties -->
+	<property file="${basedir}/build.properties" />
+
+	<!-- Estructura de directorios -->
+	<property name="dist" value="${base}/${dir.dist}" />
+	<property name="src" value="${base}/${dir.src}" />
+	<property name="apt" value="${base}/${dir.apt.src}" />
+	<property name="lib" value="${base}/${dir.lib}" />
+	<property name="build" value="${base}/${dir.build}" />
+	
+	<path id="project.class.path">
+		<pathelement path="${lib}/p13n_app.jar"/>
+		<pathelement path="${lib}/log4j-1.2.16.jar"/>
+		<pathelement path="${lib}/p13n_ejb.jar"/>
+		<pathelement path="${lib}/p13n_system.jar"/>
+		<pathelement path="${lib}/ClientePerfilService-client.jar"/>
+		<!-- Weblogic Server modules -->
+        <pathelement location="${bea.home}/modules/**.jar"/>
+		<pathelement location="${bea.home}/wlserver_10.3/server/lib/weblogic.jar"/>
+    </path>
+	
+	<taskdef name="wlappc"
+        classname="weblogic.ant.taskdefs.j2ee.Appc"
+		classpath="${bea.home}/wlserver_10.3/server/lib/weblogic.jar"/>
+	
+	<target name="clean">
+		<echo message="*** CLEAN ***" />
+		<delete failonerror="false" dir="${dir.dist}" />
+		<delete failonerror="false" dir="${basedir}/ejbcgen" />
+		<delete failonerror="false" dir="${dir.build}" />
+	</target>
+	
+	<target depends="clean" name="prepare">
+		
+		<echo message="*** PREPARE ***" />
+		<!-- Directorios -->
+		<mkdir dir="${dir.dist}" />
+		<mkdir dir="${dir.build}" />
+		
+	</target>
+	
+
+    <target name="compile_ejb" depends="prepare">
+	<echo message="*** COMPILE ***" />
+    <javac      srcdir="${src}:${apt}"
+                destdir="${build}"
+                includes="**/*.java">
+		<classpath refid="project.class.path"/>
+	</javac>
+      <mkdir dir="${build}/META-INF"/>
+      <copy todir="${build}">
+          <fileset dir="${src}">
+            <include name="**/*jar.xml"/>
+          </fileset>
+	  </copy>
+  </target>
+
+
+
+	<target name="jar_ejb" depends="compile_ejb">	
+	<echo message="*** PACKAGING EJB JAR ***" />
+		<jar jarfile="${dist}/${jar.filename}"
+			basedir="${build}">
+			<fileset dir="${base}">	
+               <include name="**/*.properties" />	
+			   <exclude name="build.properties" />
+			</fileset>
+		</jar>
+	</target>
+
+
+	<target name="wlapp" depends="jar_ejb">
+	<echo message="*** CREATING DEPLOYABLE EJB JAR ***" />
+	<wlappc source="${dist}/${jar.filename}"
+
+			output="${dist}/${jar.filename}"
+                forceGeneration="true"
+                verbose="true"
+                deprecation="true">
+            <classpath>
+                <path refid="project.class.path"/>
+            </classpath>
+        </wlappc>
+  </target>
+
+
+</project>

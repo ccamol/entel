@@ -1,0 +1,7 @@
+wsdl=http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService?WSDL
+targetnamespace=http://www.epcs.com/erp/seguridad
+servicename=ERPGestionDeSeguridadService
+timeout=5000
+isauth=false
+username=weblogic
+password=qpalwosk10

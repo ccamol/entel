@@ -1,0 +1,524 @@
+.ui-datepicker-calendar{
+	background:#FFFFFF;
+	border:#CCCCCC solid 1px;
+}
+#bloqueo_1_robo, #bloqueo_1_perdida{display:none;}
+#desbloqueo_1, #desbloqueo_2, #desbloqueo_3{display:none}
+.bloqueo .ui-datepicker-trigger{left:92px; float:right; position:static !important; margin:5px 0 0 5px !important;}
+* html .bloqueo .ui-datepicker-trigger{left:96px}
+#centro .bloqueo h1{
+	display:inline-block;
+	width:100%;
+	padding:0 0 10px 15px;
+ 	border-bottom:1px solid #E3E3E3;
+	height:20px;
+}
+* html #centro .bloqueo h1{
+	width:530px !important;
+}
+#centro .bloqueo h1 span{
+	float:right;
+	font-size:0.8em;
+	color:#666666;
+	*margin-top:-15px;
+}
+.bloqueo a.linea:hover{
+	color: #597CA4;
+}
+.bloqueo a.linea{
+	text-decoration:underline;
+}
+.bloqueo .header_tabla_blanco.caja-peq{
+	width:260px;
+	float:left;
+}
+.bloqueo div.header_tabla_blanco.caja-peq div.main_blanco{
+	height:145px;
+}
+.bloqueo .header_tabla_blanco.caja-peq.izquierda{
+	margin-right:15px;
+}
+.bloqueo .header_tabla_blanco ul{
+	list-style:outside;
+	list-style-type:disc\9;
+	list-style-position:outside\9;
+	padding:0 10px;
+}
+.bloqueo .opcion-motivo label{
+	display:inline-block;
+}
+.bloqueo .opcion-motivo span.texto_radio_button{
+	font-size:1.2em;
+}
+.bloqueo .opcion-motivo p{
+	padding-left:20px;
+}
+#centro .bloqueo .formulario_boton{
+	padding:10px 0 0 440px;
+}
+.bloqueo .header_tabla_blanco .main_blanco .contenido, .bloqueo .header_tabla .main .contenido{
+	list-style:outside;
+	padding:0 20px;
+}
+.bloqueo .campo-desbloqueo{
+	float:right;
+	margin-bottom:20px;
+}
+.bloqueo .header_tabla_blanco .main_blanco .contenido h4{
+	padding:10px 0 10px 15px;
+	display:block;
+ 	border-bottom:1px solid #E3E3E3
+}
+.bloqueo div.cancelar {
+    background: none repeat scroll 0 0 white;
+    border-color: #CFCDCD #CFCDCD;
+    border-style: solid solid none;
+    border-width: 1px 3px 0 1px;
+    float: right;
+    margin: 2px 0 0 -2px;
+    padding: 7px 0 12px 13px;
+    position: relative;
+    top: 1px;
+    width: 62px;
+}
+.bloqueo .pie-pagina{
+	display:block;
+	border-top:1px solid #E3E3E3;
+	padding:5px 0;
+}
+.bloqueo .pie-pagina p{
+	background: url(../../img/icons/ico_informacion_small.png) no-repeat left center;
+	padding:5px 20px;
+	font-size:0.9em !important;
+	font-weight:bold;
+	height:20px\9;
+	padding:10px 0 0 25px\9
+}
+
+* html .bloqueo .pie-pagina p{
+	background: url(../../img/icons/ico_informacion_small.gif) no-repeat left center;
+}
+.bloqueo .caja-informacion {
+    background:url(../../img/icons/ico_alerta.gif) no-repeat scroll 30px center #FFF1A8;
+    border-bottom: 1px solid #D1C289;
+    border-top: 1px solid #D1C289;
+    color: #000000;
+    font-size: 1.2em;
+    margin: 4px 0 20px;
+    padding: 10px 10px 10px 75px;
+}
+* html .bloqueo .caja-informacion {
+    background:url(../../img/icons/ico_alerta.gif) no-repeat scroll 30px center #FFF1A8;
+}
+.bloqueo div.fila .campo {
+    float: left;
+    display: block;
+    padding-right: 11px;
+}
+.bloqueo div.fieldset div.fila-campo.sinPadding{ padding:0px;}
+.bloqueo div.fieldset div.fila-campo label{width:140px}
+.bloqueo span.nota {
+    display: block;
+    color: #999;
+	width:150px
+}
+.bloqueo div.fieldset div.fila-campo .campo span.ejemplo.corto{width:150px;}
+.bloqueo div.fieldset div.fila-campo .campo span.ejemplo.fecha{padding-left:10px;}
+.bloqueo div.fieldset div.fila-campo label.ancho{width:400px}
+.bloqueo .ancho-desbloquear{width:385px;float:left}
+.bloqueo div.fieldset div.fila-campo label span{font-size:0.9em}
+.bloqueo div.fieldset div.fila-campo a.cancelar{ 
+	text-decoration:underline; display:block; margin:8px 0 0 0
+}
+.bloqueo div.fieldset div.fila-campo a.cancelar:hover{ 
+	color: #597CA4;
+}
+.bloqueo .box-numero{
+	width:495px;
+	border:1px #cfcdcd solid;
+	border-right:3px #cfcdcd solid;
+	border-bottom:3px #cfcdcd solid;
+	background:white;
+	padding:26px 0 17px 20px;
+	margin:0 0 20px 0;
+}
+.bloqueo #modificarDirCaja{
+	display:none;
+	position:absolute;
+	top: 125px;
+	z-index:5;
+}
+* html .bloqueo #modificarDirCaja{
+	display:none;
+	position:absolute;
+	top: 125px;
+	right: 31px !important ;
+	z-index:5;
+}
+.bloqueo.robo #modificarDirCaja{
+	display:none;
+	position:absolute;
+	top: 215px;
+	z-index:5;
+}
+*+html .bloqueo.robo #modificarDirCaja{
+	display:none;
+	position:absolute;
+	top: 207px;
+	z-index:5;
+}
+* html .bloqueo.robo #modificarDirCaja{
+	display:none;
+	position:absolute;
+	top: 215px;
+	right: 31px !important ;
+	z-index:5;
+}
+
+.bloqueo #modificarMailCaja{
+	display:none;
+	position:absolute;
+	top: 159px;	
+	z-index:5;
+}
+
+* html .bloqueo #modificarMailCaja{
+	display:none;
+	position:absolute;
+	top: 159px;	
+	right:  111px !important;
+	z-index:5;
+}
+.bloqueo.robo #modificarMailCaja{
+	display:none;
+	position:absolute;
+	top: 244px;
+	z-index:5;
+}
+
+* html .bloqueo.robo #modificarMailCaja{
+	display:none;
+	position:absolute;
+	top: 244px;	
+	right:  111px !important;
+	z-index:5;
+}
+
+*+html .bloqueo.robo #modificarMailCaja{
+	display:none;
+	position:absolute;
+	top: 239px;	
+	z-index:5;
+}
+.bloqueo .box-numero .cuadro-boton{
+	display:block;
+	width:86px;
+	height:3px;
+	background:#FFFFFF;
+	position:absolute;
+	right:0px;
+	top:-2px;
+}
+.bloqueo .campo.modificar{ 
+	padding-top:5px
+}
+.bloqueo a.modificarDirBloqueo, .bloqueo a.modificarMailBloqueo{ 
+	text-decoration:underline
+}
+.bloqueo a.modificarDirBloqueo:hover, .bloqueo a.modificarMailBloqueo:hover{ 
+	color: #597CA4;
+}
+.bloqueo .box-numero.corto{
+	width:415px;
+}
+.bloqueo .box-numero .fila{	
+	margin:10px 0;
+}
+.bloqueo .box-numero .fila.ancho label{	
+	width:130px;
+}
+.bloqueo .box-numero .fila .btnGuardarDirbloqueo{	
+	margin:-4px 0 0 5px;
+}
+.bloqueo .box-numero .fila.mensaje{
+	display:none;
+	background:#FFF1A8;
+	border:1px solid #CFC489;
+	padding:10px;
+	width:450px;
+}
+.bloqueo .box-numero .fila.mensaje.corto{
+	width:350px;
+}
+.bloqueo .box-numero .fila.mensaje .campo{	
+	float:left;
+	width:350px;
+}
+.bloqueo .box-numero .fila.mensaje.corto .campo{	
+	width:250px;
+}
+.bloqueo .box-numero form fieldset {
+	position:relative;
+}
+.bloqueo .box-numero h5{
+	font-size:1.2em;
+	font-weight:bolder;
+	color:#3a3a3a;
+	padding:0;
+	margin:0 0 10px 0;
+	display:block;
+}
+.bloqueo .box-numero label{
+	display:block;
+	float:left;
+	position:relative;
+	width:100px;
+	padding:5px 0 0 0;
+	font-size:1.2em;
+}
+.bloqueo div.box-numero form fieldset p{
+	font-size:1.2em;
+	width:338px;
+	padding:0 0 10px 0;
+}
+.bloqueo div.box-numero #btnGuardarDir{
+	margin:-4px 0 0 10px;
+}
+.bloqueo .escoge-movil{
+	display:block;
+	width:100%;
+	margin-bottom:40px;
+}
+.bloqueo .escoge-movil .ultimo{
+	display:block;
+	width:100%;
+	background:#F5F5F5;
+	border:#999999 solid 1px;
+	color:#000;
+	padding:10px;
+}
+.bloqueo .escoge-movil .ultimo .nombre{
+	float:left;
+	font-weight:bold;
+	font-size:1.1em;
+	width:95%;
+}
+.bloqueo .escoge-movil .ultimo .radio{
+	float:left;
+}
+.bloqueo .escoge-movil .busca-movil{
+	width:100%;
+	padding:10px;
+}
+.bloqueo .escoge-movil .busca-movil .texto{
+	float:left;
+	font-weight:bold;
+	font-size:1.1em;
+	width:400px;
+}
+.bloqueo .escoge-movil .busca-movil .boton{
+	float:left;
+	margin-top:-7px;
+}
+.bloqueo .escoge-movil .busca-movil .boton span{
+	width:115px
+}
+.bloqueo .escoge-movil .listado-equipos{
+	display:none;
+}
+.bloqueo .escoge-movil .listado-equipos.vacia .listaVacia{
+	display:block;
+}
+.bloqueo .escoge-movil .listado-equipos.vacia .lista{
+	display:none;
+}
+.bloqueo .escoge-movil .listado-equipos .equipo{
+	display:block;
+	width:100%;
+	background:#F5F5F5;
+	color:#000;
+	padding:10px;
+}
+.bloqueo .escoge-movil .listado-equipos .equipo.impar{
+	background:#FFFFFF;
+}
+* html .bloqueo .escoge-movil .listado-equipos .equipo.impar{
+	background:#FFFFFF;
+}
+.bloqueo .escoge-movil .listado-equipos .equipo .nombre{
+	float:left;
+	font-weight:bold;
+	font-size:1.1em;
+	width:95%;
+}
+* html .bloqueo .escoge-movil .listado-equipos .equipo.impar .nombre{
+	background:#FFFFFF;
+	border: none;
+}
+.bloqueo .escoge-movil .listado-equipos .equipo .radio{
+	float:left;
+}
+* html .bloqueo .escoge-movil .listado-equipos .equipo.impar .radio{
+	background:#FFFFFF;
+	border: none;
+	
+}
+.bloqueo .datos-bloqueo{
+	display:block;
+	width:100%;
+	font-size:1.2em;
+}
+.bloqueo .datos-bloqueo .fila{
+	display:block;
+	padding:10px;
+	background:#F5F5F5;
+}
+.bloqueo .datos-bloqueo .fila.impar{
+	background:#FFFFFF;
+}
+
+* html .bloqueo .datos-bloqueo .fila.impar{
+	background:#FFFFFF;
+}
+
+.bloqueo .datos-bloqueo .fila .desc{
+	display:block;
+	width:50%;
+	float:left;
+}
+
+* html .bloqueo .datos-bloqueo .fila.impar .desc{
+	background:#FFFFFF;
+	border: none;
+}
+
+.bloqueo .datos-bloqueo .fila .dato{
+	display:block;
+	width:50%;
+	float:left;
+}
+
+* html .bloqueo .datos-bloqueo .fila.impar .dato{
+	background:#FFFFFF;
+	border: none;
+}
+.bloqueo .condiciones{
+	padding-bottom:10px;
+	float:right;
+}
+.bloqueo .condiciones label{
+	float:left;
+	font-weight:bold;
+	margin-right:5px;
+}
+.bloqueo .condiciones input{
+	float:left;
+}
+.bloqueo.bloqueo-exito{
+	border:#CCC solid 1px;
+	padding:15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px; 
+}
+.bloqueo .mensaje-exito{
+	background:url(../../img/icons/ico_tic_verde.gif) 10px 12px no-repeat;
+	font-weight:bold;
+	font-size:1.3em;
+	margin:20px;
+	padding-left:20px
+}
+
+
+/*---------------------------------
+		   Globo Error
+----------------------------------*/
+
+div#globoErrorBloqueo {
+	background:transparent url(../../img/validaciones/bg_mensaje_corto.png) no-repeat scroll left top;
+	display:none;
+	font-weight:bolder;
+	height:55px;
+	left:213px;
+	position:absolute;
+	top:11px;
+	width:246px;
+	z-index:5001;
+}
+
+* html div#globoErrorBloqueo {
+	background:transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+}
+*+html div#globoErrorBloqueo {
+	background:transparent url(../../img/validaciones/bg_mensaje.gif) no-repeat scroll left top;
+}
+
+
+div#globoErrorBloqueo table {
+	height:100%;
+	margin-left:40px;
+	width:180px;
+}
+
+div#globoErrorBloqueo table td {
+	color:#E30101;
+	font-size:12px;
+}
+
+.bloqueo .loading{
+	background:url(../../img/loading.gif) no-repeat;
+	width:16px;
+	display:none;
+	height:11px;
+	float:left;
+	margin-top:7px;
+}
+#desbloqueo_1.bloqueo .claveInvalida{	
+	width:190px;
+	font-weight:bold;
+	display:none;
+	height:11px;
+	float:left;
+	margin-top:5px;
+}
+.btnBuscarEquipos{
+	font-size:1.0em;	
+}
+
+* html .bloqueo div.fieldset div.fila-campo label.anchoLabel{width:391px}
+
+.campoDesHora {
+	width: 140px;
+}
+
+* html .campo.campoDesHora {
+	width: 135px;
+}
+* html .bloqueo div.fieldset div.fila-campo .clearfix .campohorarobo{
+	float: left;
+}
+* html .bloqueo div.fieldset div.fila-campo .campo span.ejemplo.horaBloq.corto{width:135px;}
+
+.regionText{padding-top: 5px;}
+
+.ciudadText{padding-top: 5px;}
+
+.comunaText{padding-top: 5px;}
+
+.calleText{padding-top: 5px;}
+
+.numeroText{padding-top: 5px;}
+
+.dptoText{padding-top: 5px;}
+
+* html .regionText{padding-top: 5px;}
+
+* html .ciudadText{padding-top: 5px;}
+
+* html .comunaText{padding-top: 5px;}
+
+* html .calleText{padding-top: 5px;}
+
+* html .numeroText{padding-top: 5px;}
+
+* html .dptoText{padding-top: 5px;}

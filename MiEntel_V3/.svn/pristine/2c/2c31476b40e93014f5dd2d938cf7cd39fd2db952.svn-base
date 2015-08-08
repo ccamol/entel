@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+	
+	<!-- Controllers -->
+	
+	<managed-bean>
+		<managed-bean-name>misbamController</managed-bean-name>
+		<managed-bean-class>com.epcs.bam.migracionpp.controller.MisbamController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>		
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>loginController</managed-bean-name>
+		<managed-bean-class>com.epcs.erp.seguridad.controller.LoginController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>		
+	</managed-bean>
+    <managed-bean>
+		<managed-bean-name>ofertaBlindajeControllerV2</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.OfertaBlindajeControllerV2</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>		
+	</managed-bean>	
+
+	
+	<managed-bean>
+		<managed-bean-name>preIngresoOTController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.PreIngresoOTController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>preIngresoOTDelegate</property-name>
+			<value>#{preIngresoOTDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+    </managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>cuentaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.CuentaController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>parametrosDelegate</property-name>
+			<value>#{parametrosDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>facturacionElectronicaDelegate</property-name>
+			<value>#{facturacionElectronicaDelegate}</value>
+		</managed-property>						
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>consultaSaldoSGOController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.controller.ConsultaSaldoSGOController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>consultaSaldoSGODelegate</property-name>
+			<value>#{consultaSaldoSGODelegate}</value>
+		</managed-property>			
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>recargaController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.recarga.controller.RecargaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>recargaDelegate</property-name>
+			<value>#{recargaDelegate}</value>
+		</managed-property>			
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>recargaHistoricoController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.recarga.controller.RecargaHistoricoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>recargaDelegate</property-name>
+			<value>#{recargaDelegate}</value>
+		</managed-property>			
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>cierreRecargaWebpayController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.recarga.controller.CierreRecargaWebpayController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>recargaDelegate</property-name>
+			<value>#{recargaDelegate}</value>
+		</managed-property>			
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>facturacionController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.balance.controller.FacturacionController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>facturacionDelegate</property-name>
+			<value>#{facturacionDelegate}</value>
+		</managed-property>			
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>productoController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.ProductoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>productoDelegate</property-name>
+			<value>#{productoDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>traficoController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.controller.TraficoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoDelegate</property-name>
+			<value>#{traficoDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>seguridadDelegate</property-name>
+			<value>#{seguridadDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>						
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>traficoEnLineaController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.controller.TraficoEnLineaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoDelegate</property-name>
+			<value>#{traficoDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>historialBolsasController</managed-bean-name>
+		<managed-bean-class>com.epcs.historial.bolsas.HistorialBolsasController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>historialDelegate</property-name>
+			<value>#{historialDelegate}</value>
+		</managed-property>		
+	<managed-property>
+			<property-name>recargaDelegate</property-name>
+			<value>#{recargaDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>traficoBamController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.controller.TraficoBamController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoBamDelegate</property-name>
+			<value>#{traficoBamDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>equipoController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.EquipoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+    <managed-bean>
+		<managed-bean-name>respaldoAgendaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.RespaldoAgendaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+
+	<managed-bean>
+		<managed-bean-name>seguridadController</managed-bean-name>
+		<managed-bean-class>com.epcs.erp.seguridad.controller.SeguridadController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>planController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.PlanController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>	
+		<managed-property>
+			<property-name>beneficiosDelegate</property-name>
+			<value>#{beneficiosDelegate}</value>
+		</managed-property>	
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>headerController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.HeaderController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>seguridadDelegate</property-name>
+			<value>#{seguridadDelegate}</value>
+		</managed-property>			
+	</managed-bean> 
+	
+	<managed-bean>
+		<managed-bean-name>selectorCuentaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.SelectorCuentaController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	
+	<managed-bean>
+		<managed-bean-name>misUsuariosController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.MisUsuariosController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+  	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>facturacionFullController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.balance.controller.FacturacionFullController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>facturacionDelegate</property-name>
+			<value>#{facturacionDelegate}</value>
+		</managed-property>	
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>facturacionElectronicaController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.prodfactura.controller.FacturacionElectronicaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>facturacionElectronicaDelegate</property-name>
+			<value>#{facturacionElectronicaDelegate}</value>
+		</managed-property>	
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>reposicionServicioController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.controller.ReposicionServicioController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>reposicionServicioDelegate</property-name>
+			<value>#{reposicionServicioDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>facturacionDelegate</property-name>
+			<value>#{facturacionDelegate}</value>
+		</managed-property>
+  	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>pagoAutomaticoController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.pago.controller.PagoAutomaticoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>pagoAutomaticoDelegate</property-name>
+			<value>#{pagoAutomaticoDelegate}</value>
+		</managed-property>
+   	</managed-bean>
+   	
+
+   	 <managed-bean>
+		<managed-bean-name>miTraficoController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.controller.MiTraficoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoDelegate</property-name>
+			<value>#{traficoDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>
+   	</managed-bean>
+
+   	 <managed-bean>
+		<managed-bean-name>miTraficoBamController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.controller.MiTraficoBamController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoBamDelegate</property-name>
+			<value>#{traficoBamDelegate}</value>
+		</managed-property>
+   	</managed-bean>   	
+   	
+   	<managed-bean>
+		<managed-bean-name>aplicacionExternaController</managed-bean-name>
+		<managed-bean-class>com.epcs.erp.seguridad.controller.AplicacionExternaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>seguridadDelegate</property-name>
+			<value>#{seguridadDelegate}</value>
+		</managed-property>
+  	</managed-bean>
+   	
+   	<managed-bean>
+		<managed-bean-name>bolsaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.controller.BolsaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>bolsaDelegate</property-name>
+			<value>#{bolsaDelegate}</value>
+		</managed-property>
+	   <managed-property>
+			<property-name>suscripcionesDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>beneficiosDelegate</property-name>
+			<value>#{beneficiosDelegate}</value>
+		</managed-property>
+  	</managed-bean>
+  	
+  	<managed-bean>
+		<managed-bean-name>misBolsasPPController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.controller.MisBolsasPPController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>bolsaDelegate</property-name>
+			<value>#{bolsaDelegate}</value>
+		</managed-property>
+			<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>suscripcionesDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>beneficiosDelegate</property-name>
+			<value>#{beneficiosDelegate}</value>
+		</managed-property>
+  	</managed-bean>
+  	
+	<managed-bean>
+		<managed-bean-name>mensajesParaTiController</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.controller.MensajesParaTiController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>mensajesManager</property-name>
+			<value>#{mensajesManager}</value>
+	</managed-property>	
+		
+		
+  	</managed-bean>  	
+  	
+    <managed-bean>
+		<managed-bean-name>internetMovilController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.controller.InternetMovilController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>internetMovilDelegate</property-name>
+			<value>#{internetMovilDelegate}</value>
+		</managed-property>	
+  	</managed-bean>  
+  		
+	<managed-bean>
+		<managed-bean-name>encuestasPerfiladasController</managed-bean-name>
+		<managed-bean-class>com.epcs.inteligencianegocio.satisfaccioncliente.controller.EncuestasPerfiladasController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>encuestasDelegate</property-name>			
+			<value>#{encuestasDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>administracionServicios</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.AdministracionServiciosController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>equipoBAMController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.EquipoBAMController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>vtasYMktgFidelizacionController</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.controller.VtasYMktgFidelizacionController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>vtasYMktgFidelizacionDelegate</property-name>
+			<value>#{vtasYMktgFidelizacionDelegate}</value>
+		</managed-property>		
+		<managed-property>
+			<property-name>beneficiosDelegate</property-name>
+			<value>#{beneficiosDelegate}</value>
+		</managed-property>	
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>	
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>vtasYMktgFidelizacionCartolaController</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.controller.VtasYMktgFidelizacionCartolaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>vtasYMktgFidelizacionDelegate</property-name>
+			<value>#{vtasYMktgFidelizacionDelegate}</value>
+		</managed-property>				
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>planBAMController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.PlanBAMController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>planBAMDelegate</property-name>
+			<value>#{planBAMDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>suscripcionesController</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.controller.SuscripcionesController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>suscripcionesDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>	
+		<managed-property>
+			<property-name>bolsaDelegate</property-name>
+			<value>#{bolsaDelegate}</value>
+		</managed-property>		
+	</managed-bean>  
+
+	<managed-bean>
+		<managed-bean-name>fullMessengerController</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.fullmessenger.controller.FullMessengerController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>fullMessengerDelegate</property-name>
+			<value>#{fullMessengerDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>inscripcionController</managed-bean-name>
+		<managed-bean-class>com.epcs.inscripcion.controller.InscripcionController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>inscripcionDelegate</property-name>
+			<value>#{inscripcionDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>parametrosDelegate</property-name>
+			<value>#{parametrosDelegate}</value>
+		</managed-property>		
+	<managed-property>
+			<property-name>facturacionElectronicaDelegate</property-name>
+			<value>#{facturacionElectronicaDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>iShopAgendamientoController</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.agendamiento.controller.IShopAgendamientoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>iShopAgendamientoDelegate</property-name>			
+			<value>#{iShopAgendamientoDelegate}</value>
+		</managed-property>				
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>iShopSMSMMSInfoController</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.agendamiento.controller.IShopSMSMMSInfoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>iShopAgendamientoDelegate</property-name>			
+			<value>#{iShopAgendamientoDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>seguridadDelegate</property-name>			
+			<value>#{seguridadDelegate}</value>
+		</managed-property>					
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>iShopSuscripcionesController</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.suscripciones.controller.IShopSuscripcionesController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>iShopSuscripcionesDelegate</property-name>			
+			<value>#{iShopSuscripcionesDelegate}</value>
+		</managed-property>
+	</managed-bean>		
+	
+	<managed-bean>
+		<managed-bean-name>suscripcionCDFController</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.suscripcioncdf.controller.SuscripcionCDFController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>suscripcionCDFDelegate</property-name>
+			<value>#{suscripcionCDFDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioContactoController</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariocontacto.controller.FormularioContactoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioContactoDelegate</property-name>
+			<value>#{formularioContactoDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioReclamoController</managed-bean-name>
+		<managed-bean-class>com.epcs.formularioreclamo.controller.FormularioReclamoController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioReclamoDelegate</property-name>
+			<value>#{formularioReclamoDelegate}</value>
+		</managed-property>		
+		<managed-property>
+			<property-name>preIngresoOTDelegate</property-name>
+			<value>#{preIngresoOTDelegate}</value>
+		</managed-property>
+	 </managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>lineaAdicionalController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.LineaAdicionalController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>					
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioSatisfaccionController</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariosatisfaccion.controller.FormularioSatisfaccionController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioSatisfaccionDelegate</property-name>
+			<value>#{formularioSatisfaccionDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>	
+					
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>ofertaBlindajeController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.OfertaBlindajeController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>ofertaBlindajeDelegate</property-name>
+			<value>#{ofertaBlindajeDelegate}</value>
+		</managed-property>	
+		<managed-property>
+			<property-name>ofertaVisaDelegate</property-name>
+			<value>#{ofertaVisaDelegate}</value>
+		</managed-property>	
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>planesSeguridadBAMPPController</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.controller.PlanesSeguridadBAMPPController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>planesSeguridadBAMDelegate</property-name>
+			<value>#{planesSeguridadBAMDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>planesSeguridadBAMCCSSController</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.controller.PlanesSeguridadBAMCCSSController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>planesSeguridadBAMDelegate</property-name>
+			<value>#{planesSeguridadBAMDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>bannerSeguridadController</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.controller.BannerSeguridadController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>planesSeguridadBAMDelegate</property-name>
+			<value>#{planesSeguridadBAMDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>bolsasBAMCCPPController</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.controller.BolsasBAMCCPPController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>bolsasBAMCCPPDelegate</property-name>
+			<value>#{bolsasBAMCCPPDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>miTraficoBAMCCDelegate</property-name>
+			<value>#{miTraficoBAMCCDelegate}</value>			
+		</managed-property>						
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>saldoBAMController</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.controller.SaldoBAMController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>miTraficoBAMCCDelegate</property-name>
+			<value>#{miTraficoBAMCCDelegate}</value>			
+		</managed-property>				
+	</managed-bean>
+	
+  <managed-bean>
+		<managed-bean-name>bloqueoDesbloqueoEquipoController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.BloqueoDesbloqueoEquipoController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+    <managed-bean>
+		<managed-bean-name>bloqueoDesbloqueoEquipoBAMController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.BloqueoDesbloqueoEquipoBAMController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	
+	
+	<managed-bean>
+		<managed-bean-name>formularioContactoPortabilidadController</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariocontacto.controller.FormularioContactoPortabilidadController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioContactoDelegate</property-name>
+			<value>#{formularioContactoDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>			
+			<value>#{cuentaDelegate}</value>
+		</managed-property>					
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>tarifaDiariaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.controller.TarifaDiariaController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>		
+	   <managed-property>
+			<property-name>suscripcionesDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>	
+		 <managed-property>
+			<property-name>tarifaDiariaDelegate</property-name>
+			<value>#{tarifaDiariaDelegate}</value>
+		</managed-property>	
+  	</managed-bean>
+				
+	<managed-bean>
+		<managed-bean-name>recargaPromoPPController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.recarga.controller.RecargaPromoPPController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>		
+	   <managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>
+	   <managed-property>
+			<property-name>recargaDelegate</property-name>			
+			<value>#{recargaDelegate}</value>
+		</managed-property>
+	   <managed-property>
+			<property-name>ofertaBlindajeDelegate</property-name>
+			<value>#{ofertaBlindajeDelegate}</value>
+		</managed-property>					
+  	</managed-bean>  	
+				
+	<!-- Controllers de Servicios -->
+
+	<!-- Voz -->
+	<managed-bean>
+		<managed-bean-name>buzonVozController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.BuzonVozController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>cobroRevertidoController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.CobroRevertidoController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>largaDistanciaIntController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.LargaDistanciaIntController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>notificacionSMSController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.NotificacionSMSController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>avisaleController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.AvisaleController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>num300Controller</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.Numero300Controller</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>num606Controller</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.Numero606Controller</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>num609Controller</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.Numero609Controller</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+
+	<managed-bean>
+		<managed-bean-name>num700Controller</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.Numero700Controller</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<!-- /Voz -->
+
+	<managed-bean>
+	  <managed-bean-name>contratosController</managed-bean-name>
+	  <managed-bean-class>com.epcs.cliente.perfil.controller.ContratosController</managed-bean-class>
+	  <managed-bean-scope>request</managed-bean-scope>  
+	</managed-bean>
+
+	<!-- Mensajeria -->
+	<managed-bean>
+		<managed-bean-name>avisoFactElectronicaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.mensajeria.AvisoFacturaElectronicaController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>mensajeriaMultimediaController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.mensajeria.MensajeriaMultimediaController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	<!-- /Mensajeria -->
+	
+	<!-- Datos -->
+		<managed-bean>
+		<managed-bean-name>wapController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.voz.WapController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>bamController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.datos.BAMController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>servicioInetMovilController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.servicios.datos.InternetMovilController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- /Datos -->
+	
+	<!-- Google Analytic -->
+	
+	<managed-bean>
+		<managed-bean-name>googleAnalyticsController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.GoogleAnalyticsController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<!-- /Google Analytic -->
+	
+	<!-- Google Tag Manager -->
+	
+	<managed-bean>
+		<managed-bean-name>googleTagManagerController</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.controller.GoogleTagManagerController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<!-- /Google Tag Manager -->	
+
+	<!-- /Controllers de Servicios -->
+
+	<managed-bean>
+		<managed-bean-name>miTraficoBAMCCController</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.controller.MiTraficoBamCCController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoBAMCCDelegate</property-name>
+			<value>#{miTraficoBAMCCDelegate}</value>
+		</managed-property>	
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>ejecutivoVIPController</managed-bean-name>
+		<managed-bean-class>com.esa.clientes.perfilesclientes.ejecutivo.controller.EjecutivoVIPController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>ejecutivoVIPDelegate</property-name>
+			<value>#{ejecutivoVIPDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>		
+	</managed-bean>	
+
+<!-- Delegates -->
+
+	<managed-bean>
+		<managed-bean-name>preIngresoOTDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.PreIngresoOTDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>preIngresoOTDAO</property-name>
+			<value>#{preIngresoOTDAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>facturacionElectronicaDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.prodfactura.delegate.FacturacionElectronicaDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>facturacionElectronicaDAO</property-name>
+			<value>#{facturacionElectronicaDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>consultaSaldoSGODelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.delegate.ConsultaSaldoSGODelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>consultaSaldoSGODAO</property-name>
+			<value>#{consultaSaldoSGODAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>productoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.ProductoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>productoDAO</property-name>
+			<value>#{productoDAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>cuentaDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.CuentaDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>cuentaDAO</property-name>
+			<value>#{cuentaDAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>parametrosDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.recursoti.parametros.delegate.ParametrosDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>parametrosDAO</property-name>
+			<value>#{parametrosDAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>facturacionDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.balance.delegate.FacturacionDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>facturacionDAO</property-name>
+			<value>#{facturacionDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>consultarDetalleLlamadosDAO</property-name>
+			<value>#{consultarDetalleLlamadosDAO}</value>
+		</managed-property>		
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>equipoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.EquipoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDAO</property-name>
+			<value>#{equipoDAO}</value>
+		</managed-property>
+	</managed-bean>		
+
+	<managed-bean>
+		<managed-bean-name>planDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.PlanDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>planDAO</property-name>
+			<value>#{planDAO}</value>
+		</managed-property>
+	</managed-bean>	
+	<managed-bean>
+		<managed-bean-name>historialDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.historial.bolsas.delegate.HistorialDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>historialDAO</property-name>
+			<value>#{historialDAO}</value>
+		</managed-property>
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>traficoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.delegate.TraficoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoDAO</property-name>
+			<value>#{traficoDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>planDAO</property-name>
+			<value>#{planDAO}</value>
+		</managed-property>
+	</managed-bean>	
+
+    <managed-bean>
+		<managed-bean-name>traficoBamDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.delegate.TraficoBamDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>traficoBamDAO</property-name>
+			<value>#{traficoBamDAO}</value>
+		</managed-property>
+	</managed-bean>		
+
+	<managed-bean>
+		<managed-bean-name>recargaDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.recarga.delegate.RecargaDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>recargaDAO</property-name>
+			<value>#{recargaDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>seguridadDAO</property-name>
+			<value>#{seguridadDAO}</value>
+		</managed-property>	
+	</managed-bean>	
+	
+   <managed-bean>
+		<managed-bean-name>reposicionServicioDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.delegate.ReposicionServicioDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>reposicionServicioDAO</property-name>
+			<value>#{reposicionServicioDAO}</value>
+		</managed-property>
+	</managed-bean>	
+	
+   <managed-bean>
+		<managed-bean-name>pagoAutomaticoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.pago.delegate.PagoAutomaticoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>pagoAutomaticoDAO</property-name>
+			<value>#{pagoAutomaticoDAO}</value>
+		</managed-property>
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>seguridadDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.erp.seguridad.delegate.SeguridadDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>seguridadDAO</property-name>
+			<value>#{seguridadDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>bolsaDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.delegate.BolsaDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>bolsaDAO</property-name>
+			<value>#{bolsaDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>bolsaBlindajeDAO</property-name>
+			<property-class>com.epcs.cliente.perfil.dao.BolsaBlindajeDAO</property-class>
+			<value>#{bolsaBlindajeDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>suscripcionesDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.delegate.SuscripcionesDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>suscripcionesBolsaDAO</property-name>
+			<value>#{suscripcionesBolsaDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>mensajesParaTiDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.delegate.MensajesParaTiDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDAO</property-name>
+			<value>#{equipoDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>consultarDetalleLlamadosDAO</property-name>
+			<value>#{consultarDetalleLlamadosDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>facturacionDAO</property-name>
+			<value>#{facturacionDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>facturacionElectronicaDAO</property-name>
+			<value>#{facturacionElectronicaDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>suscripcionesBolsaDAO</property-name>
+			<value>#{suscripcionesBolsaDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>planDAO</property-name>
+			<value>#{planDAO}</value>
+		</managed-property>		
+	</managed-bean>	
+	
+    <managed-bean>
+		<managed-bean-name>planBAMDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.PlanBAMDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>planBAMDAO</property-name>
+			<value>#{planBAMDAO}</value>
+		</managed-property>
+	</managed-bean>	
+
+        <managed-bean>
+		<managed-bean-name>miTraficoBAMCCDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.delegate.TraficoBamCCDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>planBAMDAO</property-name>
+			<value>#{planBAMDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>traficoBamDAO</property-name>
+			<value>#{traficoBamDAO}</value>
+		</managed-property>
+	</managed-bean>	
+
+
+	<managed-bean>
+		<managed-bean-name>internetMovilDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.delegate.InternetMovilDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>suscripcionesBolsaDAO</property-name>
+			<value>#{suscripcionesBolsaDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>bolsaDAO</property-name>
+			<value>#{bolsaDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>encuestasDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.inteligencianegocio.satisfaccioncliente.delegate.EncuestasPerfiladasDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>encuestasDAO</property-name>
+			<value>#{encuestasDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>administracionServiciosDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.AdministracionServiciosDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>administracionServiciosDAO</property-name>
+			<value>#{administracionServiciosDAO}</value>
+		</managed-property>
+	</managed-bean>			
+	
+	<managed-bean>
+		<managed-bean-name>equipoBAMDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.EquipoBAMDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>equipoDAO</property-name>
+			<value>#{equipoDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>vtasYMktgFidelizacionDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.delegate.VtasYMktgFidelizacionDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>vtasYMktgFidelizacionDAO</property-name>
+			<value>#{vtasYMktgFidelizacionDAO}</value>
+		</managed-property>
+	</managed-bean>		
+	
+	<managed-bean>
+		<managed-bean-name>fullMessengerDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.fullmessenger.delegate.FullMessengerDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>fullMessengerDAO</property-name>
+			<value>#{fullMessengerDAO}</value>
+		</managed-property>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>inscripcionDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.inscripcion.delegate.InscripcionDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>inscripcionDAO</property-name>
+			<value>#{inscripcionDAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>iShopAgendamientoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.agendamiento.delegate.IShopAgendamientoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>iShopAgendamientoDAO</property-name>
+			<value>#{iShopAgendamientoDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>iShopSuscripcionesDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.suscripciones.delegate.IShopSuscripcionesDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>iShopSuscripcionesDAO</property-name>
+			<value>#{iShopSuscripcionesDAO}</value>
+		</managed-property>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>suscripcionCDFDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.suscripcioncdf.delegate.SuscripcionCDFDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>suscripcionCDFDAO</property-name>			
+			<value>#{suscripcionCDFDAO}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>formularioContactoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariocontacto.delegate.FormularioContactoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioContactoDAO</property-name>			
+			<value>#{formularioContactoDAO}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioReclamoDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.formularioreclamo.delegate.FormularioReclamoDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioReclamoDAO</property-name>			
+			<value>#{formularioReclamoDAO}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioSatisfaccionDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariosatisfaccion.delegate.FormularioSatisfaccionDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>formularioSatisfaccionDAO</property-name>			
+			<value>#{formularioSatisfaccionDAO}</value>
+		</managed-property>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>ofertaBlindajeDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.OfertaBlindajeDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>ofertaBlindajeDAO</property-name>			
+			<value>#{ofertaBlindajeDAO}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>historialPPPlusDAO</property-name>
+			<value>#{historialPPPlusDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+  <managed-bean>
+		<managed-bean-name>ofertaVisaDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.delegate.OfertaVisaDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>ofertaVisaDAO</property-name>			
+			<value>#{ofertaVisaDAO}</value>
+		</managed-property>		
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>planesSeguridadBAMDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.delegate.PlanesSeguridadBAMDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>planesSeguridadBAMDAO</property-name>
+			<value>#{planesSeguridadBAMDAO}</value>
+		</managed-property>		
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>bolsasBAMCCPPDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.delegate.BolsasBAMCCPPDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>bolsasBAMCCPPDAO</property-name>			
+			<value>#{bolsasBAMCCPPDAO}</value>
+		</managed-property>										
+	</managed-bean>	
+	
+		<managed-bean>
+		<managed-bean-name>beneficiosDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.delegate.BeneficiosDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>beneficiosDAO</property-name>			
+			<value>#{beneficiosDAO}</value>
+		</managed-property>										
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>tarifaDiariaDelegate</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.delegate.TarifaDiariaDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>tarifaDiariaDAO</property-name>
+			<value>#{tarifaDiariaDAO}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>ejecutivoVIPDelegate</managed-bean-name>
+		<managed-bean-class>com.esa.clientes.perfilesclientes.ejecutivo.delegate.EjecutivoVIPDelegate</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>ejecutivoVIPDAO</property-name>
+			<value>#{ejecutivoVIPDAO}</value>
+		</managed-property>	
+	</managed-bean>
+    
+	<!-- DAO -->
+	
+	<managed-bean>
+		<managed-bean-name>preIngresoOTDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.PreIngresoOTDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>facturacionElectronicaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.prodfactura.dao.FacturacionElectronicaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>consultaSaldoSGODAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.dao.ConsultaSaldoSGODAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>productoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.ProductoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>cuentaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.CuentaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+		
+	<managed-bean>
+		<managed-bean-name>parametrosDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.recursoti.parametros.dao.ParametrosDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>facturacionDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.balance.dao.FacturacionDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>historialDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.historial.bolsas.dao.HistorialDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>traficoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.dao.TraficoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+
+	<managed-bean>
+		<managed-bean-name>traficoBamDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.registrouso.dao.TraficoBamDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+
+
+    <managed-bean>
+		<managed-bean-name>planBAMDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.PlanBAMDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>equipoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.EquipoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+	<managed-bean>
+		<managed-bean-name>planDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.PlanDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>reposicionServicioDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.dao.ReposicionServicioDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>		
+	
+	<managed-bean>
+		<managed-bean-name>recargaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.recarga.dao.RecargaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>seguridadDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.erp.seguridad.dao.SeguridadDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>		
+	
+	<managed-bean>
+		<managed-bean-name>pagoAutomaticoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.billing.pago.dao.PagoAutomaticoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>bolsaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.dao.BolsaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>suscripcionesBolsaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.dao.SuscripcionesBolsaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>encuestasDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.inteligencianegocio.satisfaccioncliente.dao.EncuestasPerfiladasDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+    <managed-bean>
+		<managed-bean-name>administracionServiciosDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.AdministracionServiciosDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+    <managed-bean>
+		<managed-bean-name>consultarDetalleLlamadosDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.dao.ConsultarDetalleLlamadosDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>				
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>vtasYMktgFidelizacionDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.dao.VtasYMktgFidelizacionDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>fullMessengerDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.fullmessenger.dao.FullMessengerDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>inscripcionDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.inscripcion.dao.InscripcionDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+
+    <managed-bean>
+		<managed-bean-name>iShopAgendamientoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.agendamiento.dao.IShopAgendamientoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+	
+    <managed-bean>
+		<managed-bean-name>iShopSuscripcionesDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.suscripciones.dao.IShopSuscripcionesDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>		
+	
+	<managed-bean>
+		<managed-bean-name>suscripcionCDFDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.ishop.suscripcioncdf.dao.SuscripcionCDFDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioContactoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariocontacto.dao.FormularioContactoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioReclamoDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.formularioreclamo.dao.FormularioReclamoDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>formularioSatisfaccionDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.formulariosatisfaccion.dao.FormularioSatisfaccionDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>ofertaBlindajeDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.OfertaBlindajeDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>historialPPPlusDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.HistorialPrepagoPlusDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>ofertaVisaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.OfertaVisaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>beneficiosDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.dao.BeneficiosDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>ejecutivoVIPDAO</managed-bean-name>
+		<managed-bean-class>com.esa.clientes.perfilesclientes.ejecutivo.dao.EjecutivoVIPDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>	
+
+	<!-- Other beans -->
+
+	<managed-bean>
+		<managed-bean-name>traficoEnLineaPPCCBean</managed-bean-name>
+		<managed-bean-class>com.epcs.bean.TraficoEnLineaPPCCBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>planesSeguridadBAMDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.dao.PlanesSeguridadBAMDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>bolsasBAMCCPPDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.administracion.suscripciones.dao.BolsasBAMCCPPDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>pagoWebPayBean</managed-bean-name>
+		<managed-bean-class>com.epcs.bean.PagoWebPayBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>miEntelBean</managed-bean-name>
+		<managed-bean-class>com.epcs.bean.MiEntelBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>tipoPlanBean</managed-bean-name>
+		<managed-bean-class>com.epcs.bean.TipoPlanBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>slotBean</managed-bean-name>
+		<managed-bean-class>com.epcs.bean.SlotBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>profile</managed-bean-name>
+		<managed-bean-class>com.epcs.bean.ProfileWrapperBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<!-- MensajesManager : 
+		 Opera como el patron Observer, siendo esta clase la 'observada' (Observable) y los 
+		 MensajeHandler los 'observadores' (Observers)
+	-->
+	<managed-bean>
+		<managed-bean-name>mensajesManager</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.util.MensajesManager</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<!-- En esta propiedad se registran las clases que manejan 
+		     mensajes de Mensajes para Ti 
+		-->
+		<managed-property>
+			<property-name>handlers</property-name>
+			<property-class>java.util.List</property-class>
+
+			<list-entries>
+				<!-- Los 'handlers' deben implementar esta interfaz -->
+				<value-class>com.epcs.dashboard.mensajes.util.MensajeHandler</value-class>
+				
+				<!-- Handlers -->
+				<!-- La lista de handlers deben ser 'managed-bean' registrados en este mismo xml y 
+					 aca colocar la referencia del tipo #{nombreHandler} 
+				-->
+					 
+				<!-- mensajeId: BVN (Bienvenida Mientel v3) -->
+				<value>#{mensajeBienvenidaHandler}</value>
+				
+				<!-- mensajeId: EC (Estado de Cuenta) -->
+				<value>#{estadoCuentaHandler}</value>
+
+				<!-- mensajeId: FE (Factura Electronica) -->
+				<value>#{facturaElectronicaHandler}</value>
+
+				<!-- mensajeId: BPC (Bolsas Planes Complementario) -->
+				<value>#{bolsasPlanesCompHandler}</value>
+
+				<!-- mensajeId: BRE (Bloqueo Robo Extravio) -->
+				<value>#{bloqueoRoboExtravioHandler}</value>
+
+				<!-- mensajeId: EA (Equipos en Arriendo) -->
+				<value>#{equiposArriendoHandler}</value>
+
+				<!-- mensajeId: DL (Detalle Llamados) -->
+				<value>#{detalleLlamadosHandler}</value>
+
+				<!-- mensajeId: IMI (Internet Movil Ilimitados) -->
+				<value>#{internetMovilIlimHandler}</value>
+
+				<!-- mensajeId: ST (Servicio Tecnico) -->
+				<value>#{servicioTecnicoHandler}</value>
+				
+				<!-- mensajeId: FEMP (Cambios Factura Usuarios Empresas) -->
+				<value>#{facturacionEmpresasHandler}</value>
+				
+				<!-- mensajeId: RWP (Recarga WebPay) -->
+				<value>#{recargaWebPayHandler}</value>
+				
+				<!-- mensajeId: MPP (Migracion Prepago Plan) -->
+				<value>#{migracionPrepagoPlanHandler}</value>
+				
+				<!-- mensajeId: CTD (Tarifa Diaria ) -->
+				<value>#{tarifaDiariaHandler}</value>
+				
+				<!-- mensajeId: PAT (Pago Automatico) -->
+				<value>#{pagoAutomaticoHandler}</value>				
+
+				<!-- mensajeId: TDE (Datos Excedidos) -->
+				<value>#{datosExcedidosHandler}</value>
+				
+				<!-- mensajeId: AVT (PP Alto Valor) -->
+				<value>#{altoValorHandler}</value>
+			</list-entries>
+		</managed-property>
+ 
+	</managed-bean>
+
+	<!-- 
+		 MensajeHandler : 
+		 Clases que implementan MensajeHandler para resolver
+	 	 mensajes de Mensajes para Ti
+	 	 
+	 	 Para nuevos mensajes, registrar los handler al final de esta lista de beans
+	 -->
+
+	<managed-bean>
+		<managed-bean-name>mensajeBienvenidaHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.BienvenidaHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>estadoCuentaHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.EstadoCuentaHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>facturaElectronicaHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.FacturaElectronicaHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>bolsasPlanesCompHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.BolsasPlanesCompHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>bloqueoRoboExtravioHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.BloqueoRoboExtravioHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>equiposArriendoHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.EquiposArriendoHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>detalleLlamadosHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.DetalleLlamadosHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>internetMovilIlimHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.InternetMovilIlimHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>servicioTecnicoHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.ServicioTecnicoHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>facturacionEmpresasHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.FacturacionEmpresasHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>recargaWebPayHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.RecargaWebPayHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>migracionPrepagoPlanHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.MigracionPrepagoPlanHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>tarifaDiariaHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.TarifaDiariaHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>suscripcionesDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pagoAutomaticoHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.PagoAutomaticoHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>pagoAutomaticoDelegate</property-name>
+			<value>#{pagoAutomaticoDelegate}</value>
+		</managed-property>
+	</managed-bean>		
+	
+	<managed-bean>
+		<managed-bean-name>datosExcedidosHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.DatosExcedidosHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+		<managed-property>
+			<property-name>delegate</property-name>
+			<value>#{mensajesParaTiDelegate}</value>
+		</managed-property>		
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>altoValorHandler</managed-bean-name>
+		<managed-bean-class>com.epcs.dashboard.mensajes.handler.AltoValorHandler</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>		
+	</managed-bean>	
+	
+	<managed-bean>
+		<managed-bean-name>bolsaBlindajeDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.perfil.dao.BolsaBlindajeDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>tarifaDiariaDAO</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.orden.dao.TarifaDiariaDAO</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>marcaQualtricsController</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.controller.MarcaQualtricsController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>
+		
+	</managed-bean>
+
+    <managed-bean>
+		<managed-bean-name>smartPixelController</managed-bean-name>
+		<managed-bean-class>com.epcs.vtasymktg.fidelizacion.controller.SmartPixelController</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>suscDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>factElectDelegate</property-name>
+			<value>#{facturacionElectronicaDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>equipoDelegate</property-name>
+			<value>#{equipoDelegate}</value>
+		</managed-property>
+		<managed-property>
+			<property-name>cuentaDelegate</property-name>
+			<value>#{cuentaDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+    <managed-bean>
+    	<managed-bean-name>nbaController</managed-bean-name>
+    	<managed-bean-class>com.epcs.nba.NBAController</managed-bean-class>
+    	<managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+    <managed-bean-name>diferenciacionPPAltoValorController</managed-bean-name>
+    <managed-bean-class>com.epcs.dashboard.diferenciacionPPAltoValor.DiferenciacionPPAltoValorController</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+    	<managed-property>
+			<property-name>planDelegate</property-name>
+			<value>#{planDelegate}</value>
+		</managed-property>
+	   <managed-property>
+			<property-name>suscripcionesDelegate</property-name>
+			<value>#{suscripcionesDelegate}</value>
+		</managed-property>
+    </managed-bean>
+    
+	<managed-bean>
+		<managed-bean-name>historialPPAltoValor</managed-bean-name>
+		<managed-bean-class>com.epcs.cliente.canal.controller.HistorialPPAltoValor</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+		<managed-property>
+			<property-name>ofertaBlindajeDelegate</property-name>
+			<value>#{ofertaBlindajeDelegate}</value>
+		</managed-property>		
+	</managed-bean>
+    
+	<!-- Fin MensajesHandler -->
+
+</faces-config>

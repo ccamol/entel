@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/CLIENTES/Problema/Proxies/ClienteProblemaService?WSDL
+#wsdl=http://esbpre.entel.cl/CLIENTES/Problema/Proxies/ClienteProblemaService?WSDL
+targetnamespace=http://www.epcs.com/cliente/problema
+servicename=ClienteProblemaService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=adminadmin1
+isauth=false

@@ -1,0 +1,79 @@
+/*///////////////////////////////////*/
+/*
+Hoja de estilos Entel fidelizaci�n Fase 1 versi�n 1.0.1
+Desarrollado por Webforms
+
+*/
+/*///////////////////////////////////*/
+
+
+.cuadro-checks {
+    margin: 0 auto 0 auto;
+}
+
+
+.borde-final{
+	height: 20px;
+	font-size: 0px;
+}
+
+
+ /*////////////// Ver t�rminos//////////////////*/
+
+ 
+ .ver-terminos{
+    margin:5px 5px 0 0;
+ }
+ 
+  .ver-terminos a{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 0;
+    cursor: pointer;
+ }
+  
+  .ver-terminos img{
+	vertical-align: bottom;
+ }
+ 
+ 
+ .into{
+ 	margin: 10px 5px 0 0;
+  }
+ 
+ .terminos h1{
+ 	display:block;
+ 	float: left;
+   width: 300px;
+ 	font-family: Arial;
+   font-size: 14px;
+   color: #000000;
+   font-weight:bold;
+   margin:20px 0 0 20px;
+ }
+ 
+.terminos ul {
+    display: block;
+    left: 20px;
+    margin: 0 20px 0 20px;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    width: 600px;
+    vertical-align: bottom;
+}
+ 
+ .terminos li{
+   line-height: 2;
+ 	font-family: Arial;
+   font-size: 11px;
+   color: #000000;
+   margin: 0;
+   list-style-image: url(../../img/migraciones/check-terminos.png);
+   padding: 0 0 0 5px;
+  }
+

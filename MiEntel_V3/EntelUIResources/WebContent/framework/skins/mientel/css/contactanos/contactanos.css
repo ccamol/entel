@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+#centro .contactanosBanner{
+	background:url(../../img/contactanos/bannerContactenos.jpg);
+	width:549px;
+	height:132px;
+	margin-bottom:15px;
+}
+
+#centro .contactanosItem{display:block;margin-top:20px;}
+#centro .contactanosItem .icono{display:block;width:32px;height:32px;float:left;margin-right:18px;}
+#centro .contactanosItem .iconoMail{background:url(../../img/contactanos/icoEmail.gif);}
+#centro .contactanosItem .iconoTwitter{background:url(../../img/contactanos/icoTwitter.gif);}
+#centro .contactanosItem .iconoForo{background:url(../../img/contactanos/icoForo.gif);}
+#centro .contactanosItem .iconoFono{background:url(../../img/contactanos/icoFono.gif);}
+#centro .contactanosItem a{
+	display: block;
+	padding-top: 8px;
+	text-decoration: underline;
+	color: #3a3a3a;
+}
+#centro .contactanosItem a:hover{
+	color:#577DA5;
+}
+#centro .contactanosItem a.twitter{background:url(../../img/icons/ico_enlace_externo.gif) 90px 10px no-repeat;}
+#centro .contactanosItem a.foro{background:url(../../img/icons/ico_enlace_externo.gif) 110px 10px no-repeat;}
+#centro .contactanosItem a.consultaPortabilidad{width: 230px;}
+#centro .contactanosItem a.mail{width: 85px;}
+#centro .contactanosItem a.enlaceTwitter{width: 90px;}
+#centro .contactanosItem a.foroEntel{width: 109px;}
+#centro .contactanosItem a.fonoContacto{width: 242px;}
+
+.textAreaContactenos {	
+	padding:5px;
+	width:243px;
+	height:132px;
+	border:none;
+	resize: none;
+	font-size:1.2em;
+	font-family:Arial, Helvetica, sans-serif;		
+	background-color: transparent;
+    border: 0px solid #000000;
+    overflow:inherit;	
+}
+.campo_background{
+  background:url(../../img/contactanos/textareaContacto.jpg) no-repeat;
+}
+
+.separador {
+	padding-top:20px;
+}

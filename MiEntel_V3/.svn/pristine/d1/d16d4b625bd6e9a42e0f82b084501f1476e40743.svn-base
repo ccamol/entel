@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/cliente/contacto" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/cliente/contacto" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/cliente/contacto" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/cliente/contacto" xmlns:types="http://www.epcs.com/cliente/contacto/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/cliente/contacto/types" schemaLocation="http://10.10.20.81:7001/CLIENTES/Contacto/Proxies/ClienteContactoService?SCHEMA%2FCLIENTES%2FContacto%2FServicios%2FClienteContactoServiceXSD"/>
+      <!-- INGRESAR DESBLOQUEO -->
+      <xsd:element name="IngresarDesbloqueoDocument" type="types:IngresarDesbloqueoType"/>
+      <xsd:element name="ResultadoIngresarDesbloqueoDocument" type="types:ResultadoIngresarDesbloqueoType"/>
+      <!-- FIN INGRESAR DESBLOQUEO -->
+      <!-- INGRESAR BLOQUEO -->
+      <xsd:element name="IngresarBloqueoDocument" type="types:IngresarBloqueoType"/>
+      <xsd:element name="ResultadoIngresarBloqueoDocument" type="types:ResultadoIngresarBloqueoType"/>
+      <!-- FIN INGRESAR BLOQUEO -->
+      <!-- CONSULTAR BLOQUEO DESBLOQUEO -->
+      <xsd:element name="ConsultarBloqueoDesbloqueoDocument" type="types:ConsultarBloqueoDesbloqueoType"/>
+      <xsd:element name="ResultadoConsultarBloqueoDesbloqueoDocument" type="types:ResultadoConsultarBloqueoDesbloqueoType"/>
+      <!-- FIN CONSULTAR BLOQUEO DESBLOQUEO -->
+      <!-- CONSULTAR PIN PUK -->
+      <xsd:element name="ConsultarPinPukDocument" type="types:ConsultarPinPukType"/>
+      <xsd:element name="ResultadoConsultarPinPukDocument" type="types:ResultadoConsultarPinPukType"/>
+      <!-- FIN CONSULTAR PIN PUK -->
+      <!-- CONSULTAR VALIDAR BLOQUEO -->
+      <xsd:element name="ValidarBloqueoDocument" type="types:ValidarBloqueoType"/>
+      <xsd:element name="ResultadoValidarBloqueoDocument" type="types:ResultadoValidarBloqueoType"/>
+      <!-- FIN CONSULTAR VALIDAR BLOQUEO -->
+      <!-- CONSULTAR EQUIPOS EN ARRIENDO -->
+      <xsd:element name="ConsultarEquiposContratadosYArriendoMPTDocument" type="types:ConsultarEquiposContratadosYArriendoMPTType"/>
+      <xsd:element name="ResultadoConsultarEquiposContratadosYArriendoMPTDocument" type="types:ResultadoConsultarEquiposContratadosYArriendoMPTType"/>
+      <!-- FIN CONSULTAR EQUIPOS EN ARRIENDO -->
+      <!-- ESTA EN GRUPO HABIL -->
+      <xsd:element name="EstaEnGrupoHabilDocument" type="types:EstaEnGrupoHabilType"/>
+      <xsd:element name="ResultadoEstaEnGrupoHabilDocument" type="types:ResultadoEstaEnGrupoHabilType"/>
+      <!-- FIN ESTA EN GRUPO HABIL -->
+      <!-- BLOQUEO POR ROBO -->
+      <xsd:element name="BloqueoPorRoboDocument" type="types:BloqueoPorRoboType"/>
+      <xsd:element name="ResultadoBloqueoPorRoboDocument" type="types:ResultadoBloqueoPorRoboType"/>
+      <!-- FIN BLOQUEO POR ROBO -->
+      <!-- BLOQUEO POR EXTRAVIO -->
+      <xsd:element name="BloqueoPorExtravioDocument" type="types:BloqueoPorExtravioType"/>
+      <xsd:element name="ResultadoBloqueoPorExtravioDocument" type="types:ResultadoBloqueoPorExtravioType"/>
+      <!-- FIN BLOQUEO POR EXTRAVIO -->
+      <!-- BLOQUEAR EQUIPO (ORQUESTACION) -->
+      <xsd:element name="BloquearEquipoDocument" type="types:BloquearEquipoType"/>
+      <xsd:element name="ResultadoBloquearEquipoDocument" type="types:ResultadoBloquearEquipoType"/>
+      <!-- FIN BLOQUEAR EQUIPO (ORQUESTACION) -->
+      <!-- VALIDAR IMEI -->
+      <xsd:element name="ValidarImeiDocument" type="types:ValidarImeiType"/>
+      <xsd:element name="ResultadoValidarImeiDocument" type="types:ResultadoValidarImeiType"/>
+      <!-- FIN VALIDAR IMEI -->
+      <!-- OBTENER DATOS USUARIO BLOQUEO -->
+      <xsd:element name="ObtenerDatosUsuarioBloqueoDocument" type="types:ObtenerDatosUsuarioBloqueoType"/>
+      <xsd:element name="ResultadoObtenerDatosUsuarioBloqueoDocument" type="types:ResultadoObtenerDatosUsuarioBloqueoType"/>
+      <!-- FIN OBTENER DATOS USUARIO BLOQUEO -->
+      <!-- ACTUALIZAR DATOS BUIC -->
+      <xsd:element name="ActualizarDatosBuicDocument" type="types:ActualizarDatosBuicType"/>
+      <xsd:element name="ResultadoActualizarDatosBuicDocument" type="types:ResultadoActualizarDatosBuicType"/>
+      <!-- FIN ACTUALIZAR DATOS BUIC -->
+      <!-- OBTENER CUENTAS CLIENTE -->
+      <xsd:element name="ObtenerCuentasClienteDocument" type="types:ObtenerCuentasClienteType"/>
+      <xsd:element name="ResultadoObtenerCuentasClienteDocument" type="types:ResultadoObtenerCuentasClienteType"/>
+      <!-- FIN OBTENER CUENTAS CLIENTE -->
+      <!-- OBTENER ESTADO RENOVACION EQUIPO -->
+      <xsd:element name="ObtenerEstadoRenovacionEquipoDocument" type="types:ObtenerEstadoRenovacionEquipoType"/>
+      <xsd:element name="ResultadoObtenerEstadoRenovacionEquipoDocument" type="types:ResultadoObtenerEstadoRenovacionEquipoType"/>
+      <!-- FIN OBTENER ESTADO RENOVACION EQUIPO -->
+      <!-- SOLICITUD RENOVACION DE CONTACTO -->
+      <xsd:element name="SolicitaIphoneDocument" type="types:SolicitaIphoneType"/>
+      <xsd:element name="ResultadoSolicitaIphoneDocument" type="types:ResultadoSolicitaIphoneType"/>
+      <!-- FIN SOLICITUD RENOVACION DE CONTACTO -->
+      <!-- SOLICITA IPHONE -->
+      <xsd:element name="SolicitudRenovacionContactoDocument" type="types:SolicitudRenovacionContactoType"/>
+      <xsd:element name="ResultadoSolicitudRenovacionContactoDocument" type="types:ResultadoSolicitudRenovacionContactoType"/>
+      <!-- FIN SOLICITA IPHONE -->
+      <!-- OBTENER SITUACION ACTUAL -->
+      <xsd:element name="ObtenerSituacionActualDocument" type="types:ObtenerSituacionActualType"/>
+      <xsd:element name="ResultadoObtenerSituacionActualDocument" type="types:ResultadoObtenerSituacionActualType"/>
+      <!-- FIN OBTENER SITUACION ACTUAL -->
+      <!-- CONSULTAR IMEI -->
+      <xsd:element name="ConsultarImeiDocument" type="types:ConsultarImeiType"/>
+      <xsd:element name="ResultadoConsultarImeiDocument" type="types:ResultadoConsultarImeiType"/>
+      <!-- FIN CONSULTAR IMEI -->
+      <!-- SOLICITA LINEA ADICIONAL -->
+      <xsd:element name="SolicitaLineaAdicionalDocument" type="types:SolicitaLineaAdicionalType"/>
+      <xsd:element name="ResultadoSolicitaLineaAdicionalDocument" type="types:ResultadoSolicitaLineaAdicionalType"/>
+      <!-- FIN SOLICITA LINEA ADICIONAL -->
+      <!-- DOCUMENT AUTH HEADER -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="IngresarDesbloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:IngresarDesbloqueoDocument" name="IngresarDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoIngresarDesbloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoIngresarDesbloqueoDocument" name="ResultadoIngresarDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="IngresarBloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:IngresarBloqueoDocument" name="IngresarBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoIngresarBloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoIngresarBloqueoDocument" name="ResultadoIngresarBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarBloqueoDesbloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarBloqueoDesbloqueoDocument" name="ConsultarBloqueoDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarBloqueoDesbloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarBloqueoDesbloqueoDocument" name="ResultadoConsultarBloqueoDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPinPukMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPinPukDocument" name="ConsultarPinPuk"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPinPukMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPinPukDocument" name="ResultadoConsultarPinPuk"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarBloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarBloqueoDocument" name="ValidarBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarBloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarBloqueoDocument" name="ResultadoValidarBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarEquiposContratadosYArriendoMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEquiposContratadosYArriendoMPTDocument" name="ConsultarEquiposContratadosYArriendoMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarEquiposContratadosYArriendoMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEquiposContratadosYArriendoMPTDocument" name="ResultadoConsultarEquiposContratadosYArriendoMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EstaEnGrupoHabilMessage">
+    <WL5G3N0:part element="WL5G3N1:EstaEnGrupoHabilDocument" name="EstaEnGrupoHabil"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoEstaEnGrupoHabilMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoEstaEnGrupoHabilDocument" name="ResultadoEstaEnGrupoHabil"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="BloqueoPorRoboMessage">
+    <WL5G3N0:part element="WL5G3N1:BloqueoPorRoboDocument" name="BloqueoPorRobo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoBloqueoPorRoboMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoBloqueoPorRoboDocument" name="ResultadoBloqueoPorRobo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="BloqueoPorExtravioMessage">
+    <WL5G3N0:part element="WL5G3N1:BloqueoPorExtravioDocument" name="BloqueoPorExtravio"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoBloqueoPorExtravioMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoBloqueoPorExtravioDocument" name="ResultadoBloqueoPorExtravio"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="BloquearEquipoMessage">
+    <WL5G3N0:part element="WL5G3N1:BloquearEquipoDocument" name="BloquearEquipo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoBloquearEquipoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoBloquearEquipoDocument" name="BloquearEquipo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarImeiMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarImeiDocument" name="ValidarImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarImeiMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarImeiDocument" name="ValidarImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerDatosUsuarioBloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerDatosUsuarioBloqueoDocument" name="ObtenerDatosUsuarioBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerDatosUsuarioBloqueoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerDatosUsuarioBloqueoDocument" name="ObtenerDatosUsuarioBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarDatosBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarDatosBuicDocument" name="ActualizarDatosBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoActualizarDatosBuicMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoActualizarDatosBuicDocument" name="ActualizarDatosBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerCuentasClienteMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerCuentasClienteDocument" name="ObtenerCuentasCliente"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerCuentasClienteMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerCuentasClienteDocument" name="ObtenerCuentasCliente"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerEstadoRenovacionEquipoMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerEstadoRenovacionEquipoDocument" name="ObtenerEstadoRenovacionEquipo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerEstadoRenovacionEquipoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerEstadoRenovacionEquipoDocument" name="ObtenerEstadoRenovacionEquipo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="SolicitudRenovacionContactoMessage">
+    <WL5G3N0:part element="WL5G3N1:SolicitudRenovacionContactoDocument" name="SolicitudRenovacionContacto"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoSolicitudRenovacionContactoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoSolicitudRenovacionContactoDocument" name="SolicitudRenovacionContacto"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="SolicitaIphoneMessage">
+    <WL5G3N0:part element="WL5G3N1:SolicitaIphoneDocument" name="SolicitaIphone"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoSolicitaIphoneMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoSolicitaIphoneDocument" name="ResultadoSolicitaIphone"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerSituacionActualMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerSituacionActualDocument" name="ObtenerSituacionActual"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerSituacionActualMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerSituacionActualDocument" name="ResultadoObtenerOrdenesDeTrabajo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarImeiMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarImeiDocument" name="ConsultarImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarImeiMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarImeiDocument" name="ResultadoConsultarImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="SolicitaLineaAdicionalMessage">
+    <WL5G3N0:part element="WL5G3N1:SolicitaLineaAdicionalDocument" name="SolicitaLineaAdicional"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoSolicitaLineaAdicionalMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoSolicitaLineaAdicionalDocument" name="ResultadoSolicitaLineaAdicionalApertura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ClienteContactoServicePortType">
+    <WL5G3N0:operation name="IngresarDesbloqueo">
+      <WL5G3N0:input message="WL5G3N1:IngresarDesbloqueoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoIngresarDesbloqueoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="IngresarBloqueo">
+      <WL5G3N0:input message="WL5G3N1:IngresarBloqueoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoIngresarBloqueoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBloqueoDesbloqueo">
+      <WL5G3N0:input message="WL5G3N1:ConsultarBloqueoDesbloqueoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarBloqueoDesbloqueoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPinPuk">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPinPukMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPinPukMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarBloqueo">
+      <WL5G3N0:input message="WL5G3N1:ValidarBloqueoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarBloqueoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EstaEnGrupoHabil">
+      <WL5G3N0:input message="WL5G3N1:EstaEnGrupoHabilMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoEstaEnGrupoHabilMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="BloqueoPorRobo">
+      <WL5G3N0:input message="WL5G3N1:BloqueoPorRoboMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoBloqueoPorRoboMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="BloqueoPorExtravio">
+      <WL5G3N0:input message="WL5G3N1:BloqueoPorExtravioMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoBloqueoPorExtravioMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="BloquearEquipo">
+      <WL5G3N0:input message="WL5G3N1:BloquearEquipoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoBloquearEquipoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarImei">
+      <WL5G3N0:input message="WL5G3N1:ValidarImeiMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarImeiMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerDatosUsuarioBloqueo">
+      <WL5G3N0:input message="WL5G3N1:ObtenerDatosUsuarioBloqueoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerDatosUsuarioBloqueoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDatosBuic">
+      <WL5G3N0:input message="WL5G3N1:ActualizarDatosBuicMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoActualizarDatosBuicMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerCuentasCliente">
+      <WL5G3N0:input message="WL5G3N1:ObtenerCuentasClienteMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerCuentasClienteMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerEstadoRenovacionEquipo">
+      <WL5G3N0:input message="WL5G3N1:ObtenerEstadoRenovacionEquipoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerEstadoRenovacionEquipoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="SolicitudRenovacionContacto">
+      <WL5G3N0:input message="WL5G3N1:SolicitudRenovacionContactoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoSolicitudRenovacionContactoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="SolicitaIphone">
+      <WL5G3N0:input message="WL5G3N1:SolicitaIphoneMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoSolicitaIphoneMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerSituacionActual">
+      <WL5G3N0:input message="WL5G3N1:ObtenerSituacionActualMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerSituacionActualMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarImei">
+      <WL5G3N0:input message="WL5G3N1:ConsultarImeiMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarImeiMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEquiposContratadosYArriendoMPT">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEquiposContratadosYArriendoMPTMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEquiposContratadosYArriendoMPTMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="SolicitaLineaAdicional">
+      <WL5G3N0:input message="WL5G3N1:SolicitaLineaAdicionalMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoSolicitaLineaAdicionalMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ClienteContactoServiceBinding" type="WL5G3N1:ClienteContactoServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="IngresarDesbloqueo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/IngresarDesbloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="IngresarBloqueo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/IngresarBloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBloqueoDesbloqueo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarBloqueoDesbloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPinPuk">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarPinPuk"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarBloqueo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ValidarBloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EstaEnGrupoHabil">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/EstaEnGrupoHabil"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="BloqueoPorRobo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/BloqueoPorRobo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="BloqueoPorExtravio">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/BloqueoPorExtravio"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="BloquearEquipo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/BloquearEquipo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarImei">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ValidarImei"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerDatosUsuarioBloqueo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ObtenerDatosUsuarioBloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDatosBuic">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ActualizarDatosBuic"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerCuentasCliente">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ObtenerCuentasCliente"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerEstadoRenovacionEquipo">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ObtenerEstadoRenovacionEquipo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="SolicitudRenovacionContacto">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/SolicitudRenovacionContacto"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="SolicitaIphone">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/SolicitaIphone"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerSituacionActual">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ObtenerSituacionActual"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarImei">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarImei"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEquiposContratadosYArriendoMPT">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarEquiposContratadosYArriendoMPT"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="SolicitaLineaAdicional">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/SolicitaLineaAdicional"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ClienteContactoService">
+    <WL5G3N0:port binding="WL5G3N1:ClienteContactoServiceBinding" name="ClienteContactoServicePort">
+      <WL5G3N2:address location="http://OSB3:7001/CLIENTES/Contacto/Proxies/ClienteContactoService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

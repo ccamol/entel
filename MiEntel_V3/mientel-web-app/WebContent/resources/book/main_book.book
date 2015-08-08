@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portal:root xmlns:html="http://www.w3.org/1999/xhtml-netuix-modified/1.0.0"
+    xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+    xmlns:portal="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0 portal-support-1_0_0.xsd">
+    <netuix:book backingFile="com.epcs.recursoti.configuracion.backingFile.TitleBacking"
+        defaultPage="" definitionLabel="miEntel_main_book" markupName="book" markupType="Book" title="Book Principal">
+        <netuix:singleLevelMenu
+            description="This menu provides a single level of tabs used to navigate across pages."
+            markupName="singleLevelMenu" markupType="Menu" title="Single Level Menu"/>
+        <netuix:content>
+            <netuix:book defaultPage="" definitionLabel="miEntel_login_book" markupName="book"
+                markupType="Book" title="Login">
+                <netuix:singleLevelMenu
+                    description="This menu provides a single level of tabs used to navigate across pages."
+                    markupName="singleLevelMenu" markupType="Menu" title="Single Level Menu"/>
+                <netuix:content>
+                    <netuix:page definitionLabel="miEntel_login_page" markupName="page"
+                        markupType="Page" title="Login">
+                        <netuix:content>
+                            <netuix:layout description=""
+                                htmlLayoutUri="/framework/markup/layout/3col.html.txt" iconUri=""
+                                markupName="3col_layout" markupType="Layout"
+                                skeletonUri="/framework/customSkeletons/3col.jsp" title="3col">
+                                <netuix:placeholder markupName="3col_layout_left"
+                                    markupType="Placeholder" title="Placeholder izquierdo"
+                                    usingFlow="false" width="20%"/>
+                                <netuix:placeholder markupName="3col_layout_center"
+                                    markupType="Placeholder" title="Placeholder Central"
+                                    usingFlow="false" width="60%">
+                                    <netuix:portletInstance
+                                        contentUri="/portlet/seguridad/formLogin.portlet"
+                                        instanceLabel="portletInstance_37" markupType="Portlet" title="Seguridad - Form Login"/>
+                                </netuix:placeholder>
+                                <netuix:placeholder markupName="3col_layout_right"
+                                    markupType="Placeholder" title="Placeholder Derecho"
+                                    usingFlow="false" width="20%"/>
+                            </netuix:layout>
+                        </netuix:content>
+                    </netuix:page>
+                </netuix:content>
+            </netuix:book>
+        </netuix:content>
+    </netuix:book>
+</portal:root>

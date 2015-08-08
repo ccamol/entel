@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/clientes/gestionproblemas/ingresoimpugnacionps?wsdl
+targetnamespace=http://www.esa.com/Clientes/Problemas/impugnacion/
+servicename=ImpugnacionService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

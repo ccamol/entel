@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/GESTIONDERECURSOS/Fallas/Proxies/RecursosITFallasService?WSDL
+targetnamespace=http://www.epcs.com/recursosit/fallas
+servicename=RecursosITFallasService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

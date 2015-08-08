@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/Provision/Suscripcion" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/Provision/Suscripcion" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.epcs.com/Provision/Suscripcion" xmlns:ces="http://www.epcs.com/Provision/Suscripcion" xmlns:csns="http://www.epcs.com/Provision/Suscripcion/types" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.epcs.com/Provision/Suscripcion" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/Provision/Suscripcion/types" schemaLocation="http://esbdesa.entel.cl:80/provisionyentrega/administracionsuscripcion/bolsasppps?SCHEMA%2FPROVISIONYENTREGA%2FAdministracionSuscripcion%2FBolsasPP%2Fwsdl%2FxsdSCOB"/>
+      <xsd:element name="listarBolsasActivasBAMRequestDocument" type="csns:listarBolsasActivasBAMRequestType"/>
+      <xsd:element name="listarBolsasActivasBAMResponseDocument" type="csns:listarBolsasActivasBAMResponseType"/>
+      <xsd:element name="listarBolsasActivasBAMServiceFaultDocument" type="csns:listarBolsasActivasBAMServiceFaultType"/>
+      <xsd:element name="listarBolsasDisponiblesBAMRequestDocument" type="csns:listarBolsasDisponiblesBAMRequestType"/>
+      <xsd:element name="listarBolsasDisponiblesBAMResponseDocument" type="csns:listarBolsasDisponiblesBAMResponseType"/>
+      <xsd:element name="listarBolsasDisponiblesBAMServiceFaultDocument" type="csns:listarBolsasDisponiblesBAMServiceFaultType"/>
+      <xsd:element name="listarBolsasRequestDocument" type="csns:listarBolsasRequestType"/>
+      <xsd:element name="listarBolsasResponseDocument" type="csns:listarBolsasResponseType"/>
+      <xsd:element name="listarBolsasServiceFaultDocument" type="csns:listarBolsasServiceFaultType"/>
+      <xsd:element name="validacionCompraRequestDocument" type="csns:validacionCompraRequestType"/>
+      <xsd:element name="validacionCompraResponseDocument" type="csns:validacionCompraResponseType"/>
+      <xsd:element name="validacionCompraServiceFaultDocument" type="csns:validacionCompraServiceFaultType"/>
+      <xsd:element name="validacionRegaloRequestDocument" type="csns:validacionRegaloRequestType"/>
+      <xsd:element name="validacionRegaloResponseDocument" type="csns:validacionRegaloResponseType"/>
+      <xsd:element name="validacionRegaloServiceFaultDocument" type="csns:validacionRegaloServiceFaultType"/>
+      <xsd:element name="comprarRequestDocument" type="csns:comprarRequestType"/>
+      <xsd:element name="comprarResponseDocument" type="csns:comprarResponseType"/>
+      <xsd:element name="comprarServiceFaultDocument" type="csns:comprarServiceFaultType"/>
+      <xsd:element name="regalarRequestDocument" type="csns:regalarRequestType"/>
+      <xsd:element name="regalarResponseDocument" type="csns:regalarResponseType"/>
+      <xsd:element name="regalarServiceFaultDocument" type="csns:regalarServiceFaultType"/>
+      <xsd:element name="listarBolsasActivasRequestDocument" type="csns:listarBolsasActivasRequestType"/>
+      <xsd:element name="listarBolsasActivasResponseDocument" type="csns:listarBolsasActivasResponseType"/>
+      <xsd:element name="listarBolsasActivasServiceFaultDocument" type="csns:listarBolsasActivasServiceFaultType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="listarBolsasActivasBAMRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasActivasBAMRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasActivasBAMResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasActivasBAMResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasActivasBAMServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasActivasBAMServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasDisponiblesBAMRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasDisponiblesBAMRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasDisponiblesBAMResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasDisponiblesBAMResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasDisponiblesBAMServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasDisponiblesBAMServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validacionCompraRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:validacionCompraRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validacionCompraResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:validacionCompraResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validacionCompraServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:validacionCompraServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validacionRegaloRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:validacionRegaloRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validacionRegaloResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:validacionRegaloResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validacionRegaloServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:validacionRegaloServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="comprarRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:comprarRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="comprarResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:comprarResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="comprarServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:comprarServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="regalarRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:regalarRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="regalarResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:regalarResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="regalarServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:regalarServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasActivasRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasActivasRequestDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasActivasResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasActivasResponseDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarBolsasActivasServiceFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:listarBolsasActivasServiceFaultDocument" name="part"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="SCOBPortType">
+    <WL5G3N0:operation name="listarBolsasActivasBAMRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:listarBolsasActivasBAMRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:listarBolsasActivasBAMResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:listarBolsasActivasBAMServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarBolsasDisponiblesBAMRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:listarBolsasDisponiblesBAMRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:listarBolsasDisponiblesBAMResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:listarBolsasDisponiblesBAMServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarBolsasRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:listarBolsasRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:listarBolsasResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:listarBolsasServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validacionCompraRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:validacionCompraRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:validacionCompraResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:validacionCompraServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validacionRegaloRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:validacionRegaloRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:validacionRegaloResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:validacionRegaloServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="comprarRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:comprarRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:comprarResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:comprarServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="regalarRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:regalarRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:regalarResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:regalarServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarBolsasActivasRequestDocument">
+      <WL5G3N0:input message="WL5G3N1:listarBolsasActivasRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:listarBolsasActivasResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:listarBolsasActivasServiceFaultMessage" name="fault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="SCOBPortTypeSOAPBinding" type="WL5G3N1:SCOBPortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="listarBolsasActivasBAMRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/listarBolsasActivasBAMRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarBolsasDisponiblesBAMRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/listarBolsasDisponiblesBAMRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarBolsasRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/listarBolsasRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validacionCompraRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/validacionCompraRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validacionRegaloRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/validacionRegaloRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="comprarRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/comprarRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="regalarRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/regalarRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarBolsasActivasRequestDocument">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/Provision/Suscripcion/listarBolsasActivasRequestDocument" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="part" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N2:fault name="fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="SCOBPortTypeSOAPBindingQSService">
+    <WL5G3N0:port binding="WL5G3N1:SCOBPortTypeSOAPBinding" name="SCOBPortTypeSOAPBindingQSPort">
+      <WL5G3N2:address location="http://esbdesa.entel.cl/provisionyentrega/administracionsuscripcion/bolsasppps"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

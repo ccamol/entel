@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-window-1_0_0.xsd">
+	<render-dependencies>
+		<html>
+			<scripts>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						if ($("#caja_ejecutivo_vip").length) {
+			    			$("#caja_ejecutivo_vip").delay(2000).fadeIn();
+		    			}
+					});
+				</script>
+			</scripts>
+			<styles>
+				<style type='text/css'>
+					div#caja_ejecutivo_vip {
+						display: none;
+					}
+					
+					div#info_ejecutivo {
+						text-align: justify;
+					}
+					
+					div#datos_ejecutivo {
+						padding: 5px 0;
+					}
+					
+					div#datos_ejecutivo b {
+						font-size: 13px;
+					}
+					
+					.cajalinks .cabecera_ejecutivo_azul {
+						background: url('/personas/framework/skins/mientel/img/bgHeaderAzulEjecutivo.gif') no-repeat;
+					}
+				</style>
+			</styles>
+		</html>
+	</render-dependencies>
+</window>

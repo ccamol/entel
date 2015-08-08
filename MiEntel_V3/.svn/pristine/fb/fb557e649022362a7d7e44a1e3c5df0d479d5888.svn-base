@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13016736087340" configfile="/mientel-web-app/WebContent/WEB-INF/faces-navigation.xml">
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/cierreRecargaWebpay" x="122" y="6610" id="pf130454516418821" referenceLink="//@navigationRule.10/@fromViewId|" outlinks="pf13077429050783" inlinks="pf13077429050784" path="/portlet/recarga/recargaWebpay.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf13077423374060" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf13077423374061 pf13077429050785 pf13077429050786 pf13077429050787 pf13077429050788 pf13077429050789 pf130774290507810 pf130774290507811 pf130774290507812 pf130774290507813" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/errores/access-denied" id="pf13077423374062" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf13077423374061" path="/portlet/errores/access-denied.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/errores/error" id="pf130774290507814" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13077429050785" path="/portlet/errores/error.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/errores/error0005" id="pf130774290507815" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf13077429050786" path="/portlet/errores/error0005.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/cuenta/formMisDatos" id="pf130774290507816" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf130774290507817" inlinks="pf13077429050787 pf130774290507817" path="/portlet/cuenta/formMisDatos.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/cuenta/tablaMisUsuarios" id="pf130774290507818" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf13077429050788" path="/portlet/cuenta/tablaMisUsuarios.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/seguridad/formCambioClave" id="pf130774290507819" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf130774290507820" inlinks="pf130774290507820" path="/portlet/seguridad/formCambioClave.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/facturacion/reposicionServicioResultado" id="pf130774290507821" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" inlinks="pf13077429050789" path="/portlet/facturacion/reposicionServicioResultado.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/facturacion/facturacionElectronica" id="pf130774290507822" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" outlinks="pf130774290507823" inlinks="pf130774290507823" path="/portlet/facturacion/facturacionElectronica.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/recarga*" id="pf130774290507824" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf130774290507825 pf130774290507826 pf130774290507827 pf130774290507828 pf130774290507829 pf130774290507830 pf130774290507831 pf130774290507832" path="/portlet/recarga/recarga*"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/recargaEntelticket" id="pf130774290507833" referenceLink="//@navigationRule.9/@navigationCase.0/@toViewId|" inlinks="pf130774290507825 pf130774290507832 pf130774290507834" path="/portlet/recarga/recargaEntelticket.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/recargaMultitienda" id="pf130774290507835" referenceLink="//@navigationRule.8/@navigationCase.4/@toViewId|" inlinks="pf130774290507826 pf130774290507829" path="/portlet/recarga/recargaMultitienda.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/recargaTarjetaCredito" id="pf130774290507836" referenceLink="//@navigationRule.8/@navigationCase.2/@toViewId|" inlinks="pf130774290507827" path="/portlet/recarga/recargaTarjetaCredito.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/confirmarRecargaMultitienda" id="pf130774290507837" referenceLink="//@navigationRule.8/@navigationCase.3/@toViewId|" inlinks="pf130774290507828" path="/portlet/recarga/confirmarRecargaMultitienda.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/confirmarRecargaTarjetaCredito" id="pf130774290507838" referenceLink="//@navigationRule.8/@navigationCase.5/@toViewId|" inlinks="pf130774290507830" path="/portlet/recarga/confirmarRecargaTarjetaCredito.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/confirmarRecargaEntelTicket" id="pf130774290507839" referenceLink="//@navigationRule.8/@navigationCase.6/@toViewId|" inlinks="pf130774290507831" path="/portlet/recarga/confirmarRecargaEntelTicket.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/confirmarRecarga*" id="pf130774290507840" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf130774290507834 pf13077429050784 pf130774290507841 pf130774290507842" path="/portlet/recarga/confirmarRecarga*"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/finalizarRecargaEntelTicket" id="pf130774290507843" referenceLink="//@navigationRule.9/@navigationCase.2/@toViewId|" inlinks="pf130774290507841" path="/portlet/recarga/finalizarRecargaEntelTicket.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/finalizarRecargaMultitienda" id="pf130774290507844" referenceLink="//@navigationRule.9/@navigationCase.3/@toViewId|" inlinks="pf130774290507842" path="/portlet/recarga/finalizarRecargaMultitienda.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/recarga/finalizarRecargaTarjetaCredito" id="pf130774290507845" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" inlinks="pf13077429050783" path="/portlet/recarga/finalizarRecargaTarjetaCredito.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/pago/resultadoInscribirPAT" id="pf130774290507846" referenceLink="//@navigationRule.11/@navigationCase.0/@toViewId|" inlinks="pf130774290507810" path="/portlet/pago/resultadoInscribirPAT.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/pago/pagoAutomaticoForm" id="pf130774290507847" referenceLink="//@navigationRule.11/@navigationCase.1/@toViewId|" inlinks="pf130774290507811" path="/portlet/pago/pagoAutomaticoForm.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/pago/patConfirmar" id="pf130774290507848" referenceLink="//@navigationRule.11/@navigationCase.2/@toViewId|" inlinks="pf130774290507812" path="/portlet/pago/patConfirmar.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="portlet/pago/pagoAutomatico" id="pf130774290509449" referenceLink="//@navigationRule.11/@navigationCase.3/@toViewId|" inlinks="pf130774290507813" path="/portlet/pago/pagoAutomatico.jsp"/>
+  <links id="pf13077423374061" target="pf13077423374062" source="pf13077423374060" outcome="aaa-security-access-denied"/>
+  <links id="pf13077429050785" target="pf130774290507814" source="pf13077423374060" outcome="error"/>
+  <links id="pf13077429050786" target="pf130774290507815" source="pf13077423374060" outcome="error0005"/>
+  <links id="pf13077429050787" target="pf130774290507816" source="pf13077423374060" outcome="informacion_usuario"/>
+  <links id="pf13077429050788" target="pf130774290507818" source="pf13077423374060" outcome="mis_usuarios"/>
+  <links id="pf130774290507817" target="pf130774290507816" source="pf130774290507816" outcome="success"/>
+  <links id="pf130774290507820" target="pf130774290507819" source="pf130774290507819" outcome="success"/>
+  <links id="pf13077429050789" target="pf130774290507821" source="pf13077423374060" outcome="result"/>
+  <links id="pf130774290507823" target="pf130774290507822" source="pf130774290507822" outcome="success"/>
+  <links id="pf130774290507825" target="pf130774290507833" source="pf130774290507824" outcome="entelticket"/>
+  <links id="pf130774290507826" target="pf130774290507835" source="pf130774290507824" outcome="multitienda"/>
+  <links id="pf130774290507827" target="pf130774290507836" source="pf130774290507824" outcome="tarjetacredito"/>
+  <links id="pf130774290507828" target="pf130774290507837" source="pf130774290507824" outcome="confirmar" fromaction="#{recargaController.solicitarRecargaMultitienda}"/>
+  <links id="pf130774290507829" target="pf130774290507835" source="pf130774290507824" outcome="error" fromaction="#{recargaController.solicitarRecargaMultitienda}"/>
+  <links id="pf130774290507830" target="pf130774290507838" source="pf130774290507824" outcome="confirmar" fromaction="#{recargaController.solicitarRecargaTarjetaCredito}"/>
+  <links id="pf130774290507831" target="pf130774290507839" source="pf130774290507824" outcome="confirmar" fromaction="#{recargaController.solicitarRecargaEntelTicket}"/>
+  <links id="pf130774290507832" target="pf130774290507833" source="pf130774290507824" outcome="error" fromaction="#{recargaController.solicitarRecargaEntelTicket}"/>
+  <links id="pf130774290507834" target="pf130774290507833" source="pf130774290507840" outcome="cancelar"/>
+  <links id="pf13077429050784" target="pf130454516418821" source="pf130774290507840" outcome="recargaWebpay" fromaction="#{recargaController.confirmarRecargaTarjetaCredito}"/>
+  <links id="pf130774290507841" target="pf130774290507843" source="pf130774290507840" outcome="success" fromaction="#{recargaController.confirmarRecargaEntelTicket}"/>
+  <links id="pf130774290507842" target="pf130774290507844" source="pf130774290507840" outcome="success" fromaction="#{recargaController.confirmarRecargaMultitienda}"/>
+  <links id="pf13077429050783" target="pf130774290507845" source="pf130454516418821" outcome="success" fromaction="#{cierreRecargaWebpayController.finalizarRecargaTarjetaCredito}"/>
+  <links id="pf130774290507810" target="pf130774290507846" source="pf13077423374060" outcome="resultadoinscribirpat"/>
+  <links id="pf130774290507811" target="pf130774290507847" source="pf13077423374060" outcome="formulariopat"/>
+  <links id="pf130774290507812" target="pf130774290507848" source="pf13077423374060" outcome="patconfirmar"/>
+  <links id="pf130774290507813" target="pf130774290509449" source="pf13077423374060" outcome="patcancelar"/>
+</pageflow:Pageflow>

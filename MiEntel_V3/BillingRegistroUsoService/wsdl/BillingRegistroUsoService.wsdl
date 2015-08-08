@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/billing/registrouso" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/billing/registrouso" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/billing/registrouso" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/billing/registrouso" xmlns:types="http://www.epcs.com/billing/registrouso/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/billing/registrouso/types" schemaLocation="http://10.10.20.83:7001/BILLING/GestionDeRegistrosDeUso/Proxies/BillingRegistroUsoService?SCHEMA%2FBILLING%2FGestionDeRegistrosDeUso%2FServicios%2FBillingRegistroUsoXSD"/>
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+      <!-- INICIO ConsultarTraficoResumen -->
+      <xsd:element name="ConsultarTraficoResumenDocument" type="types:ConsultarTraficoResumenType"/>
+      <xsd:element name="ResultadoConsultarTraficoResumenDocument" type="types:ResultadoConsultarTraficoResumenType"/>
+      <!-- FIN ConsultarTraficoResumen -->
+      <!-- INICIO TraficoEnLinea -->
+      <xsd:element name="ConsultarTraficoEnLineaPrincipalDocument" type="types:ConsultarTraficoEnLineaPrincipalType"/>
+      <xsd:element name="ResultadoConsultarTraficoEnLineaPrincipalDocument" type="types:ResultadoConsultarTraficoEnLineaPrincipalType"/>
+      <xsd:element name="ConsultarTraficoEnLineaSecundariaDocument" type="types:ConsultarTraficoEnLineaSecundariaType"/>
+      <xsd:element name="ResultadoConsultarTraficoEnLineaSecundariaDocument" type="types:ResultadoConsultarTraficoEnLineaSecundariaType"/>
+      <!--FIN TraficoEnLinea-->
+      <!-- INICIO ConsultarTipoTrafico -->
+      <xsd:element name="ConsultarTipoTraficoDocument" type="types:ConsultarTipoTraficoType"/>
+      <xsd:element name="ResultadoConsultarTipoTraficoDocument" type="types:ResultadoConsultarTipoTraficoType"/>
+      <!-- FIN ConsultarTipoTrafico -->
+      <!-- INICIO ConsultarPlanTraficoSS -->
+      <xsd:element name="ConsultarPlanTraficoSSDocument" type="types:ConsultarPlanTraficoSSType"/>
+      <xsd:element name="ResultadoConsultarPlanTraficoSSDocument" type="types:ResultadoConsultarPlanTraficoSSType"/>
+      <!-- INICIO ConsultarPlanTraficoSS -->
+      <!-- INICIO ConsultarDetalleLlamadosPS -->
+      <xsd:element name="ConsultarDetalleLlamadosDocument" type="types:ConsultarDetalleLlamadosType"/>
+      <xsd:element name="ResultadoConsultarDetalleLlamadosDocument" type="types:ResultadoConsultarDetalleLlamadosType"/>
+      <!-- FIN ConsultarDetalleLlamadosPS -->
+      <!-- INICIO ConsultarDetalleLlamadosFullPS -->
+      <xsd:element name="ConsultarDetalleLlamadosFullDocument" type="types:ConsultarDetalleLlamadosFullType"/>
+      <xsd:element name="ResultadoConsultarDetalleLlamadosFullDocument" type="types:ResultadoConsultarDetalleLlamadosFullType"/>
+      <!-- FIN ConsultarDetalleLlamadosFullPS -->
+      <!-- INICIO ConsultarTraficoSSBAM -->
+      <xsd:element name="ConsultarTraficoSSBAMDocument" type="types:ConsultarTraficoSSBAMType"/>
+      <xsd:element name="ResultadoConsultarTraficoSSBAMDocument" type="types:ResultadoConsultarTraficoSSBAMType"/>
+      <!-- FIN ConsultarDetallePlanesBAM -->
+      <!-- INICIO ConsultarTraficoBAMCC -->
+      <xsd:element name="ConsultarTraficoBAMCCDocument" type="types:ConsultarTraficoBAMCCType"/>
+      <xsd:element name="ResultadoConsultarTraficoBAMCCDocument" type="types:ResultadoConsultarTraficoBAMCCType"/>
+      <!-- FIN ConsultarTraficoBAMCC -->
+      <!-- INICIO PrecargarPlanTraficoSS -->
+      <xsd:element name="PrecargarPlanTraficoSSDocument" type="types:PrecargarPlanTraficoSSType"/>
+      <xsd:element name="ResultadoPrecargarPlanTraficoSSDocument" type="types:ResultadoPrecargarPlanTraficoSSType"/>
+      <!-- FIN PrecargarPlanTraficoSS -->
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultarTraficoResumenMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarTraficoResumenDocument" name="ConsultarTraficoResumen"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoTraficoResumenMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarTraficoResumenDocument" name="ResultadoTraficoResumen"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarTraficoEnLineaPrincipalMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarTraficoEnLineaPrincipalDocument" name="ConsultarTraficoEnLineaPrincipal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoTraficoEnLineaPrincipalMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarTraficoEnLineaPrincipalDocument" name="ResultadoTraficoEnLineaPrincipal"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarTraficoEnLineaSecundariaMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarTraficoEnLineaSecundariaDocument" name="ConsultarTraficoEnLineaSecundaria"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoTraficoEnLineaSecundariaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarTraficoEnLineaSecundariaDocument" name="ResultadoTraficoEnLineaSecundaria"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarTipoTraficoMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarTipoTraficoDocument" name="ConsultarTipoTrafico"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarTipoTraficoMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarTipoTraficoDocument" name="ResultadoConsultarTipoTrafico"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarPlanTraficoSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarPlanTraficoSSDocument" name="ConsultarPlanTraficoSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarPlanTraficoSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarPlanTraficoSSDocument" name="ResultadoConsultarPlanTraficoSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDetalleLlamadosMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDetalleLlamadosDocument" name="ConsultarDetalleLlamados"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDetalleLlamadosMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDetalleLlamadosDocument" name="ResultadoConsultarDetalleLlamados"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDetalleLlamadosFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDetalleLlamadosFullDocument" name="ConsultarDetalleLlamadosFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDetalleLlamadosFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDetalleLlamadosFullDocument" name="ResultadoConsultarDetalleLlamadosFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarTraficoSSBAMMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarTraficoSSBAMDocument" name="ConsultarTraficoSSBAM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarTraficoSSBAMMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarTraficoSSBAMDocument" name="ResultadoConsultarTraficoSSBAM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarTraficoBAMCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarTraficoBAMCCDocument" name="ConsultarTraficoBAMCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarTraficoBAMCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarTraficoBAMCCDocument" name="ResultadoConsultarTraficoBAMCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="PrecargarPlanTraficoSSMessage">
+    <WL5G3N0:part element="WL5G3N1:PrecargarPlanTraficoSSDocument" name="PrecargarPlanTraficoSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoPrecargarPlanTraficoSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoPrecargarPlanTraficoSSDocument" name="ResultadoPrecargarPlanTraficoSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BillingRegistroUsoServicePortType">
+    <WL5G3N0:operation name="ConsultarTraficoResumen">
+      <WL5G3N0:input message="WL5G3N1:ConsultarTraficoResumenMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoTraficoResumenMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoEnLineaPrincipal">
+      <WL5G3N0:input message="WL5G3N1:ConsultarTraficoEnLineaPrincipalMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoTraficoEnLineaPrincipalMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoEnLineaSecundaria">
+      <WL5G3N0:input message="WL5G3N1:ConsultarTraficoEnLineaSecundariaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoTraficoEnLineaSecundariaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTipoTrafico">
+      <WL5G3N0:input message="WL5G3N1:ConsultarTipoTraficoMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarTipoTraficoMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanTraficoSS">
+      <WL5G3N0:input message="WL5G3N1:ConsultarPlanTraficoSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarPlanTraficoSSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetalleLlamados">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDetalleLlamadosMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDetalleLlamadosMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetalleLlamadosFull">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDetalleLlamadosFullMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDetalleLlamadosFullMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoSSBAM">
+      <WL5G3N0:input message="WL5G3N1:ConsultarTraficoSSBAMMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarTraficoSSBAMMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoBAMCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarTraficoBAMCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarTraficoBAMCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="PrecargarPlanTraficoSS">
+      <WL5G3N0:input message="WL5G3N1:PrecargarPlanTraficoSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoPrecargarPlanTraficoSSMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BillingRegistroUsoServiceBinding" type="WL5G3N1:BillingRegistroUsoServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarTraficoResumen">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarTraficoResumen"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoEnLineaPrincipal">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarTraficoEnLineaPrincipal"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoEnLineaSecundaria">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarTraficoEnLineaSecundaria"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTipoTrafico">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarTipoTrafico"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarPlanTraficoSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarPlanTraficoSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetalleLlamados">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarDetalleLlamados"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetalleLlamadosFull">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarDetalleLlamadosFull"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoSSBAM">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarTraficoSSBAM"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarTraficoBAMCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/ConsultarTraficoBAMCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="PrecargarPlanTraficoSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/registrouso/PrecargarPlanTraficoSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BillingRegistroUsoService">
+    <WL5G3N0:port binding="WL5G3N1:BillingRegistroUsoServiceBinding" name="BillingRegistroUsoServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/BILLING/GestionDeRegistrosDeUso/Proxies/BillingRegistroUsoService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

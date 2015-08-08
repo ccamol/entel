@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/clientes/contacto/gestioncontacto/equipos/BloqueoSubtelServiceWS?WSDL
+#wsdl=http://esbpre.entel.cl/clientes/contacto/gestioncontacto/equipos/BloqueoSubtelServiceWS?WSDL
+targetnamespace=http://www.epcs.com/cliente/contacto
+servicename=BloqueoSubtelService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

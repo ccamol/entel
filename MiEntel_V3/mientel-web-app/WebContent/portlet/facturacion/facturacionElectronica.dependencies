@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window xmlns="http://www.bea.com/servers/portal/framework/laf/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bea.com/servers/portal/framework/laf/1.0.0 laf-window-1_0_0.xsd">
+	<render-dependencies>
+		<html>
+			<links>
+				<search-path>
+					<path-element>../../framework/skins/mientel/css/facturacion/</path-element>
+				</search-path>
+				<link href="boletaElectronica.css" type="text/css" rel="stylesheet" />
+			</links>
+		</html>
+	</render-dependencies>
+</window>

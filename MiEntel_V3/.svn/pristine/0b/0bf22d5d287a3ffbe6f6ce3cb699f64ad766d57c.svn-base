@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/provisionyentrega/gestionsuscripcion/datoskpibam/ingresardatoskpibamps?wsdl
+targetnamespace=http://www.esa.com/Provision/Suscripcion/DatosKpiBAM
+servicename=ingresarDatosKpiBAMService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

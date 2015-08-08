@@ -1,0 +1,8 @@
+wsdl=http://10.10.20.83:7001/crm/crmcatalogcustomers/consultaejecutivosga/crm_t_px_consultaejecutivosgaps?wsdl
+targetnamespace=http://www.esa.com/Clientes/PerfilesClientes/SGACarterasVIP
+servicename=WSSGAConsultaEjecutivoService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

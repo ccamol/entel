@@ -1,0 +1,41 @@
+/*  
+Description: Archivo de normalización de estilos.
+Author: I2B Technologies
+Author URI: http://www.i2b.cl
+Version: 1.0
+*/
+#cabecera div, #cabecera ul, #cabecera ol, #cabecera li, #cabecera h1, #cabecera h2, #cabecera h3, #cabecera h4, #cabecera h5, #cabecera h6, #cabecera form, #cabecera input, #cabecera p, #cabecera span,
+#cabecera-menu div, #cabecera-menu ul, #cabecera-menu ol, #cabecera-menu li, #cabecera-menu h1, #cabecera-menu h2, #cabecera-menu h3, #cabecera-menu h4, #cabecera-menu h5, #cabecera-menu h6, #cabecera-menu form, #cabecera-menu input, #cabecera-menu p, #cabecera-menu span {
+	margin:0;
+	padding:0;
+}
+#cabecera img,
+#cabecera-menu img{
+	border:0;
+}
+#cabecera ol, #cabecera ul, #cabecera dl,
+#cabecera-menu ol, #cabecera-menu ul, #cabecera-menu dl{
+	list-style:none;
+}
+#cabecera a,
+#cabecera-menu a{
+	outline:none;
+}
+/* CLEARFIX ***********************/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix{
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}

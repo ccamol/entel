@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/billing/prodfactura" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/billing/prodfactura" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/billing/prodfactura" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/billing/prodfactura" xmlns:types="http://www.epcs.com/billing/prodfactura/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/billing/prodfactura/types" schemaLocation="http://10.10.20.83:7001/BILLING/ProdFactura/Proxies/BillingProdFacturaService?SCHEMA%2FBILLING%2FProdFactura%2FServicios%2FBillingProdFacturaServiceXSD"/>
+      <!-- OBTENER DETALLE CUENTA -->
+      <xsd:element name="ObtenerDetalleCuentaDocument" type="types:ObtenerDetalleCuentaType"/>
+      <xsd:element name="ResultadoObtenerDetalleCuentaDocument" type="types:ResultadoObtenerDetalleCuentaType"/>
+      <!-- FIN OBTENER DETALLE CUENTA -->
+      <!-- CONSULTAR FACTURACION ELECTRONICA -->
+      <xsd:element name="ConsultarFacturacionElectronicaDocument" type="types:ConsultarFacturacionElectronicaType"/>
+      <xsd:element name="ResultadoConsultarFacturacionElectronicaDocument" type="types:ResultadoConsultarFacturacionElectronicaType"/>
+      <!-- FIN CONSULTAR FACTURACION ELECTRONICA -->
+      <!-- INICIO INSCRIBIR FACT ELECTRONICA -->
+      <xsd:element name="InscribirServicioFacturacionElectronicaDocument" type="types:InscribirServicioFacturacionElectronicaType"/>
+      <xsd:element name="ResultadoInscribirServicioFacturacionElectronicaDocument" type="types:ResultadoInscribirServicioFacturacionElectronicaType"/>
+      <!-- FIN  INSCRIBIR FACT ELECTRONICA -->
+      <!-- INICIO CANCELAR INSCRIPCION FACT ELECTRONICA -->
+      <xsd:element name="CancelarServicioFacturacionElectronicaDocument" type="types:CancelarServicioFacturacionElectronicaType"/>
+      <xsd:element name="ResultadoCancelarServicioFacturacionElectronicaDocument" type="types:ResultadoCancelarServicioFacturacionElectronicaType"/>
+      <!-- FIN CANCELAR INSCRIPCION FACT ELECTRONICA  -->
+      <!-- CONSULTAR FACTURACION ELECTRONICA -->
+      <xsd:element name="ConsultarFacturaElectronicaMPTDocument" type="types:ConsultarFacturaElectronicaMPTType"/>
+      <xsd:element name="ResultadoConsultarFacturaElectronicaMPTDocument" type="types:ResultadoConsultarFacturaElectronicaMPTType"/>
+      <!-- FIN CONSULTAR FACTURACION ELECTRONICA -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ObtenerDetalleCuentaMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerDetalleCuentaDocument" name="ObtenerDetalleCuenta"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerDetalleCuentaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerDetalleCuentaDocument" name="ResultadoObtenerDetalleCuenta"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarFacturacionElectronicaMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarFacturacionElectronicaDocument" name="ConsultarFacturacionElectronica"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarFacturacionElectronicaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarFacturacionElectronicaDocument" name="ResultadoConsultarFacturacionElectronica"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="InscribirServicioFacturacionElectronicaMessage">
+    <WL5G3N0:part element="WL5G3N1:InscribirServicioFacturacionElectronicaDocument" name="InscribirServicioFacturacionElectronica"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoInscribirServicioFacturacionElectronicaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoInscribirServicioFacturacionElectronicaDocument" name="ResultadoInscribirServicioFacturacionElectronica"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="CancelarServicioFacturacionElectronicaMessage">
+    <WL5G3N0:part element="WL5G3N1:CancelarServicioFacturacionElectronicaDocument" name="CancelarServicioFacturacionElectronica"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoCancelarServicioFacturacionElectronicaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoCancelarServicioFacturacionElectronicaDocument" name="ResultadoCancelarServicioFacturacionElectronica"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarFacturaElectronicaMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarFacturaElectronicaMPTDocument" name="ConsultarFacturaElectronicaMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarFacturaElectronicaMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarFacturaElectronicaMPTDocument" name="ResultadoConsultarFacturaElectronicaMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BillingProdFacturaService">
+    <WL5G3N0:operation name="ObtenerDetalleCuenta">
+      <WL5G3N0:input message="WL5G3N1:ObtenerDetalleCuentaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerDetalleCuentaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturaElectronicaMPT">
+      <WL5G3N0:input message="WL5G3N1:ConsultarFacturaElectronicaMPTMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarFacturaElectronicaMPTMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturacionElectronica">
+      <WL5G3N0:input message="WL5G3N1:ConsultarFacturacionElectronicaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarFacturacionElectronicaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="InscribirServicioFacturacionElectronica">
+      <WL5G3N0:input message="WL5G3N1:InscribirServicioFacturacionElectronicaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoInscribirServicioFacturacionElectronicaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CancelarServicioFacturacionElectronica">
+      <WL5G3N0:input message="WL5G3N1:CancelarServicioFacturacionElectronicaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoCancelarServicioFacturacionElectronicaMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BillingProdFacturaServicePortBinding" type="WL5G3N1:BillingProdFacturaService">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ObtenerDetalleCuenta">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/prodfactura/ObtenerDetalleCuenta"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturacionElectronica">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/prodfactura/ConsultarFacturacionElectronica"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturaElectronicaMPT">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/prodfactura/ConsultarFacturaElectronicaMPT"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="InscribirServicioFacturacionElectronica">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/prodfactura/InscribirServicioFacturacionElectronica"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="CancelarServicioFacturacionElectronica">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/prodfactura/CancelarServicioFacturacionElectronica"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BillingProdFacturaService">
+    <WL5G3N0:port binding="WL5G3N1:BillingProdFacturaServicePortBinding" name="BillingProdFacturaServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/BILLING/ProdFactura/Proxies/BillingProdFacturaService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

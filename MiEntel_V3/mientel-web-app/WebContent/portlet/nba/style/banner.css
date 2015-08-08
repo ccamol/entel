@@ -1,0 +1,401 @@
+/*@import "../carrusel/jquery.jcarousel.css";
+@import "../home/jCarrusel.css";
+*/
+.jcarousel-control {
+ /*   margin-bottom: 0px;
+    text-align: left;
+	background-color: #0073AE;
+	width: 100px;
+	height: 20%;
+	float: left;
+	padding-left: 22px;*/
+	position: absolute; 
+	z-index: 29; 
+	left:157px; 
+	line-height:2.22em;
+	align:center;
+	
+}
+.siguiente {
+ line-height:2.22em;
+	font-size: 4;
+	margin-top: 5px;
+	background-color: #0073AE;  
+}
+.siguiente font{
+    position: absolute; 
+    z-index: 5; 
+    left: 405px;
+    line-height:2.22em;
+	font-size: 4;
+	margin-top: 5px;
+}
+.anterior {
+ 	position: absolute; 
+ 	z-index: 4; 
+ 	left: 115px;  
+ 	line-height:2.22em;
+	margin-top: 7px;
+	background-color: #0073AE;  
+}
+.mis_ofertas {
+	position: absolute; 
+	z-index: 3; 
+	left: 5px;
+    line-height:2.22em;
+	align:center;
+	margin-top: 7px;
+	background-color: #0073AE;  
+}
+.minimizar {
+ 	position: absolute; 
+ 	z-index: 6; 
+ 	left: 500px;
+ 	line-height:2.22em;
+	align:center;
+	background-color: #0073AE;  
+	padding-top: 10px;
+	
+}
+.puntos-inicio {
+	position: absolute;
+	z-index: 30; 
+	left: 350px; 
+	line-height:2.22em;
+	align:center;
+	background-color: #0073AE;  
+	padding-top: 7px;
+}
+.puntos-fin {
+	position: absolute;
+	z-index: 30; 
+	left: 190px; 
+	line-height:2.22em;
+	align:center;
+	background-color: #0073AE;
+	padding-top: 7px; 
+}
+
+.G4,.G6,.G10{
+	font-family: DinNextLtPro;
+}
+
+.G1.linea1{
+	top: 20px;
+}
+.G1.linea2{
+	top: 45px;
+}
+.G1.linea3{
+	top: 92px;
+}
+.G1.linea4{
+	top: 105px;
+}
+.G1.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G1 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G2 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G2.linea1{
+	top: 20px;
+}
+.G2.linea2{
+	top: 45px;
+}
+.G2.linea3{
+	top: 92px;
+}
+.G2.linea4{
+	top: 105px;
+}
+.G2.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G3 {
+	position: absolute; 
+	left: 40px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 310px;
+}
+.G3.linea1{
+	top: 38px;
+}
+.G3.linea2{
+	top: 92px;
+}
+.G3.linea3{
+	top: 111px;
+}
+.G3.linea4{
+	top: 92px;
+}
+
+.G3.linea5{
+	top: 143px;
+	left: 280px;
+}
+.G4 {
+	position: absolute; 
+	left: 33px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 355px;
+}
+.G4.linea1_1,.G4.linea1_2,.G4.linea1_3{
+	top: 12px;
+}
+.G4.linea1_A_1,.G4.linea1_A_2,.G4.linea1_A_3,.G4.linea1_A_4 {
+    top: 26px;
+}
+.G4.linea2{
+	top: 46px;
+}
+
+.G4.linea2_A {
+    top: 78px;
+}
+.G4.linea3{
+	top: 100px;
+}
+.G4.linea3_A {
+    top: 98px;
+}
+.G4.linea4{
+	top: 105px;
+}
+.G4.linea5{
+	top: 144px;
+	left: 115px;
+}
+.G4.linea5_A{
+	top: 145px;
+	left: 230px;
+}
+.G4.linea1_A.3 font.titulo{
+	color: #FF6702 !important;
+}
+
+.G4.linea1_A,.G4.linea2_A,.G4.linea3_A,.G4.linea1_A_1,.G4.linea1_A_2,.G4.linea1_A_3,.G4.linea1_A_4 {
+    left: 40px;
+}
+.G5 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G5.linea1{
+	top: 20px;
+}
+.G5.linea2{
+	top: 45px;
+}
+.G5.linea4{
+	top: 92px;
+}
+
+.G5.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G6 {
+	position: absolute; 
+	left: 45px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 205px;
+}
+
+.G6.linea1,.G6.linea2,.G6.linea3{
+	top: 52px;
+	font-family: DINNextLTProLight !important;
+}
+.G6.linea1{
+	width: 350px;
+}
+.G6.linea4, .G6.linea4.MIN{
+	width: 300px;
+}
+.G6.linea4{
+	top: 75px;
+}
+.G6.linea3,MIX1,.G6.linea3.MIX2,.G6.linea3.MIX3{
+	width: 300px;
+}
+
+.G6.linea4.MIN1,.G6.linea4.MIN2,.G6.linea4.MIN3{
+	top: 60px;
+}
+.G6.linea5,.G6.linea5.MIN{
+	left: 226px;
+}
+.G6.linea5{
+	top: 118px;
+}
+.G6.linea5.MIN{
+	top: 100px;
+}
+
+.G7 {
+	position: absolute; 
+	left: 190px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G7.linea1{
+	top: 20px;
+}
+.G7.linea2{
+	top: 45px;
+}
+.G7.linea3{
+	top: 92px;
+}
+.G7.linea4{
+	top: 105px;
+}
+.G7.linea5{
+	top: 130px;
+	left: 223px;
+}
+.G10 {
+	position: absolute; 
+	left: 50px; 
+	z-index: 3; 
+	text-align: left; 
+	width: 300px;
+}
+.G10.linea1{
+	top: 50px;
+}
+.G10.linea2{
+	top: 104px;
+}
+.G10.linea3{
+	top: 92px;
+}
+.G10.linea4{
+	top: 105px;
+}
+.G10.linea5{
+	top: 119px;
+	left: 240px;
+}
+
+a:link   
+{   
+ text-decoration:none;   
+}   
+/*
+ * Estilos para los controles del carrusel
+ */
+.jcarousel-clip.jcarousel-clip-horizontal {
+	overflow:hidden;
+}
+.jcarousel-control {
+/*	float: left;
+
+    padding-left: 5px;
+    padding-top: 5px;
+    z-index: 29;
+	background-color: #0073AE;*/
+	    margin-top: 7px;
+}
+bannerPrincipal_home{
+margin: 0 0 10px 15px;
+}
+#bannerPrincipal_home .destacado_home{
+	display: block;
+	margin: 0 0 0 -12px;
+}* html #bannerPrincipal_home .destacado_home{
+	background: url(../img/circulo_azul.png) no-repeat 8px 13px;
+}
+
+/*
+ * Estilos para los botones controladores del destacado
+ */
+#bannerPrincipal_home a.enlace_destacado {
+	height:25px;
+	width:20px;
+	/*margin: 5px 5px 0 0;*/
+	padding:3 0 3px 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 29;
+	text-decoration: none;
+	color: white;
+	margin-left:8px;
+	background: url(../img/circulo_azul.png) no-repeat;
+	
+}* html #bannerPrincipal_home a.enlace_destacado {
+	width: 175px !important;
+	margin-left:0px !important;
+	background: url(../img/circulo_azul.png) no-repeat;
+}
+
+#bannerPrincipal_home a.enlace_seleccionado {
+	background: url(../img/circulo_blanco.png) no-repeat;
+	color: blue;
+	padding:0 0 5px 0;
+	
+}* html #bannerPrincipal_home a.enlace_seleccionado {
+	margin: 0px 3px 0px 0px;
+	background: url(../img/circulo_blanco.png) no-repeat;
+}*:first-child+html #bannerPrincipal_home a.enlace_seleccionado{
+	background: url(../img/circulo_blanco.png) no-repeat;
+}
+
+.btnNaranjaCuadrado{
+	background: #ff6702;
+	color: #FFF;
+	display: block;
+	font:bold 12px "Trebuchet ms", arial;
+	height: 23px;
+	padding-top: 7px;
+	width:125px;
+	margin-top: 8px;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	cursor:pointer;
+}
+
+.btnNaranjaCuadrado:hover{
+	background: #F37F42;
+}
+
+/*BANEER MULTIOFERTA COLOR DE TEXTO*/
+
+/*BLANCO*/
+.G6.linea1.MIN3,.G6.linea4.MIN1,.G6.linea4.MIN2,.G6.linea4.MIN3,.G6.linea4.SMS2,.G6.linea5.SMS1 span,.G6.linea3.IM1,.G6.linea3.IM3,.G6.linea4.IM2,.G6.linea3.MIX2,.G6.linea5.MIX2 span,.G6.linea3.MIX3,.G6.linea4.MIX1,.G6.linea5.IM2 span{
+  color:#FFF !important;
+}
+
+/*AZUL*/
+.G6.linea1.MIN1,.G6.linea1.MIN2,.G6.linea4.SMS3,.G6.linea4.IM1,.G6.linea3.IM2,.G4.linea1_3,.G4.linea1_1,.G4.linea1_A_3,.G6.linea3.MIX1,.G6.linea4.MIX3,.G4.linea1_A_1 span{
+	color: #0154a0;
+}
+
+/*NARANJO*/
+.G6.linea4.IM3,.G6.linea4.SMS1,.G4.linea1_2,.G4.linea1_A_4,.G4.linea1_A_2,.G6.linea4.MIX2{
+	color:#FF6702;
+}

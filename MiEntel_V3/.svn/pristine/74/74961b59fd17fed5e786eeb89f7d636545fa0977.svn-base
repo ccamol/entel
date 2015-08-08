@@ -1,0 +1,557 @@
+.servicioTecnico{
+	display:none;
+}
+
+.servicioTecnico ul.revisaTuEquipo{
+	list-style:none;	
+	padding-left:0px;
+}.servicioTecnico ul.revisaTuEquipo li{
+	height:40px;
+	padding-left:40px;
+	margin:5px 0;
+}.servicioTecnico ul.revisaTuEquipo li p{
+	padding-top:13px;
+}.servicioTecnico ul.revisaTuEquipo li.bateria{	
+	background: url(../../img/servicioTecnico/iconoBateria.png) top left no-repeat;
+}.servicioTecnico ul.revisaTuEquipo li.cargada{	
+	background: url(../../img/servicioTecnico/iconoBateriaCarga.png) top left no-repeat;
+}.servicioTecnico ul.revisaTuEquipo li.prende{	
+	background: url(../../img/servicioTecnico/iconoPrender.png) top left no-repeat;
+}.servicioTecnico ul.revisaTuEquipo li.cargador{	
+	background: url(../../img/servicioTecnico/iconoCargador.png) top left no-repeat;
+}.servicioTecnico ul.revisaTuEquipo li.ayuda{	
+	background: url(../../img/servicioTecnico/iconoAyuda.png) top left no-repeat;
+}.servicioTecnico ul.revisaTuEquipo li.ayuda p{	
+	padding-top:5px;
+}
+.servicioTecnico ul{
+	list-style:outside;
+	list-style-type:square;
+	padding-left:15px;
+}.servicioTecnico ul.imeiDescripcion{
+	padding-left:60px;
+	padding-top:30px;
+	width:240px;
+	float:left;
+}.servicioTecnico .imagenImeiayuda{
+	display:block;
+	width:100px;
+	height:100px;
+	background: url(../../img/servicioTecnico/imei-number.jpg) top left no-repeat;
+	border:solid 1px #000000;
+	float:left;
+	
+}
+.servicioTecnico .btnVolver{
+	display:block;
+	float:left;
+	width:50px;
+	text-align:left;
+}
+.servicioTecnico a.btnVolver{
+	display:block;
+	float:left;
+	width:50px;
+	text-align:left;
+	padding-top:9px;
+	text-decoration:underline;
+}.servicioTecnico a.btnVolver:hover{color:#064687;}
+.servicioTecnico a.btnCancelar{
+	display:block;
+	float:left;	
+	padding-top:9px;
+	margin-right:0px;
+	text-decoration:underline;
+}.servicioTecnico a.btnCancelar:hover{color:#064687;}
+.servicioTecnico.st_paso0 .botonesDerecha{
+	display:block;
+	float:left;
+	padding-left:325px;
+}
+.servicioTecnico.st_paso3 .botonesDerecha{
+	display:block;
+	float:left;
+	padding-left:325px;
+	position: relative;
+}
+.servicioTecnico .franja-botones{
+	display:block;
+	height:40px;
+}
+.servicioTecnico a.verTodosEquipos{
+	display:block;
+	float:right;
+	margin:10px 0;
+	text-decoration:underline;
+}.servicioTecnico a.verTodosEquipos:hover{color:#064687;}
+.servicioTecnico.st_paso1 .botonesDerecha{
+	display:block;
+	float:left;
+	padding-left:325px;
+}
+.servicioTecnico .pasos{
+	display:block;
+	margin:15px 0;
+	width:554px;
+}.servicioTecnico .pasos div{
+	display:block;
+	position:relative;
+	float:left;
+	width:157px;
+	height:44px;
+}.servicioTecnico .pasos .titulo{
+	padding-top:9px;
+	margin:0 10px;
+}.servicioTecnico .pasos .titulo span{
+	color:#CCCCCC;
+}.servicioTecnico .pasos .paso1_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso1activo.png) no-repeat;
+	margin-right:-21px;
+	z-index:3;
+}.servicioTecnico .pasos .paso1_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso1inactivo.png) no-repeat;
+	margin-right:-21px;
+	z-index:3;
+}.servicioTecnico .pasos .paso2_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso2activo.png) no-repeat;
+	margin-left:0px;
+	margin-right:-21px;
+	z-index:2;
+}.servicioTecnico .pasos .paso2_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso2inactivo.png) no-repeat;
+	margin-left:0px;
+	margin-right:-21px;
+	z-index:2;
+}.servicioTecnico .pasos .paso3_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso3activo.png) no-repeat;
+	margin-right:-25px;
+	margin-left:0px;
+	z-index:1;
+}.servicioTecnico .pasos .paso3_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso3inactivo.png) no-repeat;
+	margin-right:-25px;
+	margin-left:0px;
+	z-index:1;
+}.servicioTecnico .pasos .paso4_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso4activo.png) right no-repeat;
+	width:150px;
+	margin-left:0px;
+	z-index:0;
+}.servicioTecnico .pasos .paso4_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso4inactivo.png) right no-repeat;
+	width:150px;
+	margin-left:0px;
+	z-index:0;
+}
+*html .servicioTecnico .pasos .paso1_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso1activo.gif) no-repeat;
+	margin-right:-21px;
+	z-index:3;
+}*html .servicioTecnico .pasos .paso1_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso1inactivo.gif) no-repeat;
+	margin-right:-21px;
+	z-index:3;
+}*html .servicioTecnico .pasos .paso2_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso2activo.gif) no-repeat;
+	margin-right:-21px;
+	z-index:2;
+}*html .servicioTecnico .pasos .paso2_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso2inactivo.gif) no-repeat;
+	margin-right:-21px;
+	z-index:2;
+}*html .servicioTecnico .pasos .paso3_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso3activo.gif) no-repeat;
+	margin-right:-25px;
+	z-index:1;
+}*html .servicioTecnico .pasos .paso3_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso3inactivo.gif) no-repeat;
+	margin-right:-25px;
+	z-index:1;
+}*html .servicioTecnico .pasos .paso4_preIngresoactivo{
+	background: url(../../img/servicioTecnico/paso4activo.gif) right no-repeat;
+	width:140px;
+	margin-left:0px;
+	z-index:0;
+}*html .servicioTecnico .pasos .paso4_preIngresoinactivo{
+	background: url(../../img/servicioTecnico/paso4inactivo.gif) right no-repeat;
+	width:140px;
+	margin-left:0px;
+	z-index:0;
+}
+.servicioTecnico .pasos .flecha.activa{
+	display:block;
+	width:98px;
+	height:32px;
+	background: url(../../img/servicioTecnico/flecha-activa.png) no-repeat;
+}.servicioTecnico .pasos .flecha{
+	display:block;
+	width:98px;
+	height:32px;
+	background: url(../../img/servicioTecnico/flecha-inactiva.png) no-repeat;
+}
+
+.servicioTecnico div.header_tabla div.top{
+	background-position:top right;
+}.servicioTecnico div.header_tabla div.top span{
+	background-position:top left;
+}.servicioTecnico div.header_tabla div.bottom{
+	background-position:bottom right;
+}.servicioTecnico div.header_tabla div.bottom span{
+	background-position:bottom left;
+}
+
+.servicioTecnico .equipos{
+	display:block;
+	margin-bottom:10px;
+	font-size:12px;
+}.servicioTecnico .equipos .fila{
+	display:block;
+	padding:10px 0;
+}.servicioTecnico .equipos .marca{
+	width:260px;
+	padding-left:10px;
+}.servicioTecnico .equipos .imei{
+	width:100px;
+	padding-left:10px;
+}.servicioTecnico .equipos .imei{
+	width:100px;
+	padding-left:10px;
+}.servicioTecnico .equipos .fecha{
+	width:130px;	
+	text-align: center; 
+}.servicioTecnico .equipos .fila div{
+	display:block;
+	float:left;
+	background: none;
+	border:none;
+}.servicioTecnico .equipos .fila div input{
+	margin:0 0 0 7px;
+}.servicioTecnico .equipos .fila.par{
+	background:#eef4fa;
+	border-top:1px #e3e3e3 solid;
+	border-bottom:1px #e3e3e3 solid;
+}.servicioTecnico .equipos .fila.unica{
+	border-bottom:1px #e3e3e3 solid;
+}
+
+.servicioTecnico .cajaImei{
+	display:block;
+	position:relative;
+	width:548px;
+	height:67px;
+	background: url(../../img/servicioTecnico/bg-caja-imei.png) no-repeat;	
+}.servicioTecnico .cajaImei div{
+	display:block;
+	float:left;
+}.servicioTecnico .cajaImei .texto{
+	padding-top:25px;
+	padding-left:15px;
+	font-size:12px;
+}.servicioTecnico .cajaImei .texto p{
+	float:left;
+}.servicioTecnico .cajaImei .input{
+	padding-top:20px;
+	padding-left:10px;
+	font-size:12px;
+}.servicioTecnico .cajaImei .debe{
+	font-size:10px;
+	width:100px;
+	padding:20px 0 0 10px;
+}
+
+.servicioTecnico .opcionesFallas{
+	display:block;
+	margin:10px 0;
+}.servicioTecnico .opcionesFallas .opcion{
+	display:block;
+	width:180px;
+	float:left;
+	margin:10px 0;
+	height:30px;
+}.servicioTecnico .opcionesFallas .opcion label{
+	padding-left:10px;
+	float:left;
+	width: 150px;
+}.servicioTecnico .opcionesFallas .opcion label span{
+	float:left;
+}.servicioTecnico .opcionesFallas .opcion input{
+	float:left;
+}.servicioTecnico .opcionesFallas .opcion a{
+	float:left;
+}
+.servicioTecnico.st_paso2 .botonesDerecha{
+	display:block;
+	float:left;
+	padding-left:325px;
+	position:relative;
+}
+.servicioTecnico .detallesComentarios{
+	position:relative;
+}
+.servicioTecnico .detallesComentarios textarea{
+	display:block;
+	width:538px;
+	height:60px;
+	resize:none;
+	border:#CCCCCC solid 1px;
+	padding:5px;
+	font-size:11px;
+}
+
+.servicioTecnico .detallesComentarios .caracteresDisponibles{
+	text-align: right;
+}
+
+.servicioTecnico .sonMasDeDiez{
+  display: block;
+}
+
+.servicioTecnico .sonMasDeDiez.oculto{
+  display: none;
+}
+
+
+.servicioTecnico .cajaEmail{
+	display:block;
+	position:relative;
+	width:548px;
+	height:67px;
+	background: #EEF4FA;
+	border:1px #E3E3E3 solid;
+	margin:20px 0;	
+}.servicioTecnico .cajaEmail div{
+	display:block;
+	float:left;
+}.servicioTecnico .cajaEmail .texto{
+	padding-top:25px;
+	padding-left:15px;
+	font-size:12px;
+}.servicioTecnico .cajaEmail .texto p{
+	float:left;
+}.servicioTecnico .cajaEmail .input{
+	padding-top:20px;
+	padding-left:10px;
+	font-size:12px;
+}
+.servicioTecnico .tituloComprobante{	
+	display:block;
+	margin:10px 0;
+	padding-bottom:5px;
+	border-bottom:1px #E3E3E3 solid;	
+}
+.servicioTecnico .tituloComprobante h4{
+	font-size:15px;
+	font-weight:bold;
+	display:block;
+	width:100px;
+	float:left;
+}.servicioTecnico .tituloComprobante a.imprimirComprobanteIngreso{
+	display:block;
+	margin-left:380px;
+	font-size:12px;
+	height:17px;
+	float:left;
+	text-decoration:underline;
+	padding-left:20px;
+	background:url(../../img/icons/icon_impresora.gif) no-repeat;
+}*html .servicioTecnico .tituloComprobante a.imprimirComprobanteIngreso{	
+	margin-left:260px;	
+}.servicioTecnico .tituloComprobante a.imprimirComprobanteIngreso:hover{
+	color:#064687;	
+}
+
+.servicioTecnico .infoIngreso{
+	padding-left:26px;
+	clear:both;
+	padding-top:4px;
+	background:url(../../img/icons/ico_informacion.png) no-repeat;
+	margin:7px 11px;
+	height:20px;
+}.servicioTecnico .accesoriosIngreso{	
+	font-size:12px;
+	padding-left:40px;
+	width: 450px;
+}
+
+.servicioTecnico .cajaSucursales{
+	display:block;
+	border:#999999 solid 1px;
+	width:524px;
+	padding:15px 10px;
+	margin-bottom:15px;
+}.servicioTecnico .cajaSucursales h4{
+	font-size:15px;
+	font-weight:bold;
+	display:block;
+	border-bottom:#CCCCCC solid 1px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}.servicioTecnico .cajaSucursales fieldset{
+	display:block;	
+	float:left;
+}.servicioTecnico .cajaSucursales fieldset label {
+    font-size: 11px;    
+}.servicioTecnico .cajaSucursales fieldset .cajaLabel{
+    margin-bottom: 8px;    
+}.servicioTecnico .cajaSucursales fieldset.select{
+	width:210px;
+}.servicioTecnico .cajaSucursales fieldset.botonSucursales{	
+	padding-top: 17px;
+}
+.servicioTecnico .cajaSucursales.impresion{
+	display:block;
+	border:none;
+	width:524px;
+	padding:15px 10px;
+	margin-bottom:15px;
+}.servicioTecnico .cajaSucursales.impresion .seleccionSucursales p{
+	display:block;
+	float:left;
+	width:200px;
+}.servicioTecnico .cajaSucursales.impresion .seleccionSucursales{
+	display:block;
+	border-bottom:#CCCCCC solid 1px;
+}
+
+
+
+/** LIGHTBOX **/
+.lightBoxIngreso{
+	position: absolute;
+	font-size:12px;
+	background: #FFFFFF;
+	z-index: 9000;
+	color:#000000;
+	display:none;
+	border: 1px solid #000000;
+	width:528px;
+	padding:10px;	
+	top:25%;
+	left:25%;
+}.lightBoxIngreso h3{
+	font-size:15px;
+}.lightBoxIngreso .mensaje{
+	margin:10px 0;
+	text-align:center;
+	background: url(../../img/servicioTecnico/bg-caja-imei.png) top left no-repeat;
+	padding-left:10px;
+	height:67px;
+}.lightBoxIngreso .mensaje p{
+	background: url(../../img/servicioTecnico/bg-caja-imei.png) top right no-repeat;
+	padding-right:10px;
+	padding-top:20px;
+	height:67px;
+}.lightBoxIngreso .mensajeGrande{
+	background:#EEF4FA;
+	padding:15px;
+}.lightBoxIngreso .botones{
+	font-size:12px;
+	float: right;
+}.lightBoxIngreso .botones.margenIzquierdo{
+	margin-left:400px;
+	margin-top:10px;
+}.lightBoxIngreso .botones .enlaceSencillo{
+	text-decoration:underline;
+	float:left;
+	padding-top:7px;
+}.lightBoxIngreso .botones a.enlaceSencillo:hover{
+	color:#064687;
+}.lightBoxIngreso .opciones{
+	margin:10px 0;
+}.lightBoxIngreso .opciones p{
+	margin:5px 0;
+}.lightBoxIngreso .opciones input{
+	float:left;
+}.lightBoxIngreso .opciones label{
+	padding-left:5px;
+}
+
+.cargando{	
+	display:none;
+	background: url(../../img/servicioTecnico/loading.gif) top right no-repeat;
+	width:16px;
+	height: 11px;
+	margin-left: 260px;
+    margin-top: 3px;
+}
+
+.cargandoSucursales{
+	display:none;
+	background: url(../../img/servicioTecnico/loading.gif) top right no-repeat;
+	width: 16px;
+	height: 11px;
+	padding: 19px;	
+	margin: 5px auto 5px 220px;	
+}
+
+.cargandoConfirmacionPreOT{
+	display:none;
+	background: url(../../img/servicioTecnico/loading.gif) top right no-repeat;
+	width: 16px;
+	height: 11px;
+	padding: 19px;	
+	margin: 5px auto 5px 220px;	
+}
+
+.servicioTecnicoEnlace{
+	position:absolute;
+	top:5px;
+	right:0px;
+	color:#3A3A3A;
+	cursor: pointer;
+	text-decoration: underline;
+	font-size:14px;
+}
+
+.ayudaImeiIngresotexto{
+	display:block;
+	float:left;
+	width:100px;
+	margin-right:7px;
+}.ayudaImeiIngresoimagenImei{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	background: url(../../img/servicioTecnico/imei-number.jpg) top left no-repeat;
+}
+
+.TB_overlayBGIngreso {	
+	position: absolute;	
+	z-index:5002;	
+	top: 0px;	
+	left: 0px;	
+	height:100%;	
+	width:100%;
+	background: black;
+	opacity:0.8;
+    filter: alpha(opacity = 80);
+}
+
+.resultadoSucursalesIngreso{
+	margin-bottom: 100px;
+}
+
+.fancybox-overlay-ie-serviciotecnico {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: black;
+	opacity:0.8;
+    filter: alpha(opacity = 80);
+}
+*html .fancybox-overlay-ie-serviciotecnico {
+	position: absolute !important;
+	height:6000px;
+	width:150%;
+}
+
+
+
+
+

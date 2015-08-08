@@ -1,0 +1,259 @@
+div.lista-bolsas .fila {
+    font-size: 1.1em;
+}
+
+div.lista-bolsas ul.descripcion {	
+    display: none;
+    font-size: 11px;
+    padding: 0 4px 8px;
+}
+
+div.lista-bolsas .fila.paso2, div.lista-bolsas .fila.paso3, div.lista-bolsas .fila.paso4 {
+    display: none;
+}
+
+div.lista-bolsas .fila.paso1 ul li {
+    font-size: 11px;
+}
+
+div.lista-bolsas .fila ul li, .bolsas-compradas .fila div ul li {
+    list-style: disc inside none;
+}
+
+div.lista-bolsas .fila a.cancelar {
+    color: #000000;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+div.lista-bolsas .fila a.cancelar:hover {
+    text-decoration: none;
+}
+
+div.lista-bolsas .fila a.underline {
+    color: #3a3a3a;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+div.lista-bolsas .fila a.underline:hover {
+	color: #577DA5;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+div.lista-bolsas .fila a.cancelar:hover {
+    text-decoration: underline;
+    display: inline-block;
+}
+
+div.lista-bolsas .fila .contratar.boton {
+    margin-left: 160px;
+}
+
+div.lista-bolsas .fila .contratar .contratarBolsa span {
+    padding-left: 20px;
+    padding-right: 12px;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+
+.fila.paso2, .fila.paso3, .fila.paso4 {
+    background: none repeat scroll 0 0 #FFF1A8;
+    border-bottom: 1px solid #CFC489 !important;
+    border-top: 1px solid #CFC489 !important;
+    padding-left: 15px !important;
+}
+.recomienda-nombre {
+	margin-top: 6px;
+}
+.titulo-recomendamos {
+	padding: 0px !important;
+	font-weight: bold;
+}
+.fila.paso2 .metodoPago, .fila.paso3 .metodoPago {
+    display: block;
+    float: left;
+    width: 435px;
+}
+
+.fila.paso2 .botones, .fila.paso3 .botones {
+    display: block;
+    float: left;
+    width: 60px;
+}
+
+.fila.paso2 .metodoPago .continuarBolsa, .fila.paso3 .metodoPago .confirmarBolsa {
+    margin: 10px 0;
+}
+
+.fila.paso2 .metodoPago fieldset {
+    margin: 5px 0;
+}
+
+.fila.paso2 .metodoPago fieldset input {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.bolsas-compradas .fila div {
+    float: left;
+    font-size: 1.2em;
+    padding: 12px 0 12px 10px;
+}
+
+.bolsas-compradas .fila.par {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.bolsas-compradas .fila.impar {
+    background: none repeat scroll 0 0 #EEF4FA;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+}
+
+.bolsas-compradas .fila div.bolsa {
+    cursor: pointer;
+    width: 176px;
+}
+
+.bolsas-compradas .fila div.bolsa:hover {
+    text-decoration: underline;
+}
+
+.bolsas-compradas .fila div.saldo {
+    width: 93px;
+    text-align: center;
+}
+
+.bolsas-compradas .fila div.valor {
+    width: 72px;
+}
+
+.bolsas-compradas .fila div.activacion {
+    width: 122px;
+    text-align: center;
+}
+
+.bolsas-compradas .fila div.expiracion {
+    width: 122px;
+    text-align: center;
+}
+
+.bolsas-compradas .fila div.listado {
+    display: none;
+    font-size: 11px;
+    padding: 0 0 10px 12px;
+    width: 100%;
+    list-style: disc inside none;
+}
+
+div.mensajeSaldoComprarBolsaPrepago {
+    color: #3A3A3A;
+    font-size: 13px;
+    text-align: right;
+    width: 260px;
+}
+
+div#menu-desplegable div.fila div.nombre {
+    cursor: pointer;
+    float: left;
+    padding: 0 0 0 4px;
+    width: 150px;
+}
+
+TABLE.tabla-azul-ccpp
+{
+	width: 557px;
+	background: url(../../img/dashboard/dashboardTablaBgCCPP.gif) no-repeat;
+	margin-top: 20px;
+	/*border-collapse: collapse;*/
+}
+
+TABLE.tabla-azul-ccpp THEAD TH
+{
+	font-size: 1.2em;
+	padding: 13px 0 13px 10px;
+	border-right: 1px solid #CDDAE7;
+	color: #3A3A3A;
+}
+
+TABLE.tabla-azul-ccpp TR.cabecera TH
+{
+	padding: 13px 0 13px 10px;
+	border-right: 1px solid #CDDAE7;
+	color: #3A3A3A;
+}
+
+TABLE.tabla-azul-ccpp TBODY
+{
+	font-size: 1.2em;
+	color: #3A3A3A;
+}
+
+TABLE.tabla-azul-ccpp TBODY TR TD
+{
+	padding: 11px 8px 11px 10px;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+TABLE.tabla-azul-ccpp TBODY TR.par TD
+{
+	background: #EEF4FA;
+	border-top: 1px solid #E3E3E3;
+	border-bottom: 1px solid #E3E3E3;
+	padding: 8px 0 8px 10px;
+}
+
+TABLE.tabla-azul-ccpp TBODY TR.impar TD
+{
+	padding: 11px 0 11px 10px;
+}
+
+TABLE.tabla-azul-ccpp TBODY TR.desactivar
+{
+	background: #FFF1A8;
+}
+
+TABLE.tabla-azul-ccpp TBODY TR.desactivar TD
+{
+	padding: 8px 0 8px 10px;
+}
+
+TABLE.tabla-azul-ccpp TBODY TR.pendiente TD
+{
+	background: #FFF1A8;
+	padding: 15px 0 15px 10px;
+	border-right: 1px solid #D9EFD8;
+}
+
+TABLE.tabla-azul-ccpp A.cancelar, TABLE.tabla-azul-ccpp A.cancelar:hover, TABLE.tabla-azul-ccpp A.cancelar:visited
+{
+	margin: 0 0 0 10px;
+	padding: 5px 0 0;
+	position: relative;
+	top: 7px;
+	color: #000000;
+	font-weight: bolder;
+}
+
+div.lista-bolsas.ccpp {
+    padding: 0;
+    width: auto;
+}

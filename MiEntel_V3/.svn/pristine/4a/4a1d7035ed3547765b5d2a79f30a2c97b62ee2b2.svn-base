@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/ZonaPuntosEntel/Proxies/ConsultaCartolaPuntosAnualPS?WSDL
+#wsdl=http://esbdesa.entel.cl/ZonaPuntosEntel/Proxies/ConsultaCartolaPuntosAnualPS?WSDL
+targetnamespace=http://entel.src.cl/ConsultaCartolaPuntosAnual
+servicename=ConsultaCartolaPuntosAnual
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

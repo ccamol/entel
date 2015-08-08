@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/billing/balance" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/billing/balance" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/billing/balance" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/billing/balance" xmlns:types="http://www.epcs.com/billing/balance/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/billing/balance/types" schemaLocation="http://10.10.20.83:7001/BILLING/GestionDeBalances/Proxies/BillingBalanceService?SCHEMA%2FBILLING%2FGestionDeBalances%2FServicios%2FBillingBalanceServiceXSD"/>
+      <!-- CONSULTAR ESTADO DE CUENTA -->
+      <xsd:element name="ConsultarEstadoCuentaMPTDocument" type="types:ConsultarEstadoCuentaMPTType"/>
+      <xsd:element name="ResultadoConsultarEstadoCuentaMPTDocument" type="types:ResultadoConsultarEstadoCuentaMPTType"/>
+      <!-- FIN CONSULTAR ESTADO DE CUENTA -->
+      <xsd:element name="ConsultarResumenFacturacionDocument" type="types:ConsultarResumenFacturacionType"/>
+
+      <xsd:element name="ResultadoConsultarResumenFacturacionDocument" type="types:ResultadoConsultarResumenFacturacionType"/>
+      <!-- FacturacionSSCC  -->
+      <xsd:element name="ConsultarFacturacionSSCCDocument" type="types:ConsultarFacturacionSSCCType"/>
+      <xsd:element name="ResultadoConsultarFacturacionSSCCDocument" type="types:ResultadoConsultarFacturacionSSCCType"/>
+      <!-- FIN FacturacionSSCC  -->
+      <!-- EstadoFactura  -->
+      <xsd:element name="ConsultarEstadoFacturaDocument" type="types:ConsultarEstadoFacturaType"/>
+      <xsd:element name="ResultadoConsultarEstadoFacturaDocument" type="types:ResultadoConsultarEstadoFacturaType"/>
+      <!-- FIN FacturacionSSCC  -->
+
+      <!-- FacturacionFull  -->
+      <xsd:element name="ConsultarFacturacionFullDocument" type="types:ConsultarFacturacionFullType"/>
+      <xsd:element name="ResultadoConsultarFacturacionFullDocument" type="types:ResultadoConsultarFacturacionFullType"/>
+      <!-- FIN FacturacionSSCC  -->
+      <!-- DetalleFacturacion  -->
+      <xsd:element name="ConsultarDetalleFacturaDocument" type="types:ConsultarDetalleFacturaType"/>
+      <xsd:element name="ResultadoConsultarDetalleFacturaDocument" type="types:ResultadoConsultarDetalleFacturaType"/>
+      <!-- FIN DetalleFacturacion  -->
+      <!-- INICIO ConsultarFacturasImpagas -->
+
+      <xsd:element name="ConsultarFacturasImpagasDocument" type="types:ConsultarFacturasImpagasType"/>
+      <xsd:element name="ResultadoConsultarFacturasImpagasDocument" type="types:ResultadoConsultarFacturasImpagasType"/>
+      <!-- FIN ConsultarFacturasImpagas -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultarEstadoCuentaMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEstadoCuentaMPTDocument" name="ConsultarEstadoCuentaMPT"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ResultadoConsultarEstadoCuentaMPTMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEstadoCuentaMPTDocument" name="ResultadoConsultarEstadoCuentaMPT"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarResumenFacturacionMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarResumenFacturacionDocument" name="ConsultarResumenFacturacion"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarResumenFacturacionMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarResumenFacturacionDocument" name="ResultadoConsultarResumenFacturacion"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ConsultarFacturacionSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarFacturacionSSCCDocument" name="ConsultarFacturacionSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarFacturacionSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarFacturacionSSCCDocument" name="ResultadoConsultarFacturacionSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarEstadoFacturaMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarEstadoFacturaDocument" name="ConsultarEstadoFactura"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ResultadoConsultarEstadoFacturaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarEstadoFacturaDocument" name="ResultadoConsultarEstadoFactura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarFacturacionFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarFacturacionFullDocument" name="ConsultarFacturacionFull"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarFacturacionFullMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarFacturacionFullDocument" name="ResultadoConsultarFacturacionFull"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ConsultarDetalleFacturaMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDetalleFacturaDocument" name="ConsultarDetalleFactura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDetalleFacturaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDetalleFacturaDocument" name="ResultadoConsultarDetalleFactura"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarFacturasImpagasMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarFacturasImpagasDocument" name="ConsultarFacturasImpagas"/>
+  </WL5G3N0:message>
+
+  <WL5G3N0:message name="ResultadoConsultarFacturasImpagasMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarFacturasImpagasDocument" name="ResultadoConsultarFacturasImpagas"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BillingBalanceService">
+    <WL5G3N0:operation name="ConsultarEstadoCuentaMPT">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEstadoCuentaMPTMessage"/>
+
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEstadoCuentaMPTMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarResumenFacturacion">
+      <WL5G3N0:input message="WL5G3N1:ConsultarResumenFacturacionMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarResumenFacturacionMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturacionSSCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarFacturacionSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarFacturacionSSCCMessage"/>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEstadoFactura">
+      <WL5G3N0:input message="WL5G3N1:ConsultarEstadoFacturaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarEstadoFacturaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturacionFull">
+      <WL5G3N0:input message="WL5G3N1:ConsultarFacturacionFullMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarFacturacionFullMessage"/>
+    </WL5G3N0:operation>
+
+    <WL5G3N0:operation name="ConsultarDetalleFactura">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDetalleFacturaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDetalleFacturaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturasImpagas">
+      <WL5G3N0:input message="WL5G3N1:ConsultarFacturasImpagasMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarFacturasImpagasMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+
+  <WL5G3N0:binding name="BillingBalanceServicePortBinding" type="WL5G3N1:BillingBalanceService">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarEstadoCuentaMPT">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarEstadoCuentaMPT"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarResumenFacturacion">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarResumenFacturacion"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturacionSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarFacturacionSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarEstadoFactura">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarEstadoFactura"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturacionFull">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarFacturacionFull"/>
+      <WL5G3N0:input>
+
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDetalleFactura">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarDetalleFactura"/>
+
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarFacturasImpagas">
+
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/balance/ConsultarFacturasImpagas"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BillingBalanceService">
+    <WL5G3N0:port binding="WL5G3N1:BillingBalanceServicePortBinding" name="BillingBalanceServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/BILLING/GestionDeBalances/Proxies/BillingBalanceService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

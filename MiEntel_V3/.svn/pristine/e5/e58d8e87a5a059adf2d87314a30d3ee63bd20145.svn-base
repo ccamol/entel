@@ -1,0 +1,103 @@
+package com.epcs.nba;
+
+import java.io.Serializable;
+
+public class NBA implements Serializable {
+	
+	private static final long serialVersionUID = 1731613428044085415L;
+	
+	private String img;
+	private String url;
+	private String oculto;
+	private String estilo;
+	private String seleccionado;
+	private String nombreOferta;
+	private String codigoOferta;
+	private String movil;
+	private String grupo;
+	private String valor;
+	private boolean ofertaBAM;
+	
+	private boolean primero=false;
+	
+	public void setImg(String img) {
+		this.img = img;
+	}
+	public String getImg() {
+		return img;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setOculto(String oculto) {
+		this.oculto = oculto;
+	}
+	public String getOculto() {
+		return oculto;
+	}
+	
+	public void setEstilo(String estilo) {
+		this.estilo = estilo;
+	}
+	public String getEstilo() {
+		return estilo;
+	}
+	public void setSeleccionado(String seleccionado) {
+		this.seleccionado = seleccionado;
+	}
+	public String getSeleccionado() {
+		return seleccionado;
+	}
+	public void setPrimero(boolean primero) {
+		this.primero = primero;
+	}
+	public boolean isPrimero() {
+		return primero;
+	}
+	public void setNombreOferta(String nombreOferta) {
+		this.nombreOferta = nombreOferta;
+	}
+	public String getNombreOferta() {
+		return nombreOferta;
+	}
+	public void setMovil(String movil) {
+		this.movil = movil;
+	}
+	public String getMovil() {
+		return movil;
+	}
+	public void setGrupo(String grupo) {
+		this.grupo = grupo;
+	}
+	public String getGrupo() {
+		return grupo;
+	}
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+	/**
+	 * @param isOfertaBAM the isOfertaBAM to set
+	 */
+	public void setOfertaBAM(boolean isOfertaBAM) {
+		this.ofertaBAM = isOfertaBAM;
+	}
+	/**
+	 * @return the isOfertaBAM
+	 */
+	public boolean isOfertaBAM() {
+		return ofertaBAM;
+	}
+	public String getValor() {
+		return valor;
+	}
+	public void setCodigoOferta(String codigoOferta) {
+		this.codigoOferta = codigoOferta;
+	}
+	public String getCodigoOferta() {
+		return codigoOferta;
+	}
+	
+}

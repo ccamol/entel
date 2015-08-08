@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: ClientePerfilService.properties lib/mientel-uup-ejb.jar lib/ClientePerfilService-client.jar
+

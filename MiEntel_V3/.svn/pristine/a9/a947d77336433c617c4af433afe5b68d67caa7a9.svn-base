@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/IShop/Suscripciones/Proxies/IShopSuscripcionesService?WSDL
+#wsdl=http://esbpre.entel.cl/IShop/Suscripciones/Proxies/IShopSuscripcionesService?WSDL
+targetnamespace=http://www.epcs.com/ishop/suscripciones
+servicename=IShopSuscripcionesService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

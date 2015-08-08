@@ -1,0 +1,48 @@
+.marginBunomedio{ margin-bottom: 15px !important;}
+.marginBdosmedio{ margin-bottom: 25px !important;}
+.marginBtresmedio{ margin-bottom: 35px !important;}
+
+.contenedorPPPlus{
+	width: 440px;
+	height: 225px;
+	margin: 0 auto;
+	padding: 32px 0 0;
+}
+.box-btn{
+	float:right;
+	margin-right: 20px;
+}
+h1.ppPlus{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 22px;
+	font-weight: bold;
+	color: #0154a0;
+}
+p.ppPlus{
+	font-family: 'Trebuchet MS', Arial;
+	font-size: 20px;
+	color: #636467;
+}
+p.ppPlus span{
+	font-weight: bold;
+}
+.btnNaranja{
+	background: #ff6702;
+	color: #FFF;
+	display: inline-block;
+	font:bold 12px "Trebuchet ms", Arial;
+	height: 23px;
+	padding: 5px 13px 0;
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+}
+.btnNaranja:hover{
+	background: #F37F42;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*div#fancy_div{
+	background: #FFF;
+}*/

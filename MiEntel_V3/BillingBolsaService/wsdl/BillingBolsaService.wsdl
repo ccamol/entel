@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/billing/bolsa" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/billing/bolsa" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/billing/bolsa" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/billing/bolsa" xmlns:types="http://www.epcs.com/billing/bolsa/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/billing/bolsa/types" schemaLocation="http://osb11g:7001/Billing/Bolsa/Proxies/BillingBolsaService?SCHEMA%2FBilling%2FBolsa%2FServicios%2FBillingBolsaServiceXSD"/>
+      <!-- INICIO ConsultarBolsasActYDisponiblesSSCCPS -->
+      <xsd:element name="ConsultarBolsasActYDisponiblesSSCCDocument" type="types:ConsultarBolsasActYDisponibleSSCCType"/>
+      <xsd:element name="ResultadoConsultarBolsasActYDisponiblesSSCCDocument" type="types:ResultadoConsultarBolsasActYDisponibleSSCCType"/>
+      <!-- INICIO  ConsultarBolsasActBBerryCCPS -->
+      <xsd:element name="ConsultarBolsasActBBerryCCDocument" type="types:ConsultarBolsasActBBerryCCType"/>
+      <xsd:element name="ResultadoConsultarBolsasActBBerryCCDocument" type="types:ResultadoConsultarBolsasActBBerryCCType"/>
+      <!-- INICIO  ContrataBolsaSSCC -->
+      <xsd:element name="ContrataBolsaSSCCDocument" type="types:ContrataBolsaSSCCType"/>
+      <xsd:element name="ResultadoContrataBolsaSSCCDocument" type="types:ResultadoContrataBolsaSSCCType"/>
+      <!-- INICIO 	ContrataBolsaBBerrySSCC  -->
+      <xsd:element name="ContrataBolsaBBerrySSCCDocument" type="types:ContrataBolsaBBerrySSCCType"/>
+      <xsd:element name="ResultadoContrataBolsaBBerrySSCCDocument" type="types:ResultadoContrataBolsaBBerrySSCCType"/>
+      <!-- INICIO ValidaCompraBolsaOneShootSSCC  -->
+      <xsd:element name="ValidaCompraBolsaOneShootSSCCDocument" type="types:ValidaCompraBolsaOneShootSSCCType"/>
+      <xsd:element name="ResultadoValidaCompraBolsaOneShootSSCCDocument" type="types:ResultadoValidaCompraBolsaOneShootSSCCType"/>
+      <!-- INICIO ConsultaBolsasDisponiblesOneShoot  -->
+      <xsd:element name="ConsultaBolsasDisponiblesOneShootDocument" type="types:ConsultaBolsasDisponiblesOneShootType"/>
+      <xsd:element name="ResultadoConsultaBolsasDisponiblesOneShootDocument" type="types:ResultadoConsultaBolsasDisponiblesOneShootType"/>
+      <!-- INICIO ComprarBolsasOneShootSSCC  -->
+      <xsd:element name="ComprarBolsasOneShootSSCCDocument" type="types:ComprarBolsasOneShootSSCCType"/>
+      <xsd:element name="ResultadoComprarBolsasOneShootSSCCDocument" type="types:ResultadoComprarBolsasOneShootSSCCType"/>
+      <!-- INICIO ValidarSimultaneidadBolsasCC  -->
+      <xsd:element name="ValidarSimultaneidadBolsasCCDocument" type="types:ValidarSimultaneidadBolsasCCType"/>
+      <xsd:element name="ResultadoValidarSimultaneidadBolsasCCDocument" type="types:ResultadoValidarSimultaneidadBolsasCCType"/>
+      <!-- INICIO ObtenerBolsasRegaladasSS  -->
+      <xsd:element name="ObtenerBolsasRegaladasSSDocument" type="types:ObtenerBolsasRegaladasSSType"/>
+      <xsd:element name="ResultadoObtenerBolsasRegaladasSSDocument" type="types:ResultadoObtenerBolsasRegaladasSSType"/>
+      <!-- INICIO ObtenerBolsasOneShoot  -->
+      <xsd:element name="ObtenerBolsasOneShootDocument" type="types:ObtenerBolsasOneShootType"/>
+      <xsd:element name="ResultadoObtenerBolsasOneShootDocument" type="types:ResultadoObtenerBolsasOneShootType"/>
+      <!-- INICIO ComprarBolsasOnShootPP  -->
+      <xsd:element name="ComprarBolsasOnShootPPDocument" type="types:ComprarBolsasOnShootPPType"/>
+      <xsd:element name="ResultadoComprarBolsasOnShootPPDocument" type="types:ResultadoComprarBolsasOnShootPPType"/>
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultarBolsasActYDisponiblesSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarBolsasActYDisponiblesSSCCDocument" name="ConsultarBolsasActYDisponiblesSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarBolsasActYDisponiblesSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarBolsasActYDisponiblesSSCCDocument" name="ResultadoConsultarBolsasActYDisponiblesSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarBolsasActBBerryCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarBolsasActBBerryCCDocument" name="ConsultarBolsasActBBerryCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarBolsasActBBerryCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarBolsasActBBerryCCDocument" name="ResultadoConsultarBolsasActBBerryCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ContrataBolsaSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ContrataBolsaSSCCDocument" name="ContrataBolsaSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoContrataBolsaSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoContrataBolsaSSCCDocument" name="ResultadoContrataBolsaSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ContrataBolsaBBerrySSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ContrataBolsaBBerrySSCCDocument" name="ContrataBolsaBBerrySSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoContrataBolsaBBerrySSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoContrataBolsaBBerrySSCCDocument" name="ResultadoContrataBolsaBBerrySSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidaCompraBolsaOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidaCompraBolsaOneShootSSCCDocument" name="ValidaCompraBolsaOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidaCompraBolsaOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidaCompraBolsaOneShootSSCCDocument" name="ResultadoValidaCompraBolsaOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaBolsasDisponiblesOneShootMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaBolsasDisponiblesOneShootDocument" name="ConsultaBolsasDisponiblesOneShoot"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultaBolsasDisponiblesOneShootMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultaBolsasDisponiblesOneShootDocument" name="ResultadoConsultaBolsasDisponiblesOneShoot"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ComprarBolsasOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ComprarBolsasOneShootSSCCDocument" name="ComprarBolsasOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoComprarBolsasOneShootSSCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoComprarBolsasOneShootSSCCDocument" name="ResultadoComprarBolsasOneShootSSCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarSimultaneidadBolsasCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarSimultaneidadBolsasCCDocument" name="ValidarSimultaneidadBolsasCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarSimultaneidadBolsasCCMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarSimultaneidadBolsasCCDocument" name="ResultadoValidarSimultaneidadBolsasCC"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerBolsasRegaladasSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerBolsasRegaladasSSDocument" name="ObtenerBolsasRegaladasSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerBolsasRegaladasSSMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerBolsasRegaladasSSDocument" name="ResultadoObtenerBolsasRegaladasSS"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ObtenerBolsasOneShootMessage">
+    <WL5G3N0:part element="WL5G3N1:ObtenerBolsasOneShootDocument" name="ObtenerBolsasOneShoot"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoObtenerBolsasOneShootMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoObtenerBolsasOneShootDocument" name="ResultadoObtenerBolsasOneShoot"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ComprarBolsasOnShootPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ComprarBolsasOnShootPPDocument" name="ComprarBolsasOnShootPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoComprarBolsasOnShootPPMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoComprarBolsasOnShootPPDocument" name="ResultadoComprarBolsasOnShootPP"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BillingBolsaService">
+    <WL5G3N0:operation name="ConsultarBolsasActYDisponiblesSSCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarBolsasActYDisponiblesSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarBolsasActYDisponiblesSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBolsasActBBerryCC">
+      <WL5G3N0:input message="WL5G3N1:ConsultarBolsasActBBerryCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarBolsasActBBerryCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaSSCC">
+      <WL5G3N0:input message="WL5G3N1:ContrataBolsaSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoContrataBolsaSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaBBerrySSCC">
+      <WL5G3N0:input message="WL5G3N1:ContrataBolsaBBerrySSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoContrataBolsaBBerrySSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidaCompraBolsaOneShootSSCC">
+      <WL5G3N0:input message="WL5G3N1:ValidaCompraBolsaOneShootSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidaCompraBolsaOneShootSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultaBolsasDisponiblesOneShoot">
+      <WL5G3N0:input message="WL5G3N1:ConsultaBolsasDisponiblesOneShootMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultaBolsasDisponiblesOneShootMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOneShootSSCC">
+      <WL5G3N0:input message="WL5G3N1:ComprarBolsasOneShootSSCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoComprarBolsasOneShootSSCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarSimultaneidadBolsasCC">
+      <WL5G3N0:input message="WL5G3N1:ValidarSimultaneidadBolsasCCMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarSimultaneidadBolsasCCMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasRegaladasSS">
+      <WL5G3N0:input message="WL5G3N1:ObtenerBolsasRegaladasSSMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerBolsasRegaladasSSMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasOneShoot">
+      <WL5G3N0:input message="WL5G3N1:ObtenerBolsasOneShootMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoObtenerBolsasOneShootMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOnShootPP">
+      <WL5G3N0:input message="WL5G3N1:ComprarBolsasOnShootPPMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoComprarBolsasOnShootPPMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BillingBolsaServicePortBinding" type="WL5G3N1:BillingBolsaService">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarBolsasActYDisponiblesSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ConsultarBolsasActYDisponiblesSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarBolsasActBBerryCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ConsultarBolsasActBBerryCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ContrataBolsaSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ContrataBolsaBBerrySSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ContrataBolsaBBerrySSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidaCompraBolsaOneShootSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ValidaCompraBolsaOneShootSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultaBolsasDisponiblesOneShoot">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ConsultaBolsasDisponiblesOneShoot"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOneShootSSCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ComprarBolsasOneShootSSCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarSimultaneidadBolsasCC">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ValidarSimultaneidadBolsasCC"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasRegaladasSS">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ObtenerBolsasRegaladasSS"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ObtenerBolsasOneShoot">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ObtenerBolsasOneShoot"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ComprarBolsasOnShootPP">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/bolsa/ComprarBolsasOnShootPP"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BillingBolsaService">
+    <WL5G3N0:port binding="WL5G3N1:BillingBolsaServicePortBinding" name="BillingBolsaServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/Billing/Bolsa/Proxies/BillingBolsaService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

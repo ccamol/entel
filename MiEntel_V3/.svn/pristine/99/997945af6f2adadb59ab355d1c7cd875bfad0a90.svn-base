@@ -1,0 +1,35 @@
+/*
+ * Estilos para la promocion "Descubre tu Promocion"
+ */
+
+h2.titulo_promo {
+	border-bottom: 2px solid #cddae7;
+    color: #064687;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    margin: 20px 0 7px !important;
+    padding: 5px 0 5px 25px !important;
+	background: url("../../img/icons/promo/ico_descubre_promo.gif") left 3px no-repeat;
+}
+span.bajada_tabla {
+	display: block;
+	padding: 5px 0 0 0;
+	color: #9c9c9c;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+.banner_promo {
+	display: block;
+	margin: 0 0 20px 0;
+}
+
+/*
+ * Estilos para tabla
+ */
+table.tabla_promo{
+	margin:0 0 40px 0;	
+}
+table.tabla_promo,
+table.tabla_promo th {
+	text-align: center;
+}

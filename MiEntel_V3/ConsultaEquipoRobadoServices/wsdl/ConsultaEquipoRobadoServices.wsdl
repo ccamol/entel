@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/erp/legal/consultaEquiposRobados" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/erp/legal/consultaEquiposRobados" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.epcs.com/erp/legal/consultaEquiposRobados" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/erp/legal/consultaEquiposRobados" xmlns:types="http://www.epcs.com/erp/legal/consultaEquiposRobados/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/erp/legal/consultaEquiposRobados/types" schemaLocation="http://esb.entel.cl:80/ser/ConsultaEquipoRobadoServices?SCHEMA%2FSER%2FWSDL%2FXMLSchema_1189702644"/>
+      <xsd:element name="ConsultaEquipoRobadoRequestDocument" type="types:ConsultaEquipoRobadoRequestDocumentType"/>
+      <xsd:element name="ConsultaEquipoRobadoResponseDocument" type="types:ConsultaEquipoRobadoResponseDocumentType"/>
+      <xsd:element name="ConsultaEquipoRobadoFaultDocument" type="types:ConsultaEquipoRobadoFaultType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="ConsultaEquipoRobadoRequestMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaEquipoRobadoRequestDocument" name="ConsultaEquipoRobadoRequest"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaEquipoRobadoResponseMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaEquipoRobadoResponseDocument" name="ConsultaEquipoRobadoResponse"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultaEquipoRobadoFaultMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultaEquipoRobadoFaultDocument" name="ConsultaEquipoRobadoFault"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ConsultaEquipoRobadoPortType">
+    <WL5G3N0:operation name="ConsultaEquipoRobadoPortType">
+      <WL5G3N0:input message="WL5G3N1:ConsultaEquipoRobadoRequestMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ConsultaEquipoRobadoResponseMessage"/>
+      <WL5G3N0:fault message="WL5G3N1:ConsultaEquipoRobadoFaultMessage" name="Fault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ConsultaEquipoRobadoPortBinding" type="WL5G3N1:ConsultaEquipoRobadoPortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultaEquipoRobadoPortType">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/consultaEquiposRobados" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body parts="ConsultaEquipoRobadoRequest" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body parts="ConsultaEquipoRobadoResponse" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N2:fault name="Fault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ConsultaEquipoRobadoServices">
+    <WL5G3N0:port binding="WL5G3N1:ConsultaEquipoRobadoPortBinding" name="ConsultaEquipoRobadoServices">
+      <WL5G3N2:address location="http://esb.entel.cl:80/ser/ConsultaEquipoRobadoServices"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

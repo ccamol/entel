@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="BillingRecargaService" targetNamespace="http://www.epcs.com/billing/recarga" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/billing/recarga" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/billing/recarga" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/billing/recarga" xmlns:types="http://www.epcs.com/billing/recarga/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/billing/recarga/types" schemaLocation="http://10.10.20.83:7001/BILLING/Recarga/Proxies/BillingRecargaService?SCHEMA%2FBILLING%2FRecarga%2FServicios%2FBillingRecargaServiceXSD"/>
+      <!-- DOCUMENT FACTIBILIDAD RECARGA MULTITIENDA -->
+      <xsd:element name="FactibilidadRecargaMultitiendaDocument" type="types:FactibilidadRecargaMultitiendaType"/>
+      <xsd:element name="ResultadoFactibilidadRecargaMultitiendaDocument" type="types:ResultadoFactibilidadRecargaMultitiendaType"/>
+      <!-- Entel Ticket -->
+      <xsd:element name="FactibilidadRecargaTicketDocument" type="types:FactibilidadRecargaTicketType"/>
+
+      <xsd:element name="ResultadoFactibilidadRecargaTicketDocument" type="types:ResultadoFactibilidadRecargaTicketType"/>
+      <!-- WebPay -->
+      <xsd:element name="FactibilidadWebPayDocument" type="types:FactibilidadWebPayType"/>
+      <xsd:element name="ResultadoFactibilidadWebPayDocument" type="types:ResultadoFactibilidadWebPayType"/>
+      <xsd:element name="RecargaWebPayDocument" type="types:RecargaWebPayType"/>
+      <xsd:element name="ResultadoRecargaWebPayDocument" type="types:ResultadoRecargaWebPayType"/>
+      <!--  MQ Web Pay -->
+      <xsd:element name="InsertarRegistroRecWebPayDocument" type="types:InsertarRegistroRecWebPayType"/>
+      <xsd:element name="ResultadoInsertarRegistroRecWebPayDocument" type="types:ResultadoInsertarRegistroRecWebPayType"/>
+
+      <xsd:element name="ConsultarRegistroRecWebPayDocument" type="types:ConsultarRegistroRecWebPayType"/>
+      <xsd:element name="ResultadoConsultarRegistroRecWebPayDocument" type="types:ResultadoConsultarRegistroRecWebPayType"/>
+      <xsd:element name="ActualizarRegistroRecWebPayDocument" type="types:ActualizarRegistroRecWebPayType"/>
+      <xsd:element name="ResultadoActualizarRegistroRecWebPayDocument" type="types:ResultadoActualizarRegistroRecWebPayType"/>
+      <!-- HISTORICO RECARGAS -->
+      <xsd:element name="ConsultarHistoricoRecargasDocument" type="types:ConsultarHistoricoRecargasType"/>
+      <xsd:element name="ResultadoConsultarHistoricoRecargasDocument" type="types:ResultadoConsultarHistoricoRecargasType"/>
+      <!-- DOCUMENT AUTH HEADER -->
+      <xsd:element name="AuthHeaderDocument" type="types:AuthType"/>
+
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="FactibilidadRecargaMultitiendaMessage">
+    <WL5G3N0:part element="WL5G3N1:FactibilidadRecargaMultitiendaDocument" name="FactibilidadRecargaMultitienda"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoFactibilidadRecargaMultitiendaMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoFactibilidadRecargaMultitiendaDocument" name="ResultadoFactibilidadRecargaMultitienda"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="FactibilidadRecargaTicketMessage">
+
+    <WL5G3N0:part element="WL5G3N1:FactibilidadRecargaTicketDocument" name="FactibilidadRecargaTicket"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoFactibilidadRecargaTicketMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoFactibilidadRecargaTicketDocument" name="ResultadoFactibilidadRecargaTicket"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="FactibilidadWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:FactibilidadWebPayDocument" name="FactibilidadWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoFactibilidadWebPayMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoFactibilidadWebPayDocument" name="ResultadoFactibilidadWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="RecargaWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:RecargaWebPayDocument" name="RecargaWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoRecargaWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoRecargaWebPayDocument" name="ResultadoRecargaWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="InsertarRegistroRecWebPayMessage">
+
+    <WL5G3N0:part element="WL5G3N1:InsertarRegistroRecWebPayDocument" name="InsertarRegistroRecWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoInsertarRegistroRecWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoInsertarRegistroRecWebPayDocument" name="ResultadoInsertarRegistroRecWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarRegistroRecWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarRegistroRecWebPayDocument" name="ConsultarRegistroRecWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarRegistroRecWebPayMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarRegistroRecWebPayDocument" name="ResultadoConsultarRegistroRecWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarRegistroRecWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarRegistroRecWebPayDocument" name="ActualizarRegistroRecWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoActualizarRegistroRecWebPayMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoActualizarRegistroRecWebPayDocument" name="ResultadoActualizarRegistroRecWebPay"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarHistoricoRecargasMessage">
+
+    <WL5G3N0:part element="WL5G3N1:ConsultarHistoricoRecargasDocument" name="ConsultarHistoricoRecargas"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarHistoricoRecargasMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarHistoricoRecargasDocument" name="ResultadoConsultarHistoricoRecargas"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BillingRecargaServicePortType">
+
+    <WL5G3N0:operation name="FactibilidadRecargaMultitienda">
+      <WL5G3N0:input message="WL5G3N1:FactibilidadRecargaMultitiendaMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoFactibilidadRecargaMultitiendaMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="FactibilidadRecargaTicket">
+      <WL5G3N0:input message="WL5G3N1:FactibilidadRecargaTicketMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoFactibilidadRecargaTicketMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="FactibilidadWebPay">
+
+      <WL5G3N0:input message="WL5G3N1:FactibilidadWebPayMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoFactibilidadWebPayMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RecargaWebPay">
+      <WL5G3N0:input message="WL5G3N1:RecargaWebPayMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoRecargaWebPayMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="InsertarRegistroRecWebPay">
+      <WL5G3N0:input message="WL5G3N1:InsertarRegistroRecWebPayMessage"/>
+
+      <WL5G3N0:output message="WL5G3N1:ResultadoInsertarRegistroRecWebPayMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarRegistroRecWebPay">
+      <WL5G3N0:input message="WL5G3N1:ConsultarRegistroRecWebPayMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarRegistroRecWebPayMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarRegistroRecWebPay">
+      <WL5G3N0:input message="WL5G3N1:ActualizarRegistroRecWebPayMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoActualizarRegistroRecWebPayMessage"/>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarHistoricoRecargas">
+      <WL5G3N0:input message="WL5G3N1:ConsultarHistoricoRecargasMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarHistoricoRecargasMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BillingRecargaServiceBinding" type="WL5G3N1:BillingRecargaServicePortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="FactibilidadRecargaMultitienda">
+
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/FactibilidadRecargaMultitienda"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+
+    <WL5G3N0:operation name="FactibilidadRecargaTicket">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/FactibilidadRecargaTicket"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="FactibilidadWebPay">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/FactibilidadWebPay"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RecargaWebPay">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/RecargaWebPay"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="InsertarRegistroRecWebPay">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/InsetarRegistroRecWebPay"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarRegistroRecWebPay">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/ConsultarRegistroRecWebPay"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarRegistroRecWebPay">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/ActualizarRegistroRecWebPay"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarHistoricoRecargas">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/billing/recarga/ConsultarHistoricoRecargas"/>
+      <WL5G3N0:input>
+
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BillingRecargaService">
+
+    <WL5G3N0:port binding="WL5G3N1:BillingRecargaServiceBinding" name="BillingRecargaServicePort">
+      <WL5G3N2:address location="http://OSB11G:7001/BILLING/Recarga/Proxies/BillingRecargaService"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

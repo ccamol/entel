@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/INTELIGENCIANEGOCIOS/SatisfaccionCliente/Proxies/SatisfaccionClienteService?WSDL
+targetnamespace=http://www.epcs.com/inteligencianegocios/satisfaccioncliente
+servicename=SatisfaccionClienteService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

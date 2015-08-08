@@ -1,0 +1,8 @@
+wsdl=http://esb.entel.cl/IShop/Agendamiento/Proxies/IShopAgendamientoService?WSDL
+targetnamespace=http://www.epcs.com/ishop/agendamiento
+servicename=IShopAgendamientoService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

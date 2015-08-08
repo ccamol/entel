@@ -1,0 +1,415 @@
+ 
+
+/*///////////////////////////////////*/
+/*
+Hoja de estilos Entel fidelizacion Fase 1 version 1.0.1
+Desarrollado por Webforms
+
+*/
+/*///////////////////////////////////*/
+
+
+#container_migracion{
+   display: block;
+   width:660px;
+   height: 600px;
+   background-image: url(../../img/migraciones/banner_home.jpg);
+   background-repeat: no-repeat;
+   background-position: top left;
+   background-color:#fff;
+	position: absolute;
+   top:16px;
+   right: 16px;
+}
+
+*+html #container_migracion{
+   display: block;
+   width:660px;
+   height: 700px;
+   background-image: url(../../img/migraciones/banner_home.jpg);
+   background-repeat: no-repeat;
+   background-position: top left;
+   background-color:#fff;
+	position: absolute;
+   top:16px;
+   right: 16px;
+}
+   
+.cerrar_LB_migracion{
+	display: block;
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	z-index: 10000;
+	top:-16px;
+	right:-16px;
+	cursor: pointer;
+}
+
+.header_migracion{
+	display: block;
+	width:622px;
+	height:130px;
+	margin:0 auto;
+	text-align: left;
+}
+
+
+.header_migracion .top_migracion{
+	display:inline-block;
+	float: left;
+	width: auto;
+	height: 30px;
+	margin:15px 0 0 0;
+}
+
+.header_migracion .top_migracion p{
+	font-family: Arial, Helvetica, sans-serif;
+   font-size: 23px;
+   color: #FFFFFF;
+   margin: 0;
+   font-weight: bold;
+}
+
+
+
+.header_migracion .lin2_migracion{
+	clear: both;
+	display:block;
+	width: auto;
+	margin:0 auto 0 auto;
+	position:relative;
+}
+
+.lin2_migracion p{
+	display: block;
+	width:auto;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFF;
+}
+
+
+.lista_migracion{
+	clear: both;
+	display:block;
+	margin:0 auto 0 auto;
+	position:relative;
+}
+
+.lista_migracion p{
+	margin:10px 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	font-size:12px;
+}
+
+.lista_migracion img{
+ vertical-align: middle;
+ margin-right: 3px;
+}
+
+
+
+.paso_migracion{
+	clear: both;
+	/* width: 615px; */
+	display:block;
+	margin:0 auto 0 auto;
+	position:relative;	
+	text-align: left;
+}
+
+.paso_migracion p{
+	margin:10px 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0774af;
+	font-size:18x;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.paso_migracion_pasos{
+	margin:10px 10px 10px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0774af;
+	font-size:18x;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+
+
+.paso_migracion img{
+ vertical-align: middle;
+ margin-right: 3px;
+}
+
+
+.planes_migracion{
+	clear: both;
+    width: 720px;
+	height: 190px;
+	display:block;
+	margin:10px 10px 10px 0px;
+	position:relative;	
+	text-align: left;
+	padding-left:5px;
+}
+
+.cuadro_plan_migracion{
+	display: inline-block;
+	width: 225px;
+	height: 190px;
+	float: left;
+}
+
+.plan_uno_migracion{
+	/*background-image: url(../../img/migraciones/cuadro1.jpg);*/
+	border-color: #f0f0f0;
+	border-width: 2px; 
+	border-style: ridge;
+	width: 240px;
+}
+
+.plan_dos_migracion{
+	/*background-image: url(../../img/migraciones/cuadro2.jpg);*/
+	/*float:right;*/
+	border-color: #f0f0f0;
+	border-width: 2px; 
+	border-style: ridge;
+}
+
+.plan_tres_migracion{
+	border-color: #f0f0f0;
+	border-width: 2px; 
+	border-style: ridge;
+}
+
+.planes_migracion h1{
+   display: block;
+   width: 250px;
+   margin: 20px auto 5px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size:16px;
+}
+
+.planes_migracion p{
+   display: block;
+   width: 215px;
+   font-style: normal;
+   margin: 18px auto 12px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size:12px;
+}
+
+
+.lista-planes_migracion{
+	display: block;
+    width: 190px;
+	margin: 10px auto 5px 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3a3a3a;
+	font-size:12px;
+}
+
+.lista-planes_migracion img{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+
+.ver-detalles_migracion {
+    display: block;
+    width: 225px;
+   	margin: 10px auto 12px 8px;
+}
+
+
+.ver-detalles_migracion a {
+    color: #3a3a3a;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 5px;
+    margin-left: 2px;
+}
+
+.ver-detalles_migracion a:hover{
+    color: #577DA5;
+}
+
+
+.ver-detalles_migracion img {
+    padding: 0 0 0 2px;
+}
+
+
+.cuadro-checks_migracion{
+	display: block;
+	width: 610px;
+	height: 64px;
+	/* margin: 0 auto 5px auto; */
+	background-image: url(../../img/migraciones/cuadro_checks.png);
+}
+
+.li-check_migracion{
+	display: inline-block;
+   width: 290px;
+   text-align: left;
+
+}
+
+.li-uno_migracion{
+	float: left;
+	
+}
+.li-dos_migracion{
+	float: right;
+
+}
+
+.checks_migracion{
+	 display: block;
+    width:200px;
+	 margin: 10px auto 5px auto;
+	 font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+	 font-size:12px;
+}
+
+.checks_migracion img{
+ vertical-align: middle;
+ margin-right: 3px;
+}
+
+
+.paso_migracion .segunda-linea_migracion{
+	color:#3a3a3a;
+	font-weight:normal; 
+	padding-left:27px;
+}
+
+
+.borde-final_migracion{
+	/*border-bottom:1px solid;
+	border-bottom-color: silver;*/
+	width: 100%;
+	height: 20px;
+}
+
+
+.txt-pie_migracion{
+	display: inline-block;
+	float: left;
+	margin:10px 0 0 10px;
+	width: auto;
+	text-align: left;
+}
+
+.txt-pie_migracion p{
+	margin: 0;
+	  font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #000000;
+}
+
+
+
+  /*////////////// Ver t�rminos//////////////////*/
+ 
+ .ver-terminos_migracion{
+ 	 display:inline-block;
+    float: right;
+    height: 20px;
+    margin: 10px 10px 0 0;
+    text-align:right;
+    width:210px;
+ }
+ 
+  .ver-terminos_migracion a{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #3a3a3a;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 0;
+    cursor: pointer;
+ }
+ 
+ .ver-terminos_migracion a:hover{
+    color: #577DA5;
+ }
+  
+ .ver-terminos_migracion img{
+	vertical-align: bottom;
+	margin: 0 0 0 2px;
+ }
+ 
+  .terminos_migracion{
+ 	display: block;
+   width:710px;
+   height: 475px;
+   position: absolute;
+   z-index: 10000;
+   background-color: #fff;
+   top: 170px;
+   left: 0;
+   text-align: left;
+ }
+ 
+ .terminos-preferencial_migracion{
+   height: 455px;
+   top: 128px;
+ }
+ 
+ .into_migracion{
+ 	margin: 10px 10px 0 0;
+ }
+ 
+ .terminos_migracion h1{
+ 	display:block;
+ 	float: left;
+   width: 300px;
+ 	font-family: Arial;
+   font-size: 14px;
+   color: #000000;
+   font-weight:bold;
+   margin:20px 0 0 20px;
+ }
+ 
+.terminos_migracion ul {
+    display: block;
+    left: 20px;
+    margin: 0 20px 0 15px;
+    padding:0;
+    position: absolute;
+    top: 60px;
+}
+ 
+.terminos_migracion li {
+    background-image: url("../../img/migraciones/check-terminos.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 2;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 20px;
+ }
+ 
+  .terminos_migracion .no-image_migracion{
+   background-image:none;
+   list-style: none;
+   list-style-image: none;
+ }
+  

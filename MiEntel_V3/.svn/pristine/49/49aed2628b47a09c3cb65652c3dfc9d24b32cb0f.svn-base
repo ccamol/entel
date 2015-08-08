@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/Loyalty/zona/Proxies/ConsultaSGAPS?WSDL
+#wsdl=http://esbdesa.entel.cl/Loyalty/zona/Proxies/ConsultaSGAPS?WSDL
+targetnamespace=http://www.epcs.com/Loyalty/zona/WSAdminPuntos
+servicename=WSAdminPuntos
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=qpalwosk10

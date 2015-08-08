@@ -1,0 +1,680 @@
+
+.btnAzul:hover span, .btnAzulGrandeDesactivado:hover span{
+	text-decoration: underline;
+}
+
+.contenido_encabezado {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+.contenido_pie_pagina {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+
+.contenido_encabezado .encabezado_imagen {
+	display: block;
+	float: left;
+	width: 410px;
+	padding: 0 0 15px 0;
+}
+
+.contenido_pie_pagina .pie_pagina_imagen{
+	display: block;
+	float: left;
+	padding: 0 0 15px 0;
+}
+
+.contenido_pie_pagina .pie_pagina_imagen ul {
+	display: block;
+	text-align: left;
+	padding: 3px 0 0 10px;
+}
+
+.contenido_pie_pagina .pie_pagina_imagen ul li {
+	list-style: square;
+	padding: 5px 0;
+	list-style-position: outside;
+}
+
+.contenido_encabezado .encabezado_imagen a,
+.contenido_encabezado .encabezado_imagen a:visited {
+	display: block;
+	float: left;
+	font-weight: bolder;
+	color: #444444;
+	text-decoration: underline;
+}
+
+.contenido_encabezado .encabezado_imagen a:hover {
+	text-decoration: none;
+}
+
+.logo_mcafee{
+	display: block;
+	float: right;
+	background: url(../../img/mcafee/logo_mcafee.gif) no-repeat;
+	height: 36px;
+	width: 133px;
+	border: none !important;
+}
+
+.banner_seguridad{
+	display: block;
+	background: url(../../img/mcafee/banner_mcafee.jpg) no-repeat;
+	height: 123px;
+	width: 129px;
+}
+
+.dato_tabla_mcafee {
+	display: block;
+	float: left;
+	padding: 9px 0 0 0;
+}
+
+.caso_modificar {
+	position: relative;
+}
+
+.btnCancelarModificacion {
+	color: #3a3a3a;
+	z-index: 2;
+	background-color: #fff;
+	padding: 7px 12px 10px;
+	border-top: 1px solid #cfcdcd;
+	border-left: 1px solid #cfcdcd;
+	border-right: 3px solid #cfcdcd;
+}
+
+.texto_tab {
+	display: block;
+	padding: 0 0 5px 0;
+	font-size: 1.1em;
+}
+
+.texto_tab_ee {
+	display: block;
+	padding: 0 0 5px 0;
+	font-size: 1.2em;
+}
+
+.casilla {
+	display: block;
+	padding: 15px 0;
+	border-bottom: 1px solid #cfcdcd;
+}
+
+.casilla .columna_uno {
+	display: block;
+	float: left;
+	position: relative;
+	font-size: 1.2em;
+	width: 340px;
+}
+
+.casilla .columna_uno_ee {
+	display: block;
+	position: relative;
+	font-size: 1.2em;
+}
+
+.casilla .columna_uno_no_font {
+	display: block;
+	float: left;
+	position: relative;
+	width: 340px;
+}
+
+.casilla .columna_dos {
+	display: block;
+	float: right;
+	font-size: 1.2em;
+	width: 75px;
+}
+
+.casilla .columna_dos_no_font {
+	display: block;
+	float: right;
+	width: 75px;
+}
+
+.columna1_extendida {
+	display: block;
+	float: left;
+	position: relative;
+	font-size: 1.2em;
+	width: 442px;
+}
+
+.columna2_acortada {
+	display: block;
+	float: right;
+	position: relative;
+	font-size: 1.2em;
+	width: 70px;
+}
+
+.columna2_media {
+	display: block;
+	float: right !important;
+	position: relative;
+	font-size: 1.2em;
+	width: 150px;
+	padding: 14px 0 0 0;
+}
+
+.columna2_media a {
+	color: #000000;
+}
+
+.casilla .columna_dos_extendida {
+	display: block;
+	float: right;
+	font-size: 1.2em;
+	width: 125px;
+}* html .casilla .columna_dos_extendida {
+	width: 130px;
+}
+
+.casilla .columna_dos_extendida_no_font {
+	display: block;
+	float: right;
+	width: 125px;
+}* html .casilla .columna_dos_extendida_no_font {
+	width: 130px;
+}
+
+a.btn_modificar_mail {
+	display: block;
+	background: url(../../img/icons/ico_lapiz_modificar.gif) top left no-repeat;
+	padding: 0 0 0 21px;
+	color: #000000;
+}
+
+.saldo_text {
+	padding: 0 25px 0 0;
+}
+
+.saldo_amarillo {
+	background: #fff1a8;
+	padding: 0 15px;
+}
+
+a.btn_recargar_saldo {
+	display: block;
+	float: right;
+	padding: 0 5px 0 0;
+	color: #000000;
+}
+
+.contenedor_boton_tab {
+	display: block;
+	padding: 10px 0 5px 180px;
+}
+
+.enlace_final {
+	display: block;
+	text-align: center;
+	padding: 10px 0 5px;
+}
+
+.texto_input {
+	display: block;
+	float: left;
+	padding: 6px 15px 0 0;
+}
+
+.email_editar_cancelar {
+	display: block;
+	float: left;
+	padding: 9px 10px 0 0;
+	color: #000000;
+}
+
+.casilla_arriba {
+	padding: 8px 0;
+	border-bottom: 1px solid #cfc489;
+}
+
+.casilla_abajo {
+	padding: 8px 0;
+}
+
+.divs_activado {
+	display: block;
+	background: #ddf0d9;
+}
+
+ul.lista_interior {
+	display: block;
+	text-align: left;
+	padding: 3px 0 0 10px;
+}
+
+ul.lista_interior li {
+	list-style: square;
+	padding: 3px 0;
+	list-style-position: outside;
+}
+
+a.enlace_listado,
+a.enlace_listado:visited {
+	display: block;
+	padding: 5px 0 0;
+	color: #444444;
+}
+
+a.enlace_listado,
+a.enlace_listado.inline {
+	display: inline;
+}
+
+a.enlace_listado:hover {
+	color: #444444;
+}
+
+.contenido_tabla_nopadding a,
+.contenido_tabla_nopadding a:visited {
+	color: #444444;
+}
+
+.contenido_tabla_nopadding a:hover {
+	color: #444444;
+}
+
+.divs_error_contratacion {
+	display: block;
+	background: #fff1a8;
+	font-size: 1.2em;
+}
+
+.divs_error_contratacion .divs_error_arriba {
+	display: block;
+	padding: 3px 10px;
+	font-weight: bolder;
+}
+	
+.divs_error_contratacion .divs_error_abajo {
+	display: block;
+	padding: 3px 10px;
+}
+
+span.label_activo {
+	display: block;
+	float: left;
+	padding: 9px 0 0 15px;
+	margin: 0 0 0 10px;
+	background: url(../../img/icons/ico_tic_verde.gif) left 10px no-repeat;
+}
+
+.fila_aviso_verde_abajo {
+	display: block;
+	padding: 5px;
+	margin: 0 10px;
+}
+
+.fila_aviso_verde {
+	display: block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #bed7bc;
+}
+
+.email_text_label {
+	display: block;
+	float: left;
+	font-weight: bolder;
+	padding: 0 5px 0 0;
+}
+
+.email_text {
+	display: block;
+	float: left;
+}
+
+.contenedor_checkbox {
+	display: block;
+	float: left;
+	padding: 0 0 0 10px;
+}
+
+.destacado_amarillo  {
+	display: block;
+	background: #fff1a8;
+	padding: 5px 10px;
+	margin: 20px 0 15px;
+	border-top: 1px solid #cfc489;
+	border-bottom: 1px solid #cfc489;
+}
+
+.btnCancelar {
+	display: block;
+	float: left;
+	color: #3a3a3a;
+	padding: 11px 20px 0 20px;
+	font-size: 1.2em;
+}
+
+.btnCancelar_noleft {
+	display: block;
+	color: #3a3a3a;
+	padding: 11px 0 0 0;
+	font-size: 1.2em;
+}
+
+/*
+ * Caja de descarga
+ */
+
+.caja_descarga {
+	display: block;
+	margin: 15px 0;
+}
+
+.caja_descarga .caja_descarga_arriba{
+	display: block;
+	background: url(../../img/mcafee/caja_descarga_arriba.gif) top left no-repeat;
+	height: 5px;
+}* html .caja_descarga .caja_descarga_arriba{ 
+	margin: 0 0 -10px 0;
+}*:first-child+html .caja_descarga .caja_descarga_arriba{ 
+	width: 548px;
+}
+
+.caja_descarga .caja_descarga_centro {
+	display: block;
+	width: 526px;
+	padding: 15px 10px;
+	border-left: 1px solid #cddae7;
+	border-right: 1px solid #cddae7;
+}
+
+.caja_descarga .caja_descarga_centro .texto_descarga {
+	padding: 0 0 0 25px;
+}
+
+.caja_descarga .caja_descarga_centro .caja_descarga_interna_arriba {
+	display: block;
+	padding: 0 10px 10px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.caja_descarga .caja_descarga_centro .caja_descarga_interna_arriba span.mensaje_tic {
+	display: block;
+	background: url(../../img/icons/ico_tic_verde.gif) left 2px no-repeat;
+	padding: 0 0 0 23px;
+	font-weight: bolder;
+}
+
+.caja_descarga .caja_descarga_centro .caja_descarga_interna_abajo {
+	display: block;
+	padding: 10px 10px 0;
+}
+
+.caja_descarga .caja_descarga_abajo{
+	display: block;
+	background: url(../../img/mcafee/caja_descarga_abajo.gif) top left no-repeat;
+	height: 5px;
+}*:first-child+html .caja_descarga .caja_descarga_abajo{ 
+	width: 548px;
+}
+
+/*
+ * Cuadro de datos para confirmar paso 2 de 2
+ */
+.cuadro_datos_confirmacion {
+	display: block;
+	margin: 10px 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.cuadro_datos_confirmacion .fila_cuadro {
+	display: block;
+	padding: 3px 0;
+	font-size: 1.2em;
+}
+
+.cuadro_datos_confirmacion .fila_cuadro .label {
+	display: block;
+	float: left;
+	font-weight: bolder;
+	width: 130px;
+}
+
+/*
+ * Cuadro de datos en el caso de exito
+ */
+.cuadro_datos_exito {
+	display: block;
+	background: #ddf0d9;
+	border-bottom: 1px solid #bed7bc;
+	border-top: 1px solid #bed7bc;
+	padding: 15px 20px;
+}
+
+.cuadro_datos_exito div.tic_verde {
+	display: block;
+	background: url(../../img/mcafee/ico_tic_verde.gif) left top no-repeat;
+	padding: 3px 0 0 30px;
+	font-size: 1.2em;
+}
+
+.cuadro_datos_error {
+	display: block;
+	font-size: 1.2em;
+	background: #fff1a8;
+	border-bottom: 1px solid #cfc489;
+	border-top: 1px solid #cfc489;
+	padding: 15px 20px;
+}
+
+
+.inline {
+	display: inline;
+	float: none;
+}
+
+span.ancla_plan {
+	display: inline;
+	float: none;
+}
+
+span.ancla_plan_actual {
+	display: inline;
+	float: none;
+}
+
+/*
+ * Caja amarilla destacada de falta de saldo (error)
+ */
+.destacado_amarillo_interno {
+	display: block;
+	background: #fff1a8;
+	margin: 15px 0;
+	padding: 10px 20px;
+	border-top: 1px solid #cfc489;
+	border-bottom: 1px solid #cfc489;
+}
+
+.destacado_amarillo_interno .fila_inferior {
+	display: block;
+	padding: 10px 0 0 0;
+	margin: 10px 0 0 0;
+	border-top: 1px solid #cfc489;
+}
+
+/*
+ * Caja Indicadora del valor y nombre del plan McAfee seleccionado
+ */
+.caja_informacion_plan {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #e3e3e3;
+	margin: 0 0 15px;
+}
+
+.caja_informacion_plan .fila {
+	display: block;
+	font-size: 1.2em;
+	padding: 5px 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja_informacion_plan .fila label.indicador {
+	display: block;
+	float: left;
+	font-weight: bolder;
+	width: 140px;
+}
+
+/*
+ * Caja verde de exito
+ */
+
+div.tic_verde a,
+div.tic_verde a:visited {
+	color: #444444;
+	text-decoration: underline;
+}
+
+div.tic_verde a:hover {
+	text-decoration: none;
+}
+
+div.tic_verde ul {
+	display: block;
+	text-align: left;
+	padding: 10px 0;
+}
+
+div.tic_verde ul li {
+	list-style: square;
+	padding: 2px 0;
+	list-style-position: outside;
+}
+
+.li_fechaActivacion{
+	width: 225px;
+}
+
+.li_fechaVencimiento{
+	width: 200px;
+}
+
+.li_fechaVencimientoPP{
+	width: 300px;
+}
+
+.li_nuevoSaldo{
+	width: 230px;
+}
+
+.mensaje_total {
+	display: block;
+	font-size: 1.1em;
+	padding: 2px 0 0 0;
+}
+
+.paleta_desplegada {
+	display: block;
+	margin: 5px 0 10px;
+}
+
+.paleta_desplegada .paleta_cancelar{
+	display: block;
+	float: left;
+	background-color: #fff;
+	padding: 5px 10px !important;
+	border-left: 1px solid #cfcdcd;
+	border-top: 1px solid #cfcdcd;
+	border-right: 3px solid #cfcdcd;
+	border-bottom: 1px solid #ffffff;
+}
+
+.paleta_desplegada .contenido_reenviar{
+	display: block;
+	padding: 10px;
+	margin: -1px 0 0 0;
+	background-color: #fff;
+	border-left: 1px solid #cfcdcd;
+	border-top: 1px solid #cfcdcd;
+	border-right: 3px solid #cfcdcd;
+	border-bottom: 3px solid #cfcdcd;
+}
+
+.contenedor_boton_confirmar {
+	display: block;
+	padding: 10px 0 5px 205px;
+	text-align: left;
+}
+
+.casilla_verde_reenviar {
+	display: block;
+	margin: 10px 0;
+	padding: 15px 0;
+	text-align: center;
+	font-weight: bolder;
+	background: #ddf0d9;
+	border-top: 1px solid #bed7bc;
+	border-bottom: 1px solid #bed7bc;
+}
+
+.font_12 {
+	margin: 0 0 15px 0;
+	font-size: 1.2em;
+	padding: 15px 10px;
+}
+
+.ee {
+	width: 110px !important;
+}
+
+.contenedor_condiciones {
+	display: block;
+	padding: 0 10px 0 0;
+}
+.contenedor_condiciones .input {
+	display: block;
+	float: left;
+	padding: 0 5px 0 0;
+}
+.contenedor_condiciones .label {
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+.contenedor_condiciones .label a,
+.contenedor_condiciones .label a:visited {
+	color: #444444;
+	font-weight: bolder;
+}
+.contenedor_condiciones .label a:hover {
+	color: #064687;
+}
+
+/*
+ * Thickbox
+ */
+#contenedorTB {
+	background: #ffffff;
+	padding: 20px 10px;
+}
+
+#contenedorTB h2.cabecera {
+	display: block;
+	margin: 0 0 15px;
+	padding: 0 0 7px 0;
+	border-bottom: 2px solid #cddae7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	color: #064687;
+}
+#contenedorTB p {
+	display: block;
+	padding: 0 0 7px;
+	font-family: Arial, Helvetica, sans-serif;
+}

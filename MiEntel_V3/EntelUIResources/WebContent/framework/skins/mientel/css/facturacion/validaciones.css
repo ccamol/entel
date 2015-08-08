@@ -1,0 +1,89 @@
+/* Para los mensajes de error de validacion de formularios */ 
+.globoError {
+    display: none;
+    left: 290px;
+    top: 72px;
+    z-index: 5001;
+    background: url(../../img/validaciones/bg_mensaje.png) top left no-repeat;
+    width: 246px;
+    height: 55px;
+    font-weight: bolder;
+    position: absolute;
+	display:none;
+} 
+* html .globoError{
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+} 
+*:first-child+html .globoError {
+    background: url(../../img/validaciones/bg_mensaje.gif) top left no-repeat;
+} 
+.mensaje table,
+.mensaje2 table {
+    height: 100%;
+    margin-left: 50px;
+    width: 187px;
+} 
+.mensaje table td,
+.mensaje2 table td {
+    color: #E30101;
+    font-size: 12px;
+}
+
+/* Para los mensajes de error de validacion de formularios -Liquidos- */ 
+
+.globoError2 {
+    display: none;
+    left: 290px;
+    top: 72px;
+    z-index: 5001;
+    width: 246px;
+    height: 55px;
+    font-weight: bolder;
+    position: absolute;
+	display:none;
+} 
+.alerta_top{
+	display: block;
+	background: url(../../img/validaciones/bg_alerta_top.png) no-repeat scroll left top;
+	height: 14px;
+	margin: 2px 0 0 9px;
+	width: 240px;
+}
+* html .alerta_top{
+	background: url(../../img/validaciones/bg_alerta_top.gif) no-repeat scroll left top;
+	margin: 2px 0 -2px 9px;
+}
+
+.alerta_centro{
+	display: block;
+	font-weight: bolder;
+	color: #e30101;
+	width: 250px;
+	background: url(../../img/validaciones/bg_alerta_centro.png) no-repeat scroll left top;
+}
+* html .alerta_centro{
+	background: url(../../img/validaciones/bg_alerta_centro.gif) no-repeat scroll left top;
+}
+
+.alerta_bottom{
+	display: block;
+	background: url(../../img/validaciones/bg_alerta_bottom.png) no-repeat scroll left top;
+	height: 14px;
+	width: 240px;
+	margin: 0 0 0 7px;
+}
+* html .alerta_bottom{
+	background: url(../../img/validaciones/bg_alerta_bottom.gif) no-repeat scroll left top;
+}
+
+
+.formulario_configuracion_MMS .alerta {
+    background: url("../img/TEMPORAL/ico_alertaSmall.gif") no-repeat scroll 8px center #FFF1A8;
+    border-bottom: 1px solid #CFC489;
+    border-top: 1px solid #CFC489;
+    display: none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+    /*margin-top: 10px;*/
+    padding: 10px 0 10px 30px;
+}

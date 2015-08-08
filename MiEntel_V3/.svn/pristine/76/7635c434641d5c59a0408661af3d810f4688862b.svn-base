@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/provisionyentrega/gestionsuscripcion/sagen/wssagenps?wsdl
+#wsdl=http://esbpre.entel.cl/provisionyentrega/gestionsuscripcion/sagen/wssagenps?wsdl
+targetnamespace=http://www.epcs.com/provision/suscripcion
+servicename=sagenPortBindingQSService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

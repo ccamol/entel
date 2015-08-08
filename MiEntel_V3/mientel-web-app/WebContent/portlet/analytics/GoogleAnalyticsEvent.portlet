@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portal:root xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+    xmlns:portal="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0 portal-support-1_0_0.xsd">
+    <netuix:portlet definitionLabel="GoogleAnalyticsEvent" title="Google Analytics Event">
+        <netuix:titlebar/>
+        <netuix:content>
+            <netuix:jspContent contentUri="/portlet/analytics/GoogleAnalyticsEvent.jsp"/>
+        </netuix:content>
+        <netuix:preference description="Preference description goes here" modifiable="true"
+            multiValued="true" name="account" value="UA-12929820-8"/>
+        <netuix:preference description="Preference description goes here" modifiable="true"
+            multiValued="true" name="categoria" value=""/>
+        <netuix:preference description="Preference description goes here" modifiable="true"
+            multiValued="true" name="accion" value="click"/>
+        <netuix:preference description="Preference description goes here" modifiable="true"
+            multiValued="true" name="label" value=""/>
+        <netuix:preference description="Preference description goes here" modifiable="true"
+            multiValued="true" name="linkID" value=""/>
+    </netuix:portlet>
+</portal:root>

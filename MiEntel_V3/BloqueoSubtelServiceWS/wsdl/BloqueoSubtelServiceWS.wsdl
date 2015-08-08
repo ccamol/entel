@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions targetNamespace="http://www.epcs.com/cliente/contacto" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://www.epcs.com/cliente/contacto" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema targetNamespace="http://www.epcs.com/cliente/contacto" xmlns:ns="http://www.epcs.com/cliente/contacto/types" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.epcs.com/cliente/contacto/bloqueoSubtel/types" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.epcs.com/cliente/contacto" xmlns:types="http://www.epcs.com/cliente/contacto/bloqueoSubtel/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.epcs.com/cliente/contacto/bloqueoSubtel/types" schemaLocation="http://osb11g:7001/clientes/contacto/gestioncontacto/equipos/BloqueoSubtelServiceWS?SCHEMA%2FCLIENTES%2FContacto%2FServicios%2FserviciosBloqueoSubtel%2FBloqueoSubtelServiceXSD"/>
+      <xsd:element name="VerificacionBloqueoSubtelDocument" type="types:VerificacionBloqueoType"/>
+      <xsd:element name="ResultadoVerificacionBloqueoSubtelDocument" type="types:ResultadoVerificacionBloqueoType"/>
+      <xsd:element name="ValidarImeiSubtelDocument" type="types:ValidarImeiType"/>
+      <xsd:element name="ResultadoValidarImeiSubtelDocument" type="types:ResultadoValidarImeiType"/>
+      <xsd:element name="ConsultarDatosBuicSubtelDocument" type="types:ConsultarDatosBuicType"/>
+      <xsd:element name="ResultadoConsultarDatosBuicSubtelDocument" type="types:ResultadoConsultarDatosBuicType"/>
+      <xsd:element name="ConsultarDatosUltimoBloqueoSubtelDocument" type="types:ConsultarDatosUltimoBloqueoType"/>
+      <xsd:element name="ResultadoConsultarDatosUltimoBloqueoSubtelDocument" type="types:ResultadoConsultarDatosUltimoBloqueoType"/>
+      <xsd:element name="ValidarClaveDesbloqueoSubtelDocument" type="types:ValidarClaveDesbloqueoType"/>
+      <xsd:element name="ResultadoValidarClaveDesbloqueoSubtelDocument" type="types:ResultadoValidarClaveDesbloqueoType"/>
+      <xsd:element name="ActualizarDatosBuicSubtelDocument" type="types:ActualizarDatosBuicType"/>
+      <xsd:element name="ResultadoActualizarDatosBuicSubtelDocument" type="types:ResultadoActualizarDatosBuicType"/>
+      <xsd:element name="RegistrarBloqueoSubtelDocument" type="types:RegistrarBloqueoType"/>
+      <xsd:element name="ResultadoRegistrarBloqueoSubtelDocument" type="types:ResultadoRegistrarBloqueoType"/>
+      <xsd:element name="RegistrarDesbloqueoSubtelDocument" type="types:RegistrarDesbloqueoType"/>
+      <xsd:element name="ResultadoRegistrarDesbloqueoSubtelDocument" type="types:ResultadoRegistrarDesbloqueoType"/>
+      <!-- 
+			<xsd:element name="ConsultarImsiSubtelDocument" type="types:ConsultarImsiType"/>
+			<xsd:element name="ResultadoConsultarImsiSubtelDocument" type="types:ResultadoConsultarImsiType"/>
+			
+			<xsd:element name="ConsultarMovilesPorImeiSubtelDocument" type="types:ConsultarMovilesPorImeiType"/>
+			<xsd:element name="ResultadoConsultarMovilesPorImeiSubtelDocument" type="types:ResultadoConsultarMovilesPorImeiType"/>
+			 -->
+      <xsd:element name="ConsultarDatosEquipoPorImeiSubtelDocument" type="types:ConsultarDatosEquipoPorImeiType"/>
+      <xsd:element name="ResultadoConsultarDatosEquipoPorImeiSubtelDocument" type="types:ResultadoConsultarDatosEquipoPorImeiType"/>
+      <!-- SubtelDocument AUTH HEADER -->
+      <xsd:element name="AuthHeaderSubtelDocument" type="types:AuthType"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="VerificacionBloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:VerificacionBloqueoSubtelDocument" name="VerificacionBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoVerificacionBloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoVerificacionBloqueoSubtelDocument" name="ResultadoVerificacionBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarImeiSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarImeiSubtelDocument" name="ValidarImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarImeiSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarImeiSubtelDocument" name="ResultadoValidarImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDatosBuicSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDatosBuicSubtelDocument" name="ConsultarDatosBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDatosBuicSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDatosBuicSubtelDocument" name="ResultadoConsultarDatosBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDatosUltimoBloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDatosUltimoBloqueoSubtelDocument" name="ConsultarDatosUltimoBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDatosUltimoBloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDatosUltimoBloqueoSubtelDocument" name="ResultadoConsultarDatosUltimoBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ValidarClaveDesbloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ValidarClaveDesbloqueoSubtelDocument" name="ValidarClaveDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoValidarClaveDesbloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoValidarClaveDesbloqueoSubtelDocument" name="ResultadoValidarClaveDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ActualizarDatosBuicSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ActualizarDatosBuicSubtelDocument" name="ActualizarDatosBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoActualizarDatosBuicSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoActualizarDatosBuicSubtelDocument" name="ResultadoActualizarDatosBuic"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="RegistrarBloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:RegistrarBloqueoSubtelDocument" name="RegistrarBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoRegistrarBloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoRegistrarBloqueoSubtelDocument" name="ResultadoRegistrarBloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="RegistrarDesbloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:RegistrarDesbloqueoSubtelDocument" name="RegistrarDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoRegistrarDesbloqueoSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoRegistrarDesbloqueoSubtelDocument" name="ResultadoRegistrarDesbloqueo"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarDatosEquipoPorImeiSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ConsultarDatosEquipoPorImeiSubtelDocument" name="ConsultarDatosEquipoPorImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ResultadoConsultarDatosEquipoPorImeiSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:ResultadoConsultarDatosEquipoPorImeiSubtelDocument" name="ResultadoConsultarDatosEquipoPorImei"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AuthHeaderSubtelMessage">
+    <WL5G3N0:part element="WL5G3N1:AuthHeaderSubtelDocument" name="AuthHeader"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="VerificacionBloqueoPortType">
+    <WL5G3N0:operation name="VerificacionBloqueoOperation">
+      <WL5G3N0:input message="WL5G3N1:VerificacionBloqueoSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoVerificacionBloqueoSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarImeiOperation">
+      <WL5G3N0:input message="WL5G3N1:ValidarImeiSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarImeiSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDatosBuicOperation">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDatosBuicSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDatosBuicSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDatosUltimoBloqueoOperation">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDatosUltimoBloqueoSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDatosUltimoBloqueoSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarClaveDesbloqueoOperation">
+      <WL5G3N0:input message="WL5G3N1:ValidarClaveDesbloqueoSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoValidarClaveDesbloqueoSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDatosBuicOperation">
+      <WL5G3N0:input message="WL5G3N1:ActualizarDatosBuicSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoActualizarDatosBuicSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegistrarBloqueoOperation">
+      <WL5G3N0:input message="WL5G3N1:RegistrarBloqueoSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoRegistrarBloqueoSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegistrarDesbloqueoOperation">
+      <WL5G3N0:input message="WL5G3N1:RegistrarDesbloqueoSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoRegistrarDesbloqueoSubtelMessage"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDatosEquipoPorImeiOperation">
+      <WL5G3N0:input message="WL5G3N1:ConsultarDatosEquipoPorImeiSubtelMessage"/>
+      <WL5G3N0:output message="WL5G3N1:ResultadoConsultarDatosEquipoPorImeiSubtelMessage"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BloqueoSubtelServiceBinding" type="WL5G3N1:VerificacionBloqueoPortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="VerificacionBloqueoOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/VerificacionBloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarImeiOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ValidarImei"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDatosBuicOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarDatosBuic"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDatosUltimoBloqueoOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarDatosUltimoBloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ValidarClaveDesbloqueoOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ValidarClaveDesbloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ActualizarDatosBuicOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ActualizarDatosBuic"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegistrarBloqueoOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/RegistrarBloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="RegistrarDesbloqueoOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/RegistrarDesbloqueo"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ConsultarDatosEquipoPorImeiOperation">
+      <WL5G3N2:operation soapAction="http://www.epcs.com/cliente/contacto/ConsultarDatosEquipoPorImei"/>
+      <WL5G3N0:input>
+        <WL5G3N2:header message="WL5G3N1:AuthHeaderSubtelMessage" part="AuthHeader" use="literal"/>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BloqueoSubtelService">
+    <WL5G3N0:port binding="WL5G3N1:BloqueoSubtelServiceBinding" name="BloqueoSubtelServicePort">
+      <WL5G3N2:address location="http://OSB3:7001/clientes/contacto/gestioncontacto/equipos"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,225 @@
+div.bloque {
+	padding: 5px 0 5px 3px;
+	margin-bottom:1px;
+}
+div#menu-desplegable {
+	display:block;
+	float:right;
+	margin-bottom:0px;
+	padding-right:10px;
+}
+div#menu-desplegable div.impar {
+	background:#f5f5f5;
+	border-top:1px #999999 solid;
+	border-bottom:1px #999999 solid;
+	width:450px;
+	padding:5px 0 5px 5px;
+	margin:0 0 0 10px;
+}
+div.lista-bolsas .fila{
+	padding:7px 0 0 0;
+	border-top:1px #ebebeb solid;
+	min-height:37px;
+	height:auto !important;
+	height:37px;
+}
+div#menu-desplegable div.nombre{
+	display:block;
+	float:left;
+	width:235px;
+	font-weight:bold;
+	padding:10px 0 0 5px;
+	font-size:1.2em;
+}
+#menu-desplegable div.cabecera div.precio{
+	padding:11px 0 0 0;
+	font-size:1.2em;	
+}
+#menu-desplegable div.modificar{
+	width:92px;
+	border:1px #F5F5F5 solid;
+	border-right:3px #F5F5F5 solid;
+	border-bottom:0px;
+	padding:7px 0 12px 13px;
+	float:left;
+	margin:2px 10px 0px 0;
+	position:relative;
+	top:1px;
+	font-size:1.1em;
+}
+
+* html #menu-desplegable div.modificar{
+	margin-right: 0px! important;
+}
+
+#menu-desplegable div.modificar a:link,
+#menu-desplegable div.modificar a:visited{
+	color:#000000;
+	text-decoration:underline;
+}
+#menu-desplegable div.modificar a:hover{
+	color:#597CA4;
+}
+
+#menu-desplegable div.desinscribir{
+	border:1px #F5F5F5 solid;
+	border-right:3px #F5F5F5 solid;
+	border-bottom:0px;
+	padding:7px 0 12px 13px;
+	float:right;
+	margin:2px 15px 0px 0;
+	position:relative;
+	top:1px;
+	font-size:1.1em;
+}
+#menu-desplegable div.desinscribir a:link,
+#menu-desplegable div.desinscribir a:visited{
+	color:#000000;
+	text-decoration:underline;
+}
+#menu-desplegable div.desinscribir a:hover{
+	color:#597CA4;
+}
+
+#menu-desplegable div.regalar{
+	border:1px #F5F5F5 solid;
+	border-right:3px #F5F5F5 solid;
+	border-bottom:0px;
+	padding:7px 0 12px 13px;
+	float:right;
+	margin:2px 15px 0px 0;
+	position:relative;
+	top:1px;
+	font-size:1.1em;
+}
+div.regalar a.regalar:link,
+div.regalar a.regalar:visited{
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+div.regalar a.regalar:hover{
+	font-size:1.0em;
+	color:#597CA4;
+}
+div.bloque div.cancelar{
+	width:62px;
+	border:1px #cfcdcd solid;
+	border-right:3px #cfcdcd solid;
+	border-bottom:0px;
+	background:#fff1a8;
+	padding:7px 0 12px 13px;
+	float:right;
+	margin:2px 10px 0px 0;
+	position:relative;
+	top:1px;
+}
+* html div.bloque div.cancelar{
+	width:62px;
+	border:1px #cfcdcd solid;
+	border-right:3px #cfcdcd solid;
+	border-bottom:0px;
+	background:#fff1a8;
+	padding:7px 0 12px 9px;
+	float:right;
+	margin:2px 10px 0px 0;
+	position:relative;
+	top:1px;
+}
+div.cancelar a.cancelar:link,
+div.cancelar a.cancelar:visited{
+	font-size:1.0em;
+	color:#000000;
+}
+div.cancelar a.cancelar:hover{
+	font-size:1.0em;
+	color:#597CA4;
+}
+div#menu-desplegable .bloque div.cabecera div.cancelar a.cancelar{
+	font-size:12px;
+	color:#3a3a3a;
+	background:none;
+	padding:0;
+}
+
+div#menu-desplegable .bloque div.cabecera div.cancelar a.cancelar:hover{
+	  color:#597CA4;
+}
+
+div.bloque div.box-numero-modificar{
+	width:395px;
+	border:1px #F5F5F5 solid;
+	border-right:3px #F5F5F5 solid;
+	border-bottom:3px #F5F5F5 solid;
+	background:inherit;
+	padding:26px 0 0 5px;
+	margin:0 10px 0 0;
+}
+div.bloque div.box-numero{
+	width:395px;
+	border:1px #cfcdcd solid;
+	border-right:3px #cfcdcd solid;
+	border-bottom:3px #cfcdcd solid;
+	background:#fff1a8;
+	float:right;
+	padding:26px 0 17px 20px;
+	margin:0 10px 20px 0;
+}
+
+* html div.bloque div.box-numero{
+	background-color: #fff1a8;
+}
+
+div.bloque div.box-numero h5{
+	font-size:1.2em;
+	font-weight:bolder;
+	color:#3a3a3a;
+	padding:0;
+	margin:0 0 10px 0;
+	display:block;
+}
+div.bloque div.box-numero-modificar form fieldset label{
+	display:block;
+	float:left;
+	width:157px;
+	padding:5px 0 0 0;
+	font-size:1.2em;
+	font-weight:bold;
+}
+div#centro div.bloque div.box-numero p{
+	font-size:1.2em;
+	width:338px;
+	padding:0 0 10px 0;
+}
+div#centro div.bloque .caja{
+	margin:20px 0px 10px 5px;
+	float:left;
+	display:block;
+	width:510px;
+	clear:both;
+}
+*:first-child+html div#centro div.bloque .caja{
+	float:none;
+}
+* html div#centro div.bloque .caja{
+	width:498px;
+}
+div.bloque div.box-numero form fieldset div.fila,
+div.bloque div.box-numero-modificar form fieldset div.fila{
+	margin-bottom:10px;	
+}
+div.bloque div.box-numero-modificar form fieldset div.fila a.cancelar_modificar:link,
+div.bloque div.box-numero-modificar form fieldset div.fila a.cancelar_modificar:visited{
+	font-size:11px;
+	line-height:32px;
+	color:#000000;
+}
+div.bloque div.box-numero-modificar form fieldset div.fila a.cancelar_modificar:hover{
+	font-size:11px;
+	line-height:32px;
+	color:#597CA4;
+}
+div#pasos{
+	font-size:16px;
+	color:#064687;
+}

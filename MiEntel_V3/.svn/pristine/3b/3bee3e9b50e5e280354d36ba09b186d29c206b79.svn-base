@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/BILLING/Pago/Proxies/BillingPagoService?WSDL
+#wsdl=http://esbpre.entel.cl/BILLING/Pago/Proxies/BillingPagoService?WSDL
+targetnamespace=http://www.epcs.com/billing/pago
+servicename=BillingPagoService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

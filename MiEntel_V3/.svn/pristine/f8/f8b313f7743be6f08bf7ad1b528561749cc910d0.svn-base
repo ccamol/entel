@@ -1,0 +1,9 @@
+wsdl=http://esb.entel.cl/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS?wsdl
+#wsdl=http://esbpre.entel.cl/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS?wsdl
+targetnamespace=http://www.epcs.com/provisionyentrega/Suscripcion/DatosExcedidos
+servicename=DatosExcedidosService
+timeout=2000
+isauth=false
+headerauth=AuthHeaderDocument
+username=weblogic
+password=adminadmin1

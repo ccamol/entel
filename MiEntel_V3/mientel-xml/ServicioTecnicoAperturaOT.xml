@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document
+	PUBLIC "-//UJAC.org//Print Document//EN" 
+	"http://ujac.sourceforge.net/ujac-print-document.dtd">
+        
+<document size="LETTER" margin-left="25" margin-right="25" margin-top="25" margin-bottom="25">
+    <font-def name="normal" family="Helvetica" size="12" style="normal"/>
+    <font-def name="titulo" family="Helvetica" size="14" style="normal"/>
+    <table width="100" widths="50,50">
+        <cell><b>Fecha : ${hoy}</b></cell>
+        <cell halign="right"><b>Nº : ${documento.nroOrden}</b></cell>
+    </table>
+    <paragraph font="titulo" halign="center"><b>ORDEN DE TRABAJO DE SERVICIO TÉCNICO</b></paragraph>
+    <br/>
+    <paragraph>
+        <b>Don(a) ${documento.nombreCliente}</b>, cédula de identidad nacional Nº <b>${documento.rutCliente}</b> domiciliado en <b>${documento.domicilioCliente}</b> de la Comuna de <b>${documento.comunaCliente}</b>, en adelante el "<b>Cliente</b>", entrega en este acto a <b>Entel Telecomunicaciones S.A.</b>, en adelante "<b>Entel</b>", con domicilio para estos efectos en la Sucursal ubicada en la Comuna de <b>${documento.comunaSucursal}</b>, el equipo telefónico y/o accesorios marca <b>${documento.marca}</b>, modelo <b>${documento.modelo}</b>, Serie Nº <b>${documento.nroSerie}</b>, en adelante y para todos los efectos de esta Orden de Trabajo el "Equipo".  
+    </paragraph>
+    <br/>
+    <paragraph>
+        <b>Primero:</b> En este acto, el Cliente autoriza a Entel para que envíe el equipo singularizado precedentemente al laboratorio de servicio técnico, que Entel designe a su arbitrio, con el objeto de revisarlo, determinar su validez, garantía y funcionamiento, así como definir la causa que originó el daño o desperfecto del Equipo y su eventual reparación y costo. Sin perjuicio de lo anterior, el Cliente podrá solicitar únicamente un presupuesto o valor de la reparación del Equipo. De esto se dejar´ constancia en el recuadro "servicios contratados por el Cliente", a continuación.  
+    </paragraph>
+    <br/>
+    <paragraph>
+        <b>Segundo:</b> Entel salvo en caso de fuerza mayor o caso fortuito o no disponibilidad de repuestos de parte del fabricante, se compromete a efectuar la reparación del equipo individualizado dentro del plazo de cinco (5) días hábiles, contados desde esta fecha. Para efectos del computo del plazo de la reparación no son días hábiles los sábados, domingos y festivos.  
+    </paragraph>
+    <br/>
+    <paragraph>
+        <b>Tercero:</b> El Cliente en este acto, autoriza a Entel a que facture o cargue a la factura de tráfico correspondiente, el precio o tarifa por la reparación del equipo, según lo determinado por el laboratorio de servicio técnico mencionado en la claúsula primera, así como cualquier otro valor por servicios prestados ante desperfectos no definidos en este instrumento.  
+    </paragraph>
+    <br/>
+    <paragraph>
+        <b>Cuarto:</b> El Cliente se obliga a retirar el Equipo dentro del plazo máximo de 30 días desde la fecha que se haya otorgado el correspondiente documento de recepción, quedando afecto al pago de bodegaje del equivalente a media unidad de fomento por cada mes o fracción de mes que se exceda el plazo de 30 días para retirar el equipo.  
+    </paragraph>
+    <br/>
+    <paragraph>
+        <b>Quinto:</b> Por este acto el Cliente, declara saber y conocer que el procedimiento de reparación de su teléfono móvil puede conllevar la pérdida de la información contenida dentro de él, como agenda, MMS, fotos y archivos. En consecuencia y por este acto el cliente asume toda y cualquier responsabilidad por la perdida de esta información.  
+    </paragraph>
+    <br/>
+    <table width="100" widths="48,2,48">
+        <cell valign="top">
+            <table width="100" widths="100" border-style="box" border-width="1">
+                <cell><b>Accesorios entregados por el cliente</b></cell>
+                <cell>
+                    <table width="90" halign="center" widths="30,70" border-style="">
+                        <cell halign="center"><u>CÓDIGO</u></cell>
+                        <cell halign="left"><u>DESCRIPCIÓN</u></cell>
+                        <foreach loop-variable="accesorio" sequence="${documento.accesorios}">
+                            <cell halign="center">${accesorio.codAccesorio}</cell>
+                            <cell halign="left">${accesorio.descAccesorio}</cell>
+                        </foreach>
+                    </table>
+                </cell>
+            </table>
+            <table width="100" widths="100" border-style="box" border-width="1">
+                <cell><b>Servicios contratados por el cliente</b></cell>
+                <cell>
+                    Confección de Presupuesto : <b>${documento.flagPresupuesto}</b><br/>
+                    Despacho del Equipo al domicilio del Cliente : <b>${documento.flagDespachoDomicilio}</b><br/>
+                    Asignación de ERT : <b>${documento.flagErt}</b><br/>
+                    Retiro a domicilio : <b>${documento.flagRetiroDomicilio}</b><br/>
+                </cell>
+            </table>
+        </cell>
+        <cell></cell>
+        <cell valign="top">
+            <table width="100" widths="100" border-style="box" border-width="1">
+                <cell><b>Síntomas de falla señalados por el cliente</b></cell>
+                <cell>
+                    <table width="90" halign="center" widths="30,70" border-style="">
+                        <cell halign="center"><u>CÓDIGO</u></cell>
+                        <cell halign="left"><u>DESCRIPCIÓN</u></cell>
+                        <foreach loop-variable="sintoma" sequence="${documento.sintomas}">
+                            <cell halign="center">${sintoma.codSintoma}</cell>
+                            <cell halign="left">${sintoma.descSintoma}</cell>
+                        </foreach>
+                    </table>
+                </cell>     
+            </table>
+        </cell>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <paragraph>
+        Cliente atendido por : <b>PORTAL CORPORATIVO ENTEL</b>
+    </paragraph>
+    <paragraph>
+        Usuario contacto : <b>${documento.nmContacto1} ${documento.nmContacto2}</b>
+    </paragraph>
+</document>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+
+	<!-- Globals -->    
+	<!-- Compra de bolsas FDT  -->
+	<navigation-rule>    	
+		<from-view-id>*</from-view-id>
+    	<navigation-case>
+    		<from-outcome>compra-bolsas-fdt</from-outcome>
+    		<to-view-id>/portlet/bolsabam/comprarBolsasPPBAM.jsp</to-view-id>
+    	</navigation-case>
+	</navigation-rule>
+	
+	
+	<!-- AAA Security -->
+	
+    <navigation-rule>
+    	<from-view-id>*</from-view-id>
+    	<navigation-case>
+    		<from-outcome>aaa-security-access-denied</from-outcome>
+    		<to-view-id>/portlet/errores/access-denied.jsp</to-view-id>
+    	</navigation-case>
+	</navigation-rule>
+
+	<!-- Errors -->	
+    <navigation-rule>
+    	<from-view-id>*</from-view-id>
+    	<navigation-case>
+    		<from-outcome>error</from-outcome>
+    		<to-view-id>/portlet/errores/error.jsp</to-view-id>
+    	</navigation-case>
+    	<navigation-case>
+    		<from-outcome>error0005</from-outcome>
+    		<to-view-id>/portlet/errores/error0005.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+
+	<!-- Specific navigation -->	
+	<navigation-rule>
+    	<navigation-case>
+            <from-outcome>informacion_usuario</from-outcome>
+            <to-view-id>/portlet/cuenta/formMisDatos.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+     	<navigation-case>
+            <from-outcome>mis_usuarios</from-outcome>
+            <to-view-id>/portlet/cuenta/tablaMisUsuarios.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+	<!-- Mis datos -->
+	<navigation-rule>
+		<from-view-id>/portlet/cuenta/formMisDatos.jsp</from-view-id>
+    	<navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/portlet/cuenta/formMisDatos.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+	<!-- Camiar Clave -->
+	<navigation-rule>
+		<from-view-id>/portlet/seguridad/formCambioClave.jsp</from-view-id>
+    	<navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/portlet/seguridad/formCambioClave.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+   	<!-- Reposicion Servicio -->
+	<navigation-rule>
+	     <navigation-case>
+	      <from-outcome>result</from-outcome>
+            <to-view-id>/portlet/facturacion/reposicionServicioResultado.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+
+    <!-- Facturacion Electronica -->
+	<navigation-rule>
+		<from-view-id>/portlet/facturacion/facturacionElectronica.jsp</from-view-id>
+    	<navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/portlet/facturacion/facturacionElectronica.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+		<from-view-id>/portlet/facturacion/autorizacionVoluntaria.jsp</from-view-id>
+    	<navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/portlet/facturacion/facturacionElectronica.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!-- Recargas -->
+    
+    <navigation-rule>
+    	<from-view-id>/portlet/recarga/recarga*</from-view-id>
+
+		<!-- 
+			Navegacion de seleccion tipo de recarga
+		-->
+    	<navigation-case>    		
+    		<from-outcome>entelticket</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaEntelticket.jsp</to-view-id>
+    	</navigation-case>
+
+    	<navigation-case>
+
+    		<from-outcome>multitienda</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaMultitienda.jsp</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>    		
+    		<from-outcome>puntoszona</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaZonaPuntos.jsp</to-view-id>
+    	</navigation-case>
+
+    	<navigation-case>
+    		<from-outcome>tarjetacredito</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaTarjetaCredito.jsp</to-view-id>
+    	</navigation-case>
+
+		<!-- 
+			Navegacion de solicitud de recarga hacia confirmacion (Paso 1 a 2)
+		-->
+		
+		<navigation-case>
+    		<from-action>#{recargaController.solicitarRecargaMultitienda}</from-action>
+    		<from-outcome>confirmar</from-outcome>
+    		<to-view-id>/portlet/recarga/confirmarRecargaMultitienda.jsp</to-view-id>
+    	</navigation-case>    	
+		
+    	<navigation-case>
+    		<from-action>#{recargaController.solicitarRecargaTarjetaCredito}</from-action>
+    		<from-outcome>confirmar</from-outcome>
+    		<to-view-id>/portlet/recarga/confirmarRecargaTarjetaCredito.jsp</to-view-id>
+    	</navigation-case>
+
+    	<navigation-case>
+    		<from-action>#{recargaController.solicitarRecargaEntelTicket}</from-action>
+    		<from-outcome>confirmar</from-outcome>
+    		<to-view-id>/portlet/recarga/confirmarRecargaEntelTicket.jsp</to-view-id>
+    	</navigation-case>
+
+    </navigation-rule>
+    
+    <navigation-rule>
+       	<from-view-id>/portlet/recarga/confirmarRecarga*</from-view-id>
+
+		<!-- Entelticket esta definido como la entrada por default del
+			 portlet de recargas, si esa definicion cambia, modificar esta 
+			 regla de navegacion 
+		-->
+    	<navigation-case>
+    		<from-outcome>cancelar</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaTarjetaCredito.jsp</to-view-id>
+    	</navigation-case>
+
+
+		<!-- 
+			Pagina de Webpay 
+		-->
+    	<navigation-case>
+    		<from-action>#{recargaController.confirmarRecargaTarjetaCredito}</from-action>
+    		<from-outcome>recargaWebpay</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaWebpay.jsp</to-view-id>
+    	</navigation-case>
+
+
+		<!-- 
+			Navegacion de Confirmacion a Finalizacion de recarga (paso 2 a 3)
+		-->
+    	<navigation-case>
+    		<from-action>#{recargaController.confirmarRecargaEntelTicket}</from-action>
+    		<from-outcome>success</from-outcome>
+    		<to-view-id>/portlet/recarga/finalizarRecargaEntelTicket.jsp</to-view-id>
+    	</navigation-case>
+
+    	<navigation-case>
+    		<from-action>#{recargaController.confirmarRecargaMultitienda}</from-action>
+    		<from-outcome>success</from-outcome>
+    		<to-view-id>/portlet/recarga/finalizarRecargaMultitienda.jsp</to-view-id>
+    	</navigation-case>
+    
+    </navigation-rule>
+
+
+	<navigation-rule>
+		
+		<from-view-id>/portlet/recarga/recargaWebpay.jsp</from-view-id>
+	
+	   	<navigation-case>
+	   		<from-action>#{cierreRecargaWebpayController.finalizarRecargaTarjetaCredito}</from-action>
+    		<from-outcome>success</from-outcome>
+    		<to-view-id>/portlet/recarga/finalizarRecargaTarjetaCredito.jsp</to-view-id>
+    	</navigation-case>
+	
+	</navigation-rule>
+	
+	<navigation-rule>	    
+		<!-- 
+			Navegacion oferta recarga weppay
+		-->
+    	<navigation-case>    		
+    		<from-outcome>oferta_recarga_wp</from-outcome>
+    		<to-view-id>/portlet/recarga/recargaTarjetaCredito.jsp</to-view-id>
+    	</navigation-case>
+	</navigation-rule>	
+	
+	<!-- Fin Recargas -->
+	
+	<!-- FIN OFERTA VISA -->
+	<navigation-rule>	    
+	    <navigation-case>    		
+    		<from-outcome>oferta_visa_activa</from-outcome>
+    		<to-view-id>/portlet/ofertas/entelvisa/cliente_tarjeta_activa.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<navigation-case>    		
+    		<from-outcome>oferta_visa_preemitido</from-outcome>
+    		<to-view-id>/portlet/ofertas/entelvisa/cliente_prea_preemitido.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>	
+    
+    <navigation-rule>
+    	<navigation-case>    		
+    		<from-outcome>oferta_visa_preaporbado</from-outcome>
+    		<to-view-id>/portlet/ofertas/entelvisa/cliente_prea_entelvisa.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>	
+	 
+	
+	<!-- FIN OFERTA VISA -->
+	
+	
+	<navigation-rule>
+       	
+    	<navigation-case>
+    		<from-outcome>resultadoinscribirpat</from-outcome>
+    		<to-view-id>/portlet/pago/resultadoInscribirPAT.jsp</to-view-id>
+    	</navigation-case>
+  
+   		<navigation-case>
+    		<from-outcome>formulariopat</from-outcome>
+    		<to-view-id>/portlet/pago/pagoAutomaticoForm.jsp</to-view-id>
+    	</navigation-case>
+    
+    
+    	<navigation-case>
+    		<from-outcome>patconfirmar</from-outcome>
+    		<to-view-id>/portlet/pago/patConfirmar.jsp</to-view-id>
+    	</navigation-case>
+    
+    	<navigation-case>
+    		<from-outcome>patcancelar</from-outcome>
+    		<to-view-id>/portlet/pago/pagoAutomatico.jsp</to-view-id>
+    	</navigation-case>
+    
+    </navigation-rule>
+    
+    
+    <!-- FORMULARIO DE REGISTRO USUARIO -->
+    
+    <navigation-rule>
+    	<from-view-id>/portlet/inscripcion/form*</from-view-id>
+    	
+    	<navigation-case>    		
+    		<from-outcome>formularioRut</from-outcome>
+    		<to-view-id>/portlet/inscripcion/formIngresoRut.jsp</to-view-id>
+    	</navigation-case>
+
+    	<navigation-case>    		
+    		<from-outcome>formularioRegistrar</from-outcome>
+    		<to-view-id>/portlet/inscripcion/formRegistro.jsp</to-view-id>
+    	</navigation-case>
+    	
+    	<navigation-case>    		
+    		<from-outcome>formularioConfirmar</from-outcome>
+    		<to-view-id>/portlet/inscripcion/formConfirmacion.jsp</to-view-id>
+    	</navigation-case>
+    	
+    </navigation-rule>
+    
+    <!-- /FORMULARIO DE REGISTRO USUARIO -->
+    
+    
+    <!-- FORMULARIO LOGIN -->
+    <navigation-rule>
+    	<from-view-id>/portlet/seguridad/form*</from-view-id>
+    	
+    	<navigation-case>    		
+    		<from-outcome>login</from-outcome>
+    		<to-view-id>/portlet/seguridad/formLogin2.jsp</to-view-id>
+    	</navigation-case>
+
+    </navigation-rule>
+    	
+    <!-- /FORMULARIO LOGIN -->
+    
+     <!-- FORMULARIO CONTACTO -->
+    <navigation-rule>
+    
+    	<navigation-case>
+    	<from-action>#{formularioContactoController.formularioContactoForm}</from-action>    		
+    		<from-outcome>formularioContacto</from-outcome>
+    		<to-view-id>/portlet/contacto/formularioContacto.jsp</to-view-id>
+    	</navigation-case>
+
+    </navigation-rule>
+    
+	<navigation-rule>
+    	<navigation-case>
+    	<from-action>#{formularioContactoController.generarTicketSGA}</from-action>    		
+    		<from-outcome>success</from-outcome>
+    		<to-view-id>/portlet/contacto/formularioContactoFin.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <!-- /FORMULARIO CONTACTO -->
+    
+	<!-- FORMULARIO SATISFACCION -->
+	<navigation-rule>
+    	<navigation-case>
+    	<from-action>#{formularioSatisfaccionController.enviarDatos}</from-action>    		
+    		<from-outcome>success</from-outcome>
+    		<to-view-id>/portlet/formulariosatisfaccion/formSatisfaccionFin.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>    
+    <!-- /FORMULARIO SATISFACCION -->
+    
+    <!-- FACTURA ELECTRONICA -->
+
+	<navigation-rule>
+    	<navigation-case>
+    	<from-action>#{facturacionElectronicaController.autorizacionVoluntaria}</from-action>    		
+    		<from-outcome>autorizacionVoluntaria</from-outcome>
+    		<to-view-id>/portlet/facturacion/autorizacionVoluntaria.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <!-- /FACTURA ELECTRONICA -->
+    
+    <!-- MIS USUARIOS -->
+
+	<navigation-rule>
+    	<navigation-case>    	    		
+    		<from-outcome>tablaMisUsuarios</from-outcome>
+    		<to-view-id>/portlet/cuenta/tablaMisUsuarios.jsp</to-view-id>
+    		<redirect />    		
+    	</navigation-case>
+    </navigation-rule>
+    
+    <!-- /MIS USUARIOS -->
+    
+    <!-- FORMULARIO CONTACTO PORTABILIDAD -->
+    <navigation-rule>    
+    	<navigation-case>
+    	<from-action>#{formularioContactoPortabilidadController.formularioContactoPortabilidadForm}</from-action>    		
+    		<from-outcome>formularioContactoPortabilidad</from-outcome>
+    		<to-view-id>/portlet/contacto/formularioContactoPortabilidad.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+	<navigation-rule>
+    	<navigation-case>
+    	<from-action>#{formularioContactoPortabilidadController.generarTicketSGA}</from-action>    		
+    		<from-outcome>success</from-outcome>
+    		<to-view-id>/portlet/contacto/formularioContactoPortabilidadFin.jsp</to-view-id>
+    	</navigation-case>
+    </navigation-rule>    
+    <!-- /FORMULARIO CONTACTO PORTABILIDAD -->
+    
+    <!-- FORMULARIO PREINGRESO SERVICIO TECNICO -->
+    <navigation-rule>        
+    	<navigation-case>
+    	<from-action>#{preIngresoOTController.preIngresoServicioTecnico}</from-action>    		
+    		<from-outcome>ServicioTecnico</from-outcome>
+    		<to-view-id>/portlet/equipo/preIngresoOT.jsp</to-view-id>    		
+    	</navigation-case>    	
+    </navigation-rule>    
+    <!-- /FORMULARIO PREINGRESO SERVICIO TECNICO -->
+
+</faces-config>

@@ -1,0 +1,18 @@
+# build.properties v1.0
+# Propiedades para adaptación de la generación/empaquetamiento de Custom Authentication Provider
+
+# the MDF (the XML MBean Description File)
+mbean.description.file.name=EPCSAuthenticator.xml
+
+# the name for the MBean JAR File (MJF) 
+mbean.jar.file.name=EPCSAuthenticationProvider.jar
+
+#los paquetes utilizados
+bean.package.name=com/epcs/seguridad/bean
+spi.package.name=com/epcs/seguridad/spi
+exception.package.name=com/epcs/recursoti/exception
+
+# rutas de classpath
+bea.home=
+# EJs: jrockit.path=${bea.home}/jrmc-3.1.2-1.6.0
+jrockit.path=${bea.home}/jrockit_160_14_R27.6.5-32

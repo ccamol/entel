@@ -1,0 +1,8 @@
+wsdl=http://esbtest.entel.cl/CLIENTES/GestionPerfiles/resumenLineasEquiposCliente/Proxies/PS_ResumenLineasEquiposWS?WSDL
+targetnamespace=http://www.esa.com/Clientes/PerfilesClientes/resumenLineasEquiposCliente
+servicename=resumenLineasEquiposService
+headerauth=AuthHeaderDocument
+timeout=30000
+username=weblogic
+password=qpalwosk10
+isauth=false

@@ -1,0 +1,49 @@
+## mientel-web-app build file properties
+
+# especificaiciones BEA y Weblogic
+# directorio home de BEA
+# EJs: bea.home=/bea_10 
+#      bea.home=C:\\bea_10
+bea.home=
+
+# Directorio base
+base=.
+
+# directorios
+dir.project.datasync=../mientel-datasync/src/
+dir.project.web-app=../mientel-web-app
+dir.project.uup-ejb=../mientel-uup-ejb
+dir.project.ui.resources=../EntelUIResources
+dir.dist=dist
+dir.temp=temp
+dir.ear-content=EarContent
+dir.app-inf=${dir.ear-content}/APP-INF
+dir.meta-inf=${dir.ear-content}/META-INF
+dir.lib=${dir.app-inf}/lib
+
+war.filename=mientel-web-app.war
+ear.filename=mientel
+version=3.0.1 RC1
+
+# Autenticacion Provider
+jar.project.uup-ejb=mientel-uup-ejb.jar
+jar.project.client=${dir.project.web-app}/WebContent/WEB-INF/lib/ClientePerfilService-client.jar
+
+#Deploy Weblogic
+admin.url=t3://localhost:7001
+admin.username=weblogic
+admin.password=qpalwosk10
+admin.target=AdminServer
+
+# Manifest attributes
+manifest.extension.name=EntelUIResources
+
+manifest.vendor=I2B Technologies
+manifest.spec.title=MiEntel-v3-spec
+manifest.spec.version=${version}
+manifest.spec.vendor=${manifest.vendor}
+manifest.impl.title=MiEntel-v3-I2B-impl
+manifest.impl.version=${version}
+manifest.impl.vendor=${manifest.vendor}
+
+

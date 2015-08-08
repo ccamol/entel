@@ -1,0 +1,474 @@
+/**********************************************************
+***********************************************************
+**********************************************************/
+.mensaje-alerta{
+	background: #FEFBAD url(../../img/icons/ico_alerta.gif) no-repeat 13px 8px;
+	border: 1px solid #F3D2B3;
+	border-width: 1px 0;
+	margin: 0 0 17px;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+	padding: 8px 0 8px 39px;
+	color: #E24D0D;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+	margin-bottom:10px;
+}
+
+.mensaje-alerta-sistema{
+	display: block;
+	background: #FFF1A8;
+	padding: 10px 0;
+	color:#000;
+	text-align: center;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+	margin-bottom:10px;
+}
+
+.mensaje-alerta-sistema .sub-contenedor{
+	width:95%;
+	margin:0 auto;
+}
+
+.mensaje-alerta-sistema .sub-contenedor .contenedor-imagen{
+	width:30%;
+	float:left;
+}
+
+.mensaje-alerta-sistema .imagen{
+	background:url(../../img/icons/ico_alerta_amarrillo.gif) no-repeat;
+	width:33px;
+	height:28px;
+	float:right;
+	margin:0 auto;
+}
+
+.mensaje-alerta-sistema .texto{
+	font-size:1.2em;
+	width:50%;
+	display: block;
+	float:left;
+	text-align:left;
+	padding: 8px 10px 0 10px;
+}
+
+
+/**********************************************************
+***********************************************************
+**********************************************************/
+
+.mensaje-exito{
+	display: block;
+	background: #DDF0D9;
+	padding: 10px 0;
+	color:#000;
+	text-align: center;
+	border-top: 1px solid #BED7BC;
+	border-bottom: 1px solid #BED7BC;
+	margin-bottom:20px;
+}
+
+.mensaje-exito .sub-contenedor{
+	width:95%;
+	margin:0 auto;
+}
+
+.mensaje-exito .sub-contenedor .contenedor-imagen{
+	width:25%;
+	float:left;
+	padding-top:3px;
+}
+
+.mensaje-exito .imagen{
+	background:url(../../img/icons/ico_tic_verde.gif) no-repeat;
+	float: right;
+    height: 15px;
+    margin: 0 auto;
+    width: 17px;
+}
+
+.mensaje-exito .texto{
+	font-size:1.2em;
+	width:100%;
+	display: block;
+	text-align:center;
+	padding: 5px 0px;;
+}
+
+.mensaje-exito .texto2{
+	display: block;
+    float: left;
+    font-size: 1.2em;
+    padding: 4px 10px;
+    text-align: left;
+    width: 65%;
+}
+
+.mensaje-exito .texto.cambiarUsuario{
+    float: left;
+    font-size: 1.2em;
+    padding: 10px 0 5px 0;
+    text-align: left;
+    width: 350px;
+}
+
+/**********************************************************
+***********************************************************
+**********************************************************/
+
+.mensaje-error{
+	display: block;
+	margin:auto;
+	padding: 5px 0 5px 0px;
+	padding: 5px 0;
+	color:#F93849;
+	text-align: center;
+}
+
+.mensaje-error .contenedor-imagen{
+	display:block;
+}
+
+.mensaje-error .imagen{
+	background:url(../../img/icons/icoAlertaRojo.gif) no-repeat;
+	width:23px;
+	height:23px;
+	float:left;
+	margin-left:10px;
+}
+
+.mensaje-error .texto{
+	font-size:1.2em;
+	display: block;
+	float:left;
+	text-align:left;
+	padding: 5px 10px 0 10px;
+}
+
+/**********************************************************
+***********************************************************
+**********************************************************/
+
+.mensaje-exito-sin-fondo{
+	display: block;
+	margin:auto;
+	padding: 5px 0;
+	color:#00862C;
+	text-align: center;
+}
+
+.mensaje-exito-sin-fondo .contenedor-imagen{
+	display:block;
+}
+
+.mensaje-exito-sin-fondo .imagen{
+	background:url(../../img/icons/icoChuloVerde.gif) no-repeat;
+	width:23px;
+	height:23px;
+	float:left;
+	margin-left:10px;
+}
+
+.mensaje-exito-sin-fondo .texto{
+	font-size:1.2em;
+	display: block;
+	float:left;
+	text-align:left;
+	padding: 5px 10px 0 10px;
+}
+
+/**********************************************************
+***********************************************************
+**********************************************************/
+
+.mensaje-alerta-sistema-pequeno{
+	display: block;
+	background: #FFF1A8;
+	color:#000;
+	text-align: center;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+	margin-bottom:10px;
+}
+
+.mensaje-alerta-sistema-pequeno .sub-contenedor{
+	width:95%;
+	margin:0 auto;
+}
+
+.mensaje-alerta-sistema-pequeno .sub-contenedor .contenedor-imagen{
+	width:25%;
+	float:left;
+	padding-top:3px;
+}
+
+.mensaje-alerta-sistema-pequeno .imagen{
+	background:url(../../img/icons/ico_alertaSmall.gif) no-repeat;
+	width:17px;
+	height:15px;
+	float:right;
+	margin:0 auto;
+}
+
+.mensaje-alerta-sistema-pequeno .texto{
+	font-size:1.2em;
+	width:65%;
+	display: block;
+	float:left;
+	text-align:left;
+	padding: 4px 10px 4px 10px;
+}
+
+.mensaje-alerta-sistema-pequeno .texto-descripcion {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    padding: 4px;
+    text-align: center;
+    width: 85%;
+}
+
+
+/**********************************************************
+***********************************************************
+**********************************************************/
+
+.mensaje-error-pequeno{
+	display: block;
+	background: #FFF1A8;
+	color:#000;
+	text-align: center;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+	margin-bottom:10px;
+}
+
+.mensaje-error-pequeno .sub-contenedor{
+	width:95%;
+	margin:0 auto;
+}
+
+.mensaje-error-pequeno .sub-contenedor .contenedor-imagen{
+	width:25%;
+	float:left;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.mensaje-error-pequeno .imagen{
+	background:url(../../img/icons/icoAlertaAmarrillo.gif) no-repeat;
+	width:24px;
+	height:24px;
+	float:right;
+	margin:0 auto;
+}
+
+.mensaje-error-pequeno .texto{
+	font-size:1.2em;
+	font-weight:bold;
+	width:65%;
+	display: block;
+	float:left;
+	text-align:left;
+	padding: 7px 10px 4px 10px;
+}
+
+
+
+/*********************************************/
+/******* Mensajes JSF con layout TABLE *******/
+/*********************************************/
+
+/* IE Hack */
+/* Mensajes informacion (exito) */
+.contenedor-mensajes-ie  .mensaje-informacion{
+	display: block;
+	margin:10px auto;
+}
+
+.contenedor-mensajes-ie  .mensaje-informacion td{
+	width:80%;
+	height:40px;
+	color:#000000;
+	text-align: center;
+	border-top: 1px solid #BED7BC;
+	border-bottom: 1px solid #BED7BC;
+	margin:10px auto;
+	font-size:1.2em;
+	font-weight:bold;
+	display: block;
+	padding: 5px 0px;
+	background: #DDF0D9;
+}
+
+/*********************************************/
+/* Mensajes error  */
+.contenedor-mensajes-ie  .mensaje-error {
+	display: block;
+	margin:10px auto;
+}
+
+.contenedor-mensajes-ie .mensaje-error td{
+	width:80%;
+	height:40px;
+	color:#000000;
+	text-align: center;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+	margin:10px auto;
+	font-size:1.2em;
+	font-weight:bold;
+	display: block;
+	padding: 5px 0px;
+	background:url(../../img/icons/icoAlertaAmarrillo.gif) 50px 15px #FFF1A8 no-repeat;
+}
+
+.contenedor-mensajes-ie  .mensaje-error.noIcon td{ background:#FFF1A8;}
+
+/*********************************************/
+
+
+/* Other browsers */
+/*********************************************/
+/* Mensajes informacion (exito) */
+
+.contenedor-mensajes .mensaje-informacion {
+	display: block;
+	margin:10px auto;
+	background: #DDF0D9;
+	padding: 10px 0;
+	color:#000;
+	text-align: center;
+	border-top: 1px solid #BED7BC;
+	border-bottom: 1px solid #BED7BC;	
+}
+
+.contenedor-mensajes .mensaje-informacion td {
+	width:80%;
+	margin:0 auto;
+	font-size:1.2em;
+	display: block;
+	text-align:center;
+	padding: 5px 0px;
+}
+
+.contenedor-mensajes .mensaje-informacion.noIcon td { background:none; }
+
+/*********************************************/
+/* Mensajes error  */
+
+.contenedor-mensajes .mensaje-error {
+	
+	display: block;
+	margin:10px auto;
+	padding: 4px 0;
+	width: 100%;
+	color:#000000;
+	text-align: center;
+	background: #FFF1A8;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+}
+
+.contenedor-mensajes .mensaje-error td {
+	width:80%;
+	font-weight:bold;
+	margin:0 auto;
+	font-size:12px;
+	display: block;
+	text-align:center;
+	padding: 5px 5px 5px 25px;
+	background:url(../../img/icons/icoAlertaAmarrillo.gif) no-repeat #FFF1A8;
+}
+
+.contenedor-mensajes .mensaje-error.noIcon td { background:none; }
+
+/*********************************************/
+/* Mensajes Advertencia */
+
+.mensaje-advertencia {
+	display: block;
+	margin:10px auto;
+	padding: 4px 0;
+	color:#000000;
+	text-align: center;
+	background: #FFF1A8;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+}
+
+.mensaje-advertencia td {
+	width:80%;
+	margin:0 auto;
+	font-size:1.2em;
+	display: block;
+	text-align:center;
+	padding: 5px 0px;
+	background:url(../../img/icons/ico_alertaSmall.gif) no-repeat;
+}
+
+.mensaje-advertencia.noIcon td { background:none; }
+
+
+
+/*********************************************/
+/******* Mensajes JSF con layout LIST *******/
+/*********************************************/
+
+/*********************************************/
+/* Mensajes Info (exito) */
+
+.mensajes-lista-info {
+	display: block;
+	width:100%;
+	margin:10px auto;
+	background: #DDF0D9;
+	padding: 10px 0;
+	color:#000;
+	text-align: center;
+	border-top: 1px solid #BED7BC;
+	border-bottom: 1px solid #BED7BC;	
+}
+
+.mensajes-lista-info.noIcon { background:none; }
+
+.mensajes-lista-info li {	
+	width:80%;
+	margin:0 auto;
+	font-size:1.2em;
+	display: block;
+	text-align:center;
+	padding: 5px 0px;
+
+}
+
+/*********************************************/
+/* Mensajes Error  */
+
+.mensajes-lista-error {
+	display: block;
+	width:100%;
+	margin:10px auto;
+	background: #FFF1A8 url(../../img/icons/icoAlertaAmarrillo.gif) 60px 10px no-repeat;
+	padding: 10px 0;
+	color:#000000;
+	text-align: center;
+	border-top: 1px solid #d1c289;
+	border-bottom: 1px solid #d1c289;
+}
+
+.mensajes-lista-error.noIcon { background:none; }
+
+.mensajes-lista-error li {	
+	font-weight:bold;
+	width:80%;
+	margin:0 auto;
+	font-size:1.2em;
+	display: block;
+	text-align:center;
+	padding: 5px 0px;
+	
+}
+
