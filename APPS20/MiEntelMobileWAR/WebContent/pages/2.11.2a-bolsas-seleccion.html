@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+	<link href="favicon.ico" rel="icon" /> 
+
+	<title>Bolsas de datos - Entel</title>
+
+	<!-- CSS -->
+    <link href="${request.getContextPath()}/css/reset.css" rel="stylesheet" />
+    <link href="${request.getContextPath()}/css/main.css" rel="stylesheet" /> 
+
+	<!-- JS -->
+	<script src="${request.getContextPath()}/js/modernizr.custom.js"></script>	
+    
+</head>
+
+
+	<body>
+		<#include "/pages/include/googletags/gt.html">
+		<div class="container">
+
+
+			<!-- MAIN -->
+			<div id="main">
+
+
+					<!-- HEADER -->
+					<header class="section-header clearfix">	
+
+						<a href="Javascript: history.back();" id="menu-button" class="top-nav-btn">
+							<span class="icon icon-arrow-left"></span>
+						</a>
+
+						<div class="logo"></div>	
+
+					</header>
+					
+						<#if userBundleChoice == "plus">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas Prepago Plus</h3>
+							</div>
+							<div>
+								<#list plusBundles as bundle>
+									<a href="dbpPLUS?carta=${bundle.codigo}" class="list-item list-option list-icon" id="${bundle.codigo}">
+										<span class="icon icon-bolsas-extras"></span><b>${bundle.nombre}</b><span class="list-secondary-txt">${bundle.descripcionComercial}</span>
+										<span class="list-third-txt"><b>${bundle.precio}</b></span>
+									</a>
+								</#list>
+							</div>
+							<#include "/pages/include/bolsas/cond_plus.html">												
+						</#if>
+					
+						
+						<#if userBundleChoice == "voz">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas de Voz</h3>
+							</div>
+							<div>
+								<#list voiceBundles as bundle>
+									<a href="dbpVoz?carta=${bundle.codigo}" class="list-item list-option list-icon">
+										<span class="icon icon-bolsas-voz"></span><b>${bundle.nombre}</b><span class="list-secondary-txt">${bundle.descripcionComercial}</span>
+										<span class="list-third-txt"><b>${bundle.precio}</b></span>
+									</a>
+								</#list>
+							</div>												
+						</#if>
+						
+						<#if userBundleChoice == "sms">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas de Mensajes</h3>
+							</div>
+							<div>
+								<#list smsBundles as bundle>
+									<a href="dbpSms?carta=${bundle.codigo}" class="list-item list-option list-icon" id="${bundle.codigo}">
+										<span class="icon icon-bolsas-mensajes"></span><b>${bundle.nombre}</b><span class="list-secondary-txt">${bundle.descripcionComercial}</span>
+										<span class="list-third-txt"><b>${bundle.precio}</b></span>
+									</a>
+								</#list>
+							</div>
+							<#include "/pages/include/bolsas/cond_sms.html">
+						</#if>						
+						
+						<#if userBundleChoice == "datos">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas de Datos</h3>
+							</div>
+							<div>
+								<#list dataBundles as bundle>
+									<a href="dbpDatos?carta=${bundle.codigo}" class="list-item list-option list-icon" id="${bundle.codigo}">
+										<span class="icon icon-bolsas-datos"></span><b>${bundle.nombre}</b><span class="list-secondary-txt">${bundle.descripcionComercial}</span>
+										<span class="list-third-txt"><b>${bundle.precio}</b></span>
+									</a>	
+								</#list>
+							</div>
+							<#include "/pages/include/bolsas/cond_datos.html">												
+						</#if>
+						
+						<#if userBundleChoice == "mixed">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas Combinadas</h3>
+							</div>
+							<div>
+								<#list mixedBundles as bundle>
+									<a href="dbpCom?carta=${bundle.codigo}" class="list-item list-option list-icon" id="${bundle.codigo}">
+										<span class="icon icon-bolsas-combinadas"></span><b>${bundle.nombre}</b><span class="list-secondary-txt">${bundle.descripcionComercial}</span>
+										<span class="list-third-txt"><b>${bundle.precio}</b></span>
+									</a>
+								</#list>
+							</div>
+							<#include "/pages/include/bolsas/cond_mixed.html">											
+						</#if>
+						
+					
+						<!-- Seleccion Bolsas SSCC -->
+						<#if userBundleChoice == "vozSSCC">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas de Voz</h3>
+							</div>
+							<#if poseeBolsaSeleccionSSCC == "ok">
+								<div>
+									<#list voiceSSCCBundles as bundle>
+										<a href="sscvoi?edoc=${bundle.snCodigo}" class="list-item list-option list-icon">
+											<span class="icon icon-bolsas-voz"></span><b>${bundle.nombreBolsa}</b><span class="list-secondary-txt"></span>
+											<span class="list-third-txt"><b>${bundle.costo}</b></span>
+										</a>
+									</#list>
+								</div>
+								<#include "/pages/include/bolsas/cond_vozSSCC.html">														
+							<#else>
+								<section class="section">
+									<div class="content">
+										<p>No tienes bolsas disponibles para esta categor&iacute;a.</p>
+									</div>
+								</section>
+							</#if>
+						</#if>
+						
+						<#if userBundleChoice == "smsSSCC">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas de Mensajes</h3>
+							</div>
+							<#if poseeBolsaSeleccionSSCC == "ok">
+								<div>
+									<#list smsSSCCBundles as bundle>
+										<a href="sscmen?edoc=${bundle.snCodigo}" class="list-item list-option list-icon">
+											<span class="icon icon-bolsas-mensajes"></span><b>${bundle.nombreBolsa}</b><span class="list-secondary-txt"></span>
+											<span class="list-third-txt"><b>${bundle.costo}</b></span>
+										</a>
+									</#list>
+								</div>
+								<#include "/pages/include/bolsas/cond_smsSSCC.html">															
+							<#else>
+								<section class="section">
+									<div class="content">
+										<p>No tienes bolsas disponibles para esta categor&iacute;a.</p>
+									</div>
+								</section>
+							</#if>
+						</#if>						
+						
+						<#if userBundleChoice == "datosSSCC">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas de Datos</h3>
+							</div>
+							<#if poseeBolsaSeleccionSSCC == "ok">
+								<div>
+									<#list dataSSCCBundles as bundle>
+										<a href="sscdat?edoc=${bundle.snCodigo}" class="list-item list-option list-icon">
+											<span class="icon icon-bolsas-datos"></span><b>${bundle.nombreBolsa}</b><span class="list-secondary-txt"></span>
+											<span class="list-third-txt"><b>${bundle.costo}</b></span>
+										</a>	
+									</#list>
+								</div>
+								<#include "/pages/include/bolsas/cond_datosSSCC.html">														
+							<#else>
+								<section class="section">
+									<div class="content">
+										<p>No tienes bolsas disponibles para esta categor&iacute;a.</p>
+									</div>
+								</section>	
+							</#if>
+						</#if>
+						
+						<#if userBundleChoice == "comSSCC">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas Combinadas</h3>
+							</div>
+							<#if poseeBolsaSeleccionSSCC == "ok">
+								<div>
+									<#list mixedSSCCBundles as bundle>
+										<a href="ssccom?edoc=${bundle.snCodigo}" class="list-item list-option list-icon">
+											<span class="icon icon-bolsas-combinadas"></span><b>${bundle.nombreBolsa}</b><span class="list-secondary-txt"></span>
+											<span class="list-third-txt"><b>${bundle.costo}</b></span>
+										</a>
+									</#list>
+								</div>
+							    <#include "/pages/include/bolsas/cond_comSSCC.html">							
+							<#else>
+								<section class="section">
+									<div class="content">
+										<p>No tienes bolsas disponibles para esta categor&iacute;a.</p>
+									</div>
+								</section>	
+							</#if>	
+						</#if>
+						
+						<#if userBundleChoice == "extSSCC">
+							<div class="section-title">
+								<h1 class="title title-lg">Bolsas</h1>
+								<h3 class="title txt-color">Bolsas Extras</h3>
+							</div>
+							<#if poseeBolsaSeleccionSSCC == "ok">
+								<div>
+									<#list imSSCCBundles as bundle>
+										<a href="sscim?edoc=${bundle.snCodigo}" class="list-item list-option list-icon">
+											<span class="icon icon-bolsas-extras"></span><b>${bundle.nombreBolsa}</b><span class="list-secondary-txt"></span>
+											<span class="list-third-txt"><b>${bundle.costo}</b></span>
+										</a>
+									</#list>
+								</div>
+                                <#include "/pages/include/bolsas/cond_extSSCC.html">
+							<#else>
+								<section class="section">
+									<div class="content">
+										<p>No tienes bolsas disponibles para esta categor&iacute;a.</p>
+									</div>
+								</section>
+							</#if>
+						</#if>
+
+
+					<!-- FOOTER -->
+					<footer class="page-footer">
+
+						<p class="txt-small">Copyright Empresa Nacional de Telecomunicaciones S.A. Todos los derechos reservados</p>
+
+					</footer>
+
+
+			</div><!--/main-->
+
+
+			
+		</div><!--/container-->
+
+
+
+		<!-- JS Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="${request.getContextPath()}/js/jquery.collapse.js"></script>
+		<script src="${request.getContextPath()}/js/jquery.idTabs.min.js"></script>
+		<script src="${request.getContextPath()}/js/jAlert-v2.js"></script>
+
+
+		<!-- JS Config -->
+		<script src="${request.getContextPath()}/js/collapse-cfg.js"></script>
+		<script src="${request.getContextPath()}/js/modal-cfg.js"></script>
+		<script src="${request.getContextPath()}/js/val/bundle.detail.js"></script>
+
+
+	</body>
+
+</html>

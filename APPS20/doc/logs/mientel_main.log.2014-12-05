@@ -1,0 +1,3 @@
+[05/12/2014 01:10:31,259] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[05/12/2014 01:10:31,265] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[05/12/2014 01:10:31,682] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente

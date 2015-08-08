@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+	<link href="favicon.ico" rel="icon" /> 
+
+	<title>Detalle bolsa - Entel</title>
+
+	<!-- CSS -->
+    <link href="${request.getContextPath()}/css/reset.css" rel="stylesheet" />
+    <link href="${request.getContextPath()}/css/main.css" rel="stylesheet" /> 
+    <link href="${request.getContextPath()}/css/jAlert-v2.css" rel="stylesheet" />  
+    <style>
+        /* Para dejar el No con color naranjo :( */
+	    .switch label {
+	        background-color: #ff6601;
+	    }
+    </style>
+	<!-- JS -->
+	<script src="${request.getContextPath()}/js/modernizr.custom.js"></script>	
+    
+</head>
+
+
+	<body>
+		<#include "/pages/include/googletags/gt.html">
+		<div class="container">		
+
+			<!-- MAIN -->
+			<div id="main">
+
+
+					<!-- HEADER -->
+					<header class="section-header clearfix">	
+
+						<a href="Javascript: history.back();" id="menu-button" class="top-nav-btn">
+							<span class="icon icon-arrow-left"></span>
+						</a>
+
+						<div class="logo"></div>	
+
+					</header>
+
+
+					<div class="section-title">
+
+						<h1 class="title title-lg">Detalle bolsa</h1>
+
+						<h3 class="title txt-color">Confirmar selección</h3>
+
+					</div>
+
+				
+				<#if datosClientes.mercado == "PP">
+				
+					<section class="section">
+
+						<h3 class="title  title-md bracket">${bundlePP.nombre}</sma++ll></h3>
+
+						<!-- TERM LIST -->
+						<ul class="striped">
+
+							<li class="term-list term-block">Valor <b class="term-value">${bundlePP.precio}</b></li>
+
+							<li class="term-list term-block">${unidad} <b class="term-value">${bundlePP.cantInicial}</b></li>
+							
+						</ul>						
+
+					</section>
+					
+                    <div class="section" style="text-align:center;margin-bottom: 10px;">
+                        <div id="divConfirmaBolsa">
+                            <span class="switch">
+                                Comprar esta bolsa                                    
+                                <input type="checkbox" name="confirmaCompra" id="confirmaCompra" />
+                                <label for="switch-remember"></label>
+                            </span>     
+                        </div>
+                    </div> 
+                                     
+                    <section class="section">
+
+                        <a href="confirmar?edoc=${bundlePP.codigo}" class="btn btn-secondary btn-lg btn-symbols btn-block" id="btn_confirmar">Confirmar bolsa</a>
+                        
+                        <a href="Javascript: history.back();" class="btn btn-default btn-lg btn-symbols btn-block">Volver</a>
+                        
+                    </section>
+						
+				<#else>
+				
+					<section class="section">
+
+						<h3 class="title  title-md bracket">${bundleSSCC.nombreBolsa}</sma++ll></h3>
+
+						<!-- TERM LIST -->
+						<ul class="striped">
+
+							<li class="term-list term-block">Cargo fijo <b class="term-value">${bundleSSCC.costo}</b></li>
+							
+						</ul>						
+
+					</section>
+					
+					<div class="section" style="text-align:center;margin-bottom: 10px;">
+                        <div id="divConfirmaBolsa">
+	                        <span class="switch">
+	                            Comprar esta bolsa                                    
+	                            <input type="checkbox" name="confirmaCompra" id="confirmaCompra" />
+	                            <label for="switch-remember"></label>
+	                        </span>     
+                        </div>
+                    </div>    
+                        
+					<!-- <div id="noConfirmacion" class="section" style="text-align:center;display:none">
+			            <div class="callout bg-warning">
+			
+		                  <span class="icon icon-error"></span>
+			                
+			              <span style="color:red;font-size:1.7em">Debes confirmar aqu&iacute; primero</span>
+			
+			            </div>
+			        </div> -->
+
+					<section class="section">
+
+						<a href="confirmar?edoc=${bundleSSCC.snCodigo}" class="btn btn-secondary btn-lg btn-symbols btn-block" id="btn_confirmar">Confirmar bolsa</a>
+						
+						<a href="Javascript: history.back();" class="btn btn-default btn-lg btn-symbols btn-block">Volver</a>
+						
+					</section>
+							
+				</#if>
+
+
+					<!-- FOOTER -->
+					<footer class="page-footer">
+
+						<p class="txt-small">Copyright Empresa Nacional de Telecomunicaciones S.A. Todos los derechos reservados</p>
+
+					</footer>
+
+
+			</div><!--/main-->
+
+
+			
+		</div><!--/container-->
+
+
+
+		<!-- JS Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="${request.getContextPath()}/js/snap.min.js"></script>
+		<script src="${request.getContextPath()}/js/jquery.collapse.js"></script>
+		<script src="${request.getContextPath()}/js/jquery.idTabs.min.js"></script>
+		<script src="${request.getContextPath()}/js/jAlert-v2.js"></script>
+
+
+		<!-- JS Config -->
+		<script src="${request.getContextPath()}/js/collapse-cfg.js"></script>
+		<script src="${request.getContextPath()}/js/modal-cfg.js"></script>
+		<script src="${request.getContextPath()}/js/val/bundle.detail.js"></script>
+
+		<!-- Fix telefonos medium -->
+		<script src="${request.getContextPath()}/js/fix/overthrow-detect.js"></script>
+		<script src="${request.getContextPath()}/js/fix/overthrow-polyfill.js"></script>
+		<script src="${request.getContextPath()}/js/fix/overthrow-toss.js"></script>
+		<script src="${request.getContextPath()}/js/fix/overthrow-init.js"></script>
+		<script src="${request.getContextPath()}/js/fix/fix-snap.js"></script>
+		<!-- Fix telefonos medium -->
+
+
+	</body>
+
+</html>

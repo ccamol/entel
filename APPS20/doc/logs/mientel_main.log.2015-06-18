@@ -1,0 +1,59 @@
+[18/06/2015 15:15:08,897] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[18/06/2015 15:15:08,902] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[18/06/2015 15:15:09,025] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[18/06/2015 15:15:09,371] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[18/06/2015 15:16:43,341] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[18/06/2015 15:16:43,345] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[18/06/2015 15:16:43,346] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[18/06/2015 15:16:43,346] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:973
+[18/06/2015 15:16:43,347] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[18/06/2015 15:16:43,356] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [82709286] con id [ed1c751abdbe5f59337013e1f270cdb5]
+[18/06/2015 15:16:43,362] INFO [web.actions.LoginAction] [validaUsuario] [ed1c751abdbe5f59337013e1f270cdb5] Informacion cliente se logra obtener por variable de session [cliente]
+[18/06/2015 15:16:43,363] INFO [web.actions.LoginAction] [validaUsuario] [ed1c751abdbe5f59337013e1f270cdb5] Login correcto msisdn 82709286 mercado SS
+[18/06/2015 15:17:08,839] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[18/06/2015 15:17:10,200] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:17:10,201] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:17:10,687] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[18/06/2015 15:23:06,990] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[18/06/2015 15:23:06,994] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[18/06/2015 15:23:06,995] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[18/06/2015 15:23:06,995] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:339
+[18/06/2015 15:23:06,995] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[18/06/2015 15:23:06,996] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [82709286] con id [0aa4bd1fbf215262b1943179a3ffed7e]
+[18/06/2015 15:23:07,406] INFO [web.actions.SigninAction] [obtienePerfil] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio ClientePerfilService responde: 
+[18/06/2015 15:23:07,406] INFO [web.actions.SigninAction] [obtienePerfil] [0aa4bd1fbf215262b1943179a3ffed7e] Response Code: 0000
+[18/06/2015 15:23:07,407] INFO [web.actions.SigninAction] [obtienePerfil] [0aa4bd1fbf215262b1943179a3ffed7e] Response Descripcion: OK
+[18/06/2015 15:23:07,407] INFO [web.actions.SigninAction] [obtienePerfil] [0aa4bd1fbf215262b1943179a3ffed7e] Tiempo:410
+[18/06/2015 15:23:07,407] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [0aa4bd1fbf215262b1943179a3ffed7e] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[18/06/2015 15:23:07,407] INFO [web.actions.LoginAction] [validaUsuario] [0aa4bd1fbf215262b1943179a3ffed7e] No es posible obtener variable de session [cliente]
+[18/06/2015 15:23:07,408] INFO [web.actions.LoginAction] [validaUsuario] [0aa4bd1fbf215262b1943179a3ffed7e] No es posible realizar login con session [cliente]
+[18/06/2015 15:23:07,408] INFO [web.actions.LoginAction] [validaUsuario] [0aa4bd1fbf215262b1943179a3ffed7e] Se efectua autenticacion con objeto [LoginVO]
+[18/06/2015 15:23:07,408] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [0aa4bd1fbf215262b1943179a3ffed7e] Se crea session para [82709286]
+[18/06/2015 15:23:07,469] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:23:08,436] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:23:08,436] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:23:08,650] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[18/06/2015 15:28:57,871] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:28:59,177] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:28:59,177] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:28:59,602] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[18/06/2015 15:30:13,624] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:30:14,874] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:30:14,874] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:30:15,131] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[18/06/2015 15:30:48,774] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:30:49,604] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:30:49,604] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:30:49,907] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[18/06/2015 15:31:50,130] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:31:51,158] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:31:51,158] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:31:51,490] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[18/06/2015 15:32:12,705] INFO [web.actions.TrafficAction] [trafico] [0aa4bd1fbf215262b1943179a3ffed7e] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:32:13,615] ERROR [appmobile.util.Config] [getAppProperty] [0aa4bd1fbf215262b1943179a3ffed7e] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:32:13,615] ERROR [appmobile.util.Config] [getAppProperty] [0aa4bd1fbf215262b1943179a3ffed7e] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:32:13,922] INFO [web.actions.TrafficAction] [isExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Usuario no posee datos Excedidos
+[18/06/2015 15:33:16,920] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[18/06/2015 15:33:17,901] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:33:17,901] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[18/06/2015 15:33:18,273] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos

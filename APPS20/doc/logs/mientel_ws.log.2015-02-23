@@ -1,0 +1,22 @@
+[23/02/2015 12:56:36,280] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] | Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[23/02/2015 12:56:36,282] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] | MSISDN: [77467726]
+[23/02/2015 12:56:36,282] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] | Respuesta Codigo Servicio: [0000]
+[23/02/2015 12:56:36,282] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] | Respuesta Descripcion Servicio: [OK]
+[23/02/2015 12:56:36,284] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | Inicio validacion numero movil 77467726
+[23/02/2015 12:56:36,716] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[23/02/2015 12:56:36,716] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | codigoRespuesta 0000
+[23/02/2015 12:56:36,717] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | descripcionRespuesta ddec7b73447a3099eb5132bc8683e3b1
+[23/02/2015 12:56:36,717] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | Verificacion correcta de las credenciales del usuario.
+[23/02/2015 12:56:36,717] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | Codigo Response Service: 0000
+[23/02/2015 12:56:36,717] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] | Descripcion Response Service: ddec7b73447a3099eb5132bc8683e3b1
+[23/02/2015 12:56:38,467] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[23/02/2015 12:56:38,468] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | para consultar resumen de prepago
+[23/02/2015 12:56:39,948] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | PREPAGO MSISDN: [77467726] | NO TIENE saldo reservado
+[23/02/2015 12:56:39,950] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[23/02/2015 12:56:39,951] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | MSISDN: [77467726]
+[23/02/2015 12:56:39,951] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | Codigo Response Service: 0000
+[23/02/2015 12:56:39,951] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanResumenPP] | Descripcion Response Service: OK
+[23/02/2015 12:56:43,618] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanActualPP] | Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[23/02/2015 12:56:43,619] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanActualPP] | MSISDN: [77467726]
+[23/02/2015 12:56:43,619] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanActualPP] | Codigo Response Service: 0000
+[23/02/2015 12:56:43,619] INFO [com.esa.ponline.appmobile.ws.dao.imp.MenuImp] [consultarPlanActualPP] | Descripcion Response Service: OK

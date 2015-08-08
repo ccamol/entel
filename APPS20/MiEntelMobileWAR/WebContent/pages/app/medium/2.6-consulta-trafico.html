@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+<link href="favicon.ico" rel="icon" />
+
+<title>Consulta de tr&aacute;fico - Entel</title>
+
+<!-- CSS -->
+<link href="css/reset.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+
+<!-- JS -->
+<script src="js/modernizr.custom.js"></script>
+
+
+</head>
+
+
+<body>
+	<#include "/pages/include/googletags/gt.html">
+
+	<div class="container">
+
+		<!-- MAIN -->
+		<div id="main">
+		
+            <#include "/pages/include/fixRegistro/mensajeZonaEntel.html">
+			
+			<div class="section-title">
+
+				<h3 class="title txt-color">${trafico.plan}</h3>
+
+			</div>
+
+
+			<section class="section">
+
+
+<#if trafico.fechaVoz?exists>
+				<h3 class="title title-md bracket">Voz <small class="float-right">al ${trafico.fechaVoz}</small></h3>
+
+				<ul>
+
+					<li class="term-list term-block">Minutos utilizados <b class="term-value">${trafico.minutosUtilizados}</b></li>
+
+				</ul>
+</#if>
+<#if trafico.fechaMensajeria?exists>
+				<h3 class="title title-md bracket">Mensajes <small class="float-right">al ${trafico.fechaMensajeria}</small></h3>
+
+				<ul>
+
+					<li class="term-list term-block">SMS/MMS y Otros<b class="term-value">${trafico.smsMMS}</b></li>
+
+				</ul>
+</#if>				
+				<#if trafico.fechaDatos?exists>
+				<h3 class="title title-md bracket">Datos <small class="float-right">al ${trafico.fechaDatos}</small></h3>
+			
+				<ul>
+					<li class="term-list term-block">Total utilizado<b class="term-value">${trafico.suma}</b></li>
+				</ul>
+				</#if>
+
+			</section>
+
+			<!-- FOOTER -->
+			<footer class="page-footer">
+
+						<p class="txt-small"><@s.text name="trafico.copyright"/></p>
+
+			</footer>
+
+
+			</div><!--/main-->
+
+
+
+		</div><!--/container-->
+
+
+
+	<!-- JS Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+	<!-- Fix telefonos medium -->
+	<script src="js/fix/overthrow-detect.js"></script>
+	<script src="js/fix/overthrow-polyfill.js"></script>
+	<script src="js/fix/overthrow-toss.js"></script>
+	<script src="js/fix/overthrow-init.js"></script>
+	<script src="js/fix/fix-snap.js"></script>
+	<!-- Fix telefonos medium -->
+	
+	<script src="js/snap.min.js"></script>
+	<script src="js/jquery.collapse.js"></script>
+	<script src="js/jquery.idTabs.min.js"></script>
+	<script src="js/jAlert-v2.js"></script>
+	<script src="js/Chart.min.js"></script>
+
+
+	<!-- JS Config -->
+	<script src="js/sidebar-cfg.js"></script>
+	<script src="js/collapse-cfg.js"></script>
+	<script src="js/modal-cfg.js"></script>
+	
+
+</body>
+
+</html>

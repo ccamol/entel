@@ -1,0 +1,80 @@
+[07/06/2015 23:01:46,566] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[07/06/2015 23:01:46,573] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[07/06/2015 23:01:46,689] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[07/06/2015 23:01:47,035] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[07/06/2015 23:02:01,083] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[07/06/2015 23:02:01,084] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[07/06/2015 23:02:01,084] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[07/06/2015 23:02:01,085] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1776
+[07/06/2015 23:02:01,085] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[07/06/2015 23:02:01,090] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [ed51e810d4d43662bea106d4e9a7e822]
+[07/06/2015 23:02:01,094] INFO [web.actions.LoginAction] [validaUsuario] [ed51e810d4d43662bea106d4e9a7e822] Informacion cliente se logra obtener por variable de session [cliente]
+[07/06/2015 23:02:01,094] INFO [web.actions.LoginAction] [validaUsuario] [ed51e810d4d43662bea106d4e9a7e822] Login correcto msisdn 77467726 mercado PP
+[07/06/2015 23:02:10,781] INFO [web.actions.BundleAction] [ppUserHasBundles] [] MSISDN [77467726] posee bolsas activas
+[07/06/2015 23:02:17,512] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[07/06/2015 23:02:17,513] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[07/06/2015 23:02:17,513] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[07/06/2015 23:02:17,513] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:2186
+[07/06/2015 23:02:18,350] INFO [web.actions.SigninAction] [obtenerValorTipoBolsa] [] Tiempo:836
+[07/06/2015 23:02:18,351] INFO [web.actions.BundleAction] [defineUserBundleType] [] Se establece bolsas para PP Normal
+[07/06/2015 23:02:18,667] INFO [web.actions.BundleAction] [getAllAvailableUserPPPBundles] [] Se realiza consulta de bolsas disponibles para msisdn [77467726]
+[07/06/2015 23:02:18,668] INFO [web.actions.BundleAction] [setAllAvailableUserPPPBundles] [] Se realiza consulta de bolsas disponibles para msisdn [77467726]
+[07/06/2015 23:02:18,668] INFO [web.actions.BundleAction] [loadAvailableUserBundle] [] MSIDN [77467726es cliente PP PLUS
+[07/06/2015 23:02:20,258] INFO [web.actions.BundleAction] [loadUserPlusBundle] [] Se realiza consulta para bolsas IM
+[07/06/2015 23:02:20,259] INFO [web.actions.BundleAction] [getAllAvailableUserPPPBundles] [] Se realiza consulta de bolsas disponibles para msisdn [77467726]
+[07/06/2015 23:02:20,259] INFO [web.actions.BundleAction] [setPlusBundles] [] Consiguien bolsas PLUS disponibles
+[07/06/2015 23:02:20,259] INFO [web.actions.BundleAction] [setPlusBundles] [] Finaliza la consulta para bolsas de tipo PLUS
+[07/06/2015 23:02:23,328] INFO [web.actions.BundleAction] [getDetailPlusBundlePP] [] Usuario PP ha seleccionado bolsa
+[07/06/2015 23:02:23,329] INFO [web.actions.BundleAction] [getDetailPlusBundlePP] [] CARTASERV0376
+[07/06/2015 23:04:16,644] INFO [web.actions.LoginAction] [validaUsuario] [] Se redirige al usuario registro paso 3
+[07/06/2015 23:04:16,692] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[07/06/2015 23:04:16,692] INFO [web.actions.RegisterAction] [execute] [] Se redirige al usuario al paso 3 del registro
+[07/06/2015 23:04:18,004] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Respuesta del servicio con codigo [0002]
+[07/06/2015 23:04:18,004] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Respuesta del servicio con descripcion [No existe informacion]
+[07/06/2015 23:04:18,005] INFO [web.actions.RegisterAction] [isWebTemplate] [] Validando si es template web o apps
+[07/06/2015 23:04:18,005] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[07/06/2015 23:04:18,006] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Se remueve la sesion cliente_registro_signin
+[07/06/2015 23:04:18,006] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[07/06/2015 23:04:18,006] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[07/06/2015 23:05:11,529] INFO [web.actions.LoginAction] [validaUsuario] [] Se redirige al usuario registro paso 3
+[07/06/2015 23:05:11,540] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[07/06/2015 23:05:11,540] INFO [web.actions.RegisterAction] [execute] [] Se redirige al usuario al paso 3 del registro
+[07/06/2015 23:05:12,985] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Respuesta del servicio con codigo [0002]
+[07/06/2015 23:05:12,985] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Respuesta del servicio con descripcion [No existe informacion]
+[07/06/2015 23:05:12,985] INFO [web.actions.RegisterAction] [isWebTemplate] [] Validando si es template web o apps
+[07/06/2015 23:05:12,985] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[07/06/2015 23:05:12,986] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Se remueve la sesion cliente_registro_signin
+[07/06/2015 23:05:12,986] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[07/06/2015 23:05:12,986] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[07/06/2015 23:50:12,740] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[07/06/2015 23:50:12,746] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[07/06/2015 23:50:12,850] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[07/06/2015 23:50:13,121] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[07/06/2015 23:50:38,812] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[07/06/2015 23:50:38,813] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[07/06/2015 23:50:38,813] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[07/06/2015 23:50:38,814] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1537
+[07/06/2015 23:50:38,814] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[07/06/2015 23:50:38,820] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [0b3b6cc0fe3fa33fa082165c49cc2c96]
+[07/06/2015 23:50:38,823] INFO [web.actions.LoginAction] [validaUsuario] [0b3b6cc0fe3fa33fa082165c49cc2c96] Informacion cliente se logra obtener por variable de session [cliente]
+[07/06/2015 23:50:38,824] INFO [web.actions.LoginAction] [validaUsuario] [0b3b6cc0fe3fa33fa082165c49cc2c96] Login correcto msisdn 77467726 mercado PP
+[07/06/2015 23:50:49,439] INFO [web.actions.BundleAction] [ppUserHasBundles] [] MSISDN [77467726] posee bolsas activas
+[07/06/2015 23:50:51,473] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[07/06/2015 23:50:51,474] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[07/06/2015 23:50:51,474] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[07/06/2015 23:50:51,475] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:918
+[07/06/2015 23:50:52,320] INFO [web.actions.SigninAction] [obtenerValorTipoBolsa] [] Tiempo:845
+[07/06/2015 23:50:52,321] INFO [web.actions.BundleAction] [defineUserBundleType] [] Se establece bolsas para PP Normal
+[07/06/2015 23:50:54,248] INFO [web.actions.BundleAction] [getAllAvailableUserPPPBundles] [] Se realiza consulta de bolsas disponibles para msisdn [77467726]
+[07/06/2015 23:50:54,248] INFO [web.actions.BundleAction] [setAllAvailableUserPPPBundles] [] Se realiza consulta de bolsas disponibles para msisdn [77467726]
+[07/06/2015 23:50:54,248] INFO [web.actions.BundleAction] [loadAvailableUserBundle] [] MSIDN [77467726es cliente PP PLUS
+[07/06/2015 23:50:57,794] INFO [web.actions.BundleAction] [loadUserPlusBundle] [] Se realiza consulta para bolsas IM
+[07/06/2015 23:50:57,794] INFO [web.actions.BundleAction] [getAllAvailableUserPPPBundles] [] Se realiza consulta de bolsas disponibles para msisdn [77467726]
+[07/06/2015 23:50:57,795] INFO [web.actions.BundleAction] [setPlusBundles] [] Consiguien bolsas PLUS disponibles
+[07/06/2015 23:50:57,795] INFO [web.actions.BundleAction] [setPlusBundles] [] Finaliza la consulta para bolsas de tipo PLUS
+[07/06/2015 23:51:00,528] INFO [web.actions.BundleAction] [getDetailPlusBundlePP] [] Usuario PP ha seleccionado bolsa
+[07/06/2015 23:51:00,529] INFO [web.actions.BundleAction] [getDetailPlusBundlePP] [] CARTASERV0376
+[07/06/2015 23:51:08,714] INFO [web.actions.BundleAction] [confirmBundle] [] Usuario realiza confirmacion de la bolsa
+[07/06/2015 23:51:08,714] INFO [web.actions.BundleAction] [confirmBundle] [] Codigo o Carta Bolsa a Contratar o Comprar: [CARTASERV0376]
+[07/06/2015 23:51:08,714] INFO [web.actions.BundleAction] [confirmBundle] [] Iniciando compra de bolsa
+[07/06/2015 23:51:08,714] INFO [web.actions.BundleAction] [confirmBundle] [] Compramos la bolsa y cacheamos

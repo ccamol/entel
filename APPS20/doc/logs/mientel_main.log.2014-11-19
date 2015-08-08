@@ -1,0 +1,33 @@
+[19/11/2014 01:55:27,530] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[19/11/2014 01:55:27,533] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[19/11/2014 01:55:27,993] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[19/11/2014 01:55:45,610] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[19/11/2014 01:55:45,613] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[19/11/2014 01:55:46,126] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[19/11/2014 01:55:59,858] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[19/11/2014 01:55:59,859] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[19/11/2014 01:55:59,861] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77467726 mercado PP
+[19/11/2014 02:00:17,085] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[19/11/2014 02:00:17,088] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[19/11/2014 02:00:17,432] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[19/11/2014 02:00:36,312] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[19/11/2014 02:00:36,314] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[19/11/2014 02:00:36,317] ERROR [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Se ha producido un problema al intentar autenticar usuario null
+[19/11/2014 02:00:50,772] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[19/11/2014 02:00:50,773] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[19/11/2014 02:00:50,773] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77467726 mercado PP
+[19/11/2014 02:05:36,971] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[19/11/2014 02:05:36,974] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[19/11/2014 02:05:37,377] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[19/11/2014 02:05:50,795] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[19/11/2014 02:05:50,797] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[19/11/2014 02:05:50,806] ERROR [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Se ha producido un problema al intentar autenticar usuario null
+[19/11/2014 02:06:04,311] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[19/11/2014 02:06:04,311] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[19/11/2014 02:06:04,312] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77467726 mercado PP
+[19/11/2014 02:17:19,188] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[19/11/2014 02:17:19,190] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[19/11/2014 02:17:33,997] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[19/11/2014 02:18:41,351] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[19/11/2014 02:18:41,353] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [62000347]
+[19/11/2014 02:18:41,353] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 62000347 mercado PP

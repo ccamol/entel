@@ -1,0 +1,178 @@
+[26/11/2014 10:36:58,583] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[26/11/2014 10:36:58,588] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[26/11/2014 10:36:58,588] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[26/11/2014 10:36:58,594] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[26/11/2014 10:36:58,600] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[26/11/2014 10:36:58,600] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[26/11/2014 10:36:58,601] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se rescata key desde json [jsonKeyData]
+[26/11/2014 10:36:58,601] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 10:37:03,424] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 10:37:03,425] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 10:37:03,521] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[26/11/2014 10:37:03,521] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4"]
+[26/11/2014 10:37:03,522] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4
+[26/11/2014 10:37:04,469] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 10:37:06,633] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Servicio ClientePerfilService responde: 
+[26/11/2014 10:37:06,633] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Code: 0000
+[26/11/2014 10:37:06,634] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Descripcion: OK
+[26/11/2014 10:37:06,634] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[26/11/2014 10:37:06,634] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[26/11/2014 10:37:06,637] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 10:37:06,638] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 10:37:15,561] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[26/11/2014 10:38:17,316] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[26/11/2014 10:38:17,317] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[26/11/2014 10:38:17,317] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[26/11/2014 10:38:17,317] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[26/11/2014 10:38:17,318] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se rescata key desde variable de session [jsonKey]
+[26/11/2014 10:38:17,318] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 10:38:24,148] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 10:38:24,148] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 10:38:24,263] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[26/11/2014 10:38:24,264] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4"]
+[26/11/2014 10:38:24,264] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4
+[26/11/2014 10:38:25,454] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 10:38:29,026] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Servicio ClientePerfilService responde: 
+[26/11/2014 10:38:29,026] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Code: 0000
+[26/11/2014 10:38:29,027] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Descripcion: OK
+[26/11/2014 10:38:29,027] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[26/11/2014 10:38:29,027] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[26/11/2014 10:38:29,028] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 10:38:29,028] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 10:40:34,219] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [ppUserHasBundles] -MSISDN [77467726] posee bolsas activas
+[26/11/2014 10:40:34,220] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [ppUserHasBundles] -MSISDN [77467726] posee bolsas activas
+[26/11/2014 10:40:58,456] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[26/11/2014 10:40:58,457] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[26/11/2014 10:40:58,457] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[26/11/2014 10:40:58,457] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[26/11/2014 10:40:58,458] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se rescata key desde variable de session [jsonKey]
+[26/11/2014 10:40:58,458] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 10:41:06,577] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 10:41:06,577] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 10:41:06,698] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[26/11/2014 10:41:06,698] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4"]
+[26/11/2014 10:41:06,699] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4
+[26/11/2014 10:41:11,389] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 10:41:21,950] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Servicio ClientePerfilService responde: 
+[26/11/2014 10:41:21,951] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Code: 0000
+[26/11/2014 10:41:21,951] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Descripcion: OK
+[26/11/2014 10:41:21,952] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[26/11/2014 10:41:21,952] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[26/11/2014 10:41:21,953] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 10:41:21,953] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 11:51:02,848] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[26/11/2014 11:51:02,848] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[26/11/2014 11:51:02,848] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[26/11/2014 11:51:02,849] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[26/11/2014 11:51:02,849] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se rescata key desde variable de session [jsonKey]
+[26/11/2014 11:51:02,849] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 11:51:02,995] ERROR [com.esa.ponline.appmobile.web.actions.SigninAction] [obtieneCompania] -Error al inicializar el Servicio class unix.roble.ValidaMsisdnService
+java.lang.NullPointerException
+	at com.esa.ponline.appmobile.web.actions.SigninAction.obtieneCompania(SigninAction.java:324)
+	at com.esa.ponline.appmobile.web.actions.SigninAction.procesaJson(SigninAction.java:156)
+	at com.esa.ponline.appmobile.web.actions.SigninAction.execute(SigninAction.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:63)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:43)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at oracle.security.jps.ee.http.JpsAbsFilter$1.run(JpsAbsFilter.java:119)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:442)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:103)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:171)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:71)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:139)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+[26/11/2014 11:51:02,996] ERROR [com.esa.ponline.appmobile.web.actions.SigninAction] [obtieneCompania] -No es posible crear la llamada al servicio ValidaMsisdnService: null
+[26/11/2014 11:51:02,997] ERROR [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Error en servicio
+[26/11/2014 11:51:02,998] ERROR [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap
+[26/11/2014 11:51:02,998] ERROR [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 99
+[26/11/2014 12:27:06,187] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[26/11/2014 12:27:06,187] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[26/11/2014 12:27:06,188] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[26/11/2014 12:27:06,188] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[26/11/2014 12:27:06,188] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se rescata key desde variable de session [jsonKey]
+[26/11/2014 12:27:06,189] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 12:27:14,618] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 12:27:14,619] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 12:27:14,749] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[26/11/2014 12:27:14,749] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4"]
+[26/11/2014 12:27:14,749] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4
+[26/11/2014 12:27:17,314] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[26/11/2014 12:27:31,478] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Servicio ClientePerfilService responde: 
+[26/11/2014 12:27:31,478] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Code: 0000
+[26/11/2014 12:27:31,478] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] -Response Descripcion: OK
+[26/11/2014 12:27:31,479] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[26/11/2014 12:27:31,479] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[26/11/2014 12:27:31,479] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[26/11/2014 12:27:31,480] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[26/11/2014 13:31:30,878] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[26/11/2014 13:31:30,931] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[26/11/2014 13:31:31,120] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726

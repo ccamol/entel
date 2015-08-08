@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources"
+        value="com.esa.ponline.appmobile.bundle.MessageResourceBundle" />
+
+<constant name="struts.freemarker.manager.classname" 
+        value="com.esa.ponline.appmobile.freemarker.MzzoFreemarkerManager" />
+
+	<include file="struts-test.xml" />
+	<include file="struts-login.xml" />
+	<include file="struts-registro.xml" />
+	<include file="struts-recupera-clave.xml" />
+	<include file="struts-consulta-trafico.xml" />
+	<include file="struts-consulta-saldo.xml" />
+	<include file="struts-estado-cuenta.xml"/>
+	<include file="struts-bolsas.xml"></include>
+	<include file="struts-planes.xml"></include>
+	
+	<package namespace="/" name="default" extends="struts-default, json-default">
+		<interceptors>
+			<interceptor name="responseHeaders" class="com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor" />
+			<interceptor name="authentication" class="com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor" />
+
+			<interceptor-stack name="extendedStack">
+				<interceptor-ref name="defaultStack" >
+					<param name="exception.logEnabled">true</param>
+				    <param name="exception.logLevel">ERROR</param>
+     			</interceptor-ref>
+				<interceptor-ref name="responseHeaders" />
+				<interceptor-ref name="authentication" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="extendedStack" />
+
+		<global-results>
+			<result type="redirectAction" name="redirectLogin">
+				<param name="actionName">login</param>
+			</result>
+			
+			<result type="redirectAction" name="redirectRegister">
+				<param name="actionName">registro</param>
+			</result>
+ 
+			<result type="freemarker" name="error_general">/pages/error_general.html</result>
+		</global-results>
+
+ 
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception" result="error_general" />
+		</global-exception-mappings>
+
+		<action name="terms" class="com.esa.ponline.appmobile.web.actions.TermAction">
+			<result type="freemarker" name="success">/pages/terminos.html</result>
+		</action>
+
+</package>
+</struts>

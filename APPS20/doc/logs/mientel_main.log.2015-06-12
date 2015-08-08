@@ -1,0 +1,13 @@
+[12/06/2015 19:01:34,091] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[12/06/2015 19:01:34,097] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[12/06/2015 19:01:34,225] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[12/06/2015 19:01:34,576] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[12/06/2015 19:01:55,121] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[12/06/2015 19:01:55,122] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[12/06/2015 19:01:55,122] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[12/06/2015 19:01:55,123] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:583
+[12/06/2015 19:01:55,123] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[12/06/2015 19:01:55,131] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [dadbf2e5c99af461e9bce8a1c1865df9]
+[12/06/2015 19:01:55,136] INFO [web.actions.LoginAction] [validaUsuario] [dadbf2e5c99af461e9bce8a1c1865df9] Informacion cliente se logra obtener por variable de session [cliente]
+[12/06/2015 19:01:55,137] INFO [web.actions.LoginAction] [validaUsuario] [dadbf2e5c99af461e9bce8a1c1865df9] Login correcto msisdn 77467726 mercado PP
+[12/06/2015 19:02:42,448] INFO [web.actions.BundleAction] [ppUserHasBundles] [] MSISDN [77467726] posee bolsas activas

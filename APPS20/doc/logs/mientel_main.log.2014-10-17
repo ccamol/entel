@@ -1,0 +1,176 @@
+[17/10/2014 11:03:55,963] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 88996108
+[17/10/2014 11:03:58,449] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_ss_high
+[17/10/2014 11:03:58,449] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [88996108]
+[17/10/2014 12:43:16,859] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 12:43:17,842] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[17/10/2014 12:43:17,846] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[17/10/2014 12:43:17,846] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 12:43:23,232] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 12:43:23,644] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 12:43:23,760] ERROR [com.esa.ponline.appmobile.util.DefineTemplate] [isMediumTemplate] -Problema en validacion medium template: null
+[17/10/2014 12:43:24,114] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 12:43:24,238] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[17/10/2014 12:43:24,238] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[17/10/2014 12:43:24,309] ERROR [com.esa.ponline.appmobile.util.DefineTemplate] [isMediumTemplate] -Problema en validacion medium template: null
+[17/10/2014 15:40:37,795] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[17/10/2014 15:40:37,799] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[17/10/2014 15:40:37,800] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 15:40:37,801] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 15:40:37,806] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[17/10/2014 15:40:37,807] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 15:40:37,808] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 775011a61ba0a87195db99e95af1018074c792c8773302
+[17/10/2014 15:40:37,808] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[17/10/2014 15:40:43,211] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 15:40:43,211] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 15:40:43,467] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[17/10/2014 15:40:43,468] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4"]
+[17/10/2014 15:40:43,468] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4
+[17/10/2014 15:40:44,488] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[17/10/2014 15:40:50,236] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[17/10/2014 15:40:50,236] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 15:40:50,237] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 15:40:50,237] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 15:40:53,116] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[17/10/2014 15:41:59,283] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[17/10/2014 15:41:59,286] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[17/10/2014 15:41:59,287] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 15:42:01,555] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[17/10/2014 15:42:01,556] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 15:42:04,102] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[17/10/2014 15:52:46,538] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 15:52:47,917] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[17/10/2014 15:52:47,918] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 15:56:52,756] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 15:56:54,814] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[17/10/2014 15:56:54,815] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 15:57:08,347] INFO [com.esa.ponline.appmobile.web.actions.PasswdAction] [enviarSMS] -app_success_step_two
+[17/10/2014 15:57:08,347] INFO [com.esa.ponline.appmobile.web.actions.PasswdAction] [enviarSMS] -Envio de clave exitoso para MSISDN [62000720]
+[17/10/2014 15:58:30,016] DEBUG [com.esa.ponline.appmobile.util.security.PostOnDemmand] [post] -status:200
+[17/10/2014 15:58:30,018] DEBUG [com.esa.ponline.appmobile.util.security.PostOnDemmand] [post] -request.getResponseBodyAsString():0001
+
+[17/10/2014 15:58:30,019] INFO [com.esa.ponline.appmobile.web.actions.PasswdAction] [enviarSMS] -MSISDN ingresado no pertenece a entel [61213302]
+[17/10/2014 15:59:13,179] DEBUG [com.esa.ponline.appmobile.util.security.PostOnDemmand] [post] -status:200
+[17/10/2014 15:59:13,180] DEBUG [com.esa.ponline.appmobile.util.security.PostOnDemmand] [post] -request.getResponseBodyAsString():0002
+
+[17/10/2014 15:59:13,183] INFO [com.esa.ponline.appmobile.web.actions.PasswdAction] [enviarSMS] -MSISDN [77467726] ha superado la solicitud de clave mensual
+[17/10/2014 16:00:59,475] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:00:59,477] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:00:59,479] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["745514a41ea2ae7495d394e959f1038476cd92c87e3c03"]
+[17/10/2014 16:00:59,480] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:00:59,480] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 745514a41ea2ae7495d394e959f1038476cd92c87e3c03
+[17/10/2014 16:00:59,481] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 42142543
+[17/10/2014 16:01:03,793] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN [42142543] no posee registro | RUT & PIN Validos.
+[17/10/2014 16:01:03,793] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se redirige a registro
+[17/10/2014 16:01:03,793] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Seteo del parametro [app] con valor [1]
+[17/10/2014 16:01:03,794] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Numero no posee registro.
+[17/10/2014 16:01:03,794] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 2
+[17/10/2014 16:01:04,190] INFO [com.esa.ponline.appmobile.web.actions.RegisterAction] [execute] -Se redirige al usuario al paso 3 del registro
+[17/10/2014 16:01:06,304] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_ss_high
+[17/10/2014 16:01:06,305] INFO [com.esa.ponline.appmobile.web.actions.RegisterAction] [ingresarRutClave] -Se remueve la sesion cliente_registro_signin
+[17/10/2014 16:01:40,624] INFO [com.esa.ponline.appmobile.web.actions.RegisterAction] [enviarSMS] -app_success_step_two
+[17/10/2014 16:01:40,625] INFO [com.esa.ponline.appmobile.web.actions.RegisterAction] [enviarSMS] -Envio de clave exitoso para MSISDN [42142543]
+[17/10/2014 16:02:41,702] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_ss_high
+[17/10/2014 16:02:41,703] INFO [com.esa.ponline.appmobile.web.actions.RegisterAction] [ingresarRutClave] -Se remueve la sesion cliente_registro_signin
+[17/10/2014 16:07:43,945] INFO [com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor] [isCookie] -Se encontro cookie para movil 77467726
+[17/10/2014 16:07:47,865] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[17/10/2014 16:07:47,866] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 16:08:00,903] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [77467726] ha deslogeado y finalizado su session
+[17/10/2014 16:08:19,186] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[17/10/2014 16:08:19,186] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 16:08:19,187] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77467726 mercado PP
+[17/10/2014 16:09:14,543] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [77467726] ha deslogeado y finalizado su session
+[17/10/2014 16:09:35,003] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[17/10/2014 16:09:35,004] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 16:09:35,004] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77467726 mercado PP
+[17/10/2014 16:09:47,465] ERROR [com.esa.ponline.appmobile.web.actions.BundleAction] [ppUserHasBundles] -ServiceException lanzada al realizar transaccion para comprar bolsa prepago: com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key 77467726.
+[17/10/2014 16:15:32,947] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:15:32,948] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:15:32,949] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773307"]
+[17/10/2014 16:15:32,949] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:15:32,949] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 775011a61ba0a87195db99e95af1018074c792c8773307
+[17/10/2014 16:15:32,950] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[17/10/2014 16:15:36,468] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Usuario a ingresado datos erroneos
+[17/10/2014 16:15:36,469] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 1
+[17/10/2014 16:27:24,563] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:27:24,564] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:27:24,565] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["78551ca914afa37595db9beb5bfc0f8472c092cd733c07"]
+[17/10/2014 16:27:24,565] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:27:24,565] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 78551ca914afa37595db9beb5bfc0f8472c092cd733c07
+[17/10/2014 16:27:24,566] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 82998892
+[17/10/2014 16:27:32,339] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:27:32,340] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:27:32,465] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[17/10/2014 16:27:32,466] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["9988AC844CD33068F774BB145EA59F18D96AB39F741D8E18A4"]
+[17/10/2014 16:27:32,466] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 9988AC844CD33068F774BB145EA59F18D96AB39F741D8E18A4
+[17/10/2014 16:27:32,829] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 82998892
+[17/10/2014 16:27:34,009] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_ss_high
+[17/10/2014 16:27:34,010] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [82998892]
+[17/10/2014 16:27:34,011] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:27:34,011] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:28:00,214] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario posee datos Excedidos
+[17/10/2014 16:28:16,476] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario posee datos Excedidos
+[17/10/2014 16:29:01,464] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:29:01,465] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:29:01,465] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["785115a51fa6aa7195db9ee95eff0e8d75c492cd773005"]
+[17/10/2014 16:29:01,465] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:29:01,466] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 785115a51fa6aa7195db9ee95eff0e8d75c492cd773005
+[17/10/2014 16:29:01,466] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 86053106
+[17/10/2014 16:29:03,976] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:29:03,977] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:29:04,145] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[17/10/2014 16:29:04,146] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["998CA58847DA396CF774BE165BA69E11DE6EB39F70118C18A4"]
+[17/10/2014 16:29:04,146] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 998CA58847DA396CF774BE165BA69E11DE6EB39F70118C18A4
+[17/10/2014 16:29:04,398] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 86053106
+[17/10/2014 16:29:06,580] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_ss_high
+[17/10/2014 16:29:06,581] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [86053106]
+[17/10/2014 16:29:06,582] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:29:06,582] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:29:15,072] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[17/10/2014 16:29:49,570] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:29:49,571] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:29:49,571] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["785f1ca91aa6aa7f95d399eb5efa078574d98ccb773d"]
+[17/10/2014 16:29:49,571] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:29:49,571] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 785f1ca91aa6aa7f95d399eb5efa078574d98ccb773d
+[17/10/2014 16:29:49,572] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 88996108
+[17/10/2014 16:29:51,406] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:29:51,406] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:29:51,553] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[17/10/2014 16:29:51,554] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["9982AC8442DA3962F77CB9145BA39719DF73AD99701C9305"]
+[17/10/2014 16:29:51,554] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 9982AC8442DA3962F77CB9145BA39719DF73AD99701C9305
+[17/10/2014 16:29:52,152] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 88996108
+[17/10/2014 16:29:54,342] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_ss_high
+[17/10/2014 16:29:54,342] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [88996108]
+[17/10/2014 16:29:54,342] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:29:54,343] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:30:43,794] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:30:43,795] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:30:43,795] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["785610a61ca6a87195d399eb5efa078574d98ccb773d"]
+[17/10/2014 16:30:43,795] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:30:43,796] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 785610a61ca6a87195d399eb5efa078574d98ccb773d
+[17/10/2014 16:30:43,796] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 81560126
+[17/10/2014 16:30:46,954] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:30:46,955] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:30:47,158] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[17/10/2014 16:30:47,159] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["998BA08B44DA3B6CF77CB9145BA39719DF73AD99701C9305"]
+[17/10/2014 16:30:47,159] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 998BA08B44DA3B6CF77CB9145BA39719DF73AD99701C9305
+[17/10/2014 16:30:47,445] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 81560126
+[17/10/2014 16:30:49,048] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[17/10/2014 16:30:49,049] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [81560126]
+[17/10/2014 16:30:49,049] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:30:49,050] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:57:39,047] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Largo de la key: 3
+[17/10/2014 16:57:39,048] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -## No se encuentra parametro adicional BOLSA_DE_GATO ##
+[17/10/2014 16:57:39,049] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: ["775011a61ba0a87195db99e95af1018074c792c8773302"]
+[17/10/2014 16:57:39,049] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: [null]
+[17/10/2014 16:57:39,049] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token key: 775011a61ba0a87195db99e95af1018074c792c8773302
+[17/10/2014 16:57:39,050] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[17/10/2014 16:57:43,328] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:57:43,328] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0
+[17/10/2014 16:57:43,483] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonKey: [null]
+[17/10/2014 16:57:43,483] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -valor jsonLogin: ["968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4"]
+[17/10/2014 16:57:43,484] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -token login: 968DA18B43DC3B6CF774B9165FA8911CDF6DB39A70128B18A4
+[17/10/2014 16:57:43,644] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -MSISDN: 77467726
+[17/10/2014 16:57:45,687] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: app_pp_high
+[17/10/2014 16:57:45,688] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[17/10/2014 16:57:45,689] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Login valido APP
+[17/10/2014 16:57:45,689] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [procesaJson] -Se devuelve estado JSON = 0

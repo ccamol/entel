@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="language" content="es" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+<link href="favicon.ico" rel="icon" />
+
+<title>Consulta de tr&aacute;fico - Entel</title>
+
+<!-- CSS -->
+<link href="css/reset.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+
+<!-- JS -->
+<script src="js/modernizr.custom.js"></script>
+
+
+</head>
+
+
+<body>
+	<#include "/pages/include/googletags/gt.html">
+
+	<div class="container">
+
+
+		<div class="snap-drawers">
+
+
+			<#include "/pages/menu_lateral.html">
+
+
+			</div><!-- /snap-drawers -->
+
+
+
+		<!-- MAIN -->
+		<div id="main" class="snap-content">
+
+
+			<!-- HEADER -->
+			<header class="section-header clearfix">
+
+						<a href="#" id="menu-button" class="top-nav-btn">
+							<span class="icon icon-menu"></span>
+				</a>
+
+				<div class="logo"></div>
+
+			</header>
+            
+            <#include "/pages/include/fixRegistro/mensajeZonaEntel.html">
+
+
+			<div class="section-title">
+
+				<h1 class="title title-lg">Consulta de tr&aacute;fico</h1>
+
+				<h3 class="title txt-color">${trafico.plan}</h3>
+				
+			</div>
+
+
+			<section class="section">
+
+
+<#if trafico.fechaVoz?exists>
+				<h3 class="title title-md bracket">Voz <small class="float-right">al ${trafico.fechaVoz}</small></h3>
+
+				<ul>
+
+					<li class="term-list term-block">Minutos utilizados <b class="term-value">${trafico.minutosUtilizados}</b></li>
+
+				</ul>
+</#if>
+<#if trafico.fechaMensajeria?exists>
+				<h3 class="title title-md bracket">Mensajes <small class="float-right">al ${trafico.fechaMensajeria}</small></h3>
+
+				<ul>
+
+					<li class="term-list term-block">SMS/MMS y Otros<b class="term-value">${trafico.smsMMS}</b></li>
+
+				</ul>
+</#if>
+
+						<h3 class="title title-md bracket">Datos <small class="float-right">${trafico.fechaDatos} ${trafico.horaReferencia} </small></h3>
+
+
+						<div class="group-module graph-item">
+
+
+							<h3 class="label-md">Total utilizado</h3>
+
+							<span class="total-used">
+								<em>${trafico.multimediaTraficoConsumido}MB</em> / ${trafico.multimediaTrafico}MB
+							</span>
+			
+
+							<!-- CHART -->
+					<div class="donut-chart-wrap">
+
+						<div class="donut-chart-label">
+
+									<span class="donut-amount">${trafico.porcentaje}%</span>
+
+					</div>
+
+								<canvas class="donut-chart" id="dayChart1" width="80" height="80"></canvas>
+
+						</div>
+
+
+						</div><!--/graph-item-->
+
+							<#if trafico.tieneExcedido == "tiene">
+								<ul style="margin-bottom:5px;">
+									<li class="term-list term-block" style="color:#ff6601; font-size:14px;">Datos adicionales<b class="term-value">${trafico.traficoExcedido}</b></li>
+								</ul>
+							</#if>						
+
+							<#if trafico.valorAdicional?exists>
+								<small class="txt-note"><@s.text name="trafico.nota"/> ${trafico.valorAdicional}</small>
+							</#if>
+
+			</section>
+
+
+			<section class="section">
+
+				<!-- COLLAPSE -->
+				<div class="collapse full-width">
+
+							<h3><a href="" class="list-item list-collapse collapse-open">Consideraciones</a></h3>
+
+							<div class="component-panel">	
+
+								<div class="info">
+							<p><@s.text name="trafico.terminos"/></p>					
+					</div>
+					</div>
+						</div><!--/collapse-->
+
+			</section>
+
+
+			<!-- FOOTER -->
+			<footer class="page-footer">
+
+						<p class="txt-small"><@s.text name="trafico.copyright"/></p>
+
+			</footer>
+
+
+			</div><!--/main-->
+
+
+
+		</div><!--/container-->
+
+
+
+	<!-- JS Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+	<!-- Fix telefonos medium -->
+	<script src="js/fix/overthrow-detect.js"></script>
+	<script src="js/fix/overthrow-polyfill.js"></script>
+	<script src="js/fix/overthrow-toss.js"></script>
+	<script src="js/fix/overthrow-init.js"></script>
+	<script src="js/fix/fix-snap.js"></script>
+	<!-- Fix telefonos medium -->
+	
+	<script src="js/snap.min.js"></script>
+	<script src="js/jquery.collapse.js"></script>
+	<script src="js/jquery.idTabs.min.js"></script>
+	<script src="js/jAlert-v2.js"></script>
+	<script src="js/Chart.min.js"></script>
+
+
+	<!-- JS Config -->
+	<script src="js/sidebar-cfg.js"></script>
+	<script src="js/collapse-cfg.js"></script>
+	<script src="js/modal-cfg.js"></script>
+	<script>
+	// CHART CFG - chart.js http://www.chartjs.org/docs/
+	var dayCount = [
+			{
+				value: ${trafico.porcentajePunto},
+				color:"#00529f"
+			},
+			{
+				value : 100-${trafico.porcentajePunto},
+				color : "#cfdced"
+			}				
+		];
+
+	var chartOptions = {
+		//Boolean - Whether we should show a stroke on each segment
+		segmentShowStroke : false,				
+		
+		//The percentage of the chart that we cut out of the middle.
+		percentageInnerCutout : 74,	
+		
+		//String - Animation easing effect
+		animationEasing : "easeOutQuart"	
+	};
+
+	var dayChart1 = new Chart(document.getElementById("dayChart1").getContext("2d")).Doughnut(dayCount, chartOptions);
+	</script>
+
+
+</body>
+
+</html>

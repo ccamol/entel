@@ -1,0 +1,202 @@
+[27/10/2014 11:17:22,424] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[27/10/2014 11:17:22,429] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[27/10/2014 11:17:22,808] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[27/10/2014 11:17:49,030] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[27/10/2014 11:17:49,032] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77585435]
+[27/10/2014 11:17:49,036] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77585435 mercado SS
+[27/10/2014 11:17:49,933] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:18:07,101] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:18:13,311] ERROR [com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor] [error] -No result defined for action com.esa.ponline.appmobile.web.actions.AccountAction and result success
+No result defined for action com.esa.ponline.appmobile.web.actions.AccountAction and result success
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:373)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:275)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:43)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.doIt(WebAppServletContext.java:3684)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3650)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2268)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2174)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1446)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+[27/10/2014 11:18:16,557] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:18:33,633] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:20:46,531] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[27/10/2014 11:20:46,532] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77585435]
+[27/10/2014 11:20:46,533] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77585435 mercado SS
+[27/10/2014 11:20:47,266] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:20:57,075] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:21:25,128] ERROR [com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor] [error] -No result defined for action com.esa.ponline.appmobile.web.actions.AccountAction and result success
+No result defined for action com.esa.ponline.appmobile.web.actions.AccountAction and result success
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:373)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:275)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:43)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.doIt(WebAppServletContext.java:3684)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3650)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2268)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2174)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1446)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+[27/10/2014 11:21:50,847] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[27/10/2014 11:21:50,849] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[27/10/2014 11:21:51,256] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[27/10/2014 11:22:20,279] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[27/10/2014 11:22:20,279] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77585435]
+[27/10/2014 11:22:20,282] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77585435 mercado SS
+[27/10/2014 11:22:22,336] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:22:28,733] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:31:49,708] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[27/10/2014 11:31:49,711] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[27/10/2014 11:31:50,071] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[27/10/2014 11:32:19,850] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[27/10/2014 11:32:19,852] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77585435]
+[27/10/2014 11:32:19,856] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77585435 mercado SS
+[27/10/2014 11:32:21,184] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:32:34,095] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:32:45,681] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:32:52,290] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:33:18,633] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[27/10/2014 11:33:40,167] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[27/10/2014 11:34:27,568] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [defineUserBundleType] -Se establece bolsas para SS
+[27/10/2014 11:34:28,528] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:31,505] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [loadUserSSCCExtBundle] -Se realiza consulta para bolsas EXTRAS
+[27/10/2014 11:34:31,506] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:31,506] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setExtSSCCBundles] -Obteniendo bolsas extras disponibles para sscc
+[27/10/2014 11:34:31,506] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setExtSSCCBundles] -Finaliza la consulta para bolsas de tipo EXTRAS
+[27/10/2014 11:34:37,473] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [defineUserBundleType] -Se establece bolsas para SS
+[27/10/2014 11:34:37,474] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:38,847] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [loadUserSSCCVoiceBundle] -Se realiza consulta para bolsas Voz
+[27/10/2014 11:34:38,848] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:38,848] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setVoiceSSCCBundles] -Obteniendo bolsas de voz disponibles para sscc
+[27/10/2014 11:34:38,848] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setVoiceSSCCBundles] -Finaliza la consulta para bolsas de tipo VOZ
+[27/10/2014 11:34:44,175] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [defineUserBundleType] -Se establece bolsas para SS
+[27/10/2014 11:34:44,176] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:45,201] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [loadUserSSCCExtBundle] -Se realiza consulta para bolsas EXTRAS
+[27/10/2014 11:34:45,202] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:45,202] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setExtSSCCBundles] -Obteniendo bolsas extras disponibles para sscc
+[27/10/2014 11:34:45,203] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setExtSSCCBundles] -Finaliza la consulta para bolsas de tipo EXTRAS
+[27/10/2014 11:34:49,800] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [defineUserBundleType] -Se establece bolsas para SS
+[27/10/2014 11:34:49,801] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:51,655] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [loadUserSSCCSMSBundle] -Se realiza consulta para bolsas SMS
+[27/10/2014 11:34:51,655] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:34:51,656] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setSmsSSCCBundles] -Obteniendo bolsas de mensajes disponibles para sscc
+[27/10/2014 11:34:51,656] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [setSmsSSCCBundles] -Finaliza la consulta para bolsas de tipo SMS
+[27/10/2014 11:34:58,493] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [defineUserBundleType] -Se establece bolsas para SS
+[27/10/2014 11:34:58,494] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [getAllAvailableUserSSCCBundles] -Se realiza consulta de bolsas disponibles para msisdn [77585435]
+[27/10/2014 11:35:09,286] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:35:21,680] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[27/10/2014 11:35:31,113] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [77585435] ha deslogeado y finalizado su session
+[27/10/2014 11:35:52,314] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[27/10/2014 11:35:52,315] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [82998892]
+[27/10/2014 11:35:52,316] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 82998892 mercado SS
+[27/10/2014 11:35:53,766] ERROR [com.esa.ponline.appmobile.util.Config] [getAppProperty] -Key:planServiceEndPoint no encontrada
+[27/10/2014 11:36:35,567] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario posee datos Excedidos
+[27/10/2014 11:36:39,074] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [82998892] ha deslogeado y finalizado su session

@@ -1,0 +1,4 @@
+[22/06/2015 11:57:06,972] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[22/06/2015 11:57:06,980] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[22/06/2015 11:57:07,105] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[22/06/2015 11:57:07,508] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente

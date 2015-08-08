@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package namespace="/" name="consultaTrafico" extends="default">
+		
+		<action name="trafico" class="com.esa.ponline.appmobile.web.actions.TrafficAction">
+			<result type="freemarker" name="nosoportado">/pages/nosoportado.html</result>
+
+			<result type="freemarker" name="web_ss_high">/pages/2.6-consulta-trafico.html</result>
+			<result type="freemarker" name="web_ss_medium">/pages/medium/2.6-consulta-trafico.html</result>
+			<result type="freemarker" name="app_ss_high">/pages/app/2.6-consulta-trafico.html</result>
+			<result type="freemarker" name="app_ss_medium">/pages/app/2.6-consulta-trafico.html</result>
+
+			<result type="freemarker" name="full_web_ss_high">/pages/2.6-consulta-trafico_grafico.html</result>
+			<result type="freemarker" name="full_web_ss_medium">/pages/medium/2.6-consulta-trafico_grafico.html</result>
+
+			<result type="freemarker" name="full_app_ss_high">/pages/app/2.6-consulta-trafico_grafico.html</result>
+			<result type="freemarker" name="full_app_ss_medium">/pages/app/2.6-consulta-trafico_grafico.html</result>
+		</action>
+		
+	</package>
+</struts>

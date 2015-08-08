@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+	<link href="favicon.ico" rel="icon" /> 
+
+	<title>Registro - Entel</title>
+
+	<!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" /> 
+	<link href="css/jAlert-v2.css" rel="stylesheet" />
+	
+	<!-- JS -->
+	<script src="js/modernizr.custom.js"></script>	
+
+</head>
+
+	<body>
+		<#include "/pages/include/googletags/gt.html">
+		
+		<div class="container">		
+
+			<!-- MAIN -->
+			<div id="main">
+
+					<div class="section-title">
+
+						<h3 class="title txt-color">Rut y Clave</h3>
+
+					</div>
+
+					<section class="section">
+
+						<!-- STEPS -->
+						<ul class="steps full-width clearfix">
+
+							<li class="col-4">
+								<span class="step">Paso 1</span>
+							</li>
+
+							<li class="col-4">
+								<span class="step active">Paso 2</span>
+							</li>
+
+							<li class="col-4">
+								<span class="step">Paso 3</span>
+							</li>
+
+						</ul>
+
+						<div class="content">
+
+							<p><@s.text name="registro.mensaje_paso_2"/></p>
+
+						</div>
+
+						<form id="formRegisterTwo" action="registro" method="post">
+						
+						<input type="hidden" name="method:execute" value=rutClave />
+							
+							<div class="form-group">
+
+								<input id="rut" name="rut" type="text" class="form-control" placeholder="<@s.text name="registro.rut"/>">
+								
+							</div>
+
+							<div class="form-group">
+
+								<input id="clave" name="clave" type="password" class="form-control" placeholder="<@s.text name="registro.clave"/>">
+								
+							</div>
+
+							<button id="registerTwo" type="button" class="btn btn-primary btn-lg btn-symbols btn-block">Continuar</button>
+
+						</form>
+
+					</section>
+
+					<!-- FOOTER -->
+					<footer class="page-footer">
+
+						<p class="txt-small"><@s.text name="registro.copyright"/></p>
+
+					</footer>
+
+			</div><!--/main-->
+
+		</div><!--/container-->
+
+		<!-- JS Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/jquery.collapse.js"></script>
+		<script src="js/jquery.idTabs.min.js"></script>
+		<script src="js/jAlert-v2.js"></script>
+
+		<!-- JS Config -->
+		<script src="js/collapse-cfg.js"></script>
+		<script src="js/modal-cfg.js"></script>
+		<script src="js/val/validaRut.js"></script>		
+		<script src="js/val/reg.error-handle.js"></script>
+
+		<script type="text/javascript">
+		var appMobile=true;
+		<#if msgErrorRegTwo?exists>
+		$(document).ready(function() {
+			popupAlert("${msgErrorRegTwo}");
+		});
+		</#if>
+		</script>
+
+	</body>
+
+</html>

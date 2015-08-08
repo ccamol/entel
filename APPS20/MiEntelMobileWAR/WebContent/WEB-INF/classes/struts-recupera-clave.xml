@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package namespace="/" name="recuperaClave" extends="default">
+
+		<action name="passwd"
+			class="com.esa.ponline.appmobile.web.actions.PasswdAction">
+			<result type="freemarker" name="success_step_one">/pages/2.4-solicitud-clave.html
+			</result>
+			<result type="freemarker" name="success_step_medium_one">/pages/medium/2.4-solicitud-clave.html
+			</result>
+
+			<result type="freemarker" name="success_step_two">/pages/2.5-solicitud-clave-ok.html
+			</result>
+			<result type="freemarker" name="success_step_medium_two">/pages/medium/2.5-solicitud-clave-ok.html
+			</result>
+
+			<result type="freemarker" name="app_success_step_one">/pages/app/2.4-solicitud-clave.html
+			</result>
+			<result type="freemarker" name="app_success_step_two">/pages/app/2.5-solicitud-clave-ok.html
+			</result>
+
+			<result type="freemarker" name="app_success_step_medium_one">/pages/app/medium/2.4-solicitud-clave.html
+			</result>
+			<result type="freemarker" name="app_success_step_medium_two">/pages/app/medium/2.5-solicitud-clave-ok.html
+			</result>
+			
+			<result name="supera_sms">/pages/superaSMS.html</result>
+
+			<result name="app_ss_high">/pages/2.4-solicitud-clave.html</result>
+			<result name="app_cc_high">/pages/2.4-solicitud-clave.html</result>
+			<result name="app_pp_high">/pages/2.4-solicitud-clave.html</result>
+
+			<result name="app_ss_medium">/pages/medium/2.4-solicitud-clave.html</result>
+			<result name="app_cc_medium">/pages/medium/2.4-solicitud-clave.html</result>
+			<result name="app_pp_medium">/pages/medium/2.4-solicitud-clave.html</result>
+
+		</action>
+	</package>
+</struts>		

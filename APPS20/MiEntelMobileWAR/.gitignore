@@ -1,0 +1,4 @@
+# Weblogic
+/build
+.settings
+.pmd

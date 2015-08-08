@@ -1,0 +1,52 @@
+[06/11/2014 15:54:48,207] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[06/11/2014 15:54:48,211] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[06/11/2014 15:54:48,602] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[06/11/2014 15:55:51,746] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[06/11/2014 15:55:51,747] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77467726]
+[06/11/2014 15:55:51,751] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77467726 mercado PP
+[06/11/2014 15:56:07,918] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [77467726] ha deslogeado y finalizado su session
+[06/11/2014 15:58:56,677] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/11/2014 15:58:56,679] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [42142571]
+[06/11/2014 15:58:56,679] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 42142571 mercado SS
+[06/11/2014 15:59:01,415] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[06/11/2014 15:59:06,939] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:03:43,323] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:06:36,585] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/11/2014 16:06:36,586] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [82998892]
+[06/11/2014 16:06:36,587] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 82998892 mercado SS
+[06/11/2014 16:06:41,759] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[06/11/2014 16:06:49,926] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:06:54,334] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:07:17,803] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [82998892] ha deslogeado y finalizado su session
+[06/11/2014 16:07:38,446] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/11/2014 16:07:38,447] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [86053106]
+[06/11/2014 16:07:38,447] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 86053106 mercado SS
+[06/11/2014 16:07:49,661] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[06/11/2014 16:07:55,157] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:08:02,438] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:12:30,477] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] -El usuario [86053106] ha deslogeado y finalizado su session
+[06/11/2014 16:12:52,544] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/11/2014 16:12:52,545] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [77585435]
+[06/11/2014 16:12:52,546] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 77585435 mercado SS
+[06/11/2014 16:12:57,248] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[06/11/2014 16:13:03,711] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:13:08,143] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:13:19,729] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[06/11/2014 16:13:25,481] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:19:14,930] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:23:34,733] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente
+[06/11/2014 16:23:34,841] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[06/11/2014 16:23:34,842] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[06/11/2014 16:23:43,668] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] -Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/11/2014 16:23:43,669] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] -Se genera session para usuario [42142571]
+[06/11/2014 16:23:43,671] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] -Login correcto msisdn 42142571 mercado SS
+[06/11/2014 16:23:54,503] INFO [com.esa.ponline.appmobile.web.actions.TrafficAction] [isExcedido] -Usuario no posee datos Excedidos
+[06/11/2014 16:24:01,823] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:34:36,174] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:43:10,865] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:49:51,382] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:50:06,967] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -Usuario realiza consulta MiPlan
+[06/11/2014 16:50:10,946] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion app-properties cargado correctamente
+[06/11/2014 16:50:10,947] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] -Archivo de configuracion moviles-properties cargado correctamente
+[06/11/2014 16:51:17,580] INFO [com.esa.ponline.appmobile.web.actions.PlanAction] [execute] -FIN consulta mi plan
+[06/11/2014 16:51:17,973] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] -Archivo de mensajes globalMessages cargado correctamente

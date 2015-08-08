@@ -1,0 +1,441 @@
+[06/07/2015 11:42:32,651] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 11:42:32,658] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 11:42:32,776] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 11:42:33,147] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 11:42:45,695] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 11:42:45,697] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 11:42:45,697] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 11:42:45,697] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:902
+[06/07/2015 11:42:45,698] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[06/07/2015 11:42:45,705] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [38473c4c106e09ef9bae3c71b92328e4]
+[06/07/2015 11:42:45,709] INFO [web.actions.LoginAction] [validaUsuario] [38473c4c106e09ef9bae3c71b92328e4] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 11:42:45,709] INFO [web.actions.LoginAction] [validaUsuario] [38473c4c106e09ef9bae3c71b92328e4] Login correcto msisdn 77467726 mercado PP
+[06/07/2015 11:44:50,666] ERROR [appmobile.util.Config] [getAppProperty] [] Key:consultarSaldoSecundarioService no encontrada
+[06/07/2015 11:44:59,692] ERROR [web.actions.MenuAction] [execute] [] Ha ocurrido un problema en MenuAction null
+[06/07/2015 11:45:31,801] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 11:45:31,805] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 11:45:31,906] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 11:45:32,327] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 11:45:52,304] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 11:45:52,306] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 11:45:52,306] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 11:45:52,306] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:246
+[06/07/2015 11:45:52,307] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[06/07/2015 11:45:52,313] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [1d11cbd5f7c5dfc7e8594cba7059c593]
+[06/07/2015 11:45:52,315] INFO [web.actions.LoginAction] [validaUsuario] [1d11cbd5f7c5dfc7e8594cba7059c593] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 11:45:52,315] INFO [web.actions.LoginAction] [validaUsuario] [1d11cbd5f7c5dfc7e8594cba7059c593] Login correcto msisdn 77467726 mercado PP
+[06/07/2015 11:46:21,791] ERROR [appmobile.util.Config] [getAppProperty] [] Key:consultarSaldoSecundarioService no encontrada
+[06/07/2015 11:46:21,794] ERROR [web.actions.MenuAction] [execute] [] Ha ocurrido un problema en MenuAction null
+[06/07/2015 13:06:57,266] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 13:06:57,271] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 13:06:57,377] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 13:06:57,831] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 13:07:11,294] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 13:07:11,296] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 13:07:11,296] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 13:07:11,296] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:886
+[06/07/2015 13:07:11,297] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[06/07/2015 13:07:11,303] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [c8e017b52aad4ff44eb1f825da13e397]
+[06/07/2015 13:07:11,620] INFO [web.actions.SigninAction] [obtienePerfil] [c8e017b52aad4ff44eb1f825da13e397] Servicio ClientePerfilService responde: 
+[06/07/2015 13:07:11,621] INFO [web.actions.SigninAction] [obtienePerfil] [c8e017b52aad4ff44eb1f825da13e397] Response Code: 0000
+[06/07/2015 13:07:11,621] INFO [web.actions.SigninAction] [obtienePerfil] [c8e017b52aad4ff44eb1f825da13e397] Response Descripcion: OK
+[06/07/2015 13:07:11,621] INFO [web.actions.SigninAction] [obtienePerfil] [c8e017b52aad4ff44eb1f825da13e397] Tiempo:316
+[06/07/2015 13:07:11,622] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [c8e017b52aad4ff44eb1f825da13e397] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[06/07/2015 13:07:11,622] INFO [web.actions.LoginAction] [validaUsuario] [c8e017b52aad4ff44eb1f825da13e397] No es posible obtener variable de session [cliente]
+[06/07/2015 13:07:11,622] INFO [web.actions.LoginAction] [validaUsuario] [c8e017b52aad4ff44eb1f825da13e397] No es posible realizar login con session [cliente]
+[06/07/2015 13:07:11,623] INFO [web.actions.LoginAction] [validaUsuario] [c8e017b52aad4ff44eb1f825da13e397] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 13:07:11,623] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [c8e017b52aad4ff44eb1f825da13e397] Se crea session para [77467726]
+[06/07/2015 13:09:08,950] ERROR [appmobile.util.Config] [getAppProperty] [] Key:consultarSaldoSecundarioService no encontrada
+[06/07/2015 13:09:39,249] ERROR [web.actions.MenuAction] [execute] [] Ha ocurrido un problema en MenuAction null
+[06/07/2015 13:10:54,838] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 13:10:54,842] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 13:10:54,953] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 13:10:55,416] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 13:11:09,971] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 13:11:09,973] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 13:11:09,973] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 13:11:09,973] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:231
+[06/07/2015 13:11:09,974] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[06/07/2015 13:11:09,981] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [77467726] con id [db3ee8514bd50c08e402cda0065c26c5]
+[06/07/2015 13:11:09,983] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 13:11:09,983] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Login correcto msisdn 77467726 mercado PP
+[06/07/2015 13:11:10,973] ERROR [appmobile.util.Config] [getAppProperty] [] Key:consultarSaldoSecundarioService no encontrada
+[06/07/2015 13:11:14,889] INFO [web.actions.BundleAction] [ppUserHasBundles] [] MSISDN [77467726] posee bolsas activas
+[06/07/2015 13:11:19,521] ERROR [appmobile.util.Config] [getAppProperty] [] Key:consultarSaldoSecundarioService no encontrada
+[06/07/2015 13:12:38,854] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 13:12:38,858] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 13:12:38,967] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 13:12:39,434] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 13:13:35,169] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 13:13:35,171] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 13:13:35,171] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 13:13:35,172] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:927
+[06/07/2015 13:13:35,172] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 13:13:35,178] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88996108] con id [db3ee8514bd50c08e402cda0065c26c5]
+[06/07/2015 13:13:35,180] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 13:13:35,180] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Login correcto msisdn 88996108 mercado SS
+[06/07/2015 13:13:35,272] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[06/07/2015 13:13:44,565] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[06/07/2015 13:13:48,286] INFO [web.actions.LogoutAction] [logout] [] El usuario [88996108] ha deslogeado y finalizado su session
+[06/07/2015 13:14:05,174] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 13:14:05,175] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 13:14:05,175] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 13:14:05,176] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1079
+[06/07/2015 13:14:05,176] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 13:14:05,176] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88218118] con id [db3ee8514bd50c08e402cda0065c26c5]
+[06/07/2015 13:14:05,177] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 13:14:05,177] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Login correcto msisdn 88218118 mercado SS
+[06/07/2015 13:14:05,231] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[06/07/2015 13:14:07,261] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[06/07/2015 13:14:07,262] ERROR [appmobile.util.Config] [getAppProperty] [] Key:tipoPlanMultiDispositivo no encontrada
+[06/07/2015 13:14:07,657] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario no posee datos Excedidos
+[06/07/2015 13:32:01,077] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 13:32:01,078] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 13:32:01,078] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 13:32:01,078] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:888
+[06/07/2015 13:32:01,078] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 13:32:01,079] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88996108] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 13:32:01,079] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 13:32:01,079] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 88996108 mercado SS
+[06/07/2015 13:32:01,246] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :2
+[06/07/2015 13:32:09,772] INFO [web.actions.LogoutAction] [logout] [] El usuario [88996108] ha deslogeado y finalizado su session
+[06/07/2015 13:35:50,381] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Usuario ha ingresado datos no validos
+[06/07/2015 13:35:50,381] INFO [web.actions.LoginAction] [validaUsuario] [db3ee8514bd50c08e402cda0065c26c5] Usuario se mantiene en login
+[06/07/2015 13:36:51,874] INFO [web.actions.LoginAction] [validaUsuario] [] Usuario ha ingresado datos no validos
+[06/07/2015 13:36:51,874] INFO [web.actions.LoginAction] [validaUsuario] [] Usuario se mantiene en login
+[06/07/2015 13:40:43,538] INFO [web.actions.LoginAction] [validaUsuario] [] Usuario ha ingresado datos no validos
+[06/07/2015 13:40:43,539] INFO [web.actions.LoginAction] [validaUsuario] [] Usuario se mantiene en login
+[06/07/2015 13:45:08,602] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Servicio ClientePerfilService responde: 
+[06/07/2015 13:45:08,602] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Response Code: 0000
+[06/07/2015 13:45:08,603] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Response Descripcion: OK
+[06/07/2015 13:45:08,603] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Tiempo:295
+[06/07/2015 13:45:08,603] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [8c45269a5e2dff76293c2ff95075c449] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 13:45:08,603] INFO [web.actions.SigninAction] [creaSession] [8c45269a5e2dff76293c2ff95075c449] Se genera session para usuario [75697214] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 13:45:08,604] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 13:45:08,604] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 75697214 mercado SS
+[06/07/2015 13:45:08,775] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[06/07/2015 13:55:57,728] INFO [web.actions.LogoutAction] [logout] [] El usuario [75697214] ha deslogeado y finalizado su session
+[06/07/2015 13:56:08,473] INFO [web.actions.SigninAction] [obtienePerfil] [db3ee8514bd50c08e402cda0065c26c5] Servicio ClientePerfilService responde: 
+[06/07/2015 13:56:08,474] INFO [web.actions.SigninAction] [obtienePerfil] [db3ee8514bd50c08e402cda0065c26c5] Response Code: 0000
+[06/07/2015 13:56:08,474] INFO [web.actions.SigninAction] [obtienePerfil] [db3ee8514bd50c08e402cda0065c26c5] Response Descripcion: OK
+[06/07/2015 13:56:08,475] INFO [web.actions.SigninAction] [obtienePerfil] [db3ee8514bd50c08e402cda0065c26c5] Tiempo:286
+[06/07/2015 13:56:08,475] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [db3ee8514bd50c08e402cda0065c26c5] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 13:56:08,475] INFO [web.actions.SigninAction] [creaSession] [db3ee8514bd50c08e402cda0065c26c5] Se genera session para usuario [42883782] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 13:56:08,476] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 13:56:08,476] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 42883782 mercado SS
+[06/07/2015 13:56:08,529] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :2
+[06/07/2015 14:27:52,870] INFO [web.actions.LogoutAction] [logout] [] El usuario [42883782] ha deslogeado y finalizado su session
+[06/07/2015 14:27:52,990] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 14:27:52,991] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 14:27:53,095] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 14:27:53,517] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 14:28:06,667] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 14:28:06,668] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 14:28:06,668] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 14:28:06,669] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:391
+[06/07/2015 14:28:06,669] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_cc_high
+[06/07/2015 14:28:06,675] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [81568570] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:28:06,677] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:28:06,677] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 81568570 mercado CC
+[06/07/2015 14:28:29,541] INFO [web.actions.LogoutAction] [logout] [] El usuario [81568570] ha deslogeado y finalizado su session
+[06/07/2015 14:29:05,287] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 14:29:05,288] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 14:29:05,288] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 14:29:05,289] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:683
+[06/07/2015 14:29:05,289] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_cc_high
+[06/07/2015 14:29:05,289] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [98925419] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:29:05,290] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:29:05,290] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 98925419 mercado CC
+[06/07/2015 14:29:08,576] INFO [web.actions.LogoutAction] [logout] [] El usuario [98925419] ha deslogeado y finalizado su session
+[06/07/2015 14:29:26,225] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 14:29:26,226] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 14:29:26,226] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 14:29:26,226] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:417
+[06/07/2015 14:29:26,227] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_cc_high
+[06/07/2015 14:29:26,227] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [56121151] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:29:26,227] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:29:26,228] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 56121151 mercado CC
+[06/07/2015 14:29:28,978] INFO [web.actions.LogoutAction] [logout] [] El usuario [56121151] ha deslogeado y finalizado su session
+[06/07/2015 14:29:52,519] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 14:29:52,519] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 14:29:52,520] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 14:29:52,520] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:432
+[06/07/2015 14:29:52,520] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_cc_high
+[06/07/2015 14:29:52,521] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [66039225] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:29:52,521] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:29:52,521] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 66039225 mercado CC
+[06/07/2015 14:29:54,957] ERROR [appmobile.util.Formato] [formatPuntos] [] Error formateando el punto de los valores numericos: empty String
+[06/07/2015 14:30:04,094] INFO [web.actions.LogoutAction] [logout] [] El usuario [66039225] ha deslogeado y finalizado su session
+[06/07/2015 14:30:29,708] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Servicio ClientePerfilService responde: 
+[06/07/2015 14:30:29,708] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Response Code: 0000
+[06/07/2015 14:30:29,709] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Response Descripcion: OK
+[06/07/2015 14:30:29,709] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Tiempo:2193
+[06/07/2015 14:30:29,709] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [8c45269a5e2dff76293c2ff95075c449] Se define mapeo template para cliente en sesion con el formato: web_cc_high
+[06/07/2015 14:30:29,709] INFO [web.actions.SigninAction] [creaSession] [8c45269a5e2dff76293c2ff95075c449] Se genera session para usuario [81999648] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:30:29,710] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:30:29,710] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 81999648 mercado CC
+[06/07/2015 14:30:34,342] INFO [web.actions.LogoutAction] [logout] [8c45269a5e2dff76293c2ff95075c449] El usuario [81999648] ha deslogeado y finalizado su session
+[06/07/2015 14:30:56,065] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 14:30:56,066] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 14:30:56,066] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 14:30:56,066] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:600
+[06/07/2015 14:30:56,067] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 14:30:56,067] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [82709286] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:30:56,067] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:30:56,068] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 82709286 mercado SS
+[06/07/2015 14:30:56,175] INFO [web.actions.TrafficAction] [trafico] [8c45269a5e2dff76293c2ff95075c449] Cantidad de marcas fix zona activas :3
+[06/07/2015 14:30:57,645] ERROR [appmobile.util.Config] [getAppProperty] [8c45269a5e2dff76293c2ff95075c449] Key:tipoPlanMultiDispositivo no encontrada
+[06/07/2015 14:30:57,646] ERROR [appmobile.util.Config] [getAppProperty] [8c45269a5e2dff76293c2ff95075c449] Key:tipoPlanMultiDispositivo no encontrada
+[06/07/2015 14:30:58,087] INFO [web.actions.TrafficAction] [isExcedido] [8c45269a5e2dff76293c2ff95075c449] Usuario no posee datos Excedidos
+[06/07/2015 14:31:05,785] INFO [web.actions.LogoutAction] [logout] [] El usuario [82709286] ha deslogeado y finalizado su session
+[06/07/2015 14:31:25,160] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Servicio ClientePerfilService responde: 
+[06/07/2015 14:31:25,161] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Response Code: 0000
+[06/07/2015 14:31:25,161] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Response Descripcion: OK
+[06/07/2015 14:31:25,162] INFO [web.actions.SigninAction] [obtienePerfil] [8c45269a5e2dff76293c2ff95075c449] Tiempo:769
+[06/07/2015 14:31:25,162] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [8c45269a5e2dff76293c2ff95075c449] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 14:31:25,162] INFO [web.actions.SigninAction] [creaSession] [8c45269a5e2dff76293c2ff95075c449] Se genera session para usuario [88996108] con id [8c45269a5e2dff76293c2ff95075c449]
+[06/07/2015 14:31:25,163] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 14:31:25,163] INFO [web.actions.LoginAction] [validaUsuario] [8c45269a5e2dff76293c2ff95075c449] Login correcto msisdn 88996108 mercado SS
+[06/07/2015 14:31:25,230] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :3
+[06/07/2015 17:31:26,325] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 17:31:26,332] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 17:31:26,445] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 17:31:26,893] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 17:31:53,045] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 17:31:53,047] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 17:31:53,047] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 17:31:53,047] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1539
+[06/07/2015 17:31:53,048] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 17:31:53,054] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88996108] con id [8140c7803cc29b1a7c8fbe8108e1f302]
+[06/07/2015 17:31:53,278] INFO [web.actions.SigninAction] [obtienePerfil] [8140c7803cc29b1a7c8fbe8108e1f302] Servicio ClientePerfilService responde: 
+[06/07/2015 17:31:53,279] INFO [web.actions.SigninAction] [obtienePerfil] [8140c7803cc29b1a7c8fbe8108e1f302] Response Code: 0000
+[06/07/2015 17:31:53,279] INFO [web.actions.SigninAction] [obtienePerfil] [8140c7803cc29b1a7c8fbe8108e1f302] Response Descripcion: OK
+[06/07/2015 17:31:53,280] INFO [web.actions.SigninAction] [obtienePerfil] [8140c7803cc29b1a7c8fbe8108e1f302] Tiempo:224
+[06/07/2015 17:31:53,281] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [8140c7803cc29b1a7c8fbe8108e1f302] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 17:31:53,281] INFO [web.actions.LoginAction] [validaUsuario] [8140c7803cc29b1a7c8fbe8108e1f302] No es posible obtener variable de session [cliente]
+[06/07/2015 17:31:53,281] INFO [web.actions.LoginAction] [validaUsuario] [8140c7803cc29b1a7c8fbe8108e1f302] No es posible realizar login con session [cliente]
+[06/07/2015 17:31:53,282] INFO [web.actions.LoginAction] [validaUsuario] [8140c7803cc29b1a7c8fbe8108e1f302] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 17:31:53,282] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [8140c7803cc29b1a7c8fbe8108e1f302] Se crea session para [88996108]
+[06/07/2015 17:32:06,164] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[06/07/2015 17:35:11,631] ERROR [web.actions.TrafficAction] [execute] [] Ha ocurrido un problema en TrafficAction null
+[06/07/2015 20:54:11,361] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 20:54:11,369] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 20:54:11,480] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 20:54:11,829] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 20:55:26,197] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 20:55:26,199] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 20:55:26,199] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 20:55:26,199] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1722
+[06/07/2015 20:55:26,200] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 20:55:26,205] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88996108] con id [a2e0df24ad39d24bd736cee618d28543]
+[06/07/2015 20:55:26,211] INFO [web.actions.LoginAction] [validaUsuario] [a2e0df24ad39d24bd736cee618d28543] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 20:55:26,211] INFO [web.actions.LoginAction] [validaUsuario] [a2e0df24ad39d24bd736cee618d28543] Login correcto msisdn 88996108 mercado SS
+[06/07/2015 20:56:04,881] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[06/07/2015 21:01:46,535] ERROR [web.actions.TrafficAction] [execute] [] Ha ocurrido un problema en TrafficAction null
+[06/07/2015 21:03:04,865] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 21:03:04,868] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 21:03:05,033] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 21:03:05,273] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 21:03:28,577] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 21:03:28,578] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 21:03:28,579] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 21:03:28,579] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1184
+[06/07/2015 21:03:28,579] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 21:03:28,586] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88996108] con id [ee50080a71191512ee837ac2df3f34f4]
+[06/07/2015 21:03:28,588] INFO [web.actions.LoginAction] [validaUsuario] [ee50080a71191512ee837ac2df3f34f4] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 21:03:28,589] INFO [web.actions.LoginAction] [validaUsuario] [ee50080a71191512ee837ac2df3f34f4] Login correcto msisdn 88996108 mercado SS
+[06/07/2015 21:03:32,395] INFO [web.actions.TrafficAction] [trafico] [ee50080a71191512ee837ac2df3f34f4] Cantidad de marcas fix zona activas :0
+[06/07/2015 22:17:28,491] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:17:28,492] INFO [web.actions.RegisterAction] [execute] [] Usuario es redirigido al paso 1 del registro
+[06/07/2015 22:17:28,492] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:17:28,493] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:17:46,237] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:17:47,018] INFO [web.actions.RegisterAction] [execute] [] Usuario es redirigido al paso 1 del registro
+[06/07/2015 22:17:47,018] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:17:47,019] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:32:26,103] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:32:26,104] INFO [web.actions.RegisterAction] [execute] [] Usuario es redirigido al paso 1 del registro
+[06/07/2015 22:32:26,104] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:32:26,104] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:32:28,265] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:32:30,285] DEBUG [util.security.PostOnDemmand] [post] [] status:200
+[06/07/2015 22:32:30,286] DEBUG [util.security.PostOnDemmand] [post] [] request.getResponseBodyAsString():0000
+
+[06/07/2015 22:32:30,288] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:32:30,288] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:32:30,288] INFO [web.actions.RegisterAction] [enviarSMS] [] success_step_two
+[06/07/2015 22:32:30,289] INFO [web.actions.RegisterAction] [enviarSMS] [] Envio de clave exitoso para MSISDN [42104073]
+[06/07/2015 22:32:32,680] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:32:32,681] INFO [web.actions.RegisterAction] [execute] [] Usuario es redirigido al paso 1 del registro
+[06/07/2015 22:32:32,681] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:32:32,681] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:32:40,188] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:32:41,837] DEBUG [util.security.PostOnDemmand] [post] [] status:200
+[06/07/2015 22:32:41,839] DEBUG [util.security.PostOnDemmand] [post] [] request.getResponseBodyAsString():0000
+
+[06/07/2015 22:32:41,841] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:32:41,841] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:32:41,842] INFO [web.actions.RegisterAction] [enviarSMS] [] success_step_two
+[06/07/2015 22:32:41,842] INFO [web.actions.RegisterAction] [enviarSMS] [] Envio de clave exitoso para MSISDN [42104073]
+[06/07/2015 22:33:29,509] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:33:30,534] INFO [web.actions.RegisterAction] [isWebTemplate] [] Validando si es template web o apps
+[06/07/2015 22:33:30,534] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 22:33:30,535] INFO [web.actions.RegisterAction] [ingresarRutClave] [] Se remueve la sesion cliente_registro_signin
+[06/07/2015 22:33:30,535] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Ingresa a definicion de template
+[06/07/2015 22:33:30,535] INFO [appmobile.util.DefineTemplate] [defineTemplateRegistro] [] Valor app ingresa con valor nulo
+[06/07/2015 22:33:47,010] INFO [web.actions.RegisterAction] [execute] [] Inicia peticion de registro
+[06/07/2015 22:33:47,012] INFO [web.actions.RegisterAction] [execute] [] Finaliza peticion de registro
+[06/07/2015 22:33:47,674] INFO [web.actions.RegisterAction] [isWebTemplate] [] Validando si es template web o apps
+[06/07/2015 22:33:48,036] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 22:33:48,037] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 22:33:48,038] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 22:33:48,038] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:364
+[06/07/2015 22:33:48,038] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 22:33:48,039] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [b127e58c9fa194dc6d1864b717f8a4df]
+[06/07/2015 22:33:48,039] INFO [web.actions.RegisterAction] [isWebTemplate] [b127e58c9fa194dc6d1864b717f8a4df] Validando si es template web o apps
+[06/07/2015 22:33:48,050] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :1
+[06/07/2015 22:35:29,698] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :2
+[06/07/2015 22:35:34,171] INFO [web.actions.PlanAction] [execute] [] Usuario realiza consulta MiPlan
+[06/07/2015 22:35:35,293] INFO [web.actions.PlanAction] [execute] [] FIN consulta mi plan
+[06/07/2015 22:35:43,000] INFO [web.actions.BundleAction] [ssccUserHasBundles] [] Usuario no posee bolsas contratadas
+[06/07/2015 22:35:44,653] INFO [web.actions.SigninAction] [obtienePerfil] [b127e58c9fa194dc6d1864b717f8a4df] Servicio ClientePerfilService responde: 
+[06/07/2015 22:35:44,654] INFO [web.actions.SigninAction] [obtienePerfil] [b127e58c9fa194dc6d1864b717f8a4df] Response Code: 0000
+[06/07/2015 22:35:44,654] INFO [web.actions.SigninAction] [obtienePerfil] [b127e58c9fa194dc6d1864b717f8a4df] Response Descripcion: OK
+[06/07/2015 22:35:44,654] INFO [web.actions.SigninAction] [obtienePerfil] [b127e58c9fa194dc6d1864b717f8a4df] Tiempo:539
+[06/07/2015 22:35:44,927] INFO [web.actions.SigninAction] [obtenerValorTipoBolsa] [b127e58c9fa194dc6d1864b717f8a4df] Tiempo:272
+[06/07/2015 22:35:44,928] INFO [web.actions.BundleAction] [defineUserBundleType] [b127e58c9fa194dc6d1864b717f8a4df] Se establece bolsas para SS
+[06/07/2015 22:35:45,194] INFO [web.actions.BundleAction] [getAllAvailableUserSSCCBundles] [b127e58c9fa194dc6d1864b717f8a4df] Se realiza consulta de bolsas disponibles para msisdn [42104073]
+[06/07/2015 22:35:47,899] INFO [web.actions.BundleAction] [loadUserSSCCVoiceBundle] [] Se realiza consulta para bolsas Voz
+[06/07/2015 22:35:47,900] INFO [web.actions.BundleAction] [getAllAvailableUserSSCCBundles] [] Se realiza consulta de bolsas disponibles para msisdn [42104073]
+[06/07/2015 22:35:47,900] INFO [web.actions.BundleAction] [setVoiceSSCCBundles] [] Obteniendo bolsas de voz disponibles para sscc
+[06/07/2015 22:35:47,900] INFO [web.actions.BundleAction] [setVoiceSSCCBundles] [] Finaliza la consulta para bolsas de tipo VOZ
+[06/07/2015 22:35:49,869] INFO [web.actions.BundleAction] [loadUserSSCCSMSBundle] [] Se realiza consulta para bolsas SMS
+[06/07/2015 22:35:49,869] INFO [web.actions.BundleAction] [getAllAvailableUserSSCCBundles] [] Se realiza consulta de bolsas disponibles para msisdn [42104073]
+[06/07/2015 22:35:49,870] INFO [web.actions.BundleAction] [setSmsSSCCBundles] [] Obteniendo bolsas de mensajes disponibles para sscc
+[06/07/2015 22:35:49,870] INFO [web.actions.BundleAction] [setSmsSSCCBundles] [] Finaliza la consulta para bolsas de tipo SMS
+[06/07/2015 22:35:51,748] INFO [web.actions.BundleAction] [loadUserSSCCMixedBundle] [] Se realiza consulta para bolsas Combinadas
+[06/07/2015 22:35:51,748] INFO [web.actions.BundleAction] [getAllAvailableUserSSCCBundles] [] Se realiza consulta de bolsas disponibles para msisdn [42104073]
+[06/07/2015 22:35:51,749] INFO [web.actions.BundleAction] [setMixedSSCCBundles] [] Obteniendo bolsas combinadas disponibles para sscc
+[06/07/2015 22:35:51,749] INFO [web.actions.BundleAction] [setMixedSSCCBundles] [] Finaliza la consulta para bolsas de tipo COMBINADAS
+[06/07/2015 22:35:53,393] INFO [web.actions.BundleAction] [loadUserSSCCExtBundle] [] Se realiza consulta para bolsas EXTRAS
+[06/07/2015 22:35:53,393] INFO [web.actions.BundleAction] [getAllAvailableUserSSCCBundles] [] Se realiza consulta de bolsas disponibles para msisdn [42104073]
+[06/07/2015 22:35:53,393] INFO [web.actions.BundleAction] [setExtSSCCBundles] [] Obteniendo bolsas extras disponibles para sscc
+[06/07/2015 22:35:53,394] INFO [web.actions.BundleAction] [setExtSSCCBundles] [] Finaliza la consulta para bolsas de tipo EXTRAS
+[06/07/2015 22:35:55,324] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :2
+[06/07/2015 22:36:02,175] INFO [web.actions.LogoutAction] [logout] [] El usuario [42104073] ha deslogeado y finalizado su session
+[06/07/2015 22:36:18,360] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 22:36:18,360] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 22:36:18,360] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 22:36:18,361] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:404
+[06/07/2015 22:36:18,361] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 22:36:18,362] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [b127e58c9fa194dc6d1864b717f8a4df]
+[06/07/2015 22:36:18,362] INFO [web.actions.LoginAction] [validaUsuario] [b127e58c9fa194dc6d1864b717f8a4df] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 22:36:18,363] INFO [web.actions.LoginAction] [validaUsuario] [b127e58c9fa194dc6d1864b717f8a4df] Login correcto msisdn 42104073 mercado SS
+[06/07/2015 22:36:18,467] INFO [web.actions.TrafficAction] [trafico] [b127e58c9fa194dc6d1864b717f8a4df] Cantidad de marcas fix zona activas :2
+[06/07/2015 23:19:20,281] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 23:19:20,281] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 23:19:20,282] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 23:19:20,282] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:1138
+[06/07/2015 23:19:20,282] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:19:20,283] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [88996108] con id [08b63aaa3b1bf32f60cdc0f94b233787]
+[06/07/2015 23:19:20,712] INFO [web.actions.SigninAction] [obtienePerfil] [08b63aaa3b1bf32f60cdc0f94b233787] Servicio ClientePerfilService responde: 
+[06/07/2015 23:19:20,713] INFO [web.actions.SigninAction] [obtienePerfil] [08b63aaa3b1bf32f60cdc0f94b233787] Response Code: 0000
+[06/07/2015 23:19:20,713] INFO [web.actions.SigninAction] [obtienePerfil] [08b63aaa3b1bf32f60cdc0f94b233787] Response Descripcion: OK
+[06/07/2015 23:19:20,714] INFO [web.actions.SigninAction] [obtienePerfil] [08b63aaa3b1bf32f60cdc0f94b233787] Tiempo:431
+[06/07/2015 23:19:20,714] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [08b63aaa3b1bf32f60cdc0f94b233787] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:19:20,714] INFO [web.actions.LoginAction] [validaUsuario] [08b63aaa3b1bf32f60cdc0f94b233787] No es posible obtener variable de session [cliente]
+[06/07/2015 23:19:20,715] INFO [web.actions.LoginAction] [validaUsuario] [08b63aaa3b1bf32f60cdc0f94b233787] No es posible realizar login con session [cliente]
+[06/07/2015 23:19:20,715] INFO [web.actions.LoginAction] [validaUsuario] [08b63aaa3b1bf32f60cdc0f94b233787] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 23:19:20,715] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [08b63aaa3b1bf32f60cdc0f94b233787] Se crea session para [88996108]
+[06/07/2015 23:19:20,721] INFO [web.actions.TrafficAction] [trafico] [08b63aaa3b1bf32f60cdc0f94b233787] Cantidad de marcas fix zona activas :2
+[06/07/2015 23:21:19,255] INFO [web.actions.LogoutAction] [logout] [08b63aaa3b1bf32f60cdc0f94b233787] El usuario [42104073] ha deslogeado y finalizado su session
+[06/07/2015 23:22:06,204] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 23:22:06,204] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 23:22:06,205] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 23:22:06,205] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:792
+[06/07/2015 23:22:06,205] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:22:06,205] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [b127e58c9fa194dc6d1864b717f8a4df]
+[06/07/2015 23:22:06,206] INFO [web.actions.LoginAction] [validaUsuario] [b127e58c9fa194dc6d1864b717f8a4df] Informacion cliente se logra obtener por variable de session [cliente]
+[06/07/2015 23:22:06,206] INFO [web.actions.LoginAction] [validaUsuario] [b127e58c9fa194dc6d1864b717f8a4df] Login correcto msisdn 42104073 mercado SS
+[06/07/2015 23:22:09,523] INFO [web.actions.TrafficAction] [trafico] [b127e58c9fa194dc6d1864b717f8a4df] Cantidad de marcas fix zona activas :2
+[06/07/2015 23:24:03,332] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 23:24:03,336] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 23:24:03,450] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 23:24:03,779] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 23:24:28,612] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 23:24:28,613] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 23:24:28,613] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 23:24:28,614] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:691
+[06/07/2015 23:24:28,614] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:24:28,620] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [6eced28c8e061af77776facceaba7a39]
+[06/07/2015 23:24:29,429] INFO [web.actions.SigninAction] [obtienePerfil] [6eced28c8e061af77776facceaba7a39] Servicio ClientePerfilService responde: 
+[06/07/2015 23:24:29,429] INFO [web.actions.SigninAction] [obtienePerfil] [6eced28c8e061af77776facceaba7a39] Response Code: 0000
+[06/07/2015 23:24:29,430] INFO [web.actions.SigninAction] [obtienePerfil] [6eced28c8e061af77776facceaba7a39] Response Descripcion: OK
+[06/07/2015 23:24:29,430] INFO [web.actions.SigninAction] [obtienePerfil] [6eced28c8e061af77776facceaba7a39] Tiempo:808
+[06/07/2015 23:24:29,430] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [6eced28c8e061af77776facceaba7a39] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:24:29,431] INFO [web.actions.LoginAction] [validaUsuario] [6eced28c8e061af77776facceaba7a39] No es posible obtener variable de session [cliente]
+[06/07/2015 23:24:29,431] INFO [web.actions.LoginAction] [validaUsuario] [6eced28c8e061af77776facceaba7a39] No es posible realizar login con session [cliente]
+[06/07/2015 23:24:29,431] INFO [web.actions.LoginAction] [validaUsuario] [6eced28c8e061af77776facceaba7a39] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 23:24:29,432] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [6eced28c8e061af77776facceaba7a39] Se crea session para [42104073]
+[06/07/2015 23:24:31,091] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[06/07/2015 23:27:13,031] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 23:27:13,034] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 23:27:13,133] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 23:27:13,501] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 23:27:36,601] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 23:27:36,602] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 23:27:36,603] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 23:27:36,603] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:474
+[06/07/2015 23:27:36,604] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:27:36,610] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [6a0070f9025bd84a61aafd19564eaff7]
+[06/07/2015 23:27:36,956] INFO [web.actions.SigninAction] [obtienePerfil] [6a0070f9025bd84a61aafd19564eaff7] Servicio ClientePerfilService responde: 
+[06/07/2015 23:27:36,957] INFO [web.actions.SigninAction] [obtienePerfil] [6a0070f9025bd84a61aafd19564eaff7] Response Code: 0000
+[06/07/2015 23:27:36,957] INFO [web.actions.SigninAction] [obtienePerfil] [6a0070f9025bd84a61aafd19564eaff7] Response Descripcion: OK
+[06/07/2015 23:27:36,958] INFO [web.actions.SigninAction] [obtienePerfil] [6a0070f9025bd84a61aafd19564eaff7] Tiempo:346
+[06/07/2015 23:27:36,958] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [6a0070f9025bd84a61aafd19564eaff7] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:27:36,958] INFO [web.actions.LoginAction] [validaUsuario] [6a0070f9025bd84a61aafd19564eaff7] No es posible obtener variable de session [cliente]
+[06/07/2015 23:27:36,958] INFO [web.actions.LoginAction] [validaUsuario] [6a0070f9025bd84a61aafd19564eaff7] No es posible realizar login con session [cliente]
+[06/07/2015 23:27:36,959] INFO [web.actions.LoginAction] [validaUsuario] [6a0070f9025bd84a61aafd19564eaff7] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 23:27:36,959] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [6a0070f9025bd84a61aafd19564eaff7] Se crea session para [42104073]
+[06/07/2015 23:27:38,000] INFO [web.actions.TrafficAction] [trafico] [6a0070f9025bd84a61aafd19564eaff7] Cantidad de marcas fix zona activas :0
+[06/07/2015 23:30:09,798] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 23:30:09,803] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 23:30:09,915] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 23:30:10,335] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente
+[06/07/2015 23:30:35,257] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 23:30:35,258] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 23:30:35,259] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 23:30:35,259] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:378
+[06/07/2015 23:30:35,259] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:30:35,264] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [1ea792fea1046581fdfb7fc1dc5acdb0]
+[06/07/2015 23:30:35,924] INFO [web.actions.SigninAction] [obtienePerfil] [1ea792fea1046581fdfb7fc1dc5acdb0] Servicio ClientePerfilService responde: 
+[06/07/2015 23:30:35,924] INFO [web.actions.SigninAction] [obtienePerfil] [1ea792fea1046581fdfb7fc1dc5acdb0] Response Code: 0000
+[06/07/2015 23:30:35,925] INFO [web.actions.SigninAction] [obtienePerfil] [1ea792fea1046581fdfb7fc1dc5acdb0] Response Descripcion: OK
+[06/07/2015 23:30:35,925] INFO [web.actions.SigninAction] [obtienePerfil] [1ea792fea1046581fdfb7fc1dc5acdb0] Tiempo:659
+[06/07/2015 23:30:35,925] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [1ea792fea1046581fdfb7fc1dc5acdb0] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:30:35,926] INFO [web.actions.LoginAction] [validaUsuario] [1ea792fea1046581fdfb7fc1dc5acdb0] No es posible obtener variable de session [cliente]
+[06/07/2015 23:30:35,926] INFO [web.actions.LoginAction] [validaUsuario] [1ea792fea1046581fdfb7fc1dc5acdb0] No es posible realizar login con session [cliente]
+[06/07/2015 23:30:35,926] INFO [web.actions.LoginAction] [validaUsuario] [1ea792fea1046581fdfb7fc1dc5acdb0] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 23:30:35,926] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [1ea792fea1046581fdfb7fc1dc5acdb0] Se crea session para [42104073]
+[06/07/2015 23:30:37,209] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[06/07/2015 23:54:51,705] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion app-properties cargado correctamente
+[06/07/2015 23:54:51,710] INFO [appmobile.util.Config] [<clinit>] [] Archivo de configuracion moviles-properties cargado correctamente
+[06/07/2015 23:54:54,641] INFO [web.actions.SigninAction] [obtienePerfil] [] Servicio ClientePerfilService responde: 
+[06/07/2015 23:54:54,642] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Code: 0000
+[06/07/2015 23:54:54,642] INFO [web.actions.SigninAction] [obtienePerfil] [] Response Descripcion: OK
+[06/07/2015 23:54:54,643] INFO [web.actions.SigninAction] [obtienePerfil] [] Tiempo:601
+[06/07/2015 23:54:54,643] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:54:54,650] INFO [web.actions.SigninAction] [creaSession] [] Se genera session para usuario [42104073] con id [8e3a23ab71b80d99d44fb76c9bf565cd]
+[06/07/2015 23:54:55,051] INFO [web.actions.SigninAction] [obtienePerfil] [8e3a23ab71b80d99d44fb76c9bf565cd] Servicio ClientePerfilService responde: 
+[06/07/2015 23:54:55,051] INFO [web.actions.SigninAction] [obtienePerfil] [8e3a23ab71b80d99d44fb76c9bf565cd] Response Code: 0000
+[06/07/2015 23:54:55,052] INFO [web.actions.SigninAction] [obtienePerfil] [8e3a23ab71b80d99d44fb76c9bf565cd] Response Descripcion: OK
+[06/07/2015 23:54:55,052] INFO [web.actions.SigninAction] [obtienePerfil] [8e3a23ab71b80d99d44fb76c9bf565cd] Tiempo:400
+[06/07/2015 23:54:55,053] INFO [appmobile.util.DefineTemplate] [defineTemplateNav] [8e3a23ab71b80d99d44fb76c9bf565cd] Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[06/07/2015 23:54:55,053] INFO [web.actions.LoginAction] [validaUsuario] [8e3a23ab71b80d99d44fb76c9bf565cd] No es posible obtener variable de session [cliente]
+[06/07/2015 23:54:55,053] INFO [web.actions.LoginAction] [validaUsuario] [8e3a23ab71b80d99d44fb76c9bf565cd] No es posible realizar login con session [cliente]
+[06/07/2015 23:54:55,053] INFO [web.actions.LoginAction] [validaUsuario] [8e3a23ab71b80d99d44fb76c9bf565cd] Se efectua autenticacion con objeto [LoginVO]
+[06/07/2015 23:54:55,054] INFO [appmobile.util.DefineTemplate] [defineTemplateMercado] [8e3a23ab71b80d99d44fb76c9bf565cd] Se crea session para [42104073]
+[06/07/2015 23:54:59,938] INFO [web.actions.TrafficAction] [trafico] [] Cantidad de marcas fix zona activas :0
+[06/07/2015 23:55:43,514] INFO [web.actions.TrafficAction] [isExcedido] [] Usuario posee datos Excedidos
+[06/07/2015 23:55:53,739] INFO [appmobile.freemarker.MzzoFreemarkerManager] [init] [] Iniciando configuraciones Mzzo Freemarker Manager
+[06/07/2015 23:55:54,218] INFO [appmobile.bundle.MessageResourceBundle] [buildProperties] [] Archivo de mensajes globalMessages cargado correctamente

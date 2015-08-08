@@ -1,0 +1,122 @@
+[18/06/2015 15:16:42,132] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:1598
+[18/06/2015 15:16:42,136] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:16:42,136] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [82709286]
+[18/06/2015 15:16:42,136] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[18/06/2015 15:16:42,136] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[18/06/2015 15:16:42,139] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 82709286
+[18/06/2015 15:16:42,366] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:227
+[18/06/2015 15:16:42,366] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[18/06/2015 15:16:42,366] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[18/06/2015 15:16:42,367] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 13742e9144fee386191e9797a7a1504c
+[18/06/2015 15:16:42,367] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[18/06/2015 15:16:42,368] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[18/06/2015 15:16:42,369] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 13742e9144fee386191e9797a7a1504c
+[18/06/2015 15:17:08,861] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:17:09,664] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:803
+[18/06/2015 15:17:09,667] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:17:09,668] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:17:09,668] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:17:09,991] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:324
+[18/06/2015 15:17:09,991] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:17:09,991] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:17:10,191] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:200
+[18/06/2015 15:17:10,200] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:17:10,200] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:17:10,678] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:487
+[18/06/2015 15:23:06,492] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:209
+[18/06/2015 15:23:06,493] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:23:06,494] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [82709286]
+[18/06/2015 15:23:06,494] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[18/06/2015 15:23:06,494] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[18/06/2015 15:23:06,494] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 82709286
+[18/06/2015 15:23:06,654] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:160
+[18/06/2015 15:23:06,654] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[18/06/2015 15:23:06,655] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[18/06/2015 15:23:06,655] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 79516419e6c57ed705bc6154ccdf6ae1
+[18/06/2015 15:23:06,656] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[18/06/2015 15:23:06,656] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[18/06/2015 15:23:06,656] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 79516419e6c57ed705bc6154ccdf6ae1
+[18/06/2015 15:23:07,477] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:23:07,956] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:479
+[18/06/2015 15:23:07,957] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:23:07,957] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:23:07,957] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:23:08,240] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:283
+[18/06/2015 15:23:08,240] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:23:08,241] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:23:08,435] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:195
+[18/06/2015 15:23:08,435] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:23:08,436] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:23:08,648] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:213
+[18/06/2015 15:28:57,875] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:28:58,664] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:789
+[18/06/2015 15:28:58,665] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:28:58,665] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:28:58,665] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:28:58,950] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:285
+[18/06/2015 15:28:58,950] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:28:58,950] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:28:59,176] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:226
+[18/06/2015 15:28:59,176] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:28:59,177] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:28:59,600] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:424
+[18/06/2015 15:30:13,625] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:30:14,285] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:660
+[18/06/2015 15:30:14,285] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:30:14,285] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:30:14,286] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:30:14,595] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:310
+[18/06/2015 15:30:14,596] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:30:14,596] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:30:14,873] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:277
+[18/06/2015 15:30:14,873] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:30:14,874] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:30:15,129] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:256
+[18/06/2015 15:30:48,775] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:30:49,152] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:377
+[18/06/2015 15:30:49,152] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:30:49,153] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:30:49,153] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:30:49,442] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:288
+[18/06/2015 15:30:49,442] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:30:49,442] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:30:49,603] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:161
+[18/06/2015 15:30:49,603] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:30:49,604] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:30:49,906] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:303
+[18/06/2015 15:31:50,131] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:31:50,714] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:583
+[18/06/2015 15:31:50,714] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:31:50,714] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:31:50,715] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:31:51,004] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:290
+[18/06/2015 15:31:51,005] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:31:51,005] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:31:51,157] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:152
+[18/06/2015 15:31:51,157] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:31:51,157] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:31:51,488] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:331
+[18/06/2015 15:32:12,706] INFO [dao.imp.TrafficImp] [consultaTrafico] [0aa4bd1fbf215262b1943179a3ffed7e] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:32:13,082] INFO [dao.imp.TrafficImp] [consultaTrafico] [0aa4bd1fbf215262b1943179a3ffed7e] Tiempo:376
+[18/06/2015 15:32:13,082] INFO [dao.imp.TrafficImp] [consultaTrafico] [0aa4bd1fbf215262b1943179a3ffed7e] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:32:13,083] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:32:13,083] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:32:13,365] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Tiempo:281
+[18/06/2015 15:32:13,365] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:32:13,365] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:32:13,614] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [0aa4bd1fbf215262b1943179a3ffed7e] Tiempo:249
+[18/06/2015 15:32:13,615] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:32:13,615] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [0aa4bd1fbf215262b1943179a3ffed7e] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:32:13,920] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [0aa4bd1fbf215262b1943179a3ffed7e] Tiempo:305
+[18/06/2015 15:33:16,921] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 82709286
+[18/06/2015 15:33:17,432] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:511
+[18/06/2015 15:33:17,432] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 82709286
+[18/06/2015 15:33:17,433] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:33:17,433] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 82709286 ]
+[18/06/2015 15:33:17,723] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:290
+[18/06/2015 15:33:17,723] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[18/06/2015 15:33:17,724] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1472 TipoPlan: ]
+[18/06/2015 15:33:17,900] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:177
+[18/06/2015 15:33:17,900] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[18/06/2015 15:33:17,900] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56982709286 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[18/06/2015 15:33:18,272] INFO [dao.imp.TrafficImp] [obtenerPlanesMultimedia] [] Tiempo:372

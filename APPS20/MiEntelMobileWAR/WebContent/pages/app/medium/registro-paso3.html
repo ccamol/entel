@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+	<link href="favicon.ico" rel="icon" /> 
+
+	<title>Registro - Entel</title>
+
+	<!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" /> 
+	<link href="css/jAlert-v2.css" rel="stylesheet" />
+	
+	<!-- JS -->
+	<script src="js/modernizr.custom.js"></script>
+    
+</head>
+
+	<body>
+		<#include "/pages/include/googletags/gt.html">
+		
+		<div class="container">		
+
+			<!-- MAIN -->
+			<div id="main">
+
+					<div class="section-title">
+
+					<#if signLogin != "OK">
+						<h3 class="title txt-color">Email</h3>
+					<#else>	
+						<h3 class="title txt-color">Registro en Mi Entel</h>
+					</#if>
+					</div>
+
+
+					<section class="section">
+
+					<#if signLogin != "OK">
+						<!-- STEPS -->
+						<ul class="steps full-width clearfix">
+
+							<li class="col-4">
+								<span class="step">Paso 1</span>
+							</li>
+
+							<li class="col-4">
+								<span class="step">Paso 2</span>
+							</li>
+
+							<li class="col-4">
+								<span class="step active">Paso 3</span>
+							</li>
+
+						</ul>
+					</#if>
+
+					<#if signLogin == "OK">
+						<div class="content">
+
+							<p><@s.text name="registro.mensaje_signlogin_paso_3"/></p>
+
+						</div>
+					<#else>
+						<div class="content">
+
+							<p><@s.text name="registro.mensaje_paso_3"/></p>
+
+						</div>
+					</#if>	
+
+
+						<form id="formRegisterThree" action="registro" method="post">
+						
+						<input type="hidden" name="method:execute" value=registraMail />
+							
+							<div class="form-group">
+
+								<input id="email" name="email" type="email" class="form-control" placeholder="Email">
+								
+							</div>
+
+							<div class="form-group">
+								
+								<!-- SWITCH -->
+								<span class="switch">
+									<input id="condTerm" type="checkbox" name="condTerm" value="0" />									
+									<label for="switch-1"></label>
+								</span>
+
+								<small><@s.text name="registro.acepto_terminos"/></small>
+
+							</div>
+
+							<button id="registerThree" type="button" class="btn btn-primary btn-lg btn-symbols btn-block">Registrarme</button>
+
+						</form>
+
+					</section>
+
+
+
+					<section class="section">
+
+						
+						<!-- COLLAPSE -->
+						<div class="collapse full-width">
+
+
+							<h3><a href="" class="list-item list-collapse collapse-open"><@s.text name="registro.titulo_terminos"/></a></h3>
+
+							<div class="component-panel">			
+
+								<!-- INFO -->
+								<div class="info">
+				<section class="content" style="text-align: justify;">
+					<h1 align="center"><b>CONDICIONES GENERALES DE USO DEL SITIO WEB</b></h1><br>
+					<h4><b>INTRODUCCI&Oacute;N</b></h4>
+					
+					<div>
+						<p align="justify">Las siguientes Condiciones Generales de Uso del sitio Web de Entel, en adelante tambi&eacute;n denominadas 
+						las "Condiciones Generales de Uso", est&aacute;n dirigidas y ser&aacute;n aplicables a los usuarios y clientes de servicios Entel, 
+						en adelante indistintamente el "cliente" o "usuario", que accedan a alguno de los portales o sitios en Internet 
+						operados por Entel, en adelante el "sitio Web". Si usted no est&aacute; de acuerdo con estas Condiciones Generales de Uso, 
+						deber&aacute; abstenerse de acceder al sitio Web.<br>
+						El acceso y uso del sitio Web se rige por los t&eacute;rminos y condiciones descritos a continuaci&oacute;n, as&iacute; como por 
+						la legislaci&oacute;n vigente en la Rep&uacute;blica de Chile. En consecuencia, todas las visitas que realice el cliente al sitio Web, 
+						como asimismo, sus efectos jur&iacute;dicos, quedar&aacute;n regidos por estas reglas y sometidas a la referida legislaci&oacute;n.<br>
+						Entel se reserva el derecho de revisar y modificar peri&oacute;dicamente las presentes Condiciones Generales de Uso, produciendo 
+						dichas modificaciones efectos legales a contar del quinto d&iacute;a h&aacute;bil desde la fecha de publicaci&oacute;n de 
+						la modificaci&oacute;n en el sitio Web.
+						</p>
+					</div>
+					
+					<hr>
+					<h4><b>ENTREGA DATOS PERSONALES DEL USUARIO O CLIENTE Y USO DE CLAVES</b></h4>
+				
+					<ul>
+						<li>El ingreso y la obtenci&oacute;n de datos personales en cualquiera de las aplicaciones del sitio Web, 
+						se realiza de manera voluntaria, con la finalidad de acceder a los beneficios y servicios que ofrece Entel.
+							<ul style="margin-left: 2em;">
+								<li>El usuario o cliente dispondr&aacute; de una contrase&ntilde;a o clave personal de acceso que le permitir&aacute; 
+								el acceso personalizado al sitio Web y que adicionalmente lo habilita a solicitar nuevos servicios, pagar cuentas, 
+								revisar facturaci&oacute;n y obtener informaci&oacute;n de planes, servicios y equipos, entre otros.<hr>
+								</li>
+								<li>La clave personal de acceso que Entel entregue al usuario o cliente est&aacute; destinada a su uso personal, por lo tanto, 
+								su uso ser&aacute; de su exclusiva responsabilidad. En consecuencia, el extrav&iacute;o, robo, hurto, mal uso o cualquiera otra 
+								circunstancia que afecte la clave personal de acceso del cliente ser&aacute; de su responsabilidad. Asimismo, cualquier 
+								instrucci&oacute;n o declaraci&oacute;n que se ejecute a trav&eacute;s de la clave personal de acceso se entender&aacute; 
+								que ha emanado v&aacute;lida, leg&iacute;tima y aut&eacute;nticamente de un acto personal ejecutado por el usuario o cliente. 
+								En caso que exista mal uso de la clave personal, el cliente o usuario deber&aacute; dar aviso e informar a Entel apenas tenga 
+								conocimiento de la situaci&oacute;n.<hr>
+								</li>
+								<li>El usuario o cliente podr&aacute; en cualquier momento cambiar su clave personal de acceso, para lo cual deber&aacute; sujetarse 
+								a los procedimientos establecidos en el sitio Web.
+								</li>
+							</ul>
+							<p>COOKIES</p><hr>
+							<ul style="margin-left: 2em;">
+								<li>Entel dispone de cookies con el fin de entregar mejores condiciones de servicio, y para recoger 
+								informaci&oacute;n para prop&oacute;sitos estad&iacute;sticos.
+								</li>
+								<li>Las cookies consisten en una tecnolog&iacute;a implementada en el browser (software o programa para el acceso a 
+								un servicio web cualquiera) que permite que el servidor recuerde informaci&oacute;n sobre los usuarios para facilitar 
+								la navegaci&oacute;n o interacci&oacute;n por un sitio Web o portal en Internet. El sitio Web de Entel usa esta 
+								tecnolog&iacute;a cookie. Se hace presente que esta tecnolog&iacute;a no es utilizada por Entel para la lectura de datos 
+								del disco duro de los usuarios, ni de los archivos cookie creados por otros proveedores de servicios de Internet. 
+								</li>
+								<li>Es responsabilidad del cliente o usuario consultar las instrucciones de su sistema navegador, especialmente en lo relativo 
+								a configuraciones, donde se permite escoger la funcionalidad que comunica la existencia de cookies y/o impide la instalaci&oacute;n de 
+								cookies, si es el deseo del usuario o cliente.
+								</li>
+								<li>Sin el acceso de cookies el cliente o usuario no puede tener acceso a determinadas prestaciones con las que cuenta 
+								el sitio Web de Entel. En consecuencia, si el usuario no tiene habilitadas las cookies, puede no tener acceso a ciertas 
+								herramientas del sitio web o puede ver afectado un correcto funcionamiento.<hr>
+								</li>
+							</ul>
+							<h4><b>VERACIDAD DE LA INFORMACI&Oacute;N</b></h4><hr>
+							<ul style="margin-left: 2em;">
+								<li>Toda la informaci&oacute;n que facilite el usuario o cliente a Entel por cualquier medio deber&aacute; ser exacta, verdadera, completa y actualizada.</li>
+								<li>A estos efectos, el usuario o cliente garantiza la autenticidad de todos aquellos datos que comunique a Entel como consecuencia de completar los formularios 
+								necesarios para su registro en el sitio Web, la suscripci&oacute;n de los servicios sobre Internet y aquella que provea a Entel por cualquier medio. 
+								De igual forma, ser&aacute; responsabilidad del usuario o cliente mantener toda la informaci&oacute;n entregada a Entel permanentemente actualizada de forma que responda, 
+								en cada momento, a su situaci&oacute;n real.
+								</li>
+								<li>Entel podr&aacute; suspender temporalmente el acceso al sitio Web o el derecho a usar los servicios sobre Internet, cuando tenga 
+								dudas sobre la veracidad, exactitud o actualizaci&oacute;n de la informaci&oacute;n proporcionada por un usuario o cliente, mientras la 
+								informaci&oacute;n suministrada no haya sido confirmada por el mismo. El usuario o cliente ser&aacute; el &uacute;nico responsable de las manifestaciones 
+								falsas o inexactas que realice, y de los perjuicios que pudiere causar a Entel o a terceros por la informaci&oacute;n inexacta que proporcione.<hr>
+								</li>
+							</ul>
+							<h4><b>USO DE LOS DATOS PERSONALES REGISTRADOS EN EL SITIO WEB</b></h4><hr>
+							<ul style="margin-left: 2em;">
+								<li>El usuario o cliente autoriza conforme lo indicado en el art&iacute;culo 4 de la Ley 19.628 el tratamiento de sus datos personales 
+								por ENTEL y sus empresas relacionadas, filiales o matrices con finalidades de marketing, comunicar ofertas y promociones y 
+								con el objeto de entregar informaci&oacute;n y/o beneficios a los usuarios y clientes. Los referidos datos personales podr&acute;n en 
+								casos concretos ser comunicados a terceros, para cumplir con las finalidades reci&eacute;n mencionadas.
+								</li>
+								<li>El cliente o usuario que no desee continuar recibiendo mensajes publicitarios o de marketing, podr&aacute; solicitar su 
+								suspensi&oacute;n a trav&eacute;s de los mecanismos que se especifican en el mensaje enviado.
+								</li>
+								<li>El usuario o cliente puede solicitar la informaci&oacute;n, rectificaci&oacute;n, eliminaci&oacute;n y/o cancelaci&oacute;n 
+								de sus datos cuando lo estime conveniente, en conformidad a la Ley N&deg; 19.628.
+								</li>
+								<li>De vez en cuando solicitaremos informaci&oacute;n a personas que nos hayan enviado los datos de contacto a trav&eacute;s 
+								de encuestas. La participaci&oacute;n en &eacute;stas es totalmente voluntaria, por lo que ser&aacute; su decisi&oacute;n revelar o 
+								no esta informaci&oacute;n. Las encuestas se utilizar&aacute;n exclusivamente con prop&oacute;sitos de seguimiento o para mejorar el 
+								rendimiento de nuestro sitio Web. En caso de comunicarse los resultados de dichas encuestas, se omitir&aacute; cualquier se&ntilde;al que 
+								permita identificar a las personas consultadas.<hr>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					
+					<h4><b>PROPIEDAD INTELECTUAL Y PROPIEDAD INDUSTRIAL</b></h4><hr>
+					<ul>
+						<li>Todo contenido u obra que el usuario o cliente vea, lea o a la cual acceda en el sitio Web (im&aacute;genes, fotograf&iacute;as, ilustraciones, 
+						iconos, textos, c&oacute;digo fuente, dise&ntilde;o o cualquier otro elemento de contenido), se encuentra protegido por las normas 
+						legales que le sean aplicables sobre propiedad intelectual e industrial, salvo que expresamente se se&ntilde;ale lo contrario.<hr>
+							<ul style="margin-left: 2em;">
+								<li>El usuario no podr&aacute; vender, reproducir, distribuir, modificar, publicar o realizar cualquier otra actividad semejante, 
+								con cualquier elemento de contenido del sitio Web, para prop&oacute;sito alguno, debiendo respetar en todo caso las normas de propiedad 
+								intelectual e industrial vigentes en Chile. 
+								</li>
+								<li>Entel no concede ninguna licencia, derecho o autorizaci&oacute;n de uso de ninguna clase sobre sus derechos de propiedad 
+								industrial e intelectual, o sobre cualquier otra propiedad o derecho relacionado con el sitio Web o con los servicios que ofrece. 
+								Entel podr&aacute; terminar inmediatamente el derecho del usuario para acceder al sitio Web y/o el derecho a utilizar 
+								los servicios sobre Internet, en caso de infracci&oacute;n del usuario a estas normas, el usuario ser&aacute; 
+								responsable de todo da&ntilde;o o perjuicio causado a Entel y/o a terceros, que deriven de las infracciones legales en que incurra.
+								</li>
+								<li>Se deja expresa constancia que todo elemento de contenido, tal como art&iacute;culos, publicaciones, noticias e informaci&oacute;n publicada, 
+								exhibida, transmitida o comunicada en el sitio Web, ser&aacute; de responsabilidad de su autor o de la persona que las haya prove&iacute;do en 
+								conformidad a las leyes sobre propiedad intelectual e industrial vigentes en Chile.
+								</li>
+								<li>Entel es titular de los derechos de propiedad intelectual e industrial relativos a sus productos y servicios, 
+								as&iacute; como los relativos a marcas registradas y/o nombres de dominio "Entel.cl".
+								</li>
+								<li>El sitio Web puede contener v&iacute;nculos, links y/o referencias a sitios de terceros fabricantes, productores 
+								y/o proveedores de bienes y/o servicios. Entel reconoce a favor de sus titulares los correspondientes derechos de 
+								propiedad industrial e intelectual, y su sola menci&oacute;n o aparici&oacute;n en el sitio Web no implica la existencia 
+								de derechos o responsabilidad alguna de Entel sobre los mismos. Entel no recomienda ni avala ning&uacute;n producto 
+								o servicio ofrecido en dichos sitios, asimismo, Entel no es responsable de las pr&acute;cticas de 
+								seguridad o privacidad, o el contenido y disponibilidad de los mismos.<hr>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					
+					<h4><b>SOBRE EL SITIO WEB e INTERNET</b></h4><hr>
+					<ul>
+						<li>El usuario se obliga a utilizar el sitio Web y los servicios sobre Internet de conformidad con la legislaci&oacute;n 
+						vigente y estas Condiciones Generales de Uso, debiendo darles un uso consistente con las exigencias que imponen 
+						el orden p&iacute;blico, la moral, las buenas costumbres generalmente aceptadas y principalmente el respeto de terceros.
+						</li>
+						<li>A tal efecto, el usuario se compromete a no utilizar el sitio Web y/o servicios sobre Internet de forma perjudicial 
+						de los derechos e intereses de terceros, o que de cualquier forma puedan da&ntilde;ar, inutilizar, sobrecargar, deteriorar 
+						o impedir la normal utilizaci&oacute;n del sitio Web y los servicios, los equipos inform&aacute;ticos o los documentos, 
+						archivos y toda clase de contenidos almacenados en cualquier equipo inform&aacute;tico de Entel, 
+						de otros usuarios o de cualquier usuario de Internet.<hr>
+							<ul style="margin-left: 2em;">
+								<li>Entre otras obligaciones, de manera ejemplar y sin que implique limitaci&oacute;n alguna, al usuario se le proh&iacute;be:<hr></li>
+							</ul>
+							<p>(a) reproducir, copiar, distribuir o permitir el acceso del <b>p&uacute;blico al</b> sitio Web a trav&eacute;s de cualquier forma 
+							de comunicaci&oacute;n p&uacute;blica, transformar o modificar los servicios, salvo que se cuente con la autorizaci&oacute;n 
+							del titular de los correspondientes derechos de propiedad intelectual o industrial, o ello resulte legalmente permitido;</p>
+							<hr>
+							<ul style="margin-left: 2em;">
+								<li>(b) suprimir, eludir o manipular el derecho de propiedad intelectual e industrial y dem&aacute;s datos 
+								identificadores de los derechos de Entel o de otro titulares, incorporados a los servicios, as&iacute; como 
+								los dispositivos t&eacute;cnicos de protecci&oacute;n, las huellas digitales, medidas de autenticaci&oacute;n biom&eacute;trica 
+								o cualesquiera mecanismos de informaci&oacute;n que pudieren contener y/o solicitar los servicios;
+								</li>
+								<li>(c) ejecutar, inducir o promover actos delictivos, denigrantes, difamatorios, o que en general sean 
+								contrarios a la ley, la moral, al orden p&uacute;blico, o la seguridad nacional o que fueren discriminatorios 
+								por raz&oacute;n de sexo, raza, religi&oacute;n, creencias, edad o condici&oacute;n;
+								</li>
+								<li>(d) no respetar la privacidad de los dem&aacute;s usuarios;</li>
+								<li>(e) usar los servicios con prop&oacute;sitos comerciales, incluyendo la promoci&oacute;n de cualquier bien o servicio;</li>
+								<li>(f) obstaculizar, entorpecer, restringir o limitar de cualquier modo el uso de los servicios por parte de otros clientes o usuarios; y</li>
+								<li>(g) proporcionar informaci&oacute;n que no sea exacta, verdadera, completa y actualizada o que de cualquier manera menoscabe a Entel o a terceros.<hr></li>
+							</ul>
+						</li>
+						<li>Entel podr&aacute; modificar, sustituir, descontinuar o eliminar, sin aviso previo, cualquiera de los contenidos y/o 
+						funcionalidades ofrecidas en el sitio Web y/o los servicios sobre Internet. Entel podr&aacute; ejercer esta facultad tanto 
+						respecto de los contenidos y servicios habilitados directamente por Entel, como respecto de los contenidos y servicios 
+						habilitados por terceros a trav&eacute;s de los Sitios Entel.
+						</li>
+						<li>Entel no controla, no califica ni censura el uso dado por el usuario a los servicios y/o sitio Web, pero en caso de 
+						determinar que el usuario est&aacute; accediendo al sitio y/o usando los servicios sobre Internet con un objetivo distinto al 
+						que sirvi&oacute; de fundamento para su creaci&oacute;n, o se encuentra en contravenci&oacute;n con estas Condiciones Generales de Uso y/o 
+						disposiciones legales, Entel podr&aacute; suspender o revocar, total o parcialmente, y en forma inmediata, las claves de acceso, 
+						el acceso al sitio y/o el derecho a usar los servicios sobre Internet. La revocaci&oacute;n podr&aacute; involucrar la eliminaci&oacute;n de 
+						la informaci&oacute;n que el usuario hubiera almacenado al hacer uso del servicio, la supresi&oacute;n de sus claves de acceso y la 
+						exclusi&oacute;n del usuario de los registros correspondientes.<hr>
+							<ul style="margin-left: 2em;">
+								<li>En los casos en que sea posible, Entel informar&aacute; previamente al usuario respecto de la aplicaci&oacute;n de estas medidas. 
+								Sin ser taxativo, se entender&aacute; que no existe posibilidad de informar previamente sobre la aplicaci&oacute;n de estas medidas, 
+								en casos de fuerza mayor como cuando as&iacute; lo solicite una autoridad competente, o cuando la informaci&oacute;n previa vuelva 
+								inoperante o reste efectividad a la medida.
+								</li>
+								<li>Los servicios, productos y precios publicitados a trav&eacute;s del sitio Web, est&aacute;n sujetos a disponibilidad 
+								de stock y t&eacute;rmino y condiciones comerciales establecidas y publicadas por Entel, para cada servicio y producto.
+								</li>
+								<li>Dada la especial naturaleza de Internet, que se basa en el funcionamiento de programas y equipos computacionales, 
+								y de redes de telecomunicaciones, que est&aacute;n continuamente sujetos al riesgo de interrupciones, errores, fallas, congesti%oacute;n, 
+								intervenciones no autorizadas u obsolescencia, Entel no garantiza ni puede garantizar:<hr>
+								</li>
+							</ul>
+							<p align="justify"><b>(a) la utilidad del</b> sitio Web y de los servicios sobre Internet para la realizaci&oacute;n de cualquier actividad;<br>
+							<b>(b) que</b> el sitio Web y/o servicios sobre Internet est&eacute;n exentos de fallas;<br>
+							<b>(c) que los</b> usuarios puedan efectivamente utilizar los sitios y los servicios y/o acceder a las distintas p&aacute;ginas que conforman el sitio;<br>
+							<b>(d) que</b> los aspectos funcionales del sitio y/o servicios sobre Internet, o que los servidores y sistemas mediante los cuales 
+							se ofrecen los contenidos o servicios se encuentren libres de error o de virus inform&aacute;tico, o de cualquier otro 
+							elemento de car&aacute;cter da&ntilde;ino;<br>
+							<b>(e) la privacidad y seguridad en la utilizaci&oacute;n del</b> sitio y de los servicios;<br>
+							<b>(f) que terceros aje</b>nos no autorizados no acceden al sitio Web ni a los servicios; <br>
+							<b>(g) que terceros ajenos no autorizados no conozcan las condiciones, caracter&iacute;sticas o circunstancias del uso que</b> el usuario haga del sitio y de los servicios;<br>
+							(h) la exactitud, integridad, confiabilidad o vigencia del material, conexiones o el resultado que se obtenga del <b>uso del sitio.</b><br>
+							<hr>
+						</li>
+						<li>El sitio Web de Entel puede contener enlaces o links a sitios mantenidos por terceros y eventualmente pueden 
+						proporcionar material de terceros desde los sitios de &eacute;stos. Entel no es responsable por la funcionalidad, 
+						eficacia de los servicios y por los contenidos de aquellos sitios distintos a su propio sitio Web.
+						</li>
+						<li>Entel no es responsable por los reclamos, p&eacute;rdidas, acciones, da&ntilde;os, demandas judiciales o procedimientos 
+						que surjan o est&eacute;n relacionados de alguna manera con ocasi&oacute;n de los enlaces con sitios de terceros. La presente exenci&oacute;n 
+						de responsabilidad se extiende a los enlaces con sitios mantenidos por terceros, donde se realiza cualquier tipo de 
+						transacci&oacute;n entre y/o mediante el usuario y el tercero responsable del respectivo sitio.
+						</li>
+					</ul>
+					
+				</section>
+								</div>
+
+							</div>
+
+						</div><!--/collapse-->
+
+
+					</section>	
+
+
+					<!-- FOOTER -->
+					<footer class="page-footer">
+
+						<p class="txt-small"><@s.text name="registro.copyright"/></p>
+
+					</footer>
+
+
+			</div><!--/main-->
+
+
+			
+		</div><!--/container-->
+
+
+
+		<!-- JS Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/jquery.collapse.js"></script>
+		<script src="js/jquery.idTabs.min.js"></script>
+		<script src="js/jAlert-v2.js"></script>
+
+
+		<!-- JS Config -->
+		<script src="js/collapse-cfg.js"></script>
+		<script src="js/modal-cfg.js"></script>
+		<script src="js/val/reg.error.three-handle.js"></script>		
+
+		<script type="text/javascript">
+		var appMobile=true;
+		<#if msgErrorRegThree?exists>
+		$(document).ready(function() {
+			popupAlert("${msgErrorRegThree}");
+		});
+		</#if>
+		</script>
+
+	</body>
+
+</html>

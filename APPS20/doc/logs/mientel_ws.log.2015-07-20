@@ -1,0 +1,1606 @@
+[20/07/2015 11:45:20,981] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:1449
+[20/07/2015 11:45:20,982] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:45:20,983] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 11:45:20,983] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 11:45:20,983] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 11:45:20,987] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 11:45:21,428] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:441
+[20/07/2015 11:45:21,428] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 11:45:21,428] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 11:45:21,429] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta e9a666e1fe4458196279b30a3194b357
+[20/07/2015 11:45:21,429] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 11:45:21,429] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 11:45:21,430] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: e9a666e1fe4458196279b30a3194b357
+[20/07/2015 11:45:44,034] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:193
+[20/07/2015 11:45:44,035] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:45:44,035] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 11:45:44,036] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 11:45:44,036] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 11:45:44,036] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 11:45:44,203] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:167
+[20/07/2015 11:45:44,204] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 11:45:44,204] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 11:45:44,204] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta b1b3ff0e54b5f538a917c71c37e6f9c7
+[20/07/2015 11:45:44,204] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 11:45:44,205] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 11:45:44,205] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: b1b3ff0e54b5f538a917c71c37e6f9c7
+[20/07/2015 11:45:44,609] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 11:45:45,193] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:584
+[20/07/2015 11:45:45,195] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 42104073
+[20/07/2015 11:45:45,196] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 11:45:45,196] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 11:45:45,654] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:459
+[20/07/2015 11:45:45,654] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:45:45,654] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 11:45:45,809] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:155
+[20/07/2015 11:45:45,809] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 11:45:45,810] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 11:45:45,811] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 11:45:45,990] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 11:45:45,990] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 11:45:46,365] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Tiempo:375
+[20/07/2015 11:45:46,366] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:45:46,366] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 11:45:47,047] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 11:45:47,047] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 11:45:47,047] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 11:45:47,048] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap2: 58.49
+[20/07/2015 11:45:47,048] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap3: 0.0
+[20/07/2015 11:52:43,110] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:326
+[20/07/2015 11:52:43,112] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:52:43,112] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 11:52:43,113] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 11:52:43,113] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 11:52:43,113] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 11:52:43,281] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:168
+[20/07/2015 11:52:43,281] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 11:52:43,282] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 11:52:43,282] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 54d38ee450940c45da154b1e3d3081e5
+[20/07/2015 11:52:43,282] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 11:52:43,282] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 11:52:43,283] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 54d38ee450940c45da154b1e3d3081e5
+[20/07/2015 11:52:53,433] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:258
+[20/07/2015 11:52:53,433] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:52:53,433] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 11:52:53,434] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 11:52:53,434] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 11:52:53,434] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 11:52:53,613] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:179
+[20/07/2015 11:52:53,613] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 11:52:53,613] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 11:52:53,614] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 0f2761b0ef308babfa27a06095f60637
+[20/07/2015 11:52:53,614] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 11:52:53,614] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 11:52:53,615] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 0f2761b0ef308babfa27a06095f60637
+[20/07/2015 11:52:54,005] INFO [dao.imp.TrafficImp] [consultaTrafico] [56634e386e15804a88457ab54d91608d] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 11:52:54,368] INFO [dao.imp.TrafficImp] [consultaTrafico] [56634e386e15804a88457ab54d91608d] Tiempo:363
+[20/07/2015 11:52:54,368] INFO [dao.imp.TrafficImp] [consultaTrafico] [56634e386e15804a88457ab54d91608d] Fin consultando trafico para numero movil 42104073
+[20/07/2015 11:52:54,368] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [56634e386e15804a88457ab54d91608d] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 11:52:54,369] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [56634e386e15804a88457ab54d91608d] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 11:52:54,469] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [56634e386e15804a88457ab54d91608d] Error al inicializar el Servicio class cl.i2b.ws22.WsPlanesMovilService
+com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseWSDL(RuntimeWSDLParser.java:333)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseUsingMex(RuntimeWSDLParser.java:219)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:170)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:147)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at cl.i2b.ws22.WsPlanesMovilService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getPlanInstanceService(EntelServices.java:205)
+	at com.esa.ponline.appmobile.ws.dao.imp.TrafficImp.consultaTraficoExcedido(TrafficImp.java:308)
+	at com.esa.ponline.appmobile.web.delegate.DelegateTraffic.consultaTraficoExcedido(DelegateTraffic.java:24)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.trafico(TrafficAction.java:100)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.execute(TrafficAction.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:612)
+	at com.ctc.wstx.sr.BasicStreamReader.startDTD(BasicStreamReader.java:2444)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromPrologBang(BasicStreamReader.java:2360)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2020)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 91 more
+[20/07/2015 11:52:54,477] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [56634e386e15804a88457ab54d91608d] No es posible crear la llamada al servicio WsPlanesMovilService: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+[20/07/2015 11:52:54,479] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [56634e386e15804a88457ab54d91608d] Error: null
+[20/07/2015 11:52:54,480] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [56634e386e15804a88457ab54d91608d] Tiempo:112
+[20/07/2015 11:52:54,480] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [56634e386e15804a88457ab54d91608d] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 11:52:54,635] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 11:52:54,636] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 11:52:54,918] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] Tiempo:283
+[20/07/2015 11:52:54,918] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 11:52:54,918] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 11:52:55,859] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 11:52:55,860] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 11:52:55,860] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 11:52:55,860] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] MSISDN ->42104073<- | CosumoCap2: 58.49
+[20/07/2015 11:52:55,860] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [56634e386e15804a88457ab54d91608d] MSISDN ->42104073<- | CosumoCap3: 0.0
+[20/07/2015 12:02:10,226] ERROR [appmobile.ws.EntelServices] [validaCompania] [] Error al inicializar el Servicio class unix.roble.ValidaMsisdnService
+com.sun.xml.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.FileNotFoundException: Response: '403: Forbidden' for url: 'http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap'
+java.io.FileNotFoundException: Response: '403: Forbidden' for url: 'http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap?wsdl'
+
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:182)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:153)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at unix.roble.ValidaMsisdnService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.validaCompania(EntelServices.java:425)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.obtieneCompania(LoginAction.java:225)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.validaUsuario(LoginAction.java:106)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.execute(LoginAction.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:64)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+[20/07/2015 12:02:10,228] ERROR [appmobile.ws.EntelServices] [validaCompania] [] No es posible crear la llamada al servicio ValidaMsisdnService: 2 counts of InaccessibleWSDLException.
+
+[20/07/2015 12:02:29,269] ERROR [appmobile.ws.EntelServices] [validaCompania] [] Error al inicializar el Servicio class unix.roble.ValidaMsisdnService
+com.sun.xml.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.FileNotFoundException: Response: '403: Forbidden' for url: 'http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap'
+java.io.FileNotFoundException: Response: '403: Forbidden' for url: 'http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap?wsdl'
+
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:182)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:153)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at unix.roble.ValidaMsisdnService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.validaCompania(EntelServices.java:425)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.obtieneCompania(LoginAction.java:225)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.validaUsuario(LoginAction.java:106)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.execute(LoginAction.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:64)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+[20/07/2015 12:02:29,270] ERROR [appmobile.ws.EntelServices] [validaCompania] [] No es posible crear la llamada al servicio ValidaMsisdnService: 2 counts of InaccessibleWSDLException.
+
+[20/07/2015 12:03:06,791] ERROR [appmobile.ws.EntelServices] [validaCompania] [56634e386e15804a88457ab54d91608d] Error al inicializar el Servicio class unix.roble.ValidaMsisdnService
+com.sun.xml.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.FileNotFoundException: Response: '403: Forbidden' for url: 'http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap'
+java.io.FileNotFoundException: Response: '403: Forbidden' for url: 'http://sbepcs.entel.cl:80/pxValidaMsisdnSubtelSoap?wsdl'
+
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:182)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:153)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at unix.roble.ValidaMsisdnService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.validaCompania(EntelServices.java:425)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.obtieneCompania(LoginAction.java:225)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.validaUsuario(LoginAction.java:106)
+	at com.esa.ponline.appmobile.web.actions.LoginAction.execute(LoginAction.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:64)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+[20/07/2015 12:03:06,791] ERROR [appmobile.ws.EntelServices] [validaCompania] [56634e386e15804a88457ab54d91608d] No es posible crear la llamada al servicio ValidaMsisdnService: 2 counts of InaccessibleWSDLException.
+
+[20/07/2015 12:07:28,230] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:255
+[20/07/2015 12:07:28,231] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:07:28,231] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 12:07:28,232] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:07:28,232] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:07:28,232] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 12:07:28,524] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:292
+[20/07/2015 12:07:28,525] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:07:28,525] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 12:07:28,526] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 2df8c467419dab07258d210368d83cce
+[20/07/2015 12:07:28,526] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:07:28,526] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 12:07:28,526] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 2df8c467419dab07258d210368d83cce
+[20/07/2015 12:07:37,752] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:160
+[20/07/2015 12:07:37,753] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:07:37,753] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 12:07:37,753] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:07:37,753] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:07:37,754] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 12:07:37,905] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:151
+[20/07/2015 12:07:37,906] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:07:37,906] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 12:07:37,907] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta a2dcbda1eb37140fad3ed164f8cd2873
+[20/07/2015 12:07:37,907] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:07:37,907] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 12:07:37,907] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: a2dcbda1eb37140fad3ed164f8cd2873
+[20/07/2015 12:07:38,185] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:07:38,633] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:448
+[20/07/2015 12:07:38,634] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:07:38,634] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:07:38,634] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:07:38,950] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:316
+[20/07/2015 12:07:38,951] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:07:38,951] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:07:39,671] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:720
+[20/07/2015 12:07:39,672] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 12:07:39,672] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 12:07:39,673] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:07:39,878] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:07:39,878] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:07:40,143] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Tiempo:265
+[20/07/2015 12:07:40,143] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:07:40,144] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:07:41,220] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:07:41,221] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:07:41,221] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:07:41,221] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap2: 58.49
+[20/07/2015 12:07:41,221] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap3: 0.0
+[20/07/2015 12:17:18,114] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:335
+[20/07/2015 12:17:18,116] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:17:18,116] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [77467726]
+[20/07/2015 12:17:18,117] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:17:18,117] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:17:18,117] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 77467726
+[20/07/2015 12:17:18,271] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:154
+[20/07/2015 12:17:18,271] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:17:18,271] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 12:17:18,272] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 81aec2f67b781857b60a8691dfe563cf
+[20/07/2015 12:17:18,272] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:17:18,272] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 12:17:18,273] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 81aec2f67b781857b60a8691dfe563cf
+[20/07/2015 12:17:18,588] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:17:18,588] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] para consultar resumen de prepago
+[20/07/2015 12:17:19,075] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] Tiempo:487
+[20/07/2015 12:17:19,076] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] PREPAGO MSISDN: [77467726] | NO TIENE saldo reservado
+[20/07/2015 12:17:19,076] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:17:19,077] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] MSISDN: [77467726]
+[20/07/2015 12:17:19,077] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] Codigo Response Service: 0000
+[20/07/2015 12:17:19,077] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [56634e386e15804a88457ab54d91608d] Descripcion Response Service: OK
+[20/07/2015 12:17:19,244] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [56634e386e15804a88457ab54d91608d] Tiempo:167
+[20/07/2015 12:17:19,244] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [56634e386e15804a88457ab54d91608d] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:17:19,244] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [56634e386e15804a88457ab54d91608d] MSISDN: [77467726]
+[20/07/2015 12:17:19,245] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [56634e386e15804a88457ab54d91608d] Codigo Response Service: 0000
+[20/07/2015 12:17:19,245] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [56634e386e15804a88457ab54d91608d] Descripcion Response Service: OK
+[20/07/2015 12:17:19,245] INFO [dao.imp.MenuImp] [consultarSaldoSecundario] [56634e386e15804a88457ab54d91608d] se inicia llamada a servicio SaldoBonoExtra (saldo secundario)
+[20/07/2015 12:17:19,327] ERROR [appmobile.ws.EntelServices] [getConsSaldoBonoExtraServiceBindingQSService] [56634e386e15804a88457ab54d91608d] Error al inicializar el Servicio class com.esa.billing.billingcons.t.conssaldobonoextra.ConsSaldoBonoExtraServiceBindingQSService
+com.sun.xml.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.FileNotFoundException: Response: '404: Not Found' for url: 'http://esb.entel.cl:80/billing/billingcons/consultafacturas/bil_t_px_conssaldobonoextraps'
+java.io.FileNotFoundException: Response: '404: Not Found' for url: 'http://esb.entel.cl:80/billing/billingcons/consultafacturas/bil_t_px_conssaldobonoextraps?wsdl'
+
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:182)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:153)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at com.esa.billing.billingcons.t.conssaldobonoextra.ConsSaldoBonoExtraServiceBindingQSService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getConsSaldoBonoExtraServiceBindingQSService(EntelServices.java:69)
+	at com.esa.ponline.appmobile.ws.dao.imp.MenuImp.consultarSaldoSecundario(MenuImp.java:124)
+	at com.esa.ponline.appmobile.web.delegate.DelegateMenu.consultarSaldoSecundario(DelegateMenu.java:33)
+	at com.esa.ponline.appmobile.web.actions.MenuAction.detalleResumenPP(MenuAction.java:143)
+	at com.esa.ponline.appmobile.web.actions.MenuAction.obtieneSaldoPP(MenuAction.java:88)
+	at com.esa.ponline.appmobile.web.actions.MenuAction.execute(MenuAction.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+[20/07/2015 12:17:19,328] ERROR [appmobile.ws.EntelServices] [getConsSaldoBonoExtraServiceBindingQSService] [56634e386e15804a88457ab54d91608d] No es posible crear la llamada al servicio ConsSaldoBonoExtraServiceBindingQSService: 2 counts of InaccessibleWSDLException.
+
+[20/07/2015 12:39:22,227] INFO [dao.imp.RegisterImp] [existeRegistro] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:648
+[20/07/2015 12:39:22,228] INFO [dao.imp.RegisterImp] [existeRegistro] [4922f7a51d44689e3ac58e1549f77fb2] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:39:22,229] INFO [dao.imp.RegisterImp] [existeRegistro] [4922f7a51d44689e3ac58e1549f77fb2] MSISDN: [42104073]
+[20/07/2015 12:39:22,229] INFO [dao.imp.RegisterImp] [existeRegistro] [4922f7a51d44689e3ac58e1549f77fb2] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:39:22,229] INFO [dao.imp.RegisterImp] [existeRegistro] [4922f7a51d44689e3ac58e1549f77fb2] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:39:22,230] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] Inicio validacion numero movil 42104073
+[20/07/2015 12:39:22,407] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:177
+[20/07/2015 12:39:22,408] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:39:22,408] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] codigoRespuesta 0000
+[20/07/2015 12:39:22,408] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] descripcionRespuesta 77172feb20910e8d73374256879befbd
+[20/07/2015 12:39:22,408] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:39:22,409] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] Codigo Response Service: 0000
+[20/07/2015 12:39:22,410] INFO [dao.imp.LoginImp] [validaLogin] [4922f7a51d44689e3ac58e1549f77fb2] Descripcion Response Service: 77172feb20910e8d73374256879befbd
+[20/07/2015 12:39:31,675] INFO [dao.imp.RegisterImp] [existeRegistro] [4c929772751c55383e2ac876d1a7c19b] Tiempo:144
+[20/07/2015 12:39:31,675] INFO [dao.imp.RegisterImp] [existeRegistro] [4c929772751c55383e2ac876d1a7c19b] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:39:31,676] INFO [dao.imp.RegisterImp] [existeRegistro] [4c929772751c55383e2ac876d1a7c19b] MSISDN: [42104073]
+[20/07/2015 12:39:31,676] INFO [dao.imp.RegisterImp] [existeRegistro] [4c929772751c55383e2ac876d1a7c19b] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:39:31,676] INFO [dao.imp.RegisterImp] [existeRegistro] [4c929772751c55383e2ac876d1a7c19b] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:39:31,677] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] Inicio validacion numero movil 42104073
+[20/07/2015 12:39:31,823] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] Tiempo:146
+[20/07/2015 12:39:31,823] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:39:31,824] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] codigoRespuesta 0000
+[20/07/2015 12:39:31,824] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] descripcionRespuesta b0ed1a42cb4ab6ed86c343e23dab996f
+[20/07/2015 12:39:31,824] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:39:31,825] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] Codigo Response Service: 0000
+[20/07/2015 12:39:31,825] INFO [dao.imp.LoginImp] [validaLogin] [4c929772751c55383e2ac876d1a7c19b] Descripcion Response Service: b0ed1a42cb4ab6ed86c343e23dab996f
+[20/07/2015 12:39:32,228] INFO [dao.imp.TrafficImp] [consultaTrafico] [4c929772751c55383e2ac876d1a7c19b] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:39:32,591] INFO [dao.imp.TrafficImp] [consultaTrafico] [4c929772751c55383e2ac876d1a7c19b] Tiempo:363
+[20/07/2015 12:39:32,591] INFO [dao.imp.TrafficImp] [consultaTrafico] [4c929772751c55383e2ac876d1a7c19b] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:39:32,591] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4c929772751c55383e2ac876d1a7c19b] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:39:32,592] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4c929772751c55383e2ac876d1a7c19b] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:39:32,687] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [4c929772751c55383e2ac876d1a7c19b] Error al inicializar el Servicio class cl.i2b.ws22.WsPlanesMovilService
+com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseWSDL(RuntimeWSDLParser.java:333)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseUsingMex(RuntimeWSDLParser.java:219)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:170)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:147)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at cl.i2b.ws22.WsPlanesMovilService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getPlanInstanceService(EntelServices.java:205)
+	at com.esa.ponline.appmobile.ws.dao.imp.TrafficImp.consultaTraficoExcedido(TrafficImp.java:308)
+	at com.esa.ponline.appmobile.web.delegate.DelegateTraffic.consultaTraficoExcedido(DelegateTraffic.java:24)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.trafico(TrafficAction.java:100)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.execute(TrafficAction.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:612)
+	at com.ctc.wstx.sr.BasicStreamReader.startDTD(BasicStreamReader.java:2444)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromPrologBang(BasicStreamReader.java:2360)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2020)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 91 more
+[20/07/2015 12:39:32,689] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [4c929772751c55383e2ac876d1a7c19b] No es posible crear la llamada al servicio WsPlanesMovilService: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+[20/07/2015 12:39:32,691] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [4c929772751c55383e2ac876d1a7c19b] Error: null
+[20/07/2015 12:39:32,691] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [4c929772751c55383e2ac876d1a7c19b] Tiempo:100
+[20/07/2015 12:39:32,691] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [4c929772751c55383e2ac876d1a7c19b] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:39:32,864] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:39:32,864] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:39:33,130] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] Tiempo:266
+[20/07/2015 12:39:33,130] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:39:33,131] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:39:34,011] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:39:34,011] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:39:34,011] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:39:34,012] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] MSISDN ->42104073<- | CosumoCap2: 74.49
+[20/07/2015 12:39:34,012] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4c929772751c55383e2ac876d1a7c19b] MSISDN ->42104073<- | CosumoCap3: 0.05
+[20/07/2015 12:43:52,183] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:43:52,545] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:362
+[20/07/2015 12:43:52,546] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:43:52,546] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:43:52,546] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:43:52,815] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:269
+[20/07/2015 12:43:52,815] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:43:52,815] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:43:53,060] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:245
+[20/07/2015 12:43:53,060] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 12:43:53,061] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 12:43:53,061] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:43:53,156] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:43:53,157] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:43:53,258] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [] Error al inicializar el Servicio class cl.i2b.ws22.WsPlanesMovilService
+com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseWSDL(RuntimeWSDLParser.java:333)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseUsingMex(RuntimeWSDLParser.java:219)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:170)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:147)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at cl.i2b.ws22.WsPlanesMovilService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getPlanInstanceService(EntelServices.java:205)
+	at com.esa.ponline.appmobile.ws.dao.imp.TrafficImp.consultarTraficoMMAGExcedido(TrafficImp.java:177)
+	at com.esa.ponline.appmobile.web.delegate.DelegateTraffic.consultarTraficoMMAGExcedido(DelegateTraffic.java:32)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.trafico(TrafficAction.java:105)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.execute(TrafficAction.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:612)
+	at com.ctc.wstx.sr.BasicStreamReader.startDTD(BasicStreamReader.java:2444)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromPrologBang(BasicStreamReader.java:2360)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2020)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 91 more
+[20/07/2015 12:43:53,260] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [] No es posible crear la llamada al servicio WsPlanesMovilService: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+[20/07/2015 12:43:53,262] ERROR [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Error: null
+[20/07/2015 12:43:53,262] ERROR [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Tiempo:106
+[20/07/2015 12:43:53,262] INFO [dao.imp.TrafficImp] [consultaNombrePlan] [] Inicio consulta nombre plan para numero movil 42104073
+[20/07/2015 12:43:53,583] INFO [dao.imp.TrafficImp] [consultaNombrePlan] [] Tiempo:321
+[20/07/2015 12:43:53,583] INFO [dao.imp.TrafficImp] [consultaNombrePlan] [] Fin consultando nombre plan para numero movil 42104073
+[20/07/2015 12:44:10,070] INFO [dao.imp.TrafficImp] [consultaTrafico] [4922f7a51d44689e3ac58e1549f77fb2] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:44:10,403] INFO [dao.imp.TrafficImp] [consultaTrafico] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:333
+[20/07/2015 12:44:10,403] INFO [dao.imp.TrafficImp] [consultaTrafico] [4922f7a51d44689e3ac58e1549f77fb2] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:44:10,403] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:44:10,404] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:44:10,669] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:266
+[20/07/2015 12:44:10,670] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:44:10,670] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:44:10,900] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:230
+[20/07/2015 12:44:10,900] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 12:44:10,901] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 12:44:10,901] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [4922f7a51d44689e3ac58e1549f77fb2] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:44:11,014] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:44:11,015] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:44:11,121] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [4922f7a51d44689e3ac58e1549f77fb2] Error al inicializar el Servicio class cl.i2b.ws22.WsPlanesMovilService
+com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseWSDL(RuntimeWSDLParser.java:333)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseUsingMex(RuntimeWSDLParser.java:219)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:170)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:147)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at cl.i2b.ws22.WsPlanesMovilService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getPlanInstanceService(EntelServices.java:205)
+	at com.esa.ponline.appmobile.ws.dao.imp.TrafficImp.consultarTraficoMMAGExcedido(TrafficImp.java:177)
+	at com.esa.ponline.appmobile.web.delegate.DelegateTraffic.consultarTraficoMMAGExcedido(DelegateTraffic.java:32)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.trafico(TrafficAction.java:105)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.execute(TrafficAction.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:612)
+	at com.ctc.wstx.sr.BasicStreamReader.startDTD(BasicStreamReader.java:2444)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromPrologBang(BasicStreamReader.java:2360)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2020)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 91 more
+[20/07/2015 12:44:11,123] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [4922f7a51d44689e3ac58e1549f77fb2] No es posible crear la llamada al servicio WsPlanesMovilService: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+[20/07/2015 12:44:11,125] ERROR [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Error: null
+[20/07/2015 12:44:11,126] ERROR [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:112
+[20/07/2015 12:44:11,126] INFO [dao.imp.TrafficImp] [consultaNombrePlan] [4922f7a51d44689e3ac58e1549f77fb2] Inicio consulta nombre plan para numero movil 42104073
+[20/07/2015 12:44:11,406] INFO [dao.imp.TrafficImp] [consultaNombrePlan] [4922f7a51d44689e3ac58e1549f77fb2] Tiempo:280
+[20/07/2015 12:44:11,407] INFO [dao.imp.TrafficImp] [consultaNombrePlan] [4922f7a51d44689e3ac58e1549f77fb2] Fin consultando nombre plan para numero movil 42104073
+[20/07/2015 12:44:38,045] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:44:38,419] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Tiempo:374
+[20/07/2015 12:44:38,419] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:44:38,419] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:44:38,420] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:44:38,899] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:480
+[20/07/2015 12:44:38,900] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:44:38,900] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:44:39,112] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:212
+[20/07/2015 12:44:39,113] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 12:44:39,113] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 12:44:39,113] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [fe9e962042c66046204b582bcd9bc36a] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:44:39,311] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:44:39,311] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:44:39,571] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:260
+[20/07/2015 12:44:39,571] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:44:39,572] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:45:19,185] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:45:19,456] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:45:19,772] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:45:20,322] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap2: 74.49
+[20/07/2015 12:45:21,555] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap3: 0.05
+[20/07/2015 12:50:11,669] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:50:12,305] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Tiempo:636
+[20/07/2015 12:50:12,306] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:50:12,306] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:50:12,306] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:50:12,584] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:278
+[20/07/2015 12:50:12,584] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:50:12,585] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:50:13,249] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:665
+[20/07/2015 12:50:13,250] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 12:50:13,250] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 12:50:13,250] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [fe9e962042c66046204b582bcd9bc36a] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:50:13,462] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:50:13,463] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:50:13,994] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:532
+[20/07/2015 12:50:13,995] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:50:13,995] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:50:18,584] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:50:18,585] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:50:18,585] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:50:18,585] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap2: 74.49
+[20/07/2015 12:50:18,586] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap3: 0.05
+[20/07/2015 12:51:34,466] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:51:34,953] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Tiempo:487
+[20/07/2015 12:51:34,954] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:51:34,954] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:51:34,954] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:51:35,060] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [fe9e962042c66046204b582bcd9bc36a] Error al inicializar el Servicio class cl.i2b.ws22.WsPlanesMovilService
+com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseWSDL(RuntimeWSDLParser.java:333)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseUsingMex(RuntimeWSDLParser.java:219)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:170)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:147)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at cl.i2b.ws22.WsPlanesMovilService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getPlanInstanceService(EntelServices.java:205)
+	at com.esa.ponline.appmobile.ws.dao.imp.TrafficImp.consultaTraficoExcedido(TrafficImp.java:308)
+	at com.esa.ponline.appmobile.web.delegate.DelegateTraffic.consultaTraficoExcedido(DelegateTraffic.java:24)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.trafico(TrafficAction.java:100)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.execute(TrafficAction.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:612)
+	at com.ctc.wstx.sr.BasicStreamReader.startDTD(BasicStreamReader.java:2444)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromPrologBang(BasicStreamReader.java:2360)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2020)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 91 more
+[20/07/2015 12:51:35,062] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [fe9e962042c66046204b582bcd9bc36a] No es posible crear la llamada al servicio WsPlanesMovilService: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+[20/07/2015 12:51:35,064] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Error: null
+[20/07/2015 12:51:35,064] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:110
+[20/07/2015 12:51:35,064] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [fe9e962042c66046204b582bcd9bc36a] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:51:35,261] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:51:35,262] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:51:35,610] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:349
+[20/07/2015 12:51:35,610] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:51:35,610] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:51:42,311] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:51:42,312] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:51:42,312] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:51:42,312] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap2: 74.49
+[20/07/2015 12:51:42,312] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap3: 0.05
+[20/07/2015 12:52:49,996] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:52:52,764] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Tiempo:2768
+[20/07/2015 12:52:52,765] INFO [dao.imp.TrafficImp] [consultaTrafico] [fe9e962042c66046204b582bcd9bc36a] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:52:52,765] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:52:52,765] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:52:52,868] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [fe9e962042c66046204b582bcd9bc36a] Error al inicializar el Servicio class cl.i2b.ws22.WsPlanesMovilService
+com.sun.xml.ws.streaming.XMLStreamReaderException: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.wrapException(XMLStreamReaderUtil.java:267)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:95)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextContent(XMLStreamReaderUtil.java:110)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.nextElementContent(XMLStreamReaderUtil.java:100)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseWSDL(RuntimeWSDLParser.java:333)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parseUsingMex(RuntimeWSDLParser.java:219)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:170)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:147)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at cl.i2b.ws22.WsPlanesMovilService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getPlanInstanceService(EntelServices.java:205)
+	at com.esa.ponline.appmobile.ws.dao.imp.TrafficImp.consultaTraficoExcedido(TrafficImp.java:308)
+	at com.esa.ponline.appmobile.web.delegate.DelegateTraffic.consultaTraficoExcedido(DelegateTraffic.java:24)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.trafico(TrafficAction.java:100)
+	at com.esa.ponline.appmobile.web.actions.TrafficAction.execute(TrafficAction.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:612)
+	at com.ctc.wstx.sr.BasicStreamReader.startDTD(BasicStreamReader.java:2444)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromPrologBang(BasicStreamReader.java:2360)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2020)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+	at com.sun.xml.ws.util.xml.XMLStreamReaderFilter.next(XMLStreamReaderFilter.java:92)
+	at com.sun.xml.ws.streaming.XMLStreamReaderUtil.next(XMLStreamReaderUtil.java:76)
+	... 91 more
+[20/07/2015 12:52:52,870] ERROR [appmobile.ws.EntelServices] [getPlanInstanceService] [fe9e962042c66046204b582bcd9bc36a] No es posible crear la llamada al servicio WsPlanesMovilService: XML reader error: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '"' (code 34) in DOCTYPE declaration; expected a space between public and system identifiers
+ at [row,col,system-id]: [1,55,"http://sbepcs.entel.cl:80/EntelPCSMobile/Planes/px/pxPlanesSOAP?wsdl"]
+[20/07/2015 12:52:52,872] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Error: null
+[20/07/2015 12:52:52,872] ERROR [dao.imp.TrafficImp] [consultaTraficoExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:107
+[20/07/2015 12:52:52,872] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [fe9e962042c66046204b582bcd9bc36a] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:52:53,052] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:52:53,052] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:52:53,329] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Tiempo:277
+[20/07/2015 12:52:53,330] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:52:53,330] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:52:54,032] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:52:54,033] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:52:54,033] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:52:54,033] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap2: 74.49
+[20/07/2015 12:52:54,033] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [fe9e962042c66046204b582bcd9bc36a] MSISDN ->42104073<- | CosumoCap3: 0.05
+[20/07/2015 12:53:49,139] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:1355
+[20/07/2015 12:53:49,141] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:53:49,141] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 12:53:49,141] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:53:49,142] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:53:49,145] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 12:53:50,689] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:1544
+[20/07/2015 12:53:50,689] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:53:50,690] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 12:53:50,690] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta d5eb1ce15a6c5ef20cbde9a7bbaf9479
+[20/07/2015 12:53:50,691] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:53:50,691] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 12:53:50,691] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: d5eb1ce15a6c5ef20cbde9a7bbaf9479
+[20/07/2015 12:54:04,394] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:174
+[20/07/2015 12:54:04,396] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:54:04,396] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [42104073]
+[20/07/2015 12:54:04,396] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 12:54:04,397] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 12:54:04,397] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 42104073
+[20/07/2015 12:54:04,684] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:287
+[20/07/2015 12:54:04,685] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 12:54:04,685] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 12:54:04,686] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta b98fa635be2d6430c1bfdc30eb394a9a
+[20/07/2015 12:54:04,686] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 12:54:04,686] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 12:54:04,687] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: b98fa635be2d6430c1bfdc30eb394a9a
+[20/07/2015 12:54:05,334] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Inicio consulta trafico para numero movil 42104073
+[20/07/2015 12:54:05,922] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Tiempo:588
+[20/07/2015 12:54:05,925] INFO [dao.imp.TrafficImp] [consultaTrafico] [] Fin consultando trafico para numero movil 42104073
+[20/07/2015 12:54:05,927] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:54:05,928] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:54:06,357] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:431
+[20/07/2015 12:54:06,357] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:54:06,358] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:54:06,521] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Tiempo:164
+[20/07/2015 12:54:06,521] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Codigo error:0002
+[20/07/2015 12:54:06,521] INFO [dao.imp.TrafficImp] [consultaTraficoExcedido] [] Servicio de xmlPlanFull Desc error:Sin Plan Full
+[20/07/2015 12:54:06,522] INFO [appmobile.ws.EntelServices] [getMMAutoGestionServicePort] [] Instanciando servicio: http://esbdesa.entel.cl/billing/orderingprod/gestprodmmautogestion/bil_t_px_validarplanmmautogestionps 
+[20/07/2015 12:54:06,713] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de Planes, Endpoint: http://esb.entel.cl:80/mediation/mediation/consultatrafico/med_n_px_consultarplanesmultimediavistaDExcedidosps
+[20/07/2015 12:54:06,714] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42104073 ]
+[20/07/2015 12:54:07,070] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Tiempo:357
+[20/07/2015 12:54:07,070] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 12:54:07,071] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1707 TipoPlan: ]
+[20/07/2015 12:54:07,819] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] ### Datos Consumo para MMAutogestion ###
+[20/07/2015 12:54:07,819] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CuotaTrafico: 80.0
+[20/07/2015 12:54:07,820] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap1: 80.0
+[20/07/2015 12:54:07,820] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap2: 74.49
+[20/07/2015 12:54:07,820] INFO [dao.imp.TrafficImp] [consultarTraficoMMAGExcedido] [] MSISDN ->42104073<- | CosumoCap3: 0.05
+[20/07/2015 21:07:52,572] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:1999
+[20/07/2015 21:07:52,573] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 21:07:52,573] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [81560126]
+[20/07/2015 21:07:52,573] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 21:07:52,574] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 21:07:52,576] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 81560126
+[20/07/2015 21:07:52,804] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:228
+[20/07/2015 21:07:52,805] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 21:07:52,805] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 21:07:52,805] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 04c93a7cf329cc275f12955f6bcca022
+[20/07/2015 21:07:52,806] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 21:07:52,807] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 21:07:52,807] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 04c93a7cf329cc275f12955f6bcca022
+[20/07/2015 21:08:08,361] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:505
+[20/07/2015 21:08:08,362] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 21:08:08,363] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [81560126]
+[20/07/2015 21:08:08,363] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 21:08:08,364] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 21:08:08,364] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 81560126
+[20/07/2015 21:08:08,546] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:182
+[20/07/2015 21:08:08,547] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 21:08:08,547] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 21:08:08,547] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 3d17a6bfd3bbde86937b46498f9bfce5
+[20/07/2015 21:08:08,548] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 21:08:08,548] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 21:08:08,548] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 3d17a6bfd3bbde86937b46498f9bfce5
+[20/07/2015 21:08:09,230] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 21:08:09,231] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] para consultar resumen de prepago
+[20/07/2015 21:08:09,931] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Tiempo:701
+[20/07/2015 21:08:09,934] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] PREPAGO MSISDN: [81560126] | NO TIENE saldo reservado
+[20/07/2015 21:08:09,935] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 21:08:09,935] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] MSISDN: [81560126]
+[20/07/2015 21:08:09,936] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Codigo Response Service: 0000
+[20/07/2015 21:08:09,936] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Descripcion Response Service: OK
+[20/07/2015 21:08:10,817] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Tiempo:881
+[20/07/2015 21:08:10,818] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 21:08:10,818] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] MSISDN: [81560126]
+[20/07/2015 21:08:10,818] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Codigo Response Service: 0000
+[20/07/2015 21:08:10,818] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Descripcion Response Service: OK
+[20/07/2015 21:08:10,818] INFO [dao.imp.MenuImp] [consultarSaldoSecundario] [] se inicia llamada a servicio SaldoBonoExtra (saldo secundario)
+[20/07/2015 21:08:10,945] ERROR [appmobile.ws.EntelServices] [getConsSaldoBonoExtraServiceBindingQSService] [] Error al inicializar el Servicio class com.esa.billing.billingcons.t.conssaldobonoextra.ConsSaldoBonoExtraServiceBindingQSService
+com.sun.xml.ws.wsdl.parser.InaccessibleWSDLException: 2 counts of InaccessibleWSDLException.
+
+java.io.FileNotFoundException: Response: '404: Not Found' for url: 'http://esb.entel.cl:80/billing/billingcons/consultafacturas/bil_t_px_conssaldobonoextraps'
+java.io.FileNotFoundException: Response: '404: Not Found' for url: 'http://esb.entel.cl:80/billing/billingcons/consultafacturas/bil_t_px_conssaldobonoextraps?wsdl'
+
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:182)
+	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:153)
+	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:284)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:246)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:197)
+	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:187)
+	at weblogic.wsee.jaxws.spi.WLSServiceDelegate.<init>(WLSServiceDelegate.java:86)
+	at weblogic.wsee.jaxws.spi.WLSProvider$ServiceDelegate.<init>(WLSProvider.java:632)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:143)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:117)
+	at weblogic.wsee.jaxws.spi.WLSProvider.createServiceDelegate(WLSProvider.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:77)
+	at com.esa.billing.billingcons.t.conssaldobonoextra.ConsSaldoBonoExtraServiceBindingQSService.<init>(Unknown Source)
+	at com.esa.ponline.appmobile.ws.EntelServices.getConsSaldoBonoExtraServiceBindingQSService(EntelServices.java:69)
+	at com.esa.ponline.appmobile.ws.dao.imp.MenuImp.consultarSaldoSecundario(MenuImp.java:124)
+	at com.esa.ponline.appmobile.web.delegate.DelegateMenu.consultarSaldoSecundario(DelegateMenu.java:33)
+	at com.esa.ponline.appmobile.web.actions.MenuAction.detalleResumenPP(MenuAction.java:143)
+	at com.esa.ponline.appmobile.web.actions.MenuAction.obtieneSaldoPP(MenuAction.java:88)
+	at com.esa.ponline.appmobile.web.actions.MenuAction.execute(MenuAction.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:450)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:289)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:252)
+	at com.esa.ponline.appmobile.web.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.esa.ponline.appmobile.web.interceptor.ResponseHeadersInterceptor.intercept(ResponseHeadersInterceptor.java:40)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.DeprecationInterceptor.intercept(DeprecationInterceptor.java:41)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:167)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:254)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:252)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:246)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:562)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:56)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3730)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3696)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2273)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1490)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+[20/07/2015 21:08:10,953] ERROR [appmobile.ws.EntelServices] [getConsSaldoBonoExtraServiceBindingQSService] [] No es posible crear la llamada al servicio ConsSaldoBonoExtraServiceBindingQSService: 2 counts of InaccessibleWSDLException.
+
+[20/07/2015 21:08:15,081] INFO [dao.imp.BundleImp] [obtenerSaldoBolsasPP] [] Tiempo:483
+[20/07/2015 21:08:15,081] INFO [dao.imp.BundleImp] [obtenerSaldoBolsasPP] [] No existen bolsas activas asociadas a MSISDN [81560126]
+[20/07/2015 21:08:20,383] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Instanciando el port interface com.epcs.provision.suscripcion.bolsasppmovil.SCOBPortType
+[20/07/2015 21:08:20,384] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Configurando Datos de la peticion
+[20/07/2015 21:08:20,384] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Invocando servicio
+[20/07/2015 21:08:20,682] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Tiempo:501
+[20/07/2015 23:04:41,683] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:33065
+[20/07/2015 23:04:41,685] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 23:04:41,685] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:04:41,685] INFO [dao.imp.RegisterImp] [existeRegistro] [] Habilitado para registro.
+[20/07/2015 23:04:41,686] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0003]
+[20/07/2015 23:04:41,686] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [Movil invalido]
+[20/07/2015 23:04:41,951] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] #### PARAMETROS DE INGRESO SERVICIO ####
+[20/07/2015 23:04:41,951] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:04:41,951] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:04:41,952] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] #### FIN PARAMETROS DE INGRESO SERVICIO ####
+[20/07/2015 23:04:42,079] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Tiempo:393
+[20/07/2015 23:04:42,080] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:04:42,081] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:04:42,082] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 23:04:42,082] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Respuesta Descripcion Servicio: [567664feae0c98857a797fc90be93eb7]
+[20/07/2015 23:04:42,082] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN & PIN Validos.
+[20/07/2015 23:06:06,118] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:31866
+[20/07/2015 23:06:06,120] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 23:06:06,121] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:06:06,121] INFO [dao.imp.RegisterImp] [existeRegistro] [] Habilitado para registro.
+[20/07/2015 23:06:06,122] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0003]
+[20/07/2015 23:06:06,122] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [Movil invalido]
+[20/07/2015 23:06:06,326] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] #### PARAMETROS DE INGRESO SERVICIO ####
+[20/07/2015 23:06:06,327] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:06:06,327] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:06:06,327] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] #### FIN PARAMETROS DE INGRESO SERVICIO ####
+[20/07/2015 23:06:06,446] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Tiempo:324
+[20/07/2015 23:06:06,446] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:06:06,446] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:06:06,447] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 23:06:06,447] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Respuesta Descripcion Servicio: [c2c6f63330bf87ef3af351430b1b0666]
+[20/07/2015 23:06:06,447] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN & PIN Validos.
+[20/07/2015 23:07:06,712] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:30868
+[20/07/2015 23:07:06,713] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 23:07:06,713] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:07:06,713] INFO [dao.imp.RegisterImp] [existeRegistro] [] Habilitado para registro.
+[20/07/2015 23:07:06,714] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0003]
+[20/07/2015 23:07:06,714] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [Movil invalido]
+[20/07/2015 23:07:07,026] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] #### PARAMETROS DE INGRESO SERVICIO ####
+[20/07/2015 23:07:07,027] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:07:07,027] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:07:07,027] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] #### FIN PARAMETROS DE INGRESO SERVICIO ####
+[20/07/2015 23:07:07,207] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Tiempo:493
+[20/07/2015 23:07:07,208] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:07:07,208] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:07:07,209] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 23:07:07,209] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] Respuesta Descripcion Servicio: [29a0ca97de09957d578293ea7e38d2c4]
+[20/07/2015 23:07:07,209] INFO [dao.imp.RegisterImp] [validaDatosRegistro] [] MSISDN & PIN Validos.
+[20/07/2015 23:21:37,233] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:1926
+[20/07/2015 23:21:37,234] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[20/07/2015 23:21:37,234] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [81560126]
+[20/07/2015 23:21:37,234] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[20/07/2015 23:21:37,234] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[20/07/2015 23:21:37,238] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 81560126
+[20/07/2015 23:21:37,672] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:434
+[20/07/2015 23:21:37,673] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[20/07/2015 23:21:37,673] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[20/07/2015 23:21:37,673] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta 74b4676c70dea719d414110fa0b668a7
+[20/07/2015 23:21:37,674] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[20/07/2015 23:21:37,674] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[20/07/2015 23:21:37,674] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: 74b4676c70dea719d414110fa0b668a7

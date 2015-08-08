@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+<package namespace="/" name="login" extends="default">
+
+		<action name="login"
+class="com.esa.ponline.appmobile.web.actions.LoginAction">
+
+			<result type="freemarker" name="success">/pages/2.1-login.html</result>
+			<result type="freemarker" name="success_medium">/pages/medium/2.1-login.html</result>
+			<result type="freemarker" name="successApp">/pages/index_app.html</result>
+
+			<result type="freemarker" name="input">/pages/2.1-login_error.html</result>
+			<result type="freemarker" name="errorLogin">/pages/2.1-login_error.html</result>
+
+			<result name="consultapp">/WEB-INF/templates/webmobile/medium/consPlanPP.jsp</result>
+			<result type="freemarker" name="token">/pages/token.html</result>
+
+			<result name="generalError">/WEB-INF/jsp/error-general.jsp</result>
+			<result type="redirectAction" name="passwd">
+				<param name="actionName">passwd</param>
+			</result>
+
+			<result type="redirectAction" name="registro">
+				<param name="actionName">registro</param>
+			</result>
+
+			<result type="redirectAction" name="webmobile">
+				<param name="actionName">trafico</param>
+			</result>
+
+			<result type="redirectAction" name="saldoPP">
+				<param name="actionName">menu</param>
+			</result>
+			
+			<result type="redirectAction" name="saldoCC">
+				<param name="actionName">menu</param>
+			</result>
+			<result name="webmobileHigh">/WEB-INF/templates/webmobile/high/loginApp.jsp</result>
+			<result name="webmobileMedium">/WEB-INF/templates/webmobile/medium/loginApp.jsp"</result>
+
+			<result name="app_high">/WEB-INF/templates/webmobile/high/index.html</result>
+			<result name="app_medium">/WEB-INF/templates/webmobile/medium/index.html</result>
+		</action>
+
+		<action name="logout" class="com.esa.ponline.appmobile.web.actions.LogoutAction">
+			<result type="redirectAction" name="success">
+				<param name="actionName">login</param>
+			</result>
+		</action>
+
+		<action name="signin" class="com.esa.ponline.appmobile.web.actions.SigninAction">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="root">maps</param>
+			</result>
+		</action>
+
+		<action name="signout" class="com.esa.ponline.appmobile.web.actions.SignoutAction">
+			<result type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="root">maps</param>
+			</result>
+		</action>
+
+	</package>
+</struts>

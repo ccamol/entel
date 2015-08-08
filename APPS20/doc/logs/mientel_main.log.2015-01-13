@@ -1,0 +1,57 @@
+[13/01/2015 13:08:57,659] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion app-properties cargado correctamente
+[13/01/2015 13:08:57,677] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion moviles-properties cargado correctamente
+[13/01/2015 13:08:59,788] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] | Archivo de mensajes globalMessages cargado correctamente
+[13/01/2015 13:09:30,369] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:09:30,372] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:09:30,377] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:09:30,380] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[13/01/2015 13:09:30,382] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [81597490]
+[13/01/2015 13:09:30,403] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Informacion cliente se logra obtener por variable de session [cliente]
+[13/01/2015 13:09:30,404] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Login correcto msisdn 81597490 mercado SS
+[13/01/2015 13:11:03,789] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:11:03,791] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:11:03,792] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:11:03,794] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[13/01/2015 13:11:03,796] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [77467726]
+[13/01/2015 13:11:03,797] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Informacion cliente se logra obtener por variable de session [cliente]
+[13/01/2015 13:11:03,799] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Login correcto msisdn 77467726 mercado PP
+[13/01/2015 13:12:06,896] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:12:06,898] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:12:06,899] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:12:06,899] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[13/01/2015 13:12:06,900] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [81597490]
+[13/01/2015 13:12:06,901] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Informacion cliente se logra obtener por variable de session [cliente]
+[13/01/2015 13:12:06,902] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Login correcto msisdn 81597490 mercado SS
+[13/01/2015 13:12:51,941] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion app-properties cargado correctamente
+[13/01/2015 13:12:51,953] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion moviles-properties cargado correctamente
+[13/01/2015 13:12:53,997] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] | Archivo de mensajes globalMessages cargado correctamente
+[13/01/2015 13:13:19,457] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:13:19,460] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:13:19,461] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:13:19,462] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[13/01/2015 13:13:19,463] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [81597490]
+[13/01/2015 13:13:20,092] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:13:20,093] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:13:20,094] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:13:20,096] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[13/01/2015 13:13:20,096] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | No es posible obtener variable de session [cliente]
+[13/01/2015 13:13:20,097] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | No es posible realizar login con session [cliente]
+[13/01/2015 13:13:20,098] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Se efectua autenticacion con objeto [LoginVO]
+[13/01/2015 13:13:20,099] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateMercado] | Se crea session para [81597490]
+[13/01/2015 13:13:37,932] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:13:37,934] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:13:37,935] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:13:37,936] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[13/01/2015 13:13:37,938] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [77467726]
+[13/01/2015 13:13:37,939] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Informacion cliente se logra obtener por variable de session [cliente]
+[13/01/2015 13:13:37,940] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Login correcto msisdn 77467726 mercado PP
+[13/01/2015 13:13:44,505] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [ppUserHasBundles] | MSISDN [77467726] posee bolsas activas
+[13/01/2015 13:14:20,924] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[13/01/2015 13:14:20,925] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[13/01/2015 13:14:20,926] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[13/01/2015 13:14:20,928] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_ss_high
+[13/01/2015 13:14:20,929] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [81597490]
+[13/01/2015 13:14:20,930] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Informacion cliente se logra obtener por variable de session [cliente]
+[13/01/2015 13:14:20,930] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Login correcto msisdn 81597490 mercado SS
+[13/01/2015 13:14:50,198] INFO [com.esa.ponline.appmobile.web.actions.BundleAction] [ssccUserHasBundles] | Usuario no posee bolsas contratadas
+[13/01/2015 13:14:57,337] INFO [com.esa.ponline.appmobile.web.actions.LogoutAction] [logout] | El usuario [81597490] ha deslogeado y finalizado su session

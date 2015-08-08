@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="language" content="es" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="description" content="Mi Entel" />
+<meta name="keywords" content="Mi Entel" />
+<meta name="author" content="Entel" />
+
+	<link href="favicon.ico" rel="icon" /> 
+
+	<title>Entel</title>
+
+	<!-- CSS -->
+    <link href="${request.getContextPath()}/css/reset.css" rel="stylesheet" />
+    <link href="${request.getContextPath()}/css/main.css" rel="stylesheet" /> 
+
+	<!-- JS -->
+	<script src="${request.getContextPath()}/js/modernizr.custom.js"></script>
+
+</head>
+
+	<body>
+		<#include "/pages/include/googletags/gt.html">
+		<div class="container">		
+
+
+			<!-- MAIN -->
+			<div id="main">
+
+					<!-- HEADER -->
+					<header class="section-header clearfix">	
+					
+						<a href="login" id="menu-button" class="top-nav-btn">
+							<span class="icon icon-arrow-left"></span>
+						</a>
+
+						<div class="logo"></div>	
+
+					</header>
+
+					
+
+					<div class="sc-section">
+            <div class="callout bg-warning">
+
+                <span class="icon icon-error"></span>
+                <MZZO id="error" attempt="1" ><MZZO>
+                <span class="bracket-msg">No hemos podido realizar la operaci&oacute;n por favor intentelo nuevamente.</span>
+
+            </div>
+        </div>
+
+					
+
+					
+
+			</div><!--/main-->
+
+		</div><!--/container-->
+
+		<!-- JS Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="${request.getContextPath()}/js/jquery.collapse.js"></script>
+		<script src="${request.getContextPath()}/js/jquery.idTabs.min.js"></script>
+		<script src="${request.getContextPath()}/js/jAlert-v2.js"></script>
+		<script src="${request.getContextPath()}/js/Chart.min.js"></script>
+
+		<!-- JS Config -->
+		<script src="${request.getContextPath()}/js/collapse-cfg.js"></script>
+		<script src="${request.getContextPath()}/js/modal-cfg.js"></script>
+		<script src="${request.getContextPath()}/js/chart-cfg.js"></script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package namespace="/" name="" extends="default">
+		<action name="cuenta" method="execute" class="com.esa.ponline.appmobile.web.actions.AccountAction">
+		<!-- SS WEB -->
+            <result type="freemarker" name="web_ss_high_nopago">/pages/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="web_ss_medium_nopago">/pages/medium/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="web_ss_high_pagado">/pages/2.9-estado-cuenta-sin-deuda.html</result>
+			<result type="freemarker" name="web_ss_medium_pagado">/pages/medium/2.9-estado-cuenta-sin-deuda.html</result>
+			
+		<!-- CC WEB -->	
+			<result type="freemarker" name="web_cc_high_nopago">/pages/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="web_cc_medium_nopago">/pages/medium/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="web_cc_high_pagado">/pages/2.9-estado-cuenta-sin-deuda.html</result>
+			<result type="freemarker" name="web_cc_medium_pagado">/pages/medium/2.9-estado-cuenta-sin-deuda.html</result>
+            
+		<!-- SS APP -->	            
+            <result type="freemarker" name="app_ss_high_nopago">/pages/app/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="app_ss_medium_nopago">/pages/app/medium/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="app_ss_high_pagado">/pages/app/2.9-estado-cuenta-sin-deuda.html</result>
+            <result type="freemarker" name="app_ss_medium_pagado">/pages/app/medium/2.9-estado-cuenta-sin-deuda.html</result>  
+            
+		<!-- CC APP -->	            
+            <result type="freemarker" name="app_cc_high_nopago">/pages/app/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="app_cc_medium_nopago">/pages/app/medium/2.8-estado-cuenta.html</result>
+            <result type="freemarker" name="app_cc_high_pagado">/pages/app/2.9-estado-cuenta-sin-deuda.html</result>
+            <result type="freemarker" name="app_cc_medium_pagado">/pages/app/medium/2.9-estado-cuenta-sin-deuda.html</result>            
+		</action>
+	</package>
+</struts>

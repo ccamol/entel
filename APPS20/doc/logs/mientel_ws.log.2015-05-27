@@ -1,0 +1,32 @@
+[27/05/2015 14:02:26,369] INFO [dao.imp.RegisterImp] [existeRegistro] [] Tiempo:1425
+[27/05/2015 14:02:26,372] INFO [dao.imp.RegisterImp] [existeRegistro] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[27/05/2015 14:02:26,372] INFO [dao.imp.RegisterImp] [existeRegistro] [] MSISDN: [77467726]
+[27/05/2015 14:02:26,372] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Codigo Servicio: [0000]
+[27/05/2015 14:02:26,373] INFO [dao.imp.RegisterImp] [existeRegistro] [] Respuesta Descripcion Servicio: [OK]
+[27/05/2015 14:02:26,375] INFO [dao.imp.LoginImp] [validaLogin] [] Inicio validacion numero movil 77467726
+[27/05/2015 14:02:26,572] INFO [dao.imp.LoginImp] [validaLogin] [] Tiempo:197
+[27/05/2015 14:02:26,572] INFO [dao.imp.LoginImp] [validaLogin] [] Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[27/05/2015 14:02:26,572] INFO [dao.imp.LoginImp] [validaLogin] [] codigoRespuesta 0000
+[27/05/2015 14:02:26,573] INFO [dao.imp.LoginImp] [validaLogin] [] descripcionRespuesta e1564e69c119bd53e28d8f0d962f769e
+[27/05/2015 14:02:26,573] INFO [dao.imp.LoginImp] [validaLogin] [] Verificacion correcta de las credenciales del usuario.
+[27/05/2015 14:02:26,573] INFO [dao.imp.LoginImp] [validaLogin] [] Codigo Response Service: 0000
+[27/05/2015 14:02:26,574] INFO [dao.imp.LoginImp] [validaLogin] [] Descripcion Response Service: e1564e69c119bd53e28d8f0d962f769e
+[27/05/2015 14:02:27,354] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[27/05/2015 14:02:27,355] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] para consultar resumen de prepago
+[27/05/2015 14:02:27,697] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Tiempo:343
+[27/05/2015 14:02:27,699] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] PREPAGO MSISDN: [77467726] | NO TIENE saldo reservado
+[27/05/2015 14:02:27,700] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[27/05/2015 14:02:27,700] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] MSISDN: [77467726]
+[27/05/2015 14:02:27,701] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Codigo Response Service: 0000
+[27/05/2015 14:02:27,701] INFO [dao.imp.MenuImp] [consultarPlanResumenPP] [] Descripcion Response Service: OK
+[27/05/2015 14:02:27,985] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Tiempo:284
+[27/05/2015 14:02:27,986] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[27/05/2015 14:02:27,986] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] MSISDN: [77467726]
+[27/05/2015 14:02:27,986] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Codigo Response Service: 0000
+[27/05/2015 14:02:27,986] INFO [dao.imp.MenuImp] [consultarPlanActualPP] [] Descripcion Response Service: OK
+[27/05/2015 14:02:34,465] INFO [dao.imp.BundleImp] [obtenerSaldoBolsasPP] [] Tiempo:400
+[27/05/2015 14:02:34,466] INFO [dao.imp.BundleImp] [obtenerSaldoBolsasPP] [] No existen bolsas activas asociadas a MSISDN [77467726]
+[27/05/2015 14:02:36,559] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Instanciando el port interface com.epcs.provision.suscripcion.bolsasppmovil.SCOBPortType
+[27/05/2015 14:02:36,560] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Configurando Datos de la peticion
+[27/05/2015 14:02:36,560] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Invocando servicio
+[27/05/2015 14:02:37,038] INFO [dao.imp.BundleImp] [getAllAvailablePPBundles] [] Tiempo:526

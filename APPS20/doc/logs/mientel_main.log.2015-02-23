@@ -1,0 +1,19 @@
+[23/02/2015 12:21:14,239] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion app-properties cargado correctamente
+[23/02/2015 12:21:14,244] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion moviles-properties cargado correctamente
+[23/02/2015 12:21:14,624] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] | Archivo de mensajes globalMessages cargado correctamente
+[23/02/2015 12:56:28,115] INFO [com.esa.ponline.appmobile.bundle.MessageResourceBundle] [buildProperties] | Archivo de mensajes globalMessages cargado correctamente
+[23/02/2015 12:56:31,350] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion app-properties cargado correctamente
+[23/02/2015 12:56:31,351] INFO [com.esa.ponline.appmobile.util.Config] [<clinit>] | Archivo de configuracion moviles-properties cargado correctamente
+[23/02/2015 12:56:37,633] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[23/02/2015 12:56:37,634] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[23/02/2015 12:56:37,635] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[23/02/2015 12:56:37,636] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[23/02/2015 12:56:37,636] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [creaSession] | Se genera session para usuario [77467726]
+[23/02/2015 12:56:38,339] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Servicio ClientePerfilService responde: 
+[23/02/2015 12:56:38,340] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Code: 0000
+[23/02/2015 12:56:38,340] INFO [com.esa.ponline.appmobile.web.actions.SigninAction] [obtienePerfil] | Response Descripcion: OK
+[23/02/2015 12:56:38,340] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateNav] | Se define mapeo template para cliente en sesion con el formato: web_pp_high
+[23/02/2015 12:56:38,340] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | No es posible obtener variable de session [cliente]
+[23/02/2015 12:56:38,341] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | No es posible realizar login con session [cliente]
+[23/02/2015 12:56:38,341] INFO [com.esa.ponline.appmobile.web.actions.LoginAction] [validaUsuario] | Se efectua autenticacion con objeto [LoginVO]
+[23/02/2015 12:56:38,342] INFO [com.esa.ponline.appmobile.util.DefineTemplate] [defineTemplateMercado] | Se crea session para [77467726]

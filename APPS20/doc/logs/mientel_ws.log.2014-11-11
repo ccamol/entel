@@ -1,0 +1,164 @@
+[11/11/2014 10:38:11,033] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:38:11,036] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -MSISDN: [77585435]
+[11/11/2014 10:38:11,036] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Codigo Servicio: [0000]
+[11/11/2014 10:38:11,037] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Descripcion Servicio: [OK]
+[11/11/2014 10:38:11,039] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Inicio validacion numero movil 77585435
+[11/11/2014 10:38:11,277] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[11/11/2014 10:38:11,278] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -codigoRespuesta 0000
+[11/11/2014 10:38:11,278] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -descripcionRespuesta e1262f0b0e1a98ea865b8b7dbe474b64
+[11/11/2014 10:38:11,279] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Verificacion correcta de las credenciales del usuario.
+[11/11/2014 10:38:11,279] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Codigo Response Service: 0000
+[11/11/2014 10:38:11,279] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Descripcion Response Service: e1262f0b0e1a98ea865b8b7dbe474b64
+[11/11/2014 10:38:12,082] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:38:12,820] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:38:12,822] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:38:12,822] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:38:13,082] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:38:13,083] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:38:15,494] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:38:15,495] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:38:24,710] INFO [com.esa.ponline.appmobile.ws.dao.imp.AccountImp] [obtenerEstadoCuenta] -
+[11/11/2014 10:38:28,821] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:38:29,363] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:38:29,364] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:38:29,364] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:38:29,544] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:38:29,545] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:38:31,359] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:38:31,360] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:39:25,348] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:39:25,354] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -MSISDN: [77585435]
+[11/11/2014 10:39:25,354] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Codigo Servicio: [0000]
+[11/11/2014 10:39:25,354] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Descripcion Servicio: [OK]
+[11/11/2014 10:39:25,358] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Inicio validacion numero movil 77585435
+[11/11/2014 10:39:25,793] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[11/11/2014 10:39:25,793] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -codigoRespuesta 0000
+[11/11/2014 10:39:25,794] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -descripcionRespuesta 37b6e038e9b0d96cea8bb3580c725b82
+[11/11/2014 10:39:25,794] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Verificacion correcta de las credenciales del usuario.
+[11/11/2014 10:39:25,795] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Codigo Response Service: 0000
+[11/11/2014 10:39:25,795] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Descripcion Response Service: 37b6e038e9b0d96cea8bb3580c725b82
+[11/11/2014 10:39:26,445] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:39:27,181] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:39:27,184] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: null
+[11/11/2014 10:39:27,184] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:39:27,447] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:39:27,447] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:39:29,265] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:39:29,265] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:39:37,164] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:39:37,748] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:39:37,752] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: null
+[11/11/2014 10:39:37,752] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:39:37,911] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:39:37,911] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:39:39,768] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:39:39,769] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:39:49,118] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:39:49,759] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:39:49,760] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: null
+[11/11/2014 10:39:49,760] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:39:49,947] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:39:49,947] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:39:52,032] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:39:52,033] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:49:09,202] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:49:09,875] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:49:09,877] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: null
+[11/11/2014 10:49:09,878] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:49:10,036] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:49:10,037] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:49:12,121] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:49:12,122] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:49:17,492] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:49:18,199] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:49:18,200] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: null
+[11/11/2014 10:49:18,201] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:49:18,349] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:49:18,350] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:49:20,359] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:49:20,360] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:49:58,650] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:49:58,651] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -MSISDN: [77585435]
+[11/11/2014 10:49:58,651] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Codigo Servicio: [0000]
+[11/11/2014 10:49:58,652] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Descripcion Servicio: [OK]
+[11/11/2014 10:49:58,654] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Inicio validacion numero movil 77585435
+[11/11/2014 10:49:58,956] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[11/11/2014 10:49:58,957] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -codigoRespuesta 0000
+[11/11/2014 10:49:58,957] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -descripcionRespuesta e33cc3b4c44a48757811fbcb98b69242
+[11/11/2014 10:49:58,957] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Verificacion correcta de las credenciales del usuario.
+[11/11/2014 10:49:58,958] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Codigo Response Service: 0000
+[11/11/2014 10:49:58,958] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Descripcion Response Service: e33cc3b4c44a48757811fbcb98b69242
+[11/11/2014 10:49:59,972] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:50:00,771] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:50:00,773] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:50:00,774] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:50:01,566] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:50:01,567] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:50:04,660] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:50:04,660] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 10:50:11,815] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 77585435
+[11/11/2014 10:50:12,504] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 77585435
+[11/11/2014 10:50:12,505] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:50:12,505] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 77585435 ]
+[11/11/2014 10:50:12,687] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 10:50:12,688] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1477 TipoPlan: ]
+[11/11/2014 10:50:15,427] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 10:50:15,428] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56977585435 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 19:01:12,329] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 19:01:12,331] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -MSISDN: [42142543]
+[11/11/2014 19:01:12,331] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Codigo Servicio: [0000]
+[11/11/2014 19:01:12,332] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Descripcion Servicio: [OK]
+[11/11/2014 19:01:12,334] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Inicio validacion numero movil 42142543
+[11/11/2014 19:01:12,681] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[11/11/2014 19:01:12,682] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -codigoRespuesta 0000
+[11/11/2014 19:01:12,682] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -descripcionRespuesta f25eb747e143cc5485d55fdb6e992716
+[11/11/2014 19:01:12,682] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Verificacion correcta de las credenciales del usuario.
+[11/11/2014 19:01:12,683] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Codigo Response Service: 0000
+[11/11/2014 19:01:12,683] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Descripcion Response Service: f25eb747e143cc5485d55fdb6e992716
+[11/11/2014 19:01:13,277] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 42142543
+[11/11/2014 19:01:13,956] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 42142543
+[11/11/2014 19:01:13,958] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 19:01:13,959] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42142543 ]
+[11/11/2014 19:01:14,160] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 19:01:14,161] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1473 TipoPlan: ]
+[11/11/2014 19:01:16,007] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 19:01:16,007] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56942142543 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 19:01:37,554] INFO [com.esa.ponline.appmobile.ws.dao.imp.AccountImp] [obtenerEstadoCuenta] -
+[11/11/2014 19:02:58,532] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -##### PARAMETROS DEL SERVICIO #####
+[11/11/2014 19:02:58,909] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -MSISDN [42142543]
+[11/11/2014 19:02:59,474] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -MERCADO [SS]
+[11/11/2014 19:03:00,026] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -AAA [3]
+[11/11/2014 19:03:01,158] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -### FIN PARAMETROS DEL SERVICIO ###
+[11/11/2014 19:03:23,180] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -Codigo de plan actual [1473]
+[11/11/2014 19:03:23,648] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -Categoria plan actual [6]
+[11/11/2014 19:03:50,345] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -Tipo Plan: [14]
+[11/11/2014 19:03:58,215] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [consultarPlanActualPxSoap] -IdFamiliaPlan: [6]
+[11/11/2014 19:05:48,357] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Servicio: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 19:05:48,359] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -MSISDN: [42142543]
+[11/11/2014 19:05:48,360] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Codigo Servicio: [0000]
+[11/11/2014 19:05:48,360] INFO [com.esa.ponline.appmobile.ws.dao.imp.RegisterImp] [existeRegistro] -Respuesta Descripcion Servicio: [OK]
+[11/11/2014 19:05:48,360] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Inicio validacion numero movil 42142543
+[11/11/2014 19:05:48,508] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Servicio: http://esb.entel.cl/ERP/GestionDeSeguridad/Proxies/ERPSeguridadService
+[11/11/2014 19:05:48,509] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -codigoRespuesta 0000
+[11/11/2014 19:05:48,509] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -descripcionRespuesta f10a27801b9e7eece5e6d97001b6654c
+[11/11/2014 19:05:48,509] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Verificacion correcta de las credenciales del usuario.
+[11/11/2014 19:05:48,511] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Codigo Response Service: 0000
+[11/11/2014 19:05:48,511] INFO [com.esa.ponline.appmobile.ws.dao.imp.LoginImp] [validaLogin] -Descripcion Response Service: f10a27801b9e7eece5e6d97001b6654c
+[11/11/2014 19:05:48,920] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Inicio consulta trafico para numero movil 42142543
+[11/11/2014 19:05:49,642] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTrafico] -Fin consultando trafico para numero movil 42142543
+[11/11/2014 19:05:49,643] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de Planes, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 19:05:49,643] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de planes, Metodo: consultarPlanActual , Input:[ movil: 42142543 ]
+[11/11/2014 19:05:49,820] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Endpoint: http://esb.entel.cl/CLIENTES/GestionDePerfiles/Proxies/ClientePerfilService
+[11/11/2014 19:05:49,821] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [consultaTraficoExcedido] -Servicio de xmlPlanFull, Metodo: consultaXmlPlanesFull , Input:[ codbscs2: 1473 TipoPlan: ]
+[11/11/2014 19:05:51,583] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Endpoint: http://esb.entel.cl:80/provisionyentrega/suscripcion/datosexcedidos/WSDatosExcedidosPS
+[11/11/2014 19:05:51,583] INFO [com.esa.ponline.appmobile.ws.dao.imp.TrafficImp] [obtenerPlanesMultimedia] -Servicio de TraficoExcedidos, Metodo: consultaPlanesMultimedia , Input:[ movil:56942142543 HeaderIn ( AppName: PORTALES UserName: PORTALES ) ]
+[11/11/2014 19:05:59,011] INFO [com.esa.ponline.appmobile.ws.dao.imp.AccountImp] [obtenerEstadoCuenta] -
+[11/11/2014 19:06:08,205] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -##### PARAMETROS DEL SERVICIO #####
+[11/11/2014 19:06:08,206] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -MSISDN [42142543]
+[11/11/2014 19:06:08,207] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -MERCADO [SS]
+[11/11/2014 19:06:08,207] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -AAA [3]
+[11/11/2014 19:06:08,208] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -### FIN PARAMETROS DEL SERVICIO ###
+[11/11/2014 19:06:08,208] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -Codigo de plan actual [1473]
+[11/11/2014 19:06:08,208] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -Categoria plan actual [6]
+[11/11/2014 19:06:10,354] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [obtienePlanActual] -Tipo Plan: [14]
+[11/11/2014 19:06:10,519] INFO [com.esa.ponline.appmobile.ws.dao.imp.PlanImp] [consultarPlanActualPxSoap] -IdFamiliaPlan: [6]
