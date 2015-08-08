@@ -1,0 +1,271 @@
+//
+//  ViewController.m
+//  enteldemo
+//
+//  Created by Matthew Mayer on 26/02/2014.
+//  Copyright (c) 2014 ReignDesign. All rights reserved.
+//
+
+#import "MainViewController.h"
+#import "Constants.h"
+#import <PKRevealController/PKRevealController.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "APIEngine.h"
+#import <CommonCrypto/CommonCryptor.h>
+#import "ARC4.h"
+#import "LeftViewController.h"
+
+@interface MainViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *hamburgerButton;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *headerLogo;
+@property (weak, nonatomic) IBOutlet UIImageView *loginLogo;
+@property (strong, nonatomic) NSString *nextUrl;
+@property (nonatomic)BOOL isUserEdited;
+@property(nonatomic, weak) IBOutlet UIButton *loginBtn;
+@property(nonatomic, weak) IBOutlet UITextField *txtPhoneNumber;
+@property(nonatomic, weak) IBOutlet UITextField *txtRut;
+@property(nonatomic, weak) IBOutlet UITextField *txtPin;
+@property(nonatomic, weak) IBOutlet UITextView *txtMiEntel;
+@property(nonatomic, weak) IBOutlet UIView *loginBgView;
+@property(nonatomic, weak) IBOutlet UIScrollView *loginView;
+@property(nonatomic, weak) IBOutlet UISwitch *sessionSwitch;
+@property(nonatomic, weak) IBOutlet UILabel *closeSessionLabel;
+@property(nonatomic, weak) IBOutlet UIButton *btnRegister, *btnRecover;
+@property(nonatomic) LeftViewController *leftView;
+@end
+
+@implementation MainViewController
+
+-(id)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder])  {
+        self.menuMode = LeftMenuModeNoLogin;
+    }
+    return self;
+}
+
+- (IBAction)onHambuger:(id)sender {
+    [self.revealController showViewController:self.revealController.leftViewController animated:YES completion:^(BOOL finished) {}];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.leftView = (LeftViewController *)self.revealController.leftViewController;
+    [self.leftView reloadMenu:self.menuMode];
+    
+    if (self.menuMode == LeftMenuModeNoLogin) {
+        [self setupLoginView:self.leftView.selectedOpt == 0];
+        [self setupLoginForm];
+    } else {
+        self.loginView.hidden = YES;
+    }
+    
+    [self loadURL:self.url ? self.url : [self.leftView.leftMenuItems objectAtIndex:0][@"url"]];
+}
+
+- (void) setupLoginForm {
+    [self.loginBtn setTitle:_(@"login_btn") forState:UIControlStateNormal];
+    self.loginBtn.titleLabel.font = FONT(20);
+    self.txtPhoneNumber.font = FONT(14);
+    self.txtPin.font = FONT(14);
+    self.txtRut.font = FONT(14);
+    self.txtRut.placeholder = _(@"txtRut");
+    self.txtPin.placeholder = _(@"txtPin");
+    self.txtPhoneNumber.placeholder = _(@"txtPhone");
+    self.loginView.hidden = [self.url length] > 0;
+    self.txtMiEntel.font = FONT(25);
+    self.txtMiEntel.text = _(@"mi_entel");
+    self.txtMiEntel.textColor = [UIColor entelDarkGray];
+    [self.sessionSwitch setOnTintColor:[UIColor entelOrange]];
+    
+    self.closeSessionLabel.font = FONT(13);
+    self.closeSessionLabel.textColor = [UIColor entelDarkGray];
+    self.closeSessionLabel.text = _(@"close_session");
+    
+    self.loginView.contentSize = CGSizeMake(320, 630);
+    [self.loginView setAutoresizesSubviews:NO];
+    
+    if (!IS_CLASSIC) {
+        CGRect frame = self.loginView.frame;
+        frame.size.height -= [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+    
+}
+
+-(void)setupLoginLink:(UIButton*)btn title:(NSString*)title {
+    [btn setTitle:title forState:UIControlStateNormal];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self slideMenuVisibility];
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard:)];
+    [singleTap setNumberOfTapsRequired:1];
+    [self.loginBgView addGestureRecognizer:singleTap];
+    
+    self.txtPhoneNumber.delegate = self;
+    self.txtPin.delegate = self;
+    self.txtRut.delegate = self;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)slideMenuVisibility {
+    BOOL shouldShowMenu = [self.url length] > 0;
+    self.revealController.recognizesPanningOnFrontView = !shouldShowMenu;
+    self.hamburgerButton.hidden = shouldShowMenu;
+    self.backButton.hidden = !shouldShowMenu;
+}
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
+    self.nextUrl = [request.URL absoluteString];
+    
+    if (navigationType == UIWebViewNavigationTypeLinkClicked && [self.nextUrl hasPrefix:@"http"]) {
+        [self pushNewController:self.nextUrl menuMode:self.menuMode];
+        return NO;
+    } else {
+        if (self.menuMode == LeftMenuModeNoLogin) {
+            [self setupLoginView:self.leftView.selectedOpt == 0];
+            BOOL hidden = self.option != 0 || self.url;
+            self.loginView.hidden = hidden;
+            return hidden;
+        }
+        return YES;
+    }
+}
+
+-(void)setupLoginView:(BOOL)isLogin {
+    [[UIApplication sharedApplication] setStatusBarStyle:isLogin ? UIStatusBarStyleDefault : UIStatusBarStyleLightContent];
+    self.navigationBar.backgroundColor = isLogin ? [UIColor clearColor] : [UIColor entelBlue];
+    UIImage *img = isLogin ? [UIImage imageNamed:@"icon-menu-color"] : [UIImage imageNamed:@"hamburger"];
+    [self.hamburgerButton setImage:img forState:UIControlStateNormal];
+    self.headerLogo.hidden = isLogin;
+    self.loginLogo.hidden = !isLogin;
+    self.infoBtn.hidden = !isLogin;
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    [super webViewDidFinishLoad:webView];
+    [self slideMenuVisibility];
+}
+
+- (IBAction)backAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)logout {
+    [self.navigationController popToRootViewControllerAnimated:NO];
+    self.loginView.hidden = NO;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)pushNewController:(NSString *)url menuMode:(LeftMenuMode)menuMode {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MainViewController *nextController = [mainStoryboard instantiateViewControllerWithIdentifier:@"right"];
+    nextController.url = url;
+    nextController.menuMode = menuMode;
+    [self.navigationController pushViewController:nextController animated:YES];
+}
+
+#pragma mark Login
+
+- (IBAction)onLogin:(id)sender {
+    NSString *phone = self.txtPhoneNumber.text;
+    NSString *rut = self.txtRut.text;
+    NSString *pin = self.txtPin.text;
+    
+    if (phone.length == 0) {
+        [self.txtPhoneNumber becomeFirstResponder];
+        [SVProgressHUD showErrorWithStatus:_(@"login_error_phone")];
+        return;
+    } else if (rut.length == 0) {
+        [self.txtRut becomeFirstResponder];
+        [SVProgressHUD showErrorWithStatus:_(@"login_error_rut")];
+        return;
+    } else if (pin.length == 0) {
+        [self.txtPin becomeFirstResponder];
+        [SVProgressHUD showErrorWithStatus:_(@"login_error_pin")];
+        return;
+    } else {
+        [self hideKeyboard:nil];
+        NSString *cipherTxt = [NSString stringWithFormat:@"%@,%@,%@", phone , rut, pin];
+        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+        [[APIEngine shared] getToken:[ARC4 encrypt:cipherTxt] successBlock:^(NSString *token) {
+            [self login:token];
+        } errorBlock:^(NSError *error) {
+            [SVProgressHUD dismiss];
+            [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+        }];
+    }
+}
+
+- (void) login:(NSString *)token {
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [[APIEngine shared] login:token successBlock:^{
+        [SVProgressHUD dismiss];
+        self.txtPhoneNumber.text = @"";
+        self.txtPin.text = @"";
+        self.txtRut.text = @"";
+        [self pushNewController:nil menuMode:LeftMenuModeSS];
+    } errorBlock:^(NSError *error) {
+        [SVProgressHUD dismiss];
+        [SVProgressHUD showErrorWithStatus:[error localizedDescription]];
+    }];
+}
+
+-(void)hideKeyboard:(id)sender {
+    [self.txtPhoneNumber resignFirstResponder];
+    [self.txtRut resignFirstResponder];
+    [self.txtPin resignFirstResponder];
+}
+
+#pragma mark UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSInteger nextTag = textField.tag + 1;
+    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
+    
+    if (nextResponder) {
+        [nextResponder becomeFirstResponder];
+    } else {
+        [textField resignFirstResponder];
+    }
+    
+    return NO;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self animateTextField: textField up: YES];
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self animateTextField: textField up: NO];
+}
+
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up
+{
+    const int movementDistance = 80; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
+}
+
+@end

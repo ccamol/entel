@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cl.entel.appswlsdesa.view.EntelTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_no_connection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_alpha"
+    android:textColor="@color/menu_text"
+    android:gravity="center"
+    android:padding="10dp"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:visibility="gone"
+    android:text="@string/no_internet_conection">
+
+</cl.entel.appswlsdesa.view.EntelTextView>

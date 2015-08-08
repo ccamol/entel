@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="entel_orange">#ff6702</color>
+    <color name="entel_orange_down">#cc5202</color>
+    <color name="login_txt">#0f243f</color>
+    <color name="menu_divider">#f2f2f2</color>
+    <color name="gray_alpha">#D9f2f2f2</color>
+    <color name="menu_text">#4e4e4e</color>
+    <color name="menu_header_txt">#616264</color>
+    <color name="logout_btn">#5181b1</color>
+    <color name="blue_btn">#5181b1</color>
+    <color name="blue_btn_down">#115fab</color>
+    <color name="splash_bg">#0154a0</color>
+    <color name="hint_color">#636466</color>
+</resources>

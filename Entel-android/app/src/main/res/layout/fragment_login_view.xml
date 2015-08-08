@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".fragment.LoginFragment">
+
+    <ImageView
+        android:background="@drawable/bg_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:src="@drawable/logo_entel"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/imageView"
+                        android:layout_marginTop="20dp" />
+
+                    <cl.entel.appswlsdesa.view.EntelTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_txt"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:text="@string/login_txt"
+                        android:id="@+id/textView"
+                        android:layout_marginBottom="15dp" />
+
+                    <cl.entel.appswlsdesa.view.EntelEditText
+                        android:textColorHint="@color/hint_color"
+                        android:maxLength="8"
+                        android:hint="@string/phone_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/et_phone" />
+
+                    <cl.entel.appswlsdesa.view.EntelEditText
+                        android:textColorHint="@color/hint_color"
+                        android:maxLength="10"
+                        android:hint="@string/rut_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:ems="10"
+                        android:id="@+id/et_rut"
+                        android:layout_marginTop="10dp" />
+
+                    <cl.entel.appswlsdesa.view.EntelEditText
+                        android:textColorHint="@color/hint_color"
+                        android:maxLength="4"
+                        android:hint="@string/key_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:password="true"
+                        android:ems="10"
+                        android:id="@+id/et_key"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:textSize="22sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/btn_signin_selector"
+                        android:layout_height="47dp"
+                        android:text="@string/login_btn"
+                        android:id="@+id/btn_login"
+                        android:layout_marginTop="30dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <cl.entel.appswlsdesa.view.EntelTextView
+                            android:clickable="true"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register_btn"
+                            android:layout_gravity="left"
+                            android:textColor="@drawable/btn_orange_selector"
+                            android:id="@+id/btn_register" />
+
+                        <cl.entel.appswlsdesa.view.EntelTextView
+                            android:lines="1"
+                            android:clickable="true"
+                            android:ellipsize="end"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="13sp"
+                            android:textColor="@drawable/btn_orange_selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recover_btn"
+                            android:gravity="right"
+                            android:id="@+id/btn_recover" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/open_onboarding_btn"
+                    android:clickable="true"
+                    android:paddingTop="18dp"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:background="@drawable/selector_ic_onboarding"
+                        android:scaleType="centerInside"
+                        android:layout_width="22.5dp"
+                        android:layout_height="22.5dp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:clickable="true"-->
+    <!--android:id="@+id/btn_menu"-->
+    <!--android:layout_gravity="left|top"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:src="@drawable/ic_drawer_gray"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageView3" />-->
+    <!--</LinearLayout>-->
+
+</FrameLayout>

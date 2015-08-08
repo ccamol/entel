@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C20EE2636893C394E458A94 /* OnBoardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C20E88BCA9DDB31916EA010 /* OnBoardingViewController.m */; };
+		BFBBC44819A1E97700552DE9 /* Accessories.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBC44719A1E97700552DE9 /* Accessories.m */; };
+		C929591A18BD8C4F0091FB8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C929591918BD8C4F0091FB8D /* Foundation.framework */; };
+		C929591C18BD8C4F0091FB8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C929591B18BD8C4F0091FB8D /* CoreGraphics.framework */; };
+		C929591E18BD8C4F0091FB8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C929591D18BD8C4F0091FB8D /* UIKit.framework */; };
+		C929592418BD8C4F0091FB8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C929592218BD8C4F0091FB8D /* InfoPlist.strings */; };
+		C929592618BD8C4F0091FB8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C929592518BD8C4F0091FB8D /* main.m */; };
+		C929592A18BD8C4F0091FB8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C929592918BD8C4F0091FB8D /* AppDelegate.m */; };
+		C929592D18BD8C4F0091FB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C929592B18BD8C4F0091FB8D /* Main.storyboard */; };
+		C929593318BD8C4F0091FB8D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C929593218BD8C4F0091FB8D /* MainViewController.m */; };
+		C929593518BD8C4F0091FB8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C929593418BD8C4F0091FB8D /* Images.xcassets */; };
+		C9511E9118BD91E20044C639 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9511E9018BD91E20044C639 /* LeftViewController.m */; };
+		C99E574618BDAC4100ADE149 /* MyRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99E574518BDAC4100ADE149 /* MyRevealViewController.m */; };
+		C9C579CB18BD955600346843 /* LeftMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C579CA18BD955600346843 /* LeftMenuCell.m */; };
+		FA35237519588AAC001FF43E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA35237419588AAC001FF43E /* Localizable.strings */; };
+		FA3BF9D619549A9B0083162C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3BF9D519549A9B0083162C /* WebViewController.m */; };
+		FA6E22E2195DA7140081EC0F /* APIEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E22E1195DA7140081EC0F /* APIEngine.m */; };
+		FA6E22EA195DF9970081EC0F /* ARC4.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E22E9195DF9970081EC0F /* ARC4.m */; };
+		FA8C582E197413D00083F7A9 /* MainViewController in Resources */ = {isa = PBXBuildFile; fileRef = FA8C582D197413D00083F7A9 /* MainViewController */; };
+		FA8C5831197420A70083F7A9 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C5830197420A70083F7A9 /* DataManager.m */; };
+		FA8C5835197422270083F7A9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C5834197422270083F7A9 /* User.m */; };
+		FA9CC91119F6EF7E009B2F79 /* libPods-enteldemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9CC91019F6EF7E009B2F79 /* libPods-enteldemo.a */; };
+		FA9D6B851962A4BE005EC4AC /* LeftMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9D6B841962A4BD005EC4AC /* LeftMenuManager.m */; };
+		FAAB84401962E76900BEFB82 /* leftMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAB843F1962E76900BEFB82 /* leftMenu.plist */; };
+		FABE4BB81970239500239605 /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FABE4BB71970239500239605 /* UIColor+AppColor.m */; };
+		FABE4BBC197026A200239605 /* EntelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FABE4BBB197026A200239605 /* EntelTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C20E88BCA9DDB31916EA010 /* OnBoardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnBoardingViewController.m; sourceTree = "<group>"; };
+		1C20ED6CEDA8EB27D9377A63 /* OnBoardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnBoardingViewController.h; sourceTree = "<group>"; };
+		7D596166AB14541F80B445FA /* Pods-enteldemo.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-enteldemo.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-enteldemo/Pods-enteldemo.distribution.xcconfig"; sourceTree = "<group>"; };
+		92CDDE5CD20E418885304768 /* libPods-enteldemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-enteldemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA9CB10BC28A193FA91A34A /* Pods-enteldemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-enteldemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-enteldemo/Pods-enteldemo.release.xcconfig"; sourceTree = "<group>"; };
+		BFBBC44619A1E97700552DE9 /* Accessories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accessories.h; sourceTree = "<group>"; };
+		BFBBC44719A1E97700552DE9 /* Accessories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accessories.m; sourceTree = "<group>"; };
+		C929591618BD8C4F0091FB8D /* Entel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C929591918BD8C4F0091FB8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C929591B18BD8C4F0091FB8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C929591D18BD8C4F0091FB8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C929592118BD8C4F0091FB8D /* enteldemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "enteldemo-Info.plist"; sourceTree = "<group>"; };
+		C929592318BD8C4F0091FB8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C929592518BD8C4F0091FB8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C929592718BD8C4F0091FB8D /* enteldemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "enteldemo-Prefix.pch"; sourceTree = "<group>"; };
+		C929592818BD8C4F0091FB8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C929592918BD8C4F0091FB8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C929592C18BD8C4F0091FB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C929593118BD8C4F0091FB8D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C929593218BD8C4F0091FB8D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C929593418BD8C4F0091FB8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C929593B18BD8C4F0091FB8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9511E8F18BD91E20044C639 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		C9511E9018BD91E20044C639 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		C99E574318BDA80D00ADE149 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C99E574418BDAC4100ADE149 /* MyRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRevealViewController.h; sourceTree = "<group>"; };
+		C99E574518BDAC4100ADE149 /* MyRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRevealViewController.m; sourceTree = "<group>"; };
+		C9C579C918BD955600346843 /* LeftMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuCell.h; sourceTree = "<group>"; };
+		C9C579CA18BD955600346843 /* LeftMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuCell.m; sourceTree = "<group>"; };
+		FA0CE3B619F6ED8500F52111 /* libPods-enteldemo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-enteldemo.a"; path = "Pods/build/Debug-iphoneos/libPods-enteldemo.a"; sourceTree = "<group>"; };
+		FA128D9851BB0973E2313352 /* Pods-enteldemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-enteldemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-enteldemo/Pods-enteldemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FA35237419588AAC001FF43E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = enteldemo/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		FA3BF9D419549A9B0083162C /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		FA3BF9D519549A9B0083162C /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		FA6E22E0195DA7140081EC0F /* APIEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIEngine.h; sourceTree = "<group>"; };
+		FA6E22E1195DA7140081EC0F /* APIEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIEngine.m; sourceTree = "<group>"; };
+		FA6E22E4195DCE2A0081EC0F /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		FA6E22E6195DCE510081EC0F /* libcorecrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcorecrypto.dylib; path = usr/lib/system/libcorecrypto.dylib; sourceTree = SDKROOT; };
+		FA6E22E8195DF9970081EC0F /* ARC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARC4.h; sourceTree = "<group>"; };
+		FA6E22E9195DF9970081EC0F /* ARC4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARC4.m; sourceTree = "<group>"; };
+		FA8C582D197413D00083F7A9 /* MainViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MainViewController; sourceTree = "<group>"; };
+		FA8C582F197420A70083F7A9 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		FA8C5830197420A70083F7A9 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FA8C5833197422270083F7A9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FA8C5834197422270083F7A9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FA9CC91019F6EF7E009B2F79 /* libPods-enteldemo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-enteldemo.a"; path = "Pods/build/Debug-iphoneos/libPods-enteldemo.a"; sourceTree = "<group>"; };
+		FA9D6B831962A4BD005EC4AC /* LeftMenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuManager.h; sourceTree = "<group>"; };
+		FA9D6B841962A4BD005EC4AC /* LeftMenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuManager.m; sourceTree = "<group>"; };
+		FAAB843F1962E76900BEFB82 /* leftMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = leftMenu.plist; sourceTree = "<group>"; };
+		FABE4BB61970239500239605 /* UIColor+AppColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppColor.h"; sourceTree = "<group>"; };
+		FABE4BB71970239500239605 /* UIColor+AppColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppColor.m"; sourceTree = "<group>"; };
+		FABE4BBA197026A200239605 /* EntelTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntelTextField.h; sourceTree = "<group>"; };
+		FABE4BBB197026A200239605 /* EntelTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntelTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C929591318BD8C4F0091FB8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9CC91119F6EF7E009B2F79 /* libPods-enteldemo.a in Frameworks */,
+				C929591C18BD8C4F0091FB8D /* CoreGraphics.framework in Frameworks */,
+				C929591E18BD8C4F0091FB8D /* UIKit.framework in Frameworks */,
+				C929591A18BD8C4F0091FB8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282D075D52AF63F9D192A12F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA128D9851BB0973E2313352 /* Pods-enteldemo.debug.xcconfig */,
+				9BA9CB10BC28A193FA91A34A /* Pods-enteldemo.release.xcconfig */,
+				7D596166AB14541F80B445FA /* Pods-enteldemo.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C929590D18BD8C4F0091FB8D = {
+			isa = PBXGroup;
+			children = (
+				C929591F18BD8C4F0091FB8D /* enteldemo */,
+				C929591818BD8C4F0091FB8D /* Frameworks */,
+				C929591718BD8C4F0091FB8D /* Products */,
+				282D075D52AF63F9D192A12F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C929591718BD8C4F0091FB8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C929591618BD8C4F0091FB8D /* Entel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C929591818BD8C4F0091FB8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA9CC91019F6EF7E009B2F79 /* libPods-enteldemo.a */,
+				FA0CE3B619F6ED8500F52111 /* libPods-enteldemo.a */,
+				FA6E22E6195DCE510081EC0F /* libcorecrypto.dylib */,
+				FA6E22E4195DCE2A0081EC0F /* libcommonCrypto.dylib */,
+				C929591918BD8C4F0091FB8D /* Foundation.framework */,
+				C929591B18BD8C4F0091FB8D /* CoreGraphics.framework */,
+				C929591D18BD8C4F0091FB8D /* UIKit.framework */,
+				C929593B18BD8C4F0091FB8D /* XCTest.framework */,
+				92CDDE5CD20E418885304768 /* libPods-enteldemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C929591F18BD8C4F0091FB8D /* enteldemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C5832197422190083F7A9 /* Model */,
+				FABE4BB91970267E00239605 /* Custom Views */,
+				FA6E22DF195DA6F20081EC0F /* Utilities */,
+				FA3BF9D3195498820083162C /* View Controllers */,
+				FA3BF9D2195498750083162C /* Table View Cells */,
+				C929592818BD8C4F0091FB8D /* AppDelegate.h */,
+				C929592918BD8C4F0091FB8D /* AppDelegate.m */,
+				C929592B18BD8C4F0091FB8D /* Main.storyboard */,
+				C929593418BD8C4F0091FB8D /* Images.xcassets */,
+				C929592018BD8C4F0091FB8D /* Supporting Files */,
+			);
+			path = enteldemo;
+			sourceTree = "<group>";
+		};
+		C929592018BD8C4F0091FB8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C929592118BD8C4F0091FB8D /* enteldemo-Info.plist */,
+				C929592218BD8C4F0091FB8D /* InfoPlist.strings */,
+				C929592518BD8C4F0091FB8D /* main.m */,
+				C929592718BD8C4F0091FB8D /* enteldemo-Prefix.pch */,
+				C99E574318BDA80D00ADE149 /* Constants.h */,
+				FA35237419588AAC001FF43E /* Localizable.strings */,
+				FAAB843F1962E76900BEFB82 /* leftMenu.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA3BF9D2195498750083162C /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9C579C918BD955600346843 /* LeftMenuCell.h */,
+				C9C579CA18BD955600346843 /* LeftMenuCell.m */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		FA3BF9D3195498820083162C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C929593118BD8C4F0091FB8D /* MainViewController.h */,
+				C929593218BD8C4F0091FB8D /* MainViewController.m */,
+				FA8C582D197413D00083F7A9 /* MainViewController */,
+				C9511E8F18BD91E20044C639 /* LeftViewController.h */,
+				C9511E9018BD91E20044C639 /* LeftViewController.m */,
+				FA3BF9D419549A9B0083162C /* WebViewController.h */,
+				FA3BF9D519549A9B0083162C /* WebViewController.m */,
+				C99E574418BDAC4100ADE149 /* MyRevealViewController.h */,
+				C99E574518BDAC4100ADE149 /* MyRevealViewController.m */,
+				1C20E88BCA9DDB31916EA010 /* OnBoardingViewController.m */,
+				1C20ED6CEDA8EB27D9377A63 /* OnBoardingViewController.h */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA6E22DF195DA6F20081EC0F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E22E0195DA7140081EC0F /* APIEngine.h */,
+				FA6E22E1195DA7140081EC0F /* APIEngine.m */,
+				FA6E22E8195DF9970081EC0F /* ARC4.h */,
+				FA6E22E9195DF9970081EC0F /* ARC4.m */,
+				FA9D6B831962A4BD005EC4AC /* LeftMenuManager.h */,
+				FA9D6B841962A4BD005EC4AC /* LeftMenuManager.m */,
+				FABE4BB61970239500239605 /* UIColor+AppColor.h */,
+				FABE4BB71970239500239605 /* UIColor+AppColor.m */,
+				FA8C582F197420A70083F7A9 /* DataManager.h */,
+				FA8C5830197420A70083F7A9 /* DataManager.m */,
+				BFBBC44619A1E97700552DE9 /* Accessories.h */,
+				BFBBC44719A1E97700552DE9 /* Accessories.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		FA8C5832197422190083F7A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C5833197422270083F7A9 /* User.h */,
+				FA8C5834197422270083F7A9 /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FABE4BB91970267E00239605 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FABE4BBA197026A200239605 /* EntelTextField.h */,
+				FABE4BBB197026A200239605 /* EntelTextField.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C929591518BD8C4F0091FB8D /* enteldemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C929594B18BD8C4F0091FB8D /* Build configuration list for PBXNativeTarget "enteldemo" */;
+			buildPhases = (
+				EAF66C316422440EAE94EDF5 /* Check Pods Manifest.lock */,
+				C929591218BD8C4F0091FB8D /* Sources */,
+				C929591318BD8C4F0091FB8D /* Frameworks */,
+				C929591418BD8C4F0091FB8D /* Resources */,
+				CCD3F973E23C4A8BAAC0D212 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = enteldemo;
+			productName = enteldemo;
+			productReference = C929591618BD8C4F0091FB8D /* Entel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C929590E18BD8C4F0091FB8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ReignDesign;
+				TargetAttributes = {
+					C929591518BD8C4F0091FB8D = {
+						DevelopmentTeam = ZC6HSNB4F9;
+					};
+				};
+			};
+			buildConfigurationList = C929591118BD8C4F0091FB8D /* Build configuration list for PBXProject "enteldemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C929590D18BD8C4F0091FB8D;
+			productRefGroup = C929591718BD8C4F0091FB8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C929591518BD8C4F0091FB8D /* enteldemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C929591418BD8C4F0091FB8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C929593518BD8C4F0091FB8D /* Images.xcassets in Resources */,
+				FA35237519588AAC001FF43E /* Localizable.strings in Resources */,
+				C929592D18BD8C4F0091FB8D /* Main.storyboard in Resources */,
+				FAAB84401962E76900BEFB82 /* leftMenu.plist in Resources */,
+				C929592418BD8C4F0091FB8D /* InfoPlist.strings in Resources */,
+				FA8C582E197413D00083F7A9 /* MainViewController in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCD3F973E23C4A8BAAC0D212 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-enteldemo/Pods-enteldemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF66C316422440EAE94EDF5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C929591218BD8C4F0091FB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C929593318BD8C4F0091FB8D /* MainViewController.m in Sources */,
+				FABE4BB81970239500239605 /* UIColor+AppColor.m in Sources */,
+				C9511E9118BD91E20044C639 /* LeftViewController.m in Sources */,
+				C929592A18BD8C4F0091FB8D /* AppDelegate.m in Sources */,
+				FABE4BBC197026A200239605 /* EntelTextField.m in Sources */,
+				FA8C5835197422270083F7A9 /* User.m in Sources */,
+				FA9D6B851962A4BE005EC4AC /* LeftMenuManager.m in Sources */,
+				FA3BF9D619549A9B0083162C /* WebViewController.m in Sources */,
+				C9C579CB18BD955600346843 /* LeftMenuCell.m in Sources */,
+				FA6E22EA195DF9970081EC0F /* ARC4.m in Sources */,
+				FA8C5831197420A70083F7A9 /* DataManager.m in Sources */,
+				BFBBC44819A1E97700552DE9 /* Accessories.m in Sources */,
+				C929592618BD8C4F0091FB8D /* main.m in Sources */,
+				FA6E22E2195DA7140081EC0F /* APIEngine.m in Sources */,
+				C99E574618BDAC4100ADE149 /* MyRevealViewController.m in Sources */,
+				1C20EE2636893C394E458A94 /* OnBoardingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C929592218BD8C4F0091FB8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C929592318BD8C4F0091FB8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C929592B18BD8C4F0091FB8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C929592C18BD8C4F0091FB8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C929594918BD8C4F0091FB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C929594A18BD8C4F0091FB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: REIGN DIGITAL CREATIVES LIMITED";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C929594C18BD8C4F0091FB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA128D9851BB0973E2313352 /* Pods-enteldemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "enteldemo/enteldemo-Prefix.pch";
+				INFOPLIST_FILE = "enteldemo/enteldemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = Entel;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C929594D18BD8C4F0091FB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA9CB10BC28A193FA91A34A /* Pods-enteldemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: EMPRESA NACIONAL DE TELECOMUNICACIONES S.A. (N4YLN8K7AT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "enteldemo/enteldemo-Prefix.pch";
+				INFOPLIST_FILE = "enteldemo/enteldemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = Entel;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA0CE3B419F6EBAD00F52111 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: EMPRESA NACIONAL DE TELECOMUNICACIONES S.A. (N4YLN8K7AT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: EMPRESA NACIONAL DE TELECOMUNICACIONES S.A. (N4YLN8K7AT)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		FA0CE3B519F6EBAD00F52111 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D596166AB14541F80B445FA /* Pods-enteldemo.distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: REIGN DIGITAL CREATIVES LIMITED";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "enteldemo/enteldemo-Prefix.pch";
+				INFOPLIST_FILE = "enteldemo/enteldemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = Entel;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C929591118BD8C4F0091FB8D /* Build configuration list for PBXProject "enteldemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C929594918BD8C4F0091FB8D /* Debug */,
+				C929594A18BD8C4F0091FB8D /* Release */,
+				FA0CE3B419F6EBAD00F52111 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C929594B18BD8C4F0091FB8D /* Build configuration list for PBXNativeTarget "enteldemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C929594C18BD8C4F0091FB8D /* Debug */,
+				C929594D18BD8C4F0091FB8D /* Release */,
+				FA0CE3B519F6EBAD00F52111 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C929590E18BD8C4F0091FB8D /* Project object */;
+}

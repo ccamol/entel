@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  enteldemo
+
+  Created by Alex Campayo on 6/23/14.
+  Copyright (c) 2014 ReignDesign. All rights reserved.
+*/
+
+//Left Menu
+"recargas" = "Recargas";
+"tiendas"="Tiendas";
+"planes_tarifas"="Planes y Tarifas";
+"ayuda" = "Ayuda y Soporte";
+"login"="Login";
+"consulta_trafico"="Consulta de Tráfico";
+"estado_cuenta"="Estado de Cuenta";
+"bolsas"="Mis Bolsas";
+"plan"="Mi Plan";
+"consulta_saldo"="Consulta de Saldo";
+"beneficios"="Descuentos Zona";
+"ownerLabel"="Titular:";
+"presta_luka"="Presta Luka";
+
+//Login
+"txtPhone"="Teléfono (8 dígitos)";
+"txtRut"="Rut usuario";
+"txtPin"="Clave";
+"login_btn"="[ Ingresar_";
+"mi_entel"="Bienvenido a Mi Entel";
+"btn_recover"="Olvidé mi clave";
+"btn_register"="Registrarme en Mi Entel";
+"recover_psw_title"="Recuperar Contraseña";
+"register_user_title"="Registro";
+"unknown_error"="Este servicio no se encuentra disponible, inténtalo más tarde";
+
+//Error
+"no_internet_conection"="No se ha detectado conexión a internet";
+"login_error"="Alguno de los datos ingresados es incorrecto";
+"login_error_phone"="Debes introducir un número de teléfono";
+"login_error_phone_size"="El número de teléfono debe contener 8 dígitos";
+"login_error_rut"="Debes introducir un número de Rut";
+"login_incorrect_rut_error"="RUT Inválido";
+"login_error_pin"="Debes ingresar tu clave";
+"reload"="Recargar";
+
+//Qualtrics
+"alertbox_text" = "Ayúdanos a mejorar nuestro servicio. Contesta esta breve encuesta";
+"alertbox_ok_button" = "Sí, quiero participar";
+"alertbox_cancel_button" = "No, gracias";
+"survey_header" = "Encuesta de Satisfacción";
+

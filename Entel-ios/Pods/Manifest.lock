@@ -1,0 +1,24 @@
+PODS:
+  - Mantle (1.5):
+    - Mantle/extobjc (= 1.5)
+  - Mantle/extobjc (1.5)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - PKRevealController (2.0.6)
+  - Reachability (3.1.1)
+  - SVProgressHUD (1.0)
+
+DEPENDENCIES:
+  - Mantle
+  - MKNetworkKit
+  - PKRevealController
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Mantle: 3bf6db311c8b4a19b6be01f2483fa4590aa166f3
+  MKNetworkKit: 60ad3c83b62183e40ba75ce772c9427c25b520de
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  SVProgressHUD: 46088807596a795cbcb4affd92cf3f13b6ab3dda
+
+COCOAPODS: 0.38.2

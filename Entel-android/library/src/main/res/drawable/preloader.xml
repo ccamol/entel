@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/preloader00" android:duration="100" />
+    <item android:drawable="@drawable/preloader01" android:duration="100" />
+    <item android:drawable="@drawable/preloader02" android:duration="100" />
+    <item android:drawable="@drawable/preloader03" android:duration="100" />
+    <item android:drawable="@drawable/preloader04" android:duration="100" />
+    <item android:drawable="@drawable/preloader05" android:duration="100" />
+    <item android:drawable="@drawable/preloader06" android:duration="100" />
+    <item android:drawable="@drawable/preloader07" android:duration="100" />
+    <item android:drawable="@drawable/preloader08" android:duration="100" />
+    <item android:drawable="@drawable/preloader09" android:duration="100" />
+    <item android:drawable="@drawable/preloader10" android:duration="100" />
+    <item android:drawable="@drawable/preloader11" android:duration="100" />
+    <item android:drawable="@drawable/preloader12" android:duration="100" />
+</animation-list>
